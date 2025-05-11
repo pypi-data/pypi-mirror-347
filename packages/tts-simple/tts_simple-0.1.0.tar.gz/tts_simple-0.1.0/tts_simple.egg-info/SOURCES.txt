@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tts_simple/__init__.py
+tts_simple/core.py
+tts_simple.egg-info/PKG-INFO
+tts_simple.egg-info/SOURCES.txt
+tts_simple.egg-info/dependency_links.txt
+tts_simple.egg-info/entry_points.txt
+tts_simple.egg-info/requires.txt
+tts_simple.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+recursive-include tts_simple *.py
+recursive-include tts_simple *.txt
+recursive-include tts_simple *.json
+recursive-include tts_simple *.yaml
+recursive-include tts_simple *.ini
+recursive-include tts_simple *.cfg
+recursive-include tts_simple *.md
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
