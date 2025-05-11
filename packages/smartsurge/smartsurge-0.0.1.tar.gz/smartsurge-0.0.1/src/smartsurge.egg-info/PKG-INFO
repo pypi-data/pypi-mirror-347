@@ -1,0 +1,99 @@
+Metadata-Version: 2.4
+Name: smartsurge
+Version: 0.0.1
+Summary: Enhanced Requests Library with Adaptive Rate Limit Estimation
+Author-email: Ryan Taylor <ryan@beta-reduce.net>
+License-Expression: Apache-2.0
+Project-URL: Homepage, https://github.com/dingo-actual/smartsurge
+Project-URL: Documentation, https://github.com/dingo-actual/smartsurge/docs/index.md
+Project-URL: Repository, https://github.com/dingo-actual/smartsurge
+Project-URL: Issues, https://github.com/dingo-actual/smartsurge/issues
+Keywords: http,requests,rate-limit,api,hmm,adaptive
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.32.3
+Requires-Dist: aiohttp>=3.11.18
+Requires-Dist: pydantic>=2.11.4
+Requires-Dist: scipy>=1.15.2
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.5; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.26.0; extra == "dev"
+Requires-Dist: pytest-cov>=6.1.1; extra == "dev"
+Requires-Dist: black>=25.1.0; extra == "dev"
+Requires-Dist: isort>=6.0.1; extra == "dev"
+Requires-Dist: mypy>=1.15.0; extra == "dev"
+Requires-Dist: flake8>=7.2.0; extra == "dev"
+Requires-Dist: werkzeug>=3.1.3; extra == "dev"
+Requires-Dist: flask>=3.1.0; extra == "dev"
+Requires-Dist: numpy>=2.2.5; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: mkdocs>=1.6.1; extra == "docs"
+Requires-Dist: mkdocs-material>=9.6.12; extra == "docs"
+Requires-Dist: mkdocstrings[python]>=0.29.1; extra == "docs"
+Dynamic: license-file
+
+# SmartSurge: Enhanced Requests Library with Adaptive Rate Limit Estimation
+
+SmartSurge is a Python library that enhances the functionality of the requests library with automatic rate limit detection and enforcement, using a statistically rigorous approach.
+
+## Features
+
+- **Automatic Rate Limit Detection**: Automatically detects rate limits through a principled search procedure.
+- **Resumable Streaming Requests**: Supports resumable streaming for large downloads.
+- **Comprehensive Logging**: Detailed logging of request history and rate limit estimation.
+- **Async Support**: Includes asynchronous request methods using aiohttp.
+
+## Installation
+
+```bash
+pip install smartsurge
+
+```
+
+## Quick Start
+
+```python
+from smartsurge import SmartSurgeClient
+
+# Create a client
+
+client = SmartSurgeClient(base_url="https://api.example.com")
+
+# Make requests - SmartSurge will automatically detect and respect rate limits
+
+response, history = client.get("/endpoint")
+
+# Get the detected rate limit
+
+rate_limit = history.rate_limit
+print(f"Detected rate limit: {rate_limit}")
+
+# Streaming requests with resumability
+
+from smartsurge import JSONStreamingRequest
+
+
+result, history = client.stream_request(
+    streaming_class=JSONStreamingRequest,
+    endpoint="/large-dataset",
+    state_file="download_state.json"  # For resumability
+)
+```
+
+## Documentation
+
+> In progress.
+
+## License
+
+This project is licensed under the Apache 2.0 License - see the LICENSE file for details.
