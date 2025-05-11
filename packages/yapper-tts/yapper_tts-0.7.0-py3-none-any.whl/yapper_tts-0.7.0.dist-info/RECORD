@@ -1,0 +1,13 @@
+yapper/__init__.py,sha256=gHb9KgBtyyp0OU7lskxJRUpsTCnA7rSTiGJdr-Ug3Eg,2359
+yapper/constants.py,sha256=nLRfKhAOuISnPelkcDNbf3xvk9RKYkf872RZozbCbX4,9274
+yapper/core.py,sha256=WvMXP-SR_Hd-3l_QLz9yHdNmDGwoY5QIIw7iohol-sc,4177
+yapper/enhancer.py,sha256=hWXFbbWo5Hu6q3nncP2EqdO7AsgRXngkZK6D8ZY-GPE,5487
+yapper/enums.py,sha256=alJtyimISjR4l3XhYXgFNaRzW22n0wUnjWThO4hIOds,7188
+yapper/meta.py,sha256=R9uSKqhGxPptPP4SU2DibbMk_JNwi2wM52Or35kYDBE,84
+yapper/speaker.py,sha256=JJ1i3hr8Cyc47fle2JNd2H1eZ96PTfozkTs7Z6y7slw,5339
+yapper/utils.py,sha256=-Xto7aiTA4xVZT-QlS9RXkgsqFle9J_gzJb5pmfI3IY,5793
+yapper_tts-0.7.0.dist-info/LICENSE,sha256=3gDFGT9UXbGJj8uQQRa3KWQVLiEXdMpiXlmNEmeQXE8,1069
+yapper_tts-0.7.0.dist-info/METADATA,sha256=Mxk1t1Xa2rd1Nfft-G86-6Io9PWsSp7gR2Zggfu3mJQ,6344
+yapper_tts-0.7.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+yapper_tts-0.7.0.dist-info/top_level.txt,sha256=GgW0DZpc8bz7eMORwMFS8U8ScRDQdpY3XqpY5F6fob8,7
+yapper_tts-0.7.0.dist-info/RECORD,,
