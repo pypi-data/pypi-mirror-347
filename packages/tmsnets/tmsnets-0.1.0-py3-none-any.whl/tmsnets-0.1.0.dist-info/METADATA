@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: tmsnets
+Version: 0.1.0
+Summary: A library for constructing (t, m, s)-nets over finite fields
+Author-email: Arsenii Sychev <arseniysychev2015@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: galois
