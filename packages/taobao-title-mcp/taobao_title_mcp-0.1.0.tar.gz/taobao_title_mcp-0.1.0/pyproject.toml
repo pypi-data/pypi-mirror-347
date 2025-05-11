@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taobao-title-mcp"
+version = "0.1.0"
+description = "淘宝商品标题生成MCP服务器"
+readme = "taobao_title_mcp/README.md"
+authors = [
+    {name = "三少科技", email = "example@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["mcp", "taobao", "title", "generation", "ai"]
+dependencies = [
+    "mcp>=1.6.0",
+    "requests>=2.31.0",
+    "Pillow>=10.1.0",
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+]
+
+[project.scripts]
+taobao-title-mcp = "taobao_title_mcp.__main__:main"
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/taobao-title-mcp"
+"Bug Tracker" = "https://github.com/yourusername/taobao-title-mcp/issues"
+
+[tool.setuptools]
+packages = ["taobao_title_mcp", "taobao_title_mcp.tools", "taobao_title_mcp.resources", "taobao_title_mcp.prompts"] 
