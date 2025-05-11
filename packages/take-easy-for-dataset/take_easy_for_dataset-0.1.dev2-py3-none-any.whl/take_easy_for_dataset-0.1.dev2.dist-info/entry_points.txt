@@ -1,0 +1,2 @@
+[console_scripts]
+take-easy = take_easy.cli:main

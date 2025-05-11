@@ -1,0 +1,9 @@
+take_easy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+take_easy/cli.py,sha256=MgAhrA-Grmb3i5o9rHXK-oVMN2i3Juj8RRNsY1wn3AQ,1285
+take_easy/converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+take_easy/converter/parquet_and_csv.py,sha256=yz-uqNZnXnWqDa0EKkW8kDuNPXGH5FVgyIJxM9iFuBU,1385
+take_easy_for_dataset-0.1.dev2.dist-info/METADATA,sha256=HUux9F3QPb8liWF_-DhEoz_RIXbRMPa0uPshIOIPZqk,440
+take_easy_for_dataset-0.1.dev2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+take_easy_for_dataset-0.1.dev2.dist-info/entry_points.txt,sha256=QEAVh0qxJLOFBf6EboBQcOtJhtL3tyhNIzRR-plBg44,49
+take_easy_for_dataset-0.1.dev2.dist-info/top_level.txt,sha256=aqLrW7EWbG_69NAOwflVQ-gH4_kIUK6V0jrP3d-THtc,15
+take_easy_for_dataset-0.1.dev2.dist-info/RECORD,,
