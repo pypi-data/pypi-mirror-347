@@ -1,0 +1,13 @@
+numpy
+h5py
+
+[dev]
+twine
+pytest
+pytest-cov
+
+[doc]
+mkdocs
+mkdocs-material
+pymdown-extensions
+mkdocstrings[python]

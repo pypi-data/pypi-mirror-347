@@ -1,0 +1,19 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+.env
+site/
+
+# setuptools-scm
+python/*/_version.py
+
+# pytest
+.pytest_cache/
+
+# pytest-cov
+.coverage
+
+# zzz233
+tbd00.pkl
+tbd00/

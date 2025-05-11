@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zzz233"
+authors = [
+    { name = "husisy", email = "donot@mail.me" },
+]
+description = "a minimalistic python package"
+readme = "README.md"
+keywords = ["toy package"]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+    "h5py",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "twine",
+    "pytest",
+    "pytest-cov",
+]
+doc = [
+    "mkdocs",
+    "mkdocs-material",
+    "pymdown-extensions",
+    "mkdocstrings[python]",
+]
+
+[project.urls]
+Homepage = "https://github.com/husisy/zzz233"
+Documentation = "https://husisy.github.io/zzz233/"
+
+[project.scripts]
+zzz233 = "zzz233:script_print_lucky"
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools_scm]
+write_to = "python/zzz233/_version.py"
+
+[tool.setuptools.package-data]
+zzz233 = ["data/*.txt"]
