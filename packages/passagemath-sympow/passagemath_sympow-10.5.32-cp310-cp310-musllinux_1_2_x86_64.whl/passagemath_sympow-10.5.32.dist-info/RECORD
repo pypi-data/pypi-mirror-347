@@ -1,0 +1,10 @@
+sage/all__sagemath_sympow.py,sha256=P8TrFUOOeW6-2Dm64nrHRB8pqjVyeJ7qiq2iBHDivPA,336
+sage/lfunctions/all__sagemath_sympow.py,sha256=obBm1i3iPXkic7eZmtkG3qlsOo6EgKwOwMHTzQG51Xw,158
+sage/lfunctions/sympow.py,sha256=ZMX6wQsXTS0i93PGx39NA0y1Pi49FTcmJOl5aWjtie0,14187
+sage/libs/all__sagemath_sympow.py,sha256=xt-4MuDOFRKo25LAAglALz7ESIBIiQv_7l8VzVYw4Zc,45
+sage/libs/sympow.cpython-310-x86_64-linux-gnu.so,sha256=Z7soNM_gtvY_X3QYqY7Li8VzMwOd2mNErN1BY1hVqcU,65152
+sage_wheels/bin/sympow,sha256=Aq60slgRwMHashiWpxCPuc9-TzrDQCUzUbTgA1V-9e8,1323928
+passagemath_sympow-10.5.32.dist-info/METADATA,sha256=NTP3ruk_PLjL0cf0sAB00Fbdr0iKt7QTnb6LaDCd7sA,4826
+passagemath_sympow-10.5.32.dist-info/WHEEL,sha256=Y1po9wJemUxV3QfSxUJEf7hMWR6d4KoBJZzLLzcgMiE,112
+passagemath_sympow-10.5.32.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_sympow-10.5.32.dist-info/RECORD,,
