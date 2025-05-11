@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: take-easy-for-dataset
+Version: 0.1.dev2
+Summary: A dataset container for al-1s project.
+Author-email: stupidfish001 <shovel@hscsec.cn>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: typer
+Requires-Dist: kink
+Requires-Dist: loguru
+Requires-Dist: pandas
+Requires-Dist: pyarrow

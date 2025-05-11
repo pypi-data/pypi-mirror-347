@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "take-easy-for-dataset"
+dynamic = ["version"]
+authors = [
+    { name = "stupidfish001", email = "shovel@hscsec.cn" }
+]
+description = "A dataset container for al-1s project."
+dependencies = [
+    "typer",
+    "kink",
+    "loguru",
+    "pandas",
+    "pyarrow"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.6"
+
+[tool.setuptools]
+packages = { find = { } }
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+[project.scripts]
+take-easy = "take_easy.cli:main"

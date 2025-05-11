@@ -1,0 +1,14 @@
+.gitignore
+.gitlab-ci.yml
+README.md
+pyproject.toml
+take_easy/__init__.py
+take_easy/cli.py
+take_easy/converter/__init__.py
+take_easy/converter/parquet_and_csv.py
+take_easy_for_dataset.egg-info/PKG-INFO
+take_easy_for_dataset.egg-info/SOURCES.txt
+take_easy_for_dataset.egg-info/dependency_links.txt
+take_easy_for_dataset.egg-info/entry_points.txt
+take_easy_for_dataset.egg-info/requires.txt
+take_easy_for_dataset.egg-info/top_level.txt
