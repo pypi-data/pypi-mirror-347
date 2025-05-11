@@ -1,0 +1,9 @@
+sage/all__sagemath_qepcad.py,sha256=UJmnqlV-AEw1repHtz7B4k7OGGdOq7I60O8AKjrlf6A,89
+sage/interfaces/all__sagemath_qepcad.py,sha256=6ROueGbQkNijsA5C_2DWDBUM0bWGt9LHsOEj60Rmi54,45
+sage/interfaces/qepcad.py,sha256=_0xYchGMy12xQlutN4RgTDHp3hq_M41No21rfELHUUk,105737
+sage/libs/all__sagemath_qepcad.py,sha256=6ROueGbQkNijsA5C_2DWDBUM0bWGt9LHsOEj60Rmi54,45
+sage/libs/qepcad.cpython-39-aarch64-linux-gnu.so,sha256=6nVpzYviHZPuu-80WtUf8d3No9nSztaubcJL509W5y4,252792
+passagemath_qepcad-10.5.32.dist-info/METADATA,sha256=gbYlMCfAkCrxD3BQMGLcWkKmqdqF7dTME8DPV_vRVJg,4616
+passagemath_qepcad-10.5.32.dist-info/WHEEL,sha256=hbT3lL2nMYBFlVilxE_wnCXQ38QafNmZ2PAnpjS91Fs,187
+passagemath_qepcad-10.5.32.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_qepcad-10.5.32.dist-info/RECORD,,
