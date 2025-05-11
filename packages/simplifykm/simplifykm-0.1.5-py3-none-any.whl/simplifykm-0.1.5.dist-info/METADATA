@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: simplifykm
+Version: 0.1.5
+Summary: This library automates tasks.
+Author: Khemraj Mangal
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
