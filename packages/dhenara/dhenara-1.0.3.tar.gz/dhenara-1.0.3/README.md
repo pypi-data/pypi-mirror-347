@@ -1,0 +1,60 @@
+# dhenara (DEPRECATED)
+
+**⚠️ DEPRECATION NOTICE ⚠️**
+
+This package has been renamed to [`dhenara-ai`](https://pypi.org/project/dhenara-ai/).
+
+Please update your dependencies to use the new package:
+
+```bash
+pip install dhenara-ai
+```
+
+## No Code Changes Required
+
+Your existing code will continue to work without changes:
+
+```python
+# This will still work with either package installed
+import dhenara.ai
+```
+
+## Why the Change?
+
+We've renamed the package to better reflect its focus on AI capabilities and to avoid naming conflicts. The `dhenara-ai` package contains all the same functionality as before.
+
+
+### Package Family
+We're expanding the ecosystem with related packages:
+
+- **`dhenara-ai`**: The core package (formerly known as dhenara)
+- **`dhenara-agent`**: Our new agent framework package built on top of `dhenara-ai`
+You can install them separately or together depending on your needs.
+
+## About Dhenara-AI
+
+Dhenara is a genuinely open source Python package for interacting with various AI models in a unified way. It is a lightweight, straightforward framework for integrating multiple AI models into Python applications. It's similar in spirit to LangChain but with a focus on simplicity and minimal dependencies along with type safety using Pydantic Models.
+
+### Key Features
+
+- **Genuinely Open Source**: Built from the ground up as a community resource, not an afterthought or internal tool
+- **Unified API**: Interact with different AI providers through a consistent interface
+- **Type Safety**: Built with Pydantic for robust type checking and validation
+- **Easy Regeneration across Providers**: With a unified Pydantic output and built-in prompt formatting, send output from a model to any other model easily
+- **Streaming**: First-class support for streaming responses along with accumulated responses similar to non-streaming responses
+- **Async Support**: Both synchronous and asynchronous interfaces for maximum flexibility
+- **Resource Management**: Automatic handling of connections, retries, and timeouts
+- **Foundation Models**: Pre-configured models with sensible defaults
+- **Test Mode**: Bring up your app with dummy responses for streaming and non-streaming generation
+- **Cost/Usage Data**: Derived cost and usage data along with responses, with optional charge for each model endpoint for commercial deployment
+- **Community-Oriented Design**: An architecture separating API credentials, models, and configurations for flexible deployment and scaling
+
+## Automatic Redirection
+
+This package now serves as a thin compatibility layer that automatically installs and imports from `dhenara-ai`. However, it will display deprecation warnings to encourage users to migrate to the new package name.
+
+
+
+## Documentation
+
+For full documentation, visit [docs.dhenara.com](https://docs.dhenara.com/).
