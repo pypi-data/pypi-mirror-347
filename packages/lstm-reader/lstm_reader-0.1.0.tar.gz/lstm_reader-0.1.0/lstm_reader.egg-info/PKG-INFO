@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: lstm_reader
+Version: 0.1.0
+Summary: LSTM-based station passenger flow training and prediction
+Author: Your Name
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: scikit-learn
