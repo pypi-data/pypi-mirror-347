@@ -1,0 +1,77 @@
+"""
+fate - A Python library for adding visual effects to text output
+
+This library provides various text effects including typewriter animation,
+colorization, styling, and more for enhancing terminal output.
+
+Basic usage:
+    from fate import typewriter, color, style
+    
+    # Simple typewriter effect
+    print(typewriter("Hello, World!"))
+    
+    # Chained effects
+    print(color.red(typewriter("Error message", speed=5)))
+    
+    # Mix and match
+    print(style.bold(color.blue(typewriter("Important notification"))))
+    
+Alternative shortcut syntax:
+    from fate.shortcuts import fateTypeWriter, fateRed, fateBold
+    
+    # Using the + operator
+    print(fateTypeWriter + "Hello, World!")
+    
+    # Combining shortcuts
+    print(fateBold + fateRed + "Important error message")
+    
+    # With custom parameters
+    print(fateTypeWriter(speed=20) + "Fast typing!")
+"""
+
+__version__ = "0.2.2"
+
+from fate.effects import (
+    typewriter, 
+    blink, 
+    fade_in,
+    wave,
+    glitch,
+    shake,
+    rainbow
+)
+
+from fate.styles import (
+    color,
+    style,
+    bg_color
+)
+
+# Predefined effect combinations
+error = lambda text: style.bold(color.red(text))
+warning = lambda text: style.bold(color.yellow(text))
+success = lambda text: style.bold(color.green(text))
+info = lambda text: style.bold(color.blue(text))
+
+# Advanced animations
+from fate.animation import (
+    typing_with_errors,
+    matrix_effect,
+    slide_in,
+    reveal_masked
+)
+
+# Make FateString available for type hints and advanced usage
+from fate.utils import FateString
+
+# Import shortcuts
+# The shortcuts are not imported by default to avoid namespace pollution,
+# but they can be imported explicitly from fate.shortcuts
+
+__all__ = [
+    'typewriter', 'blink', 'fade_in', 'wave', 'glitch', 'shake', 'rainbow',
+    'color', 'style', 'bg_color',
+    'error', 'warning', 'success', 'info',
+    'typing_with_errors', 'matrix_effect', 'slide_in', 'reveal_masked',
+    'FateString'
+]
