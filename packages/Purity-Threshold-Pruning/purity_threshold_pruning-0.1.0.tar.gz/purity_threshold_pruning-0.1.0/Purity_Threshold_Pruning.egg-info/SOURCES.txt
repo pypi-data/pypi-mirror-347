@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+PurityThresholdPruning/PurityThresholdPruning.py
+PurityThresholdPruning/__init__.py
+Purity_Threshold_Pruning.egg-info/PKG-INFO
+Purity_Threshold_Pruning.egg-info/SOURCES.txt
+Purity_Threshold_Pruning.egg-info/dependency_links.txt
+Purity_Threshold_Pruning.egg-info/requires.txt
+Purity_Threshold_Pruning.egg-info/top_level.txt
