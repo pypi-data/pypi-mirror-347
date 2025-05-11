@@ -1,0 +1,9 @@
+mcp_chat_insight/__init__.py,sha256=icKjgw8K7t95KDXiEq6xmoA9WHmeSdjSf8GzEwAJfbo,8221
+mcp_chat_insight/prompt.py,sha256=gvozsEi8y1bTV3IEFP1t5kLla7LJ5jjr_Blf-EtMkJA,6258
+mcp_chat_insight/prompt_detached.py,sha256=Sn_X_0O4bTG-4l5diliuagT4WKPydgkJ6Lmx9Yd61e4,19113
+mcp_chat_insight/server.py,sha256=g-qvLYBPsS0beud1w7Sxey909nNjAvPTdGxCy0FvRtg,13127
+mcp_chat_insight-0.1.0.dist-info/METADATA,sha256=ygBXeuT5BE2frI0TGAMAhxCX9QgVJmvkk0x22lurpMk,6622
+mcp_chat_insight-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_chat_insight-0.1.0.dist-info/entry_points.txt,sha256=ZgNU0pe8aRrQvt3rGt6yk8RTf-_OIrLl9shC1urS4o4,59
+mcp_chat_insight-0.1.0.dist-info/licenses/LICENSE,sha256=Yaf4yUn5tSsVguXy_NAbd8Vi1xLXBN5LPU7zLWV-I9Q,11348
+mcp_chat_insight-0.1.0.dist-info/RECORD,,
