@@ -1,0 +1,7 @@
+pyproject.toml
+src/stv_copy/main.py
+src/stv_copy.egg-info/PKG-INFO
+src/stv_copy.egg-info/SOURCES.txt
+src/stv_copy.egg-info/dependency_links.txt
+src/stv_copy.egg-info/entry_points.txt
+src/stv_copy.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+cf = stv_copy.main:main

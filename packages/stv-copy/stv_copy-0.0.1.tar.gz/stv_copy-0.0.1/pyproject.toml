@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stv_copy"
+version = "0.0.1"
+authors = [
+    { name = "星灿长风v(StarWindv)", email = "starwindv.stv@gmail.com"}
+]
+description = "文本文件内容复制工具"
+readme = ""
+license = { text = "MIT" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+urls = { "Homepage" = "https://github.com/StarWindv" }
+
+[project.scripts]
+cf = "stv_copy.main:main"
+
+[tool.setuptools]
+license-files = []
