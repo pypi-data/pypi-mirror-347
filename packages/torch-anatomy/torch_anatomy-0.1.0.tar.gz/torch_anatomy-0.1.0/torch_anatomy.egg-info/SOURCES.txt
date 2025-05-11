@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_visualizer.py
+torch_anatomy/__init__.py
+torch_anatomy/cli.py
+torch_anatomy/utils.py
+torch_anatomy/visualizer.py
+torch_anatomy.egg-info/PKG-INFO
+torch_anatomy.egg-info/SOURCES.txt
+torch_anatomy.egg-info/dependency_links.txt
+torch_anatomy.egg-info/entry_points.txt
+torch_anatomy.egg-info/requires.txt
+torch_anatomy.egg-info/top_level.txt
