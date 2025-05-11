@@ -1,0 +1,2 @@
+[console_scripts]
+pymcl = pymarkovclustering.scripts.pymcl:main
