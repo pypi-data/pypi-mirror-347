@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oarc-log"
+version = "0.1.1"
+description = "A simple Context-Aware Logger for Python with debug logging for Ollama Agent Roll Cage (OARC)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [
+    {name = "OARC Team"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "mypy",
+    "pytest",
+    "pytest-cov",
+    "pytest-asyncio",
+    "flake8",
+    "pydocstyle",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Ollama-Agent-Roll-Cage/oarc-log"
+"Bug Tracker" = "https://github.com/Ollama-Agent-Roll-Cage/oarc-log/issues"
