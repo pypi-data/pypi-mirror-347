@@ -1,0 +1,144 @@
+Metadata-Version: 2.4
+Name: taobao-title-mcp
+Version: 0.1.0
+Summary: 淘宝商品标题生成MCP服务器
+Author-email: 三少科技 <example@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/taobao-title-mcp
+Project-URL: Bug Tracker, https://github.com/yourusername/taobao-title-mcp/issues
+Keywords: mcp,taobao,title,generation,ai
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: mcp>=1.6.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: Pillow>=10.1.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+
+# 淘宝标题生成 MCP 服务器
+
+这是一个基于 MCP (Model Context Protocol) 协议的淘宝商品标题生成服务器，可以根据商品图片自动生成优化的淘宝商品标题。
+
+## 功能特点
+
+- 支持多图片输入，提供更全面的商品分析
+- 异步处理请求，支持进度报告
+- 提供资源访问，包括API描述和使用指南
+- 预定义提示，帮助LLM更高效地使用服务
+- 完全兼容MCP协议，可与支持MCP的LLM客户端无缝集成
+
+## 安装
+
+### 从PyPI安装
+
+```bash
+pip install taobao-title-mcp
+```
+
+### 从源码安装
+
+```bash
+git clone <repository-url>
+cd taobao-title-mcp
+pip install -e .
+```
+
+## 使用方法
+
+### 作为独立服务器运行
+
+```bash
+# 如果已安装为包
+python -m taobao_title_mcp
+
+# 或者使用uvx（如果已发布到PyPI）
+uvx taobao-title-mcp
+```
+
+### 在代码中使用
+
+```python
+from taobao_title_mcp.server import mcp
+from taobao_title_mcp import tools, resources, prompts
+
+# 启动服务器
+mcp.run()
+```
+
+## 工具和资源
+
+### 工具
+
+- `generate_taobao_title`: 根据商品图片URL生成淘宝商品标题
+
+### 资源
+
+- `info://api_description`: API描述信息
+- `info://usage_guidelines`: API使用指南
+- `examples://{example_id}`: 示例数据，支持的example_id: shoes, clothes, electronics
+
+### 提示
+
+- `generate_title_from_images`: 根据图片URL生成标题的提示
+- `analyze_title_quality`: 分析标题质量并提供改进建议的提示
+
+## 示例
+
+使用MCP客户端调用服务：
+
+```python
+from mcp.client import Client
+
+async def main():
+    async with Client("http://localhost:8000") as client:
+        # 获取API描述
+        api_info = await client.read_resource("info://api_description")
+        print(f"API名称: {api_info['name']}")
+        
+        # 生成标题
+        result = await client.call_tool(
+            "generate_taobao_title",
+            {
+                "image_urls": [
+                    "https://gw.alicdn.com/imgextra/i4/215590895/O1CN01wcB8AU1ITxVvVRZyZ_!!215590895.jpg"
+                ],
+                "temperature": 0.7
+            }
+        )
+        print(f"生成的标题: {result['title']}")
+        print(f"处理时间: {result['processing_time']}秒")
+```
+
+## 开发
+
+### 依赖
+
+- Python 3.8+
+- mcp 1.6.0+
+- requests
+- Pillow
+
+### 测试
+
+```bash
+pytest tests/
+```
+
+## 许可证
+
+MIT
+
+## 作者
+
+三少科技 
