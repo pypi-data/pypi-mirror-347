@@ -1,0 +1,9 @@
+[project]
+name = "jfrog-pypi-trial"
+version = "101.0.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "twine>=6.1.0",
+]
