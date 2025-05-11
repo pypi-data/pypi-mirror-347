@@ -1,0 +1,33 @@
+[project]
+name = "creddit"
+version = "0.0.2"
+description = "An unofficial cli client for Reddit, aimed at people who regularly browse specific subreddits or topics instead of reading the homepage (r/all)."
+authors = [
+    {name = "Vishal Nandagopal", email="dev@vishalnandagopal.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "colorama>=0.4.6",
+    "python-dotenv>=1.1.0",
+    "requests>=2.32.3",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "ruff>=0.11.9",
+    "ty>=0.0.0a8",
+    "types-colorama>=0.4.15.20240311",
+    "types-requests>=2.32.0.20250328",
+]
+
+
+[tool.uv]
+required-environments = [
+    "sys_platform == 'darwin'",
+    "sys_platform == 'linux'",
+    "sys_platform == 'windows'"
+]
+required-version = ">=0.7"
