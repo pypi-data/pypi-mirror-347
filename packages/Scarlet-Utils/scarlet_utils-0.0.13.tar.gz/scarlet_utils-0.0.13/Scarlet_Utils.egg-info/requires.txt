@@ -1,0 +1,9 @@
+sentry_sdk
+colorama
+
+[dev]
+pytest
+black
+
+[docs]
+sphinx
