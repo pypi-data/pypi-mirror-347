@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kadm.egg-info/PKG-INFO
+kadm.egg-info/SOURCES.txt
+kadm.egg-info/dependency_links.txt
+kadm.egg-info/entry_points.txt
+kadm.egg-info/requires.txt
+kadm.egg-info/top_level.txt
+kadm.egg-info/zip-safe
+kadmin/__init__.py
+kadmin/attribute.py
+kadmin/command.py
