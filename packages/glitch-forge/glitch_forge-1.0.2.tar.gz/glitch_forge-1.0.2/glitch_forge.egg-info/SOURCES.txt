@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+glitch_forge/__init__.py
+glitch_forge/_version.py
+glitch_forge/example.py
+glitch_forge/glitcher.py
+glitch_forge/parameter.py
+glitch_forge/ui.py
+glitch_forge.egg-info/PKG-INFO
+glitch_forge.egg-info/SOURCES.txt
+glitch_forge.egg-info/dependency_links.txt
+glitch_forge.egg-info/requires.txt
+glitch_forge.egg-info/top_level.txt
+tests/test_glitcher.py
+tests/test_parameter.py

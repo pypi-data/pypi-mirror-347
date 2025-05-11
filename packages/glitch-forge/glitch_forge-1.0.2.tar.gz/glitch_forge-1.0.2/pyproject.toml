@@ -1,0 +1,23 @@
+[project]
+name = "glitch_forge"
+version = "1.0.2"
+authors = [
+  { name="Lukas Ukelis", email="lukasukelis@gmail.com" },
+]
+description = "Auto-generate PyQt6 GUIs from class parameters for quick tools and prototyping."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "PyQt6>=6.8.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/LukasUkelis/GlitchForge"
+Issues = "https://github.com/LukasUkelis/GlitchForge/issues"
+
+[tool.poetry]
+readme = "README.md"
