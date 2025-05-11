@@ -1,0 +1,69 @@
+# This workflow will upload a Python Package when a release is created
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries
+
+name: Upload Python Package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'pyproject.toml'
+      - 'daebus/__init__.py'
+  workflow_run:
+    workflows: ["Bump Version"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: write
+  id-token: write  # Required for PyPI trusted publishing
+
+jobs:
+  check_version_bump:
+    runs-on: ubuntu-latest
+    if: >
+      (github.event_name == 'push' && contains(github.event.head_commit.message, 'Bump version')) || 
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    outputs:
+      version: ${{ steps.get_version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # If triggered by workflow_run, make sure to get the right commit
+          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.sha }}
+      - name: Extract version
+        id: get_version
+        run: |
+          VERSION=$(grep -m 1 "version = " pyproject.toml | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+          echo "Version: $VERSION"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+  deploy:
+    needs: check_version_bump
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install build twine
+      - name: Build package
+        run: python -m build
+      - name: Publish package
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}
+    
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ needs.check_version_bump.outputs.version }}
+          name: Release v${{ needs.check_version_bump.outputs.version }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          token: ${{ secrets.GITHUB_TOKEN }} 
