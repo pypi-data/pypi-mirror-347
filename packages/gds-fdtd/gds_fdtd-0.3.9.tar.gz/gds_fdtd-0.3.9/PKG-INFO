@@ -1,0 +1,122 @@
+Metadata-Version: 2.4
+Name: gds_fdtd
+Version: 0.3.9
+Summary: Minimalist utilities for photonic FDTD workflows.
+Keywords: python,photonics,fdtd,simulation,optics,eda,electromagnetics,gds,silicon-photonics
+Author-email: Mustafa Hammood <mustafa@siepic.com>
+Requires-Python: >=3.10,<3.14
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: numpy>=1.25
+Requires-Dist: klayout>=0.30.1
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: shapely>=2.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: pip>=23.3 ; extra == "dev"
+Requires-Dist: wheel>=0.42.0 ; extra == "dev"
+Requires-Dist: twine>=4.0.2 ; extra == "dev"
+Requires-Dist: bump2version>=1.0.1 ; extra == "dev"
+Requires-Dist: watchdog>=3.0.0 ; extra == "dev"
+Requires-Dist: pytest>=8.1 ; extra == "dev"
+Requires-Dist: pytest-cov>=5.0 ; extra == "dev"
+Requires-Dist: coverage ; extra == "dev"
+Requires-Dist: ruff>=0.4.3 ; extra == "dev"
+Requires-Dist: sphinx>=7.0 ; extra == "dev"
+Requires-Dist: sphinx-rtd-theme>=1.2.0 ; extra == "dev"
+Requires-Dist: docutils<0.21 ; extra == "dev"
+Requires-Dist: gdsfactory>=9.5.7,<10 ; extra == "gdsfactory"
+Requires-Dist: prefab>=1.2.0 ; extra == "prefab"
+Requires-Dist: SiEPIC>=0.5.25 ; extra == "siepic"
+Requires-Dist: tidy3d>=2.8.3,<2.9 ; extra == "tidy3d"
+Project-URL: Bug Tracker, https://github.com/SiEPIC/gds_fdtd/issues
+Project-URL: Homepage, https://github.com/SiEPIC/gds_fdtd
+Project-URL: Repository, https://github.com/SiEPIC/gds_fdtd
+Provides-Extra: dev
+Provides-Extra: gdsfactory
+Provides-Extra: prefab
+Provides-Extra: siepic
+Provides-Extra: tidy3d
+
+# gds_fdtd
+
+![alternative text](/docs/banner.png)
+
+![codecov](https://codecov.io/gh/mustafacc/gds_fdtd/branch/main/graph/badge.svg)
+![build](https://github.com/mustafacc/gds_fdtd/actions/workflows/main.yml/badge.svg)
+
+**gds_fdtd** is a minimal Python module to assist in setting up FDTD simulations for planar nanophotonic devices using FDTD solvers such as Tidy3D.
+
+## Features
+
+- **Automated FDTD Setup:** Easily set up Lumerical and Tidy3D simulations for devices designed in GDS.
+- **Integration with SiEPIC:** Generate FDTD simulations directly from components defined in [SiEPIC](https://github.com/SiEPIC/SiEPIC-Tools) EDA and it's associated PDKs (e.g., [SiEPIC-EBeam-PDK](https://github.com/SiEPIC/SiEPIC_EBeam_PDK)).
+- **Integration with gdsfactory:** Generate Tidy3D simulations directly from [gdsfactory](https://github.com/gdsfactory/gdsfactory) designs by identifying ports and simulation regions from an input technology stack.
+- **S-Parameter Extraction:** Automatically generate and export S-parameters of your photonic devices in standard formats.
+- **Multimode/Dual Polarization Simulations:** Set up simulations that support multimode or dual polarization configurations for advanced device analysis.
+
+## Installation
+
+You can install `gds_fdtd` using the following options:
+
+### Quick install (PyPI)
+
+```bash
+pip install gds_fdtd
+```
+
+### Option: Basic Installation from source
+
+To install the core functionality of `gds_fdtd`, clone the repository and install using `pip`:
+
+```bash
+git clone git@github.com:mustafacc/gds_fdtd.git
+cd gds_fdtd
+pip install -e .
+```
+
+### Option: Development Installation
+
+For contributing to the development or if you need testing utilities, install with the dev dependencies:
+
+```bash
+git clone git@github.com:mustafacc/gds_fdtd.git
+cd gds_fdtd
+pip install -e .[dev]
+```
+
+This will install additional tools like `pytest` and `coverage` for testing.
+
+### Editable + dev tools
+
+```bash
+pip install -e .[dev]
+```
+
+### Optional extras
+
+| extra      | purpose                        | install command                             |
+|------------|--------------------------------|---------------------------------------------|
+| siepic     | SiEPIC EDA support            | `pip install -e .[siepic]`                  |
+| tidy3d     | Tidy3D simulation support      | `pip install -e .[tidy3d]`                  |
+| gdsfactory | GDSfactory EDA support         | `pip install -e .[gdsfactory]`              |
+| prefab     | parameter‑sweep utilities      | `pip install -e .[prefab]`                  |
+| everything | dev tools + all plugins        | `pip install -e .[dev,tidy3d,gdsfactory,prefab,siepic]`   |
+
+### Requirements
+
+- Python ≥ 3.11  
+- Runtime deps: numpy, matplotlib, shapely, PyYAML, klayout
+
+
+### Running tests
+
+If you've installed the `dev` dependencies, you can run the test suite with:
+
+```bash
+pytest --cov=gds_fdtd tests
+```
