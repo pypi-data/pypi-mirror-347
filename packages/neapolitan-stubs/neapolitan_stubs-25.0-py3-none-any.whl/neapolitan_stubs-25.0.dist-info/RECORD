@@ -1,0 +1,11 @@
+neapolitan-stubs/__init__.pyi,sha256=5YJYyzAoKGyrmZdoANukaIShJ8KKXoC5SwU5G62nsTY,77
+neapolitan-stubs/views.pyi,sha256=BxsH1Vugh3fWl_IchloGJ-wk6OCxeIJ4_s42Z2cJvsE,4464
+neapolitan-stubs/management/__init__.pyi,sha256=5YJYyzAoKGyrmZdoANukaIShJ8KKXoC5SwU5G62nsTY,77
+neapolitan-stubs/management/commands/__init__.pyi,sha256=5YJYyzAoKGyrmZdoANukaIShJ8KKXoC5SwU5G62nsTY,77
+neapolitan-stubs/management/commands/mktemplate.pyi,sha256=REJGptmL9JpmyhVl6Oz-SjehS3ICniUEW3rWlrjYCcw,433
+neapolitan-stubs/templatetags/__init__.pyi,sha256=5YJYyzAoKGyrmZdoANukaIShJ8KKXoC5SwU5G62nsTY,77
+neapolitan-stubs/templatetags/neapolitan.pyi,sha256=WH4rV9qJZOYBVx6MAXTe_5nU5SIyeDmhC2ON-eip3w0,907
+neapolitan_stubs-25.0.dist-info/METADATA,sha256=pqY6DMmLCZ7ZH5b1xs7rIKu9_FQgmOsoGeGY7aMU3mg,2648
+neapolitan_stubs-25.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+neapolitan_stubs-25.0.dist-info/licenses/LICENSE.txt,sha256=vCbAAGa-QBorRIfR11WrS6NMZMmqjOExaVZjYfWgX7Y,1077
+neapolitan_stubs-25.0.dist-info/RECORD,,
