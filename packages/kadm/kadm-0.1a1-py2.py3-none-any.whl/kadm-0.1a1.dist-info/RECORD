@@ -1,0 +1,10 @@
+kadmin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kadmin/attribute.py,sha256=jkaRtErB1S113tGedieDtS8-iaTJ7X4p75_b7dAREs4,266
+kadmin/command.py,sha256=EfM3tfV90UjDwsRRIIgnH1lRzkJUT3tLWqhJouOsf88,858
+kadm-0.1a1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+kadm-0.1a1.dist-info/METADATA,sha256=jyfZKWtH12Guuf3X7piBJvBktsytiusjefCQRDL7mZY,744
+kadm-0.1a1.dist-info/WHEEL,sha256=pWvVuNuBTVmNV7Lp2jMAgt1NplTICeFdl1SW8U3MWN4,109
+kadm-0.1a1.dist-info/entry_points.txt,sha256=JSpAyrM0mUX872jvQENYSbJIRN6TTFgy6Q7Wfv9Bs48,47
+kadm-0.1a1.dist-info/top_level.txt,sha256=0ZMSnTyH25Y9x7TqhoFNEd5jL-R3BS0qJPyhL53TI4I,7
+kadm-0.1a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+kadm-0.1a1.dist-info/RECORD,,
