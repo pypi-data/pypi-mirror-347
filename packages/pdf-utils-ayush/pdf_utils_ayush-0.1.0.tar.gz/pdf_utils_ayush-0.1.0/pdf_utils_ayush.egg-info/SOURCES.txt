@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+pdf_utils_ayush.egg-info/PKG-INFO
+pdf_utils_ayush.egg-info/SOURCES.txt
+pdf_utils_ayush.egg-info/dependency_links.txt
+pdf_utils_ayush.egg-info/top_level.txt
