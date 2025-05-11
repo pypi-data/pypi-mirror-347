@@ -1,0 +1,11 @@
+biopython
+pandas
+numpy
+pyfiglet
+pysam
+pytest
+seaborn
+matplotlib
+pybedtools
+requests
+statsmodels
