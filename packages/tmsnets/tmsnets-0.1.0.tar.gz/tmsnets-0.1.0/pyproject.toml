@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tmsnets"
+version = "0.1.0"
+description = "A library for constructing (t, m, s)-nets over finite fields"
+authors = [
+    { name = "Arsenii Sychev", email = "arseniysychev2015@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "galois"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
