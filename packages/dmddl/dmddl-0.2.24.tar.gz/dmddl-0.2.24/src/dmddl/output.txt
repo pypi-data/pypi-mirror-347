@@ -1,0 +1,37 @@
+-- TABLE: users (15 records)
+INSERT INTO users (user_id, username, email) VALUES 
+(1, 'alice_johnson', 'alice.johnson@example.com'),
+(2, 'bob_smith', 'bob.smith@example.com'),
+(3, 'charlie_brown', 'charlie.brown@example.com'),
+(4, 'diane_green', 'diane.green@example.com'),
+(5, 'edward_white', 'edward.white@example.com'),
+(6, 'frank_black', 'frank.black@example.com'),
+(7, 'grace_kelly', 'grace.kelly@example.com'),
+(8, 'henry_ford', 'henry.ford@example.com'),
+(9, 'iris_davis', 'iris.davis@example.com'),
+(10, 'jack_martin', 'jack.martin@example.com'),
+(11, 'karen_williams', 'karen.williams@example.com'),
+(12, 'louis_james', 'louis.james@example.com'),
+(13, 'maria_anderson', 'maria.anderson@example.com'),
+(14, 'nancy_thomas', 'nancy.thomas@example.com'),
+(15, 'oscar_harrison', 'oscar.harrison@example.com');
+
+-- TABLE: orders (15 records)
+INSERT INTO orders (order_id, user_id, order_date) VALUES 
+(1, 1, '2023-03-01'),
+(2, 2, '2023-03-02'),
+(3, 3, '2023-03-03'),
+(4, 4, '2023-03-04'),
+(5, 5, '2023-03-05'),
+(6, 6, '2023-03-06'),
+(7, 7, '2023-03-07'),
+(8, 8, '2023-03-08'),
+(9, 9, '2023-03-09'),
+(10, 10, '2023-03-10'),
+(11, 11, '2023-03-11'),
+(12, 12, '2023-03-12'),
+(13, 13, '2023-03-13'),
+(14, 14, '2023-03-14'),
+(15, 15, '2023-03-15');
+
+-- WARNING: Ensure user_id in orders exists in users.
