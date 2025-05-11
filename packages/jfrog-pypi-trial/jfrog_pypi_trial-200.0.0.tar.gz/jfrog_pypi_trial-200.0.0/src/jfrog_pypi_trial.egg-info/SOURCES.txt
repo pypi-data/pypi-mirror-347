@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/JfrogPypiTrial/HelloWorld.py
+src/JfrogPypiTrial/__init__.py
+src/jfrog_pypi_trial.egg-info/PKG-INFO
+src/jfrog_pypi_trial.egg-info/SOURCES.txt
+src/jfrog_pypi_trial.egg-info/dependency_links.txt
+src/jfrog_pypi_trial.egg-info/top_level.txt
