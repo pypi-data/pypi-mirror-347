@@ -1,0 +1,13 @@
+sollu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sollu/core.py,sha256=7HHoJ4Di1LVd6TuuusZrZ4CJHNt2Y3d3f9hmgzwaaUo,1868
+sollu/schema.py,sha256=QKvp7HakoXezUNnI3PKBry-xLsyoyMJBdfiZ_WOMMO0,237
+sollu/sollu.py,sha256=rL66ajlB41XgwN4ApD5qI0xNetjE5hLCZQWRXB2e1C8,2592
+sollu/configs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sollu/configs/config.py,sha256=Dp2Mk6fdlyY6taLRX98nj2IRZBv4ROz1HnAMy50uZQA,959
+sollu/configs/prompt.py,sha256=Hw4uPdeIqUAGtpZ9T3xsWnKO6fyX8A-bni3K456Evu8,1220
+sollu-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sollu-0.0.1.dist-info/METADATA,sha256=7jsATqGcjPMdc3cgd4g6rGsE52QGQ_QzG-d56c5V17g,2438
+sollu-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+sollu-0.0.1.dist-info/entry_points.txt,sha256=PuRBscgxY0DUklKX1RTUiENosYNfZN_kq68W-M6ZgdQ,42
+sollu-0.0.1.dist-info/top_level.txt,sha256=FyMy8UQO851CPf-S-r8LiaSg2ukXH4u7wo-T6z9RWts,6
+sollu-0.0.1.dist-info/RECORD,,
