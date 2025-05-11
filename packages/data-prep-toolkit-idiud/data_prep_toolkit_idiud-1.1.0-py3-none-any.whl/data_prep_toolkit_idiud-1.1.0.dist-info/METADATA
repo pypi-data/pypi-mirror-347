@@ -1,0 +1,86 @@
+Metadata-Version: 2.4
+Name: data_prep_toolkit_idiud
+Version: 1.1.0
+Summary: Subset of Data Preparation Toolkit Transforms
+Author-email: Maroun Touma <touma@us.ibm.com>
+License: Apache-2.0
+Keywords: transforms,data preprocessing,data preparation,llm,generative,ai,fine-tuning,llmapps
+Requires-Python: <3.13,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: data-prep-toolkit>=0.2.4
+Provides-Extra: dev
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: pytest>=7.3.2; extra == "dev"
+Requires-Dist: pytest-dotenv>=0.5.2; extra == "dev"
+Requires-Dist: pytest-env>=1.0.0; extra == "dev"
+Requires-Dist: pre-commit>=3.3.2; extra == "dev"
+Requires-Dist: pytest-cov>=4.1.0; extra == "dev"
+Requires-Dist: pytest-mock>=3.10.0; extra == "dev"
+Requires-Dist: moto==5.0.5; extra == "dev"
+Requires-Dist: markupsafe==2.0.1; extra == "dev"
+Provides-Extra: all
+Requires-Dist: mmh3>=4.1.0; extra == "all"
+Requires-Dist: xxhash==3.4.1; extra == "all"
+Requires-Dist: duckdb>=0.10.1; extra == "all"
+Requires-Dist: fasttext-wheel; extra == "all"
+Requires-Dist: langcodes>=3.3.0; extra == "all"
+Requires-Dist: huggingface-hub<1.0.0,>=0.21.4; extra == "all"
+Requires-Dist: numpy==1.26.4; extra == "all"
+Requires-Dist: polars>=1.9.0; extra == "all"
+Requires-Dist: textstat<=0.7.5; extra == "all"
+Requires-Dist: pandas; extra == "all"
+Requires-Dist: nltk>=3.9.1; extra == "all"
+Requires-Dist: requests; extra == "all"
+Requires-Dist: transformers; extra == "all"
+Requires-Dist: pandas; extra == "all"
+Requires-Dist: psutil; extra == "all"
+Requires-Dist: GPUtil; extra == "all"
+Provides-Extra: doc-quality
+Provides-Extra: doc-id
+Provides-Extra: ededup
+Requires-Dist: mmh3>=4.1.0; extra == "ededup"
+Requires-Dist: xxhash==3.4.1; extra == "ededup"
+Provides-Extra: filter
+Requires-Dist: duckdb>=0.10.1; extra == "filter"
+Provides-Extra: resize
+Provides-Extra: lang-id
+Requires-Dist: fasttext-wheel; extra == "lang-id"
+Requires-Dist: langcodes>=3.3.0; extra == "lang-id"
+Requires-Dist: huggingface-hub<1.0.0,>=0.21.4; extra == "lang-id"
+Requires-Dist: numpy==1.26.4; extra == "lang-id"
+Provides-Extra: extreme-tokenized
+Requires-Dist: polars>=1.9.0; extra == "extreme-tokenized"
+Provides-Extra: readability
+Requires-Dist: textstat<=0.7.5; extra == "readability"
+Requires-Dist: pandas; extra == "readability"
+Provides-Extra: rep-removal
+Requires-Dist: nltk>=3.9.1; extra == "rep-removal"
+Requires-Dist: requests; extra == "rep-removal"
+Requires-Dist: transformers; extra == "rep-removal"
+Requires-Dist: pandas; extra == "rep-removal"
+Requires-Dist: psutil; extra == "rep-removal"
+Requires-Dist: GPUtil; extra == "rep-removal"
+
+# DPK Python Transforms
+
+## installation
+
+The [transforms](https://github.com/IBM/data-prep-kit/blob/dev/transforms/README.md) are delivered as a standard pyton library available on pypi and can be installed using pip install:
+
+`python -m pip install data-prep-toolkit-idiud[all]`
+
+## List of Transforms in current package
+
+Note: This list includes the transforms that were part of the wheel.
+
+* [doc_quality](https://github.com/IBM/data-prep-kit/blob/dev/transforms/language/doc_quality/README.md)
+* [lang_id](https://github.com/IBM/data-prep-kit/blob/dev/transforms/language/lang_id/README.md)
+* [ededup](https://github.com/IBM/data-prep-kit/blob/dev/transforms/universal/ededup/README.md)
+* [filter](https://github.com/IBM/data-prep-kit/blob/dev/transforms/universal/filter/README.md)
+* [resize](https://github.com/IBM/data-prep-kit/blob/dev/transforms/universal/resize/README.md)
+* [doc_id](https://github.com/IBM/data-prep-kit/blob/dev/transforms/universal/doc_id/README.md)
+* [extrem tokenized](https://github.com/IBM/data-prep-kit/blob/dev/transforms/language/extreme_tokenized/README.md)
+* [readablity](https://github.com/IBM/data-prep-kit/blob/dev/transforms/language/readability/README.md)
+* [repetition removal](https://github.com/IBM/data-prep-kit/blob/dev/transforms/universal/rep_removal/README.md)
+   
+
