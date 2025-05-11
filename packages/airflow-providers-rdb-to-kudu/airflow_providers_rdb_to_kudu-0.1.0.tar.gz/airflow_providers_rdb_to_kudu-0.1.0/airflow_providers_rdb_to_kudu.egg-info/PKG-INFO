@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: airflow-providers-rdb-to-kudu
+Version: 0.1.0
+Summary: A custom Airflow operator to upsert data from RDB to Kudu.
+Author: Archer Yang
+Author-email: archer.yang@crypto.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Apache Airflow
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: kudu-python
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary

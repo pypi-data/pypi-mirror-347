@@ -1,0 +1,8 @@
+setup.py
+airflow_providers_rdb_to_kudu/RDBToKuduSyncOperator.py
+airflow_providers_rdb_to_kudu/__init__.py
+airflow_providers_rdb_to_kudu.egg-info/PKG-INFO
+airflow_providers_rdb_to_kudu.egg-info/SOURCES.txt
+airflow_providers_rdb_to_kudu.egg-info/dependency_links.txt
+airflow_providers_rdb_to_kudu.egg-info/requires.txt
+airflow_providers_rdb_to_kudu.egg-info/top_level.txt
