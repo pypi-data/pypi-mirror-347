@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: skelmis-commons
+Version: 1.6.1
+Summary: A bunch of Python code I reuse in many projects and wanted to centralise.
+License: MIT
+Author: Skelmis
+Author-email: skelmis.craft@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Documentation, https://python-commons.readthedocs.io/en/latest/
+Project-URL: Homepage, https://github.com/Skelmis/Python-Commons
+Project-URL: Issue tracker, https://github.com/Skelmis/Python-Commons/issues
+Description-Content-Type: text/markdown
+
+# Python-Commons
+A bunch of Python code I reuse in many projects and wanted to centralise
+
