@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: streamlit-excel
+Version: 0.0.1
+Summary: Build Excel-style filter panels for pandas DataFrames in Streamlit
+Home-page: https://github.com/sbslee/streamlit-excel
+Author: Seung-been "Steven" Lee
+Author-email: sbstevenlee@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# streamlit-excel
