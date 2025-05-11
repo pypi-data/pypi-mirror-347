@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: geoyolo
+Version: 0.1.0
+Summary: A high performance object detection inference engine for arbitrarily large satellite imagery.
+Author-email: Andrew Ryan <andrewryan@duck.com>
+License: MIT
+Project-URL: Homepage, https://github.com/andreweryan/geoyolo
+Project-URL: Bug Tracker, https://github.com/andreweryan/geoyolo/issues
+Project-URL: Source Code, https://github.com/andreweryan/geoyolo
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: rtree
+Requires-Dist: pyqtree
+Requires-Dist: numba
+Requires-Dist: tqdm
+Requires-Dist: Pillow
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: shapely
+Requires-Dist: affine
+Requires-Dist: rasterio
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: psycopg2-binary
+Requires-Dist: sqlalchemy
+Requires-Dist: ultralytics
+Requires-Dist: scikit-image
+Requires-Dist: albumentations
+Requires-Dist: pre-commit
+Requires-Dist: pytest
+Requires-Dist: black
+Requires-Dist: flake8
+Requires-Dist: isort
+Requires-Dist: mypy
+Requires-Dist: detect-secrets
+Requires-Dist: no_implicit_optional
+Dynamic: license-file
+
+# geoyolo
+A high performance object detection inference engine for arbitrarily large satellite imagery
+
+## TODO:
+
+## Usage:
+
+```
+
+```
