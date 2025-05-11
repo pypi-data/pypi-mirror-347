@@ -1,0 +1,10 @@
+torch_anatomy/__init__.py,sha256=88RqbZB34x98KfUD4cKwtGYkTpeKdErT4AaeyFo2qRo,41
+torch_anatomy/cli.py,sha256=HqpCmZAJzaHCzwd6pIxLpJJM8ggKu_CcTRsIDdLB9EA,646
+torch_anatomy/utils.py,sha256=md3zYMFf9pd5-KPqrDQmOSarNEthgr4EiwvMGrJG_V8,711
+torch_anatomy/visualizer.py,sha256=p7ySNI3QC0tDp7Gtr3izTwTa59pS7b32GpumF9gMtFA,4329
+torch_anatomy-0.1.0.dist-info/licenses/LICENSE,sha256=JduonM4sFL2uuD8HSUaNcn_WZvJDMcosyGswY75yGL0,130
+torch_anatomy-0.1.0.dist-info/METADATA,sha256=sEIjcQ0mX_GeNjyGW4MXx1WFk9enPp6g4hNfTcqacB0,424
+torch_anatomy-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+torch_anatomy-0.1.0.dist-info/entry_points.txt,sha256=lw0OjHPzPgPkAi6CxpG4pKVZuSOqmTovy2eXSueGqek,57
+torch_anatomy-0.1.0.dist-info/top_level.txt,sha256=vziOynJERNzAgV4gbNcnCd3ZKgD_SJvFzRaVZuCLWiQ,14
+torch_anatomy-0.1.0.dist-info/RECORD,,
