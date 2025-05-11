@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: tempconverter2025_user
+Version: 0.1
+Summary: Simple project depending on tempconverter2025
+Home-page: https://github.com/Cryptonations/tempconverter2025_user
+Author: Boss
+Author-email: Vladimirtlv@gmail.com
+Requires-Dist: tempconverter2025
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
