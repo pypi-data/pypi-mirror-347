@@ -1,0 +1,10 @@
+passagemath_libecm.dylibs/libgmp.10.dylib,sha256=ldgIgtm7MixUSrpvAG3I9yi0FSxnluQAQ0Ooar3M-Mo,464688
+passagemath_libecm-10.5.32.dist-info/RECORD,,
+passagemath_libecm-10.5.32.dist-info/WHEEL,sha256=45GdgOZL0u6qqHbrUZEDTW7BE45eNG09GYNGLXiY8rY,136
+passagemath_libecm-10.5.32.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_libecm-10.5.32.dist-info/METADATA,sha256=RFDQHxipaPt3ukUsFj9Q-1gkU4-4ckI8i7jLXByQA50,4210
+sage/all__sagemath_libecm.py,sha256=FtWvYOeqYlrzh21q4O6QunQOaaVTDJGBQvvYjqtqzeo,45
+sage/libs/all__sagemath_libecm.py,sha256=FtWvYOeqYlrzh21q4O6QunQOaaVTDJGBQvvYjqtqzeo,45
+sage/libs/libecm.cpython-312-darwin.so,sha256=mYUqwMs04TixqB03ClA_nAsEUi3x-4fJgdB0mdigH6k,376800
+sage/interfaces/all__sagemath_libecm.py,sha256=FtWvYOeqYlrzh21q4O6QunQOaaVTDJGBQvvYjqtqzeo,45
+sage/interfaces/ecm.py,sha256=ABlVkGEZCgZ9cjgsJezSkJ-mQAJRGiYiwlHFQoCcYAw,30696
