@@ -1,0 +1,3 @@
+[console_scripts]
+lstm-predict = lstm_reader.core:read_predict
+lstm-train = lstm_reader.core:read_train
