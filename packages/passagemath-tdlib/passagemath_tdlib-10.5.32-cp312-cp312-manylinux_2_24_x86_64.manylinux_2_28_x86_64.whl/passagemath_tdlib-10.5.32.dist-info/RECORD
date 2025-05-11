@@ -1,0 +1,8 @@
+sage/all__sagemath_tdlib.py,sha256=xwEAp-3HSleZKAjcgudzEBoWekMyMSx7mY9lzHCETcU,44
+sage/graphs/all__sagemath_tdlib.py,sha256=xwEAp-3HSleZKAjcgudzEBoWekMyMSx7mY9lzHCETcU,44
+sage/graphs/graph_decompositions/all__sagemath_tdlib.py,sha256=xwEAp-3HSleZKAjcgudzEBoWekMyMSx7mY9lzHCETcU,44
+sage/graphs/graph_decompositions/tdlib.cpython-312-x86_64-linux-gnu.so,sha256=8G4W4N1BJ0ivXENHlGGn4_7JS9hNcdggWEmqwq5lu0o,6470208
+passagemath_tdlib-10.5.32.dist-info/METADATA,sha256=N0p3Ui8UBpnE6Kwf2JABju3tBkJ_xzXeuIY823NOl7Q,4082
+passagemath_tdlib-10.5.32.dist-info/WHEEL,sha256=graRAAgv9vwPihvzPguH_M3J6Gp7BIPxpy3khH1Cxbs,152
+passagemath_tdlib-10.5.32.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_tdlib-10.5.32.dist-info/RECORD,,
