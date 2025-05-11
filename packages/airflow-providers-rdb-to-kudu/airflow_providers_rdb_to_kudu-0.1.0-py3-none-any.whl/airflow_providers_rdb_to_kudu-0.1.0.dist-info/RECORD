@@ -1,0 +1,6 @@
+airflow_providers_rdb_to_kudu/RDBToKuduSyncOperator.py,sha256=8eeXFmUy-GyC9-PgOHCVeMR-nYNhbhgAHfwhswWOg3k,5836
+airflow_providers_rdb_to_kudu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_providers_rdb_to_kudu-0.1.0.dist-info/METADATA,sha256=OA6-aZlOwd0QX9sRmz3Vt3sjDgiQrxMOOPrCnTgdrK8,462
+airflow_providers_rdb_to_kudu-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+airflow_providers_rdb_to_kudu-0.1.0.dist-info/top_level.txt,sha256=Bfva9gNEGIT2uDplN_e-WCY6XJDDKdA10qnqLKEyjno,30
+airflow_providers_rdb_to_kudu-0.1.0.dist-info/RECORD,,
