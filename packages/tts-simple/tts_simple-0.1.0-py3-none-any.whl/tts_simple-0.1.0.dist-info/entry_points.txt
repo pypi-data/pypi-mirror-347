@@ -1,0 +1,2 @@
+[console_scripts]
+tts-simple = tts_simple.core:main
