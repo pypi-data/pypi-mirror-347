@@ -1,0 +1,5 @@
+docling
+fastapi[standard]>=0.115.12
+httpx
+markdown2
+transformers>=4.50.1
