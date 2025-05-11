@@ -1,0 +1,88 @@
+Metadata-Version: 2.4
+Name: pdfsp
+Version: 0.1.7
+Summary: Extracts data from PDF files and saves it to Excel files.
+Project-URL: Repository, https://github.com/SermetPekin/pdfsp
+Project-URL: Documentation, https://pdfsp.readthedocs.io/en/latest/home.html
+Author-email: Sermet Pekin <Sermet.Pekin@gmail.com>
+License: EUPL-1.2
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pdfplumber>=0.11.6
+Description-Content-Type: text/markdown
+
+# 📄 pdfsp
+---
+
+**`pdfsp`** is a Python package that extracts tables from PDF files and saves them to Excel. It also provides a simple Streamlit app for interactive viewing of the extracted data.
+
+---
+
+## 🚀 Features
+
+- Extracts tabular data from PDFs using `pdfplumber`
+- Converts tables into `pandas` DataFrames
+- Saves output as `.xlsx` Excel files using `openpyxl`
+- Ensures column names are unique to prevent issues
+- Visualizes DataFrames with `streamlit`
+
+---
+
+## 📦 Installation
+
+Make sure you're using **Python 3.10 or newer**, then install with:
+
+```bash
+pip install pdfsp -U
+
+```
+
+
+
+### python script 
+```python
+# pdf.py 
+from pdfsp import extract_tables
+
+source_folder = "."
+output_folder = "output"
+
+extract_tables(source_folder, output_folder )
+
+```
+
+### From console / Terminal / Command Line 
+
+```bash 
+# all tables from all pdf files in the current folder to current folder 
+pdfsp . . 
+# all tables from all pdf files in someFolder to current SomeOutFolder 
+pdfsp someFolder SomeOutFolder 
+
+
+# all tables of some.pdf to the current folder 
+pdfsp some.pdf .
+
+# all tables of some.pdf to the toThisFolder folder 
+pdfsp some.pdf toThisFolder
+
+```
+
+```plaintext
+=== 📊 Extraction Summary Report ===
+✅ Successful Files: 3
+   - data/report1.pdf → 🗂️ 5 tables extracted
+   - data/summary2.pdf → 🗂️ 3 tables extracted
+   - data/financials.pdf → 🗂️ 7 tables extracted
+
+❌ Failed Files: 1
+   - data/corrupted.pdf
+
+⚠️ Some files failed to process. See details above.
+
+
+```
+
+
