@@ -1,0 +1,11 @@
+glitch_forge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glitch_forge/_version.py,sha256=0XtcHo_6pfNZOWCCO2vWmf45GEhDB3v7f07V91P06TA,102
+glitch_forge/example.py,sha256=IlMA1U6Npy118V9vlNrYrfJxoKJfYQ59vtL1UQY4hAs,1846
+glitch_forge/glitcher.py,sha256=qAnP5QBxuHk-TmQ4d4FRSlPA9WC29OcHNhJ6Gnj6yLg,3543
+glitch_forge/parameter.py,sha256=vZ1RpJGgnkt7b3I9xT2Rkw20DtpCz7dJR0YxmT-U0h8,2489
+glitch_forge/ui.py,sha256=YbqPuMz72H0vq_4V8nOE1Ar1bZVK_cQh9MnwdEEZoFc,7123
+glitch_forge-1.0.2.dist-info/LICENSE,sha256=q22jMRFZh1OSpE-hBWEwajptrQ1j09l-g9p_cAszN0Y,1068
+glitch_forge-1.0.2.dist-info/METADATA,sha256=mPFMRhj7gpRB13yXkPE5Rg2Sbfr3mg7U8oY3a2hXvCU,3799
+glitch_forge-1.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+glitch_forge-1.0.2.dist-info/top_level.txt,sha256=W64hDokO161jRrFRMbPgKIqwGOzG8sbfI3cVlajTzhs,13
+glitch_forge-1.0.2.dist-info/RECORD,,
