@@ -1,0 +1,20 @@
+# URL to ddmail applikation that should be test.
+URL = "https://www.ddmail.se"
+
+# Sleep time between test, this is to prevent dos protection to block us.
+SLEEP_TIME = 120
+
+# This account is used to preforme the test, it needs to be activated.
+[TEST_ACCOUNT]
+ACCOUNT = "change_me"
+USERNAME = "change_me"
+PASSWORD = "change_me"
+KEY_FILE_PATH = "change_me"
+
+[LOGGING]
+LOGLEVEL = 'INFO'
+LOG_TO_CONSOLE = true
+LOG_TO_FILE = true
+LOGFILE = "/var/log/ddmail_e2e_testing.log"
+LOG_TO_SYSLOG = true
+SYSLOG_SERVER = "/dev/log"
