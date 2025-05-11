@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/creddit/__init__.py
+src/creddit/__main__.py
+src/creddit/config.py
+src/creddit/py.typed
+src/creddit/reddit.py
+src/creddit/terminal.py
+src/creddit.egg-info/PKG-INFO
+src/creddit.egg-info/SOURCES.txt
+src/creddit.egg-info/dependency_links.txt
+src/creddit.egg-info/requires.txt
+src/creddit.egg-info/top_level.txt
