@@ -1,0 +1,11 @@
+creddit/__init__.py,sha256=D6gRU_goqZR58NMSDfgdiWMVi20YDsBRUDUQxT66EGM,81
+creddit/__main__.py,sha256=fKdyZ_tkgzfFwJkC98x6-eXBYcXMyEmFKBBXAWjwUQU,75
+creddit/config.py,sha256=ngZ9qYM9_NVbMAcvEQ81fRY6Ohz3InW0KSUVydXPYso,3204
+creddit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+creddit/reddit.py,sha256=ugmtumjWw2GdqiAwbuO_gyco3U1z6dG3dMa2BWlwZZ0,4605
+creddit/terminal.py,sha256=SNLDZQWs2NbbU2wysG5D7sN9l11IosgexDTgjz0TtSY,12855
+creddit-0.0.1.dist-info/licenses/LICENSE,sha256=TfGELALVa4NFNIOMn6asE14LycjEIGoHL6O8fm0WRHU,1105
+creddit-0.0.1.dist-info/METADATA,sha256=jzDRIX5qiRR0w79hxZ7j8g9ypN8coCZOel9sPYm0sJc,1835
+creddit-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+creddit-0.0.1.dist-info/top_level.txt,sha256=Q2-CEVcpBfG-GG9VrGszVWASy03D0PcOpYUvTnugl-0,8
+creddit-0.0.1.dist-info/RECORD,,
