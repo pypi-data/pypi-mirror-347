@@ -1,0 +1,2 @@
+[console_scripts]
+eventbridge-explorer = main:main
