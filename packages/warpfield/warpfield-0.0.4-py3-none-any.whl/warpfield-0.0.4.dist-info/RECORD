@@ -1,0 +1,12 @@
+warpfield/__init__.py,sha256=QWQOYF_0-Afj8KJbuuo2tNBHSTCD4o8RdAkR4_gwQ8k,144
+warpfield/__main__.py,sha256=cXCLxU3DlRP1JZ1Tqa2Z4b9OLIK90RFnd88TEXtGRiI,3265
+warpfield/ndimage.py,sha256=-SZelptzHNzo63l1gxIDp0rcmjccNWE1pde4Zm8vJS8,13686
+warpfield/register.py,sha256=C3O2vD3VDzvDVjM4n9D02WCLV12PPg6PGxFJN2EVt20,32283
+warpfield/utils.py,sha256=V8hYaeYmrosy7uMrYciDSyAnxyH-30RV6lO17ACN1W0,11970
+warpfield/warp.py,sha256=A04iSUNKiH0annOIAtSkIvW8eo-nzArlZm5TbxF9DWw,4531
+warpfield-0.0.4.dist-info/licenses/LICENSE,sha256=mUNAxIWH48FIpcbQFXkPZWqds0NLZZedQaVjySqcCak,1074
+warpfield-0.0.4.dist-info/METADATA,sha256=MOTZbvNXHZmmuLWTr8K5JMCc8IzHczt-gaqxpf9CHMM,17942
+warpfield-0.0.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+warpfield-0.0.4.dist-info/entry_points.txt,sha256=jbwPkFv3Psq4uuctXdEOejHt3b6C-gRv-RbvBgQWcsM,54
+warpfield-0.0.4.dist-info/top_level.txt,sha256=eQxAFGREwzJnIqR-ZQBtbeYuqdHoNQApsmlH2g4OuOM,10
+warpfield-0.0.4.dist-info/RECORD,,
