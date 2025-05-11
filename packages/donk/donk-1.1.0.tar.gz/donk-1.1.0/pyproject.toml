@@ -1,0 +1,24 @@
+[project]
+name = "donk"
+version = "1.1.0"
+description = "donk is a minimal version management tool for pyproject.toml files"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["click>=8.1.8", "semver>=3.0.4", "tomlkit>=0.13.2"]
+
+[project.scripts]
+donk = "donk.main:run"
+
+# Random comment for persistance
+
+[test]
+wombat = "3.2.1"
+
+[tool.ruff]
+line-length = 88
+
+[tool.donk]
+write_module_version = "donk/__init__.py"
+
+[dependency-groups]
+dev = ["twine>=6.1.0"]
