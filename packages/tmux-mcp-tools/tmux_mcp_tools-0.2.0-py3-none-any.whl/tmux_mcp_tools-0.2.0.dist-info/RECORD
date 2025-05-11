@@ -1,0 +1,8 @@
+tmux_mcp_tools/__init__.py,sha256=BY76WuBBpJgOGq-cr6lBMlb8LS1YRDWVSVDxamDvhzU,90
+tmux_mcp_tools/client.py,sha256=K4Hv8i_0lGBJImDln4k3WKOBHpbgx1uvz2HAZVJtOr4,10166
+tmux_mcp_tools/server.py,sha256=ui0Es_40b8xIcB5M3QF4vwyzKD5Y_9K7ZV_osrcpRIQ,7973
+tmux_mcp_tools-0.2.0.dist-info/METADATA,sha256=Ok4fhk29n-rnbF1-0G3TobSIWK4Wsk3hXwx2aPNOJpo,1039
+tmux_mcp_tools-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+tmux_mcp_tools-0.2.0.dist-info/entry_points.txt,sha256=SNCbLaPry3emtLxTzcLAV2XVRjCsrFXFGXhCUo_fYU4,106
+tmux_mcp_tools-0.2.0.dist-info/licenses/LICENSE,sha256=Btzdu2kIoMbdSp6OyCLupB1aRgpTCJ_szMimgEnpkkE,1056
+tmux_mcp_tools-0.2.0.dist-info/RECORD,,
