@@ -1,0 +1,10 @@
+pymatlie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymatlie/base_group.py,sha256=c2FDA2M7dcu2uew6HZJ2v2rJ6EYiW711zL01jsq77Hk,11611
+pymatlie/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymatlie/se2.py,sha256=RRr8lReFau-TCix04ZS4-y8E7xNlF6s13fjTSxK3XE4,8195
+pymatlie/so2.py,sha256=hkEMj5YYT9dHkuuV42HmSFI1MZVjXalyw12zUM4avOY,4430
+pymatlie/vecops.py,sha256=Hckwrd769FDUiTTidb8c1seqj4kIpmT6Wbg4wwj1vYM,492
+pymatlie-0.0.1a0.dist-info/METADATA,sha256=Do0DNIt6jW1JtVkIEPXiJyW09USfYUGyA7a2YdM4PoQ,1908
+pymatlie-0.0.1a0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pymatlie-0.0.1a0.dist-info/licenses/LICENSE,sha256=_M92b3c2gi8xJOWe-8hvvxOqFh4lN3-XdxH_06XHphc,1069
+pymatlie-0.0.1a0.dist-info/RECORD,,
