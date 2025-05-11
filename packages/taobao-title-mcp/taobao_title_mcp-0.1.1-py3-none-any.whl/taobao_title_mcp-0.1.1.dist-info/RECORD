@@ -1,0 +1,15 @@
+taobao_title_mcp/README.md,sha256=wTClpAkZtcPiisirR-bmc8nTTMAKQd62PArxaimV3fU,2503
+taobao_title_mcp/__init__.py,sha256=xmYkm1Q8GngBfV-__DmfpZ96IzAkZFEjMoZtxTw72s4,143
+taobao_title_mcp/__main__.py,sha256=eK-MjMfXbzV4zXDHa40IMZWUpmdvwgf8FJwj4LiLG04,1160
+taobao_title_mcp/server.py,sha256=uaFvbnjkYLs5dsQDXoLhbUpuGUY8pw9ch8Jdwa7jwrc,706
+taobao_title_mcp/prompts/__init__.py,sha256=aranypOh7eDYDk8XYSaFLBk2DhzUTCTla1sWi6pp6GE,80
+taobao_title_mcp/prompts/title_prompts.py,sha256=AbVRiBaTZoBLG8LnVYvf65IvZ2PdfYvFPAkHEKL-Wmw,2911
+taobao_title_mcp/resources/__init__.py,sha256=PeHhXxdrzDuoeN1tee-libaQ3a4X-Ebx8mgz3gDJ6YA,81
+taobao_title_mcp/resources/info_resources.py,sha256=s7uPye0YUvUA9RSj5CU3k8Ic-Z0kNW6-j8lPeuNN71s,2982
+taobao_title_mcp/tools/__init__.py,sha256=rpgB4_nEH13bVaCyjdnoS7OgXfBygGOSHyE-wpORuuE,78
+taobao_title_mcp/tools/title_tools.py,sha256=modnx59dubj3e_M9sKHhfs5YFQK1zSn1p4Gm4L2we48,4544
+taobao_title_mcp-0.1.1.dist-info/METADATA,sha256=isQUszeMpwJnfVkXkZKTjtOdv8GGFrg8j4l3pCCWD6w,3667
+taobao_title_mcp-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+taobao_title_mcp-0.1.1.dist-info/entry_points.txt,sha256=wYg8nPNVqWJ7wrtALcGP5VpXSZHDCTJwApLvZGjZV_w,68
+taobao_title_mcp-0.1.1.dist-info/top_level.txt,sha256=WPOT38V5LLh2bF08QrhI5Hde8DpUUjykSjSsd6JNexc,17
+taobao_title_mcp-0.1.1.dist-info/RECORD,,
