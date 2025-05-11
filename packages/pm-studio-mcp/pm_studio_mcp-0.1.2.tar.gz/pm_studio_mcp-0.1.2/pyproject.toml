@@ -1,0 +1,23 @@
+[project]
+name = "pm-studio-mcp"
+version = "0.1.2"
+description = "PM Studio MCP Server - A Model Context Protocol server for product managers"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp",
+    "googlesearch-python",
+    "seaborn",
+    "matplotlib",
+    "scikit-learn",
+    "pandas",
+    "numpy",
+    "openpyxl>=3.1.5",
+    "markitdown[all]",
+    "praw>=7.7.0",
+    "azure-identity>=1.21.0",
+    "azure-ai-inference>=1.0.0b9",
+]
+
+[project.scripts]
+pm-studio-mcp = "pm_studio_mcp.main:main"

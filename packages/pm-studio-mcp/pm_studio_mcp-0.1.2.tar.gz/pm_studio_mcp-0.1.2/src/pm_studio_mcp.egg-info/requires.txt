@@ -1,0 +1,12 @@
+fastmcp
+googlesearch-python
+seaborn
+matplotlib
+scikit-learn
+pandas
+numpy
+openpyxl>=3.1.5
+markitdown[all]
+praw>=7.7.0
+azure-identity>=1.21.0
+azure-ai-inference>=1.0.0b9
