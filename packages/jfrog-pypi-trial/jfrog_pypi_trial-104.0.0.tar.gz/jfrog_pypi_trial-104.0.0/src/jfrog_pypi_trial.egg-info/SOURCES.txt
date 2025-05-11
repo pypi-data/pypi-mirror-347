@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/jfrog_pypi_trial.egg-info/PKG-INFO
+src/jfrog_pypi_trial.egg-info/SOURCES.txt
+src/jfrog_pypi_trial.egg-info/dependency_links.txt
+src/jfrog_pypi_trial.egg-info/top_level.txt
