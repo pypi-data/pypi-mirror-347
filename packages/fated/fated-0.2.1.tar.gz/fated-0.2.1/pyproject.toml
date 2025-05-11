@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fated"
+version = "0.2.1"
+authors = [
+  { name = "Fred", email = "fredised@users.noreply.github.com" },
+]
+description = "A Python library for adding visual effects to terminal text output"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: General",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "build>=1.1.1",
+    "setuptools>=68.0.0",
+    "twine>=4.0.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fredised/fated"
+"Bug Tracker" = "https://github.com/fredised/fated/issues"
