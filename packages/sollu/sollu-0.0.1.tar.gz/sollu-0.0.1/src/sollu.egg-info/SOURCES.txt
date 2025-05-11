@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/sollu/__init__.py
+src/sollu/core.py
+src/sollu/schema.py
+src/sollu/sollu.py
+src/sollu.egg-info/PKG-INFO
+src/sollu.egg-info/SOURCES.txt
+src/sollu.egg-info/dependency_links.txt
+src/sollu.egg-info/entry_points.txt
+src/sollu.egg-info/requires.txt
+src/sollu.egg-info/top_level.txt
+src/sollu/configs/__init__.py
+src/sollu/configs/config.py
+src/sollu/configs/prompt.py
+tests/test_sollu.py
