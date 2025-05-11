@@ -1,0 +1,2 @@
+[console_scripts]
+pdfforge = mkpdf.cli:main
