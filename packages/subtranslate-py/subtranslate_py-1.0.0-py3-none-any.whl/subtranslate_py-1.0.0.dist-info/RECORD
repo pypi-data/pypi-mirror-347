@@ -1,0 +1,13 @@
+subtranslate/__init__.py,sha256=sNI92BOKgUOU9DFs5YQewETrHFXedWnslGHwkR4kQqM,85
+subtranslate/__main__.py,sha256=g8iGEwFEmhBP1bLoNqyOkBtq6ic8hQwaLkLDtWm-kk0,1064
+subtranslate/cli.py,sha256=1fGhkaUs-O4zx0wLctr3uPY-6ySfgYrGy7yyxjwxDwU,7146
+subtranslate_py-1.0.0.dist-info/licenses/LICENSE.txt,sha256=TJu0khkAD-_0BFwbVjxyyKBzvtk7hQqpTiIOAh5zTZg,1065
+utilities/__init__.py,sha256=OgfKSH-pocaEElsm5-dL-VsPbWQVgBzBnKbd96RZDHo,91
+utilities/util_srt.py,sha256=xwyOB89PrZpYcksFein9HboIjRlcbI0uEdeW8NJekpo,6405
+utilities/util_trans.py,sha256=cvRBp8JJUV359WRxuDmDY2eEJwhZYTCaLzi4hgjvaOg,10740
+utilities/utils.py,sha256=zGbRcaFWYLDnc35zs6ymmaKBmNLi1BdfyCZ2LiqgREU,6087
+subtranslate_py-1.0.0.dist-info/METADATA,sha256=DmcJx4J4gl5BJoaRnW8pIKNEoKyS2rX5QqrSztavv9Y,10399
+subtranslate_py-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+subtranslate_py-1.0.0.dist-info/entry_points.txt,sha256=RH9o3mxvsZIU4Keo6Gse36CssIMWESVr6y3lt_eeqqc,60
+subtranslate_py-1.0.0.dist-info/top_level.txt,sha256=EjoZl62nnczKBPUskxmJkgYUdv41Fqj8nVuo3V6g8Ik,23
+subtranslate_py-1.0.0.dist-info/RECORD,,
