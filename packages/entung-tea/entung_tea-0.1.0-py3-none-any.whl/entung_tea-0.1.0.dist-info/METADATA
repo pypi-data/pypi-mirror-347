@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: entung_tea
+Version: 0.1.0
+Summary: Paket contoh untuk tea protocol
+Home-page: https://github.com/entung-prog/entung-tea
+Author: Entung
+Author-email: entung@example.com
+Project-URL: Source, https://github.com/entung-prog/entung-tea
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-python
+Dynamic: summary
