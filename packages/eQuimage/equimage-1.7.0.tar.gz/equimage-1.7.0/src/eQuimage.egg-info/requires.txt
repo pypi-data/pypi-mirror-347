@@ -1,0 +1,11 @@
+numpy
+matplotlib>=3.0
+scipy
+pywavelets
+pillow
+tifffile
+imagecodecs
+astropy
+scikit-image>=0.21.0
+PyGObject>=3.0
+dask
