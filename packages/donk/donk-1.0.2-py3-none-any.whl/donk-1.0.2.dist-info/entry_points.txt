@@ -1,0 +1,2 @@
+[console_scripts]
+donk = donk.main:run
