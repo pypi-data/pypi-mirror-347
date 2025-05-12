@@ -1,0 +1,2 @@
+[console_scripts]
+liquid-cli = liquidai_cli.cli:main
