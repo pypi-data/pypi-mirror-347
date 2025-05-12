@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: labda
+Version: 0.0.13.dev0
+Summary: Library for Advanced Behavioural Data Analysis
+Project-URL: homepage, https://labda.josefheidler.cz
+Project-URL: repository, https://github.com/josefheidler/labda
+Project-URL: documentation, https://labda.josefheidler.cz
+Author-email: Josef Heidler <jheidler@health.sdu.dk>
+Maintainer-email: Josef Heidler <jheidler@health.sdu.dk>
+License-Expression: MIT
+License-File: LICENSE.md
+Keywords: accelerometer,analysis,behaviour,data,gps,health,movement,spatial,transport
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.12
+Requires-Dist: geopandas>=1.0.1
+Requires-Dist: geopy>=2.4.1
+Requires-Dist: kaleido==0.2.1
+Requires-Dist: mappymatch>=0.6.0
+Requires-Dist: openmovement
+Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: osmnx>=2.0.1
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pandera[geopandas]>=0.23.1
+Requires-Dist: pillow>=11.1.0
+Requires-Dist: plotly>=5.24.1
+Requires-Dist: pyarrow>=18.1.0
+Requires-Dist: pydantic[email]>=2.10.3
+Requires-Dist: pydeck>=0.9.1
+Requires-Dist: pygt3x>=0.7.1
+Requires-Dist: pyproj>=3.7.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: scikit-learn>=1.6.1
+Requires-Dist: scipy>=1.15.0
+Requires-Dist: shapely>=2.0.6
+Requires-Dist: timezonefinder>=6.5.7
+Requires-Dist: tqdm>=4.67.1
+Description-Content-Type: text/markdown
+
+[![pypi](https://img.shields.io/pypi/v/labda.svg)](https://pypi.python.org/pypi/labda)
+[![downloads](https://static.pepy.tech/badge/labda/month)](https://pepy.tech/project/labda)
+[![versions](https://img.shields.io/pypi/pyversions/labda.svg)](https://github.com/josefheidler/labda)
+[![discord](https://img.shields.io/discord/1165947556807848016)](https://discord.gg/qu6ax5Q64j)
+
+# LABDA: Library for Advanced Behavioural Data Analysis
+
+LABDA, a Python package built for health researchers, transforms raw movement data into compelling stories about human behaviour.
+
