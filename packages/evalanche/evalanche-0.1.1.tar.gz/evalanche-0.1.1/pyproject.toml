@@ -1,0 +1,14 @@
+[project]
+name = "evalanche"
+version = "0.1.1"
+description = "Evaluate your LLMs, on various security & quality metrics"
+readme = "README.md"
+authors = [
+    { name = "mbti", email = "mbti-devs-tbd@mercedes-benz.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
