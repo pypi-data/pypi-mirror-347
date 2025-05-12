@@ -1,0 +1,16 @@
+gamechanger_client/__init__.py,sha256=fQ_AnrlvdCVsVosjdvySCsWrCA5GPDtW0hbg7pIf-PU,3069
+gamechanger_client/config.py,sha256=l4rzZsNBIv3wwOoYYbVnY183jQnYxKjctnstA3-GcPQ,212
+gamechanger_client/exceptions.py,sha256=rbOXI6h19Up7VA6WKcZBcx3NWn4UOpyDx08FceTTCGI,2349
+gamechanger_client/http_session.py,sha256=vcKbmqog9Y3slm_zw2brplNC46VNzZ0XmWThW3GuKFo,9283
+gamechanger_client/version.py,sha256=gT1QcZRjpdbNsSUbo4s6XtNKGV2wCLmoVDF3OlhuDHE,77
+gamechanger_client/endpoints/clips.py,sha256=n_MT53OwXgCO5j0B8ywwt-Ug2VMiHsZvkXkbW7CY1Qc,353
+gamechanger_client/endpoints/me.py,sha256=w8FIdOnd91ft98Vp8UVqKoGJVAouch6-DAo9pzo0qug,498
+gamechanger_client/endpoints/organizations.py,sha256=-tcaYomKYENj5Hfli73p-9fSLusEoEcXsT-GdoVyF5A,495
+gamechanger_client/endpoints/public.py,sha256=2k0QFmPUv8hGt6QP9KhJGqzS1Z_9723awsT4n0mcl-E,810
+gamechanger_client/endpoints/rest_endpoint.py,sha256=mPOPBFdzbymh6cwp1sKFY5z2EAZUopmqJJr33EMp_tk,3567
+gamechanger_client/endpoints/search.py,sha256=aQ4k0u8D41j5DCuH5Fqgq800tdrsUtE0jGzc6ynPPSk,427
+gamechanger_client/endpoints/teams.py,sha256=EHbZoZvVebOmJkYJ5D3Gk5zIb00augizCnUZhWON8HI,1327
+gamechanger_client-0.0.2.dist-info/METADATA,sha256=K8Y2BzaXUfqWxap2Quque3KDiiU4rYNqM-rCfz6nGwk,1115
+gamechanger_client-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gamechanger_client-0.0.2.dist-info/licenses/LICENSE,sha256=CbAWSegfehEkYk2hIXUi4ZA4GvJ9JPu-iD5473aNfC8,1065
+gamechanger_client-0.0.2.dist-info/RECORD,,
