@@ -1,0 +1,29 @@
+[project]
+name = "easy_dna"
+version = "0.4.1"
+license = "MIT"
+authors = [{ name = "Zulko" }]
+description = "Methods for DNA sequence reading, writing and editing."
+readme = "pypi-readme.rst"
+keywords = ["DNA", "sequence", "Genbank", "record", "editing"]
+dependencies = [
+  "numpy",
+  "Biopython",
+  "snapgene_reader",
+  "flametree",
+  "pandas",
+  "crazydoc",
+]
+
+[project.urls]
+Homepage = "https://github.com/Edinburgh-Genome-Foundry/easy_dna"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["docs*", "tests*"]
+
+[tool.setuptools.package-data]
+easy_dna = ["data/*"]
