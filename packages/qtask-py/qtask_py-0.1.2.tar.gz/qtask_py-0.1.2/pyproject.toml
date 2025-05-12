@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "qtask-py"
+version = "0.1.2"
+description = ""
+authors = ["Rafael Garcia Suarez <rafaeljosegarciasuarez@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+redis = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
