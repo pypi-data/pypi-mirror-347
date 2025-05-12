@@ -1,0 +1,13 @@
+pyfost/adminui/__init__.py,sha256=fpje96f_Og_dMJ0VivHy_wpUr9nUUBitvEx-WBQZGEE,67
+pyfost/adminui/admin.py,sha256=_vuSjzbNX_DiAxo30oJd6Cr_5GKU2jew5EqmAtMVFRM,3986
+pyfost/adminui/model_base.py,sha256=hOEmYAWkxxA2kDGtCvKReGOspUFzmADGh2AQn9kGYbA,2411
+pyfost/adminui/model_card.py,sha256=bYd1VF_9oLfe3wVCRmyg_3WLmpLjNgUck5GmirkCpYo,2088
+pyfost/adminui/model_view.py,sha256=BqA7EvPx2W3Bm4MTKKWm5bhIGoCg3-myhhzHmVyTMI4,11778
+pyfost/adminui/examples/backend_api.py,sha256=YEs9DfZFJ2v-QeIUSTW4EEh14XQVgWOUMGcFnP9T5WE,5226
+pyfost/adminui/examples/simple.py,sha256=OpCc7WBR_PW66zAJmvEwZAf2_aKZvn8ECA5l-5qzcRs,4917
+pyfost/adminui/renderers/column.py,sha256=_OxVR-C2UiPVQFSVYNhRrNJTGkFK6uDcMNNWUt28FwA,1597
+pyfost/adminui/renderers/field.py,sha256=X0W7Fw4aJXvCWrIz3V6ApqRCBKWytkx_lIEIYO8KHg8,4672
+pyfost_adminui-0.1.0a1.dist-info/METADATA,sha256=qTSovdzKJk5Sy-4iKiVuMVOn-jhGb9Aca5kLTai8VbQ,2684
+pyfost_adminui-0.1.0a1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyfost_adminui-0.1.0a1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyfost_adminui-0.1.0a1.dist-info/RECORD,,
