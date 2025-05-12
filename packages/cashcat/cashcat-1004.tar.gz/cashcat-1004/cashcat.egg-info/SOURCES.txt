@@ -1,0 +1,8 @@
+LICENSE
+README.md
+cashcat.py
+setup.py
+cashcat.egg-info/PKG-INFO
+cashcat.egg-info/SOURCES.txt
+cashcat.egg-info/dependency_links.txt
+cashcat.egg-info/top_level.txt

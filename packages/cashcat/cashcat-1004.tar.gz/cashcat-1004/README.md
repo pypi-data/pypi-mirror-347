@@ -1,0 +1,97 @@
+# cashcat
+
+Compare directories recursively using ~~cash~~ hashes
+
+Simple tool for verifying file integrity
+
+# Install
+
+```bash
+pip install cashcat
+```
+
+# Example
+
+Check hashes for files:
+```bash
+python -m cashcat check --root ./path-a ./path-b --hashfile ./cashcat.json
+```
+
+Generate hashes for files:
+```bash
+python -m cashcat generate --root ./path-a ./path-b --hashfile ./cashcat.json
+```
+
+Update hashes for files:
+```bash
+python -m cashcat update --root ./path-a ./path-b --hashfile ./cashcat.json
+```
+
+# Why?
+
+If you ever wanted to store multiple copies of many files and need to ensure that each medium didn't get corrupted or actually corrupted with data loss - this tool may help.
+
+It simply checks for each file that present in each root recursively by mathing the hash value with hash from storage. You can store hashfile in every place (even on your drives, since it's just a json file) and use it for verification.
+
+This tool works as following:
+- First, it collects all file paths recursivery for each specified root
+- Second, it does set intersection to determine which files exist in each root
+- For every non-in-intersection path it produces a warning
+- For every file in intersection it does hash computation and varifiction agains the varue from storage
+  - Every mismatch is reported
+  - Every file missing from storage is reported
+
+# How to use
+
+This tool has multiple modes of operation described below.
+
+```
+$ python -m cashcat check --help
+usage: cashcat [-h] -r ROOT [ROOT ...] [-s HASHFILE] [-v] {check,generate,update}
+
+positional arguments:
+  {check,generate,update}
+                        action mode: check - checks files agains the hash store; generate - force regenerate all hashes; update - generate hashes only for new files
+
+options:
+  -h, --help            show this help message and exit
+  -r, --root ROOT [ROOT ...]
+                        paths to tree roots, at least 2 roots to compare
+  -s, --hashfile HASHFILE
+                        path to hash file store
+  -v, --verbose         verbose logging
+```
+
+## check
+
+Check the integrity using the existing storage file. Does not change anything.
+
+## generate
+
+Full overwrite of storage file. Generate hash for every file from set intersection. Does not generate hashes for files that exist only in single root (in case of 2+ roots).
+
+## update
+
+Update storage file. Generate hash for every file from set intersection that **not exists** in storage yet. Does not generate hashes for files that exist only in single root (in case of 2+ roots).
+
+Update of files that has content changed not supported yet.
+
+# LICENSE
+
+```
+cashcat - simple file integrity verification tool
+Copyright (C) 2025  bitrate16
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
