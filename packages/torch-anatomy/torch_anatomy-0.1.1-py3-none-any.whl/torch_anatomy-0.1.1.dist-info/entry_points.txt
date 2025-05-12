@@ -1,0 +1,2 @@
+[console_scripts]
+torch-anatomy = torch_anatomy.cli:main
