@@ -1,0 +1,10 @@
+trace_mcp/main.py,sha256=XfANB7gmyqWaSF0zDPnzu20PKOrcB1n0jMF9Qz_VfuY,4654
+trace_mcp/bin/arm64-v8a/traceserver,sha256=8_36WMnQ7lQb2OCB9WRJYPG5IIddpbf6n_f1HFz422E,24944
+trace_mcp/bin/armeabi-v7a/traceserver,sha256=UiRkIIbGAC5rHfVczVhXGJOe85w-BmMXfMGDTn0zMZo,18868
+trace_mcp/bin/x86/traceserver,sha256=JRKG3r6wmRZMlFDLwf-7rbtXggw0eUHQKd_vh-Y0Z38,19600
+trace_mcp/bin/x86_64/traceserver,sha256=gi1LarEx5Uhda1Uuu0HIgaUYZJnnYCT0HQvgeboo9x4,24032
+trace_mcp-1.0.1.dist-info/METADATA,sha256=Qnn2kV2bKow8e5zoQUQ-8DVvAsnP3pB_gOMYQLprZjU,2366
+trace_mcp-1.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+trace_mcp-1.0.1.dist-info/entry_points.txt,sha256=_xhJtORUQKM8QvsBcV3U3p0N0aKUuU9qm98ZMNSsRHw,40
+trace_mcp-1.0.1.dist-info/top_level.txt,sha256=VGh5ov3d16W1rxtr4ZmwyyP3Lm9u-AZuLzmYPGITKSk,10
+trace_mcp-1.0.1.dist-info/RECORD,,
