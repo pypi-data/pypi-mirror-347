@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: aiogramx
+Version: 0.0.1
+Summary: Widgets and tools for Aiogram bots
+Author-email: Jasur Yusupov <jasuryusupov14@gmail.com>
+Maintainer-email: Jasur Yusupov <jasuryusupov14@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/jzr-supove/aiogramx
+Project-URL: Issues, https://github.com/jzr-supove/aiogramx/issues
+Project-URL: Repository, https://github.com/jzr-supove/aiogramx.git
+Keywords: aiogram,telegram,bot,widgets,tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiogram<4.0.0,>=3.0.0
+Dynamic: license-file
+
+# AiogramX
+
+Widgets and tools for bots built with Aiogram. Supports inline keyboards, paginators, and other helper UI components.
+
+> Minimal placeholder release to reserve the name.
+>
+> This package will provide helpful widgets and builders for Aiogram bots, including calendar keyboards, paginators, and data selectors for Aiogram 2.x and 3.x.
