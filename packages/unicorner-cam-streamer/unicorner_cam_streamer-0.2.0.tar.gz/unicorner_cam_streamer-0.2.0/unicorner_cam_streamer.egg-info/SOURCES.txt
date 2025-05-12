@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+tests/test_camera_streamer.py
+unicorner_cam_streamer/__init__.py
+unicorner_cam_streamer/camera_streamer.py
+unicorner_cam_streamer.egg-info/PKG-INFO
+unicorner_cam_streamer.egg-info/SOURCES.txt
+unicorner_cam_streamer.egg-info/dependency_links.txt
+unicorner_cam_streamer.egg-info/requires.txt
+unicorner_cam_streamer.egg-info/top_level.txt
