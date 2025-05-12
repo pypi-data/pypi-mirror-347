@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+sdk/python/r2r_protocol/__init__.py
+sdk/python/r2r_protocol/client.py
+sdk/python/r2r_protocol/message_format.py
+sdk/python/r2r_protocol/message_types.py
+sdk/python/r2r_protocol/payloads.py
+sdk/python/r2r_protocol.egg-info/PKG-INFO
+sdk/python/r2r_protocol.egg-info/SOURCES.txt
+sdk/python/r2r_protocol.egg-info/dependency_links.txt
+sdk/python/r2r_protocol.egg-info/top_level.txt
+tests/test_example.py
+tests/test_hello.py
+tests/test_messages.py
