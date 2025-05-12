@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/gemini_translator.egg-info/PKG-INFO
+src/gemini_translator.egg-info/SOURCES.txt
+src/gemini_translator.egg-info/dependency_links.txt
+src/gemini_translator.egg-info/requires.txt
+src/gemini_translator.egg-info/top_level.txt
