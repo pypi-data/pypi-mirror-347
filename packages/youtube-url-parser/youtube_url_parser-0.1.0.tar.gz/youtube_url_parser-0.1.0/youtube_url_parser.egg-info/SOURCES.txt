@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_parser.py
+youtube_url_parser/__init__.py
+youtube_url_parser/parser.py
+youtube_url_parser.egg-info/PKG-INFO
+youtube_url_parser.egg-info/SOURCES.txt
+youtube_url_parser.egg-info/dependency_links.txt
+youtube_url_parser.egg-info/top_level.txt

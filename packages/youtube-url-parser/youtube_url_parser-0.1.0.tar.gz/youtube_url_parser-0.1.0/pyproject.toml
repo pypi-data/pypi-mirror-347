@@ -1,0 +1,12 @@
+[project]
+name = "youtube_url_parser"
+version = "0.1.0"
+description = "Extract YouTube video IDs from various URL formats"
+authors = [{name="Roman", email="youtube-url-parser@romantaylor.com"}]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[build-system]
+requires = ["setuptools>=80.2"]
+build-backend = "setuptools.build_meta"
