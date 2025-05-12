@@ -1,0 +1,2 @@
+[console_scripts]
+cordctl = cordctl.cli:main
