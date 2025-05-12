@@ -1,0 +1,15 @@
+[project]
+name = "jam-inventory-managemnet-system"
+version = "0.1.0"
+description = "A simple CLI inventory management system"
+authors = [{name = "JamilaYDhedhi", email = "nurjamila1@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+inventory = "main:main" 
+
+[build-system]
+requires = ["setuptools>=61.0"]    # Use setuptools instead of hatchling
+build-backend = "setuptools.build_meta"
