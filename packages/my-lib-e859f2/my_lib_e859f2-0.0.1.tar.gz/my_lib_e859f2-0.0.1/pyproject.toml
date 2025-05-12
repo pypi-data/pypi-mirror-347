@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my-lib-e859f2"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Adrian Herscu", email = "adrian.herscu@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "requests"
+]
+
+[project.urls]
+Documentation = "https://github.com/Adrian Herscu/my-hatch-project#readme"
+Issues = "https://github.com/Adrian Herscu/my-hatch-project/issues"
+Source = "https://github.com/Adrian Herscu/my-hatch-project"
+
+[tool.hatch.version]
+path = "src/my_lib_e859f2/__about__.py"
+
+[tool.hatch.envs.default]
+path = ".venv"
+dependencies = [
+  "pytest",
+  "pytest-cov"
+]
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/my_lib_e859f2 tests}"
+
+[tool.coverage.run]
+source_pkgs = ["my_lib_e859f2", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/my_lib_e859f2/__about__.py",
+]
+
+[tool.coverage.paths]
+my_hatch_project = ["src/my_lib_e859f2", "*/my-lib-e859f2/src/my_lib_e859f2"]
+tests = ["tests", "*/my-lib-e859f2/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
