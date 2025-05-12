@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: uv_openvoice2
+Version: 0.1.0
+Summary: A Python package for OpenVoice2
+Author-email: Your Name <your.email@example.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# My Package
+
+A simple Python package.
+
+## Installation
+pip install uv_openvoice2
+
+## Usage
+
+```python
+import uv_openvoice2
