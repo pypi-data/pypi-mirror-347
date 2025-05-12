@@ -1,0 +1,6 @@
+{% load static %}
+{% if sitewide.footer.show %}<footer>{% for section in sitewide.footer.sections %}
+    {% if section.show %}<div class="sw-section {{ section.css }} {% if sitewide.sidebar.show %}sw-sidebar-show{% else %}sw-sidebar-hide{% endif %}">
+        {% if section.division %}{% if section.division.show %}{% include "sitewide/division.html" with division=section.division %}{% endif %}{% endif %}
+    </div>{% endif %}
+{% endfor %}</footer>{% endif %}
