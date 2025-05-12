@@ -1,0 +1,6 @@
+setup.py
+NetHyTech_STT_aditya_s/__init__.py
+NetHyTech_Stt_aditya_s.egg-info/PKG-INFO
+NetHyTech_Stt_aditya_s.egg-info/SOURCES.txt
+NetHyTech_Stt_aditya_s.egg-info/dependency_links.txt
+NetHyTech_Stt_aditya_s.egg-info/top_level.txt
