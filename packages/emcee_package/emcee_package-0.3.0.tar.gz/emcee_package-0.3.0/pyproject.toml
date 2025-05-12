@@ -1,0 +1,18 @@
+[project]
+name = "emcee_package"
+version = "0.3.0"
+description = "A Test package"
+authors = [{ name = "Emcee" }]
+readme = "README.md"
+requires-python = ">=3.7"
+
+dependencies = [
+    "pandas>=2.0.0"
+]
+
+[project.scripts]
+emcee-bye = "emcee_package.main:bye"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
