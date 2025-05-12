@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: my-lib-e859f2
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/Adrian Herscu/my-hatch-project#readme
+Project-URL: Issues, https://github.com/Adrian Herscu/my-hatch-project/issues
+Project-URL: Source, https://github.com/Adrian Herscu/my-hatch-project
+Author-email: Adrian Herscu <adrian.herscu@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# my-hatch-project
+
+[![PyPI - Version](https://img.shields.io/pypi/v/my-hatch-project.svg)](https://pypi.org/project/my-hatch-project)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/my-hatch-project.svg)](https://pypi.org/project/my-hatch-project)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install my-hatch-project
+```
+
+## License
+
+`my-hatch-project` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
