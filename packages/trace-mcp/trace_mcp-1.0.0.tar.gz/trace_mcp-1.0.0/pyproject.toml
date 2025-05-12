@@ -1,0 +1,12 @@
+[project]
+name = "trace-mcp"
+version = "1.0.0"
+description = "A Python MCP server for controlling Android system tracing via a native traceserver binary, supporting device selection and custom port forwarding. Designed for use with the uv/uvx toolchain."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.8.0",
+]
+
+[project.scripts]
+trace-mcp = "main:main"

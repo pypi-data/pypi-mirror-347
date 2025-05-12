@@ -1,0 +1,9 @@
+README.md
+main.py
+pyproject.toml
+trace_mcp.egg-info/PKG-INFO
+trace_mcp.egg-info/SOURCES.txt
+trace_mcp.egg-info/dependency_links.txt
+trace_mcp.egg-info/entry_points.txt
+trace_mcp.egg-info/requires.txt
+trace_mcp.egg-info/top_level.txt
