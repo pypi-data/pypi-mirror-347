@@ -1,0 +1,71 @@
+Metadata-Version: 2.4
+Name: kaaas
+Version: 0.1.1
+Summary: Kubernetes AI-powered Cluster Analysis and Solution (KAAS)
+Home-page: https://github.com/kashifrafi/kaas
+Author: Kashif Rafi
+Author-email: rafi.kashif@yahoo.com
+License: MIT
+Keywords: kubernetes,ai,cluster,analysis,k8sgpt,llm
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: pyyaml
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+KAAS - Kubernetes AI-powered Cluster Analysis and Solution
+KAAS is a tool that leverages AI to analyze Kubernetes clusters, identify issues, and provide solutions using tools like k8sgpt and LLMs (e.g., Ollama, Bedrock).
+Installation
+
+Install dependencies:
+pip install -r requirements.txt
+
+
+Install KAAS:
+python setup.py install
+
+
+
+Configuration
+Edit config.yaml or kaas/config.py to set your backend LLM and AWS settings:
+
+backend_llm: The LLM backend for k8sgpt (e.g., ollama, bedrock).
+aws_region: AWS region for SNS and CloudWatch.
+sns_topic_arn: SNS Topic ARN for notifications.
+log_group and log_stream: CloudWatch Log Group and Stream names.
+pricing_url: URL for multi-cluster pricing information.
+
+Usage
+Run KAAS to analyze your Kubernetes cluster:
+kaas
+
+Prerequisites
+
+k8sgpt and kubectl must be installed and available in your PATH.
+AWS credentials must be configured for SNS and CloudWatch access.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
