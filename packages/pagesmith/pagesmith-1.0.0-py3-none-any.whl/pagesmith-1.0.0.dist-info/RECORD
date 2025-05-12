@@ -1,0 +1,13 @@
+pagesmith/__about__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+pagesmith/__init__.py,sha256=rMZPNW9oCOmSWK2bgDHU973qzqn1dUvgYuEXX-s_hfo,535
+pagesmith/chapter_detector.py,sha256=xcJ7dTSV1aThC9PO-pnl4twhoY-o_92Hu-GzInh39Zo,4685
+pagesmith/html_page_splitter.py,sha256=2_OGohGqQeeDGeclj9UvsJO9Bf4_g1CRWqp6cA_MGRU,10637
+pagesmith/page_splitter.py,sha256=4_aCLGn9Cx_EGFESHUT68rQWjiE6xME9iaRnhHlMFOM,5108
+pagesmith/parser.py,sha256=jSIKV_dmE7lIQkXya12ainuBcSLPvieNqTTllsyyj1A,1414
+pagesmith/refine_html.py,sha256=cywCQXPNa5REaAt2sNMtojmcy0iYNKcvw6Civ-KpFSo,13875
+pagesmith/refine_html_beautiful_soup.py,sha256=lKagP5myn_ttD3qb5BpTG9YQmRGAjKBXUXf6emOiqGg,9466
+pagesmith-1.0.0.dist-info/METADATA,sha256=m_OgGlEC5s6LjE7inam31K-AtW8Y3oQHMgQkvRaszsY,3330
+pagesmith-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pagesmith-1.0.0.dist-info/entry_points.txt,sha256=jsRsmfkNr7DnxOGSvEp3mzYZhYja9i6xBXFotXpT4lU,55
+pagesmith-1.0.0.dist-info/licenses/LICENSE.txt,sha256=KPQFVkRWADgA25TBaJgyNklZzYxmn1lov_NiCeHFSyI,1092
+pagesmith-1.0.0.dist-info/RECORD,,
