@@ -1,0 +1,16 @@
+debian/.gitignore,sha256=KoPdAVZaxAVCANexDGympLNGUHlY7IV_oruGZuYa8lQ,124
+debian/changelog,sha256=6ggs1xN32bCwBaEAwL0px-tKyGKICufaEWBc7895k_Y,6215
+debian/control,sha256=uvj2kSiW_yW8rYTqfjhCIMoUsLfDnaZ1FX17S-b8Gbs,812
+debian/rules,sha256=urBeMzR9EQo0qnt_uQbikHQe1l8ZqQw0wgaYW1d_Qmc,357
+debian/watch,sha256=3FfnR2dlRB1BL3amA8V0ZrS5d0EeigAbxRkA5fIoUdA,198
+debian/source/format,sha256=G-cIDXLmtWbfPiNs4sVe_fu7j6HJctgl5bZy_4dzvho,12
+moat/kv/gpio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moat/kv/gpio/_cfg.yaml,sha256=RwS1Z49FmCSQbfP-ot061LURd1cc9o1yx2FsckIHl1w,471
+moat/kv/gpio/_main.py,sha256=ydeBUxRWpuf0B2vEuDT1Pe_DdipDfssODncdcfx_g9U,6854
+moat/kv/gpio/model.py,sha256=PG-5ghYgS9IsS3lj0AxV6Qyfc2HNqzuztXh2aZi2Lw4,29285
+moat/kv/gpio/task.py,sha256=VhRdQUKa9h9zdrsgDpYq1DOV50jDUjhQK6XhEz4MxnE,673
+moat_kv_gpio-0.12.2.dist-info/licenses/LICENSE.txt,sha256=L5vKJLVOg5t0CEEPpW9-O_0vzbP0PEjEF06tLvnIDuk,541
+moat_kv_gpio-0.12.2.dist-info/METADATA,sha256=Gc0sbZNgyXbWnraXKv7MCouYfiUywDI3hCYUSEz5sm0,930
+moat_kv_gpio-0.12.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+moat_kv_gpio-0.12.2.dist-info/top_level.txt,sha256=pcs9fl5w5AB5GVi4SvBqIVmFrkRwQkVw_dEvW0Q0cSA,5
+moat_kv_gpio-0.12.2.dist-info/RECORD,,
