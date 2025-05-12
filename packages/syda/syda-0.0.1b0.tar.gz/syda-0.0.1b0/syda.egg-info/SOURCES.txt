@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+syda/__init__.py
+syda/storage.py
+syda/structured.py
+syda/unstructured.py
+syda.egg-info/PKG-INFO
+syda.egg-info/SOURCES.txt
+syda.egg-info/dependency_links.txt
+syda.egg-info/requires.txt
+syda.egg-info/top_level.txt
