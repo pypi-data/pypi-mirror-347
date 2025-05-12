@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: a42_proto
+Version: 0.1.2
+Summary: Protobuf Python bindings for A42 sensor data
+Home-page: https://github.com/HSE-VSV/DataReaderA42
+Author: Alexander Baumann
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: protobuf==3.20.3
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# a42_proto
+
+Python Protobuf bindings for A42 sensor messages.
+
+## Installation
+
+```bash
+pip install a42_proto
