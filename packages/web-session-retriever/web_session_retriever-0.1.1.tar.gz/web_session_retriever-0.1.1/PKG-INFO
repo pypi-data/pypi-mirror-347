@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: web-session-retriever
+Version: 0.1.1
+Summary: A cli tool that opens a browser and returns all the cookies or the required cookie.
+Author-email: Frederik <you@example.com>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: botasaurus
+
+```
+usage: web-session-retriever [-h] [--cookie COOKIE] [--on-redirect ON_REDIRECT] url
+
+Browse a URL using botasaurus
+
+positional arguments:
+  url                        URL to visit
+
+options:
+  --cookie COOKIE            Return only this cookie
+  --on-redirect ON_REDIRECT  Terminate when redirected to this URL
+```
+
+```sh
+web-session-retriever https://www.example.com/login --on-redirect https://www.example.com/home
+
+or
+
+web-session-retriever https://www.example.com/login
+```

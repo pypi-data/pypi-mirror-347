@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/session_retriever/__main__.py
+src/web_session_retriever.egg-info/PKG-INFO
+src/web_session_retriever.egg-info/SOURCES.txt
+src/web_session_retriever.egg-info/dependency_links.txt
+src/web_session_retriever.egg-info/entry_points.txt
+src/web_session_retriever.egg-info/requires.txt
+src/web_session_retriever.egg-info/top_level.txt
