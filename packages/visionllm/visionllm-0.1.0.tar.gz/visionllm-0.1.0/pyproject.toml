@@ -1,0 +1,53 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "visionllm"
+version = "0.1.0"
+description = "A modular Python library for vision-based interactions with AI systems"
+readme = "visionllm/README.md"
+authors = ["Laurent-Philippe Albou <lpalbou@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/lpalbou/visionllm"
+packages = [
+    {include = "visionllm", from = "visionllm"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: MacOS",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pillow = ">=9.0.0"
+numpy = ">=1.20.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=6.0.0"
+black = ">=22.0.0"
+flake8 = ">=4.0.0"
+isort = ">=5.0.0"
+
+[tool.poetry.scripts]
+visionllm = "visionllm.cli:main"
+
+[tool.black]
+line-length = 88
+target-version = ["py38", "py39", "py310", "py311"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+testpaths = ["visionllm/tests"]
+python_files = "test_*.py" 
