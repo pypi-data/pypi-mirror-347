@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+Makefile
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+verify_crypto_signature/__init__.py
+verify_crypto_signature/evm.py
+verify_crypto_signature/py.typed
+verify_crypto_signature/sol.py
+verify_crypto_signature.egg-info/PKG-INFO
+verify_crypto_signature.egg-info/SOURCES.txt
+verify_crypto_signature.egg-info/dependency_links.txt
+verify_crypto_signature.egg-info/requires.txt
+verify_crypto_signature.egg-info/top_level.txt
