@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: starscode
+Version: 0.1
+Summary: using this packing you can get starts patterns
+Author: Saral Kumar
+Author-email: saralkumar.kapilit@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: summary
