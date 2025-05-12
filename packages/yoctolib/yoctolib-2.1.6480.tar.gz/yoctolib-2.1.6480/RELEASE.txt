@@ -1,0 +1,4 @@
+TypedPython v2.1.6480
+
+- update some examples
+- Fix PyPi package
