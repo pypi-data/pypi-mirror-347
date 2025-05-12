@@ -1,0 +1,9 @@
+qlispreg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qlispreg/dicttree.py,sha256=QNClEGRFRFJIgAq9bUyxK4iPbkNRdZDona8UZq9jDfw,14236
+qlispreg/expression.py,sha256=ZnTepyvhG2DUdOvCCny8jbeNCsvYi6G4xjdr05HxLuE,25751
+qlispreg/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+qlispreg-0.0.1.dist-info/LICENSE,sha256=Y7XLzewz9MnWzxYb5SJF8cEy5xuR2n3IfP0D17FFa0E,1065
+qlispreg-0.0.1.dist-info/METADATA,sha256=Tf5579Znq4FHy7EFUUHn_9wD9f1HZ52jnUe2z7pCTu0,1242
+qlispreg-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+qlispreg-0.0.1.dist-info/top_level.txt,sha256=E6GuITHoCj7oJTfxeo0daCQ_AAxYvDsTo3qdv8il4ks,9
+qlispreg-0.0.1.dist-info/RECORD,,
