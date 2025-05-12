@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: lib-rr
+Version: 0.1.1
+Summary: A test library
+Home-page: https://github.com/JorgeRodriguez9/lib_rr
+Author: Jorge Rodriguez
+Author-email: jarodriguezcastano@ucundinamarca.edu.co
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# lib_rr
+
+Esta es una librerÃ­a de ejemplo que incluye algoritmos genÃ©ticos y funciones matemÃ¡ticas Ãºtiles.
+
+## InstalaciÃ³n
+
+Puedes instalar la librerÃ­a utilizando pip:
+
+pip install lib_rr
+
+
+## Uso
+
+### Funciones disponibles
+
+#### `crear_individuo(valor_min, valor_max)`
+Genera un nÃºmero aleatorio entre un valor mÃ­nimo y mÃ¡ximo.
+
+```python
+from lib_rr import Funciones
+
+individuo = Funciones.crear_individuo(0, 10)
+print(individuo)
+
+ejecutar_algoritmo_genetico(tam_poblacion, ngen, p_cruce, p_mutacion, B, latitud, invierno)
+Ejecuta un algoritmo genÃ©tico para optimizar la distancia mÃ­nima entre paneles solares.
+
+from lib_rr import algoritmo_genetico
+
+mejor_beta, mejor_DM, mejores = algoritmo_genetico.ejecutar_algoritmo_genetico(
+    tam_poblacion=100, ngen=50, p_cruce=0.7, p_mutacion=0.1, B=10, latitud=4, invierno=True
+)
+print(mejor_beta, mejor_DM)
+
+
