@@ -1,0 +1,17 @@
+[
+    {
+        "Nickname": "Nickname",
+        "code": "code",
+        "email": "email@email.com"
+    },
+    {
+        "Nickname": "Nickname1",
+        "code": "code1",
+        "email": "email1@gmail.com"
+    },
+    {
+        "Nickname": "Nickname2",
+        "code": "code2",
+        "email": "email2@email.com"
+    }
+]
