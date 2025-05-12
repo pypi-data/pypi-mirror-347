@@ -1,0 +1,17 @@
+debian/.gitignore,sha256=R28ryxzZX4CnQo8q0vDe_LYeDHfO5pkSLv_sKDhahho,125
+debian/changelog,sha256=g5NLUqR_RDszJuHr4qcjmnhOzpySI8Q6qHOqgXjgwXA,4453
+debian/control,sha256=PIEvusoWxkqEoRbCYswAbI5Qg3_AS3-MnxtF3j22ul8,982
+debian/rules,sha256=j5fx0kHmfHqd92L2nmiIS1ZTBPky2eQky0840NMnb5s,360
+debian/watch,sha256=GKQqwfmutCDDRXXH_rwo-d7ryOIdLx3JBhbLnwMtq8I,206
+debian/source/format,sha256=G-cIDXLmtWbfPiNs4sVe_fu7j6HJctgl5bZy_4dzvho,12
+moat/kv/wago/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moat/kv/wago/_cfg.yaml,sha256=btlw5x2z1IPHiVg172B6JdnkdttunCjtXOo-FTqcSwM,303
+moat/kv/wago/_main.py,sha256=aTfvSysTUe2NfAlKwDT1x7gHgzBvzvrdLg3S7PAahQ4,6098
+moat/kv/wago/model.py,sha256=pf_5GjF31zJSpIUHkx7S-MD7FBsfvxkKkpan02zxUW4,14347
+moat/kv/wago/task.py,sha256=UXgHpEhwbMCxMk2eSci5fVvWCCtMw18AYcTpN6R2rp0,2428
+moat_kv_wago-0.8.4.dist-info/licenses/LICENSE.txt,sha256=L5vKJLVOg5t0CEEPpW9-O_0vzbP0PEjEF06tLvnIDuk,541
+systemd/moat-kv-wago@.service,sha256=LDxc-OBl4QjTWywCEKu7Bhf3G09peOMW4F0cioAtf-0,327
+moat_kv_wago-0.8.4.dist-info/METADATA,sha256=0vmma8nKtxkQAyN5W7KtxYMvFwptPFX9GW3J7Sp_M10,1004
+moat_kv_wago-0.8.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+moat_kv_wago-0.8.4.dist-info/top_level.txt,sha256=pcs9fl5w5AB5GVi4SvBqIVmFrkRwQkVw_dEvW0Q0cSA,5
+moat_kv_wago-0.8.4.dist-info/RECORD,,
