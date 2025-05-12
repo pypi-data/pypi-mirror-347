@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+twinshare.egg-info/PKG-INFO
+twinshare.egg-info/SOURCES.txt
+twinshare.egg-info/dependency_links.txt
+twinshare.egg-info/entry_points.txt
+twinshare.egg-info/requires.txt
+twinshare.egg-info/top_level.txt
