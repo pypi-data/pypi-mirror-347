@@ -1,0 +1,12 @@
+es_mcp_client/__init__.py,sha256=Jh_a4uIxDu7SCUQ-8vazdGw5sIleNQrYbe-tI8WbQp4,63
+es_mcp_client/client.py,sha256=8qJ4eMiuaUpbsbDi7eYVWw5KvzC9zFDpn8KK-GZhSPE,8343
+es_mcp_server/__init__.py,sha256=pZCiISO-1nY8DJo9ZHxafxCzA0mS5fFjULIMRIXyCWI,63
+es_mcp_server/client.py,sha256=lnkV-hoaQxGhRTVEQQrkJr4rP3UPEZ4lJeCJgo5cZWk,2306
+es_mcp_server/config.py,sha256=M5MdDj6UuR26MaPgPm5D8NEUjMNGO9GgR5TZupd43Go,1163
+es_mcp_server/server.py,sha256=3hTi0qLFR5gLGYOUszZcQK4MKm-r3Hx0U1q9CDYjic8,14829
+es_mcp_server/tools.py,sha256=zoDGJ5NJxxwH980Y5umgU5C023hZgnrstRic3EwHgxY,3094
+es_mcp_server-0.1.3.dist-info/METADATA,sha256=QbjnwRMsMmXxWVkQhJOUJuVUnVnWAMA2Zb1PSVPnTVo,5563
+es_mcp_server-0.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+es_mcp_server-0.1.3.dist-info/entry_points.txt,sha256=96d0-B6GWtWlkJ8VwkV2Qr3N_CNllqQVoVdbAegLRk0,102
+es_mcp_server-0.1.3.dist-info/licenses/LICENSE,sha256=cvdmnNICq9F9jJ6uZjvTCia6wSv3TI89wvF7cDxdcKU,1078
+es_mcp_server-0.1.3.dist-info/RECORD,,
