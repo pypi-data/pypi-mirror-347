@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: ben42code.myitertools
+Version: 0.0.5
+Summary: Providing some additional capabilities on top of itertools.
+Author-email: ben42code+myitertools@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-Expression: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Project-URL: Homepage, https://github.com/ben42code/myitertools
+
+# ben42code.myitertools
+Providing some additional capabilities on top of itertools.
+
+## Example for `ben42code.myitertools.islice_extended`
+`islice_extended` does support negative start/stop indexes and negative step.
+
+```python
+from ben42code.myitertools import islice_extended
+
+input = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+result = list(islice_extended(input, -1, -5, -1))
+print(f"Result: {result}")
+
+exit()
+```
+Ouput:
+```
+Result: [9, 8, 7, 6]
+```
