@@ -1,0 +1,6 @@
+networkd/__init__.py,sha256=fDx23hGflJSpXamdyi8dKlaV6ZLnrkbzLhlStDNC00M,315
+networkd/networkd.py,sha256=zFDSH1enxX-DJTT-GuAvVOFuCroST5-mPzMpuC6y3Kk,4998
+networkd-0.1.11.dist-info/LICENSE,sha256=3t03uwrKvbrgGYQMEU3qp7MFqxiWUPjAcv_mSkO-Aww,1077
+networkd-0.1.11.dist-info/METADATA,sha256=JKKKjzlnXOSRZLe_fn0F237cD0CBKq1aI3MbhfBOXWU,2546
+networkd-0.1.11.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+networkd-0.1.11.dist-info/RECORD,,
