@@ -1,0 +1,7 @@
+setup.py
+src/sezar/__init__.py
+src/sezar/core.py
+src/sezar.egg-info/PKG-INFO
+src/sezar.egg-info/SOURCES.txt
+src/sezar.egg-info/dependency_links.txt
+src/sezar.egg-info/top_level.txt
