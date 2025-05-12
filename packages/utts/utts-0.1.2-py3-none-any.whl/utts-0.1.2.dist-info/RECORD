@@ -1,0 +1,16 @@
+utts/__init__.py,sha256=QfcfW7nIxLH-XlKf7q3gCOqOJpaSjwpuCGYn7RIhCrw,458
+utts/cartesia.py,sha256=u9ZL-pADrBYXdN3dvowaZAjAhXPfxJMH34e4Z9s4TXs,25845
+utts/config.py,sha256=NaB9TS0cxewm_7qZ_UNgOmD-2e8awb6F6VJQR00Cqz8,2669
+utts/elevenlabs.py,sha256=WRfPl32CBghRgsiHZuPghxO1T5mdSrzxGtOSyLkYe24,4010
+utts/hume.py,sha256=OgQ7lAgQN4hM9Z0d95khQueSfNhsbSSYDtn8MQp40N8,5503
+utts/kokoro.py,sha256=AsrbMKornT9GG4-oTXj0tt9Vm5dxiZZnM0ZHD5FwDGM,3787
+utts/openai.py,sha256=N6bBpjHmzlpgU5O1S14DUnG9_0OjYsg2tG-kmnvFW7w,2428
+utts/orpheus.py,sha256=B2h8X5f_y9N86q4-B033xc0nMu6aqUDBUS_9-YZbn1Q,3345
+utts/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utts/replicate.py,sha256=fmAZ0iABLeKQJFsIXzYUwYiuoEAhcncZgJCHVwVzF4A,2080
+utts/utils.py,sha256=GcjzilCm7sP5-ZeAp4rfqP4E6BN0_qeFSgV359E49EQ,6575
+utts/zyphra.py,sha256=C43_kZm3pa4qBZ6n0qyaJvywp6rZuRGaLpwjbptS4KY,6812
+utts-0.1.2.dist-info/METADATA,sha256=cSKaA2QZ95917OvHCCuY84hjuQh0W7vOQwT4RaiJjjM,2890
+utts-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+utts-0.1.2.dist-info/licenses/LICENSE,sha256=fHvA61MIe-tkP-qHxcfawuTshnZhr_r4bvC8oDsqjJk,1073
+utts-0.1.2.dist-info/RECORD,,
