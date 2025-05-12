@@ -1,0 +1,2 @@
+[console_scripts]
+p-cast = p_cast.__main__:main
