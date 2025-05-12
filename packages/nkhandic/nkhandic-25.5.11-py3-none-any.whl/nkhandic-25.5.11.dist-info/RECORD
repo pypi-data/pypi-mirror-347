@@ -1,0 +1,16 @@
+nkhandic/__init__.py,sha256=Xm8U1yZiPY2j7SrWsMpi3EVMX4SB3yXRrRTHD37XwNM,38
+nkhandic/nkhandic.py,sha256=jbDy755H1lfdoPqmNxwfUmhZRZJxo8ptnCLmVO-xgUw,322
+nkhandic/dicdir/README.md,sha256=bpVguEVYe98vdl1lI0xchYl3MqvHIKzsWNeZ4rQ_nRs,485
+nkhandic/dicdir/char.bin,sha256=Cu7JU48ePIrHowHSnLcA3Tb2qUIiu0IE9oWwi638hJA,262432
+nkhandic/dicdir/dicrc,sha256=FUSjQkg0O9qosdRBzRFbnbvnsxkIXoyxBQZ5WRDcTgQ,406
+nkhandic/dicdir/matrix.bin,sha256=PnsiQ5_dfZf5lSCc617NYpSAvLN7rAXA3rtAOkpb8Rg,1164024
+nkhandic/dicdir/mecabrc,sha256=cgIa4X5WgLtLs7Vw5-eStWfkxnWMexezn7x8jEmSKbM,62
+nkhandic/dicdir/sys.dic,sha256=4cJ-BpdTpWVU2o7y7sN5K2CoiCpApSm-AI2WVhnMPO4,39489137
+nkhandic/dicdir/unk.dic,sha256=6m_vhgK88BbsQZydYJn5sMjHr-8vCUpKit91nHuDZ_k,4318
+nkhandic/dicdir/version,sha256=9DKYSCv8d15QT8G6fCYsqJrXrvCgvyBJyw-5qWh8tEg,10
+nkhandic-25.5.11.dist-info/licenses/LICENSE,sha256=n3QRK3H6VDCpjjkhm8jHfobsgtpRuC_SNdxAoClQLMM,2120
+nkhandic-25.5.11.dist-info/licenses/LICENSE.nkhandic,sha256=MgRp3WVjjB_NrhIqE3jXkE7g22wtf9yY-GQKIFU5e3U,1502
+nkhandic-25.5.11.dist-info/METADATA,sha256=W3UO2JFVn8xvb-0ixRn5XoudGvl3jlCYpLvYDlrAsjM,6620
+nkhandic-25.5.11.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+nkhandic-25.5.11.dist-info/top_level.txt,sha256=uA54CdIotDFd2kfQUIz6uiFRh4m_MyrZoYUKiPSFmck,9
+nkhandic-25.5.11.dist-info/RECORD,,
