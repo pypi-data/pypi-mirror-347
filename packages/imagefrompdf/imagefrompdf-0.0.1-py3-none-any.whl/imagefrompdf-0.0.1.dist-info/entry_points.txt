@@ -1,0 +1,2 @@
+[console_scripts]
+imagefrompdf = imagefrompdf.__main__:main
