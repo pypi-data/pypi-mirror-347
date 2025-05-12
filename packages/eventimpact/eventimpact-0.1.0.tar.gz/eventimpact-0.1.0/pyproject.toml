@@ -1,0 +1,30 @@
+# pyproject.toml
+[build-system]
+requires    = ["setuptools>=42", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name             = "eventimpact"
+version          = "0.1.0"
+description      = "Bayesian impact analysis for bounded events on time-series metrics."
+readme           = "README.md"
+requires-python  = ">=3.7"
+license          = "MIT"            # SPDX license expression
+license-files    = ["LICENSE"]      # point to your LICENSE file
+authors = [
+  { name = "Tom Muga", email = "tonmuga@gmail.com" }
+]
+keywords    = ["bayesian","promotion","impact","time-series","analytics"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "numpy>=1.26.4",
+  "scipy>=1.11.4",
+  "matplotlib>=3.6.3"
+]
+
+[tool.setuptools.packages.find]
+where    = ["src"]
+include  = ["eventimpact"]

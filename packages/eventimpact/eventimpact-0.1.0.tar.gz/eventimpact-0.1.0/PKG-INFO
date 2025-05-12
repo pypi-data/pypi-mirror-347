@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: eventimpact
+Version: 0.1.0
+Summary: Bayesian impact analysis for bounded events on time-series metrics.
+Author-email: Tom Muga <tonmuga@gmail.com>
+License-Expression: MIT
+Keywords: bayesian,promotion,impact,time-series,analytics
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: scipy>=1.11.4
+Requires-Dist: matplotlib>=3.6.3
+Dynamic: license-file
+
+# EventImpact Python Library
+
+A lightweight, production‑grade Python toolkit to quantify the impact of any bounded event
+(e.g. limited‑time promotion, marketing campaign, feature release) on a time‑series metric.
+
+---
+
+## 📥 Installation
+
+```bash
+pip install eventimpact
+```
+
+## Interpretation
+- The higher the **p_positive**, the more the evidence of a stronger effect.
+- The **Immediate Effect** represents the immediate jump that occured in response to the event.
+- The **Slope Effect** represents the after effect after the immediate jump. Did the effect sustain or was it weaker? 
+
