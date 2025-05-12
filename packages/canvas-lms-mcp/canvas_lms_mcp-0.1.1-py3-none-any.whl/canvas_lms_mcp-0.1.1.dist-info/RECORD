@@ -1,0 +1,11 @@
+canvas_lms_mcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+canvas_lms_mcp/client.py,sha256=Vdb8_tRB4qesL6TToWuDHPH8ozzPLiqy2IeIeI82dnU,2259
+canvas_lms_mcp/main.py,sha256=QNmWBNRedYCaKwmxLsACGH51biHcGKUTwV_8kPncJRE,9225
+canvas_lms_mcp/schema.py,sha256=y10LIwZ-ldzoZzHpZJSdZwI8aIkoXT_ajrwxQvpwbQI,3169
+canvas_lms_mcp/tools.py,sha256=1gwx3cUpytsSXOiVMtBgdSKrCohfpCQ1zYcnzKsC0s0,4889
+canvas_lms_mcp/utils.py,sha256=U3UxLldNvVPm3j9qRKqoxnsWVq2xP7KIw455-ddUTAk,2242
+canvas_lms_mcp-0.1.1.dist-info/METADATA,sha256=iPG07rSQHoIrQDA4TzxR65VJr0CJ5F4yRQiJE9PPth4,8499
+canvas_lms_mcp-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+canvas_lms_mcp-0.1.1.dist-info/entry_points.txt,sha256=hBSg_vnnvkqB7ygPHnWg4j8PV5s1ivdDMI50dTHAcm8,63
+canvas_lms_mcp-0.1.1.dist-info/licenses/LICENSE,sha256=gw_qpsNjXcPA4_csh5xFFis_ubWiftLz0iaFx2zND9k,1091
+canvas_lms_mcp-0.1.1.dist-info/RECORD,,
