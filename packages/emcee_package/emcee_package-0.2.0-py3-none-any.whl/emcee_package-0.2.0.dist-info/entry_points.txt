@@ -1,0 +1,2 @@
+[console_scripts]
+emcee-bye = emcee_package:bye
