@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: gamechanger_client
+Version: 0.0.2
+Summary: An easy-to-use wrapper for interacting with the GameChanger APIs
+Project-URL: Homepage, https://github.com/TheAlanNix/gamechanger-client
+Project-URL: Issues, https://github.com/TheAlanNix/gamechanger-client/issues
+Author-email: Alan Nix <alan@alannix.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# GameChanger Client for Python
+
+The purpose of this project is to build an easy-to-use wrapper for interacting with the GameChanger APIs.
+
+This will allow various use cases such as automating collection of player stats, videos, or standings.
+
+## [WIP] Authentication
+
+This is still a work in progress as I'm still working on reverse engineering the authentication process for GameChanger.
+
+For now, you'll need to export your GameChanger token as the `GC_TOKEN` environment variable.  If you don't know how to get this, or set it, this project probably isn't for you at the moment.
