@@ -1,0 +1,15 @@
+debian/.gitignore,sha256=1laXL2D_iyb-2wk0EwGsZAcbtZRpnAPeFEaaABnJEIs,100
+debian/changelog,sha256=Sdc_ZT5-d43s6kFRp8F1-3tj8GiilWvBnc7ojS_zysM,2289
+debian/control,sha256=QwcxQ3ilVguxkGpPbLvz623bBZ8ijV3GqzeZFTuCtjo,713
+debian/rules,sha256=Zwd3LihDMPRsyBCNeTUGphsR0ZeF5_E-vK4pjfoVjgQ,224
+debian/watch,sha256=-e0FrbVLMB-BNIeoxr1VQ_XrNFIq5p8yy5-GWk6xKak,197
+debian/source/format,sha256=G-cIDXLmtWbfPiNs4sVe_fu7j6HJctgl5bZy_4dzvho,12
+moat/kv/ha/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moat/kv/ha/_cfg.yaml,sha256=By1bdFVL7tHxpZFVGrJtOV8MjeH0CjBWd-7Hw_63aT4,31
+moat/kv/ha/_main.py,sha256=KCZFNR0mRnwUtn_TRbIJcQASpSrjV4ItlZd8RtUYh_Y,13682
+moat/kv/ha/schema.yaml,sha256=KHR54E9Cg6Y26P1l3NeQ5C8FNf2EQX_MlCdhbuUDEZ8,2180
+moat_kv_ha-0.5.6.dist-info/licenses/LICENSE.txt,sha256=L5vKJLVOg5t0CEEPpW9-O_0vzbP0PEjEF06tLvnIDuk,541
+moat_kv_ha-0.5.6.dist-info/METADATA,sha256=_4t6ri2ijHwkVox0ImeNUPy2OGclTK77ZlfpAMkuR_Y,4165
+moat_kv_ha-0.5.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+moat_kv_ha-0.5.6.dist-info/top_level.txt,sha256=pcs9fl5w5AB5GVi4SvBqIVmFrkRwQkVw_dEvW0Q0cSA,5
+moat_kv_ha-0.5.6.dist-info/RECORD,,
