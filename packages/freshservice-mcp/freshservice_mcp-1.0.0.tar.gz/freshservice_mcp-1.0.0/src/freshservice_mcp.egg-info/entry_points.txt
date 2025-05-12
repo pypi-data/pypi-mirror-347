@@ -1,0 +1,2 @@
+[console_scripts]
+freshservice-mcp = freshservice_mcp.server:main
