@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: ademapkit
+Version: 0.0.4
+Summary: This is a package for all the countries in the world
+Author-email: Abdullah Adesina Dhikrullah <daadesina1@gmail.com>
+License: Built by Abdullah Adesina Dhikrullah
+        
+        May 11, 2025
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: license-file
+
+This is package of Countries
