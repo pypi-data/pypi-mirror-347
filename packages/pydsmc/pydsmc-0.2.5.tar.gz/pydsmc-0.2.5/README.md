@@ -1,0 +1,194 @@
+# PyDSMC
+
+**_Statistical Model Checking for Neural Agents Using the Gymnasium Interface_**
+
+## Docker Info
+
+This artifact evaluation is based on a docker. You will need to install docker, both [docker Desktop](https://www.docker.com/get-started) and the [docker engine](https://docs.docker.com/engine/install).
+In the terminal, please make sure you are logged in with your docker account (`docker login -u <username>`).
+
+<!-- todo: add links to the docker kernel for terminal -->
+
+## Artifact Evaluation
+
+### 1. Loading/Building the Docker Image
+
+**We highly recommend loading the docker image with `docker image load -i pydsmc-dockerimg.tar`.**
+
+Alternatively, you can build the image with `docker build -t pydsmc-image .` (Linux, amd64).
+On Mac (with M processors, arm64), you can build the image with `docker buildx build --platform linux/amd64 -t pydsmc-image:latest .`. However, note that depending on the different architectures, building (sometimes even using) the image on Mac (with M processors) might lead to errors that are based in the used benchmarks and are, therefore, beyond our control. If you encounter problems using the image, you should follow the steps described at [Running locally](#running-locally). When running locally outside docker, we observed that all described experiments can be reproduced, independently from the processor architecture.
+
+In case the reviewers want to inspect or locally execute it: The docker image's entry point is [entrypoint.py](entrypoint.py).
+
+<!-- which accepts various parameters that are explained in the following. -->
+
+<!-- Generally, the docker image can be used by running the following command structure, where <entrypoint-flags> can either be replaced with `all` to run the command on all benchmarks, or
+
+```bash
+docker run -it --rm \
+    -v $(pwd)/output:/output \
+    -v$(pwd)/motivation/data:/workdir/motivation/data \
+    -p 8888:8888 \
+    pydsmc-image:latest \
+    <entrypoint-flags>
+```
+
+
+
+ -->
+
+<!-- The entry point allows to easily reproduce the exemplary evaluation table in a markdown format. -->
+
+### 2. Reproducing the motivation figures (Fig. 1 - 3)
+
+We provide a jupyter notebook which generates the exact motivation figures contained in the manuscript.
+
+#### a) Reproduce the results from precomputed logs/samples
+
+To run it and generate these plots yourself, run the following command and open the notebook in your browser.
+
+```bash
+docker run -it --rm \
+    -v $(pwd)/output:/output \
+    -v $(pwd)/motivation/data:/workdir/motivation/data \
+    -p 8888:8888 \
+    pydsmc-image:latest \
+    --notebook
+```
+
+On Windows, run
+
+```bash
+docker run -it --rm -v %cd%/output:/output -v %cd%/motivation/data:/workdir/motivation/data -p 8888:8888 pydsmc-image:latest --notebook
+```
+
+#### b) Reproduce the results via bootstrapping
+
+For Fig. 2 and Fig. 3, the notebook additionally provides the option to rerun the bootstrapping to reproduce our results based on the precomputed logs/sample runs throughout the training.
+
+To generate the bootstrapped data for the red confidence intervals in figure 2 and 3 yourself, do _not_ execute the notebook's cell loading the csv data:
+
+```python
+# Load cached bootstrapped data. If not executed, the script will generate and save the data
+bootstrapped_mjc_data = pd.read_csv("data/bootstrapped_mjc_data.csv").values.tolist()
+bootstrapped_rt_data = pd.read_csv("data/bootstrapped_rt_data.csv").values.tolist()
+bootstrapped_mg_data = pd.read_csv("data/bootstrapped_mg_data.csv").values.tolist()
+```
+
+#### c) Reproduce the results from scratch
+
+Additionally, for all Figures (1 - 3) you can use the jupyter notebook to first retrain all neural agents and simultaneously evaluate the agents to reproduce these plots.
+Note that, on a standard machine, this will take a very long time, at least a week.
+We generated our data on a cluster and parallelized the training of the different agents since they are independent.
+
+### 3. Reproducing the exemplary evaluation table (section 6.3; table 1)
+
+All following commands can be run with different entry point flags. Use `all` to run the command on all benchmarks. Alternatively, you can use any subset of the following flags to run the command for the specific benchmark subset:
+
+- ant
+- humanoid
+- humanoidstandup
+- halfcheetah
+- mountaincar
+- pgtg
+- minigrid
+- breakout
+
+(For example, replacing `all` with `pgtg ant` will run the evaluation for pgtg and ant only).
+
+We make use of parallel environments to speed up the computation. If you run into memory problems, use `**todo**` to decrease the number of parallel environments.
+
+We provide three different ways of reproducing our results:
+
+#### a) Reproduce the results from the contained logs/samples
+
+The following command will create the markdown tables for _all_ environments in [output/\_markdown](/output/_markdown) from the contained logs.
+
+```bash
+docker run -it --rm \
+    -v $(pwd)/output:/output \
+    pydsmc-image:latest \
+    all
+```
+
+This command will be processed quickly, within seconds.
+
+#### b) Reproduce the results from the pretrained neural agents
+
+To actually run the evaluation on the pretrained agents on your machine, add the `--eval` flag:
+
+```bash
+docker run -it --rm \
+    -v $(pwd)/output:/output \
+    pydsmc-image:latest \
+    --eval \
+    all
+```
+
+Depending on your machine, this will take up to a few hours per benchmark (with breakout being the most expensive one). See paper, table 1 for rough time estimates.
+In sum, this can take up to one day.
+
+#### c) Reproduce the results from scracth
+
+You can also decide to train the agents on your machine instead of using the contained ones. For that simply add the `--train` flag:
+
+```bash
+docker run -it --rm \
+    -v $(pwd)/output:/output \
+    pydsmc-image:latest \
+    --train --eval \
+    all
+```
+
+Depending on your machine, this experiment will take several hours up until a few days.
+
+### 4. Running locally
+
+To not use docker and instead run the code locally, set up a python environment and install the necessary dependencies from `requirements.txt` (Linux, Windows) or `requirements_mac.txt` (Mac)
+For example, with `virtualenvwrapper`, you can execute the following commands:
+
+```bash
+mkvirtualenv artifact-pydsmc --python=3.10
+pip install -r requirements_mac.txt
+pip install .
+```
+
+Then, while having the virtual environment activated, execute the following commands to run the artifact:
+
+#### a) Notebook
+
+```bash
+./entrypoint.py --relative --notebook
+```
+
+#### b) Tables
+
+```bash
+./entrypoint.py --relative all
+./entrypoint.py --relative --eval all
+./entrypoint.py --relative --train --eval all
+```
+
+As mentioned above, you can simply replace `all` with any subset of environments.
+
+## Tool Description
+
+<!-- SHORT DESCRIPTION OF THE TOOL -->
+
+PyDSMC is an open-source Python library for statistical model checking of neural agents on arbitrary [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) environments.
+It is designed to be lightweight and easy-to-use while being based on established statistical methods to provide guarantees on the investigated properties' performances.
+Implementing the Gymnasium interface, PyDSMC is widely applicable and fully agnostic to the environments underlying implementation.
+
+PyDSMC is based on [Deep Statistical Model Checking](https://doi.org/10.1007/978-3-030-50086-3_6) and aims to facilitate greater adoption of statistical model checking by simplifying its usage.
+
+<!-- blabla, only checking function differs. -->
+
+## License
+
+The code introduced by this project is licensed under the MIT license. Please consult the bundled LICENSE file for the full license text.
+
+## Statistical Method Selection
+
+### Figure
+
+<img src="assets/sm_overview_gaps.svg" width="100%">
