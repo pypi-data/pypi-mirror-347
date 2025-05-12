@@ -1,0 +1,14 @@
+ansible
+bin
+data
+dist
+docs
+examples
+logs
+scripts
+src
+terraform
+tests
+twinshare_cli
+update
+venv
