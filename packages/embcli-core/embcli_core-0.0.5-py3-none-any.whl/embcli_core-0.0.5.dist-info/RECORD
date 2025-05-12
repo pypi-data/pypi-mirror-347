@@ -1,0 +1,17 @@
+embcli_core/__init__.py,sha256=HANy4poUeYhF9GzPnF-yOcT3UGMX1d97BIDrerWBYT8,110
+embcli_core/cli.py,sha256=_SNHP8e6gk65MqjOoo_Hs5prjLUk9zVJc9psZRWvdgE,12980
+embcli_core/document.py,sha256=A31xae4_a7OofAHlSlmF8xfrVFU5VxuKmNsF9u1rpQM,555
+embcli_core/document_loader.py,sha256=dv2P0w7aw3AtY3f7QvBo9PgGMWHzc0D1sSABZ3pCja0,911
+embcli_core/hookspecs.py,sha256=CffmSHPSxVTmF8czjHnAhYxTm9j5-8afE9GRjcyqLg0,714
+embcli_core/models.py,sha256=ik5ZeWpP0_0DX-sg64mOOr4DnFPx-30guIn_Zu8OI28,5377
+embcli_core/plugins.py,sha256=SPZ_8lWzkPa4TVuiPN6V2a3zZQttYjgJJozxbqB_Y0g,810
+embcli_core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embcli_core/similarities.py,sha256=uFFvGesYmFMc__7REkHvCrRoQ7hGjkqFZo5sPriV31Y,1648
+embcli_core/vector_stores.py,sha256=Z3yATFRrgrv_34_PR-4aDhbaWFr-Yrqa65-dcgb7ii4,3984
+embcli_core/synth_data/fake_cat_names.csv,sha256=B0AOfr0a_9Bt100gnIy09HAk_l5FUwPcKhnBIljfyvA,31018
+embcli_core/vector_store/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embcli_core/vector_store/chroma.py,sha256=iAaxsNpwrrRPikGXUyPxkQG-N36dy9gpIkB-Amh14vM,2010
+embcli_core-0.0.5.dist-info/METADATA,sha256=JS-Bg1NN3e5sLcz11eJ1ZIfKZSj3Do_csp5byw2YW8w,1667
+embcli_core-0.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+embcli_core-0.0.5.dist-info/entry_points.txt,sha256=YcMlZaLmfDSmEiuIqaXurH57lP8-o1n9zPIMnBwySWU,41
+embcli_core-0.0.5.dist-info/RECORD,,
