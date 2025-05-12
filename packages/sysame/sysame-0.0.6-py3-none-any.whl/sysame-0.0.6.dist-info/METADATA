@@ -1,0 +1,72 @@
+Metadata-Version: 2.4
+Name: sysame
+Version: 0.0.6
+Summary: Transport Modelling Helper Package
+Author-email: "M.I." <help@sysame.com>
+License-File: LICENSE.md
+Requires-Python: >=3.12
+Requires-Dist: contextily>=1.6.2
+Requires-Dist: matplotlib>=3.10.3
+Requires-Dist: mypy>=1.15.0
+Requires-Dist: networkx>=3.4.2
+Requires-Dist: numpy>=2.2.5
+Requires-Dist: openmatrix>=0.3.5.0
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: polars>=1.29.0
+Requires-Dist: py7zr>=0.22.0
+Requires-Dist: pyarrow>=20.0.0
+Requires-Dist: scipy>=1.15.3
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: shapely>=2.1.0
+Description-Content-Type: text/markdown
+
+# SysAME
+
+Welcome to the **SysAME** project! This repository provides a comprehensive library for transport modeling and simulation.
+
+## Features
+
+- **Route Optimization**: Tools to calculate optimal routes and reduce travel time.
+- **Traffic Simulation**: Simulate traffic flow under various conditions.
+- **Data Analysis**: Analyze transport data for better decision-making.
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/SysAME.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd SysAME
+    ```
+3. Follow the setup instructions in the `docs/INSTALL.md` file.
+
+## Usage
+
+Import the library and start modeling:
+```python
+from sysame import TransportModel
+
+model = TransportModel()
+model.run_simulation()
+```
+
+Refer to the [documentation](docs/) for detailed usage instructions.
+
+## Contributing
+
+We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For questions or feedback, feel free to reach out:
+- Email: support@sysame.com
+- Issues: [GitHub Issues](https://github.com/your-username/SysAME/issues)
+
+---
+Thank you for using SysAME!
