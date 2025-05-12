@@ -1,0 +1,2 @@
+[console_scripts]
+pyvenDF = pyvenDF.cli:main
