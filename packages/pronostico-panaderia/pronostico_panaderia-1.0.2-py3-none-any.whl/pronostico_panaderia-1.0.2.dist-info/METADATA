@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: pronostico-panaderia
+Version: 1.0.2
+Summary: Pronósticos de ventas para panadería
+Author-email: Arturo Blanco <ablancoer@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/ArturoBlanco1969/pronostico-panaderia
+Project-URL: Repository, https://github.com/ArturoBlanco1969/pronostico-panaderia
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=1.5
+Requires-Dist: requests>=2.28
+Requires-Dist: holidays>=0.22
+Requires-Dist: openpyxl>=3.0
+
+# pronostico-panaderia
