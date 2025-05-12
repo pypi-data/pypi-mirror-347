@@ -1,0 +1,40 @@
+Metadata-Version: 2.3
+Name: sclive
+Version: 0.3.0
+Summary: Single cell analysis plotting function with interactive and web development friendly outputs.
+License: LICENSE
+Author: Adnan Cihan Cakar
+Author-email: cakar.adnancihan@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: anndata (>=0.11.1,<0.12.0)
+Requires-Dist: distinctipy (>=1.3.4,<2.0.0)
+Requires-Dist: plotly (>=5.24.1,<6.0.0)
+Requires-Dist: polars[pandas,pyarrow] (>=1.18.0,<2.0.0)
+Requires-Dist: shinywidgets (>=0.5.2,<0.6.0)
+Description-Content-Type: text/markdown
+
+# ScLive
+ScLive provides interactive and highly customizable plots commonly used in single cell analysis.
+It also has live_dash module to create single cell analysis dashboards from anndata objects.
+The resulting dashboard allows to customize various aspects of the plot using an user interface.
+
+ScLive can be installed using pip:
+```bash 
+pip install sclive
+```
+
+Once installed and annotated data is loaded, the following code is enough to create a single cell analysis dashboard:
+```python
+from sclive.live_dash import create_dash_app, ScLiveDash
+
+app = create_dash_app(ScLiveDash(adata))
+```
+
+This code will create a Shiny app which can be deployed on a server supporting Shiny apps or using [Shiny server](<https://posit.co/products/open-source/shiny-server/>).
+It can also be run locally using VS Code [Shiny extension](https://marketplace.visualstudio.com/items?itemName=posit.shiny>).
+
