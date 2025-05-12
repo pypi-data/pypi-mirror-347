@@ -1,0 +1,3 @@
+[console_scripts]
+mcp-reflect=mcp_reflect.server:run_server
+
