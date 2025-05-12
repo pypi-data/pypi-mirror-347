@@ -1,0 +1,2 @@
+[console_scripts]
+aiva-mcp-server = aiva_mcp_server.main:main

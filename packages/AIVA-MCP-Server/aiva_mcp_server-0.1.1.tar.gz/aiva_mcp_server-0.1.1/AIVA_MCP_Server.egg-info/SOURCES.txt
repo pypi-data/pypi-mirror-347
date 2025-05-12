@@ -1,0 +1,7 @@
+pyproject.toml
+AIVA_MCP_Server.egg-info/PKG-INFO
+AIVA_MCP_Server.egg-info/SOURCES.txt
+AIVA_MCP_Server.egg-info/dependency_links.txt
+AIVA_MCP_Server.egg-info/entry_points.txt
+AIVA_MCP_Server.egg-info/requires.txt
+AIVA_MCP_Server.egg-info/top_level.txt
