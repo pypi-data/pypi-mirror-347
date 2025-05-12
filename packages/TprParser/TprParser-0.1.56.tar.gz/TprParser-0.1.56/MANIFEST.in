@@ -1,0 +1,7 @@
+include TprParser/*
+include *.py
+include src/*
+exclude src/main.cpp
+exclude src/emcc.cpp
+exclude src/emccbuild.bat
+include LICENSE
