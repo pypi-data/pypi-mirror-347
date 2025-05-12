@@ -1,0 +1,9 @@
+aiohttp
+limits
+typing-extensions>=3.10.0.2
+
+[memcached]
+emcache
+
+[redis]
+coredis
