@@ -1,0 +1,106 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  release:
+    types: [published]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v1
+        with:
+          version: "0.6.17"
+      - name: Install dependencies
+        run: |
+          uv sync --group dev
+      - name: Check formatting
+        run: |
+          uv run ruff format --check .
+      - name: Lint
+        run: |
+          uv run ruff check .
+      - name: Build Rust extension
+        run: |
+          make maturin-build
+      - name: Install Rust extension
+        run: |
+          make maturin-develop
+      - name: Run tests
+        run: |
+          uv run pytest --maxfail=2 --disable-warnings
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v1
+        with:
+          version: "0.6.17"
+      - name: Create venv
+        run: |
+          uv venv .venv
+      - name: Set up venv PATH
+        run: |
+          echo ".venv/bin" >> $GITHUB_PATH
+      - name: Install dependencies
+        run: |
+          uv sync --group docs
+      - name: Build docs
+        run: |
+          uv run mkdocs build --strict
+
+  publish:
+    if: github.event_name == 'release' && github.event.action == 'published'
+    needs: [test, docs]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v1
+        with:
+          version: "0.6.17"
+      - name: Create venv
+        run: |
+          uv venv .venv
+      - name: Add venv to PATH
+        run: |
+          echo ".venv/bin" >> $GITHUB_PATH
+      - name: Install build dependencies
+        run: |
+          uv sync --group dev
+      - name: Build Rust extension
+        run: |
+          make maturin-build
+      - name: Build Python package
+        run: |
+          uv build
+      - name: Publish to PyPI
+        env:
+          UV_PUBLISH_NO_TRUSTED: "1"
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        run: |
+          uv publish
