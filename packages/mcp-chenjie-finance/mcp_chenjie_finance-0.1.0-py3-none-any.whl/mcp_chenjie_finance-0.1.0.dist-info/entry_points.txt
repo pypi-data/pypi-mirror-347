@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-chenjie-finance = mcp_chenjie_finance:main
