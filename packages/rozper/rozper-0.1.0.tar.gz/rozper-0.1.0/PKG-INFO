@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: rozper
+Version: 0.1.0
+Summary: A simple greeting package by Rozper
+Home-page: https://www.rozper.com
+Author: Rohit Varma
+Author-email: info@rozper.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# Rozper
+
+[Rozper](https://www.rozper.com) is a simple Python package that provides a greeting function.
+
+## Installation
+
+```bash
+pip install rozper
+Usage
+python
+Copy
+Edit
+from rozper import greet
+
+print(greet("World"))
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+yaml
+Copy
+Edit

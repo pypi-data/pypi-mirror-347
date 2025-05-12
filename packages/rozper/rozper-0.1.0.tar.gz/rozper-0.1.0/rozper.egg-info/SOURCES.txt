@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+rozper/__init__.py
+rozper/core.py
+rozper.egg-info/PKG-INFO
+rozper.egg-info/SOURCES.txt
+rozper.egg-info/dependency_links.txt
+rozper.egg-info/top_level.txt
