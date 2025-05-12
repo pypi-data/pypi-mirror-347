@@ -1,0 +1,8 @@
+torchlaunch/__init__.py,sha256=QWtFL8djPYu4aR7a9Tf-x_oW6QW4b29GVe6UxgA0NjE,181
+torchlaunch/demo_train.py,sha256=kZ9Lf6qxQ9NSrqIZTXiQuODnrW2MxDNDw0lbak-LG28,1190
+torchlaunch/launcher.py,sha256=B0piWYvuGBRQ9UG8WNwmnY4CEci9K61eeWYbpt4mbQY,7472
+torchlaunch/requirements.txt,sha256=UMf4BOjl0fSt8YwjwHNvhjNqgvidW6YLxKRQa0UiCyM,245
+torchlaunch-0.1.1.dist-info/METADATA,sha256=66f9KvojtqHeG9wutJcGMZ93WYjUnOYBuphYxZw6zEQ,1788
+torchlaunch-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+torchlaunch-0.1.1.dist-info/licenses/LICENSE,sha256=rcNzZvQDg1wUcKst-T04N9Rxk3L8HvhZPZIuBvAz-LI,4
+torchlaunch-0.1.1.dist-info/RECORD,,
