@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+oimdb/__init__.py
+oimdb.egg-info/PKG-INFO
+oimdb.egg-info/SOURCES.txt
+oimdb.egg-info/dependency_links.txt
+oimdb.egg-info/requires.txt
+oimdb.egg-info/top_level.txt
