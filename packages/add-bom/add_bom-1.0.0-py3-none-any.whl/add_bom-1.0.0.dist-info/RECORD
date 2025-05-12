@@ -1,0 +1,8 @@
+add_bom/__init__.py,sha256=5n-kc4WzdmRJ6qMujYM08FDd0WoaYPaMBD1L5sc9yN4,112
+add_bom/__main__.py,sha256=i-9Uli36-eCIUKta3UgW8vt87a0tHhXyV6d9Yc4gglw,74
+add_bom/cli.py,sha256=fW767lQgQxUVfCUdDoCcBUT5NxC31av_TCjNntDiqgw,1199
+add_bom-1.0.0.dist-info/LICENSE,sha256=Jjhc4lafIJq16ZzRbMkSmtc_7gxK9fdrZ2SCgjEk7vI,1060
+add_bom-1.0.0.dist-info/METADATA,sha256=uCKVU2Tqsf419Ih_gnpyTqPjJLglCt-YK_PU-j1bOEc,2133
+add_bom-1.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+add_bom-1.0.0.dist-info/entry_points.txt,sha256=MNNJteCxx_nIR2u3TD5MvZLjl3XOe8hDzz6XFKVVY1E,47
+add_bom-1.0.0.dist-info/RECORD,,

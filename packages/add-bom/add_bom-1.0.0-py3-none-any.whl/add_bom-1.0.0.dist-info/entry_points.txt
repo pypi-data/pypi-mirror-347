@@ -1,0 +1,3 @@
+[console_scripts]
+add-bom=add_bom.cli:add_bom
+
