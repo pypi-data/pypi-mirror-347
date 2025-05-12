@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tbacktest
+Version: 0.1.1
+Summary: 這是我自製的 Python 金融投資工具回測套件
+Home-page: https://github.com/TsungHsunTsai/T_BackTest
+Author: SteveTsai
+Author-email: tsunghsun0127@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# mypackage
+
+這是一個自製的 Python 套件，實作了 backtesting 功能。
+
+## 安裝方式
+
+```bash
+pip install tbacktest

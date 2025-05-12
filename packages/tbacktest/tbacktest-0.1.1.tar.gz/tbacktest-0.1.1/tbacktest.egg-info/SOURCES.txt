@@ -1,0 +1,6 @@
+README.md
+setup.py
+tbacktest.egg-info/PKG-INFO
+tbacktest.egg-info/SOURCES.txt
+tbacktest.egg-info/dependency_links.txt
+tbacktest.egg-info/top_level.txt
