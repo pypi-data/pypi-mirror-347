@@ -1,0 +1,11 @@
+LICENSE-APACHE
+LICENSE-MIT
+README.md
+pyproject.toml
+src/textdraw/__init__.py
+src/textdraw/py.typed
+src/textdraw.egg-info/PKG-INFO
+src/textdraw.egg-info/SOURCES.txt
+src/textdraw.egg-info/dependency_links.txt
+src/textdraw.egg-info/requires.txt
+src/textdraw.egg-info/top_level.txt
