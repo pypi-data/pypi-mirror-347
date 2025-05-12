@@ -1,0 +1,86 @@
+Metadata-Version: 2.4
+Name: cmfapi
+Version: 0.0.1
+Summary: Python API Client for CMF
+Home-page: https://github.com/atripathy86/cmfapi
+Author: Aalap Tripathy
+Author-email: Aalap Tripathy <atripathy.bulk@gmail.com>
+License: Apache
+Project-URL: Homepage, https://github.com/atripathy86/cmfapi
+Project-URL: Documentation, https://github.com/atripathy86/cmfapi
+Project-URL: Source, https://github.com/atripathy86/cmfapi
+Project-URL: Issues, https://github.com/atripathy86/cmfapi/issues
+Keywords: cmf,metadata,common metadata framework,api,client
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.26.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# cmfapi 
+This package provides a simple, modular SDK for the Common Metadata Framework (CMF) REST API.
+
+## Features
+
+* Automatically handles authentication and renewal
+* Graceful error management
+* Logically organized modules
+* Easily maintained
+
+## Installation
+
+**Install using `pip`:**
+
+```bash
+pip install cmfapi
+```
+
+**Install from source:**
+
+```bash
+git clone https://github.com/atripathy86/cmfapi.git
+cd cmfapi
+pip install -e .
+```
+
+**Build/Upload for pypi:**
+
+```bash
+pip install build
+# Build the package
+python -m build 
+#Creates dist/ with tar.gz and .whl 
+```
+
+```bash 
+pip install twine
+twine upload dist/*
+```
+
+## Quick Start
+
+### Initialize the Client
+
+```python
+from cmfapi import cmfClient
+client = cmfClient("http://192.168.2.143:8080")
+```
+
+### Example Usage
+
+#### Get CMF API Server Pipelines
+
+```python
+pipelines = client.get_pipelines()
+print(pipelines)  
+```
