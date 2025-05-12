@@ -1,0 +1,16 @@
+README.md
+setup.py
+MeetingAssistant/__init__.py
+MeetingAssistant/app.py
+MeetingAssistant/assistantbot.py
+MeetingAssistant/embed.py
+MeetingAssistant/gui_lauuncher.py
+MeetingAssistant/query_parser.py
+MeetingAssistant/search.py
+MeetingAssistant/summarize.py
+MeetingAssistant/transcribe.py
+MeetingAssistant.egg-info/PKG-INFO
+MeetingAssistant.egg-info/SOURCES.txt
+MeetingAssistant.egg-info/dependency_links.txt
+MeetingAssistant.egg-info/requires.txt
+MeetingAssistant.egg-info/top_level.txt

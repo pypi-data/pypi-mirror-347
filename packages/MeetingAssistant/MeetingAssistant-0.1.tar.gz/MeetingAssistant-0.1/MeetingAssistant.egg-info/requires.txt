@@ -1,0 +1,4 @@
+PySimpleGUI
+llama-cpp-python
+faiss-cpu
+python-telegram-bot
