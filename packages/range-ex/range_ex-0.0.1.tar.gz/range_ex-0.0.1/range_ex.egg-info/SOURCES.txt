@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+range_ex/__init__.py
+range_ex/range_regex.py
+range_ex.egg-info/PKG-INFO
+range_ex.egg-info/SOURCES.txt
+range_ex.egg-info/dependency_links.txt
+range_ex.egg-info/requires.txt
+range_ex.egg-info/top_level.txt
+tests/test_range_regex.py
