@@ -1,0 +1,9 @@
+README.md
+setup.py
+p_talk_to_ai/__init__.py
+p_talk_to_ai/p_talk_to_ai.py
+p_talk_to_ai.egg-info/PKG-INFO
+p_talk_to_ai.egg-info/SOURCES.txt
+p_talk_to_ai.egg-info/dependency_links.txt
+p_talk_to_ai.egg-info/requires.txt
+p_talk_to_ai.egg-info/top_level.txt
