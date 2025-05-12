@@ -1,0 +1,16 @@
+freeai_utils/__init__.py,sha256=jbtNmkjNYTd52b4I3rcEtP8Eg5veLezLBEkPh2_iO9w,763
+freeai_utils/audio_record.py,sha256=LAjTKlMIkAyUwb69e4BrZZe50zfZl2RNgmia0mTxseY,13830
+freeai_utils/audio_to_text_whisper.py,sha256=CLo-oKWe5um2bQt-I2xfI6iJEgKFm4jIsElqsOtkv9E,6007
+freeai_utils/clean_text_for_tts.py,sha256=2qSLsEkbco3wyFuCmvCoOed-mR9xiMAOI6T_fG3N5m0,2115
+freeai_utils/geminiAPI.py,sha256=BL4JUZMl8nDD5oti6vYPF2dr_l31DHSHdfT9D9UMlDI,6708
+freeai_utils/google_search.py,sha256=Lw5Q41ivEjFtnStsH0KJa4xKHHB58z4pe5WjRWkRP0U,2974
+freeai_utils/image_to_text.py,sha256=jBAiSif4bNsjZ0nlheJsQfuhayKbC9eA_QRU13Q2t_I,2770
+freeai_utils/language_detection.py,sha256=0JA9ZbU8ymVVUSI1WISJO8WXn08_htyzWo644qQpuHY,1236
+freeai_utils/text_from_image_easyocr.py,sha256=JpgHPOsI3PrbuayeUnsoqcTlPvRcHc_m_lQLHliwFWY,6799
+freeai_utils/text_to_speech_gtts.py,sha256=7oGfdH0CisBzVKR-6pvfvtiwomIKJbyQtC5stn2KFhA,2299
+freeai_utils/text_to_speech_pyttsx3.py,sha256=B_aPqG6RGxWVDC9t_Ycv-AsOlbTSBn_ZvRL9tAKksbE,1659
+freeai_utils/wrapper.py,sha256=ZBQrN3XjxGs5vGFMJhMlc_DwJxOin_7Ksk-7T3Pbrk8,662
+freeai_utils-0.1.3.dist-info/METADATA,sha256=7i4KlCebscWsyofPZ7v2nraCq-BCIHFmZPrZ5iv1Fkc,2391
+freeai_utils-0.1.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+freeai_utils-0.1.3.dist-info/top_level.txt,sha256=xqXAe9RedE2DbmomKR60YJmue-q4Q8Fn7a-bZbrOhII,13
+freeai_utils-0.1.3.dist-info/RECORD,,
