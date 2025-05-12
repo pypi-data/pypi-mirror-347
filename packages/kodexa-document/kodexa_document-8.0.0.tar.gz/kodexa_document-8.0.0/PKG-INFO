@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: kodexa-document
+Version: 8.0.0
+Summary: Python SDK for the Kodexa Document Database (KDDB)
+Author: Austin Redenbaugh
+Author-email: austin@kodexa.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: addict (>=2.4.0,<3.0.0)
+Requires-Dist: antlr4-python3-runtime (>=4.13.2,<5.0.0)
+Requires-Dist: deepdiff (>=8.4.2,<9.0.0)
+Requires-Dist: msgpack (>=1.1.0,<2.0.0)
+Requires-Dist: peewee (>=3.18.1,<4.0.0)
+Requires-Dist: pydantic (>=2.11.4,<3.0.0)
+Requires-Dist: pytest (>=8.3.5,<9.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: requests (>=2.32.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+
