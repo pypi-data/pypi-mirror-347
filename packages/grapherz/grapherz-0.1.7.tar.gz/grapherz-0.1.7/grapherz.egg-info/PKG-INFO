@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: grapherz
+Version: 0.1.7
+Summary: 负责提供graph之间的格式调度
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.2.4
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: pytest-html>=4.1.1
+Requires-Dist: python-box>=7.3.2
+Requires-Dist: setuptools>=78.1.0
+
+# AIworker_graph
+
+控制和转换graph格式的Underlying capability
+用来提供各种graph之间的转换能力
+暴力编写 + AI优化 将垃圾代码转化为牛逼代码
