@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: MeetingAssistant
+Version: 0.1
+Summary: A conversational meeting assistant
+Home-page: https://github.com/samruddhitiwari/MeetingAssistant
+Author: Samruddhi Tiwari
+Author-email: samruddhitiwari003@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: PySimpleGUI
+Requires-Dist: llama-cpp-python
+Requires-Dist: faiss-cpu
+Requires-Dist: python-telegram-bot
+
