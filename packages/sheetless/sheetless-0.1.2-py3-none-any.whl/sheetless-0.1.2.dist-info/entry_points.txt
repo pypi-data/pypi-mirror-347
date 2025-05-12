@@ -1,0 +1,2 @@
+[console_scripts]
+sheetless = sheetless.cli:main
