@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: bitrix24-api-client
+Version: 0.1.0
+Summary: Library for working with the Bitrix24 API (supports both synchronous and asynchronous clients).
+Author-email: Temirkhan <temirhansamurhanov@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/stemirkhan/bitrix24-api-client
+Project-URL: Repository, https://github.com/stemirkhan/bitrix24-api-client
+Project-URL: Issues, https://github.com/stemirkhan/bitrix24-api-client/issues
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: requests>=2.32.3
+Provides-Extra: dev
+Requires-Dist: mypy>=1.15.0; extra == "dev"
+Dynamic: license-file
+
+# bitrix24-api-client
