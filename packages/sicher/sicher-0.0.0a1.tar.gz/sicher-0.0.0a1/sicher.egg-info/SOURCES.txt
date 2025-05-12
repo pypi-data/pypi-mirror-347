@@ -1,0 +1,5 @@
+setup.py
+sicher.egg-info/PKG-INFO
+sicher.egg-info/SOURCES.txt
+sicher.egg-info/dependency_links.txt
+sicher.egg-info/top_level.txt
