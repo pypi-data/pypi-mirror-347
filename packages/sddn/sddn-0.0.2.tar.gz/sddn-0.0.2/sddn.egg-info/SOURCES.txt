@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+sddn/__info__.py
+sddn/__init__.py
+sddn/discrete_distribution.py
+sddn/sddn_utils.py
+sddn.egg-info/PKG-INFO
+sddn.egg-info/SOURCES.txt
+sddn.egg-info/dependency_links.txt
+sddn.egg-info/requires.txt
+sddn.egg-info/top_level.txt
