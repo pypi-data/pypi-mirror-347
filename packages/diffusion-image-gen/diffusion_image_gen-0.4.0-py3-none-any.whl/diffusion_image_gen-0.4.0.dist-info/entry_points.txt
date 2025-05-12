@@ -1,0 +1,2 @@
+[console_scripts]
+diffusion-image-gen = diffusion_image_gen.cli:main
