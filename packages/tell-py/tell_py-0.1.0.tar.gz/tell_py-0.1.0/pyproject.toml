@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tell-py"
+version = "0.1.0"
+description = "Telegram logging utility for Python"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{ name = "Rompni", email = "andresnavarrodev@gmail.com" }]
+dependencies = ["requests", "python-dotenv"]
+requires-python = ">=3.7"
+
+[tool.setuptools.packages.find]
+where = ["."]
