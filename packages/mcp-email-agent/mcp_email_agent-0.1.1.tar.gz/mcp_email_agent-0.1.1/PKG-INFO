@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: mcp-email-agent
+Version: 0.1.1
+Summary: A CLI tool that helps you manage your emails.
+Author: jinyang628
+Author-email: chenjinyang4192@gmail.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: click (>=8.2.0,<9.0.0)
+Requires-Dist: google-api-python-client (>=2.169.0,<3.0.0)
+Requires-Dist: google-auth-httplib2 (>=0.2.0,<0.3.0)
+Requires-Dist: google-auth-oauthlib (>=1.2.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# MCP Email Agent
+
+A CLI tool that helps you manage your emails.
+
+## Set up Poetry
+
+Please follow the official [installation guide](https://python-poetry.org/docs/#installation) to install Poetry, which will be used to manage dependencies and environments.
+
+```bash
+# Install dependencies
+poetry install
+```
+
+```bash
+# Activate Python Virtual Environment for Mac/Linux
+eval "$(poetry env activate)"
+```
+
