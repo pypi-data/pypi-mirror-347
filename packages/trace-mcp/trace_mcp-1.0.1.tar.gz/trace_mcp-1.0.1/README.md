@@ -1,0 +1,67 @@
+# trace-mcp
+
+A Python MCP server for controlling Android system tracing via a native traceserver binary, supporting device selection and custom port forwarding. Designed for use with the uv/uvx toolchain.
+
+## Prerequisites
+- Python 3.12+
+- [uv](https://github.com/astral-sh/uv) (for dependency management and running scripts)
+- Android Debug Bridge (adb) in your PATH
+- Android device (API 21+), with USB debugging enabled
+- Prebuilt traceserver binaries in the `bin/` directory for all supported ABIs
+
+## Installation
+```sh
+uv pip install -e .
+```
+
+## Usage
+
+### Start the MCP server (with uvx)
+```sh
+uvx trace-mcp --port 12345
+```
+- `--port` (optional): Specify the port for traceserver and forwarding (default: 12345)
+
+### MCP Tool Functions
+All tool functions accept an optional `sn` (device serial number) and `port` argument.
+
+#### 1. begin_trace
+Begin a trace section on the device.
+- Arguments:
+  - `trace_tag` (str): Trace tag name
+  - `sn` (str, optional): Device serial number
+  - `port` (int, optional): Port (default: 8080)
+
+#### 2. end_trace
+End a trace section on the device.
+- Arguments:
+  - `trace_tag` (str): Trace tag name
+  - `sn` (str, optional): Device serial number
+  - `port` (int, optional): Port (default: 8080)
+
+#### 3. trace_test_mode
+Start traceserver in test mode on the device.
+- Arguments:
+  - `sn` (str, optional): Device serial number
+  - `port` (int, optional): Port (default: 8080)
+
+#### 4. stop_traceserver
+Stop the traceserver process and remove port forwarding.
+- Arguments:
+  - `sn` (str, optional): Device serial number
+  - `port` (int, optional): Port (default: 8080)
+
+## Example
+```sh
+uvx trace-mcp --port 9000
+```
+
+Then, use your MCP client to call the tool functions with the appropriate arguments.
+
+## Project Structure
+- `main.py`: MCP server and tool function implementations
+- `bin/`: Prebuilt traceserver binaries for each ABI
+- `pyproject.toml`: Project configuration for uv/uvx
+
+## License
+MIT
