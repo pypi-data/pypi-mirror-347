@@ -1,0 +1,25 @@
+[project]
+name = "getTrades"
+version = "1.6.0"
+authors = [
+  { name="Nico de Smidt", email="nico@ndsrf.eu" },
+]
+description = "A tool querying Bitvavo.com to retrieve all trades and calculate overall results"
+readme = "README.md"
+requires-python = ">=3.13.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "configparser_crypt==1.1.0",
+  "keyring==25.6.0",
+  "pandas==2.2.3",
+  "tabulate2==1.10.1",
+  "websockets==14.2"]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
