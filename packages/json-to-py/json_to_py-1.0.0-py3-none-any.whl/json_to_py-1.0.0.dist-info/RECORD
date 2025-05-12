@@ -1,0 +1,13 @@
+json_to_py/__init__.py,sha256=lkrlLV9mWMy09hKHBe8ebHwpgT2KjcWhaQrb3k0TRlg,410
+json_to_py/parser.py,sha256=Nf4ra5QqTWVn7lg2Pkt6ghxZSZd_uMHNWxIdufJ2pG0,10170
+json_to_py/type_information.py,sha256=2HAMX488g9QorLyygjkfiplqJqJym3qaSH8AdQ419N8,8072
+json_to_py-1.0.0.dist-info/licenses/LICENSE,sha256=3XMzCATbfcoMtuT4XcxBIw6VCRCsNIHiD3DLVTx5Qkc,1065
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/expected_data_classes.py,sha256=A9ogeOrLFuCqADb7VlHHgM1Aqvwdrt-4WSy1xNdZZH0,997
+tests/expected_named_tuples.py,sha256=pFyQZWZHWWPFrDHzVXtcX0gmHp6_hceueAlj1xB8qWk,968
+tests/test_parser.py,sha256=A3UNx2FJZjqFnNdfMYOWVOdcJrdVC583Xlq566Vwau0,14975
+tests/test_type_information.py,sha256=GfhU8rr6mnbRzdLpK7WSmpRl_miOyTiiwy9YMWLprxk,3409
+json_to_py-1.0.0.dist-info/METADATA,sha256=Sx4GrFbnhuDCdAVYRTLSEE9HUl_QTOCjVbkMLxBrGWg,8789
+json_to_py-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+json_to_py-1.0.0.dist-info/top_level.txt,sha256=cI52dpcAXBsH5FvIwM1OlJXPD-G5294jhRobShqhQIE,17
+json_to_py-1.0.0.dist-info/RECORD,,
