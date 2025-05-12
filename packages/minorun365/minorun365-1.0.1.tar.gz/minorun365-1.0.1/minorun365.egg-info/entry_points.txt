@@ -1,0 +1,2 @@
+[console_scripts]
+minorun365 = minorun365.card:app
