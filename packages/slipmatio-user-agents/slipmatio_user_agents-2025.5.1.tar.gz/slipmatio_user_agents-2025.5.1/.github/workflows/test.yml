@@ -1,0 +1,37 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: test-${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: "Install uv"
+        uses: hynek/setup-cached-uv@757bedc3f972eb7227a1aa657651f15a8527c817 # v2.3.0
+        with:
+          cache-dependency-path: "**/uv.lock"
+
+      - name: Install dependencies
+        run: uv sync --dev --locked
+
+      - name: Test
+        run: uv run python -m unittest src/user_agents/tests.py
+
+      # - name: Pytest Coverage
+      #   uses: MishaKav/pytest-coverage-comment@81882822c5b22af01f91bd3eacb1cefb6ad73dc2 # v1.1.53
+      #   if: success()
+      #   with:
+      #     pytest-xml-coverage-path: ./coverage.xml
+      #     junitxml-path: ./pytest.xml
+      #     badge-title: Backend Coverage
