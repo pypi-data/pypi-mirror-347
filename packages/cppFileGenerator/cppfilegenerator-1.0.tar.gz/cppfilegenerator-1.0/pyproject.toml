@@ -1,0 +1,29 @@
+[project]
+name = "cppFileGenerator"
+version = "1.0"
+description = "A Python tool to automatically generate C++ source and header files."
+authors = [
+    { name = "weketlava", email = "you@example.com" }
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["cpp", "generator", "header", "source", "automation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Code Generators"
+]
+dependencies = [
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["cppFileGenerator"]
+
+[tool.setuptools.package-data]
+cppFileGenerator = ["templates/*.tpl"]

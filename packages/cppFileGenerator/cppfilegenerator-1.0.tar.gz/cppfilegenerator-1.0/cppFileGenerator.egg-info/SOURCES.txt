@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+cppFileGenerator/__init__.py
+cppFileGenerator.egg-info/PKG-INFO
+cppFileGenerator.egg-info/SOURCES.txt
+cppFileGenerator.egg-info/dependency_links.txt
+cppFileGenerator.egg-info/top_level.txt
