@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: pyqbpp
+Version: 2025.5.11
+Summary: Python version of QUBO++
+Author-email: Koji Nakano <nakano@hiroshima-u.ac.jp>
+License-Expression: LicenseRef-PYQBPPLicense
+Requires-Python: >=3.6
+License-File: LICENSE
+Dynamic: license-file
