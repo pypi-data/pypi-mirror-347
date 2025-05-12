@@ -1,0 +1,51 @@
+Metadata-Version: 2.4
+Name: mcp_auto_deploy_demo
+Version: 0.0.2
+Summary: 基于playwright的自动运营部署MCP服务
+Author-email: zhiliu <zhiliu1231@gmail.com>
+License: MIT
+Keywords: automation,browser,mcp,playwright
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.12
+Requires-Dist: anyio>=4.8.0
+Requires-Dist: beautifulsoup4>=4.13.3
+Requires-Dist: click>=8.1.8
+Requires-Dist: ddddocr>=1.5.6
+Requires-Dist: gitpython>=3.1.40
+Requires-Dist: h11>=0.14.0
+Requires-Dist: httpx-sse>=0.4.0
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp>=1.6.0
+Requires-Dist: playwright>=1.52.0
+Requires-Dist: pydantic-settings>=2.7.1
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: sniffio>=1.3.1
+Requires-Dist: sse-starlette>=2.2.1
+Requires-Dist: starlette>=0.45.3
+Requires-Dist: typing-extensions>=4.12.2
+Requires-Dist: uvicorn>=0.34.0
+Description-Content-Type: text/markdown
+
+# auto-deploy
+自动运营部署项目
+启动流程：
+uv venv --python 3.12
+.venv\Scripts\activate
+uv pip install -r requirements.txt
+playwright install
+# sse模式启动
+python main.py
+# stdio模式启动
+python stdio_main.py
+
+
+# mcp-client配置流程
+# sse模式
