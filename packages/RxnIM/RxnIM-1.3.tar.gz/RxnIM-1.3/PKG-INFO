@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: RxnIM
+Version: 1.3
+Summary: RxnIM
+Author: CHEN Yufan
+Author-email: ychenkv@connect.ust.hk
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE.txt
