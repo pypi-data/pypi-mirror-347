@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: regmonkey
+Version: 0.1.0
+Summary: A smart and lightweight toolkit for regression modeling, statistical summaries, and Excel annotations.
+Author-email: qingrui <qingrui.econ@gmail.com>
+License: MIT
+Keywords: regression,statistics,excel,data-analysis,summary,dummy-variable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=1.0
+Requires-Dist: numpy>=1.18
+Requires-Dist: openpyxl>=3.0
+Requires-Dist: statsmodels>=0.13
+Dynamic: license-file
+
+# regmonkey
+
+**regmonkey** is a lightweight Python package designed to streamline data analysis and regression modeling tasks. It simplifies tasks like descriptive statistics, dummy variable creation, regression model estimation, and exporting annotated Excel files.
+
+## Features
+
+- 📊 **Descriptive Statistics**: Easily generate clean and rounded summary statistics from a DataFrame.
+- 🧠 **Smart Variable Parsing**: Automatically interpret log transformations, polynomial terms, and interaction terms.
+- 📦 **Dummy Variable Creation**: Quickly convert categorical variables into dummy/indicator variables.
+- 📈 **Regression Analysis**: Run multiple linear regressions with support for log, power, and interaction terms, and export well-formatted result tables.
+- 📄 **Excel Footer Annotation**: Add footnotes to Excel files automatically.
+
+## Installation
+
+```bash
+pip install regmonkey
+```
