@@ -1,0 +1,21 @@
+# Extra ROS2 packages
+RUN apt-get update && apt-get install -y \
+    ros-$ros_version_short-rclpy-message-converter \
+    ros-$ros_version_short-diagnostic-updater \
+    ros-$ros_version_short-joint-state-publisher \
+    ros-$ros_version_short-rosbag2-storage-mcap \
+    ros-$ros_version_short-perception \
+    ros-$ros_version_short-cv-bridge \
+    ros-$ros_version_short-pcl-ros \
+    ros-$ros_version_short-pcl-conversions \
+    ros-$ros_version_short-point-cloud-transport \
+    ros-$ros_version_short-visualization-msgs \
+    ros-$ros_version_short-sensor-msgs \
+    ros-$ros_version_short-geometry-msgs \
+    ros-$ros_version_short-mavros-msgs \
+    ros-$ros_version_short-nmea-msgs \
+    ros-$ros_version_short-geographic-msgs \
+    ros-$ros_version_short-vision-msgs \
+    ros-$ros_version_short-v4l2-camera \
+    libpcl-dev && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*

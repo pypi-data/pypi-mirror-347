@@ -1,0 +1,4 @@
+# Fix for argcomplete for ros2 & colcon (https://github.com/ros2/ros2cli/issues/534#issuecomment-957516107)
+RUN echo "\n# Fix for argcomplete for ros2 & colcon (https://github.com/ros2/ros2cli/issues/534#issuecomment-957516107)" >> /root/.zshrc && \
+    echo 'eval "$$(/usr/bin/register-$python_argcomplete ros2)"' >> /root/.zshrc  && \
+    echo 'eval "$$(/usr/bin/register-$python_argcomplete colcon)"' >> /root/.zshrc

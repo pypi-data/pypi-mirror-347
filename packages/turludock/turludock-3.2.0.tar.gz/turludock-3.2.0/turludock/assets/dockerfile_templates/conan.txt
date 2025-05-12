@@ -1,0 +1,4 @@
+# Install conan
+RUN pip install --no-cache-dir --break-system-packages --ignore-installed PyYAML && \
+    pip install --no-cache-dir --break-system-packages --ignore-installed distro && \
+    pip install --no-cache-dir --break-system-packages conan
