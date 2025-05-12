@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pyhesdm/__init__.py
+pyhesdm/dmhalos.py
+pyhesdm/dmhalos_layers_8Mpc.csv
+pyhesdm/dmigm_layers_8Mpc.csv
+pyhesdm/dmigm_std_layers_8Mpc.csv
+pyhesdm/dwarfs.csv
+pyhesdm/hestia_dm.py
+pyhesdm/model_lg_nside64.csv
+pyhesdm/tully_groups.csv
+pyhesdm.egg-info/PKG-INFO
+pyhesdm.egg-info/SOURCES.txt
+pyhesdm.egg-info/dependency_links.txt
+pyhesdm.egg-info/requires.txt
+pyhesdm.egg-info/top_level.txt
