@@ -1,0 +1,2 @@
+[console_scripts]
+portscanner = portscanner.portscanner:main
