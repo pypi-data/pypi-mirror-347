@@ -1,0 +1,13 @@
+tqdm==4.66.5
+colorama==0.4.6
+jsonschema==4.23.0
+pytest==8.3.3
+
+[dev]
+pytest
+pytest-cov
+pre-commit
+pytest-mock
+flake8
+isort
+black

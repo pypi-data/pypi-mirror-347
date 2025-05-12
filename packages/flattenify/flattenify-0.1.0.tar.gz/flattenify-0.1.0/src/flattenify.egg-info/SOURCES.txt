@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/flatten_tool/flatten/__init__.py
+src/flatten_tool/flatten/cli.py
+src/flatten_tool/flatten/config.py
+src/flatten_tool/flatten/file_handler.py
+src/flatten_tool/flatten/logging.py
+src/flatten_tool/flatten/output.py
+src/flatten_tool/plugins/custom_parser.py
+src/flattenify.egg-info/PKG-INFO
+src/flattenify.egg-info/SOURCES.txt
+src/flattenify.egg-info/dependency_links.txt
+src/flattenify.egg-info/entry_points.txt
+src/flattenify.egg-info/requires.txt
+src/flattenify.egg-info/top_level.txt
+tests/test_flatten.py
