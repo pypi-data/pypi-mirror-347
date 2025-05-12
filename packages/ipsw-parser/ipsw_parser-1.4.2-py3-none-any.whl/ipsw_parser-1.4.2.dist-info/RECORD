@@ -1,0 +1,15 @@
+ipsw_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipsw_parser/__main__.py,sha256=-SS30TWcQvcvu0G7zUPdeFWH2FwxfRXyurGdMBJ04I4,3142
+ipsw_parser/_version.py,sha256=Ls_J-pNiuTKX1KU6pZ6tPQXAMcmLAzW_HHHgGVQNEd0,511
+ipsw_parser/build_identity.py,sha256=QaIidEumx7_jGGflND9NhmUYvEyucXGacKhoMcJw1G8,6392
+ipsw_parser/build_manifest.py,sha256=ZI2g_eY6MpTF_EwoE4YVLwZMGv9JTyhAIkpfHb7AEJU,2252
+ipsw_parser/component.py,sha256=Nrt2FdHEqB9lRZ5FIP1xxh8W4HC1Wkb-dGRuRgP2FYM,1792
+ipsw_parser/exceptions.py,sha256=fbIDk6kuiSf-dIcYN110YLkB6Ng6tX7A1PjfrEZ-9B4,99
+ipsw_parser/firmware.py,sha256=e7wQexLQGwWp7lfw_WMgJlooUxH9_aFtuXBstgxt0qs,1465
+ipsw_parser/ipsw.py,sha256=WX_ILKy03noF7sG9JTIyKx-LrVbWncIoVANnuRD8l6Y,5064
+ipsw_parser-1.4.2.dist-info/licenses/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+ipsw_parser-1.4.2.dist-info/METADATA,sha256=lOQBl8InUUI3I_zBrT13qBvOQ_AAdxx49EN0OobSS6s,42944
+ipsw_parser-1.4.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+ipsw_parser-1.4.2.dist-info/entry_points.txt,sha256=CZQ2uKKsyU1Z8DoZAS_mQrsBemivjKpUGJZ5D3-Q2-g,57
+ipsw_parser-1.4.2.dist-info/top_level.txt,sha256=df4klzyQpJLksGG21aw-KdqPqNK2ir7XTqR1FScXPvc,12
+ipsw_parser-1.4.2.dist-info/RECORD,,
