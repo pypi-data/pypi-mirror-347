@@ -1,0 +1,2 @@
+[console_scripts]
+csv2vcd = csv2vcd.main:main

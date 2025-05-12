@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/csv2vcd.egg-info/PKG-INFO
+src/csv2vcd.egg-info/SOURCES.txt
+src/csv2vcd.egg-info/dependency_links.txt
+src/csv2vcd.egg-info/entry_points.txt
+src/csv2vcd.egg-info/top_level.txt

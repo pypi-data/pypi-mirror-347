@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csv2vcd"
+version = "0.1.0"
+description = "Convert CSV files to VCD (Value Change Dump) format for digital waveform visualization"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "SystemVII", email = "thaw-skid-fossil@duck.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SystemVll/csv2vcd"
+"Bug Tracker" = "https://github.com/SystemVll/csv2vcd/issues"
+
+[project.scripts]
+csv2vcd = "csv2vcd.main:main"
