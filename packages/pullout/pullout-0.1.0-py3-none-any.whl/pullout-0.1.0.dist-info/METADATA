@@ -1,0 +1,125 @@
+Metadata-Version: 2.4
+Name: pullout
+Version: 0.1.0
+Summary: Easy way to pull out values from a complex nested Python structure
+Author-email: Aleksei Trankov <trankov@yandex.ru>
+Project-URL: Repository, https://gitverse.ru/trankov/pullout
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# PullOut.From
+
+## Что делает
+
+Извлекает значение из сложносочинённых Python-объектов через цепочку последовательно указанных ключей, атрибутов и индексов.
+
+## Зачем
+
+Например, у нас есть такая структура:
+
+```python
+our_structure = {
+    'structure_name': 'Some name',
+    'Python_objects': [
+        some_pydatic_structure,
+        wsgi_response,
+        {
+            'another_dict': 11,
+            'and_another': 12,
+        }
+    ],
+}
+```
+
+Тут есть всё: словари, списки, объекты с атрибутами. Для навигации по этой структуре нужно использовать различные методы и проверки, и/или обработчики ошибок. Было бы удобно просто по порядку указать ключи, имена атрибутов или целочисленные индексы, и получить конечное значение либо None, если такого пути не существует.
+
+`PullOut` это позволяет. Самое простое — перечислить аргументы для извлечения через запятую. Класс-обработчик сам определит, атрибут это, ключ или индекс:
+
+```python
+from pullout import PullOut
+
+another_dict = PullOut('Python_objects', 2, 'another_dict').From(our_structure)
+```
+В этом случае обработчик пройдёт по структуре `our_structure` и извлечёт значение 11. Он определит, что `'Python_objects'` это ключ словаря, `2` это индекс в списке, а `another_dict` снова ключ.
+
+Так же просто он обработает и атрибуты объектов:
+
+```python
+if PullOut(
+    'Python_objects', 1, 'status_code'
+).From(our_structure) != 200:
+    print('Wrong wsgi server response')
+```
+
+## Как указывать путь к значению
+
+Как ещё можно передать путь к значению:
+- Через точечную нотацию: `'Python_objects.0.foo.bar'`
+- Индексы в точечной нотации могут быть в квадратных скобках: `'Python_objects[0].foo.bar'`
+
+Можно прямо указать тип аргумента, что повышает читаемость и не требует автоопределения типа (импортируйте типы из `pullout`):
+- `Attr('attribute_name')` (название атрибута объекта)
+- `Key(any_valid_key_object)` (ключ словаря)
+- `Index(any_valid_index_value)` (числовой индекс в последовательности)
+
+Все эти варианты можно комбинировать в любом порядке. Вот, например, так можно получить последний элемент во вложенном списке:
+
+`('arg_name.0.key_name[12]', Index(-1), 'arg_name', 'another_name')`
+
+## Переиспользование
+
+Инструмент задуман таким образом, чтобы готовые паттерны пути можно было описать один раз и затем применять к различным объектам с аналогичными контрактами/протоколами, либо к разным экземплярам одного класса.
+
+```python
+get_value_from = PullOut('json', 'my_value', 0).From
+extracted_values = [
+    get_value_from(response)
+    for response
+    in wsgi_responses
+]
+```
+
+Метод `.From` может быть заменён простым `__call__` при определении общего шаблона с последующим вызовом конкретного объекта. Например, можно декларировать их в том или ином модуле, и импортировать для использования в функционале.
+
+```python
+# --- Модуль declarations.py
+
+# Декларировали путь к адресу изображения в некоторой структуре
+image_src = PullOut('items', 'images', 0, 'src')
+
+
+# --- Модуль с функциональностью
+
+from .declarations import image_src
+
+@app.post('/image-src')
+def get_image_address(request, some_object: dict):
+    return image_src(some_object)
+```
+
+Если потом структуры меняются, открываем декларации и правим пути, а функционал работает, как работал.
+
+## Вызов из типизатора
+
+Типы аргументов (`Index`, `Attr` или `Key`) также имеют свои определения метода `__call__`. Функционально это дублирование инструментов `itemgetter`, `attrgetter` и `methodcaller` из модуля `operator` стандартной библиотеки Python, и просто для доступа к данным лучше использовать стандартные методы. В нашем случае важно именно указание типа аргумента, а извлечение значения является побочной возможностью. Однако, фокус на типизации может быть полезен (возможно).
+
+Классы-типизаторы способны извлекать значения, если использовать их экземпляры как вызываемые объекты и передавать в них целевой объект:
+
+```python
+from pullout import Index
+
+
+sequence = [1, 2, 3, 4, 5, 100]
+first_of, last_of = Index(0), Index(-1)
+print(
+    first_of(sequence),
+    last_of(sequence),
+)
+
+>>> 1 100
+```
+
+Примеры есть в документации к этим классам.
