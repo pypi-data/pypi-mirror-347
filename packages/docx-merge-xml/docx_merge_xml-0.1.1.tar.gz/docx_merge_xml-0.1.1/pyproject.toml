@@ -1,0 +1,42 @@
+[project]
+name = "docx-merge-xml"
+dynamic = [ "version" ]
+description = "A fast Python library for merging two Microsoft Word (.docx) documents into one."
+authors = [
+    {name = "Benedicte Giraud",email = "benegir@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "lxml (>=5.4.0,<6.0.0)"
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+keywords = [ "docx", "merge", "fast", "xml", "zip", "office" ]
+
+[project.urls]
+homepage = "https://github.com/BenedicteGiraud/docx-merge-py"
+repository = "https://github.com/BenedicteGiraud/docx-merge-py"
+issues = "https://github.com/BenedicteGiraud/docx-merge-py/issues"
+documentation = "https://github.com/BenedicteGiraud/docx-merge-py"
+
+[tool.poetry]
+packages = [{include = "docx_merge", from = "src"}]
+version = "0.1.1"  # base version
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+ruff = "^0.11.9"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["B", "C4", "E", "F", "G", "I", "INT", "ICN", "N", "PD", "PERF", "PIE", "PTH", "PYI",  "Q", "RSE", "RET", "RUF012", "SLF", "T20", "W"]
+
+[tool.pytest.ini_options]
+pythonpath = "src/docx_merge"
