@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: Scarlet_Utils
+Version: 0.0.14
+Summary: Utils for StarBot.
+Home-page: https://github.com/deathamongstlife/Star-Discord-Utils
+Author: Scarlet Jean
+Author-email: r79767525@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9.1
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: sentry_sdk
+Requires-Dist: colorama
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# StarBot_Utils - Shared tools
+
+The "StarBot_Utils" sub-folder is a PIP package for use with StarBot.
+
+## Version Information
+
+Versions are in the format of:
+Release.Beta.Alpha
+
+When these Utils are ready for good use, then it will be 1.0.0.
+
+I will have StarBot on PyPi for public use, I just won't be providing documentation on how to start it. Contact me on discord: xgg69420x
