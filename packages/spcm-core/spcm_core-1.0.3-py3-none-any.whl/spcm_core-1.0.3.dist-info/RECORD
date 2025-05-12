@@ -1,0 +1,12 @@
+spcm_core/__init__.py,sha256=dpD1I7WYVhenB-jwafgsIm5L4kmQvFjVtcqxMP9uf7o,1411
+spcm_core/_version.py,sha256=VwMD6H0nHvIY1OKxk54QuFRD8p8iTQwCfv1Wz65GYgc,24504
+spcm_core/constants.py,sha256=nv_MJFN21N4lEVVqqT2_fvia93bU3PacDArTzYjYZTA,251
+spcm_core/pyspcm.py,sha256=bnugrmPhvETC5gGRjoEuj6XXZalCxj3pEAwbe1ML3N8,10522
+spcm_core/regs.py,sha256=xaKAYwiNVuKIG0t8g1y_2VaKVWaMlNr3qZ2jcjRDKmg,99130
+spcm_core/spcerr.py,sha256=WrmW8IYgItbHqzmiJA4OmkGeHSHt7Pyfy27iquEhPxo,2116
+spcm_core/spcm_tools.py,sha256=FtNSkYY_7dZk-EtuJjlsWjTjl8gLe8DT_NbZg-YBIuM,864
+spcm_core-1.0.3.dist-info/licenses/LICENSE,sha256=TBiCKWvkqw6EcNs7aHvpmzi73ukF6RAwN0ICC_GLm34,1073
+spcm_core-1.0.3.dist-info/METADATA,sha256=NAEyOcJ6tKNwiGoOe1zk-ZkpzNlXJalfwphvHh9V8-c,5453
+spcm_core-1.0.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+spcm_core-1.0.3.dist-info/top_level.txt,sha256=G54lPtSNkCPWiHItNbPhE4bQYefdbGqoIZ1-mRcqhME,10
+spcm_core-1.0.3.dist-info/RECORD,,
