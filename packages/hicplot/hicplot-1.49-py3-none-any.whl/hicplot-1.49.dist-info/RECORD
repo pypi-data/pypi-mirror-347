@@ -1,0 +1,17 @@
+HiCPlot/Cli.py,sha256=Wj2GBPrvC-Q9QSmRawKE5iTn94sW4YtnENCGRjgceY0,5569
+HiCPlot/DiffSquHeatmap.py,sha256=xMsmRuylx7USicMg4atvi73bzzAS39uWOlDfojqvgbg,29728
+HiCPlot/DiffSquHeatmapTrans.py,sha256=x3DrU7rzzUmDS7_Oxq7bvGlIrjxCnEoT7KuV4EB3GmE,15241
+HiCPlot/NGStrack.py,sha256=jWRCNr_p4Kl2mihjSuWHF6yqXSmmytnFQbDSO83HweY,26933
+HiCPlot/SquHeatmap.py,sha256=gY5vYvICTC2N6k7T5GkL7jCM5h5LivtDlHyt0Ro9CYc,42584
+HiCPlot/SquHeatmapTrans.py,sha256=gFDUAOdOK9uE1fFwS1zCh-5LbkDvuY_R596_KqOrYTI,13949
+HiCPlot/TriHeatmap.py,sha256=EeHTDd87wWio_IKv7wRtwSkEe1WRElEtVQRNvJ1KGxY,44897
+HiCPlot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+HiCPlot/__main__.py,sha256=JNevPQOjNVheDipOBVdb1o5jV3gp87PvGTrzuvQWMmg,204
+HiCPlot/_version.py,sha256=0oAZRWexqAYYdmkO9uJEEn2i4ZT24ghzMkEHgMXymRE,18
+HiCPlot/upper_lower_triangle_heatmap.py,sha256=vB1tlxMn442CtDlBMwrChKTlCDYr8vOQFk1laJ6qauM,33080
+hicplot-1.49.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+hicplot-1.49.dist-info/METADATA,sha256=uX4lCDeh8FY3Ds1d2b-SvtCrmcA8HDU95y_kGbGOU9U,599
+hicplot-1.49.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+hicplot-1.49.dist-info/entry_points.txt,sha256=5TbHmuOOFzj1zi798J9DVHLDqqAz5SxeHKMjfB3PbHY,45
+hicplot-1.49.dist-info/top_level.txt,sha256=MHbqVLvpKnhMWAiYjXL15g3cltC6QmokbB38eps40H4,8
+hicplot-1.49.dist-info/RECORD,,
