@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: RxnIM
+Version: 1.2
+Summary: RxnIM
+Author: CHEN Yufan
+Author-email: ychenkv@connect.ust.hk
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: torch==2.3.0
+Requires-Dist: numpy>=1.19.5
+Requires-Dist: pandas>=1.2.4
+Requires-Dist: Pillow==9.5.0
+Requires-Dist: matplotlib>=3.5.3
+Requires-Dist: opencv-python>=4.5.5.64
+Requires-Dist: pycocotools>=2.0.4
+Requires-Dist: pytorch-lightning>=1.8.6
+Requires-Dist: transformers>=4.5.1
+Requires-Dist: huggingface-hub>=0.11.0
+Requires-Dist: MolScribe
+Requires-Dist: easyocr>=1.6.2
