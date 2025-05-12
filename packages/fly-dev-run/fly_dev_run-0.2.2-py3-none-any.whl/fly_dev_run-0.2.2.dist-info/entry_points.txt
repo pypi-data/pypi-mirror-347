@@ -1,0 +1,2 @@
+[console_scripts]
+dev_run = fly_dev_run.cli_main:main
