@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "acd_unique_package"
+version = "0.1.0"
+description = "My package"
+authors = [
+    { name = "Aykut Caner Demir", email = "test@test.com"}
+]
+
+[project.scripts]
+my_package = "my_package.__main__:main"
