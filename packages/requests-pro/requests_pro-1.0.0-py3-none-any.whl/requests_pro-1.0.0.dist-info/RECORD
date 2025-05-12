@@ -1,0 +1,13 @@
+requests_pro-1.0.0.dist-info/licenses/LICENSE,sha256=HlIDo5MWchRaszo8B2Xe7TDW51WZ-tWJoatYamSqo34,1072
+requestspro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requestspro/audit.py,sha256=dMP7K0xE5aa3ltE_yvK-H8nJFQDEqE6NvX4J-d_xwNI,3146
+requestspro/audit_for_django.py,sha256=ySWfYu-rmwVt1fhlCeeLQUn35L_XMqGLUBolOL7__Js,826
+requestspro/auth.py,sha256=FOlpLTM9QhFS7KVNqMlE-bOMJ42Qg48IZk4PNufb7G0,2653
+requestspro/client.py,sha256=0lKIWbqZbG2kW3VHJyb0GXm3G6krSu0Zz-EVYcfVczg,1357
+requestspro/sessions.py,sha256=s6127-zAaRFF_Kwm5rq3VrJQDldEpLm1DU5vihRD2Rc,7407
+requestspro/token.py,sha256=yMa31kj2ql7uwv-KnahsAA_qihQVmQnRqoo2sLvou4w,1470
+requestspro/utc.py,sha256=WkNUE-g7XoYEj_5YCacQ_Se7dfMzMVMvkXyOj07iDQs,151
+requests_pro-1.0.0.dist-info/METADATA,sha256=TYbHePPEXpvT4hVQlD3Aiw3wtzzS9qgMH_qwMcaxWFA,2744
+requests_pro-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+requests_pro-1.0.0.dist-info/top_level.txt,sha256=n8a9B4zbkjne6RI4jSVBKJh0FKpUdHATPcdJOgglkh8,12
+requests_pro-1.0.0.dist-info/RECORD,,
