@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+tell_py/__init__.py
+tell_py/sender.py
+tell_py/tell.py
+tell_py.egg-info/PKG-INFO
+tell_py.egg-info/SOURCES.txt
+tell_py.egg-info/dependency_links.txt
+tell_py.egg-info/requires.txt
+tell_py.egg-info/top_level.txt
