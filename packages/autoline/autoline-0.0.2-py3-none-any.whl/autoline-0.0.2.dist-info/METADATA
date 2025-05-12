@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: autoline
+Version: 0.0.2
+Summary: send line message automatically
+Home-page: https://pypi.org/project/autoline/
+Author: KuoYuanLi
+Author-email: funny4875@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyautogui
+Requires-Dist: pygetwindow
+Requires-Dist: pyperclip
+
+encoding="utf-8
+# whereisthemouse
+
+A simple Python package to **show mouse position and pixel value** on the desktop. 
+
+Press `Alt` to copy the current mouse position and pixel value to the clipboard.
+
+## Usage
+
+```python
+import whereisthemouse
+whereisthemouse.start()
+```
+
+## Features
+
+- Display current mouse position and pixel color value.
+- Press `Alt` to copy the information to the clipboard.
+
+## License
+
+MIT License
