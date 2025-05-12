@@ -1,0 +1,50 @@
+[project]
+name = "taskiq-postgres"
+version = "0.0.0"
+description = "PostgreSQL integration for taskiq"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Framework :: AsyncIO",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Topic :: System :: Networking",
+    "Typing :: Typed",
+    "Operating System :: OS Independent",
+]
+keywords = ["taskiq", "tasks", "distributed", "async", "postgresql"]
+authors = [
+    {name = "Anfimov Dima", email = "lovesolaristics@gmail.com"}
+]
+requires-python = ">=3.9"
+dependencies = [
+    "taskiq>=0.11.17",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/danfimov/taskiq-postgres/issues"
+"Repository" = "https://github.com/danfimov/taskiq-postgres/"
+
+[dependency-groups]
+aiopg = [
+    "taskiq-aiopg>=0.2.0",
+]
+asyncpg = [
+    "taskiq-asyncpg>=0.3.2",
+]
+psqlpy = [
+    "taskiq-psqlpy>=0.1.5",
+]

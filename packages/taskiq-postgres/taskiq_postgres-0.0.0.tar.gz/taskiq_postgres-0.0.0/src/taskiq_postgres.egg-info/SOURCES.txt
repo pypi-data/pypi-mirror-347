@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/taskiq_pg/__init__.py
+src/taskiq_pg/py.typed
+src/taskiq_pg/aiopg/__init__.py
+src/taskiq_pg/asyncpg/__init__.py
+src/taskiq_pg/psqlpy/__init__.py
+src/taskiq_postgres.egg-info/PKG-INFO
+src/taskiq_postgres.egg-info/SOURCES.txt
+src/taskiq_postgres.egg-info/dependency_links.txt
+src/taskiq_postgres.egg-info/requires.txt
+src/taskiq_postgres.egg-info/top_level.txt
