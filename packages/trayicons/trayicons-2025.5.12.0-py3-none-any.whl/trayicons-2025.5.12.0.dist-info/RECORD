@@ -1,0 +1,10 @@
+trayicons/__main__.py,sha256=dVpp4LdfyYGlQn1XRC_h4ZjMA7rwU4UF5quyPtCF_OE,68
+trayicons/config.py,sha256=ZfErk8qvvYMiQYDpDnSNO0q97M0-LMk5z_B8qzPS9Gk,5199
+trayicons/main.py,sha256=7ht1phN9af7sidncd3ZCmfh3JCghb-b9nAKLh3MxbnE,628
+trayicons/tray_icons.py,sha256=d_EDh59mZl1glKoZ77hW3sB0TJTtArWSVOYklQrW2aM,7752
+trayicons/watchdog.py,sha256=MYSCz5cv3iNwrdim-a3HTOm-dw2Ze_iYU7WpIfbvkO8,1935
+trayicons-2025.5.12.0.dist-info/METADATA,sha256=jFJrljdSbhl6FQKqYbcHSm9JpxQiI6knLhcvo2xzaXc,492
+trayicons-2025.5.12.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+trayicons-2025.5.12.0.dist-info/entry_points.txt,sha256=8GSFEPOmFT197ugUCjs1RoAQfrOYc-9oB7iYHPhgTzs,50
+trayicons-2025.5.12.0.dist-info/licenses/LICENSE,sha256=F96EzotgWhhpnQTW2TcdoqrMDir1jyEo6H915tGQ-QE,11524
+trayicons-2025.5.12.0.dist-info/RECORD,,
