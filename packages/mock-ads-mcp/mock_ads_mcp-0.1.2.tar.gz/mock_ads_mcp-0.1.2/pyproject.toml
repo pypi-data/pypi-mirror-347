@@ -1,0 +1,20 @@
+[project]
+name = "mock-ads-mcp"
+version = "0.1.2"
+description = "A test MCP server for ads campaign management"
+readme = "README.md"
+authors = [
+    { name = "Xingjian Guo", email = "guoxj@oasalife.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.3.3",
+    "pydantic>=2.11.4",
+]
+
+[project.scripts]
+mock-ads-mcp = "mock_ads_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
