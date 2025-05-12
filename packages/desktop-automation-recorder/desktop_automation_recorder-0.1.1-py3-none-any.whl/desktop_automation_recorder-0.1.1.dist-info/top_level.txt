@@ -1,0 +1,7 @@
+desktop_automation_recorder
+gui
+playback
+recorder
+scriptgen
+storage
+utils

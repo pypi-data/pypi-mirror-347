@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: desktop-automation-recorder
+Version: 0.1.1
+Summary: A user-friendly desktop application to record and replay user interactions
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pyautogui
+Requires-Dist: pynput
+Requires-Dist: pillow
+Requires-Dist: pyperclip
+Requires-Dist: PyQt6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
