@@ -1,0 +1,89 @@
+Import numpy as np 
+from tensorflow.keras.models import Sequential 
+from tensorflow.keras.layers import Dense 
+from tensorflow.keras.layers import LSTM 
+import tensorflow as tf 
+EPOCHS = 32 
+BATCH_SIZE = 256 
+INPUT_FILE_NAME = '/content/sample.txt' 
+WINDOW_LENGTH = 40 
+WINDOW_STEP = 3 
+import logging 
+tf.get_logger( ).setLevel(logging.ERROR)        
+# Open the input file. 
+file = open(INPUT_FILE_NAME, 'r', encoding='utf-8') 
+text = file.read( ) 
+file.close( ) 
+# Make lowercase and remove newline and extra spaces. 
+text = text.lower( ) 
+text = text.replace('\n', '  ') 
+text = text.replace('   ', ' ') 
+# Encode characters as indices. 
+unique_chars = list(set(text)) 
+char_to_index = dict((ch, index) for index, ch in enumerate(unique_chars)) 
+index_to_char = dict((index, ch) for index, ch in enumerate(unique_chars)) 
+encoding_width = len(char_to_index) 
+# Create training examples. 
+fragments = [ ] 
+targets = [ ] 
+fori in range(0, len(text) - WINDOW_LENGTH, WINDOW_STEP): 
+fragments.append(text[i: i + WINDOW_LENGTH]) 
+targets.append(text[i + WINDOW_LENGTH]) 
+# Convert to one-hot encoded training data. 
+X = np.zeros((len(fragments), WINDOW_LENGTH, encoding_width)) 
+y = np.zeros((len(fragments), encoding_width)) 
+fori, fragment in enumerate(fragments): 
+for j, char in enumerate(fragment): 
+X[i, j, char_to_index[char]] = 1 
+target_char = targets[i] 
+y[i, char_to_index[target_char]] = 1 
+# Build and train model. 
+model = Sequential( ) 
+model.add(LSTM(128, return_sequences=True, 
+dropout=0.2, recurrent_dropout=0.2, 
+input_shape=(None, encoding_width))) 
+model.add(LSTM(128, dropout=0.2, recurrent_dropout=0.2)) 
+model.add(Dense(encoding_width, activation='softmax')) 
+model.compile(loss='categorical_crossentropy', optimizer='adam') 
+model.summary( ) 
+history = model.fit(X, y, validation_split=0.05, batch_size=BATCH_SIZE,epochs=EPOCHS, 
+verbose=2, 
+shuffle=True) # Original input (43 characters) 
+input_seq = 'the body was found near the lake. it was co' 
+# Trim to last 40 characters 
+input_seq = input_seq[-40:] 
+# Confirm correct length 
+assertlen(input_seq) == WINDOW_LENGTH 
+# One-hot encode the input sequence 
+input_tensor = np.zeros((1, WINDOW_LENGTH, encoding_width)) 
+for t, char in enumerate(input_seq): 
+if char in char_to_index: 
+input_tensor[0, t, char_to_index[char]] = 1 
+else: 
+print(f"Warning: Character '{char}' not in vocabulary.") 
+# Predict the next character 
+pred = model.predict(input_tensor, verbose=0) 
+next_char_index = np.argmax(pred[0]) 
+next_char = index_to_char[next_char_index] 
+print("Predicted next character:", next_char)   
+text = "hello world. how are you today?" 
+  We're using a window size of 10 to simplify. 
+  We'll slide this window by 1 character each time. 
+Say the characters in text are: ['h', 'e', 'l', 'o', ' ', 'w', 'r', 'd', '.', 'a', 'y', 'u', '?'] 
+For WINDOW_LENGTH = 10, some examples: 
+Input Fragment 
+hello worl  
+ello world  
+llo world.   
+lo world.  
+o world. h  
+Target 
+d 
+. 
+h 
+o 
+Each character is turned into a one-hot vector of length 13. 
+So X.shape = (number of fragments, 10, 13) and y.shape = (number of 
+fragments, 13). 
+Trains an LSTM to predict the next character in a sequence of 10 characters. 
+Assuming "how are yo" is our input (length = 10), the model might predict:
