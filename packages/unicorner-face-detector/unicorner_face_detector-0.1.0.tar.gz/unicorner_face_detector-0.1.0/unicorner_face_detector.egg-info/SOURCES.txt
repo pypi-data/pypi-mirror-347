@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+tests/test_face_detector.py
+unicorner_face_detector/__init__.py
+unicorner_face_detector/face_detector.py
+unicorner_face_detector.egg-info/PKG-INFO
+unicorner_face_detector.egg-info/SOURCES.txt
+unicorner_face_detector.egg-info/dependency_links.txt
+unicorner_face_detector.egg-info/requires.txt
+unicorner_face_detector.egg-info/top_level.txt
