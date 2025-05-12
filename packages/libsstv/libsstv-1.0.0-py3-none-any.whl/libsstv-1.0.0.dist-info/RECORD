@@ -1,0 +1,8 @@
+libsstv/__init__.py,sha256=X7OAzRNZfP58uOGinvUxEDsbs4v-RQUsyzaMA2xspJQ,612
+libsstv/sstv_decoder.py,sha256=y0DzMXY6qed6iLX3Np6ZNR2QMwcCFEiASt3tliHnQgQ,11364
+libsstv/sstv_modes.py,sha256=ZsbMDWKYOfdW1pfjnPC8GRBQDhLGPSuw5wn_1QtuR0o,4499
+libsstv-1.0.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+libsstv-1.0.0.dist-info/METADATA,sha256=xf6IAwgyHOsJsFYMYRXRj2_gTY0gcvLRwm5ODofU1TU,573
+libsstv-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+libsstv-1.0.0.dist-info/top_level.txt,sha256=GwtlTmZypaEydzY31aobFxtJP45MK6aJ_fzacl4kKgA,8
+libsstv-1.0.0.dist-info/RECORD,,
