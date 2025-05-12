@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+pyqbpp.py
+pyqbpp.egg-info/PKG-INFO
+pyqbpp.egg-info/SOURCES.txt
+pyqbpp.egg-info/dependency_links.txt
+pyqbpp.egg-info/top_level.txt

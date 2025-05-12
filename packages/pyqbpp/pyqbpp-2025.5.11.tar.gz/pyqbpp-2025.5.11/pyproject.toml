@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyqbpp"
+version = "2025.05.11"
+description = "Python version of QUBO++"
+authors = [
+  { name = "Koji Nakano", email = "nakano@hiroshima-u.ac.jp" }
+]
+license = "LicenseRef-PYQBPPLicense"
+license-files = ["LICENSE"]
+requires-python = ">=3.6"
+dependencies = []
+
+[tool.setuptools]
+py-modules = ["pyqbpp"]
