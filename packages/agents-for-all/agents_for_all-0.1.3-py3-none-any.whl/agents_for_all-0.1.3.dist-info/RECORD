@@ -1,0 +1,15 @@
+agents_for_all/__init__.py,sha256=3kmzexweSufQLrkOZTQu9aKQLs1pEJfEt00rc0DafZA,131
+agents_for_all/agent.py,sha256=hTicEKAFznJhK0R6VFbfLdMH7V_zO5AWHKq9uv5MYfU,7077
+agents_for_all/llms/__init__.py,sha256=Bzq7BE8Kvwrto1EEjanKj-igMa7ymdM0eXmGprcyJBU,366
+agents_for_all/llms/anthropic.py,sha256=y4DTW6W-Z9iyp8c9lxolJGb2JmRy8_jp0VXA_gmRCFI,1592
+agents_for_all/llms/base_model.py,sha256=WVk62FOT3Fz0jdQrECLAXU7PaVJ7IhIwdve97uk1VOs,715
+agents_for_all/llms/direct.py,sha256=28zKjlEXC7d5l0ZGJ5bTbWayPHwgzt-G7GwLFpbS15Q,1703
+agents_for_all/llms/gemini.py,sha256=k1m_DD5h9QNTrXVUcoiqkCrexzvFJkJnCbBOOEPlg_U,1376
+agents_for_all/llms/openai.py,sha256=Wov4x2fsQxs92X8q4pIpTZcB9vhDBF8zATqF4ys422s,1418
+agents_for_all/tools/__init__.py,sha256=SymSZRvzqYxOaIQIl0YbBAKbKhm2EaYOFKisjlaFuWc,136
+agents_for_all/tools/base_tool.py,sha256=SRa_fOJpcgasqzDnUn-QtQwunFj8n32OtTbAKLSKhNM,1331
+agents_for_all/tools/python.py,sha256=tyrgMEA7sjTbB7q6vAVzDdHHOK4dN1wF6KKjPDO9ytc,1924
+agents_for_all-0.1.3.dist-info/METADATA,sha256=pbpKqnzpNf0Nm721xq2hRS9311zm2I1T29o64xWoMsU,4369
+agents_for_all-0.1.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+agents_for_all-0.1.3.dist-info/top_level.txt,sha256=dPSH05Qs1G5FYuE1M6d1ADjgZLdXxhsUPE8petAeIkw,15
+agents_for_all-0.1.3.dist-info/RECORD,,
