@@ -1,0 +1,2 @@
+[console_scripts]
+ptvis-app = ptvis_app.command:main

@@ -1,0 +1,9 @@
+colorcet>=3.0.1
+kaleido
+pandas>=2.0.0
+panel>=1.5.4
+param>=2.1.0
+plotly>=5.12.0
+ptvis>=2.0.0
+python-dateutil>=2.9.0
+wclr
