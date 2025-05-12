@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/draftmk_mkdocs_role_filter_plugin.egg-info/PKG-INFO
+src/draftmk_mkdocs_role_filter_plugin.egg-info/SOURCES.txt
+src/draftmk_mkdocs_role_filter_plugin.egg-info/dependency_links.txt
+src/draftmk_mkdocs_role_filter_plugin.egg-info/entry_points.txt
+src/draftmk_mkdocs_role_filter_plugin.egg-info/top_level.txt
+src/role_filter_plugin/__init__.py
+src/role_filter_plugin/plugin.py

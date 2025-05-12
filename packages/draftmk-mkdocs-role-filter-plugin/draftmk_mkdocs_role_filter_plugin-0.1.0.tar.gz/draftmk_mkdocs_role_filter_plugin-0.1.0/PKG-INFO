@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: draftmk-mkdocs-role-filter-plugin
+Version: 0.1.0
+Summary: MkDocs plugin for Draftmk to filter documentation by user roles
+Author-email: Jonmatum <jonmatum@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/jonmatum/draftmk-mkdocs-role-filter-plugin
+Project-URL: Issues, https://github.com/jonmatum/draftmk-mkdocs-role-filter-plugin/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: MkDocs
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# draftmk-mkdocs-role-filter-plugin
+MkDocs plugin for Draftmk to filter documentation by user roles
