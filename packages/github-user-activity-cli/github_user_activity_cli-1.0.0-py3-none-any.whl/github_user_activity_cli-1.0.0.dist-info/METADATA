@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: github-user-activity-cli
+Version: 1.0.0
+Summary: Simple project for educational purposes
+Author-email: elcbi <sebastian.gcruz64@gmail.com>
+License-Expression: MIT
+Project-URL: Repository, https://github.com/sebastiancruzg/github-activity-cli
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp>=3.11.18
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+
+# Github activity
+
+A simple command line interface (CLI) to fetch the recent activity of a GitHub user and display it in the terminal
+
+## How to use
+```bash
+gactivity ${GitHub_username}
+```
