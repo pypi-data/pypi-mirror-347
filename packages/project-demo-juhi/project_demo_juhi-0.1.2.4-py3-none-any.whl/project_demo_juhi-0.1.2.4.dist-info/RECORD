@@ -1,0 +1,9 @@
+project_demo/__init__.py,sha256=wLtGg1uzlZafaoZvzDu7K5AxOtOfBnG3I-4HbuXUSsg,198
+project_demo/data_prep/__init__.py,sha256=Z87Aj7j6uvm4FwrVld-ovR8QkZ34DkjmgEn2Q0KRSSs,75
+project_demo/data_prep/prep_data.py,sha256=uxyBHU_UbirqaO3aYoJXdsBzQtt4ge--6QpqUTlcevU,404
+project_demo/main.py,sha256=O99EcBcsc4yGLRHUlGf-Zv340yVBtWCD0_MxW-0j2cM,1705
+project_demo/model/__init__.py,sha256=s9I3pPOMsJOjHssl-U5ca47euhAEWy-77_wSBQHV93Y,93
+project_demo/model/train_model.py,sha256=jx4LdF-r-3q3RXE761S8nNTG9kis1qHWyJnKbwqZmP4,1383
+project_demo_juhi-0.1.2.4.dist-info/METADATA,sha256=9HToqIJLrQmKhVyS8MCmOrYfN1I96Z41WUK_OzcxWZM,2243
+project_demo_juhi-0.1.2.4.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+project_demo_juhi-0.1.2.4.dist-info/RECORD,,
