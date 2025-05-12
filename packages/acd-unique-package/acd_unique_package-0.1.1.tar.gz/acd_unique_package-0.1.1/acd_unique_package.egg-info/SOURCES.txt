@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+acd_unique_package/__init__.py
+acd_unique_package/__main__.py
+acd_unique_package/print_me_funcs.py
+acd_unique_package.egg-info/PKG-INFO
+acd_unique_package.egg-info/SOURCES.txt
+acd_unique_package.egg-info/dependency_links.txt
+acd_unique_package.egg-info/entry_points.txt
+acd_unique_package.egg-info/top_level.txt
