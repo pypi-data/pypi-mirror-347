@@ -1,0 +1,6 @@
+cryptography
+coloredlogs
+flask
+
+[dev]
+setuptools_scm[toml]>=8
