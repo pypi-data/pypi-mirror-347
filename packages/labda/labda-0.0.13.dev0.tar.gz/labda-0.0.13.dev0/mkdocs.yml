@@ -1,0 +1,161 @@
+site_name: Library for Advanced Behavioural Data Analysis
+site_description: TO-DO...
+site_url: https://labda.josefheidler.cz
+# docs_dir: docs
+watch:
+  [mkdocs.yml, src, docs, CHANGELOG.md, LICENSE.md, ROADMAP.md, CONTRIBUTING.md]
+# repo_url: https://github.com/josefheidler/labda
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: en
+  logo: assets/images/labda_logo.png
+  favicon: assets/images/labda_logo.png
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      accent: amber
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: amber
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  features:
+    - announce.dismiss
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    # - toc.integrate
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - Getting Started:
+      - index.md
+      - Help with LABDA: help.md
+      - Changelog: changelog.md
+      - Roadmap: roadmap.md
+      - Contributing: contributing.md
+  - Concepts:
+    - concepts/index.md
+    - Parsers & Format: concepts/parsers-format.md
+    - Preprocessing: concepts/preprocessing.md
+    - Expanders: concepts/expanders.md
+    - Accelerometer: concepts/accelerometer.md
+    - Spatial: concepts/spatial.md
+    - Taxonomy: concepts/taxonomy.md
+    - Charts & Reports: concepts/charts-reports.md
+  - Learn:
+    - learn/index.md
+  - Reference:
+    - Subject: reference/subject.md
+    - Parsers:
+      - ActiGraph: reference/parsers/actigraph.md
+      - Qstarz: reference/parsers/qstarz.md
+
+not_in_nav: |
+  abbreviations.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/josefheidler/labda
+      name: LABDA on GitHub
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/pfEpHUkxgK
+      name: LABDA Discord
+    - icon: fontawesome/solid/globe
+      link: https://labda.josefheidler.cz
+      name: LABDA Python Package
+
+copyright: Copyright &copy; 2025 Josef Heidler
+
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: false
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: google
+            # docstring_section_style: list
+            show_if_no_docstring: false
+            show_bases: false
+            show_source: false
+            show_root_heading: true
+            show_root_full_path: true
+            # show_root_toc_entry: true
+            separate_signature: true
+            show_signature_annotations: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            members_order: source
+            unwrap_annotated: true
+            relative_crossrefs: true
+            show_docstring_raises: false
+            filters:
+              - "!^_"
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - pymdownx.details
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets:
+      auto_append:
+        - docs/abbreviations.md

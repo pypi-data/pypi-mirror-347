@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "labda"
+version = "0.0.13-dev"
+description = "Library for Advanced Behavioural Data Analysis"
+authors = ["Josef Heidler <jheidler@health.sdu.dk>"]
+maintainers = ["Josef Heidler <jheidler@health.sdu.dk>"]
+
+readme = "README.md"
+license = "MIT"
+homepage = "https://labda.josefheidler.cz"
+repository = "https://github.com/josefheidler/labda"
+documentation = "https://labda.josefheidler.cz"
+
+keywords = ["analysis", "health", "behaviour", "data", "spatial", "temporal"]
+
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+
+packages = [{ include = "labda" }]
+include = ["CHANGELOG.md"]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+shapely = "^2.0.6"
+pyproj = "^3.6.1"
+plotly = "^5.24.1"
+timezonefinder = "^6.5.3"
+pydantic = {extras = ["email"], version = "^2.9.2"}
+pandas = "^2.2.3"
+numpy = "^2.1.2"
+geopandas = "^1.0.1"
+openpyxl = "^3.1.5"
+requests = "^2.32.3"
+keplergl = "^0.3.2"
+beautifulsoup4 = "^4.12.3"
+
+[tool.poetry.group.playground.dependencies]
+streamlit = "^1.38.0"
+
+[tool.poetry.group.jupyter.dependencies]
+ipykernel = "^6.29.5"
+nbformat = "^5.10.4"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.5.28"
+mkdocstrings-python = "^1.10.5"
+mkdocs-glightbox = "^0.4.0"
+pillow = "^10.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+pre-commit = "^3.8.0"
+commitizen = "^3.29.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
