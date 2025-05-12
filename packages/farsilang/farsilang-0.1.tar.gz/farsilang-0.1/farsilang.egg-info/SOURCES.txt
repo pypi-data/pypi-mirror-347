@@ -1,0 +1,11 @@
+pyproject.toml
+setup.py
+farsilang/__init__.py
+farsilang/__version__.py
+farsilang/runner.py
+farsilang/transpiler.py
+farsilang.egg-info/PKG-INFO
+farsilang.egg-info/SOURCES.txt
+farsilang.egg-info/dependency_links.txt
+farsilang.egg-info/entry_points.txt
+farsilang.egg-info/top_level.txt
