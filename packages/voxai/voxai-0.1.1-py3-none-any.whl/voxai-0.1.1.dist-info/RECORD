@@ -1,0 +1,9 @@
+backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backend/cli.py,sha256=Ure0Cpuhbc7-9j6nQ4XjHjNGPJgNzzzX_K-OrT05dyI,1813
+backend/core.py,sha256=7c53kRLu7YeQYqREp5cuCvHM10FsotsxycEOMPI4YsQ,3013
+voxai-0.1.1.dist-info/licenses/LICENSE,sha256=7R-mwgR9H5V9DQkzIufKp7O9LicRi53nb3093zyEuAM,1068
+voxai-0.1.1.dist-info/METADATA,sha256=JyqtRgKIBkGDyzQsKpss-MLj2Bu2G9eZJ5k3biLYq20,3240
+voxai-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+voxai-0.1.1.dist-info/entry_points.txt,sha256=k21nQEHnUr12n7CsxmTXzAK8hnUWf0qhEdAOxsyaRT8,43
+voxai-0.1.1.dist-info/top_level.txt,sha256=o0r_qMzzBDDtK9APrv2QVcIw9oc00JRmCEsTE2-AFr0,8
+voxai-0.1.1.dist-info/RECORD,,
