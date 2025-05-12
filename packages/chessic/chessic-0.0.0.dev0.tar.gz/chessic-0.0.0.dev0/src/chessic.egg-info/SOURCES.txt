@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/chessic/__init__.py
+src/chessic/__main__.py
+src/chessic.egg-info/PKG-INFO
+src/chessic.egg-info/SOURCES.txt
+src/chessic.egg-info/dependency_links.txt
+src/chessic.egg-info/top_level.txt
+src/chessic/core/__init__.py
+src/chessic/tests/__init__.py
+src/chessic/tests/test_1984.py
