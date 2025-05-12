@@ -1,0 +1,9 @@
+libvirt-python
+aiohttp<4.0.0,>=3.8.0
+aiohttp-cors>=0.7.0
+asyncio
+tabulate
+pyyaml
+cryptography
+python-daemon>=3.0.0
+netifaces
