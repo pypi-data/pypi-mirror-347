@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: emcee_package
+Version: 0.3.0
+Summary: A Test package
+Author: Emcee
+Requires-Python: >=3.7
+Requires-Dist: pandas>=2.0.0
+Description-Content-Type: text/markdown
+
+lhttps://www.youtube.com/watch?v=Kz6IlDCyOUYcd
