@@ -1,0 +1,7 @@
+hyperon>=0.2.2
+scikit-learn
+pandas
+seaborn
+
+[test]
+pytest>=7.0
