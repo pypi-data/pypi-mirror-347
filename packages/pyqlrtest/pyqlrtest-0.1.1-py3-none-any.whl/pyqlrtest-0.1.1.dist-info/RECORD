@@ -1,0 +1,10 @@
+pyqlrtest-0.1.1.dist-info/licenses/License,sha256=sBq_8eFTTWNp11MdvQGu-ZrLsuWB2z7OKQL4dM76yt8,1098
+qlrtest/__init__.py,sha256=eZrSAtg7lNJjYMfRgGTONLNbSFrbQFFRiYmI59aajlo,444
+qlrtest/_exceptions.py,sha256=6woAg4cGenjCftR_RVeUGqldAiXnbT3WiWVjSB_Ip_M,489
+qlrtest/core.py,sha256=d9j1RPM7xjBphMRXdL34pRO41XekH2zCfaZSA0JRt70,6359
+qlrtest/critical_values.py,sha256=0biHvhDL2buYK_0tqPK9v5XgVZQM7ovaLy7HAGsdgxc,31742
+qlrtest/utils.py,sha256=hdbMYMETVNLKAtj1uE877w8JTsYiw_K0kXD_5fEI4-4,1712
+pyqlrtest-0.1.1.dist-info/METADATA,sha256=ayC-da-cvqsS_NujszUXn-kNvuA4kZ3vRoIRmHsqnJ8,3906
+pyqlrtest-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+pyqlrtest-0.1.1.dist-info/top_level.txt,sha256=7Wu-WUPNSRXb-Tzv8i6f_bbvwGw6wXmkxde7yJ2QX7k,8
+pyqlrtest-0.1.1.dist-info/RECORD,,
