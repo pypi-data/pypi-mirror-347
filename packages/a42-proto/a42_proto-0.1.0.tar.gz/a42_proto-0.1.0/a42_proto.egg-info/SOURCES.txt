@@ -1,0 +1,7 @@
+README.md
+setup.py
+a42_proto.egg-info/PKG-INFO
+a42_proto.egg-info/SOURCES.txt
+a42_proto.egg-info/dependency_links.txt
+a42_proto.egg-info/requires.txt
+a42_proto.egg-info/top_level.txt
