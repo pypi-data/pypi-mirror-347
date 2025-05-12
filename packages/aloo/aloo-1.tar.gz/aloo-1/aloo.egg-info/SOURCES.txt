@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+aloo/__init__.py
+aloo.egg-info/PKG-INFO
+aloo.egg-info/SOURCES.txt
+aloo.egg-info/dependency_links.txt
+aloo.egg-info/top_level.txt
