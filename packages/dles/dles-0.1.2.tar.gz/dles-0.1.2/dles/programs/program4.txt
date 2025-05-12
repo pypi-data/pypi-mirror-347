@@ -1,0 +1,56 @@
+ print("in some cases there will be some warning in the beginning dont worry about that until execution is completed")
+ 
+ import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense,Input
+from tensorflow.keras.layers import Flatten
+from tensorflow.keras.layers import Conv2D
+import numpy as np
+import logging
+tf.get_logger().setLevel(logging.ERROR)
+EPOCHS = 5
+BATCH_SIZE = 32
+(train_images, train_labels), (test_images,
+test_labels) = keras.datasets.cifar10.load_data()
+mean =np.mean(train_images)
+stddev = np.std(train_images)
+train_images = (train_images - mean) / stddev
+test_images = (test_images - mean) / stddev
+print('mean: ', mean)
+print('stddev: ', stddev)
+
+train_labels = to_categorical(train_labels,num_classes=10)
+test_labels = to_categorical(test_labels,num_classes=10)
+model = Sequential()
+from tensorflow.keras.layers import MaxPooling2D
+model = Sequential()
+
+model.add(Input(shape=(32, 32, 3)))
+
+model.add(Conv2D(64, (5, 5), strides=(2, 2), activation='relu', padding='same',
+                 kernel_initializer='he_normal', bias_initializer='zeros'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Conv2D(64, (3, 3), strides=(2, 2), activation='relu', padding='same',
+                 kernel_initializer='he_normal', bias_initializer='zeros'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Flatten())
+model.add(Dense(64, activation='relu'))
+model.add(Dense(10, activation='softmax',
+                kernel_initializer='glorot_uniform', bias_initializer='zeros'))
+model.compile(loss='categorical_crossentropy',optimizer='adam', metrics =['accuracy'])
+model.summary()
+history = model.fit(
+    train_images, train_labels, validation_data =(test_images, test_labels), epochs=EPOCHS,batch_size=BATCH_SIZE, verbose=2, shuffle=True)
+import matplotlib.pyplot as plt
+plt.plot(history.history['accuracy'], label='Train Accuracy')
+plt.plot(history.history['val_accuracy'], label='Val Accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.title('Model Accuracy')
+plt.grid(True)
+plt.show()
