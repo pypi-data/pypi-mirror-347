@@ -1,0 +1,2 @@
+[dv_flow.mgr]
+libide = dv_flow.libide.__ext__

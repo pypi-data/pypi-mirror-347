@@ -1,0 +1,18 @@
+
+package:
+  name: ide
+
+#  imports:
+#  - dvt_flow.dv
+#  - vbl_flow.dv
+
+  tasks:
+  - name: UpdateFileList
+    consumes:
+    - filetype: systemVerilogSource
+    - filetype: verilogSource
+    with:
+      uvm:
+        type: bool
+        value: true
+      

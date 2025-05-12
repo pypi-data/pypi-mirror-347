@@ -1,0 +1,9 @@
+
+package:
+  name: ide.vbl
+
+  tasks:
+  - name: UpdateFileList
+    uses: ide.UpdateFileList
+    shell: pytask
+    run: dv_flow.libide.vbl_update_filelist.UpdateFileList
