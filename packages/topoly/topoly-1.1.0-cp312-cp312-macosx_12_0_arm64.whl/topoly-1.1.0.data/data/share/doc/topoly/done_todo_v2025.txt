@@ -1,0 +1,52 @@
+DONE:
+- maxGLN: fast (n^3 instead n^4) and accurate computations
+- huge amount of fixes and updating for new versions of Python, Mac etc
+- Windows
+
+ALMOST DONE (to be added to topoly / fixed...):
+? - Homfly, new dictionaries
+- AlexanderTuzin - way faster knot recognition
+- Yamada - Bartek's fast version with translating PD to Gauss
+? - generating thetas, handcuffs (it was... but what we were working with Bartek on in grant?)
+- knot core 
+- drawing diagrams from Bostjan - Patryk
+
+TO DO:
+- AlexanderTuzin - fix: Unknot != Unknown != Error (W+P)
+- Homfly, new dictionaries (Wojtek)
+- add new yamada to topoly (Bartek), eventually also Bostjan's version / completing translating PD to Gauss (check if it is available) (Bartek)
+- benchmark of yamada implementations (Bartek/Wanda) 
+- slow loading of a dictionary? (Bostjan+somebody) (tests and maybe loading big dictionaries only when we first need them - problems with multiprocessing)
+- add knotcore (Bartek/Wanda)
+
+- compilation on Mac (PATRYK ma!), new numpy, Python and so on (Pol & all.....)
+
+- topoly/codes.py: pdcodes of thetas - Bostjan can repair order of edges in 3-valent vertices (they aren't always folowwing the same rule)
+
+
+POSSIBLY:
+- Reading RNA
+- knots in knots
+
+PAPER:
+- Bostjan+Wanda+the rest
+
+
+mail 14.07.2023 "Topoly":
+
+TODO	by whom?
+HOMFLY library of 2 component links up to 10 crossings	Wojtek
+Yamada library up to 10 crossings	Bartek
+Add knotcore and tests	Bartek
+Modify C++ Alexander output so errors do not return 0 polynomial	Wanda
+Pull to the top functions for creating pdcode/emcode, closure, KMT	Bartek
+Accumulation of knot probabilities	Wandy licencjuszka + Wanda?
+Work with RNA pdb/cif files	
+Trajectory analysis	
+Find loops etc.	Bartek
+
+
+-alexander: knots_net/knotsFinder.cpp: if spoly="": spoly="0"
+
+
+
