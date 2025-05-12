@@ -1,0 +1,17 @@
+coaxial_terminal_ai-0.2.1.dist-info/licenses/LICENSE,sha256=_oKoLlTDXUX1e0OLUDK62KFglnZ5LPH19zmXYIF4_6o,1085
+terminalai/__init__.py,sha256=QVo0hhWZmRbqn6QgYl7nLd9-3lQYwuGttXuTZmZ36PE,43
+terminalai/ai_providers.py,sha256=uJ91WpqyOzoali7hh6MQ27rbDy_P9JX4wylbi-bpiUM,10540
+terminalai/cli_interaction.py,sha256=wxx8MjI4Cw7Ypt7VumRbpZp9gghqt2m62RIcHPWibSQ,31048
+terminalai/clipboard_utils.py,sha256=v0FKaLCFHCPp0n0WmLtmLlhrKnqqoT0n5AueEtMhRAE,1531
+terminalai/color_utils.py,sha256=sSTOS9frzMxzJMgReC3UzjuINsjYM8T84vKy__7uS9A,1885
+terminalai/command_extraction.py,sha256=DIBXDn-JFfO0oLGbJ4MI8Ddq0Anbrn8Q4Jqyn6P_ByM,7190
+terminalai/command_utils.py,sha256=yHP1sP5tdh9WrvgIGY5cOfuKnWfupuWKsab4kWRgQw0,1377
+terminalai/config.py,sha256=TYcU8vGnBLRNFB7McTqMq7zsJLPGdepJ-vKk5as2Go8,3207
+terminalai/formatting.py,sha256=BUW80sqn25e9mDLcOP7SNeGjcJGUxXPL00K6Wt3DmFc,4742
+terminalai/shell_integration.py,sha256=hPcgHxaT_gklgSGj1EgNdoCtstkn9nBgJ6MwKTr7YbI,8276
+terminalai/terminalai_cli.py,sha256=24EKuj1gbSeA6cd5ECUNo0nrDvo48mIYeWZzvprFQ_I,3654
+coaxial_terminal_ai-0.2.1.dist-info/METADATA,sha256=ttoqB_h7GGcAcM2uzMxWzQ_CUaNUGRElvEqnJ9AviR8,8896
+coaxial_terminal_ai-0.2.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+coaxial_terminal_ai-0.2.1.dist-info/entry_points.txt,sha256=TMXa93z1LQOxm-KdxDARh_Px8gwzmG6R4fwzILwkqv0,54
+coaxial_terminal_ai-0.2.1.dist-info/top_level.txt,sha256=tAUIWBpO6xs130eGrGHCCd_Lxu7Othf_TCKAKToHfOI,11
+coaxial_terminal_ai-0.2.1.dist-info/RECORD,,
