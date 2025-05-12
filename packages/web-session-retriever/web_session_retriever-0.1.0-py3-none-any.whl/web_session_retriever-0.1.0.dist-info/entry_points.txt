@@ -1,0 +1,2 @@
+[console_scripts]
+web-session-retriever = session_retriever.__main__:main
