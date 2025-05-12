@@ -1,0 +1,2 @@
+[console_scripts]
+voxai = backend.__main__:main
