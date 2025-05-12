@@ -1,0 +1,85 @@
+Metadata-Version: 2.4
+Name: imagefrompdf
+Version: 1.0.1
+Home-page: https://github.com/jedahee/imagefrompdf
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pdf2image
+Requires-Dist: Pillow
+Requires-Dist: click
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+
+# imagefrompdf
+
+`imagefrompdf` es una herramienta de línea de comandos (CLI) que convierte un archivo PDF en imágenes (por página). Puedes elegir entre formatos de salida como PNG o JPG. El proyecto está diseñado para ser simple de usar, y coloca las imágenes generadas en la carpeta de descargas del usuario.
+
+## Características
+
+- Convierte PDFs en imágenes (una por página).
+- Soporta los formatos `PNG` y `JPG`.
+- Las imágenes se guardan en la carpeta de Descargas del usuario.
+- Modo CLI fácil de usar con opciones de formato.
+
+## Estructura del Proyecto
+
+imagefrompdf/
+├── imagefrompdf/
+│ └── main.py # Código principal de la CLI
+├── LICENSE # Licencia
+├── README.md # Descripción del proyecto
+├── pyproject.toml # Configuración de la herramienta de empaquetado
+├── setup.py # Script de instalación para PyPI
+└── requirements.txt # Dependencias necesarias
+
+### Requisitos
+
+- Python 3.6+
+- Las librerías necesarias son: `pdf2image`, `Pillow` y `click`.
+
+Puedes instalar las dependencias con el siguiente comando:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Uso
+
+Para convertir un PDF a imágenes, ejecuta el siguiente comando en tu terminal:
+
+```bash
+imagefrompdf --format png /ruta/a/tu/archivo.pdf
+```
+
+Este comando convertirá el archivo PDF en imágenes PNG, y las guardará en una carpeta dentro de tu directorio de **Descargas**.
+
+### Opciones
+
+- `--format` <formato>: Especifica el formato de imagen de salida. Puede ser `png` o `jpg`.
+
+Ejemplo:
+
+```bash
+imagefrompdf --format jpg /ruta/a/archivo.pdf
+```
+
+Este comando generará imágenes en formato JPG en lugar de PNG.
+
+### Licencia
+
+Este proyecto está bajo la **Licencia Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**. Esto permite a otros copiar, distribuir, mejorar el trabajo, pero **no usarlo con fines comerciales**.
+
+Puedes ver la licencia completa en el archivo LICENSE.

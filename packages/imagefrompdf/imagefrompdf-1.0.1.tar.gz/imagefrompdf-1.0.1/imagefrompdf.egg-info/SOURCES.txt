@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+imagefrompdf.egg-info/PKG-INFO
+imagefrompdf.egg-info/SOURCES.txt
+imagefrompdf.egg-info/dependency_links.txt
+imagefrompdf.egg-info/entry_points.txt
+imagefrompdf.egg-info/requires.txt
+imagefrompdf.egg-info/top_level.txt
