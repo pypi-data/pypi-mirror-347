@@ -1,0 +1,15 @@
+ml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml/datasets.py,sha256=PqqCvm3dkQhl1-MzUpJgvO92t9-KBMigLWmNZcA5r18,13323
+ml/schedulers.py,sha256=5RuIr0iZtuXXAiKdb9J5qvCxVm9lO6E7TqrAoRMcSic,788
+ml/train.py,sha256=JuL1rf3xNmU0dNowYCIHTU4gIianWDgVfsWjOhVr98s,19484
+ml/utils.py,sha256=tVNSpN292FGDlTgjf1Pv5kJ6DnZZKpAes9fkvaMxo28,5698
+ml/models/__init__.py,sha256=HOJf5d_OYBt8RnbZYagdpdnv22xnesOI9AUWaz5RC5w,322
+ml/models/common.py,sha256=TMu7nWpvy_XktAOkyApMXmmIAa-N0gUrVqg4zsGLDcc,555
+ml/models/pc/pc.py,sha256=cawmrQ_ugZaImOJul6Npo_vkkjEZCYctUZj3bKxyIl0,10620
+ml/models/rnns/rnns.py,sha256=s_h5Z4IG4Xnm6qYtnKdDo04zQB4qBt2B-xYMS6mz4sA,10001
+ml/models/transformers/attention.py,sha256=jHMMSkFVpUCkXhDlkUhiILw_U8Yx8uLwDdzc7m8v5Go,27611
+ml/models/transformers/transformers.py,sha256=qNHnLJJUjUcVVBDvz3trbJrJuchTG1_FwqQYoxSOnYA,14132
+m24842_ml-1.0.20.dist-info/METADATA,sha256=Ko40GIIspKTVsmnbo5H8XwcdTrZeHobFSALWVu9q1C8,283
+m24842_ml-1.0.20.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+m24842_ml-1.0.20.dist-info/top_level.txt,sha256=_vaXyYKginl-vpzs5avsdyABxjy-K0_KyvBr9RDpjIc,3
+m24842_ml-1.0.20.dist-info/RECORD,,
