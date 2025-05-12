@@ -1,0 +1,7 @@
+numpy
+
+[COMPLETE]
+matplotlib
+plotly
+unitpy
+tkinterdnd2
