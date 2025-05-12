@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ticketai
+Version: 0.1.0
+Summary: AI FinOps for Python
+Author: Rohan Adwankar
+Author-email: rohan.adwankar@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fastapi (>=0.105.0,<0.106.0)
+Requires-Dist: psutil (>=5.9.6,<6.0.0)
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: uvicorn (>=0.24.0,<0.25.0)
+Description-Content-Type: text/markdown
+
+# Ticket for Python
+
