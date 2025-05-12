@@ -1,0 +1,17 @@
+[project]
+name = "mcp-pypi-jhl-weather-server"
+version = "0.1.1"
+description = "这是一个测试上传到pypi的mcp服务器demo。"
+readme = "README.md"
+authors = [
+    { name = "jhl", email = "2310916034@qq.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+mcp-pypi-jhl-weather-server = "mcp_pypi_jhl_weather_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
