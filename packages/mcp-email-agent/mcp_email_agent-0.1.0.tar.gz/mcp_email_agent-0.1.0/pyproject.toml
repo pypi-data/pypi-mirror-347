@@ -1,0 +1,21 @@
+[project]
+name = "mcp-email-agent"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "jinyang628",email = "chenjinyang4192@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-api-python-client (>=2.169.0,<3.0.0)",
+    "google-auth-httplib2 (>=0.2.0,<0.3.0)",
+    "google-auth-oauthlib (>=1.2.2,<2.0.0)",
+    "click (>=8.2.0,<9.0.0)",
+    "appdirs (>=1.4.4,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
