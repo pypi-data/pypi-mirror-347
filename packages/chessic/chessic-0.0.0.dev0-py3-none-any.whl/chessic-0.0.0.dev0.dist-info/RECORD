@@ -1,0 +1,10 @@
+chessic/__init__.py,sha256=sl7LtUFjIHU_6ATpW3J7x1Rv02s0umQ4kKCgm9dmp1g,94
+chessic/__main__.py,sha256=SP8tnm-EFeFznkk2aWqhvfPoPbmrE6_HhOd5w6a7BqQ,64
+chessic/core/__init__.py,sha256=Tr3CwIPY695IbF4DrKHrDes1AKd_iJgddUP46jxKHSw,163
+chessic/tests/__init__.py,sha256=P94BP4Cuiy3RwivbIrHDTT0FNl7WGOJviVIfk3cO9rQ,295
+chessic/tests/test_1984.py,sha256=GPfy8FPaGbj-w9uGHkJYSjmlSReVAXwiHS8JydJaERw,187
+chessic-0.0.0.dev0.dist-info/licenses/LICENSE.txt,sha256=fOh9FHccUt9OcJPBaVJ482GX4yrl_FxCUk9YRZ53JOI,1074
+chessic-0.0.0.dev0.dist-info/METADATA,sha256=oijEeHC4ZHrg09N-G7zDNezrzSXJFfXg0I81BUtI824,2642
+chessic-0.0.0.dev0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+chessic-0.0.0.dev0.dist-info/top_level.txt,sha256=umyYN96SkolLk-KmdPMzzTQuZmXAwiw94IT0yOm4Mnc,8
+chessic-0.0.0.dev0.dist-info/RECORD,,
