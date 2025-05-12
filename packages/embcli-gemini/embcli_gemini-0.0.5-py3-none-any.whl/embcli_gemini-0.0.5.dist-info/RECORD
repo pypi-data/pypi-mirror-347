@@ -1,0 +1,7 @@
+embcli_gemini/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+embcli_gemini/gemini.py,sha256=gHDH0LD0ssXou7rqOgFwjarK27diYdCYMFmxxlc30KU,2288
+embcli_gemini/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embcli_gemini-0.0.5.dist-info/METADATA,sha256=o4pQkxGny5Dlbh6TsshpsOWgQ8rw_wqLRhPqX-qkmlE,5912
+embcli_gemini-0.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+embcli_gemini-0.0.5.dist-info/entry_points.txt,sha256=rD8BHszk8weDSqaZ1ELqxZgM_7XnC_RQYRjbf_U91HU,39
+embcli_gemini-0.0.5.dist-info/RECORD,,
