@@ -1,0 +1,5 @@
+[console_scripts]
+build_executable=pma.pyinstaller:install
+clea=main:main
+pma=main:main
+
