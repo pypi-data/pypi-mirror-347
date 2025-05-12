@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+  "setuptools>=61.0",
+  "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pronostico-panaderia"
+version = "1.0.0"
+description = "Pronósticos de ventas para panadería"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Arturo Blanco", email = "ablancoer@gmail.com" }
+]
+dependencies = [
+  "pandas>=1.5",
+  "requests>=2.28",
+  "holidays>=0.22",
+  "openpyxl>=3.0"
+]
+
+[project.urls]
+"Homepage"   = "https://github.com/ArturoBlanco1969/pronostico-panaderia"
+"Repository" = "https://github.com/ArturoBlanco1969/pronostico-panaderia"

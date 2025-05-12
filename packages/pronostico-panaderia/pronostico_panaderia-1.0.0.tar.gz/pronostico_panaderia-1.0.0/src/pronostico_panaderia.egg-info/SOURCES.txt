@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/clima.py
+src/excel.py
+src/festivos.py
+src/main.py
+src/prediccion.py
+src/pronostico_panaderia.egg-info/PKG-INFO
+src/pronostico_panaderia.egg-info/SOURCES.txt
+src/pronostico_panaderia.egg-info/dependency_links.txt
+src/pronostico_panaderia.egg-info/requires.txt
+src/pronostico_panaderia.egg-info/top_level.txt
+tests/test_datos.py
+tests/test_festivos.py
+tests/test_prediccion.py
