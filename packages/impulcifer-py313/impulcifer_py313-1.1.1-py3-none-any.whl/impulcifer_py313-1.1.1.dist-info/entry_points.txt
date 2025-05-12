@@ -1,0 +1,2 @@
+[console_scripts]
+impulcifer = impulcifer_cli:entry_point
