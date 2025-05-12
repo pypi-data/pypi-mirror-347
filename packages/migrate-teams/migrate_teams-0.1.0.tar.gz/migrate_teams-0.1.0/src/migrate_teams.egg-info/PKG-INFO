@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: migrate-teams
+Version: 0.1.0
+Summary: CLI tool to migrate users between GitHub enterprises and teams
+Home-page: https://github.com/yourname/migrate-teams
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+
+# Migrate Teams CLI Tool
+
+This CLI tool is used to migrate users and teams from one GitHub enterprise account to another, ensuring that users are bucketed correctly under their new usernames. It handles edge cases such as missing users, existing memberships, and allows for dry-runs.
+
+## Installation
+
+```bash
+pip install migrate-teams
+```
+
+## Usage
+
+```bash
+migrate-teams --old-enterprise old-enterprise-name --new-enterprise new-enterprise-name --old-token old-token --new-token new-token
+```
+
+## Options
+
+- `--old-enterprise`: Name of the old GitHub enterprise
+- `--new-enterprise`: Name of the new GitHub enterprise
+- `--old-token`: Token for the old GitHub enterprise
+- `--new-token`: Token for the new GitHub enterprise
+- `--log-file`: File to write logs to (default: `migration.log`)
+- `--results-file`: File to store the results in either CSV or JSON format
+- `--output`: The output format for the results (`csv` or `json`)
+- `--dry-run`: If set, the tool will only simulate the migration and not actually add users to teams
