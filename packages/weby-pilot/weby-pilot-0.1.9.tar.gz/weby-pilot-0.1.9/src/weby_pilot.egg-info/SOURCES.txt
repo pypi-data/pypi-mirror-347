@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+src/weby_pilot/__init__.py
+src/weby_pilot/__main__.py
+src/weby_pilot/base.py
+src/weby_pilot/big.py
+src/weby_pilot/bpi.py
+src/weby_pilot/common.py
+src/weby_pilot/errors.py
+src/weby_pilot.egg-info/PKG-INFO
+src/weby_pilot.egg-info/SOURCES.txt
+src/weby_pilot.egg-info/dependency_links.txt
+src/weby_pilot.egg-info/not-zip-safe
+src/weby_pilot.egg-info/requires.txt
+src/weby_pilot.egg-info/top_level.txt
