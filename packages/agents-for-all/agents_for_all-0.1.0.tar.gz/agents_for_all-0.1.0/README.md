@@ -1,0 +1,98 @@
+# agents-for-all
+
+**Modular agent framework combining LLMs and tools.**
+
+[![Built with uv](https://img.shields.io/badge/built%20with-uv-blue?logo=rust)](https://github.com/astral-sh/uv)
+[![Test Coverage](https://img.shields.io/codecov/c/github/dhungana/agents-for-all?label=coverage)](https://codecov.io/gh/dhungana/agents-for-all)
+[![Python 3.10](https://github.com/dhungana/agents-for-all/actions/workflows/test_310.yml/badge.svg)](https://github.com/dhungana/agents-for-all/actions/workflows/test_310.yml)
+[![Python 3.11](https://github.com/dhungana/agents-for-all/actions/workflows/test_311.yml/badge.svg)](https://github.com/dhungana/agents-for-all/actions/workflows/test_311.yml)
+[![Python 3.12](https://github.com/dhungana/agents-for-all/actions/workflows/test_312.yml/badge.svg)](https://github.com/dhungana/agents-for-all/actions/workflows/test_312.yml)
+[![Python 3.13](https://github.com/dhungana/agents-for-all/actions/workflows/test_313.yml/badge.svg)](https://github.com/dhungana/agents-for-all/actions/workflows/test_313.yml)
+
+Designed to help developers quickly build task-solving agents using large language models and pluggable toolchains.
+
+---
+
+## ✨ Features
+
+- 🔌 Pluggable tool architecture
+- 🤖 LLM integration (OpenAI, etc.)
+- 🧪 Built-in testing with `pytest`
+- 📝 Documentation support via `sphinx`
+- ⚡ Fast dependency management using [`uv`](https://github.com/astral-sh/uv)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.10+
+- [`uv`](https://github.com/astral-sh/uv) installed:
+  ```bash
+  curl -Ls https://astral.sh/uv/install.sh | sh
+  ```
+
+### Installation
+
+Create a virtual environment and install dependencies:
+
+```bash
+uv sync
+```
+
+---
+
+## 🧪 Running Tests
+
+```bash
+uv run pytest
+```
+
+---
+
+## 📚 Documentation
+
+To build the Sphinx docs (if configured):
+
+```bash
+uv run sphinx-build docs docs/_build
+```
+
+---
+
+## 🛠 Project Structure (Sample)
+
+```
+agents_for_all/
+├── agent.py           # Agent class
+├── tools/             # Modular tools the agent can use
+├── llms/              # Collection of LLMs the agent can connect to
+├── tests/             # Pytest test cases
+├── README.md
+├── pyproject.toml
+└── .gitignore
+```
+
+---
+
+## 🤝 Contributing
+
+1. Fork this repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -am 'Add YourFeature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Create a new Pull Request
+
+---
+
+## 📄 License
+
+Apache License 2.0
+
+---
+
+## 🔗 Links
+
+- 📦 GitHub: [agents-for-all](https://github.com/dhungana/agents-for-all.git)
+- ✉️ Maintainer: [Sailesh Dhungana](mailto:dhunganasailesh@gmail.com)
