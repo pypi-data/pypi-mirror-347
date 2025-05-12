@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: getTrades
+Version: 1.6.0
+Summary: A tool querying Bitvavo.com to retrieve all trades and calculate overall results
+Author-email: Nico de Smidt <nico@ndsrf.eu>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.13.0
+Requires-Dist: configparser-crypt==1.1.0
+Requires-Dist: keyring==25.6.0
+Requires-Dist: pandas==2.2.3
+Requires-Dist: tabulate2==1.10.1
+Requires-Dist: websockets==14.2
+Description-Content-Type: text/markdown
+
+**getTrades v1.6**
+
+Read trades and calculate overall profit/loss
+
+ 
+
+usage: *python getTrades.py [option]*
+
+where [option] can be:
+
+| \-d      | delete a config section (asks for config number)                                                                                                |
+|----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| \-a      | add a config section                                                                                                                            |
+| \-l      | list all config section and their numbers                                                                                                       |
+| \-u [\#] | use a specific config section (by number found by -l option)                                                                                    |
+| \-k      | (advanced) use saved resultset, don't query Bitvavo again                                                                                       |
+|          | When no option is provided, a standard run will be executed, when more than one config excist, a config number is asked to run the program with |
+
+ 
+
+Initial run will ask for API and Secret to api.bitvavo.com and store this
+information encrypted in a config.ini file.
+
+ 
+
+This will be the default and does not need to be specified further until there
+are more than 1 configs
