@@ -1,0 +1,91 @@
+Metadata-Version: 2.4
+Name: transformerbeemcp
+Version: 0.0.2
+Summary: MCP server for transformer.bee
+Project-URL: Changelog, https://github.com/Hochfrequenz/python_template_repository/releases
+Project-URL: Homepage, https://github.com/Hochfrequenz/python_template_repository
+Author-email: Hochfrequenz Unternehmensberatung GmbH <info+pip@hochfrequenz.de>
+License: MIT
+Keywords: bo4e,edifact,mcp,transformerbee
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.11
+Requires-Dist: mcp[cli]
+Requires-Dist: transformerbeeclient>=0.2.2
+Provides-Extra: coverage
+Requires-Dist: coverage==7.8.0; extra == 'coverage'
+Provides-Extra: dev
+Requires-Dist: pip-tools; extra == 'dev'
+Requires-Dist: uv; extra == 'dev'
+Provides-Extra: formatting
+Requires-Dist: black==25.1.0; extra == 'formatting'
+Requires-Dist: isort==6.0.1; extra == 'formatting'
+Provides-Extra: linting
+Requires-Dist: pylint==3.3.7; extra == 'linting'
+Provides-Extra: packaging
+Requires-Dist: build==1.2.2.post1; extra == 'packaging'
+Requires-Dist: twine==6.1.0; extra == 'packaging'
+Provides-Extra: spell-check
+Requires-Dist: codespell==2.4.1; extra == 'spell-check'
+Provides-Extra: tests
+Requires-Dist: pytest==8.3.5; extra == 'tests'
+Provides-Extra: type-check
+Requires-Dist: mypy[pydantic]==1.15.0; extra == 'type-check'
+Description-Content-Type: text/markdown
+
+# TransformerBee.MCP
+
+This is a simple PoC of a Model Context Protocol (MCP) server for [transformer.bee](https://github.com/enercity/edifact-bo4e-converter/), written in Python.
+Under the hood it uses [`python-mdc`](https://github.com/modelcontextprotocol/python-sdk) and [`transformerbeeclient.py`](https://github.com/Hochfrequenz/TransformerBeeClient.py).
+
+## Installation
+```shell
+uv install transformerbeemcp
+```
+or if you are using `pip`:
+```sh
+pip install transformerbeemcp
+```
+
+## Start the Server inside the CLI
+The package ships a simple CLI argument to start the server.
+In a terminal **inside the virtual environment in which you installed the package (here `myvenv`)**, call:
+
+```sh
+(myvenv) run-transformerbee-mcp-server
+```
+
+## Install directly into Claude Desktop
+### If you checked out this repository
+```sh
+cd path/to/reporoot/src/transformerbeemcp
+mcp install server.py
+```
+### If you installed the package via pip/uv
+Modify your `claude_desktop_config.json` (that can be found in Claude Desktop menu via "Datei > Einstellungen > Entwickler > Konfiguration bearbeiten"):
+```json
+{
+  "mcpServers": {
+    "TransformerBee.mcp": {
+      "command": "C:\\github\\MyProject\\.myvenv\\Scripts\\run-transformerbee-mcp-server.exe",
+      "args": [],
+      "env": {
+        "TRANSFORMERBEE_HOST": "http://localhost:5021",
+        "TRANSFORMERBEE_CLIENT_ID": "",
+        "TRANSFORMERBEE_CLIENT_SECRET": ""
+      }
+    }
+  }
+}
+```
+where `C:\path\to\myvenv` is the path to your virtual environment where you installed the package and `localhost:5021` exposes transformer.bee running in a docker container.
+
+For details about the environment variables and/or starting transformer.bee locally, check [`transformerbeeclient.py`](https://github.com/Hochfrequenz/TransformerBeeClient.py) docs.
