@@ -1,0 +1,4 @@
+[default]
+PROJECT_NAME = "dtp runner dev project"
+PROJECT_DESCRIPTION = "This is a default settings file for the DTP application."
+

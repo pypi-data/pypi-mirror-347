@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: fastapi-dtp
+Version: 0.1.0
+Summary: DTP is a sample web api framework based on FastAPI.
+Author-email: kyzhangs <kyzhangs@foxmail.com>
+Requires-Python: >=3.13
+Requires-Dist: dynaconf[redis,vault]>=3.2.11
+Requires-Dist: fastapi[all]>=0.115.12
+Requires-Dist: loguru>=0.7.3
