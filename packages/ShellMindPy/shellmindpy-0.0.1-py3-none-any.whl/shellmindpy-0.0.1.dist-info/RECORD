@@ -1,0 +1,13 @@
+shellmind/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shellmind/ai_interaction.py,sha256=5phFds_YttcQqU3CQkzsQtYn57x6DPTUJHtt6zP0BC8,3692
+shellmind/cli.py,sha256=aLvyeaPdMRH4vJcMrmHscxXkCdU3-QPgbpNqyH-nCnc,6790
+shellmind/command_executor.py,sha256=U4X8iJwDsM6ahD9mDx9Q2qlxf74zVs-1Q6FKCGpY0h8,3327
+shellmind/config_manager.py,sha256=d0JHA7fFvCJ5dnSKdjpLdPe7sAbKiLRa-J2ajLdUt_A,2222
+shellmind/exceptions.py,sha256=21AjinQ2azZ0mYPJmJQAXHlo2-1VppyBaJhMpb_To40,1362
+shellmind/input_processor.py,sha256=C4nwloFsqPqOuSilaw_lE8o7JyScTxLxjK9Jm3AJ06w,251
+shellmind/os_adapter.py,sha256=TCU00oHOmUSdNPmxVD6J7reI-_Es3ubwzA-DApFYkVg,2708
+shellmindpy-0.0.1.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+shellmindpy-0.0.1.dist-info/METADATA,sha256=I87RVnwlCnDHrFbHP6XgGroKoteiSAR8cmyye34gCC8,4384
+shellmindpy-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+shellmindpy-0.0.1.dist-info/top_level.txt,sha256=lVtzHg5P80z4J4L6jfdQg2rqmgEGEdVC7NEZjILT2w0,10
+shellmindpy-0.0.1.dist-info/RECORD,,
