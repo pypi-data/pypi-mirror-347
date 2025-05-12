@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+hobby_by_category/__init__.py
+hobby_by_category/data.py
+hobby_by_category/utils.py
+hobby_by_category.egg-info/PKG-INFO
+hobby_by_category.egg-info/SOURCES.txt
+hobby_by_category.egg-info/dependency_links.txt
+hobby_by_category.egg-info/top_level.txt
