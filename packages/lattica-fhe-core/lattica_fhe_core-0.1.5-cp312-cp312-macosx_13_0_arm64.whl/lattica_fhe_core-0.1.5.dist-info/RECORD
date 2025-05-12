@@ -1,0 +1,6 @@
+lattica_fhe_core/__init__.py,sha256=3QfqOPudsdtnhnGvpgNX7SJ1Cp6gPN9-WdCvLzsxNWM,240
+lattica_fhe_core/cpp_sdk.cpython-312-darwin.so,sha256=ZeON9DiIG-1C9zALCjNxjjVBXWaS1SBLo93EQbWwvB4,5259568
+lattica_fhe_core-0.1.5.dist-info/LICENSE.txt,sha256=sQVMjXI8oMkS_3-sDsjyZlZoIUFkLDENh7Tc3I4kjSY,2793
+lattica_fhe_core-0.1.5.dist-info/METADATA,sha256=0kKlyHDgg6cxn2VybcU22jsZCsUkt4vWWsQ5J2-ZjkY,4624
+lattica_fhe_core-0.1.5.dist-info/WHEEL,sha256=cyxZ3HWNYKjAbIfy9gkEjmxnOvjQTeV-DV6UJnXd7jo,106
+lattica_fhe_core-0.1.5.dist-info/RECORD,,
