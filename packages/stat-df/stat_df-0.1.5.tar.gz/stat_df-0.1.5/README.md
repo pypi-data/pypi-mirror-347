@@ -1,0 +1,46 @@
+# Advanced Dataframe Statistics Library
+
+A library for advanced DataFrame statistics analysis, returns:
+
+```
+                                                                                                    
+============================================== my_df ===============================================
+Leading zeros in columns
+
+   item_num
+0  00111223
+1  00001223
+2  00111200
+
+General stats
+
+    Columns           DTypes  NaN  Unique  Duplicates   Sum  Min   Max  Mean  Median   STD  STD (%)
+0        id              int    0       4           0 10.00 1.00  4.00  2.50    2.50  1.29    51.64
+1  item_num              str    0       3           1   NaN  NaN   NaN   NaN     NaN   NaN      NaN
+2      name    NoneType, str    1       4           0   NaN  NaN   NaN   NaN     NaN   NaN      NaN
+3     price  float, NoneType    1       4           0 61.00 0.00 30.50 15.25   15.25 13.04    85.52
+4      tags   NoneType, list    1       4           0   NaN  NaN   NaN   NaN     NaN   NaN      NaN
+5     stock   NoneType, bool    1       3           1   NaN  NaN   NaN   NaN     NaN   NaN      NaN
+Overall data frame length: 4
+
+```
+
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install stat-df 
+```
+
+## Importing the Library
+```python
+import stat_df as sd
+```
+## Usage
+```python
+sd.show(my_df) 
+```
+This command will print out "Leading Zeros in Columns" and "General Stats" data in a nice unified table.
+
