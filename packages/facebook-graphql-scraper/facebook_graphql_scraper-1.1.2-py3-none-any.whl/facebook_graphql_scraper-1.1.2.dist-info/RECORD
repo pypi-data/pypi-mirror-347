@@ -1,0 +1,17 @@
+facebook_graphql_scraper-1.1.2.dist-info/licenses/LICENSE,sha256=kEBEyF0zymtwSR0YUx1nAjoC-Zq0aZYYezjbtcKtxbM,1055
+fb_graphql_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fb_graphql_scraper/example.py,sha256=0V2LW9ql-LE5pDpqnJ-54JOGiZRreRIr-rrV7zCg04w,1308
+fb_graphql_scraper/facebook_graphql_scraper.py,sha256=wedcM9qPy7uYz5L8iYTDbPEpc1KGE9ujYjqSaXflxoA,17212
+fb_graphql_scraper/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fb_graphql_scraper/base/base_page.py,sha256=utCxE3hGcrPJJUyGk-YghvW2fDPenF23iqXbvuWYa6c,933
+fb_graphql_scraper/pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fb_graphql_scraper/pages/page_optional.py,sha256=OEzj5B4v8yiJGKTt-dbIuKv1VaIVNkPXmrK85DB-iA4,5272
+fb_graphql_scraper/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fb_graphql_scraper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fb_graphql_scraper/utils/locator.py,sha256=a7JezBOKRMHtZyCsvwO3LN9Nuy6ibNMSrNZ5x5rliA8,2883
+fb_graphql_scraper/utils/parser.py,sha256=QCN3A1V0-ahLe64cwrZrPX2opegCCYq9Mz9EIQ-NTXc,4346
+fb_graphql_scraper/utils/utils.py,sha256=s5NmTmOF1Ht-VlktaowJn2Fx3hDzxqrgfde06vS3Qg8,11910
+facebook_graphql_scraper-1.1.2.dist-info/METADATA,sha256=kL7tv5ybrvMFfFEk9Mtm5mwjoK37MirZzspaK6tj05w,10583
+facebook_graphql_scraper-1.1.2.dist-info/WHEEL,sha256=0CuiUZ_p9E4cD6NyLD6UG80LBXYyiSYZOKDm5lp32xk,91
+facebook_graphql_scraper-1.1.2.dist-info/top_level.txt,sha256=IF6F1Bq6fXuzFxdDBe7rr-qagGzP_qiQD9qHCLm37-I,19
+facebook_graphql_scraper-1.1.2.dist-info/RECORD,,
