@@ -1,0 +1,16 @@
+typing
+numpy
+pandas
+lxml
+openpyxl
+pdoc
+requests
+bs4
+black
+pylint
+ruff
+mypy
+
+[build]
+setuptools
+cython
