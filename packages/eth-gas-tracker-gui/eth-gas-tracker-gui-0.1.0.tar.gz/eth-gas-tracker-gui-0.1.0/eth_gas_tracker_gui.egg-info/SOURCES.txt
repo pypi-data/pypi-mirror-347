@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+eth_gas_tracker_gui.egg-info/PKG-INFO
+eth_gas_tracker_gui.egg-info/SOURCES.txt
+eth_gas_tracker_gui.egg-info/dependency_links.txt
+eth_gas_tracker_gui.egg-info/entry_points.txt
+eth_gas_tracker_gui.egg-info/requires.txt
+eth_gas_tracker_gui.egg-info/top_level.txt
