@@ -1,0 +1,17 @@
+moat/ems/battery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moat/ems/battery/_base.py,sha256=xpBAgJjZg_XVPbK6O6mVzjCnSeo82fgAfLpqv6Vd770,21607
+moat/ems/battery/_cfg.yaml,sha256=r_Hhn2wDxS06Wt-nnOXfMG4kSm-Ga-Sn-TQimJKNpHw,206
+moat/ems/battery/_main.py,sha256=9zSB4qlUE8NVN8qAGQnqWSiGOzUd5ZT3UsseU0-71yU,2053
+moat/ems/battery/errors.py,sha256=FJ60I1qNupu527TPThhDYk8SuRnksYelowQ1hWsyehU,268
+moat/ems/battery/OFF/__init__.py,sha256=IqGue24JYLcx5IY-sPCl5hZ1MtYMBa8GSLCLLMhoLg8,12
+moat/ems/battery/OFF/_main.py,sha256=dPSLurjbzT4O76xNFIn8eqCryQhCz64doWJGYPiNzQg,1514
+moat/ems/battery/OFF/dbus.py,sha256=GDM5K8ZVbgwfmwHTzr1VoRWsx466Fvec7fYrwZ9KVRM,1362
+moat/ems/battery/conv/steinhart.py,sha256=wexPgkahy4vrzDNCrG5eG6V1pL58Y1PKpJEgzY0MWaY,987
+moat/ems/battery/diy_serial/cell.py,sha256=Tf7BbaGBSBm0sTS_vuggyqUIlO7a-CUG3_aa3mcF57s,6429
+moat/ems/battery/diy_serial/comm.py,sha256=zfDxjY4c1s_yg_ct6Irx06mnW-FZqxt22P6eh7tAQ8Q,5464
+moat/ems/battery/diy_serial/packet.py,sha256=HwR9boEva_RoSb6_hE1LjVa94jWthFi5mKSVkV03pts,16735
+moat_ems_battery-0.2.14.dist-info/licenses/LICENSE.txt,sha256=L5vKJLVOg5t0CEEPpW9-O_0vzbP0PEjEF06tLvnIDuk,541
+moat_ems_battery-0.2.14.dist-info/METADATA,sha256=0CWOSaMygbdH0RPSeO1K_UFyNI6umUZzpBYHIfDVwq8,753
+moat_ems_battery-0.2.14.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+moat_ems_battery-0.2.14.dist-info/top_level.txt,sha256=pcs9fl5w5AB5GVi4SvBqIVmFrkRwQkVw_dEvW0Q0cSA,5
+moat_ems_battery-0.2.14.dist-info/RECORD,,
