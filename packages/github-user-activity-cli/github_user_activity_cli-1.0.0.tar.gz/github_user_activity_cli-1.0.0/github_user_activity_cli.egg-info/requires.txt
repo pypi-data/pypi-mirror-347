@@ -1,0 +1,5 @@
+aiohttp>=3.11.18
+
+[dev]
+build
+twine
