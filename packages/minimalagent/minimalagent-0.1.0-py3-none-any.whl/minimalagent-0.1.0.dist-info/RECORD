@@ -1,0 +1,12 @@
+minimalagent/__init__.py,sha256=q5j7jc10s1W_Cj9AHwtF37wodtuILmA9mkYV1NJTKOE,153
+minimalagent/agent.py,sha256=Zdo8_X7jUtI-FwYKltVXTJe_kGhp9ak2JhtcPS3p7ek,26629
+minimalagent/tool.py,sha256=ZknQ1zt85TI2XExsfS4Z7pR0hVpr-CaESXyvsmPpdok,8216
+minimalagent/utils/__init__.py,sha256=NWuiA4d1_g8A5mn_0MykJGjwj0xN15ssC_LvwlYXNfY,42
+minimalagent/utils/docstring.py,sha256=gHp4VaoHk5QrONh7cCoHqmYKIGRm0gzEIShTSlB4i2Y,5924
+minimalagent/utils/logging.py,sha256=1KEWOSFwIWuXwEpoKSCEVeHN6W1_AXcs8_tPgm3rJys,1491
+minimalagent/utils/tools.py,sha256=aORjc8Zs97XZdwO_dUxaiU8OrVYR-mN5-sHdLGie_t4,1149
+minimalagent-0.1.0.dist-info/LICENSE,sha256=uGP81GGPv39_g6pFj6K1ME21oHsNdIqw8Uy-ecVNfD8,1074
+minimalagent-0.1.0.dist-info/METADATA,sha256=DU09vjJDbyCKzGHEwglzQ1-umZvnPHVk9umS15wVvpQ,12322
+minimalagent-0.1.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+minimalagent-0.1.0.dist-info/top_level.txt,sha256=uojZ1KGkn6IMR9Fjipepq0CHMQXI7jtSNEk_DJqI2uI,13
+minimalagent-0.1.0.dist-info/RECORD,,
