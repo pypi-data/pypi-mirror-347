@@ -1,0 +1,2 @@
+[console_scripts]
+deeplive = deeplive.app:run

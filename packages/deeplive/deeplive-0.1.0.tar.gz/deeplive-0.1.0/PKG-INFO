@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: deeplive
+Version: 0.1.0
+Summary: Transform Reality in Real-Time: Instant Face Swap Technology with Just One Image. Create Stunning Live Deepfakes with Audio - No Training Required!
+Author: DeepLive Team
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: numpy<2,>=1.23.5
+Requires-Dist: typing-extensions>=4.8.0
+Requires-Dist: opencv-python==4.10.0.84
+Requires-Dist: cv2_enumerate_cameras==1.1.15
+Requires-Dist: onnx==1.16.0
+Requires-Dist: insightface==0.7.3
+Requires-Dist: psutil==5.9.8
+Requires-Dist: PyQt6>=6.5.0
+Requires-Dist: pillow==11.1.0
+Requires-Dist: protobuf==4.23.2
+Requires-Dist: opennsfw2==0.10.2
+Requires-Dist: torch==2.5.1; sys_platform == "darwin"
+Requires-Dist: torchvision==0.20.1; sys_platform == "darwin"
+Requires-Dist: onnxruntime-silicon==1.16.3; sys_platform == "darwin" and platform_machine == "arm64"
+Requires-Dist: torch==2.5.1; sys_platform != "darwin"
+Requires-Dist: torchvision==0.20.1; sys_platform != "darwin"
+Requires-Dist: onnxruntime-gpu==1.16.3; sys_platform != "darwin"
+Requires-Dist: tensorflow; sys_platform != "darwin"
+Dynamic: author
+Dynamic: description
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+DeepLive lets you instantly transform videos and livestreams with revolutionary one-click face swap technology. Using just a single reference image, seamlessly replace faces in real-time while preserving audio quality. Perfect for content creators, streamers, and entertainment professionals seeking to create engaging, high-quality digital transformations without complex training.
