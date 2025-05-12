@@ -1,0 +1,14 @@
+LICENSE
+LICENSES_THIRD_PARTY
+MANIFEST.in
+README.md
+setup.py
+sapiens/__init__.py
+sapiens/__version__.py
+sapiens/predict.py
+sapiens.egg-info/PKG-INFO
+sapiens.egg-info/SOURCES.txt
+sapiens.egg-info/dependency_links.txt
+sapiens.egg-info/requires.txt
+sapiens.egg-info/top_level.txt
+tests/test_predict.py
