@@ -1,0 +1,87 @@
+Metadata-Version: 2.4
+Name: funsecret
+Version: 1.4.55
+Summary: funsecret
+Author-email: 牛哥 <niuliangtao@qq.com>, farfarfun <farfarfun@qq.com>
+Maintainer-email: 牛哥 <niuliangtao@qq.com>, farfarfun <farfarfun@qq.com>
+Project-URL: Organization, https://github.com/farfarfun
+Project-URL: Repository, https://github.com/farfarfun/funsecret
+Project-URL: Releases, https://github.com/farfarfun/funsecret/releases
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography>=43.0.3
+Requires-Dist: diskcache>=5.6.3
+Requires-Dist: funutil>=1.0.15
+Requires-Dist: orjson>=3.10.10
+Requires-Dist: sqlalchemy>=2.0.35
+Requires-Dist: tqdm>=4.67.0
+Provides-Extra: mysql
+Requires-Dist: pymysql>=1.1.1; extra == "mysql"
+Requires-Dist: mysqlclient>=2.2.7; extra == "mysql"
+
+# funsecret
+
+funsecret 是一个轻量级的 Python 密钥管理工具，用于安全地存储和访问敏感信息（如账号密码）。基于我对该包的分析，以下是它的主要功能和特点：
+
+核心功能
+* 本地密钥存储：将敏感信息保存在本地，避免在代码中使用明文凭证
+* 结构化存储：使用多级路径（类似命名空间）组织密钥
+* 读写 API：提供简洁的读写接口
+* 快照功能：通过 funsecret_snapshot 扩展包支持某些平台的快照功能
+
+
+## 安装
+
+```bash
+pip install funsecret
+```
+
+## 写入或者更新
+
+```python
+from funsecret import read_secret, write_secret
+
+write_secret("your username", "wechat", "login", "username")
+read_secret("wechat", "login", "username", value="your username")
+```
+
+## 读取
+
+```python
+from funsecret import read_secret
+
+username = read_secret("wechat", "login", "username")
+password = read_secret("wechat", "login", "password")
+```
+
+## 快照
+
+快照功能需要单独安装
+
+```bash
+pip install funsecret_snapshot
+```
+
+目前只支持保存 lanzou
+
+### 保存
+
+```python
+from funsecret_snapshot import save_snapshot
+
+bin_id = '**'
+cipher_key = '******'
+security_key = "******"
+save_snapshot(bin_id, cipher_key, security_key)
+```
+
+### 读取
+
+```python
+from funsecret_snapshot import load_snapshot
+
+bin_id = '**'
+cipher_key = '******'
+security_key = "******"
+load_snapshot(bin_id, cipher_key, security_key)
+```
