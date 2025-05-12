@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: minorun365
+Version: 1.0.0
+Summary: uvx minorun365
+Author: minorun365
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: rich>=13.0.0
+Requires-Dist: twine>=4.0.2
+Requires-Dist: typer>=0.9.0
+
+minorun365-card
+
+```
+uvx minorun365
+```
+
+[PYPI](https://pypi.org/project/minorun365/)

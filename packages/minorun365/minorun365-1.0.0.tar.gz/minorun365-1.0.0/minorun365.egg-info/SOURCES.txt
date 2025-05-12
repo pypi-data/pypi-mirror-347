@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+minorun365/__init__.py
+minorun365/card.py
+minorun365.egg-info/PKG-INFO
+minorun365.egg-info/SOURCES.txt
+minorun365.egg-info/dependency_links.txt
+minorun365.egg-info/entry_points.txt
+minorun365.egg-info/requires.txt
+minorun365.egg-info/top_level.txt
