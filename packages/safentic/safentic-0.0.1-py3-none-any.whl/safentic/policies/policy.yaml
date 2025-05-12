@@ -1,0 +1,25 @@
+tools:
+  send_email:
+    checks:
+      - type: deny_phrase
+        phrases:
+          - "one device per subscription"
+          - "24 hours"
+
+      - type: semantic
+        trigger_phrases:
+          - "refund policy"
+          - "guarantee"
+          - "our policy"
+        reference_file: "example_policy.txt"
+
+  update_ticket:
+    checks: []  # Explicitly allow all — no policy checks
+
+  log_to_crm:
+    checks: []  # Explicitly allow all — no policy checks
+
+logging:
+  level: INFO
+  destination: "safentic/logs/txt_logs/safentic_audit.log"
+  jsonl: "safentic/logs/json_logs/safentic_audit.jsonl"
