@@ -1,0 +1,3 @@
+[console_scripts]
+eth-gas-tracker = gas_tracker_gui:main
+
