@@ -1,0 +1,9 @@
+README.md
+setup.py
+random_nick_generator/__init__.py
+random_nick_generator/generator.py
+random_nick_generator.egg-info/PKG-INFO
+random_nick_generator.egg-info/SOURCES.txt
+random_nick_generator.egg-info/dependency_links.txt
+random_nick_generator.egg-info/top_level.txt
+tests/test_generator.py

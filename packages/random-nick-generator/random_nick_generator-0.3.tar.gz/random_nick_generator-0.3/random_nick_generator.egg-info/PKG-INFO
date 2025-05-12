@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: random-nick-generator
+Version: 0.3
+Summary: A simple library to generate random nicknames.
+Home-page: https://github.com/dsadasdasdsaas/random-nick-generator
+Author: vsenikzianyati
+Author-email: fmsg4341@gmail.com
+Description-Content-Type: text/markdown
+
+# random-nick-generator
+
+A simple library to generate random nicknames.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install random-nick-generator.
+
+```bash
+pip install random-nick-generator
+```
+
+## Usage
+
+```python
+from random_nick_generator import generate
+
+print("Generated nick:", generate())
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
