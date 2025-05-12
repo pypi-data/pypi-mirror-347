@@ -1,0 +1,2 @@
+[console_scripts]
+run-worker = django_task_worker.worker:run_worker
