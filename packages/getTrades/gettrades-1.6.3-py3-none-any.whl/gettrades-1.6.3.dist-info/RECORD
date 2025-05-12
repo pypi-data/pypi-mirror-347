@@ -1,0 +1,9 @@
+getTrades/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getTrades/__main__.py,sha256=qI0Wey8AvrE9EytQ9zeNJBhLaa2R5KjPvXo16fkYZ6M,71
+getTrades/cli.py,sha256=vkLVpmPjQ-RgLV7zBarpKgxNcfyY0cxhT97tzJiUDlk,132
+getTrades/getTrades.py,sha256=4KUhuT8UfRC7AoOC4smS0yPBpzQTBnPFAmz1614KNyw,36665
+gettrades-1.6.3.dist-info/METADATA,sha256=LmgKwPEFdfyu6EEkWOQXyZuGW6seDbxKHvxx3KbDDJM,1374
+gettrades-1.6.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gettrades-1.6.3.dist-info/entry_points.txt,sha256=oLElibPic6-OchrNo8Zg5Lh2E1hJNk4RgUg3qHmN714,48
+gettrades-1.6.3.dist-info/licenses/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+gettrades-1.6.3.dist-info/RECORD,,
