@@ -1,0 +1,10 @@
+bin
+dist
+docs
+examples
+scripts
+src
+tests
+twinshare_cli
+update
+venv
