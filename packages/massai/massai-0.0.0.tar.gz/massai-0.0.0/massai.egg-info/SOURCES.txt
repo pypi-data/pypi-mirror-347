@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+massai/__init__.py
+massai/version.py
+massai.egg-info/PKG-INFO
+massai.egg-info/SOURCES.txt
+massai.egg-info/dependency_links.txt
+massai.egg-info/top_level.txt
+tests/test_example.py
