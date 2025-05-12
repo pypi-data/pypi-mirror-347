@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/cli.py
+src/file_browser.py
+src/file_browser_cli.egg-info/PKG-INFO
+src/file_browser_cli.egg-info/SOURCES.txt
+src/file_browser_cli.egg-info/dependency_links.txt
+src/file_browser_cli.egg-info/requires.txt
+src/file_browser_cli.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_file_browser.py

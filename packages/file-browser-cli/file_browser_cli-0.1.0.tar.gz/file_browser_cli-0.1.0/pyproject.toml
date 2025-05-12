@@ -1,0 +1,21 @@
+[project]
+name = "file-browser-cli"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "textual>=3.2.0",
+    "textual-dev>=1.7.0",
+    "typer>=0.15.3",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+    "pytest-cov>=6.1.1",
+]
+lint = [
+    "flake8>=7.2.0",
+]
