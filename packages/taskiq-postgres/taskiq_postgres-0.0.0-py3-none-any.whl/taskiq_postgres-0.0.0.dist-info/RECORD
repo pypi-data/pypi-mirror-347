@@ -1,0 +1,10 @@
+taskiq_pg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taskiq_pg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taskiq_pg/aiopg/__init__.py,sha256=hyjY2lyLGIlYhzCjm4uOv7wFOXLTmRSb_hQcktBmOoI,86
+taskiq_pg/asyncpg/__init__.py,sha256=0dBG7S0xhVVWLh1N5V0gv7kdyQM6NYwZ-Va_LtlWWuc,92
+taskiq_pg/psqlpy/__init__.py,sha256=haTwsAGJeBzUcHsWsN0uk_9ggRuexdAdz89KZCCF4hA,89
+taskiq_postgres-0.0.0.dist-info/licenses/LICENSE,sha256=2hyGO1fL0gsh9ExFeS6_QE-egvs03mgAHzehMS6q3rQ,1072
+taskiq_postgres-0.0.0.dist-info/METADATA,sha256=4iTffOC3TMq1lRP1O-WqKN_-kjTDxkxp-yP_au4yriQ,2903
+taskiq_postgres-0.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+taskiq_postgres-0.0.0.dist-info/top_level.txt,sha256=4vaQrKXdF2VO9H3DodE1PdTM9RjdVo4erwEqAyUL894,10
+taskiq_postgres-0.0.0.dist-info/RECORD,,
