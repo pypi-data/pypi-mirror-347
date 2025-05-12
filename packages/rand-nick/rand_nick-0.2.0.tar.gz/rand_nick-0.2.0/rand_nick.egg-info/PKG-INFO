@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rand_nick
+Version: 0.2.0
+Summary: Генератор никнеймов
+Home-page: https://github.com/dsadasdasdsaas/rand_nick
+Author: vsenikizanyati
+Author-email: fmsg4341@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Random NickName generator
+
+Random NickName generator is a simple library for generating unique nicknames based on random adjectives and nouns. It can be useful for creating nicknames for games, social networks or other online platforms.
+
+## РЈСЃС‚Р°РЅРѕРІРєР°
+
+```python
+from nick_gen import generate_nickname
+
+# 1 nickname
+print("РЎРіРµРЅРµСЂРёСЂРѕРІР°РЅРЅС‹Р№ РЅРёРєРЅРµР№Рј:", generate_nickname())
+
+# if you want some nicknames
+unique_nicknames = {generate_nickname() for _ in range(5)}
+print("РќРµСЃРєРѕР»СЊРєРѕ СЃРіРµРЅРµСЂРёСЂРѕРІР°РЅРЅС‹С… РЅРёРєРЅРµР№РјРѕРІ:", unique_nicknames)
