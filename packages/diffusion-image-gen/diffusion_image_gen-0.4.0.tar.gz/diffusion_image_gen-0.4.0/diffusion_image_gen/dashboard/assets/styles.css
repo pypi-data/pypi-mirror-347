@@ -1,0 +1,90 @@
+/*
+.stMainBlockContainer.block-container {
+    max-width: unset;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2.5rem;
+}
+
+.stHorizontalBlock {
+    gap: 2rem;
+}
+*/
+
+.stMainBlockContainer.block-container h1 {
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+[data-testid="stImageContainer"] {
+    width: 100% !important;
+}
+
+/* Show the true image on hover */
+[data-testid="stImageContainer"] img:hover {
+    image-rendering: pixelated;
+}
+
+.image-mask-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.checkerboard-bg {
+    --checker-color: rgba(120, 120, 120, 0.15);
+    --checker-size: 16px;
+
+    position: relative;
+    background-image: linear-gradient(45deg, var(--checker-color) 25%, transparent 25%), linear-gradient(-45deg, var(--checker-color) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--checker-color) 75%), linear-gradient(-45deg, transparent 75%, var(--checker-color) 75%);
+    background-size: calc(var(--checker-size) * 2) calc(var(--checker-size) * 2);
+    background-position: 0 0, 0 var(--checker-size), var(--checker-size) calc(-1 * var(--checker-size)), calc(-1 * var(--checker-size)) 0;
+}
+
+.imputation-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.imputation-image:hover {
+    image-rendering: pixelated;
+}
