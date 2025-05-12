@@ -1,0 +1,8 @@
+granian>=2.2.5
+pulsectl-asyncio>=1.2.2
+pychromecast>=14.0.7
+socketify>=0.0.31
+starlette>=0.46.2
+typed-ffmpeg>=2.7.3
+uvicorn>=0.34.2
+uvloop>=0.21.0
