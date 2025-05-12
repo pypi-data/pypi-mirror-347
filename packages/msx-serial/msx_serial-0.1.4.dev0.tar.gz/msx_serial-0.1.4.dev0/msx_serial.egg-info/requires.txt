@@ -1,0 +1,10 @@
+colorama
+prompt-toolkit
+pyserial
+PyYAML
+chardet
+msx-charset
+
+[dev]
+build
+twine
