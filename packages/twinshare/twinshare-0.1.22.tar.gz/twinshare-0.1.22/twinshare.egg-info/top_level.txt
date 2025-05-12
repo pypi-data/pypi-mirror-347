@@ -1,0 +1,9 @@
+bin
+dist
+docs
+examples
+scripts
+src
+tests
+update
+venv
