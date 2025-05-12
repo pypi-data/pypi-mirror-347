@@ -1,0 +1,2 @@
+[console_scripts]
+twinshare = src.cli.main:main
