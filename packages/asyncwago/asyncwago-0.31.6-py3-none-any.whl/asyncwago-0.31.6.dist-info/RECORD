@@ -1,0 +1,10 @@
+asyncwago/__init__.py,sha256=fijX3ni3zBqqeRbD9F5VRg9e_Nx2w2OcqSBgRhCj3vE,94
+asyncwago/server.py,sha256=liaLApuiXwcDF33ald8X0VxhdP_3riPaHzAhgvE_rUw,19680
+asyncwago-0.31.6.dist-info/licenses/LICENSE,sha256=rGLMYD9185ffcdA84aBMq-wHJxoNhJGkAni2gUt5ET4,35411
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=a3U8NJYG0yw06eRKES1ws2LHkH8DuCg5eGBSre1Xfhc,45
+tests/test_mockserver.py,sha256=Pe1ZKf7prZQ2fbzkeQVVZ9Wcuxwygb0yLP-qzu66Vx0,5138
+asyncwago-0.31.6.dist-info/METADATA,sha256=KjFdJf8kEzix_1QE5TWYRwvxDYyGy3ILsXzo9kMQdr0,1595
+asyncwago-0.31.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+asyncwago-0.31.6.dist-info/top_level.txt,sha256=WGqH-soTW6wPnEBQWMfY4FzZdISzhNjMCNknDQvfTs0,16
+asyncwago-0.31.6.dist-info/RECORD,,
