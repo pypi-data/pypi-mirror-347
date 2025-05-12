@@ -1,0 +1,17 @@
+TaskoraApi/__init__.py,sha256=Jqxkgx0L9z2nwxdqDpHk_SLuJ2lhHtYGxQSEbFcL538,1685
+TaskoraApi/InstagramApi/__init__.py,sha256=6xENNs3CNp-IAD3sDby6sEBpHlXUzpv5pUfOiKFWhwc,244
+TaskoraApi/InstagramApi/aiohttp_client.py,sha256=8sWtIIa-FtKn6lFVOfJPSdKtvuWiB-eLaInXIcXewAc,7485
+TaskoraApi/InstagramApi/httpx_client.py,sha256=p5_Ooz0iqe4XpNpYt4uR3NF9vPr1c810YtybNJcQifc,7228
+TaskoraApi/InstagramApi/requests_client.py,sha256=J2pxIg5JEuuBUYFVZv6xrfKdkkgTrlZ8kFRwhrFT4aM,6883
+TaskoraApi/QuizApi/__init__.py,sha256=xa7h1dH5cf0BHgYdxTBYuwF3sQGdHABPNI4sTX4p6AE,197
+TaskoraApi/QuizApi/aiohttp_client.py,sha256=vxlsDgedLsNU41gCJ8BMMzyTRYZtwcZ1sTe-1KfHz4w,3710
+TaskoraApi/QuizApi/httpx_client.py,sha256=kvwr7hbNiPITEP1TPrnoP1ACnmIjIM7faqw3aCwICsE,3663
+TaskoraApi/QuizApi/requests_client.py,sha256=LALoQMBjZ_XCTlCig68xcB9i45Qn6ETuh2MjDY1kEYg,3064
+TaskoraApi/chatBot/__init__.py,sha256=6SB30lzi4iXnnE-Cg6m_n4rQbp1s_YyzGxc0vm28kZI,208
+TaskoraApi/chatBot/client.py,sha256=SIRvGfnnE6aEpz4rcwQcQRfjc_C8S9Lb8h5CFOkj6QM,8453
+TaskoraApi/reCaptchaV3Solver/__init__.py,sha256=NAhRfhQAL0kiDojt4cMgxsf5YMbu5FkIJf6x1GItl78,225
+TaskoraApi/reCaptchaV3Solver/client.py,sha256=aAPN3EQnmlAl4isvbdAuYU8tJT14KCDQShtLSaX2cq4,6406
+TaskoraApi-1.1.1.dist-info/METADATA,sha256=hXAR5cEwKwU1ytuqnKCVmeEosnE7_gh9NrJRG2ZwbCY,3415
+TaskoraApi-1.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+TaskoraApi-1.1.1.dist-info/top_level.txt,sha256=WfdHtJE6mcM5w79vg6uIANUyEN35-Xz4kmO0qiHVoO4,11
+TaskoraApi-1.1.1.dist-info/RECORD,,
