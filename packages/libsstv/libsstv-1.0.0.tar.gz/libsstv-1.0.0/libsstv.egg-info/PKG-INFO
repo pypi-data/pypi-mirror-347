@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: libsstv
+Version: 1.0.0
+Summary: Combining a few pieces of code into an extremely simple library for handling sstv in python
+Author-email: "Franektoube (Franek Kurzawa)" <frankox7@interia.pl>
+License: GPL-3.0-only
+Project-URL: Homepage, https://github.com/Franektoube/libsstv
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+Requires-Dist: pysstv
+Dynamic: license-file
+
+# libsstv
+Combining a few pieces of code into an extremely simple library for handling sstv in python

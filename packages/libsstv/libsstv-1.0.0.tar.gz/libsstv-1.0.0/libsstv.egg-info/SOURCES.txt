@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+libsstv/__init__.py
+libsstv/sstv_decoder.py
+libsstv/sstv_modes.py
+libsstv.egg-info/PKG-INFO
+libsstv.egg-info/SOURCES.txt
+libsstv.egg-info/dependency_links.txt
+libsstv.egg-info/requires.txt
+libsstv.egg-info/top_level.txt

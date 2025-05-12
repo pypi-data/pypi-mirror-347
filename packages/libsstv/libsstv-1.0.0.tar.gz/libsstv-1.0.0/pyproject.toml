@@ -1,0 +1,20 @@
+[project]
+name = "libsstv"
+version = "1.0.0"
+description = "Combining a few pieces of code into an extremely simple library for handling sstv in python"
+authors = [{ name = "Franektoube (Franek Kurzawa)", email = "frankox7@interia.pl" }]
+readme = "README.md"
+license = {text = "GPL-3.0-only"}
+requires-python = ">=3.7"
+dependencies = [
+    "pillow",
+    "pysstv"
+]
+
+[project.urls]
+Homepage = "https://github.com/Franektoube/libsstv"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
