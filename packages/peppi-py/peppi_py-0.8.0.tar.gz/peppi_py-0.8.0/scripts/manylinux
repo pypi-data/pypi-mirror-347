@@ -1,0 +1,15 @@
+docker run --rm -v $(pwd):/io ghcr.io/pyo3/maturin build --release --compatibility manylinux_2_17
+
+#docker run --rm -it --platform=linux/amd64 messense/manylinux_2_28-cross:x86_64
+
+# run manually for now
+#cd /root
+#apt update
+#apt upgrade
+#curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#git clone https://github.com/hohav/peppi-py.git
+#cd peppi-py
+#python3.12 -m venv venv
+#. venv/bin/activate
+#pip install maturin
+#maturin build --compatibility manylinux_2_28
