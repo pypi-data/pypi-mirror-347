@@ -1,0 +1,9 @@
+uv_practice/__init__.py,sha256=Ld1sWM8Bdr6Ei5ldxnPlE9sWHrUOAbiAF9ZMwAqs7CQ,57
+uv_practice/calculator.py,sha256=KHwDwkGPagPJ1_yLgfpyzY16tLk8ptZgLCrRtfOwQpY,212
+uv_practice/pytest-attest.py,sha256=oc3zdq-5v6h5SmsUsWvzpyyQQjrMHS99xM9EhuOhX2c,573
+uv_practice/sigstore-python.py,sha256=hfSnw0OHAqz_L58K4k1bbB6wzMufcbl7V8lyGmpVpRs,657
+uv_practice/verify_sign.py,sha256=U2AFVtDxllWpNQOhm_trh4x2kCVa59YuG8HeMsNI1eo,2659
+uv_practice-3.0.0.dist-info/METADATA,sha256=vLDvtvpNsW0As8X67tWG4ZlssFH08PAclgcnw3NYUug,223
+uv_practice-3.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+uv_practice-3.0.0.dist-info/entry_points.txt,sha256=0JeVG9PN9LJRNPYW-QcekTzjPM7iMHT26ogShn0FHK8,49
+uv_practice-3.0.0.dist-info/RECORD,,
