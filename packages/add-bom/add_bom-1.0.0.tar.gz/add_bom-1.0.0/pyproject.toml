@@ -1,0 +1,37 @@
+[project]
+name = "add-bom"
+version = "1.0.0"
+description = "A simple utility to add a BOM to a file to ensure it opens as UTF-8 in Excel on a Mac"
+authors = [
+    {name = "Kaj Siebert",email = "kaj@k-si.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "click (>=8.2.0,<9.0.0)",
+    "charset-normalizer (>=3.4.2,<4.0.0)"
+]
+
+
+[tool.poetry.scripts]
+add-bom = "add_bom.cli:add_bom"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.9"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
