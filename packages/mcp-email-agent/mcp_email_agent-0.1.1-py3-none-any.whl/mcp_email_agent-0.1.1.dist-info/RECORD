@@ -1,0 +1,9 @@
+mcp_email_agent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcp_email_agent/config.py,sha256=B8fx9WQxO-2VCkPIbLxjflBSZvqRJ_e23v47mI-Nrhs,1525
+mcp_email_agent/gmail.py,sha256=am-okc58Tz-7JZHEvJK_kyrt5aWDHk_LAook7iWKhiA,8523
+mcp_email_agent/main.py,sha256=41BwnW9gEKqlCUWf4SwYIPj64Iz0UUA4GGqSWloSS5c,6482
+mcp_email_agent/processor.py,sha256=fyWRS-MNYfBkKxNjKXlwDYDQQidqKn_JLhv3zyQVGeQ,8573
+mcp_email_agent-0.1.1.dist-info/METADATA,sha256=XqEj5cEx7MzLxDGJ9PglFlmcldof9cybdaVo8wOqd30,1035
+mcp_email_agent-0.1.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+mcp_email_agent-0.1.1.dist-info/entry_points.txt,sha256=WqxOpQSWGB6ybVHTh4i55-grWv6W7pvFXVCzLiY2GJA,60
+mcp_email_agent-0.1.1.dist-info/RECORD,,

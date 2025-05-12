@@ -1,0 +1,3 @@
+[console_scripts]
+mcp-email-agent=mcp_email_agent.main:cli
+
