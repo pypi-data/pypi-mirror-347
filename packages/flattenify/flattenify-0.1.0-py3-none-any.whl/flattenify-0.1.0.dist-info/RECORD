@@ -1,0 +1,13 @@
+flatten_tool/flatten/__init__.py,sha256=FalalXKq0b4p9wG5LfNipOIJrTPWakUy142LOznM8X8,178
+flatten_tool/flatten/cli.py,sha256=bwC7I_0WGThOVRU3GYrxetgPrnY0XsSJZ3xkbKEB-g8,5424
+flatten_tool/flatten/config.py,sha256=wnpa6JYobmot9w5Q6euoDJeg8Hovf4gNRHs5fYsbGV0,11087
+flatten_tool/flatten/file_handler.py,sha256=R2fJxCmbn8ikGRwfFOo4q1WBQI2Gh1JLR10Nq4G37gI,9422
+flatten_tool/flatten/logging.py,sha256=Qh5lj90TeBqxG7rYNLO_Eky8QGm-VtD4Lw_b1y-g6cM,1215
+flatten_tool/flatten/output.py,sha256=kCEAVUHBcbR5LfXPB-pp57UqjzJ0066s1581xevhozw,3676
+flatten_tool/plugins/custom_parser.py,sha256=0e-7cyO5Zgds108KrDqqFen_sKpfTTZDQhllO17PnxI,365
+flattenify-0.1.0.dist-info/licenses/LICENSE,sha256=nP507zhYahkt8ktLodbglm7OZ6__T-WB0rTaUSC5gtw,1056
+flattenify-0.1.0.dist-info/METADATA,sha256=oKRMCakmurMWkrhJmEzBbz9DNdrZM4EF-eqD4MhY-a0,11755
+flattenify-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+flattenify-0.1.0.dist-info/entry_points.txt,sha256=jfIrEPO3fUx8AvxwBm1C0-yOBr_27D1FYmXsn9Q6paU,58
+flattenify-0.1.0.dist-info/top_level.txt,sha256=zUhB5SSurj31zNIBnJzt4-jfW1kWkJoqH5bN8t_vGfo,13
+flattenify-0.1.0.dist-info/RECORD,,
