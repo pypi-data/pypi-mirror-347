@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: ipay
+Version: 1.0.6
+Summary: U.S. fiat-native payment platform
+Author: Blacksaints2
+Author-email: you@example.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Placeholder for README.md
