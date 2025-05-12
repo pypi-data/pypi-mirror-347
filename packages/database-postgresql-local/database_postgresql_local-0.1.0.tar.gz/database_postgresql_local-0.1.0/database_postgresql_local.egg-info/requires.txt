@@ -1,0 +1,4 @@
+logger-local
+database-sql-local
+python-sdk-remote
+psycopg2
