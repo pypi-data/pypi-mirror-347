@@ -1,0 +1,50 @@
+Metadata-Version: 2.2
+Name: fly_dev_run
+Version: 0.2.2
+Home-page: 
+Author: FlyThinker Huang
+Author-email: flythinker@qq.com
+License: The Unlicense (Unlicense)
+Keywords: dev_tools,python,run
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-python
+
+
+### fly_dev_run
+
+这是一个方便开发时启动python程序的工具。后续会提供代码搜索，等功能 
+
+dev_run 会自动搜索当前目录下的所有python文件，然后启动一个python进程
+
+## 安装
+
+python .\setup.py install  
+
+## 卸载
+
+pip uninstall fly_dev_run 
+
+## 使用
+
+    dev_run 
+
+    # 运行 xxx_dev_run 中的 dev_run函数
+    dev_run xxx
+
+    
+
