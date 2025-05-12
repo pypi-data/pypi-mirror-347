@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: package-09287565370
+Version: 9.0
+Summary: 
+Author: None
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# package_09287565370
+
+A simple Python package for demonstration purposes.
+
+## Usage
+
+```python
+import package_09287565370
+
+# Example usage
+package_09287565370.some_function()
+
