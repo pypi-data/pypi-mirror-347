@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_foo.py
+velum.egg-info/PKG-INFO
+velum.egg-info/SOURCES.txt
+velum.egg-info/dependency_links.txt
+velum.egg-info/top_level.txt
