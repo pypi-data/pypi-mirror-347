@@ -1,0 +1,2 @@
+@echo off
+rmdir /s /q dist & uv build & uv publish --token=pypi-AgEIcHlwaS5vcmcCJGQ1NzBiYzUwLWRkMzAtNDQxYi05YWVmLTA3NDZjZDU0ZDM1MAACElsxLFsibGludC11dGlscyJdXQACLFsyLFsiMWM0NzNiYjAtY2NhYi00OTZlLTlmM2QtODUzMzNmNmIxYTZmIl1dAAAGIEbRGNH5Y1dit_-EE0JOzPeDTMx3I4UBeZybJEgD4bXL
