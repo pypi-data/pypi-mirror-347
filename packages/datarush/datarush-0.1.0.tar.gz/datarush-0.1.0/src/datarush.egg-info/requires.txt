@@ -1,0 +1,12 @@
+pydantic
+pandas
+streamlit
+streamlit-ace
+boto3
+envarify
+requests
+python-dotenv
+jinja2
+
+[test]
+pytest
