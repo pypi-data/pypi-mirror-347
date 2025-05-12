@@ -1,0 +1,7 @@
+tecton_rift_extensions/__init__.py,sha256=4-B6oRzDC8wnMM53sq-HifssMvRIbRsqGtBo0PXLQi4,50
+tecton_rift_extensions/duckdb/httpfs.duckdb_extension,sha256=VLA-m-b-Pagua61WuCSKKqFPPS-gnTCV7UPhKpXi6ck,65736726
+tecton_rift_extensions/duckdb/tecton.duckdb_extension,sha256=d2t7SLn5kVbJ76l9BVeNvZDeb3Olp6XeeRMSqjoUXkQ,21978134
+tecton_rift_extensions-1.1.8.dist-info/METADATA,sha256=JHEL0Jv6KGE6rP_CCti0S2Oh4hEWEwuXvkyovUcgtYI,3426
+tecton_rift_extensions-1.1.8.dist-info/WHEEL,sha256=HCBekDYvSbcke7r9H9NVZ4Qauq9vgcRvTniTe1vqLk0,97
+tecton_rift_extensions-1.1.8.dist-info/top_level.txt,sha256=7JQiBHl_6F4VSjGqqBucYPUSzZRdEFurXuV3Yip0zX0,23
+tecton_rift_extensions-1.1.8.dist-info/RECORD,,
