@@ -1,0 +1,4 @@
+[console_scripts]
+bio_dev = bio_showcase.pm:runserver
+bio_pm = bio_showcase.pm:run
+bio_run = bio_showcase.main:main
