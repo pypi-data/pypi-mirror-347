@@ -1,0 +1,5 @@
+test_x_package/__init__.py,sha256=ECYLqm2XJoKwV4q8H9KsoIoh2DoXD8XW9NNwOjxPUOM,296
+test_x_package-0.1.0.dist-info/METADATA,sha256=FEk-fHoUyC1-P_dPcqak8HCbtLbVigxzGhfF9VHC9RE,270
+test_x_package-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+test_x_package-0.1.0.dist-info/top_level.txt,sha256=I646_ANbOKQ294WJ3_Z3ht_ZQWAs66nU_1N942r9krE,15
+test_x_package-0.1.0.dist-info/RECORD,,
