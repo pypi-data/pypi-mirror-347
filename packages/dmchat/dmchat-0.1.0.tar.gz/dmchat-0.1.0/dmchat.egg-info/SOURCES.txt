@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dmchat/__init__.py
+dmchat.egg-info/PKG-INFO
+dmchat.egg-info/SOURCES.txt
+dmchat.egg-info/dependency_links.txt
+dmchat.egg-info/requires.txt
+dmchat.egg-info/top_level.txt

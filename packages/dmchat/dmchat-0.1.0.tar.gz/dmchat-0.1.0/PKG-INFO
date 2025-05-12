@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: dmchat
+Version: 0.1.0
+Summary: Materials Science Chatbot 
+Home-page: https://github.com/deepmaterials/dmchat
+Author: Kamal Choudhary
+Author-email: deepmaterialsllc@gmail.com
+Project-URL: Bug Tracker, https://github.com/deepmaterials/dmchat/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.2
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# mchat
+mchat
