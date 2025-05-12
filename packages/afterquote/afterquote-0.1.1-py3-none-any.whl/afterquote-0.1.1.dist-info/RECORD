@@ -1,0 +1,9 @@
+afterquote/__init__.py,sha256=UNwVeYKd1pXTSOfX9JA3LQpa7IP5EMZO6fgo9xYO4eA,222
+afterquote/_market_calendar.py,sha256=pEBMJ8zbN_pll9rT3ZwAg3cNW3O_NDVqO7KlTH6cYbI,3545
+afterquote/_security_pair.py,sha256=oliTmSe3QxkG10yhUaxqBmIDokyJ7TFbYgxF1UjdGyE,3467
+afterquote/_yfinance_wrapper.py,sha256=jHwtrqQyROGnfjvHCDMgoPdVWIE2_vUg4AMYmwynkT8,2495
+afterquote-0.1.1.dist-info/licenses/LICENSE,sha256=pZy9gOa0pJIhpdbZ_i5fthJHzDU_7cXV4YtXwb1c--s,1084
+afterquote-0.1.1.dist-info/METADATA,sha256=BJmApJITdgsrJU5y35RNEA9F2jy2hwIn56h7zg0BcY8,1742
+afterquote-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+afterquote-0.1.1.dist-info/top_level.txt,sha256=3WDLaV4J6s2NvRiavlyKcCFV_U3ITVMMrmhAJluBiPU,11
+afterquote-0.1.1.dist-info/RECORD,,
