@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: mock-ads-mcp
+Version: 0.1.1
+Summary: A test MCP server for ads campaign management
+Author-email: Xingjian Guo <guoxj@oasalife.com>
+Requires-Python: >=3.12
+Requires-Dist: fastmcp>=2.3.3
+Requires-Dist: pydantic>=2.11.4
+Description-Content-Type: text/markdown
+
+# Mock Ads MCP Server
+
+This project provides a test MCP server for ads campaign management, using the [fastmcp](https://github.com/jlowin/fastmcp) framework. It is intended for development and testing purposes only.
+
+## Running with uvx
+
+```bash
+uvx mock-ads-mcp
+```
+
+## Running locally
+
+```bash
+uv run mock-ads-mcp
+```
+
+or with the MCP inspector for debugging
+
+```bash
+npx @modelcontextprotocol/inspector uv run mock-ads-mcp
+```
