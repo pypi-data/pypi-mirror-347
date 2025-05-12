@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: findrum
+Version: 1.0.1
+Summary: A Python package to retrieve financial data from official sources.
+Author: Óscar Rico Rodríguez
+Requires-Python: >=3.12
+Requires-Dist: pandas~=2.2.3
+Requires-Dist: fastparquet~=2024.11.0
+Requires-Dist: requests~=2.32.3
+Requires-Dist: yfinance~=0.2.59
+Requires-Dist: minio~=7.2.15
+Requires-Dist: pyarrow~=20.0.0
+Requires-Dist: orjson~=3.10.18
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
