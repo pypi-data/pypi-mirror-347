@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_face_tracker.py
+unicorner_face_tracker/__init__.py
+unicorner_face_tracker/face_tracker.py
+unicorner_face_tracker.egg-info/PKG-INFO
+unicorner_face_tracker.egg-info/SOURCES.txt
+unicorner_face_tracker.egg-info/dependency_links.txt
+unicorner_face_tracker.egg-info/requires.txt
+unicorner_face_tracker.egg-info/top_level.txt
