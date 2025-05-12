@@ -1,0 +1,11 @@
+aiohttp_ratelimiter-4.1.3.dist-info/licenses/LICENSE,sha256=4nRGI0HVMaABwz5myAb4vTfPQj9yeu4YPBQgR_Ab0kM,1094
+aiohttplimiter/__init__.py,sha256=9UUjQghKLeMqVJsztzMiwmTXaOl3fsWJBIQdA8BzK6Q,200
+aiohttplimiter/limiter.py,sha256=GsVHRijOkKvaB6ndcj_HUOOQtig7-H3CgwfroLKJo0U,4878
+aiohttplimiter/memcached_limiter.py,sha256=stBdKW-K4Yk4SEfcCx8N3Sga7JOlzSH-mqShy72Oe2E,2069
+aiohttplimiter/memory_limiter.py,sha256=zZzKH5FxN-OL3gWuP4P_P5UliDBiRQdVXfaGxSluj2o,1977
+aiohttplimiter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiohttplimiter/redis_limiter.py,sha256=83U1on3R9oDk1I_x4mpi2C4Xn2ObKAFDMCCZSdhhsvw,2173
+aiohttp_ratelimiter-4.1.3.dist-info/METADATA,sha256=fWR_kxoULKjuQzeg4GMe1qhAAgUYrxz29cKSQ7XqFPA,4286
+aiohttp_ratelimiter-4.1.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+aiohttp_ratelimiter-4.1.3.dist-info/top_level.txt,sha256=fh3r9PiQTt_rcrROmzPve73DgNVuCXHHQucbnqPJVKU,15
+aiohttp_ratelimiter-4.1.3.dist-info/RECORD,,
