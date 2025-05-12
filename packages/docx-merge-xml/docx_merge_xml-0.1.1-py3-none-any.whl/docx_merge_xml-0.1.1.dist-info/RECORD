@@ -1,0 +1,9 @@
+docx_merge/__init__.py,sha256=XqGecIvCiKJ9w0UTc9JghkNwEtj567X92bPfH-QyUGg,130
+docx_merge/index.py,sha256=Rx69AKalTro_NMnuNl9P3AYef6Aq7KH7UnFSeiZxbAQ,3081
+docx_merge/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docx_merge/utils/merger.py,sha256=ljOQ0WdvdPF6_IqnTWT7IAwcW7OELKtsHIWPhjQIozY,2999
+docx_merge/utils/xml.py,sha256=nxUhc1stoIg1BpmAq4Y2f3a-AiOdNqZVH0lRcduBuoo,1273
+docx_merge_xml-0.1.1.dist-info/LICENSE,sha256=4DWN76ezHKOfHPD7QnqL9J56LmQUd-On9H_fAEmnnN4,1073
+docx_merge_xml-0.1.1.dist-info/METADATA,sha256=V0Jfe9mIewzpJwAJV5dAMkw5RDOrNFbBFbVllM2skMY,3241
+docx_merge_xml-0.1.1.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+docx_merge_xml-0.1.1.dist-info/RECORD,,
