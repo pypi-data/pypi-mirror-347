@@ -1,0 +1,12 @@
+kinfer_sim/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+kinfer_sim/provider.py,sha256=2w4eZjr3jw5wBXNWh7BU4WXFRQjiCXmY7lNLafiXLKg,3640
+kinfer_sim/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kinfer_sim/server.py,sha256=_roc3Kg7hsIi5nBE3TNdYTetU3sV8-GVOJvHtk_KkVk,7683
+kinfer_sim/simulator.py,sha256=ENvI4w5dqesiJoRVEj-dd0Xi3np4SmoYbDP2S8hXwV8,15512
+kinfer_sim/viewer.py,sha256=NvGOYavZtlOCsmpDOzXPI8V63FNd9g8k5tfGNHjgQP8,15941
+kinfer_sim-0.0.1.data/scripts/kinfer-sim,sha256=qeSv8uIV9ACXaCZFHpfm4bsx7FCN2un6UxqgqByqfjM,179
+kinfer_sim-0.0.1.dist-info/licenses/LICENSE,sha256=e0NY89DURQrH-iweO4hh1f9lqjXNEIn_pOK1f5NAwfc,1069
+kinfer_sim-0.0.1.dist-info/METADATA,sha256=boREFT-AfSPACVOzfzk7TfKJhKqzhV4AlawBcMh7S50,937
+kinfer_sim-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+kinfer_sim-0.0.1.dist-info/top_level.txt,sha256=8NDsWgMxB0QEoqG5YKwVY2eOAxXk0NY-5WzH7AA-DL8,11
+kinfer_sim-0.0.1.dist-info/RECORD,,
