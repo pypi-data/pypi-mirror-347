@@ -1,0 +1,15 @@
+setuptools
+ansible
+
+[dev]
+pytest
+pytest-cov
+coveralls
+flake8
+black
+isort[pyproject]
+pylint
+
+[release]
+build
+twine
