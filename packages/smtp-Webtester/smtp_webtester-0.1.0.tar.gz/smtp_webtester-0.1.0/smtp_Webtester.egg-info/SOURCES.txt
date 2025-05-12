@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+smtp_Webtester.egg-info/PKG-INFO
+smtp_Webtester.egg-info/SOURCES.txt
+smtp_Webtester.egg-info/dependency_links.txt
+smtp_Webtester.egg-info/requires.txt
+smtp_Webtester.egg-info/top_level.txt
