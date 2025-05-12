@@ -1,0 +1,2 @@
+[console_scripts]
+tgmcp = tgmcp.__main__:main

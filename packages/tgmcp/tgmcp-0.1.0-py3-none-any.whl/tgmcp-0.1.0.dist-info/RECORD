@@ -1,0 +1,17 @@
+tgmcp/__init__.py,sha256=EiP9MW8a__27KBrUI_QcAGmQXYmv85U-wdeqP1EaaPY,628
+tgmcp/__main__.py,sha256=KRI6F1zHvF909FHOgVyJruwKqVjkuF3_SudwVVyLHgs,1167
+tgmcp/client.py,sha256=3vc6ZbqDc-xUpkB6hujIerNYevK4xB36hTarxJbKAwA,2416
+tgmcp/utils.py,sha256=-ZW4R5utsGlzxRq1poNcZwL1vJx5TbS3SmM094Xf1Bo,3761
+tgmcp/tools/__init__.py,sha256=JA6BzuEBJMRimgWkw_NOym7XJIsQB3fSBwNKLhYQuXU,586
+tgmcp/tools/admin.py,sha256=SlFsn_2kIrW3Q3CtzG9_2FCZh1R_n67tXB0YVFsTVv4,639
+tgmcp/tools/chat.py,sha256=y8zDPL03FEoy9vMe68PI1Hzwcub3XtyyZphRdfjxkGE,21228
+tgmcp/tools/contacts.py,sha256=osiNcl6wqjuER04auf_YcUoxJ_nVt6T8I1P2Hmra5K4,11998
+tgmcp/tools/groups.py,sha256=WTxk2PQiLHe5-99fzEHsJdZl1MvddYa5OPr96kLLfxc,23501
+tgmcp/tools/media.py,sha256=7eC8pIjfmWyEQxjUaFj8U1Ou0g3eF07VMFsokcGt4uM,8479
+tgmcp/tools/messages.py,sha256=SVZQreunCakbaiixxM-8avsTEikOxdPWlf8O5JhTxk0,13257
+tgmcp/tools/profile.py,sha256=CUlSIgV685TYfNhWsCbioRks6kPBtbm5iX_1V7eiYtA,11634
+tgmcp-0.1.0.dist-info/METADATA,sha256=olJg6OG9dXyKreGIs0KWybR_fE7vBtkkjtdICgqAeOc,11248
+tgmcp-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+tgmcp-0.1.0.dist-info/entry_points.txt,sha256=bYzW0rIeTneBwfWIid2EtT3Zdlso87Qe_gR2gyq1Cvg,46
+tgmcp-0.1.0.dist-info/top_level.txt,sha256=P7sG9VgmMi-60LkGdnX0ISkcuzbFMQ8LrRfMFChWr3Y,6
+tgmcp-0.1.0.dist-info/RECORD,,
