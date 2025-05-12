@@ -1,0 +1,7 @@
+setup.py
+src/emcee_package/__init__.py
+src/emcee_package/main.py
+src/emcee_package.egg-info/PKG-INFO
+src/emcee_package.egg-info/SOURCES.txt
+src/emcee_package.egg-info/dependency_links.txt
+src/emcee_package.egg-info/top_level.txt
