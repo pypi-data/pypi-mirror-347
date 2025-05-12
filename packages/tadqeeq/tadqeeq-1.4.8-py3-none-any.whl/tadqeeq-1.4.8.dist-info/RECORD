@@ -1,0 +1,12 @@
+tadqeeq/__init__.py,sha256=NEuw_9sKCc4mk8HjX9EzCAhqn9ONt0gadFH4kvETzO8,325
+tadqeeq/cli.py,sha256=YTjRc2uWdnRZI_15mNkJSf6hTA9Wdc6y1vn6jKcaS-U,1252
+tadqeeq/draft.py,sha256=iQyvqINSsdo52rbSMWGwCcFUXHfq0Pv3M6iOh2Ai49c,78937
+tadqeeq/implementations.py,sha256=2GLiFxy7adjoMt9fIpIUOBbpgZnjyBbNfRD4-HQPKjw,14121
+tadqeeq/utils.py,sha256=nIvEAvduTK4L_xh0Z0dPidj8MSVU5lCDUbSkziYOusA,14154
+tadqeeq/widgets.py,sha256=AANjEGDXWsQ5F_Bwp6iGXCf2wzIaeR-sGFZRnk6hZdE,58315
+tadqeeq-1.4.8.dist-info/licenses/LICENSE,sha256=KoYT5xbaMRojEtdSaZ2uLS8iLQcSPe1_htOAs5VL1NI,1074
+tadqeeq-1.4.8.dist-info/METADATA,sha256=iP1DjTD7a9VFp0ecwhJChJpVDMitATJOqlERE4_qkVU,5352
+tadqeeq-1.4.8.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+tadqeeq-1.4.8.dist-info/entry_points.txt,sha256=psoljX1y--oyeJcSj-bpGJPECh_juvx286YEXNE4sqw,45
+tadqeeq-1.4.8.dist-info/top_level.txt,sha256=gEL5evk6CJdgSUBigyXpjxeUCJSnsPdBEkrFkdNhydA,8
+tadqeeq-1.4.8.dist-info/RECORD,,
