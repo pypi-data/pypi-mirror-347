@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+role-filter = role_filter_plugin.plugin:RoleFilterPlugin
