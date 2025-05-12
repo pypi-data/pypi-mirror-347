@@ -1,0 +1,9 @@
+farsilang/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+farsilang/__version__.py,sha256=AJGTlw30F_QTE98SUeELCd9L_bnVmyQndgeNJetzANs,17
+farsilang/runner.py,sha256=p8L3W80rvn567OnLEFU7Iru1a4JlwFMsNSypWORaWA0,894
+farsilang/transpiler.py,sha256=r5WibzH43ZM0N3WcgMYtDAz9BqyNw4aDNdZLNsaZ08A,1602
+farsilang-0.1.dist-info/METADATA,sha256=JMqo0QhTz3N4F-rLKPIryTn5tT6rxSCnxNMXhDESikc,104
+farsilang-0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+farsilang-0.1.dist-info/entry_points.txt,sha256=7hYdbqFJrYXskhLWzw98ySmQB4B2oS7MAKg7CooVtIM,48
+farsilang-0.1.dist-info/top_level.txt,sha256=IZX4Jq20PmmXOqSAu0ka8d7IptR9W1gA76yv31IWVek,10
+farsilang-0.1.dist-info/RECORD,,
