@@ -1,0 +1,5 @@
+jinja2
+pyyaml
+commonmark
+markdown-it-py
+mdit-py-plugins
