@@ -1,0 +1,14 @@
+pyvenDF/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvenDF/cli.py,sha256=FQNIVebWxElqBUhwvzJ1g2aKEsDDcDdbmgvngqBUaoI,972
+pyvenDF/router.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvenDF/server.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvenDF/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvenDF/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvenDF/templates/routes.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvenDF/templates/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvendf-0.1.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvendf-0.1.dist-info/METADATA,sha256=wzKUq7KaQM7XktDUUos3o1zv-pDHyQ8OcEflivLqJyc,384
+pyvendf-0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+pyvendf-0.1.dist-info/entry_points.txt,sha256=0xXxJl3ZzF2RfEkMml5z6V8pKKEDsirLLTqdVTYabEk,45
+pyvendf-0.1.dist-info/top_level.txt,sha256=2rNylEsxnrUDTS799OJyADkem50XhoaWr-w273eeogE,8
+pyvendf-0.1.dist-info/RECORD,,
