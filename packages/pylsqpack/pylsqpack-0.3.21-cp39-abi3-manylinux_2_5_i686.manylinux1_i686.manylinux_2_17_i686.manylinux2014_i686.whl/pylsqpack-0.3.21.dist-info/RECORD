@@ -1,0 +1,10 @@
+pylsqpack/__init__.py,sha256=6nVrNDTeChFeo-uF1LVhASWwtsHxS322DI41715vm2U,184
+pylsqpack/__init__.pyi,sha256=DtFR_NjgfyjmN1gPTx00ywfvW6uXmj1KftXqmriKHoY,801
+pylsqpack/_binding.abi3.so,sha256=qwbAN6Er3GKpT7XsuOsmoeajvnBa-9gfLpx_qvxDqCc,1065552
+pylsqpack/binding.c,sha256=18hTBF6HhzAQ6HvKPAp5NRlDswKxHevBemXXP7s_teA,19224
+pylsqpack/py.typed,sha256=sow9soTwP9T_gEAQSVh7Gb8855h04Nwmhs2We-JRgZM,7
+pylsqpack-0.3.21.dist-info/METADATA,sha256=xlWJQXBa194PYipa5fx-FcmyPpjC7cWnJCoauvAZ3ts,2061
+pylsqpack-0.3.21.dist-info/WHEEL,sha256=Un2xpaaT8682MP5IwhYxDs_VVngmNOeMrDxEQSmcg8U,208
+pylsqpack-0.3.21.dist-info/top_level.txt,sha256=QS-Tl3rMYCkkfn67PH4TbFiOG1kpS_v96u4MIpw0LQ0,10
+pylsqpack-0.3.21.dist-info/RECORD,,
+pylsqpack-0.3.21.dist-info/licenses/LICENSE,sha256=WqyzbJKCPTuZWuGzLXxCyT8HnXvsnAhb8xh99vvcOSs,1505
