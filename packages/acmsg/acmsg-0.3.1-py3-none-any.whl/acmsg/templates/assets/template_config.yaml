@@ -1,0 +1,8 @@
+api_token: # Required
+
+# Optionally, you can specify a different model to use
+# for commit message generation with:
+# model: qwen/qwen3-30b-a3b:free # default
+
+# Optionally, set the temperature:
+# temperature: 0.8 # default
