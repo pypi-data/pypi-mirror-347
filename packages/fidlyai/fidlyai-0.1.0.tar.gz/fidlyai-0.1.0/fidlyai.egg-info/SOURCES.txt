@@ -1,0 +1,9 @@
+README.md
+setup.py
+fidlyai/__init__.py
+fidlyai/gemini.py
+fidlyai.egg-info/PKG-INFO
+fidlyai.egg-info/SOURCES.txt
+fidlyai.egg-info/dependency_links.txt
+fidlyai.egg-info/requires.txt
+fidlyai.egg-info/top_level.txt
