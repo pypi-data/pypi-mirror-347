@@ -1,0 +1,7 @@
+httpx>=0.28.1
+mcp>=1.6.0
+openai>=1.76.2
+requests>=2.32.3
+setuptools>=80.2.0
+twine>=6.1.0
+wheel>=0.45.1
