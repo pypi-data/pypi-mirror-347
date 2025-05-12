@@ -1,0 +1,17 @@
+[project]
+name = "reproducible_zip"
+version = "0.2.0"
+description = "Reproducible ZipFile (supports shutil.archive)"
+readme = "README.md"
+authors = [
+    { name = "Sean Summers", email = "165854+seansummers@users.noreply.github.com" }
+]
+requires-python = ">=3.7"
+dependencies = []
+
+[project.scripts]
+reproducible_zip = "reproducible_zip:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
