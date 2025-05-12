@@ -1,0 +1,4 @@
+logger-local
+database-sql-local>=0.1.2
+python-sdk-remote
+database-infrastructure-local>=0.1.3

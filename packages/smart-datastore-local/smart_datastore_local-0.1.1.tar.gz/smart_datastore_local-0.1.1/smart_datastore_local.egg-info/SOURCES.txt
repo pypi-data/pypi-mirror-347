@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+smart_datastore_local.egg-info/PKG-INFO
+smart_datastore_local.egg-info/SOURCES.txt
+smart_datastore_local.egg-info/dependency_links.txt
+smart_datastore_local.egg-info/requires.txt
+smart_datastore_local.egg-info/top_level.txt
+smart_datastore_local/src/__init__.py
+smart_datastore_local/src/smart_datastore.py
