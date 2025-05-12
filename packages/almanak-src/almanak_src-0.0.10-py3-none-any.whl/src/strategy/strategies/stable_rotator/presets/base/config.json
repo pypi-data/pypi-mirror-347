@@ -1,0 +1,26 @@
+{
+  "strategy_configs": {
+    "StableRotator": {
+      "strategy_name": "Stable_Rotator",
+      "parameters": {
+        "network": "MAINNET",
+        "chain": "BASE",
+        "protocol": "ENSO",
+        "initiate_teardown": false,
+        "pause_strategy": false,
+        "wallet_address": "0x7EcF95Be89BcE8716C7Ed5971bc6a0f3Db208841",
+        "whitelisted_tokens": [
+          "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+        ],
+        "whitelisted_protocols": ["aave-v3","compound-v3","fluid"],
+        "deposit_ETH": 0.001,
+        "granularity": "15m",
+        "run_duration": 32,
+        "min_holding_period": 4,
+        "trigger_threshold": 0.01,
+        "slippage": 0.02,
+        "max_price_impact": 0.05
+      }
+    }
+  }
+}

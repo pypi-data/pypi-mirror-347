@@ -1,0 +1,14 @@
+[
+  {
+    "address": "0x807c6d7cf49766a1db2355ce6769d3a537e4777c",
+    "clearance": 2,
+    "executionOptions": 0,
+    "functions": [
+      {
+        "selector": "0xbcd1bf34",
+        "executionOptions": 0,
+        "wildcarded": true
+      }
+    ]
+  }
+]

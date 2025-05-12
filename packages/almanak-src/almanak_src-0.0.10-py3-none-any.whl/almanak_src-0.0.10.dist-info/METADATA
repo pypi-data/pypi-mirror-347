@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: almanak-src
+Version: 0.0.10
+Author: engineering@almanak.co
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.11
+Requires-Dist: binance-ohlcv>=0.0.3
+Requires-Dist: google-cloud-bigquery>=3.17.2
+Requires-Dist: google-cloud-storage>=2.14.0
+Requires-Dist: google-cloud-secret-manager>=2.20.0
+Requires-Dist: google-cloud-logging>=3.10.0
+Requires-Dist: gql>=3.5.0
+Requires-Dist: kaleido==0.2.1
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: protobuf>=4.25.2
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: python-telegram-bot>=20.7
+Requires-Dist: retry>=0.9.2
+Requires-Dist: plotly>=5.18.0
+Requires-Dist: psycopg2-binary>=2.9.9
+Requires-Dist: pydantic>=2.6.1
+Requires-Dist: pytz>=2023.4
+Requires-Dist: PyJWT>=2.8.0
+Requires-Dist: PyYAML>=6.0.1
+Requires-Dist: requests>=2.31.0
+Requires-Dist: requests-toolbelt>=1.0.0
+Requires-Dist: sqlmodel>=0.0.19
+Requires-Dist: streamlit>=1.38.0
+Requires-Dist: web3>=6.15.1
+Requires-Dist: eulith_web3>=0.27.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.3; extra == "dev"
+Requires-Dist: pytest-mock>=3.12.0; extra == "dev"
+Requires-Dist: ruff>=0.6.4; extra == "dev"
+Requires-Dist: pyarmor>=9.0.7; extra == "dev"
+Requires-Dist: mypy==1.15.0; extra == "dev"
+Requires-Dist: twine>=6.1.0; extra == "dev"
+Requires-Dist: build>=1.2.2.post1; extra == "dev"
+Requires-Dist: pydoc-markdown>=4.8.2; extra == "dev"
+Requires-Dist: wheel>=0.45.1; extra == "dev"
+Requires-Dist: pip>=25.1.1; extra == "dev"

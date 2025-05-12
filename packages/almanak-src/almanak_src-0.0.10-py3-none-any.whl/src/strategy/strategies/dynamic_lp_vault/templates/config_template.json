@@ -1,0 +1,38 @@
+{
+  "strategy_configs": {
+    "DynLPVault": {
+      "strategy_name": "Dynamic_LP_Vault",
+      "parameters": {
+        "network": "ANVIL",
+        "chain": "ETHEREUM",
+        "protocol": "UNISWAP_V3",
+        "wallet_address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+        "max_sadflow_retries": 1,
+        "max_not_included_retries": 10,
+        "initiate_teardown": false,
+        "pause_strategy": false,
+        "run_duration": 32,
+        "granularity": "15m",
+        "time_window": 288,
+        "data_source": "COINGECKO_DEX",
+        "rebalance_frequency": 0,
+        "rebalance_price_bounds": 0.8,
+        "volatility_factor": 3,
+        "pool_address": "0xCBCdF9626bC03E24f779434178A73a0B4bad62eD",
+        "initialization": {
+          "initial_position_value_USD": 10,
+          "initial_funding_token": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "initial_token0_pool": "0x99ac8cA7087fA4A2A1FB6357269965A2014ABc35",
+          "initial_token1_pool": "0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640"
+        },
+        "vault": {
+          "vault_address": "0x831C6C334f8DDeE62246a5c81B82c8e18008b38f",
+          "safe_address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "valuator_address": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+          "underlying_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "asset_update_frequency": 96
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+[
+  {
+    "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+    "clearance": 2,
+    "executionOptions": 0,
+    "functions": [
+      {
+        "selector": "0x095ea7b3",
+        "executionOptions": 0,
+        "wildcarded": false,
+        "condition": {
+          "paramType": 5,
+          "operator": 5,
+          "children": [
+            {
+              "paramType": 0,
+              "operator": 2,
+              "children": [
+                {
+                  "paramType": 1,
+                  "operator": 16,
+                  "compValue": "0x000000000000000000000000F75584eF6673aD213a685a1B58Cc0330B8eA22Cf"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "selector": "0xd0e30db0",
+        "executionOptions": 1,
+        "wildcarded": true
+      },
+      {
+        "selector": "0x2e1a7d4d",
+        "executionOptions": 0,
+        "wildcarded": true
+      }
+    ]
+  },
+  {
+    "address": "0x1A996cb54bb95462040408C06122D45D6Cdb6096",
+    "clearance": 2,
+    "executionOptions": 0,
+    "functions": [
+      {
+        "selector": "0x095ea7b3",
+        "executionOptions": 0,
+        "wildcarded": false,
+        "condition": {
+          "paramType": 5,
+          "operator": 5,
+          "children": [
+            {
+              "paramType": 0,
+              "operator": 2,
+              "children": [
+                {
+                  "paramType": 1,
+                  "operator": 16,
+                  "compValue": "0x000000000000000000000000F75584eF6673aD213a685a1B58Cc0330B8eA22Cf"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "address": "0x9c4ec768c28520B50860ea7a15bd7213a9fF58bf",
+    "clearance": 2,
+    "executionOptions": 0,
+    "functions": [
+      {
+        "selector": "0x095ea7b3",
+        "executionOptions": 0,
+        "wildcarded": false,
+        "condition": {
+          "paramType": 5,
+          "operator": 5,
+          "children": [
+            {
+              "paramType": 0,
+              "operator": 2,
+              "children": [
+                {
+                  "paramType": 1,
+                  "operator": 16,
+                  "compValue": "0x000000000000000000000000F75584eF6673aD213a685a1B58Cc0330B8eA22Cf"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "address": "0x724dc807b04555b71ed48a6896b6F41593b8C637",
+    "clearance": 2,
+    "executionOptions": 0,
+    "functions": [
+      {
+        "selector": "0x095ea7b3",
+        "executionOptions": 0,
+        "wildcarded": false,
+        "condition": {
+          "paramType": 5,
+          "operator": 5,
+          "children": [
+            {
+              "paramType": 0,
+              "operator": 2,
+              "children": [
+                {
+                  "paramType": 1,
+                  "operator": 16,
+                  "compValue": "0x000000000000000000000000F75584eF6673aD213a685a1B58Cc0330B8eA22Cf"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "address": "0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf",
+    "clearance": 2,
+    "executionOptions": 0,
+    "functions": [
+      {
+        "selector": "0xf52e33f5",
+        "executionOptions": 1,
+        "wildcarded": true
+      },
+      {
+        "selector": "0xb94c3609",
+        "executionOptions": 1,
+        "wildcarded": true
+      },
+      {
+        "selector": "0xf35cae90",
+        "executionOptions": 1,
+        "wildcarded": true
+      },
+      {
+        "selector": "0x21025a06",
+        "executionOptions": 1,
+        "wildcarded": true
+      }
+    ]
+  }
+]
