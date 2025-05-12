@@ -1,0 +1,9 @@
+peppi_py-0.8.0.dist-info/METADATA,sha256=WtNZB63dnAFCvSUBCs7Z4s-zrgfAMOAdaB0-MFuWtbY,2460
+peppi_py-0.8.0.dist-info/WHEEL,sha256=NgVTnF5pBWIubmCKfA_I7q5Z3I63rQ1BaNCbotRG6eE,130
+peppi_py/__init__.py,sha256=actzewEcHeepxrlPOViHktf_w3ro1sOALNYoQdhWdQ0,624
+peppi_py/_peppi.abi3.so,sha256=_TiDIxpspEUTMgT4W3NjBCE_LTqmXXgWf4IIIiAU_Co,2500192
+peppi_py/frame.py,sha256=RMAhE0U4Ce9dgnmzK9QjyLwlGgggruOlfUHx8q6n05A,2628
+peppi_py/game.py,sha256=3oWv15Ik96mJ0glTEa0z2PxRzjvJtcWhWu8hJshjFmk,2222
+peppi_py/parse.py,sha256=2e4onY6cOH7sWvsIgDwyi-iNz9ysH8qB1eRTfjWRI_E,2454
+peppi_py/util.py,sha256=O6HeEtCA_2K2MFfdsHA1CCAxkWvxyf3vQcNz3SLcBzc,442
+peppi_py-0.8.0.dist-info/RECORD,,
