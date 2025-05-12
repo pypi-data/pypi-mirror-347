@@ -1,0 +1,2 @@
+[console_scripts]
+desktop-automation-recorder = main:main
