@@ -1,0 +1,54 @@
+Metadata-Version: 2.3
+Name: clea-pma
+Version: 0.2.0
+Summary: Your project manager assistant
+Author: samdouble
+Author-email: not-real@not-real.com
+Requires-Python: >=3.11,<3.14
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: alive-progress (>=3.2.0,<4.0.0)
+Requires-Dist: anthropic (>=0.51.0,<0.52.0)
+Requires-Dist: fastmcp (>=2.3.1,<3.0.0)
+Requires-Dist: keyring (>=25.6.0,<26.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: rich (>=14.0.0,<15.0.0)
+Requires-Dist: typer (>=0.15.3,<0.16.0)
+Description-Content-Type: text/markdown
+
+# project-manager-assistant (Cléa)
+
+Optionally, create a `.env` file like this:
+```
+ANTHROPIC_API_KEY=
+LINEAR_API_KEY=
+```
+If you don't, you are going to be asked the informations through the CLI.
+
+Make sure you have Python 3.11 installed.
+
+Install Poetry:
+```sh
+pip install poetry
+```
+
+Run in a terminal window:
+```sh
+poetry run clea
+```
+
+Ask questions:
+```
+>: Hi Cléa, I'd like to see my issues for next cycle
+
+>: How much points to you think the unestimated tasks are worth?
+```
+
+TODO
+- Sauvegarder l'historique des conversations
+- Faire un éxécutable pour simplifier l'installation
+- Questions sur les projets
+- Questions sur les membres de l'équipe
+
