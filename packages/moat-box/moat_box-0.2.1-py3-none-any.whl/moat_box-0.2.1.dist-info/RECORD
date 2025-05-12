@@ -1,0 +1,9 @@
+moat/box/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moat/box/_main.py,sha256=CrBYgN5MBs-8bYRe-_ZR5JjuPIHa1ijFSuPNrAdstd0,5725
+moat/box/model.py,sha256=V5NfxdyWb0C2XdSkQgR7V4f19D5EIF3fZpLSm9XeC6o,4887
+moat/box/model_.py,sha256=2p4vgUqQeDOyUP8BAr8bhVt8zBW6GUNca13mWF-kZ8g,1875
+moat_box-0.2.1.dist-info/licenses/LICENSE.txt,sha256=L5vKJLVOg5t0CEEPpW9-O_0vzbP0PEjEF06tLvnIDuk,541
+moat_box-0.2.1.dist-info/METADATA,sha256=OK3mVig6Gy4toOAC3mQ6BlVl1NG4zt9t2nSqPwS2uzw,2086
+moat_box-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+moat_box-0.2.1.dist-info/top_level.txt,sha256=pcs9fl5w5AB5GVi4SvBqIVmFrkRwQkVw_dEvW0Q0cSA,5
+moat_box-0.2.1.dist-info/RECORD,,
