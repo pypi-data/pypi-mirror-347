@@ -1,0 +1,11 @@
+machine_translation/__init__.py,sha256=LmzObCC_dznUgkZQ9KJPL8J-1OU8i_sfZ_EPDIZMXlQ,261
+machine_translation/data.py,sha256=iTF-rpC3fAbmZSAC2ObDa-0Wb3aa8oRM7PhqZNuqlEA,2995
+machine_translation/model.py,sha256=zXNfvBcJo9obeeM3w211ZvP7i1zOjFvSKT8gA-9XLkU,2695
+machine_translation/train.py,sha256=A25c96I9bI5YTo4WwNL74FeyzhBAOmVSyTq-1LNgNcA,1516
+machine_translation/translate.py,sha256=9asCCyFxt-1ifg4MiSzKihjY-dWAP9mkblq4_E9k-k8,1111
+machine_translation/utils.py,sha256=s5bb0HLOQw9iUHar8DHU2Mo8Eu9fL3sbGu5ox1vLiaA,184
+machine_translation-0.1.0.dist-info/LICENSE,sha256=snOnVQjuVvTTgCe0JoVhNMFoqO5OoNACmGjmXYNRu4E,1075
+machine_translation-0.1.0.dist-info/METADATA,sha256=16JNiHMJ7M_LPj2oJjlUVvTIYbhogQqFCJHB1vAPfIs,2327
+machine_translation-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+machine_translation-0.1.0.dist-info/top_level.txt,sha256=7_Pwn07Z_Uue4UfPJbIiSIl_dI6Qx2by9JWnuPSCBts,20
+machine_translation-0.1.0.dist-info/RECORD,,
