@@ -1,0 +1,13 @@
+recursive-include diffusion_image_gen/dashboard_app *.py
+recursive-include diffusion_image_gen/dashboard_app/dashboard *.*
+recursive-include diffusion_image_gen/dashboard_app/.streamlit *.toml
+graft diffusion_image_gen/dashboard_app/dashboard/assets
+graft diffusion_image_gen/dashboard_app/dashboard/locales
+
+graft diffusion_image_gen/dashboard/assets
+graft diffusion_image_gen/dashboard/locales
+
+include diffusion_image_gen/dashboard_app/.streamlit/config.toml
+
+include LICENSE
+include README.md
