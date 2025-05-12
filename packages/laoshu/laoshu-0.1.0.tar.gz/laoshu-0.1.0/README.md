@@ -1,0 +1,181 @@
+# Laoshu
+
+Laoshu helps AI teams eliminate hallucinations by clustering failures, replicating human feedback, and rewriting broken prompts.
+
+Stop wasting time on prompt engineering. Feed Laoshu your bad outputs and get smarter prompts—automatically.
+
+🧠 **Built for**: AI engineers, MLOps teams, and product owners who ship consumer-facing LLMs and want to avoid embarrassing, costly AI mistakes.
+
+## Why Laoshu?
+
+Laoshu helps AI teams detect hallucinations, group failure patterns, and automatically suggest prompt improvements—based on real user feedback.
+
+✅ Cluster failures by topic
+✅ Generate LLM-as-a-Judge eval prompts
+✅ Improve prompt templates automatically
+✅ Works with real annotated feedback
+
+## Installation
+
+```bash
+pip install laoshu
+```
+
+## Usage
+
+```bash
+laoshu [command] ...
+```
+
+The command can be one of the following:
+
+- `classify`: Groups inputs by topic and classifies the problems detected in each input group.
+- `judge`: After grouping the data, generates the prompt for the LLM-as-a-judge which aims to return a similar verdict as the provided human feedback.
+- `improve`: After grouping the data, attempts to improve the given prompt template. Requires at least 20 examples per each input group.
+
+### Classify command
+
+```bash
+laoshu classify --input input_file.json --feedback feedback_file.json [--output output_file.json]
+```
+
+The `--output` flag is optional. If not provided, the output will be printed to the console.
+
+### Judge command
+
+```bash
+laoshu judge --input input_file.json --feedback feedback_file.json [--classification previous_output_file.json]
+```
+
+It's optional to provide the result of the classification command. If not provided, the classification will be run again.
+
+The output will be printed to the console.
+
+### Improve command
+
+```bash
+laoshu improve --input input_file.json --feedback feedback_file.json [--classification previous_output_file.json]
+```
+
+Note that the feedback file MUST contain the expected output.
+
+It's optional to provide the result of the classification command. If not provided, the classification will be run again.
+
+The new, improved prompt will be printed to the console.
+
+### Flow chart
+
+```mermaid
+flowchart TD
+
+Question{What do you want to do?}
+Question -- Understand hallucinations and prioritize improvements --> C1["Prepare the input file"]
+C1 --> C2["`Prepare the feedback file (**no** expected output required)`"]
+C2 --> C3["Run laoshu classify"]
+Question -- Build LLM-as-a-Judge --> F1["Prepare the input file"]
+F1 --> F2["`Prepare the feedback file (**no** expected output required)`"]
+F2 --> F3["(Optional) Run laoshu classify"]
+F3 --> F4["Run laoshu judge"]
+Question -- Fix the prompt --> J1["Prepare the input file"]
+J1 --> J2["`Prepare the feedback file **(expected output required)**`"]
+J2 --> J3["(Optional) Run laoshu classify"]
+J3 --> J4["Run laoshu improve"]
+
+classDef red fill:#f00
+class C3,F4,J4 red
+```
+
+## Configuration
+
+Laoshu expects the following environment variables:
+
+- `OPENAI_API_KEY`: The API key for the OpenAI API.
+- `LOG_LEVEL`: The logging level. Default is `INFO`.
+
+## AI Usage
+
+Laoshu uses the OpenAI `text-embedding-3-small` model to convert the inputs and feedbacks into vectors.
+
+To generate the prompts, `gpt-4o` is used.
+
+## File formats
+
+### Input file format
+
+The input file is a JSON file that contains the prompt template and the sessions.
+
+The prompt template is a string with placeholders for the user input.
+The sessions is an array of objects with the user input and the prompt output. Each session has an id that may link to the feedback object.
+
+Example:
+
+```json
+{
+    "prompt_template": "You are a helpful assistant. Answer the following question: {question}",
+    "sessions": [
+        {
+            "id": "1",
+            "user_input": {
+                "question": "What is the capital of France?"
+            },
+            "prompt_output": "The sky is blue and the grass is green"
+        }
+    ]
+}
+```
+
+### Feedback file format
+
+The feedback file is a JSON file that contains the feedback for each session.
+
+The feedback consists of the session id, is_correct boolean flag, and the feedback message (in the message the human annotator should explain why the response is correct or incorrect). If you want to use the `improve` command, you should provide the expected output.
+
+Only sessions and feedbacks with matching ids will be considered.
+
+Example:
+
+```json
+{
+    "feedback": [
+        {
+            "id": "1",
+            "is_correct": false,
+            "message": "The answer is incorrect because AI ignored the user's question and answered with a different question.",
+            "expected_output": "The capital of France is Paris."
+        }
+    ]
+}
+```
+
+## Quickstart
+
+Do you want to test it in 60 seconds?
+
+```bash
+pip install laoshu
+git clone https://github.com/mikulskibartosz/laoshu.git
+cd laoshu/examples
+
+export OPENAI_API_KEY=<your-openai-api-key>
+laoshu classify --input input.json --feedback feedback.json --output output.json
+laoshu judge --input input.json --feedback feedback.json --classification output.json
+laoshu improve --input input.json --feedback feedback.json --classification output.json
+```
+
+## I'm still stuck. What should I do?
+
+If you're still stuck or have questions about using Laoshu, here are some options:
+
+1. **Check the examples directory** - Look at the examples in the repository to understand how to format your input and feedback files.
+
+2. **Open an issue** - Create an issue on the [GitHub repository](https://github.com/mikulskibartosz/laoshu) with details about your problem.
+
+3. **Consult with the author** - Bartosz Mikulski offers consultation services specifically for AI hallucination prevention. If you're implementing Laoshu in a critical production environment, consider [booking a consultation](https://mikulskibartosz.name/consultation/) to get personalized guidance on eliminating AI hallucinations.
+
+## Author
+
+✨ Built by [@mikulskibartosz](https://mikulskibartosz.name) – If you use Laoshu, star the repo and share your results!
+
+## What's next?
+
+- [ ] Add support for other LLMs
