@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: flashmd
+Version: 0.0.1
+Summary: Placeholder package for flashmd
+Author-email: Your Name <you@example.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# FlashMD

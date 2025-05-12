@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+flashmd/__init__.py
+flashmd.egg-info/PKG-INFO
+flashmd.egg-info/SOURCES.txt
+flashmd.egg-info/dependency_links.txt
+flashmd.egg-info/top_level.txt
