@@ -1,0 +1,80 @@
+import numpy as np 
+import matplotlib.pyplot as plt 
+import tensorflow as tf 
+from tensorflow import keras 
+from tensorflow.keras.models import Sequential 
+from tensorflow.keras.layers import Dense, SimpleRNN 
+import logging 
+# Suppress TensorFlow logging 
+tf.get_logger().setLevel(logging.ERROR) 
+# Constants 
+EPOCHS = 100 
+BATCH_SIZE = 16 
+TRAIN_TEST_SPLIT = 0.8 
+MIN = 12  # Number of months (timesteps) used for input 
+FILE_NAME = '../data/book_store_sales.csv' 
+# Function to read CSV file 
+def readfile(file_name): 
+with open(file_name, 'r', encoding='utf-8') as file: 
+next(file)  # Skip header 
+data = [float(line.split(',')[1]) for line in file] 
+return np.array(data, dtype=np.float32) 
+# 1. Read and split the data 
+sales = readfile(FILE_NAME) 
+months = len(sales) 
+split = int(months * TRAIN_TEST_SPLIT) 
+train_sales = sales[:split] 
+test_sales = sales[split:] 
+# 2. Standardize using only training data 
+mean = np.mean(train_sales) 
+stddev = np.std(train_sales) 
+train_sales_std = (train_sales - mean) / stddev 
+test_sales_std = (test_sales - mean) / stddev 
+# 3. Create training sequences 
+train_months = len(train_sales_std) 
+train_X = np.zeros((train_months - MIN, MIN, 1)) 
+train_y = np.zeros((train_months - MIN, 1)) 
+ 
+for i in range(train_months - MIN): 
+    train_X[i, :, 0] = train_sales_std[i:i + MIN] 
+    train_y[i, 0] = train_sales_std[i + MIN] 
+# 4. Create test sequences 
+test_months = len(test_sales_std) 
+test_X = np.zeros((test_months - MIN, MIN, 1)) 
+test_y = np.zeros((test_months - MIN, 1)) 
+ 
+for i in range(test_months - MIN): 
+    test_X[i, :, 0] = test_sales_std[i:i + MIN] 
+    test_y[i, 0] = test_sales_std[i + MIN] 
+# 5. Define the RNN model 
+model = Sequential() 
+model.add(SimpleRNN(128, activation='relu', input_shape=(MIN, 1))) 
+model.add(Dense(1, activation='linear')) 
+model.compile(loss='mean_squared_error', 
+              optimizer='adam', 
+              metrics=['mean_absolute_error']) 
+model.summary() 
+# 6. Train the model 
+history = model.fit(train_X, train_y, 
+                    validation_data=(test_X, test_y), 
+                    epochs=EPOCHS, 
+batch_size=BATCH_SIZE, 
+verbose=2, 
+shuffle=True) 
+# 7. Naive baseline for comparison 
+# Predict next month as same as previous month 
+test_output = test_sales_std[MIN:] 
+naive_prediction = test_sales_std[MIN - 1:-1] 
+naive_mse = np.mean(np.square(naive_prediction - test_output)) 
+naive_mae = np.mean(np.abs(naive_prediction - test_output)) 
+print('Naive baseline MSE:', naive_mse) 
+print('Naive baseline MAE:', naive_mae) 
+# 8. Optional: plot training history 
+plt.plot(history.history['loss'], label='Train Loss') 
+plt.plot(history.history['val_loss'], label='Validation Loss') 
+plt.xlabel('Epoch') 
+plt.ylabel('Loss (MSE)') 
+plt.legend() 
+plt.title('Training & Validation Loss') 
+plt.grid() 
+plt.show()
