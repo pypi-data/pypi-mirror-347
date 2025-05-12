@@ -1,0 +1,12 @@
+agents_for_all/__init__.py,sha256=TozkO7n59eVBw67N01lCEYliE7v-I6rMdjIk-OOuSO4,138
+agents_for_all/agent.py,sha256=pT9fhoMklyFjpU8ldonagzWdy9f9Bj4N9Rp4lidDRj8,6566
+agents_for_all/llms/__init__.py,sha256=FmxM480PaiFNAaZE8LFjdHhdOTVXawLka2HWhQvgib0,143
+agents_for_all/llms/base_model.py,sha256=24Qgr8XzSikTsZ_dnQ0Y-KPEN_DEdgFeemBmlXYAlms,721
+agents_for_all/llms/direct.py,sha256=7fOgL3aDR07CgPcdlAu1k49CxQ9X552fW35l3B6GMi4,1735
+agents_for_all/tools/__init__.py,sha256=Cnpai9T4xPYCq7gHMHVHwZGqFzlVe6XbZJ8k5xBIahQ,142
+agents_for_all/tools/base_tool.py,sha256=0V448QsnYcb2F23MiWWIxOzwibOjFuhNk6U1aH-hk8c,1380
+agents_for_all/tools/python.py,sha256=tyrgMEA7sjTbB7q6vAVzDdHHOK4dN1wF6KKjPDO9ytc,1924
+agents_for_all-0.1.0.dist-info/METADATA,sha256=Ztdy1tTS-SP0n9uT8LuILNztkXh4zed_7BIb9YyZNMY,3694
+agents_for_all-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+agents_for_all-0.1.0.dist-info/top_level.txt,sha256=dPSH05Qs1G5FYuE1M6d1ADjgZLdXxhsUPE8petAeIkw,15
+agents_for_all-0.1.0.dist-info/RECORD,,
