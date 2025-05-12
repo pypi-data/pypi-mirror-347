@@ -1,0 +1,9 @@
+pjrt_util.py,sha256=X7Ss57YxAOmVtz-dYEM0G1owqi8bXVIqlmsinhJ2QlA,295
+ray_tpu.py,sha256=qZDNITG1TLkarioaxxFVmrZaokjq06836-hRyorWhWM,12288
+ray_tpu_test.py,sha256=nL0KJyljFRbwgp7oASv2VOHQAnFDU3NJEF41zgsC59g,824
+ray_tpu_unit_test.py,sha256=idHtuYTaoa_FeYc3ULSAB5ZxcCJGyS06AHuOmVMxb08,2162
+ray_tpu-0.0.5.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ray_tpu-0.0.5.dist-info/METADATA,sha256=9-iymQwjDjMCeNRG10g0r77KUaABGh8ERRt6iuPzxaw,1349
+ray_tpu-0.0.5.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+ray_tpu-0.0.5.dist-info/top_level.txt,sha256=kpqMoOithywcxKOGur5BLQ1kqHfr4Ti-fauLqdOPdik,49
+ray_tpu-0.0.5.dist-info/RECORD,,
