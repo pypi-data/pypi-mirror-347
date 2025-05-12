@@ -1,0 +1,9 @@
+moat/thing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moat/thing/_main.py,sha256=8g4CkrwiVVDz07K6GN70b7Pjxy4onfvlBIPd9YN4UlY,6099
+moat/thing/model.py,sha256=6yZYT1BaCj7lTnvYoyACxSix4yzxKgmX3Fi2r48JKK0,3727
+moat/thing/model_.py,sha256=aWckBR50XRvrAwAbgIxgtLjWCgmKPJIqYOqlHJiynP8,2826
+moat_thing-0.2.1.dist-info/licenses/LICENSE.txt,sha256=L5vKJLVOg5t0CEEPpW9-O_0vzbP0PEjEF06tLvnIDuk,541
+moat_thing-0.2.1.dist-info/METADATA,sha256=5SduLS_Pnc9NgkvCyGBzalc8LNqc8euhYLRI5h_RYm8,834
+moat_thing-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+moat_thing-0.2.1.dist-info/top_level.txt,sha256=pcs9fl5w5AB5GVi4SvBqIVmFrkRwQkVw_dEvW0Q0cSA,5
+moat_thing-0.2.1.dist-info/RECORD,,
