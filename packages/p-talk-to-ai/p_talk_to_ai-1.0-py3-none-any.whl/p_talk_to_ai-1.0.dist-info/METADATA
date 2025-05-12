@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: p_talk_to_ai
+Version: 1.0
+Summary: EZ way for api calling
+Home-page: https://github.com/PennyXu/api_call
+Author: XuPeng
+Author-email: xupeng23456@126.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+
+
+# AI 对话助手 - p_talk_to_ai
+
+一个支持持久化对话记录和流式交互的AI对话工具（兼容Deepseek等开源大模型）
+
+---
+
+## 🌟 核心特性
+
+### **对话记忆持久化** 💾
+- **自动存档**：每次对话自动保存至`{name}_tomb.pkl`文件
+- **会话恢复**：初始化时自动加载同名历史对话记录
+- **多会话管理**：通过不同`name`参数创建独立对话实例
+- **一键清空**：`new_talk()`方法快速开启全新对话
+
+### **流式交互体验** 🌊
+- 实时显示模型思考过程（需模型支持）
+- 支持Token使用统计（默认关闭）
+- 流畅的内容分段输出
+
+---
