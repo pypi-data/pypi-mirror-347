@@ -1,0 +1,17 @@
+surfio.cpython-311-x86_64-linux-gnu.so,sha256=RAyE3823VhIYHDg269xAlJEaa_qpos-2MREmWjF4L4U,651920
+lib/irap_export_ascii.cpp,sha256=TLPwEUGdsqYnzBEKrOh_5izLVszGgMlfkHBPW_Euur8,2129
+lib/irap_export_binary.cpp,sha256=yZP0k82NZ7PSSORy9r44sNttcHj4lQTvSCsQZSe3SPM,2643
+lib/irap_import_ascii.cpp,sha256=2zNU736cnvsuMTtn_Ssw-babAAl2hNCQ8PyDBRO75zQ,3081
+lib/irap_import_binary.cpp,sha256=hT2Ggm5QIgGVp_8OZJJYe1r1FhXwX-ZOYOcc4-19pAw,3998
+lib/include/irap.h,sha256=KKiBCA8ejIQBKeQl_2Ke4yZUsPaYZqAtTxnOhZQqfVA,892
+lib/include/irap_export.h,sha256=MBcLlD1xQxd4cstiOo5J2kfCOqWF2AnKKeAl_W5M4po,1535
+lib/include/irap_import.h,sha256=4KYTH3D1VB4UNYoQ1Mof6UTn3XQx4gZmgavywmc0mU0,455
+lib/mmap_wrapper/mmap_wrapper.cpp,sha256=515CZPOkECDP_xfif8ct9oRi9bkbnShNq4ANpn1ECao,610
+lib/mmap_wrapper/mmap_wrapper.h,sha256=0Qwx_vkxuikYE0VxTD_4H8sH3MMPoqB7teawpJ8OwSc,241
+pybind_module/surfio.cpp,sha256=Hpn6pQ1R0k-5-piK-R-vu969zPTn6dRl10EMuRpzyzw,5320
+pybind_module/include/irap_pybind.h,sha256=-lFqJrBGPHFkt-2Z_aABoe5LBos6JFAMp3qMHDdufZA,159
+surfio-0.0.5.dist-info/METADATA,sha256=mcJoW3GKpSZ8s2snNVIDVuNGidwj_ZRWL9CMOPrgbGI,2180
+surfio-0.0.5.dist-info/WHEEL,sha256=1I5goh_p_RxHYGrsjl2OyBYTlrc_5HfECVoFpnT8tCU,152
+surfio-0.0.5.dist-info/top_level.txt,sha256=quxRfG2maS3bX-H8G8RoW_QfFcoqUSsZ_ecr2JXI894,25
+surfio-0.0.5.dist-info/RECORD,,
+surfio-0.0.5.dist-info/licenses/COPYING,sha256=j3MuRjpGGowEin2yQVk2N9QCi3y85E-ZWLGZAw8FtXM,1068
