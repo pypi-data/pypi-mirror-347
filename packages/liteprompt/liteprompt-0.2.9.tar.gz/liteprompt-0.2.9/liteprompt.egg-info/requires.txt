@@ -1,0 +1,15 @@
+pyyaml>=5.4
+jinja2>=3.0
+jinja2schema==0.1.4
+
+[aws]
+boto3==1.38.13
+
+[cache]
+cachetools==5.3.3
+
+[gcs]
+google-cloud-storage==2.19.0
+
+[tokenizer]
+tiktoken==0.7.0

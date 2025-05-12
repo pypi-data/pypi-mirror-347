@@ -1,0 +1,23 @@
+[project]
+name = "liteprompt"
+version = "0.2.9"
+description = "Lightweight, extensible prompt templating for LLMs"
+authors = [{ name = "Gianluigi Mucciolo" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "pyyaml>=5.4",
+    "jinja2>=3.0",
+    "jinja2schema==0.1.4"
+]
+
+[project.optional-dependencies]
+aws = ["boto3==1.38.13"]
+cache = ["cachetools==5.3.3"]
+tokenizer = ["tiktoken==0.7.0"]
+gcs = ["google-cloud-storage==2.19.0"]
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
