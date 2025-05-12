@@ -1,0 +1,8 @@
+file_browser_cli/__init__.py,sha256=eeh7xNKQIDCF1sX1Nil-buq8GpT8SmpSwT83UWP3J1M,36
+file_browser_cli/__main__.py,sha256=KbeNndnteokTOb0FtK00XGZqD-xA4t-ZqjxftAJkauQ,76
+file_browser_cli/cli.py,sha256=DC3DzBmVQZvnJCFfcen05boF6ZImPFI_UpFwP0wWnbY,2813
+file_browser_cli/file_browser.py,sha256=pG9nDB7EHJAY3-WzVZMUWDC2y4BZH9WD-tJB_drDh_Q,5478
+file_browser_cli-0.1.1rc4.dist-info/METADATA,sha256=GA1ekkoervSV3nGVOnDEW_UiKW2hVQHKIGinNYT2sVg,1142
+file_browser_cli-0.1.1rc4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+file_browser_cli-0.1.1rc4.dist-info/entry_points.txt,sha256=Zl3sPB1FSeOUyWNwHFIFQC1ey0w9xgBhLvNUoZoThYI,58
+file_browser_cli-0.1.1rc4.dist-info/RECORD,,
