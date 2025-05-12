@@ -1,0 +1,2 @@
+[console_scripts]
+secure-model = secure_model_service.cli.secure_model_cli:main
