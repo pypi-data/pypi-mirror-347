@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: computing_lib
+Version: 0.3.6
+Summary: computing_lib
+Author: ywg
+Requires-Python: >=3.12
