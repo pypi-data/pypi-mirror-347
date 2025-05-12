@@ -1,0 +1,76 @@
+Metadata-Version: 2.4
+Name: requests-pro
+Version: 1.0.0
+Summary: RequestsPro: The easy way to build professional-grade API clients.
+Author-email: Henrique Bastos <henrique@bastos.net>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/henriquebastos/requests-pro
+Project-URL: Documentation, https://github.com/henriquebastos/requests-pro
+Project-URL: Repository, https://github.com/henriquebastos/requests-pro
+Project-URL: Issue Tracker, https://github.com/henriquebastos/requests-pro/issues
+Keywords: http,api,client,requests,rest,api-client,http-client
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.32.3
+Dynamic: license-file
+
+# RequestsPro
+
+RequestsPro is the easy way to build professional-grade API clients.
+
+## Key features
+
+- Transparent authentication handling.
+- Token persistence for use across multiple processes.
+- Transparent token renewal and retry on 401 errors.
+- Allow the use of custom JSON encoder and decoder to transparent handle complex types serialization.
+- Consistent and transparent API error handling.
+- Built-in http chatter audit.
+- Separation of conserns everywhere.
+- Extremelly composable to handle retries, rate limiting, sandboxing and more.
+
+## Quick start
+
+Check the [demo/eduzz.py](https://github.com/henriquebastos/requestspro/blob/main/demo/eduzz.py) to see a simple yet complete API client example.
+
+## Install
+
+```bash
+pip install requestspro
+```
+
+## License
+
+MIT License.
+
+## Contributing
+
+Pull requests are welcome and must have associated tests.
+
+For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Author
+
+Henrique Bastos <henrique@bastos.net>
+
+## Thank you to Routable
+
+[Routable](https://routable.com) sponsored the development of this library.
+Working at [Routable](https://routable.com) is an awesome experience, with a developer-first culture that fosters innovation and growth.
+If you're interested in joining a dynamic team, [check out our job opportunities here](https://routable.com/careers/)!
