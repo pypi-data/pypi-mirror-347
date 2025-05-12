@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyqlrtest"
+version = "0.1.1"
+authors = [
+  { name="Jacob Schildknecht", email="jacob.schildknecht@hotmail.com" }, # Update this
+]
+description = "A Python package for Quandt-Likelihood Ratio (QLR) structural break tests."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+keywords = ["econometrics", "time series", "structural break", "qlr test", "supf test", "chow test"]
+classifiers = [
+    "Development Status :: 3 - Alpha", # Change as appropriate
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.7",
+    "statsmodels>=0.13",
+    "pandas>=1.3", # For data handling convenience, can be made optional
+]
+
+[project.urls]
+Homepage = "https://github.com/JacobSKN/pyqlrtest"  # Update this
+Repository = "https://github.com/JacobSKN/pyqlrtest" # Update this
+
+
+[tool.setuptools.packages.find]
+where = ["."] # search for packages in the current directory
+include = ["qlrtest*"]  # include the qlrtest package and any subpackages
+exclude = ["tests*", "examples*", "docs*"]  # exclude tests, examples, docs from the wheel

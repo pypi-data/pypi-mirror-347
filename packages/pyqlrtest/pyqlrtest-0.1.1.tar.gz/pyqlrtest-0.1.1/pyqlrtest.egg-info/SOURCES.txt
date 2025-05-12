@@ -1,0 +1,17 @@
+LICENSE
+License
+README.md
+pyproject.toml
+pyqlrtest.egg-info/PKG-INFO
+pyqlrtest.egg-info/SOURCES.txt
+pyqlrtest.egg-info/dependency_links.txt
+pyqlrtest.egg-info/requires.txt
+pyqlrtest.egg-info/top_level.txt
+qlrtest/__init__.py
+qlrtest/_exceptions.py
+qlrtest/core.py
+qlrtest/critical_values.py
+qlrtest/utils.py
+tests/test_core.py
+tests/test_critical_values.py
+tests/test_utils.py
