@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: splitter-client-fds
+Version: 0.1.0
+Summary: A modern federated/split learning lab portal with Next.js frontend and FastAPI backend.
+Author: Splitter Team
+Requires-Python: >=3.8
+Dynamic: author
+Dynamic: requires-python
+Dynamic: summary
