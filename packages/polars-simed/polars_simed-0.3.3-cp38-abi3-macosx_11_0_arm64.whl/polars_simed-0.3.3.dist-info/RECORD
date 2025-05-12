@@ -1,0 +1,8 @@
+polars_simed-0.3.3.dist-info/METADATA,sha256=nEej_YI-CsKgDzMsnBX7fSuMs6lF7zLSh1pzwEfU9w8,3360
+polars_simed-0.3.3.dist-info/WHEEL,sha256=_spb9maq187zJLd3PlZ5udtmwbguzg0tkA7i9bm-Y-M,102
+polars_simed-0.3.3.dist-info/licenses/LICENSE.md,sha256=fLvr8CclM1SqpIJlLbE5uhuwuK5zTbaA4S8oKhCqQYs,1079
+polars_simed/__init__.py,sha256=pCEoKyMT41JYp7gIHXV3S_Sbh4pIcrRfDy4or2Eu6OY,103
+polars_simed/_polars_simed_lib.abi3.so,sha256=USK3JNF2s2127JE8mo1d1xdynLuuzDchhgtmAwKjwqg,10764144
+polars_simed/dataframe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polars_simed/dataframe/join.py,sha256=q03r2p-eLbZCULbFIC1XbuxIeToXR_KF6uBGEVHeLxM,5189
+polars_simed-0.3.3.dist-info/RECORD,,
