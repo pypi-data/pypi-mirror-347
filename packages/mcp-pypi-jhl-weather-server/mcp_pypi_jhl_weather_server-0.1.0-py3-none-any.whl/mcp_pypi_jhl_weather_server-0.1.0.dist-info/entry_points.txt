@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-pypi-jhl-weather-server = mcp_pypi_jhl_weather_server:main
