@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ultrafast-fit"
+version = "1.9.8"
+description = "Ultrafast spectroscopy fitting toolkit"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "lmfit",
+    "scikit-learn",
+    "seaborn"
+]
+
+[project.scripts]
+ultrafast-fit = "ultra.main:main"
