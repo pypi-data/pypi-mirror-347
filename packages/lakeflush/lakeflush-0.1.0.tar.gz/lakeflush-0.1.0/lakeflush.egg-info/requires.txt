@@ -1,0 +1,9 @@
+watchdog==6.0.0
+
+[aws]
+boto3==1.38.13
+
+[test]
+pytest>=7.4.0
+pytest-cov>=3.0.0
+pytest-mock>=3.9.0

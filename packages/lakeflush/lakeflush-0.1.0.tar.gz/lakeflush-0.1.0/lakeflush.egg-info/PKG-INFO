@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: lakeflush
+Version: 0.1.0
+Summary: lakeflush optimizes data lakes by consolidating small files into larger bundles for big data workloads. Reduces storage overhead and improves processing efficiency.
+Author-email: Abhinav Kaurav <dev@cloudindus.com>
+License-Expression: Apache-2.0
+Project-URL: homepage, https://github.com/cloudindus-com/lakeflush
+Project-URL: source, https://github.com/cloudindus-com/lakeflush
+Project-URL: issues, https://github.com/cloudindus-com/lakeflush/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: watchdog==6.0.0
+Provides-Extra: aws
+Requires-Dist: boto3==1.38.13; extra == "aws"
+Provides-Extra: test
+Requires-Dist: pytest>=7.4.0; extra == "test"
+Requires-Dist: pytest-cov>=3.0.0; extra == "test"
+Requires-Dist: pytest-mock>=3.9.0; extra == "test"
+Dynamic: license-file
+
+# lakeflush
+
+![PyPI](https://img.shields.io/pypi/v/lakeflush)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue)
+
+
+``lakeflush`` optimizes data lakes by consolidating small files into larger bundles for big data workloads. Reduces storage overhead and improves processing efficiency.
+
+**Efficiently consolidate millions of small files into larger bundles** to solve common big data challenges:
+
+✅ **Reduces storage overhead** – Minimize metadata bloat in HDFS/S3  
+✅ **Boosts processing speed** – Fewer files = Faster Spark/Hadoop jobs  
+✅ **Seamless integration** – Works with existing data lakes (S3, on-prem)  
+✅ **Smart bundling** – Configurable size thresholds and compression  
+✅ **Mult-format Support** – Supports Text, JSON and CSV file format
+
+**Ideal for**:  
+- IoT sensor data  
+- Log file aggregation  
+- ML training datasets  
+- Data lake optimization  
+
+Works on Python 3.11+
+
+
+```python
+pip install lakeflush
+```
+
