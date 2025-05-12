@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/filmlens/__init__.py
+src/filmlens/film_client.py
+src/filmlens/film_config.py
+src/filmlens.egg-info/PKG-INFO
+src/filmlens.egg-info/SOURCES.txt
+src/filmlens.egg-info/dependency_links.txt
+src/filmlens.egg-info/requires.txt
+src/filmlens.egg-info/top_level.txt
+src/filmlens/schemas/__init__.py
+src/filmlens/schemas/schemas.py
