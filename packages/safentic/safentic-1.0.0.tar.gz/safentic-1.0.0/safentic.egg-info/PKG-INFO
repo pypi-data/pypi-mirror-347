@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: safentic
+Version: 1.0.0
+Summary: Safentic SDK for behavior analysis
+Home-page: https://safentic.com
+Author: Safentic
+Author-email: contact@safentic.com
+License: Proprietary :: Safentic Commercial License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# SAFENTIC-V0
+
+Safentic is a runtime guardrail SDK for agentic AI.  
+It intercepts unsafe tool calls between agent **intent** and **execution**.
+
+## To Run Locally with Docker
+
+### Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) installed
+
+---
+
+### Build and Run with Docker
+
+Make sure docker desktop is running on your device, then do the following:
+   ```
+   1. git clone https://github.com/type0-1/safentic-v0.git
+   2. cd safentic-v0
+   3. docker compose up --build
+   ```
