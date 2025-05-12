@@ -1,0 +1,2 @@
+[console_scripts]
+getTrades = getTrades:main
