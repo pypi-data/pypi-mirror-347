@@ -1,0 +1,9 @@
+numpy
+numpy-quaternion
+
+[plt]
+matplotlib
+
+[test]
+pytest
+scipy
