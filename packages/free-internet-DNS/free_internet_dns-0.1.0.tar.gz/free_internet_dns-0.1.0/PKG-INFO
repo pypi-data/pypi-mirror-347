@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: free_internet_DNS
+Version: 0.1.0
+Summary: Get free Internet using Per-sec DNS
+Home-page: https://github.com/AuxGrep
+Author: AuxGrep
+Author-email: mranonymoustz@tutanota.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Get free Internet using Per-sec DNS.

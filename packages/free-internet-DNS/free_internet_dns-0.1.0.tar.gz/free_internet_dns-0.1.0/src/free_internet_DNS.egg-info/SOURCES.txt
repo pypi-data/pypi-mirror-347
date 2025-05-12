@@ -1,0 +1,5 @@
+setup.py
+src/free_internet_DNS.egg-info/PKG-INFO
+src/free_internet_DNS.egg-info/SOURCES.txt
+src/free_internet_DNS.egg-info/dependency_links.txt
+src/free_internet_DNS.egg-info/top_level.txt
