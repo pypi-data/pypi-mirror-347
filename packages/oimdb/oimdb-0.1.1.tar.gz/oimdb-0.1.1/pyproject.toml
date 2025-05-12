@@ -1,0 +1,19 @@
+[project]
+name = "oimdb"
+version = "0.1.1"
+description = "Scrape alternative movie titles from IMDb by IMDb ID"
+authors = [{ name = "Anton", email = "dependentgamestudio@gmail.com" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "playwright>=1.43.0"
+]
+
+[tool.setuptools]
+packages = ["oimdb"]
+include-package-data = true
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
