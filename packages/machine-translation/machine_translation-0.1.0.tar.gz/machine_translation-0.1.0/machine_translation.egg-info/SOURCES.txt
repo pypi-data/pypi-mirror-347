@@ -1,0 +1,13 @@
+LICENSE
+setup.py
+machine_translation/__init__.py
+machine_translation/data.py
+machine_translation/model.py
+machine_translation/train.py
+machine_translation/translate.py
+machine_translation/utils.py
+machine_translation.egg-info/PKG-INFO
+machine_translation.egg-info/SOURCES.txt
+machine_translation.egg-info/dependency_links.txt
+machine_translation.egg-info/requires.txt
+machine_translation.egg-info/top_level.txt
