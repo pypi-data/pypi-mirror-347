@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: tieto_azure_apim_sdk
+Version: 0.1.0
+Summary: SDK for querying Azure OpenAI through Azure API Management Gateway.
+Home-page: https://github.com/NaveenGandla/azure_apim_openai_sdk
+Author: Naveen Kumar
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.11
+Requires-Dist: requests
+Dynamic: author
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
