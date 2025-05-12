@@ -1,0 +1,12 @@
+pdfsp/__init__.py,sha256=4tJYqAWZdP6oBkOJJXUXdfUnpEtzjqSHLZF6aprGnXE,1017
+pdfsp/_options.py,sha256=UwGM-4rJp_7d8MnAem1OxgaJ1ldS0S08EuWfc5sKDOU,1306
+pdfsp/_typing.py,sha256=rQ_MBxJdT2TQZmThqdTHGii6yhP9diWm49qsFHjdkdE,662
+pdfsp/cli.py,sha256=5QEWqCq0cXXaZ5MpByn2Ij47uY9fpa2IPnpAmIZdNEE,1511
+pdfsp/core.py,sha256=jEBCvNdY1f67KsXb_bJJg8x4aCKlntFEhP0fglKNMEw,10380
+pdfsp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdfsp/tests/test_main.py,sha256=JBVWmVI-CYnuaGMqozYV-pJib8uJEwxmx06k2nmC37Y,1449
+pdfsp-0.1.9.dist-info/METADATA,sha256=miVoL7oN3HXl3pHMIJ2cdhCF2kcMmQOAw17TJwLrLkU,2404
+pdfsp-0.1.9.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pdfsp-0.1.9.dist-info/entry_points.txt,sha256=7_MGp2AC8ybf69d93WplkjQby2ZZZ201pUO-JZuQUJM,59
+pdfsp-0.1.9.dist-info/licenses/LICENSE,sha256=AFYZHb-2OWS-dZrjzNV5namMJlAngWeF1DBSSOTPuWs,929
+pdfsp-0.1.9.dist-info/RECORD,,
