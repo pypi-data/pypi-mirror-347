@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: symdyn
+Version: 0.1.0
+Summary: Computer algebra system for manipulating algebras to solve dynamics of quantum systems
+Author-email: Vladimir Vargas Calderón <vvargasc@dwavesys.com>, Juan Guillermo Dueñas <jgduenasl@unal.edu.co>, Jorge Isaac Rubiano <jrubianom@unal.edu.co>, Daniel Martínez <danielmartinezt@gmail.com>, Juan Sebastian Florez <jsflorezj@gmail.com>
+Requires-Python: >=3.10
+License-File: LICENCE
+Requires-Dist: numpy~=1.26
+Requires-Dist: sympy~=1.12
+Requires-Dist: matplotlib~=3.8.4
+Requires-Dist: jax~=0.4.34
+Dynamic: license-file

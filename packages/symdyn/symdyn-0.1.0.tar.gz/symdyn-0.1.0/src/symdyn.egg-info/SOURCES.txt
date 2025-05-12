@@ -1,0 +1,15 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/symdyn/__init__.py
+src/symdyn/algebra.py
+src/symdyn/types.py
+src/symdyn/utils.py
+src/symdyn.egg-info/PKG-INFO
+src/symdyn.egg-info/SOURCES.txt
+src/symdyn.egg-info/dependency_links.txt
+src/symdyn.egg-info/requires.txt
+src/symdyn.egg-info/top_level.txt
+src/symdyn/sun/__init__.py
+src/symdyn/sun/utils.py

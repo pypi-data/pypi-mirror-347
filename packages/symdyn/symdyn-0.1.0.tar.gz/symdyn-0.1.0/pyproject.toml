@@ -1,0 +1,18 @@
+[project]
+name = "symdyn"
+description = "Computer algebra system for manipulating algebras to solve dynamics of quantum systems"
+version = "0.1.0"
+authors = [
+    {name="Vladimir Vargas Calderón", email="vvargasc@dwavesys.com"},
+    {name="Juan Guillermo Dueñas", email="jgduenasl@unal.edu.co"},
+    {name="Jorge Isaac Rubiano", email="jrubianom@unal.edu.co"},
+    {name="Daniel Martínez", email="danielmartinezt@gmail.com"},
+    {name="Juan Sebastian Florez", email="jsflorezj@gmail.com"},
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy~=1.26",
+    "sympy~=1.12",
+    "matplotlib~=3.8.4",
+    "jax~=0.4.34",
+]
