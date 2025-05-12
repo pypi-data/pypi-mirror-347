@@ -1,0 +1,2 @@
+[console_scripts]
+reproducible_zip = reproducible_zip:main
