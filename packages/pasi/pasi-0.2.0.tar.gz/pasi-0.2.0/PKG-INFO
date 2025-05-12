@@ -1,0 +1,131 @@
+Metadata-Version: 2.4
+Name: pasi
+Version: 0.2.0
+Summary: Prediction Accuracy Subgroup Identification - Find subgroups with differential model performance
+Home-page: https://github.com/yourusername/pasi
+Author: Ruotao Zhang
+Author-email: zrtpublic@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+Requires-Dist: numba
+Requires-Dist: pandas
+Requires-Dist: progressbar2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# PASI: Prediction Accuracy Subgroup Identification
+
+A Python package implementing PASI Trees - a tree-based algorithm to find subgroups with differential model performance for a given prediction model and a given accuracy measure.
+
+## Installation
+
+```bash
+pip install pasi
+```
+
+## Features
+
+- **Identify Subgroups with Differential Performance**: Discover subgroups where your predictive model performs differently
+- **Multiple Accuracy Measures**:
+  - Individual-level accuracy estimation
+  - AUC (Area Under the ROC Curve) with confidence intervals
+  - AUPRC (Area Under the Precision-Recall Curve) with confidence intervals
+- **Statistical Rigor**: Includes variance estimation and confidence intervals for all metrics
+- **Optimized Performance**: Uses parallel processing and efficient algorithms for large datasets
+
+## Quick Start
+
+```python
+import pandas as pd
+import numpy as np
+from pasi_test import pasiTree
+from sklearn.linear_model import LogisticRegression
+
+# Load your data
+X = pd.DataFrame(...)  # Your features
+y = np.array(...)      # Binary target variable (0/1)
+
+# First, train a predictive model
+pred_model = LogisticRegression().fit(X, y)
+y_pred = pred_model.predict_proba(X)[:, 1]
+
+# Create a PASI tree with AUC as the accuracy measure
+# This will identify subgroups with differential AUC performance
+pasi_tree_auc = pasiTree(measure='auc', min_samples_leaf=100, max_depth=3)
+pasi_tree_auc.fit(X=X, y=y, y_pred=y_pred)
+
+# Create a PASI tree with AUPRC as the accuracy measure
+# Useful for imbalanced datasets
+pasi_tree_auprc = pasiTree(measure='auprc', min_samples_leaf=100, max_depth=3)
+pasi_tree_auprc.fit(X=X, y=y, y_pred=y_pred)
+
+# Visualize the tree
+tree_dot = pasi_tree_auc.tree.export_graphviz(feature_names=list(X.columns))
+# You can visualize the DOT string using tools like graphviz
+
+# Get subgroup-specific accuracy predictions
+subgroup_accuracies = pasi_tree_auc.predict(X)
+```
+
+## Accuracy Measures
+
+### AUC (Area Under the ROC Curve)
+
+The package implements AUC calculation with variance estimation using the DeLong method. This provides statistically rigorous confidence intervals.
+
+### AUPRC (Area Under the Precision-Recall Curve)
+
+AUPRC is especially useful for imbalanced datasets. The implementation uses bootstrap resampling to estimate variance and confidence intervals.
+
+### Individual-level Accuracy
+
+For regression or custom metrics, you can provide individual-level accuracy values for each sample.
+
+## Advanced Usage
+
+### Pruning Trees
+
+```python
+# Prune the tree using cross-validation to avoid overfitting
+pasi_tree_auc.select_pruned_tree(X, y=y, y_pred=y_pred, n_fold=5)
+
+# The pruned tree is accessible through
+pruned_tree = pasi_tree_auc.pruned_tree
+```
+
+### Test Set Evaluation
+
+```python
+# Evaluate identified subgroups on a test set
+pasi_tree_auc.test_eval(X_test, y=y_test, y_pred=y_pred_test)
+```
+
+## Citation
+
+If you use this package in your research, please cite:
+
+```
+[Citation information will be added here]
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
