@@ -1,0 +1,23 @@
+[project]
+name = "web-session-retriever"
+version = "0.1.0"
+description = "A cli tool that opens a browser and returns all the cookies or the required cookie."
+license = { text = "MIT" }
+authors = [
+    { name = "Frederik", email = "you@example.com" }
+]
+dependencies = [
+    "botasaurus"
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+web-session-retriever = "session_retriever.__main__:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["session_retriever"]

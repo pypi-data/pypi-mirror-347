@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: web-session-retriever
+Version: 0.1.0
+Summary: A cli tool that opens a browser and returns all the cookies or the required cookie.
+Author-email: Frederik <you@example.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: botasaurus
