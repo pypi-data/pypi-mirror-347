@@ -1,0 +1,41 @@
+[project]
+name = "yacrawler"
+version = "0.1.3"
+description = "Yet Another Internet Carwler"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "asyncio>=3.4.3",
+]
+
+[project.optional-dependencies]
+tui = [
+    "textual>=3.2.0",
+]
+
+cli = [
+    "rich>=14.0.0",
+]
+
+run = [
+    "typer>=0.15.3",
+    "click==8.1.8",
+]
+
+untilities = [
+    "aiofiles>=24.1.0",
+    "aiohttp>=3.11.18",
+]
+
+all = [
+    "aiofiles>=24.1.0",
+    "aiohttp>=3.11.18",
+    "asyncio>=3.4.3",
+    "rich>=14.0.0",
+    "textual>=3.2.0",
+    "typer>=0.15.3",
+    "click==8.1.8",
+]
+
+[tool.uv]
+default-groups = "all"
