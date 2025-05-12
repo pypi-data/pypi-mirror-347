@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-aws-level-checker = mcp_aws_level_checker.__main__:main
