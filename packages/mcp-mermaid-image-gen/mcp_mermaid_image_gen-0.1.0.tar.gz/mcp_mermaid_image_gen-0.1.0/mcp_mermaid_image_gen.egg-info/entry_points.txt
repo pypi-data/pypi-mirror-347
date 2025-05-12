@@ -1,0 +1,3 @@
+[console_scripts]
+mcp_mermaid_image_gen-client = mcp_mermaid_image_gen.client.app:main
+mcp_mermaid_image_gen-server = mcp_mermaid_image_gen.server.app:main
