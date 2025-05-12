@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: unlimited_time
+Version: 0.1.0
+Summary: A library to work with all possible time values and limitations.
+Author: OUBStudios
+Author-email: oubstudios@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+This library helps to limit time ranges and provides a list of all possible months, years, seconds, minutes, etc.
