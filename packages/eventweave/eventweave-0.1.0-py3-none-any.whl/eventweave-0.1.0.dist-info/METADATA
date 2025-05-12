@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: eventweave
+Version: 0.1.0
+Summary: Weave multiple streams of intervals into combinations
+Author: Max Görner
+Author-email: 5477952+MaxG87@users.noreply.github.com
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
