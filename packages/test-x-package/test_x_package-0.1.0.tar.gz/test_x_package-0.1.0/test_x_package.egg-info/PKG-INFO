@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: test-x-package
+Version: 0.1.0
+Summary: Just a test package to develop ci jobs
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# test-python-package
+
+Force Re-Build: 1
+
+Just a repo to test building a python package via the ci
