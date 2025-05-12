@@ -1,0 +1,7 @@
+README.md
+setup.py
+autoline.egg-info/PKG-INFO
+autoline.egg-info/SOURCES.txt
+autoline.egg-info/dependency_links.txt
+autoline.egg-info/requires.txt
+autoline.egg-info/top_level.txt
