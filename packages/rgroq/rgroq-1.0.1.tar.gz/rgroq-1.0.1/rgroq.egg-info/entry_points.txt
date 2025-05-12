@@ -1,0 +1,2 @@
+[console_scripts]
+gchat = rgroq.main:main
