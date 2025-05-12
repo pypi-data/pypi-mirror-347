@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: jobhunt
+Version: 1.0.3
+Summary: A folk of JobSpy
+Keywords: jobs-scraper,linkedin,indeed,glassdoor,ziprecruiter,bayt,naukri
+Author: Alan Chu
+Author-email: hoanglan.ict@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: NUMPY (==1.26.3)
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: markdownify (>=0.13.1,<0.14.0)
+Requires-Dist: pandas (>=2.1.0,<3.0.0)
+Requires-Dist: pydantic (>=2.3.0,<3.0.0)
+Requires-Dist: regex (>=2024.4.28,<2025.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: tls-client (>=1.0.1,<2.0.0)
+Project-URL: Homepage, https://github.com/LanChuHoang/jobspy.git
+Description-Content-Type: text/markdown
+
+# JobHunt
+
+**JobHunt** is a fork of the original [JobSpy](https://github.com/speedyapply/JobSpy) project, created to introduce additional fixes and enhancements while preserving all core functionality.
+JobSpy is a job scraping library designed to aggregate postings from multiple popular job boards into a single tool and output them as a pandas DataFrame
+
