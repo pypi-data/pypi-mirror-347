@@ -1,0 +1,7 @@
+README.md
+setup.py
+monkez_video_input.egg-info/PKG-INFO
+monkez_video_input.egg-info/SOURCES.txt
+monkez_video_input.egg-info/dependency_links.txt
+monkez_video_input.egg-info/requires.txt
+monkez_video_input.egg-info/top_level.txt
