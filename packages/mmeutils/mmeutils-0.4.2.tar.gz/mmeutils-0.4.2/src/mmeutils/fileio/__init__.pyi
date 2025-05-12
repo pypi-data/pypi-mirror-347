@@ -1,0 +1,6 @@
+import os
+
+__all__ = ['read_text_file_to_string', 'validate_json_file']
+
+def read_text_file_to_string(file_name: str | bytes | os.PathLike) -> str: ...
+def validate_json_file(file_name: str | bytes | os.PathLike) -> bool: ...
