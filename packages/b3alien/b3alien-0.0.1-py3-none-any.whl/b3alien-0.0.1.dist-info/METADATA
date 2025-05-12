@@ -1,0 +1,225 @@
+Metadata-Version: 2.4
+Name: b3alien
+Version: 0.0.1
+Summary: Calculating the CBD target 6.1 indicator from occurrence cubes
+Author-email: Maarten Trekels <maarten.trekels@plantentuinmeise.be>
+License: MIT
+Project-URL: homepage, https://github.com/mtrekels/b3alien
+Project-URL: repository, https://github.com/mtrekels/b3alien
+Project-URL: documentation, https://b3alien.readthedocs.io/
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohappyeyeballs>=2.6.1
+Requires-Dist: aiohttp>=3.11.18
+Requires-Dist: aiosignal>=1.3.2
+Requires-Dist: alabaster>=1.0.0
+Requires-Dist: appdirs>=1.4.4
+Requires-Dist: asttokens>=3.0.0
+Requires-Dist: async-timeout>=5.0.1
+Requires-Dist: attrs>=25.3.0
+Requires-Dist: backports.tarfile>=1.2.0
+Requires-Dist: bqplot>=0.12.44
+Requires-Dist: branca>=0.8.1
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: cachetools>=5.5.2
+Requires-Dist: cattrs>=24.1.3
+Requires-Dist: certifi>=2025.4.26
+Requires-Dist: cffi>=1.17.1
+Requires-Dist: charset-normalizer>=3.4.2
+Requires-Dist: click>=8.1.8
+Requires-Dist: cloudpickle>=3.1.1
+Requires-Dist: colour>=0.1.5
+Requires-Dist: comm>=0.2.2
+Requires-Dist: contourpy>=1.3.2
+Requires-Dist: coverage>=7.8.0
+Requires-Dist: cryptography>=44.0.3
+Requires-Dist: cycler>=0.12.1
+Requires-Dist: dask>=2025.4.1
+Requires-Dist: decorator>=5.2.1
+Requires-Dist: docutils>=0.21.2
+Requires-Dist: earthengine-api>=1.5.13
+Requires-Dist: eerepr>=0.1.1
+Requires-Dist: exceptiongroup>=1.2.2
+Requires-Dist: executing>=2.2.0
+Requires-Dist: folium>=0.19.5
+Requires-Dist: fonttools>=4.57.0
+Requires-Dist: frozenlist>=1.6.0
+Requires-Dist: fsspec>=2025.3.2
+Requires-Dist: future>=1.0.0
+Requires-Dist: gcsfs>=2025.3.2
+Requires-Dist: geemap>=0.35.3
+Requires-Dist: geocoder>=1.38.1
+Requires-Dist: geojson-rewind>=1.1.0
+Requires-Dist: geomet>=1.1.0
+Requires-Dist: geopandas>=1.0.1
+Requires-Dist: google-api-core>=2.24.2
+Requires-Dist: google-api-python-client>=2.169.0
+Requires-Dist: google-auth>=2.39.0
+Requires-Dist: google-auth-httplib2>=0.2.0
+Requires-Dist: google-auth-oauthlib>=1.2.2
+Requires-Dist: google-cloud-core>=2.4.3
+Requires-Dist: google-cloud-storage>=3.1.0
+Requires-Dist: google-crc32c>=1.7.1
+Requires-Dist: google-resumable-media>=2.7.2
+Requires-Dist: googleapis-common-protos>=1.70.0
+Requires-Dist: httplib2>=0.22.0
+Requires-Dist: id>=1.5.0
+Requires-Dist: idna>=3.10
+Requires-Dist: imagesize>=1.4.1
+Requires-Dist: importlib_metadata>=8.7.0
+Requires-Dist: iniconfig>=2.1.0
+Requires-Dist: ipyevents>=2.0.2
+Requires-Dist: ipyfilechooser>=0.6.0
+Requires-Dist: ipyleaflet>=0.19.2
+Requires-Dist: ipython>=8.36.0
+Requires-Dist: ipytree>=0.2.2
+Requires-Dist: ipywidgets>=8.1.6
+Requires-Dist: jaraco.classes>=3.4.0
+Requires-Dist: jaraco.context>=6.0.1
+Requires-Dist: jaraco.functools>=4.1.0
+Requires-Dist: jedi>=0.19.2
+Requires-Dist: jeepney>=0.9.0
+Requires-Dist: Jinja2>=3.1.6
+Requires-Dist: jupyter-leaflet>=0.19.2
+Requires-Dist: jupyterlab_widgets>=3.0.14
+Requires-Dist: keyring>=25.6.0
+Requires-Dist: kiwisolver>=1.4.8
+Requires-Dist: llvmlite>=0.44.0
+Requires-Dist: locket>=1.0.0
+Requires-Dist: markdown-it-py>=3.0.0
+Requires-Dist: MarkupSafe>=3.0.2
+Requires-Dist: matplotlib>=3.10.1
+Requires-Dist: matplotlib-inline>=0.1.7
+Requires-Dist: mdit-py-plugins>=0.4.2
+Requires-Dist: mdurl>=0.1.2
+Requires-Dist: more-itertools>=10.7.0
+Requires-Dist: multidict>=6.4.3
+Requires-Dist: myst-parser>=4.0.1
+Requires-Dist: narwhals>=1.37.1
+Requires-Dist: nh3>=0.2.21
+Requires-Dist: numba>=0.61.2
+Requires-Dist: numpy>=2.2.5
+Requires-Dist: oauthlib>=3.2.2
+Requires-Dist: packaging>=25.0
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: parso>=0.8.4
+Requires-Dist: partd>=1.4.2
+Requires-Dist: pexpect>=4.9.0
+Requires-Dist: pillow>=11.2.1
+Requires-Dist: platformdirs>=4.3.7
+Requires-Dist: plotly>=6.0.1
+Requires-Dist: pluggy>=1.5.0
+Requires-Dist: prompt_toolkit>=3.0.51
+Requires-Dist: propcache>=0.3.1
+Requires-Dist: proto-plus>=1.26.1
+Requires-Dist: protobuf>=6.30.2
+Requires-Dist: ptyprocess>=0.7.0
+Requires-Dist: pure_eval>=0.2.3
+Requires-Dist: pyarrow>=20.0.0
+Requires-Dist: pyasn1>=0.6.1
+Requires-Dist: pyasn1_modules>=0.4.2
+Requires-Dist: pycparser>=2.22
+Requires-Dist: pygbif>=0.6.5
+Requires-Dist: Pygments>=2.19.1
+Requires-Dist: pyogrio>=0.10.0
+Requires-Dist: pyparsing>=3.2.3
+Requires-Dist: pyperclip>=1.9.0
+Requires-Dist: pyproj>=3.7.1
+Requires-Dist: pyproject_hooks>=1.2.0
+Requires-Dist: pyshp>=2.3.1
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: pytest-cov>=6.1.1
+Requires-Dist: python-box>=7.3.2
+Requires-Dist: python-dateutil>=2.9.0.post0
+Requires-Dist: pytz>=2025.2
+Requires-Dist: PyYAML>=6.0.2
+Requires-Dist: ratelim>=0.1.6
+Requires-Dist: readme_renderer>=44.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: requests-cache>=1.2.1
+Requires-Dist: requests-oauthlib>=2.0.0
+Requires-Dist: requests-toolbelt>=1.0.0
+Requires-Dist: rfc3986>=2.0.0
+Requires-Dist: rich>=14.0.0
+Requires-Dist: rsa>=4.9.1
+Requires-Dist: scipy>=1.15.2
+Requires-Dist: scooby>=0.10.1
+Requires-Dist: SecretStorage>=3.3.3
+Requires-Dist: shapely>=2.1.0
+Requires-Dist: six>=1.17.0
+Requires-Dist: snowballstemmer>=3.0.0.1
+Requires-Dist: sparse>=0.16.0
+Requires-Dist: Sphinx>=8.1.3
+Requires-Dist: sphinx-rtd-theme>=3.0.2
+Requires-Dist: sphinxcontrib-applehelp>=2.0.0
+Requires-Dist: sphinxcontrib-devhelp>=2.0.0
+Requires-Dist: sphinxcontrib-htmlhelp>=2.1.0
+Requires-Dist: sphinxcontrib-jquery>=4.1
+Requires-Dist: sphinxcontrib-jsmath>=1.0.1
+Requires-Dist: sphinxcontrib-qthelp>=2.0.0
+Requires-Dist: sphinxcontrib-serializinghtml>=2.0.0
+Requires-Dist: stack-data>=0.6.3
+Requires-Dist: tdqm>=0.0.1
+Requires-Dist: tomli>=2.2.1
+Requires-Dist: toolz>=1.0.0
+Requires-Dist: tqdm>=4.67.1
+Requires-Dist: traitlets>=5.14.3
+Requires-Dist: traittypes>=0.2.1
+Requires-Dist: twine>=6.1.0
+Requires-Dist: typing_extensions>=4.13.2
+Requires-Dist: tzdata>=2025.2
+Requires-Dist: uritemplate>=4.1.1
+Requires-Dist: url-normalize>=2.2.1
+Requires-Dist: urllib3>=2.4.0
+Requires-Dist: wcwidth>=0.2.13
+Requires-Dist: widgetsnbextension>=4.0.14
+Requires-Dist: xarray>=2025.4.0
+Requires-Dist: xyzservices>=2025.4.0
+Requires-Dist: yarl>=1.20.0
+Requires-Dist: zipp>=3.21.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Dynamic: license-file
+
+# b3alien: a Python package to calculate the Target 6.1 headline indicator of the CBD
+
+
+## Introduction
+
+The historic Kunming-Montreal Global Biodiversity
+Framework, which supports the achievement of the
+Sustainable Development Goals and builds on the
+Convention on Biological Diversity’s (CBD) previous
+Strategic Plans, sets out an ambitious pathway to reach
+the global vision of a world living in harmony with nature
+by 2050. Among the Framework’s key elements are 23
+targets for 2030. In order to track the progress on the
+targets, a number of indicators were agreed upon for
+each target. The B3ALIEN software provides a technical
+solution to track Target 6: “Reduce the Introduction of
+Invasive Alien Species by 50% and Minimize Their
+Impact.” It mainly focusses on the headline indicator: rate
+of invasive alien species establishment, but can provide
+input to some of the complementary indicators.
+
+Decision makers at local, regional, national and
+international levels need accurate and reliable
+information about status, trends, threats, and they need
+data presented in an actionable and understandable
+format, with measures of uncertainty. Furthermore, we
+need synthesized data products that can be combined
+with other environmental data, such as climate, soil
+chemistry, land use, altitude... B3ALIEN is built upon the
+concept of data cubes developed in the Horizon Europe
+Biodiversity Building Blocks for Policy project (b-
+cubed.eu). It uses the solid foundations of the GBIF
+infrastructure, where tools such as the GBIF Taxonomic
+Backbone and the Global Registry of Introduced and
+Invasive Species are available by default. Readily available occurrence data is used to determine and estimate
+accurately the rate of introduction of alien species..
+
+## Architecture
+
+put schema here
