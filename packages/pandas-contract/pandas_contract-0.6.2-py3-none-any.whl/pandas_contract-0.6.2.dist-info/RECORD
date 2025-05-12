@@ -1,0 +1,12 @@
+pandas_contract/__init__.py,sha256=W8xWjGKh2zRzR1ZTIsAjxzZ2mujqSOI0cD02c08e7gk,507
+pandas_contract/_decorator.py,sha256=WOE8Oqde3C2xRP9MvXCEyJW7Esp0TRg9CvCgURqtIxw,9698
+pandas_contract/_decorator_v2.py,sha256=0f4fpfRiXBII5TY0-eO87AR1pfq5a9HpEstV0OEHM_Y,12156
+pandas_contract/_lib.py,sha256=UPRkIbLf_6dlweeHheaHpbyK-rSlZmP6HF_1-EQDJjI,3106
+pandas_contract/_private_checks.py,sha256=ShFlGii5KXsdEemDXqa7vhr7JzOyP-vVIfh9d6iXfpM,4081
+pandas_contract/checks.py,sha256=H6mjq21BsxWaICsPSnrQwpSMjpZryAZdThSxDMNFzCc,9787
+pandas_contract/mode.py,sha256=4CDmTYVkOtGbuNeunKQm-0TWdR4d3wHopfM1bnftlBY,3847
+pandas_contract/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pandas_contract-0.6.2.dist-info/METADATA,sha256=KoeoTe-ntC0-g2pYelAb0j6b9GVKVOYh9ms_QYVrcqU,8153
+pandas_contract-0.6.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pandas_contract-0.6.2.dist-info/licenses/LICENSE,sha256=5y78E_QJHY0b1KH6GrVpzvF_-H3-GJ2pjdbhv888reQ,1062
+pandas_contract-0.6.2.dist-info/RECORD,,
