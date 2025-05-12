@@ -1,0 +1,13 @@
+msx_serial/__init__.py,sha256=x4t_zCOxwDA1TldFdxXeNuKEz8X6YBluUcQbkA7RCds,278
+msx_serial/__main__.py,sha256=LtkYEtTuf6ULiLQVYcaLipazNEwDo0UafoRG3Uu9hmM,147
+msx_serial/_version.py,sha256=XjvTR1Cf2Vid_LakoleG-2cnq84NS0trRgdGYqHjEP4,524
+msx_serial/commands.yml,sha256=vmzWWlRSux-igAHfHuXLQUP9hOA1mFPf8bSApt6NW7k,516
+msx_serial/iot_basic_nodes.yml,sha256=ssGrEAdTD0PHIDErM8i9t641LDIiPzZhYN_LrHMKSvU,8853
+msx_serial/iot_nodes.py,sha256=CCnp_YEvmlwF5yKWhK4JoGO7Ki7DEa_7tkp170edVdg,1106
+msx_serial/msx_serial.py,sha256=PQoOiCYVlMouzR_uuw3ISLeslmYZQRb7eMaYqQTpYQI,11872
+msx_serial-0.1.4.dev0.dist-info/licenses/LICENSE,sha256=TF0m9A4dfqA71tRNX_0Z1OlqrZiRZy5BaMpcLqhZaCU,1066
+msx_serial-0.1.4.dev0.dist-info/METADATA,sha256=2b8GPFV-O48-030QGN8nrNH2Ge5w0X0TYpeTn7rR65o,4725
+msx_serial-0.1.4.dev0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+msx_serial-0.1.4.dev0.dist-info/entry_points.txt,sha256=Jq8eDezLq5WTLBXfDxYIEG7Olq3xU_TuFdwhasRSHTQ,47
+msx_serial-0.1.4.dev0.dist-info/top_level.txt,sha256=eJTch2FcIukLOJjun8DY_h7Az_JVcnY9sPtcjsck1ss,11
+msx_serial-0.1.4.dev0.dist-info/RECORD,,
