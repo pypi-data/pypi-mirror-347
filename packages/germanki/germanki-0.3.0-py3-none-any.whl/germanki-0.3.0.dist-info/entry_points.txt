@@ -1,0 +1,3 @@
+[console_scripts]
+germanki=germanki.__main__:main
+
