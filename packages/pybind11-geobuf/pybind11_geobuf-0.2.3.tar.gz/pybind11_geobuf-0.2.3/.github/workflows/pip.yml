@@ -1,0 +1,39 @@
+name: Pip
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build with Pip
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [windows-latest, macos-latest, ubuntu-latest]
+        python-version: ["3.9", "3.12"]
+
+    runs-on: ${{ matrix.platform }}
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: true
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        allow-prereleases: true
+
+    - name: Add requirements
+      run: python -m pip install --upgrade wheel setuptools
+
+    - name: Build and install
+      run: pip install --verbose .[test]
+
+    - name: Test
+      if: ${{ startsWith(matrix.platform, 'ubuntu') }}
+      run: python -m pytest
