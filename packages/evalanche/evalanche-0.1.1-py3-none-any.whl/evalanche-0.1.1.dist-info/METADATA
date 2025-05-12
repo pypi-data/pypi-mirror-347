@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: evalanche
+Version: 0.1.1
+Summary: Evaluate your LLMs, on various security & quality metrics
+Author-email: mbti <mbti-devs-tbd@mercedes-benz.com>
+Requires-Python: >=3.12
