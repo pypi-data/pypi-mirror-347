@@ -1,0 +1,13 @@
+[project]
+name = "weather_cli_open_weather"
+version = "1.0.1"
+description = "A simple Python CLI tool to fetch and display current weather information for any city using the OpenWeatherMap API."
+dependencies = [
+    "requests",
+    "typer",
+    "rich",
+    "python-dotenv",
+]
+
+[project.scripts]
+weather = "weather_cli.weather:app"
