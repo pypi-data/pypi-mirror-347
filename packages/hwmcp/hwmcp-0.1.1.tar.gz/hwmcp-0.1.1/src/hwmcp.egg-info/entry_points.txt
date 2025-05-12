@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-document-reader = doc_reader.server:main
