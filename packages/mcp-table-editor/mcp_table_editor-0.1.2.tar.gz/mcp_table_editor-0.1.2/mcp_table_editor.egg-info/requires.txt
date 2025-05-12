@@ -1,0 +1,6 @@
+fastapi>=0.115.12
+fastmcp>=2.3.0
+mcp>=1.6.0
+pandas>=2.2.3
+python-ulid>=3.0.0
+sqlalchemy>=2.0.40
