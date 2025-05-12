@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling >= 1.26", "typing-extensions==4.13.2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shapesqr"
+version = "0.0.2"
+authors = [
+  { name="Dmitriy Reztsov", email="rezcov_d@mail.ru" },
+]
+description = "This is a test task module for shapes square calculation."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/DmitriyReztsov/shapesqr"
+Issues = "https://github.com/DmitriyReztsov/shapesqr/issues"

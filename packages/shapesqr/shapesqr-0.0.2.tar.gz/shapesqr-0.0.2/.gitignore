@@ -1,0 +1,7 @@
+.vscode
+libvenv
+*/__pycache__/
+.gitignore
+build
+dist
+shapesqr.egg-info
