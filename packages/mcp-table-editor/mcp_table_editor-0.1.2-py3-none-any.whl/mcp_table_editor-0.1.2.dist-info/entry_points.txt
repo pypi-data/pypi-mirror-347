@@ -1,0 +1,3 @@
+[console_scripts]
+mcp-table-editor-http = mcp_table_editor.mcp.web:main
+mcp-table-editor-stdio = mcp_table_editor.mcp.server:main
