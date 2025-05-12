@@ -1,0 +1,12 @@
+pyaterochka_api/__init__.py,sha256=s91K-ZPzFZkk93AY_BtXwhpSxZpO1IHi1a3RThd1jtM,60
+pyaterochka_api/api.py,sha256=sE6AqTwdGvVcdW1BSZfPiRV_NIgBQs1f_t84iqVY_s8,11188
+pyaterochka_api/manager.py,sha256=8uTV9Cia0arrNc-dnOPG7dl9REU7QFzisysT7Krih7E,10733
+pyaterochka_api-0.1.7.dist-info/licenses/LICENSE,sha256=Ee_P5XQUYoJuffzRL24j4GWpqgoWphUOKswpB2f9HcQ,1071
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/base_tests.py,sha256=XgOFu8yUKYqeRZ6QuQE-ZjMuPreQUb9y8iR7bDw-DOE,2763
+tests/snapshots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/snapshots/snap_base_tests.py,sha256=0Vc6Vjm8rLyPVbSRUu2xX8XVOEtU_pns2-oJE-EETyQ,27182
+pyaterochka_api-0.1.7.dist-info/METADATA,sha256=F-2s2jK7CjylujQ8cd39NrdZpvyk_LPZRubDlPc8NIo,9291
+pyaterochka_api-0.1.7.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+pyaterochka_api-0.1.7.dist-info/top_level.txt,sha256=PXTSi8y2C5_Mz20pJJFqOUBnjAIAXP_cc38mthvJ2x4,22
+pyaterochka_api-0.1.7.dist-info/RECORD,,
