@@ -1,0 +1,9 @@
+include README.md
+include requirements.txt
+include LICENSE
+include CHANGELOG.md
+include UserGuide*.md
+include flag_documentation.md
+include LLM_Script_Generation_and_Parsing.md
+recursive-include assets *
+recursive-include docs * 
