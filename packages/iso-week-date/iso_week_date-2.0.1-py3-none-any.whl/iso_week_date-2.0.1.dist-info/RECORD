@@ -1,0 +1,14 @@
+iso_week_date/__init__.py,sha256=kEm3Ma1R-8h-oOOJSs3qBRbgvn-N_1tCWwvqB9I6Khg,777
+iso_week_date/_base.py,sha256=Rc-t0l15xIaxlhmnY2fnrcIQeSDgxSkrtxE0LnSX1N4,17227
+iso_week_date/_patterns.py,sha256=lJ08T1DESccDvexEc9PfNovtsITNEo4f_mw61pzQC0c,1722
+iso_week_date/_utils.py,sha256=yrv2pi5J4pClifRulKdHjrlbzVN5kJbUYIaysiM7bdg,2804
+iso_week_date/isoweek.py,sha256=9r-c3yaNVKZzshdvCAQwyrYOvbpGtCRDftebwd28B3I,39752
+iso_week_date/isoweekdate.py,sha256=qHNoKTtztbWCqNvoYA1MVP580MvGrqdcOU6sTadiAPY,36259
+iso_week_date/pandas_utils.py,sha256=TjeK7J5WYH6hpUxZOJvAQRwIGc-RGbY_QdCEVgOY3OU,18808
+iso_week_date/polars_utils.py,sha256=uyqWDJHSyKzihH8j9FAIkPHbFqx0TS87cOs8TVxemXo,21499
+iso_week_date/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iso_week_date/pydantic.py,sha256=DQ72f_KOaoqTWUra-8Z7gSeuYR7fQ7-KX42XB8WHLrg,5863
+iso_week_date-2.0.1.dist-info/METADATA,sha256=xGRtzV7RvqB0bgh8UwJyUKoUHQ_r7KK56f7bbdNQ16I,9136
+iso_week_date-2.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+iso_week_date-2.0.1.dist-info/licenses/LICENSE,sha256=dvme5SVaxB8S--1OkhJXMzOrJnDhPZvCY_vys9LsoBo,1075
+iso_week_date-2.0.1.dist-info/RECORD,,
