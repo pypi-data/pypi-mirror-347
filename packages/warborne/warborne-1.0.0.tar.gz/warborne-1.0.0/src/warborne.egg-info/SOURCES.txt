@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/warborne.py
+src/warborne.egg-info/PKG-INFO
+src/warborne.egg-info/SOURCES.txt
+src/warborne.egg-info/dependency_links.txt
+src/warborne.egg-info/top_level.txt
