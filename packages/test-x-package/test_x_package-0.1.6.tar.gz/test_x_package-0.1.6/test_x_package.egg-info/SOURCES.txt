@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+test_x_package/__init__.py
+test_x_package.egg-info/PKG-INFO
+test_x_package.egg-info/SOURCES.txt
+test_x_package.egg-info/dependency_links.txt
+test_x_package.egg-info/top_level.txt
