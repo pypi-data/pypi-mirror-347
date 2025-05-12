@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+qlispreg/__init__.py
+qlispreg/dicttree.py
+qlispreg/expression.py
+qlispreg/version.py
+qlispreg.egg-info/PKG-INFO
+qlispreg.egg-info/SOURCES.txt
+qlispreg.egg-info/dependency_links.txt
+qlispreg.egg-info/requires.txt
+qlispreg.egg-info/top_level.txt
+tests/test_dicttree.py
+tests/test_expression.py

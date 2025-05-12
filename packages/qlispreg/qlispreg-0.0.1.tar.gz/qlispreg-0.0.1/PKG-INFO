@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: qlispreg
+Version: 0.0.1
+Summary: Registry for qlisp
+Author-email: feihoo87 <feihoo87@gmail.com>
+Maintainer-email: feihoo87 <feihoo87@gmail.com>
+Project-URL: Homepage, https://github.com/feihoo87/qlispreg
+Project-URL: Bug Reports, https://github.com/feihoo87/qlispreg/issues
+Project-URL: Source, https://github.com/feihoo87/qlispreg/
+Keywords: qlisp,config
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.13.3
+Requires-Dist: pyparsing>=3.0.9
+Requires-Dist: scipy>=1.13.1
+
+# qlispreg
+Registry for qlisp
