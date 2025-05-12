@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+src/ipay/__init__.py
+src/ipay.egg-info/PKG-INFO
+src/ipay.egg-info/SOURCES.txt
+src/ipay.egg-info/dependency_links.txt
+src/ipay.egg-info/top_level.txt
