@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+./src/__init__.py
+./src/main.py
+s3simplified.egg-info/PKG-INFO
+s3simplified.egg-info/SOURCES.txt
+s3simplified.egg-info/dependency_links.txt
+s3simplified.egg-info/requires.txt
+s3simplified.egg-info/top_level.txt
+src/__init__.py
+src/main.py
