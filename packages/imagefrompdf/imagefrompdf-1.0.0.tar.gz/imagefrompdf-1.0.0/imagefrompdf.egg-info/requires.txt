@@ -1,0 +1,7 @@
+pdf2image
+Pillow
+click
+
+[dev]
+pytest
+tox
