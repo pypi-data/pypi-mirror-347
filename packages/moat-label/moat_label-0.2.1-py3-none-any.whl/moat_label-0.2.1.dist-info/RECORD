@@ -1,0 +1,10 @@
+moat/label/_cfg.yaml,sha256=tVrKybb2sdiPnVEbV5Vx7mMVGigcfBnGWUwsnJZLM4s,1454
+moat/label/_main.py,sha256=iluw92-GK1t3faq1kROC4HJiBSSdzv8WjPJLRckIdo0,23624
+moat/label/model.py,sha256=0sIIedLLQKfdfROFJCHAivpBjm-fCWTxyzaX8MbWv5E,4880
+moat/label/model_.py,sha256=aLyl85toCgP6nbSMU_UQcMpjn7fTnSKCULbXl5Q-2OA,3199
+moat/label/pdf.py,sha256=RIUrH91dRHXb7Lbg3Ue0qmuv6RxWTCUQM7jE3USdc_Y,3276
+moat_label-0.2.1.dist-info/licenses/LICENSE.txt,sha256=L5vKJLVOg5t0CEEPpW9-O_0vzbP0PEjEF06tLvnIDuk,541
+moat_label-0.2.1.dist-info/METADATA,sha256=5506XlxUuRaMNJw49g_C5SNfZVSshc13eY2fSV-1ckA,1799
+moat_label-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+moat_label-0.2.1.dist-info/top_level.txt,sha256=pcs9fl5w5AB5GVi4SvBqIVmFrkRwQkVw_dEvW0Q0cSA,5
+moat_label-0.2.1.dist-info/RECORD,,
