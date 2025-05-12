@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: genagent
+Version: 0.1.0
+Summary: Python utilities for generative agent tasks, including LLM interactions and agent memory.
+Author-email: Carolyn Zou <cqz@cs.stanford.edu>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai>=1.0.0
+Requires-Dist: anthropic>=0.20.0
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: python-dotenv>=0.20.0
+Dynamic: license-file
+
+# GenAgent Utilities
+
+A Python package providing utilities for generative agent tasks, including:
+- Interacting with LLM providers (OpenAI, Anthropic).
+- Helper functions for prompt engineering and structured output.
+- Basic agent memory and chat session management.
+
+## Installation
+
+```bash
+pip install genagent
+```
+
+(Once it's on PyPI)
+
+## Usage
+
+```python
+# Example usage (customize based on your library's API)
+# from genagent import gen, Agent, ChatSession
+
+# response = gen("Tell me a joke.")
+# print(response)
+
+# my_agent = Agent(name="MyTestAgent")
+# my_agent.add_memory("The sky is blue.")
+# print(my_agent.retrieve_memories("What color is the sky?"))
+```
+
+Please update this README with more specific instructions and examples for your package.
+
+## Development
+
+To install for development:
+
+```bash
+cd llm-utils
+pip install -e .
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
