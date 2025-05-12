@@ -1,0 +1,7 @@
+cmfapi/__init__.py,sha256=cWfeQ62M498x00Uujjk99uPgmfqjXP4Fa-Prb30uYp4,114
+cmfapi/client.py,sha256=klHutzIX2WtDDwVHi7Ndkltf1DW13uIbJ8rFUTq2Jdw,3809
+cmfapi/conn.py,sha256=ZNexSX9-gjA_pbhfr3qiXkxx_IWQEBvMkFEeyOK0-UQ,5347
+cmfapi-0.0.1.dist-info/METADATA,sha256=lyGImHawWPOZ9vnqdCokR31JsAlPoIJd0JiXQcq8R60,2019
+cmfapi-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+cmfapi-0.0.1.dist-info/top_level.txt,sha256=Nb1X4ICJVzLylp-PnhKhK-C7Lm78alVYYzH4EWpgBSY,7
+cmfapi-0.0.1.dist-info/RECORD,,
