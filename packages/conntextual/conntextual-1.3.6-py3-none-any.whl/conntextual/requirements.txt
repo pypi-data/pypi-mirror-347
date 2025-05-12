@@ -1,0 +1,8 @@
+psutil
+runtimepy>=5.14.2
+vcorelib>=3.6.1
+textual
+textual-plotext
+uvloop
+numpy
+aiohttp>=3.9.0b0
