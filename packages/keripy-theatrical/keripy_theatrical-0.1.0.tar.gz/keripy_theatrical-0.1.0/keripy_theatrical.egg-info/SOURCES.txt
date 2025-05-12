@@ -1,0 +1,7 @@
+README.md
+main.py
+pyproject.toml
+keripy_theatrical.egg-info/PKG-INFO
+keripy_theatrical.egg-info/SOURCES.txt
+keripy_theatrical.egg-info/dependency_links.txt
+keripy_theatrical.egg-info/top_level.txt
