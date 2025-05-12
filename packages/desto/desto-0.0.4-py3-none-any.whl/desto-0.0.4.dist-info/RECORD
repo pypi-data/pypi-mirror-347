@@ -1,0 +1,11 @@
+desto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+desto/_version.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+desto/app/config.py,sha256=kUuZmG8A27h92XlHhKUWok2i-XlomcIoSDimnstDcIE,1585
+desto/app/dashboard.py,sha256=_ILL0b-aRqSHKrV6H3x6CDq2aLYxT6rv99aWWpWygWQ,1675
+desto/app/sessions.py,sha256=ywR9nw3Sh-VgdJSabGDeBPYeW8Dy0XXHw_toEW9YCiQ,9682
+desto/app/ui.py,sha256=Q-0IRWxEc6fIHMYV5nbsZSVzHSVzzM6LVThTTL0yr_s,7972
+desto-0.0.4.dist-info/METADATA,sha256=GDTFRBvtTAqFzMpKnEQK5CFRZulLYrKAYLIaR4MSKv4,1885
+desto-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+desto-0.0.4.dist-info/entry_points.txt,sha256=mMBKT-siKg8-GaWG7pxacvK3yJJ6hmB1TKJlCJZoEeo,51
+desto-0.0.4.dist-info/licenses/LICENSE,sha256=ywEs-mEWvZR7gF65GnqLuBrlRFVwoAGBc1ZTfmzkRWc,1070
+desto-0.0.4.dist-info/RECORD,,
