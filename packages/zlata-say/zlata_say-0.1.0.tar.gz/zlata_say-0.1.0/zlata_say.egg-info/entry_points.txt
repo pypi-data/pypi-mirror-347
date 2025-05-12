@@ -1,0 +1,2 @@
+[console_scripts]
+zlata-say = zlata_say.__main__:main

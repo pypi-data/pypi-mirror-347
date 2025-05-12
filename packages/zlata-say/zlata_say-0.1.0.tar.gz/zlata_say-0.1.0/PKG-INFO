@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: zlata-say
+Version: 0.1.0
+Summary: Zlata says something important to me...
+Author-email: Vladyslav <vladyslavbazchenko@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/wwsqlld/zlata_say
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# zlata
+
+Милое мотивационное сообщение от Zlata в виде ASCII-арта 🐱
+
+## Установка
+
+pip install zlata-say
+
+## Использование
+
+```python
+from zlata-say import say
+
+say()
+```

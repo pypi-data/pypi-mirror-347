@@ -1,0 +1,20 @@
+[project]
+name = "zlata-say"
+version = "0.1.0"
+description = "Zlata says something important to me..."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{ name = "Vladyslav", email = "vladyslavbazchenko@gmail.com" }]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/wwsqlld/zlata_say"
+
+
+[project.scripts]
+zlata-say = "zlata_say.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

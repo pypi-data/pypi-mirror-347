@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+zlata_say/__init__.py
+zlata_say/__main__.py
+zlata_say/core.py
+zlata_say.egg-info/PKG-INFO
+zlata_say.egg-info/SOURCES.txt
+zlata_say.egg-info/dependency_links.txt
+zlata_say.egg-info/entry_points.txt
+zlata_say.egg-info/top_level.txt
