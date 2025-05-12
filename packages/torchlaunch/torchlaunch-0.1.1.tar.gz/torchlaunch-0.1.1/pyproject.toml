@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling>=1.22"]
+build-backend = "hatchling.build"
+
+[project]
+name = "torchlaunch"
+version = "0.1.1"
+description = "Zero-boilerplate distributed-training launcher for PyTorch"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+
+authors = [
+  {name = "Levent Ozbek", email = "levent.ozbek.92@gmail.com"}
+]
+
+# ---- only the essentials for runtime ---------------------------------
+dependencies = [
+  "torch>=2.6",          # match your pin but allow 2.7, 2.8…
+  "filelock~=3.18",      # torch’s rendezvous helper already depends on this
+]
+
+# ---- optional extras --------------------------------------------------
+[project.optional-dependencies]
+# full = pip install torchlaunch[full]
+full = [
+  "fsspec~=2025.3",
+  "jinja2~=3.1",
+  "networkx~=3.4",
+  "numpy~=2.2",
+  "pandas~=2.2",
+  "sympy~=1.13",
+  "python-dateutil~=2.9",
+  "pytz~=2025.2",
+  "typing_extensions~=4.13",
+  "tzdata~=2025.2",
+  "pynvml; platform_system=='Linux' or platform_system=='Windows'",
+]
+
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.4",
+  # include “full” extras while testing
+  "torchlaunch[full]",
+]
+
+[project.urls]
+Homepage = "https://github.com/levoz92/torchlaunch"
+Issues   = "https://github.com/levoz92/torchlaunch/issues"
+
+# ----------------------------------------------------------------------
+[tool.hatch.build.targets.wheel]
+packages = ["torchlaunch"]
+
+[tool.hatch.version]
+path = "torchlaunch/_version.py"
