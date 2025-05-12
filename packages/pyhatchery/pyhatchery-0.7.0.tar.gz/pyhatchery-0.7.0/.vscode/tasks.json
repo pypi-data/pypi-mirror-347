@@ -1,0 +1,63 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Set up environment",
+			"type": "shell",
+			"command": "${workspaceFolder}/bootstrap/setup.sh",
+			"runOptions": { "runOn": "folderOpen" }
+		},
+		{
+			"label": "Run Test Suite",
+			"type": "shell",
+			"command": "cd ${workspaceFolder} && make test",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"problemMatcher": ["$python"],
+			"presentation": {
+				"reveal": "always"
+			}
+		},
+		{
+			"label": "Run Test Coverage",
+			"type": "shell",
+			"command": "cd ${workspaceFolder} && make coverage",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"problemMatcher": ["$python"],
+			"presentation": {
+				"reveal": "always"
+			}
+		},
+		{
+			"label": "Run Linters",
+			"type": "shell",
+			"command": "cd ${workspaceFolder} && uv run ruff check . && uv run pylint .",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "always"
+			}
+		},
+		{
+			"label": "Run Pyright",
+			"type": "shell",
+			"command": "cd ${workspaceFolder} && uv run pyright .",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "always"
+			}
+		}
+	]
+}
