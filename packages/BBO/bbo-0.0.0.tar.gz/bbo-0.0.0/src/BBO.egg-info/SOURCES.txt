@@ -1,0 +1,8 @@
+pyproject.toml
+src/BBO.egg-info/PKG-INFO
+src/BBO.egg-info/SOURCES.txt
+src/BBO.egg-info/dependency_links.txt
+src/BBO.egg-info/not-zip-safe
+src/BBO.egg-info/requires.txt
+src/BBO.egg-info/top_level.txt
+src/bbo/__init__.py
