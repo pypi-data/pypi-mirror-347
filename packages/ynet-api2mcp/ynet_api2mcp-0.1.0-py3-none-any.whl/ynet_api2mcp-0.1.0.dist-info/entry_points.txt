@@ -1,0 +1,2 @@
+[console_scripts]
+ynet-api2mcp = mcp_openapi_proxy:main
