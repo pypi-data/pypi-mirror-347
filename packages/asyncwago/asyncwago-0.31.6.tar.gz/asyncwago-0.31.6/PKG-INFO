@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: asyncwago
+Version: 0.31.6
+Summary: Access I/O on Wago controllers
+Home-page: http://github.com/M-o-a-T/asyncwago
+Author: Matthias Urlichs
+Author-email: matthias@urlichs.de
+License: GPLv3 or later
+Keywords: iot
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Framework :: Trio
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: anyio>=3.2
+Requires-Dist: importlib-metadata~=1.0; python_version < "3.8"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Wago
+====
+
+Welcome to `AsyncWago <http://github.com/M-o-a-T/asyncwago>`__!
+
+This library controls access to I/O on Wago controllers.
+These are industrial devices with various analog and digital extension modules.
+They run a basic embedded Linux. Older models don't even have a MMU.
+
+A small control program needs to run on the controller.
+You can get its source from the `Wago Firmware <http://github.com/M-o-a-T/wago-firmware>`__ archive.
+
+License: GPLv3 as published by the Free Software Foundation, or (at your option) any later version
+
