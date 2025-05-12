@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+example.ipynb
+pyproject.toml
+setup.py
+thyroid_dataset.csv
+pasi.egg-info/PKG-INFO
+pasi.egg-info/SOURCES.txt
+pasi.egg-info/dependency_links.txt
+pasi.egg-info/requires.txt
+pasi.egg-info/top_level.txt
+pasi_test/__init__.py
+pasi_test/acc_functions.py
+pasi_test/loss_functions.py
+pasi_test/pasi_methods.py
+tests/test_basic.py
