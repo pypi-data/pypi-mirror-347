@@ -1,0 +1,9 @@
+verify_crypto_signature/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verify_crypto_signature/evm.py,sha256=8cc9Pv9d7_zW3_jTMfm39R3wuXA4uN9BL6qElfB8dBQ,3716
+verify_crypto_signature/py.typed,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+verify_crypto_signature/sol.py,sha256=1OwyioFUMMvkQ-Bw1vhoL26PRlkZDktG5mdASNqFvw0,6313
+verify_crypto_signature-0.0.1.dist-info/licenses/LICENSE,sha256=7DJxQW3OaML9o9Mgx2r5CxbwvBAbSbAR3kjX1ifhoDg,1066
+verify_crypto_signature-0.0.1.dist-info/METADATA,sha256=5yBV-a2E9eFRNLFbeJrCFP43msXpFF4lf6ppg1YauqY,4625
+verify_crypto_signature-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+verify_crypto_signature-0.0.1.dist-info/top_level.txt,sha256=saX2_HKGoaHYqOygyZMmxdTJh9MuGtneTu_xMgPToKQ,24
+verify_crypto_signature-0.0.1.dist-info/RECORD,,
