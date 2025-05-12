@@ -1,0 +1,11 @@
+ademapkit/__init__.py,sha256=_u6Xke7Hiq1Izk5EcHdT_EZF8fg1-o2U6p5AeuHOy7g,46
+ademapkit/ademapkit.db,sha256=kjnXNj9U3YtpWxHU8YNXrkp1mRWqD1KWsAaROrnTItQ,24576
+ademapkit/map/__init__.py,sha256=WsTSmm2KGTnwdExF7yADJQXXD16g36WDjRzaoRPwarU,29
+ademapkit/map/country_script.py,sha256=nfwN8AeteK8vbas3thJqqy8mNRLSOLMVN74lduoIYuM,529
+ademapkit/model/__init__.py,sha256=pteMl0YQ1q1uuNM3PZNu_CQo1kZI_hBke1tpjvlWqF8,28
+ademapkit/model/country_model.py,sha256=zlokPw6unRQ5nHuq87Ua1S0wv624sMkUwryFvNtycqc,1687
+ademapkit-0.0.4.dist-info/licenses/LICENSE,sha256=MkTD6LJcYLw1dhQ1bQTZf66wBpO5NFt1NnitPId1SaQ,52
+ademapkit-0.0.4.dist-info/METADATA,sha256=NUoohNZuoNt28XDNNXKPr0jjaNjuWZyhNEC54r-R5yQ,433
+ademapkit-0.0.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+ademapkit-0.0.4.dist-info/top_level.txt,sha256=JGY8bKxmmnUZzs8xpZN5KA0uvzkam78pIPmRs7ysACY,10
+ademapkit-0.0.4.dist-info/RECORD,,
