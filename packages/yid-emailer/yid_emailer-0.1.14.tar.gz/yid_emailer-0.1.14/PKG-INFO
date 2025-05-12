@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: yid_emailer
+Version: 0.1.14
+Summary: A template for a private Python package
+Author-email: Dmitrii Rashchenko <dimitree54@gmail.com>
+Project-URL: Homepage, https://github.com/dimitree54/yid_emailer
+Project-URL: Repository, https://github.com/dimitree54/yid_emailer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <4.0,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: sib_api_v3_sdk==7.6.0
+Provides-Extra: dev
+Requires-Dist: setuptools>=67.8.0; extra == "dev"
+Requires-Dist: bump2version>=1.0.1; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: pytest-xdist>=3.3.1; extra == "dev"
+Requires-Dist: build; extra == "dev"
+
+# YiD Emailer
+
+My experiments with emailing services.
+
+
+## Brevo:
+I decided to use 3rd party emailing service Brevo to have a convenient dashboard for reviewing all emails sent.
+Brevo has a generous free tier.
+To set it up, go to https://app.brevo.com/settings/keys/api, generate an API key and create `BREVO_API_KEY` GitHub secret with it.
