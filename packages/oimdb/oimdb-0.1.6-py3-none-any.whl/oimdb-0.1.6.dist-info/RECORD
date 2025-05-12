@@ -1,0 +1,10 @@
+oimdb/__init__.py,sha256=vkuFDEm8Q4gY6XO4THuy8CHxtMEBu8VCLajMp7Wxcbc,212
+oimdb/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oimdb/core/all_titles.py,sha256=Am-NZF0E2W-OKOKvFYPaXlx1c2A9E1M-yKM7D-aJQ0g,3686
+oimdb/core/raiting.py,sha256=ylN8blEW23U2EszJ3vndTa_b9B35X0YukVv_WPka1xo,825
+oimdb/core/title.py,sha256=Lq1TiuH62XRg1du6BGMB7S-1sLk-2Ox1jiGGYqf8UPQ,532
+oimdb-0.1.6.dist-info/licenses/LICENSE,sha256=qPRNBN0Oyp2dMYhdm7i5jlGT2JITNhxffH3DCNVjbcg,120
+oimdb-0.1.6.dist-info/METADATA,sha256=xUKc7RdgBnnTcQXUw77WN5TdodoIjmjym_ypnz4C8rs,567
+oimdb-0.1.6.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+oimdb-0.1.6.dist-info/top_level.txt,sha256=Q6amJeuv2gJuqLjQdrYtdTpx2otpCK9FN0517Hgw5BE,6
+oimdb-0.1.6.dist-info/RECORD,,
