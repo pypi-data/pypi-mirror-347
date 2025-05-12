@@ -1,0 +1,172 @@
+Metadata-Version: 2.4
+Name: ciphers-vbcd-test
+Version: 0.2.0
+Summary: A tool for ciphering messages using various algorithms
+Author-email: "Javier Novoa C." <jstitch@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.0.0
+Provides-Extra: rsa
+Requires-Dist: cryptography>=41.0.0; extra == "rsa"
+Provides-Extra: build
+Requires-Dist: build>=1.0.0; extra == "build"
+Requires-Dist: wheel>=0.40.0; extra == "build"
+Provides-Extra: deploy
+Requires-Dist: twine>=4.0.0; extra == "deploy"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+
+# Ciphers
+
+A Python tool for ciphering messages using various algorithms.
+
+## Installation
+
+### Basic Installation
+
+```bash
+uv add ciphers-vbcd
+```
+
+### With RSA Support
+
+```bash
+uv add ciphers-vbcd[rsa]
+```
+
+### Locally install from wheel
+
+```bash
+# Create and activate a virtual environment with uv
+uv venv
+source .venv/bin/activate  # On Linux/macOS
+# or
+# .venv\Scripts\activate  # On Windows
+
+# Install the package
+uv add -e .
+
+# With RSA support
+uv add -e ".[rsa]"
+```
+
+## Usage
+
+### Caesar Cipher
+
+```bash
+# Encrypt a message using Caesar cipher with a shift of 3
+cipher encrypt --algorithm caesar --key 3 "Hello, World!"
+
+# Decrypt a message using Caesar cipher with a shift of 3
+cipher decrypt --algorithm caesar --key 3 "Khoor, Zruog!"
+```
+
+### RSA Cipher
+
+First, generate an RSA key pair:
+
+```bash
+# Using OpenSSL
+openssl genrsa -out private_key.pem 2048
+openssl rsa -in private_key.pem -pubout -out public_key.pem
+```
+
+Then encrypt and decrypt messages:
+
+```bash
+# Encrypt a message using RSA with a public key
+cipher encrypt --algorithm rsa --key public_key.pem "Secret message"
+
+# Decrypt a message using RSA with a private key
+cipher decrypt --algorithm rsa --key private_key.pem "encrypted_message_here"
+```
+
+## Development
+
+### Installing Development Dependencies
+
+With uv:
+
+```bash
+# Install development dependencies
+uv add -e ".[dev]"
+```
+
+### Running Tests
+
+```bash
+# Run tests with pytest
+pytest
+
+# Run tests with coverage
+pytest --cov=ciphers
+```
+
+### Code Formatting and Linting
+
+```bash
+# Format code with black
+black .
+
+# Sort imports with isort
+isort .
+
+# Lint with ruff
+ruff check .
+
+# Format with ruff
+ruff format .
+
+# Type checking with mypy
+mypy ciphers tests
+```
+
+### Building and Publishing
+
+Building the package with uv:
+
+```bash
+# Build both wheel and sdist
+uv build .
+
+# Or build specific formats
+uv build --wheel .  # Only wheel
+uv build --sdist .  # Only source distribution
+```
+
+Publishing to PyPI with uv:
+
+```bash
+# Upload to TestPyPI first to verify everything works
+uv publish --index testpypi dist/*
+
+# Upload to PyPI
+uv publish dist/*
+```
+
+You can also use twine if you prefer:
+
+```bash
+# Install twine
+uv add twine
+
+# Upload to TestPyPI
+python -m twine upload --repository testpypi dist/*
+
+# Upload to PyPI
+python -m twine upload dist/*
+```
+
+## Supported Algorithms
+
+- Caesar Cipher: A simple substitution cipher where each letter is shifted by a fixed number of positions.
+- RSA Cipher: A public-key cryptosystem that uses asymmetric encryption for secure data transmission.
