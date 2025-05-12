@@ -1,0 +1,6 @@
+alibabacloud_dms_mcp_server/__init__.py,sha256=nsZnA3NMYbhWBDu4OLfn4I7V71GykoZEuJ78uG7dcS8,73
+alibabacloud_dms_mcp_server/server.py,sha256=KPX45VlA0vlTue4iiRuAMZJN2T6doSmBB0FvI7E7O9U,20621
+alibabacloud_dms_mcp_server-0.1.0.dist-info/METADATA,sha256=1ybxCuCnC-dzSEVKa9g39fmd60AHnqRBN25aKYnSsWI,10594
+alibabacloud_dms_mcp_server-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+alibabacloud_dms_mcp_server-0.1.0.dist-info/entry_points.txt,sha256=wHtnOXk2l5Vpq-gJpe_anFJTiBYebh0o3c4ly2OV8xk,88
+alibabacloud_dms_mcp_server-0.1.0.dist-info/RECORD,,
