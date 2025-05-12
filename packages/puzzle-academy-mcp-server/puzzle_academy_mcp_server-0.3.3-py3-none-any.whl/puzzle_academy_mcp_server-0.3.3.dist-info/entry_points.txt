@@ -1,0 +1,2 @@
+[console_scripts]
+puzzle-academy-mcp-server = puzzlelabs.puzzle_academy_mcp_server.server:main
