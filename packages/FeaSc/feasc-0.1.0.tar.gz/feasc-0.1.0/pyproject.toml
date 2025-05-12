@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "FeaSc"
+version = "0.1.0"
+authors = [
+    { name = "gaomengqi", email = "gaomengqi2022@sibcb.ac.cn" },
+]
+description = "Single-cell feature analysis toolkit"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+keywords = ["single-cell", "bioinformatics", "feature-analysis"]
+
+dependencies = [
+    "numpy>=1.20.0,<2.0.0",
+    "scanpy>=1.8.0,<2.0.0",
+    "scTM",
+    "pyLemur",
+]
+
+[project.urls]
+#Homepage = "https://github.com/yourusername/FeaSc"
+Homepage = "https://gitee.com/angelina-cheng"
+#Repository = "https://github.com/yourusername/FeaSc"
+Repository = "https://gitee.com/angelina-cheng/fea-sc"
+
+# 自动发现包，并忽略 docs、data、output
+[tool.setuptools.packages.find]
+exclude = [
+    "docs*",
+    "data*",
+    "output*",
+]
