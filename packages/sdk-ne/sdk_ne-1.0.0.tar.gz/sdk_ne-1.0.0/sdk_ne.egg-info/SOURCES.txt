@@ -1,0 +1,9 @@
+LICENSE.lic
+README.md
+setup.py
+sdk_ne/__init__.py
+sdk_ne/sdk_ne.py
+sdk_ne.egg-info/PKG-INFO
+sdk_ne.egg-info/SOURCES.txt
+sdk_ne.egg-info/dependency_links.txt
+sdk_ne.egg-info/top_level.txt
