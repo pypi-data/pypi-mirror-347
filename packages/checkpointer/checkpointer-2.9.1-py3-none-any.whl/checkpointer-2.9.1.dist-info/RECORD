@@ -1,0 +1,16 @@
+checkpointer/__init__.py,sha256=HRLsQ24ZhxgmDcHchZ-hX6wA0NMCSedGA0NmCnUdS_c,832
+checkpointer/checkpoint.py,sha256=pbg62Q8gKhx21XEn5kPW95C7ERdQifAg-GAPQN6aWDk,6245
+checkpointer/fn_ident.py,sha256=SWaksNCTlskMom0ztqjECSRjZYPWXUA1p1ZCb-9tWo0,4297
+checkpointer/object_hash.py,sha256=cxuWRDrg4F9wC18aC12zOZYOPv3bk2Qf6tZ0_WgAb6Y,7484
+checkpointer/print_checkpoint.py,sha256=aJCeWMRJiIR3KpyPk_UOKTaD906kArGrmLGQ3LqcVgo,1369
+checkpointer/test_checkpointer.py,sha256=6gLFggsTDNdG2V9ruFlIM8weixd7ES66e5UQYdFX7Dw,3839
+checkpointer/utils.py,sha256=2yk1ksKszXofwnSqBrNCFRSR4C3YLPEAdHUFf-cviRU,2755
+checkpointer/storages/__init__.py,sha256=Kl4Og5jhYxn6m3tB_kTMsabf4_eWVLmFVAoC-pikNQE,301
+checkpointer/storages/bcolz_storage.py,sha256=3QkSUSeG5s2kFuVV_LZpzMn1A5E7kqC7jk7w35c0NyQ,2314
+checkpointer/storages/memory_storage.py,sha256=zfN2B_BgPmI1IcYQPo4ICr2AO6ne_UsEc_tvhbDtXBA,1093
+checkpointer/storages/pickle_storage.py,sha256=WwNg7kmE2on68-6uSPh1JAZLO6gi-P-3VmeBdklKnL0,1541
+checkpointer/storages/storage.py,sha256=hXzHf1i4Vb_JCeUhY2sVIZlpS049YkM1ya1SAW_x7Ls,912
+checkpointer-2.9.1.dist-info/METADATA,sha256=cbv49N5LRSbc-7ejHNEHJn_fSZWaA_1nFNJUuR-IH8E,10977
+checkpointer-2.9.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+checkpointer-2.9.1.dist-info/licenses/LICENSE,sha256=9xVsdtv_-uSyY9Xl9yujwAPm4-mjcCLeVy-ljwXEWbo,1059
+checkpointer-2.9.1.dist-info/RECORD,,
