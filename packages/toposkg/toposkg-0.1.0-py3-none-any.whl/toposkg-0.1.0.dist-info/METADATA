@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: toposkg
+Version: 0.1.0
+Summary: A Python interface to the ToposKG knowledge graph generation pipeline.
+Author-email: Sergios-Anestis Kefalidis <skefalidis@di.uoa.gr>, Kostas Plas <kplas@di.uoa.gr>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: rdflib
+Requires-Dist: fsspec
+Provides-Extra: tl
+Requires-Dist: unsloth; extra == "tl"
