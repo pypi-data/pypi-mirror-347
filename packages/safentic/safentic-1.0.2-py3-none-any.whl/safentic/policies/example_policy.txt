@@ -1,0 +1,33 @@
+Standard Refund Policy
+
+Last Updated: February 1, 2025
+
+1. Overview
+At XYZ, we strive to ensure your complete satisfaction with our platform. If you are not entirely happy with your purchase, you may be eligible for a refund as described below.
+
+2. Eligibility
+- Monthly Subscriptions: You may request a full refund within 30 days of your initial subscription charge.
+- Annual Subscriptions: You may request a pro-rated refund (the remaining unused portion of your term) within 30 days of your initial annual subscription charge.
+- One-Time Purchases and Credits: Refunds on one-time feature purchases or in-app credits are handled on a case-by-case basis and must be requested within 14 days of purchase.
+
+3. How to Request a Refund
+1. Log in to your XYZ account at https://app.XYZ.ai.
+2. Go to Settings -> Billing -> Refunds.
+3. Select the transaction you wish to refund and click Request Refund.
+4. In the "Reason" field, briefly describe why you are requesting a refund.
+5. Submit your request. You will receive an email confirmation within one business day.
+
+4. Processing Time
+- Refunds for credit-card or PayPal payments will be credited back to your original payment method within 5-7 business days after approval.
+- In-app credits or wallet balances will be restored within 24 hours of approval.
+
+5. Exceptions and Limitations
+- No refunds will be issued for subscription renewals after the initial 30-day period.
+- Promotional, gift, or trial subscriptions are non-refundable.
+- Refund requests made more than 30 days after the initial charge are subject to review and may be denied.
+- We reserve the right to refuse a refund if we suspect abuse of the refund policy.
+
+6. Contact Us
+If you have any questions or need assistance, please contact our Support Team at support@XYZ.ai or via the in-app chat.
+
+Thank you for choosing XYZ! We appreciate your business and are committed to delivering a great experience.
