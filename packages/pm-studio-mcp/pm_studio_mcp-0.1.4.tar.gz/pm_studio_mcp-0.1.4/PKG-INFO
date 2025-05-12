@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: pm-studio-mcp
+Version: 0.1.4
+Summary: PM Studio MCP Server - A Model Context Protocol server for product managers
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: fastmcp
+Requires-Dist: googlesearch-python
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: markitdown[all]
+Requires-Dist: praw>=7.7.0
+Requires-Dist: crawl4ai>=0.6.2
+Requires-Dist: msal
+Requires-Dist: azure-identity>=1.21.0
+Requires-Dist: azure-ai-inference>=1.0.0b9
+
+# PM Studio MCP
+
+PM Studio MCP is a Model Context Protocol (MCP) server for product management tasks. It provides a suite of tools and utilities to help product managers analyze user feedback, perform competitive analysis, generate data visualizations, and access structured data sources.
+
+## Getting Started
+
+   ```
+   {
+      "mcpServers": {
+         "pm-studio-mcp": {
+               "command": "uvx",
+               "args": [
+                  "pm-studio-mcp"
+               ],
+               "env": {
+                  "WORKING_PATH": "{PATH_TO_YOUR_WORKSPACE}/working_dir/"
+               },
+               "disabled": false
+         }
+      }
+   }
+   ```
