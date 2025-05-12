@@ -1,0 +1,2 @@
+[console_scripts]
+Signatures = dsgrn.Signatures:main [MPI]
