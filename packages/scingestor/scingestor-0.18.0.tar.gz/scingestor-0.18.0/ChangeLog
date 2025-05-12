@@ -1,0 +1,202 @@
+2024-11-25 Jan Kotanski <jan.kotanski@desy.de>
+	* add support for token in credential files (#321)
+	* tagged as 0.18.0
+
+2024-11-25 Jan Kotanski <jan.kotanski@desy.de>
+	* remove tmp files from the scratch dir (#317)
+	* tagged as 0.17.2
+
+2024-11-21 Jan Kotanski <jan.kotanski@desy.de>
+	* store tmp files in the scratch dir (#313)
+	* tagged as 0.17.1
+
+2024-07-31 Jan Kotanski <jan.kotanski@desy.de>
+	* set default execute_commands to True (#304)
+	* set default ingest_dataset_attachment to True (#306)
+	* set default retry_failed_dataset_ingestion to True (#306)
+	* set default inotify_timeout to 1.0 (#306)
+	* set default get_event_timeout to 0.1 (#306)
+	* set default metadata_in_var_dir to True (#309)
+	* tagged as 0.17.0
+
+2024-07-19 Jan Kotanski <jan.kotanski@desy.de>
+	* add single_datablock_ingestion variable with False default (#298)
+	* use scicat_proposal_id_pattern to get proposal groups (#297)
+	* tagged as 0.16.0
+
+2024-07-17 Jan Kotanski <jan.kotanski@desy.de>
+	* add watch_scandir_subdir  variable with False default (#291)
+	* add scicat_proposal_id_pattern variable with "{beamtimeId}" default (#289)
+	* tagged as 0.15.0
+
+2024-05-24 Jan Kotanski <jan.kotanski@desy.de>
+	* add force_generate_measurement = False variable (#285)
+	* tagged as 0.13.0
+
+2024-03-01 Jan Kotanski <jan.kotanski@desy.de>
+	* add add USER_CONFIG_DIR to the default_template file (#277)
+	* tagged as 0.12.1
+
+2024-01-03 Jan Kotanski <jan.kotanski@desy.de>
+	* add add_grouping_keyword configuration variable (#274)
+	* change metadata_keywords_without_checks into metadata_fields_without_checks (#276)
+	* change add_grouping_keyword to force_measurement_keyword (#276)
+	* update README (#276)
+	* fix  support for multi-scan NeXus files reingestion (#272)
+	* tagged as 0.12.0
+
+2023-12-19 Jan Kotanski <jan.kotanski@desy.de>
+	* add support for multi-scan NeXus files (#268)
+	* add master nexus file to the datablocks (#270)
+	* tagged as 0.11.0
+
+2023-12-12 Jan Kotanski <jan.kotanski@desy.de>
+	* fix grouping in the create mode (#265)
+	* tagged as 0.10.1
+
+2023-12-04 Jan Kotanski <jan.kotanski@desy.de>
+	* add support for measurement reingestion (#260)
+	* tagged as 0.10.0
+
+2023-11-24 Jan Kotanski <jan.kotanski@desy.de>
+	* add support for start/stop measurement command (#257)
+	* add {masterfile} and {plotfile} format variables (#253)
+	* add metadata generated callback (#254)
+	* tagged as 0.9.0
+
+2023-11-08 Jan Kotanski <jan.kotanski@desy.de>
+	* add headers to proposal queries (#250)
+	* tagged as 0.8.1
+
+2023-10-27 Jan Kotanski <jan.kotanski@desy.de>
+	* retry_failed_attachement_ingestion configuratio variable (#246)
+	* tagged as 0.8.0
+
+2023-09-04 Jan Kotanski <jan.kotanski@desy.de>
+	* add ingest_dataset_attachment: true to the default template configuration
+	* change default scicat_url to http://localhost:3000/api/v3
+	* tagged as 0.7.1
+
+2023-08-31 Jan Kotanski <jan.kotanski@desy.de>
+	* add retry_failed_dataset_ingestion configuration variable (#238)
+	* retry to ingest datasets on the scicat server error (#236)
+	* change REST API to the nestjs backend (#234)
+	* tagged as 0.7.0
+
+2023-04-06 Jan Kotanski <jan.kotanski@desy.de>
+	* add max_oned_size and max_oned_dataset_generator_switch configuration variables(#227)
+	* tagged as 0.6.0
+
+2023-03-23 Jan Kotanski <jan.kotanski@desy.de>
+	* execute generator commands as a shell process (#221)
+	* tagged as 0.5.4
+
+2023-03-22 Jan Kotanski <jan.kotanski@desy.de>
+	* add man/scicat_ingest.1 to manifest
+	* tagged as 0.5.3
+
+2023-03-16 Jan Kotanski <jan.kotanski@desy.de>
+	* fix misspel in attachment_image_frame_number (#202)
+	* fixes for attachment reingestion  (#215)
+	* add more tests
+	* tagged as 0.5.2
+
+2023-02-24 Jan Kotanski <jan.kotanski@desy.de>
+	* change tests for nxstools 3.42.0 (#188)
+	* close inotify file descriptor (#190)
+	* tagged as 0.5.1
+
+2023-02-07 Jan Kotanski <jan.kotanski@desy.de>
+	* add ingest_attachment, scicat_attachments_path, attachment_metadata_postfix, attachment_metadata_generator, plot_file_extension_list, attachment_* configuration variables (#179)
+	* add scicat_ingest script (#177)
+	* add support for nxstools 3.39.0 (#175)
+	* add override_attachment_signals* configuration variables (#181)
+	*  add log_generator_commands configuration variable  (#183)
+	* tagged as 0.5.0
+
+2022-12-09 Jan Kotanski <jan.kotanski@desy.de>
+	* add support for extracting metadata from fio files (#161)
+	* rename nxs_dataset_metadata_generator configuration variable to file_dataset_metadata_generator (#161)
+	* improve tests (#163)
+	* add support for .nx, .h5, .ndf NeXus extensions (#165)
+	* add master_file_extension_list to the file configuration (#168)
+	* allow to use {homepath} in metadata_copy_map_file (#172)
+	* tagged as 0.4.0
+
+2022-12-08 Jan Kotanski <jan.kotanski@desy.de>
+	* add metadata_copy_map_file and metadata_copy_map_file_generator_switch into the configuration variables (#158)
+	* tagged as 0.3.0
+
+2022-12-01 Jan Kotanski <jan.kotanski@desy.de>
+	* remove old origdatablocks during reingestion (#153)
+	* add beamtime_blacklist_file and beamtime_type_blacklist into the configuration variables (#155)
+	* tagged as 0.2.0
+
+2021-11-16 Jan Kotanski <jan.kotanski@desy.de>
+	* add hidden_attributes hidden_attributes_generator_switch into the configuration variables (#146)
+	* add add_empty_units add_empty_units_generator_switch into the configuration variables (#148)
+	* tagged as 0.1.0
+
+2022-11-11 Jan Kotanski <jan.kotanski@desy.de>
+	* impove files for systemd server (#133)
+	* add rotating file logger (#133)
+	* add a switch for timestamps (#135)
+	* add the hostname to the datatset list file patterns (#137)
+	* change ingestor_log_dir to ingestor_var_dir (#139)
+	* add the ingestor homepath to the dir  patterns (#141)
+	* tagged as 0.0.9
+
+2022-10-26 Jan Kotanski <jan.kotanski@desy.de>
+	* impove checks for random test output (#128)
+	* add timestamps to logger (#127)
+	* update default ownerGroup and accessGroups (#123)
+	* change doi_prefix to dataset_pid_prefix (#124)
+	* tagged as 0.0.7
+
+2022-10-07 Jan Kotanski <jan.kotanski@desy.de>
+	* add use_corepath_as_scandir into the configuration variables (#117)
+	* add scandir_blacklist into the configuration variables (#119)
+	* tagged as 0.0.6
+
+2022-09-30 Jan Kotanski <jan.kotanski@desy.de>
+	* add rechecking beamtime files if exists (#100)
+	* change {bt} format keyword to {beamtimeid} keyword (#104)
+	* change update_strategy to dataset_update_strategy and a add NO option (#106)
+	* add support for {beamtimeid} in the ingestor_dir_log configuration variable (#108)
+	* add max_scandir_depth configuration variable (#111)
+	* add chmod_generator_switch, relative_path_generator_switch, oned_dataset_generator_switch configuration variable (#113)
+	* change list pattern keywords and change {{dbpostfix}}, {{scpostfix}} to {{datablockpostfix}}, {{scanpostfix}} pattern keywords (#114)
+	* tagged as 0.0.5
+
+2022-09-23 Jan Kotanski <jan.kotanski@desy.de>
+	* improve catching errors coming from metadata script generators or wrong file permissions (#93)
+	* add metadata_in_log_dir to the configuration (#94)
+	* add owner_access_groups_from_proposal to the configuration (#95)
+	* tagged as 0.0.4
+
+2022-09-22 Jan Kotanski <jan.kotanski@desy.de>
+	* add coverage tests for deb11 (#74)
+	* add nxs_dataset_metadata_generator dataset_metadata_generator datablock_metadata_generator datablock_metadata_stream_generator datablock_metadata_generator_scanpath_postfix into the configuration (#72)
+	* add scan_metadata_postfix and datablock_metadata_postfix into the configuration (#70)
+	* add oned_in_metadata into the configuration (#68)
+	* add chmod_json_files into the configuration (#68)
+	* add beamtime_filename_prefix and  beamtime_filenmae_postfix into the configuration (#81)
+	* add datasets_filename_pattern and ingested_datasets_filename_pattern into the configuration (#83)
+	* add inotify_timeout, get_event_timeout, ingestion_delay_time and max_request_tries_number into the configuration (#85)
+	* add scicat_datasets_path, scicat_datablocks_path and  scicat_users_login_path into the configuration (#86)
+	* add request_headers into the configuration (#87)
+	* add metadata_keywords_without_checks into the configuration (#88)
+	* tagged as 0.0.3
+
+2022-08-24 Jan Kotanski <jan.kotanski@desy.de>
+	* add update_strategy to configuration (#54)
+	* wait for scicat server if it is off (#52)
+	* add relative_path_in_datablock to the configuration (#50)
+	* add ingestor_username to the configuration (#49)
+	* add support for external detector paths (#60)
+	* add support for ingestor_log_dir (#61)
+	* tagged as 0.0.2
+
+2022-07-21 Jan Kotanski <jan.kotanski@desy.de>
+	* first release
+	* tagged as 0.0.1

@@ -1,0 +1,171 @@
+TODO
+
+Tests for  scingestor/beamtimeWatcher.py:
+-----------------------------------------
+
+- in _find_bt_files() WRONG path if check for errors  needed ?? disk error e.g. os.path.isdir("\0")    (SEP EXEC)
+
+- in _add_path() WRONG   add_watch() exception ???? REMOVE ???? (ASEC)
+
+- in _add_base_path(self, path, split=True) when split base_path needed   ????
+
+- in _add_base_path(self, path, split=True) WHEN no path  when split ??
+
+- in _add_base_path() EXCEPTION  ???? if needed ????
+
+
+- WRONG in start() when len(self.__wd_to_queue) == 0 ????
+
+- WRONG in start() when len(self.__wd_to_bqueue) == 0 ????
+
+- WRONG in start() "not self.__beamtime_base_dir"  ??????
+
+- WRONG in start() "not event.name"  ??????
+
+- WRONG in start() " if not os.path.isfile(fl)" ????
+- WRONG in start()  " while len(dss):" ????
+
+
+
+
+Tests for  scingestor/datasetIngest.py
+--------------------------------------
+
+- WRONG in _ingest_scandir, Exception ?? token or reingest error ??
+
+- WRONG path if check for errors in _find_bt_files() needed ?? disk error e.g. os.path.isdir("\0")  (SEP EXEC)
+
+
+Tests for  scingestor/datasetIngestor.py
+----------------------------------------
+
+- in _regenerate_origdatablock_metadata(...) if  open(mfilename, "r") not loadable tests?
+-   in _regenerate_origdatablock_metadata(...) if dmeta is None ???
+
+- in _regenerate_origdatablock_metadata(...) if dmeta  and  not self.__logcommands tests ??
+
+- in _regenerate_origdatablock_metadata(...) if  new metad not loadable tests?
+
+- in _regenerate_origdatablock_metadata()  no obds generated  tests ??
+
+
+- in _metadataEqual(...) if parent tests ?
+
+- in _metadataEqual(...) if k not in dct2.keys()  tests ?
+
+- in _metadataEqual(...) if isinstance(v, dict)  tests ?
+
+
+- in post_dataset(...) exception test if spid[-1] not int ??
+
+- in _ingest_dataset(...) if counter == self.__maxcounter ??
+
+- in _ingest_dataset(...) if  resexists exception test e.g. content without exists ?
+
+- in _ingest_dataset(...)  if  self.__strategy == UpdateStrategy.NO ??
+
+
+- in _get_id_first_origdatablock(...) exception test if request EXCEPTIONS ?????
+
+
+- in _ingest_rawdataset_metadata() if mt["proposalId"] != self.__bid error (wrong beamtime)
+
+- in _ingest_rawdataset_metadata() if not mt["pid"].startswith("%s/" % (self.__bid)) (wrong beamtime)
+
+
+- _delete_origdatablocks() exception test if request EXCEPTIONS ?????
+
+
+- in _ingest_attachment_metadata() if not pid.startswith(self.__bid)  EXCEPTIONS tests ?
+
+
+- in ingest() if  odbs[0] (first) tests
+
+- in ingest() if  pid is None and rdss and rdss[0]: tests?
+
+- in ingest()  if self.__ingest_attachment and ads and ads[0] and pid:
+                if pid is None and adss and adss[0]: tests ?
+
+
+- in check_list()  if reingest and Exception test ??? (timestamp not float)
+
+
+- clear_tmpfile() if os.path.exists() : tests
+
+
+
+Tests for  scingestor/datasetWatcher.py
+---------------------------------------
+
+- in _add_path() EXCEPTION of add_watch() exception ???? REMOVE ????
+
+
+- in run() EXCEPTION from self.__ingestor.check_list()  tests ??
+
+- in run() EXCEPTION from self.__ingestor.ingest(scan, token)  tests ??
+
+- in run() if event.name: and "IN_CLOSE_WRITE test ??
+
+- in run() EXCEPTION from self.__ingestor.check_list() in the loop  tests ??
+
+- in run() loop if event.name: and  "IN_MODIFY" in masks or "IN_OPEN" in masks test ??
+
+- in run() loop if EXCEPTION from self.__ingestor.check_list() in the loop if self.__recheck_dslist_interval > 0 tests  ??
+
+- in run() loop get_token EXCEPTION test ??
+
+- in run() loop self.__ingestor.ingest(scan, token) EXCEPTION test ??
+
+
+Tests for  scingestor/safeINotifier.py
+--------------------------------------
+
+- in run  os.close(self.__notifier) exception ????
+
+- in _remove()   inotifyx.rm_watch() raise Exception ?? random
+
+
+Tests for  scingestor/scanDirWatcher.py
+---------------------------------------
+
+- EXCEPTION in _add_path ???? if needed ?? (NOT EXEC) ??
+
+- WRONG in   _launch_scandir_watcher(self, paths) exception ?? start() crashes ??
+
+- WRONG in run() when (not self.__wd_to_queue) ????
+
+- in run() if self.__dslist_fullname == npath and \
+                                   not os.path.isfile(self.__dslist_fullname) \
+                                   and os.path.isdir(self.__path)
+    , watcher for subdirectories launched tests ??
+
+
+- in run() if fn not in self.__dataset_watchers.keys() \
+                                   and fn == self.__dslist_fullname:
+
+   ,tests ??
+
+-     in run() if dw is not None: tests?
+
+- in run() if list(self.__scandir_watchers.keys()) and "IN_ISDIR" not in masks tests
+    ...
+
+
+
+DONE
+
+Name                            Stmts   Miss  Cover   Missing
+-------------------------------------------------------------
+scingestor/__init__.py              1      0   100%
+scingestor/beamtimeWatcher.py     358     29    92%   221-222, 263-265, 280, 283, 299-302, 360-361, 453-454, 470-476, 483, 512-514, 516-520
+scingestor/configuration.py        10      0   100%
+scingestor/datasetIngest.py       156      4    97%   271-272, 292-293
+scingestor/datasetIngestor.py     842     43    95%   788-789, 791-799, 814, 823-825, 843, 876, 883-887, 889-891, 997-1001, 1096-1099, 1101, 1106-1107, 1159, 1243-1244, 1307, 1312, 1343-1344, 1396, 1448, 1476, 1481, 1696-1697, 1716
+scingestor/datasetWatcher.py      152     31    80%   155-156, 175-176, 192-193, 202, 221-223, 232-234, 237-249, 264-266, 280-282, 286-288
+scingestor/logger.py               36      0   100%
+scingestor/modelIngest.py          97      0   100%
+scingestor/pathConverter.py        30      0   100%
+scingestor/safeINotifier.py       102      2    98%   229-230
+scingestor/scanDirWatcher.py      184     24    87%   197-198, 240-241, 283, 311-318, 329-337, 343-344, 351-357, 359-360
+-------------------------------------------------------------
+TOTAL                            1968    133    93%
