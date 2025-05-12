@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: VenusAI
+Version: 0.0.1
+Summary: A Python package for building powerful AI agents.
+Home-page: https://github.com/fswair/VenusAI
+Author: Mert Sırakaya
+Maintainer: fswair
+Maintainer-email: contact@tomris.dev
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Dynamic: author
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-python
+Dynamic: summary

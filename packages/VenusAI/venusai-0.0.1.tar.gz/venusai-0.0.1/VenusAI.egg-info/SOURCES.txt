@@ -1,0 +1,6 @@
+setup.py
+VenusAI/__init__.py
+VenusAI.egg-info/PKG-INFO
+VenusAI.egg-info/SOURCES.txt
+VenusAI.egg-info/dependency_links.txt
+VenusAI.egg-info/top_level.txt
