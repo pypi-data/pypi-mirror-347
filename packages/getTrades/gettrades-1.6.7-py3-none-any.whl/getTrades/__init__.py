@@ -1,0 +1,1 @@
+from getTrades import main_cli_entrypoint
