@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rand_nick
+Version: 0.1.0
+Summary: Генератор никнеймов
+Home-page: https://github.com/dsadasdasdsaas/rand_nick
+Author: vsenikizanyati
+Author-email: fmsg4341@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Random NickName generator
+
+Random NickName generator вЂ” СЌС‚Рѕ РїСЂРѕСЃС‚Р°СЏ Р±РёР±Р»РёРѕС‚РµРєР° РґР»СЏ РіРµРЅРµСЂР°С†РёРё СѓРЅРёРєР°Р»СЊРЅС‹С… РЅРёРєРЅРµР№РјРѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЃР»СѓС‡Р°Р№РЅС‹С… РїСЂРёР»Р°РіР°С‚РµР»СЊРЅС‹С… Рё СЃСѓС‰РµСЃС‚РІРёС‚РµР»СЊРЅС‹С…. РћРЅР° РјРѕР¶РµС‚ Р±С‹С‚СЊ РїРѕР»РµР·РЅР° РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РЅРёРєРЅРµР№РјРѕРІ РґР»СЏ РёРіСЂ, СЃРѕС†РёР°Р»СЊРЅС‹С… СЃРµС‚РµР№ РёР»Рё РґСЂСѓРіРёС… РѕРЅР»Р°Р№РЅ-РїР»Р°С‚С„РѕСЂРј.
+
+## РЈСЃС‚Р°РЅРѕРІРєР°
+
+```bash
+pip install rand_nick

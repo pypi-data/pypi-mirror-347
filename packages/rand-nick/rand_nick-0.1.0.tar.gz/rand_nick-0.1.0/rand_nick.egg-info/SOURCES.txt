@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gen/__init__.py
+gen/nick_gen.py
+rand_nick.egg-info/PKG-INFO
+rand_nick.egg-info/SOURCES.txt
+rand_nick.egg-info/dependency_links.txt
+rand_nick.egg-info/top_level.txt
