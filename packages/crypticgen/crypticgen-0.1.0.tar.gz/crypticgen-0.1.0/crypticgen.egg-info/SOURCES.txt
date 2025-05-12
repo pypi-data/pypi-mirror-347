@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+crypticgen/__init__.py
+crypticgen/cli.py
+crypticgen/core.py
+crypticgen.egg-info/PKG-INFO
+crypticgen.egg-info/SOURCES.txt
+crypticgen.egg-info/dependency_links.txt
+crypticgen.egg-info/entry_points.txt
+crypticgen.egg-info/requires.txt
+crypticgen.egg-info/top_level.txt
