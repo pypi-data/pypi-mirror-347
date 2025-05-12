@@ -1,0 +1,9 @@
+syda/__init__.py,sha256=WJXhXXrjysyCJ5FxCTWIE1l6OK-OzckSdkeLpcBjHOg,108
+syda/storage.py,sha256=ExLhxCrna08itWXnqhaVi6q3hlczVJEU2bTpn8XlYXc,4335
+syda/structured.py,sha256=xp316RkEjFYdjLY3d7ChKzg7RjO3kY9VIMfYbFKuyyc,7044
+syda/unstructured.py,sha256=sdco8LSZ5_Kruq6VI7xIzdFBsRWyKlW3wTwu8zptL-E,5549
+syda-0.0.1b0.dist-info/licenses/LICENSE,sha256=eCfnj8S3rk0ZkbdNAhcQsoQcNbYsNlPOxXckJZIAKdk,33847
+syda-0.0.1b0.dist-info/METADATA,sha256=KxiI5OrQ3R_sbNhPc9MPaZhFw2egBCp0JbRy2_XhMxc,10510
+syda-0.0.1b0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+syda-0.0.1b0.dist-info/top_level.txt,sha256=Z7Cpyxi4i_BLkHsJ-6lN2bJTtn2iBipCt59ZQUMSQEs,5
+syda-0.0.1b0.dist-info/RECORD,,
