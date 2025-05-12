@@ -1,0 +1,15 @@
+modulitiz_mini/ModuloRsa.py,sha256=JTzuLm4lg1LN_ExNQ9pNz4mRqQP5VYlywfejtVBo9vo,2581
+modulitiz_mini/django/ModuloDjango.py,sha256=oflZF10_XryiahFveb2Mvfulx2MwNsrMdeq6LblvQwk,526
+modulitiz_mini/django/MyMiddleware.py,sha256=IZvRlYzTr5wRDbVxS-KlLiwEBgtE59FRurQXCyTR_vQ,275
+modulitiz_mini/django/settings.py,sha256=N-6pi_D6Qp5qBMKkpuPHHyw_ucEOyuPu9q7f7zTfzT4,3135
+modulitiz_mini/files/pdf/AbstractPdf.py,sha256=JRLeAP8ltO4fV_tC4o-XZGcmtsJYd7KeaOQHeqLzxoI,138
+modulitiz_mini/files/pdf/ReadPdf.py,sha256=il2lZrghOiaZFAss16T-I5q1yF9QwQQdK8jHVpx7asE,751
+modulitiz_mini/files/pdf/WritePdf.py,sha256=pRi6DWMq9mDlxEMihEHSFKsrwcHzc1bAurLdOf2KRWk,302
+modulitiz_mini/rete/ModuloTor.py,sha256=hozFSddJYEd4z9cOxMUpthN4Yk9oXo2qKFK0bocZVBk,1307
+modulitiz_mini/rete/ftp/FtpReturnBean.py,sha256=WJhv-idDa_L8MeTxDkgjz8D8JxOP3jrwoQAWig-1i50,257
+modulitiz_mini/rete/ftp/ModuloFtp.py,sha256=b1C9wX7pffjNFZCRcwZ5Ddw25BI1IpN5Pge6r2tLTL4,8186
+modulitiz_mini-2.6.0.dist-info/LICENSE,sha256=gmuE_3LV2kDZCizi2b9sBBrgQEFi3EFeybDbaTyZ_cc,1084
+modulitiz_mini-2.6.0.dist-info/METADATA,sha256=LkQlnygpwQHsb4ThG_CAttlU3fVJ1q19DirdmUkM8h4,1277
+modulitiz_mini-2.6.0.dist-info/WHEEL,sha256=2aRSX09k7pmd4gPs96VOQ860h0v0t30ka6JGHtpC3BY,94
+modulitiz_mini-2.6.0.dist-info/top_level.txt,sha256=OxUbMOvprrGDegA-38GcCVHtPSP3X-d91EseClu8VN4,15
+modulitiz_mini-2.6.0.dist-info/RECORD,,
