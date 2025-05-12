@@ -1,0 +1,16 @@
+easypptx/__init__.py,sha256=NAD3HA3zPGPeDGfhJZX8XVDcVQlayF49sFvG7UYYIEk,511
+easypptx/chart.py,sha256=NfA1Q8yxPwKnIl7J3KUu4-d6ZrInXPRelLWDEBUs5tE,10144
+easypptx/grid.py,sha256=KDXqH6H_HBLqbYg8NeMTMvz7nuj3zUtRckIF9Z_YUGc,27969
+easypptx/image.py,sha256=AaJrIp_0TmiZFxKg-U5dWhmyMERaJZwKJ3y2rA00Okg,3913
+easypptx/presentation.py,sha256=m0TSCM1ImXr4QoqR823AovJsWVvf-S2zQcEEa-ZjpSs,71603
+easypptx/pyplot.py,sha256=5i_XzJjZLfzzUN73fneSa_MdyK-ye-CGR2qp19PL638,5874
+easypptx/reference_16x9.pptx,sha256=MZ0tOYlqcjfOtkUnjeXk6wH2nxKYFiEYoGUnzkiOHCc,35326
+easypptx/reference_4x3.pptx,sha256=YVPfVNyHa0uIR3AwizmXKomc7ApoWWDoXUg3lyQj4Mg,35323
+easypptx/slide.py,sha256=nV5B6D6ZyCq8BVwNMHIRFMIpEYpYO9Kq8AvGphHbMP8,20706
+easypptx/table.py,sha256=oBN_2_F1G2oQ5q9vY7bymY3RPbGRNGCJ4vddyEPoaX8,5308
+easypptx/template.py,sha256=VRTzaADmObkDkZJ90ozOfSR8wWcbHyF2r9MOqehCgyo,18744
+easypptx/text.py,sha256=se1NZyGV4RLgnHTOYNYG-tVyEmrXcRERsIEzRbAT9xw,8557
+easypptx-0.0.1.dist-info/METADATA,sha256=UZSmPgk70eN_0LotAPnCpSIP_VVHtMphGaCC4KKhWV4,8049
+easypptx-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+easypptx-0.0.1.dist-info/licenses/LICENSE,sha256=im_A74qTWCIkfdzxcIlobAt2JpuIWFgMYY2GOuzOnDw,1066
+easypptx-0.0.1.dist-info/RECORD,,
