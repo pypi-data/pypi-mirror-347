@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+tinyagent_deepsearch.png
+tests/test_custom_model.py
+tests/test_report_saving.py
+tests/test_tinyagent_integration.py
+tinyagent_deepsearch/__init__.py
+tinyagent_deepsearch/core.py
+tinyagent_deepsearch/exceptions.py
+tinyagent_deepsearch.egg-info/PKG-INFO
+tinyagent_deepsearch.egg-info/SOURCES.txt
+tinyagent_deepsearch.egg-info/dependency_links.txt
+tinyagent_deepsearch.egg-info/requires.txt
+tinyagent_deepsearch.egg-info/top_level.txt
