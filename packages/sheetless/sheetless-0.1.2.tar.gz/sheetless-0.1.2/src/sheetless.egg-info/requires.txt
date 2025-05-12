@@ -1,0 +1,21 @@
+click>=8.1.8
+duckdb>=1.2.2
+pandas>=2.2.3
+openpyxl>=3.1.5
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+setuptools-scm
+build
+twine
+wheel
+setuptools
+
+[testing]
+setuptools
+pytest
+pytest-cov
+flake8
+black
