@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: simplejrpc
+Version: 1.0.0
+Summary: simple jsonrpc
+Home-page: https://gitee.com/gmssh_1/simplerpc
+Author: Zack
+Author-email: f1125564921@163.com
+License: MIT
+Keywords: gm,gm-sdk,simplejrpc,gmssh,jsonrpc,jsonrpcserver,jsonrpcclient
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE.txt
+Requires-Dist: jsonrpcclient==4.0.3
+Requires-Dist: jsonrpcserver==5.0.9
+Requires-Dist: loguru==0.7.3
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: WTForms==3.2.1
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
