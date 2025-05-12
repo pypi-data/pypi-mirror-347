@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cf-pipeline"
+version = "0.0.6"
+authors = [
+  { name="Nate Tolbert", email="ntolbertu85@gmail.com" },
+]
+description = "A comprehensive Python API for Competitive Programming sites like Codeforces"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/lifemodder19135/cf-pipeline"
+
+[project.scripts]
+cf-getproblem = "SOURCE.commands.cf_getproblem:getproblem"
+test-cmd = "SOURCE.commands.cf_getproblem:test"
+cf-pipeline = "SOURCE.commands.main:callcfpcommand"
+cf-fetchproblem = "SOURCE.commands.fetch_problem:fetch_problem"
+cf-testproblem = "SOURCE.commands.cf_testproblem:test_solution"
+cf-makefilefmt1 = "SOURCE.commands.cf_testproblem:create_fmt_1_file"
+cf-openproblem = "SOURCE.commands.cf_openproblem:open_problem"
+
+
+[tool.setuptools.packages.find]
+include = [
+  "SOURCE.commands",
+  "SOURCE.modules",
+  "SOURCE.lib"
+]
