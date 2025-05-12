@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: shapesqr
+Version: 0.0.2
+Summary: This is a test task module for shapes square calculation.
+Project-URL: Homepage, https://github.com/DmitriyReztsov/shapesqr
+Project-URL: Issues, https://github.com/DmitriyReztsov/shapesqr/issues
+Author-email: Dmitriy Reztsov <rezcov_d@mail.ru>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Shape Square Calculation Library #
+
+## What is this? ##
+The test task which should calculate square of circle by its radius and triangle by its sides.
+
+## Quick Guide ##
+Set up the library
+
+```
+pip install shapesqr
+```
+
+Then import ShapeFabric from the library and pass into its constructor a tuple, containing one or three integers or floats.
+
+```
+from shapesqr import ShapeFabric
+
+
+circle = ShapeFabric().get_shape((1.0,))
+
+triangle = ShapeFabric().get_shape((4, 3, 5))
+```
+
+
+----------
+
+
+### Using ###
+
+
+Using the library is as simple and convenient as possible:
+
+```
+    from shapesqr import ShapeFabric
+
+
+    circle = ShapeFabric().get_shape((1.0,))
+    circle.get_shape_type()  # "circle"
+    
+    circle.calculate_square()
+    status, result = shape.get_calculated_result()  # 1 - for OK, -1 - for NOK, 0 - default
+```
+
+
+----------
+
+
+## Developer ##
+My site: [link](https://github.com/DmitriyReztsov) 

@@ -1,0 +1,9 @@
+shapesqr/__init__.py,sha256=LTxR3qFIQT-AnlKJWJ19ZmcwJG_DHlOXNEvGycK2LT4,110
+shapesqr/abc_shapesqr.py,sha256=EvETD5xLfHWLru-gPLV8kF1bGZjMsbMhbDhE_G3F3-c,2044
+shapesqr/circle_shape.py,sha256=SqcKAbt4Z9d_fqXGfkQuf5PGMGczUjaDSEKhQUnP-NY,288
+shapesqr/shape_fabric.py,sha256=_aw37beodWCEEbBFVN6k5Q6gRQoC_1rrXhiy1K046_I,676
+shapesqr/triangle_shape.py,sha256=lSWecjQ9OXWqJAYH5A4NOubFPDGSshW4mHQhoPVrFYE,628
+shapesqr-0.0.2.dist-info/METADATA,sha256=t6aFqyLwgLOwFTe3enl5-yTZC3kVFitd45QsLTBLTsU,1421
+shapesqr-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+shapesqr-0.0.2.dist-info/licenses/LICENSE,sha256=9LcwOCSKNLbX16kx_-RR_T0CWr6Scal2xXeCWHLjHqw,1072
+shapesqr-0.0.2.dist-info/RECORD,,
