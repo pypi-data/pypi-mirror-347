@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pydirdbjson/__init__.py
+pydirdbjson/main.py
+pydirdbjson.egg-info/PKG-INFO
+pydirdbjson.egg-info/SOURCES.txt
+pydirdbjson.egg-info/dependency_links.txt
+pydirdbjson.egg-info/top_level.txt
+tests/test_main.py
