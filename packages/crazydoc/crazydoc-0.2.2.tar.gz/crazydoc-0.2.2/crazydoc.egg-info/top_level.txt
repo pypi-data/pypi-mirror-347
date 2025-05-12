@@ -1,0 +1,3 @@
+crazydoc
+dist
+images
