@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/snak.py
+src/snak.egg-info/PKG-INFO
+src/snak.egg-info/SOURCES.txt
+src/snak.egg-info/dependency_links.txt
+src/snak.egg-info/entry_points.txt
+src/snak.egg-info/top_level.txt
+tests/test_snak_config.py
+tests/test_snak_env.py
+tests/test_snak_versions.py
+tests/test_table.py
