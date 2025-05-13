@@ -1,0 +1,13 @@
+prefix=/var/folders/w5/_8wgjw3j5cg6mgrth3s2kg9m0000gn/T/tmpkpr36_8h/wheel/platlib
+exec_prefix=${prefix}
+includedir=${prefix}/include/geogram1
+libdir=${exec_prefix}/lib
+
+Name: geogram
+Description: fast, simple and easy-to-use primitives for geometric programming
+Version: 1.9.3
+URL: http://alice.loria.fr/software/geogram
+Requires.private: 
+Libs: -L${libdir} -Wl,-rpath ${libdir} -lgeogram
+Libs.private: 
+Cflags: -I${includedir}
