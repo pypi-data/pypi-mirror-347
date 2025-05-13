@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+example/__init__.py
+example/example.py
+ezdir/__init__.py
+ezdir/_version.py
+ezdir/changer.py
+ezdir.egg-info/PKG-INFO
+ezdir.egg-info/SOURCES.txt
+ezdir.egg-info/dependency_links.txt
+ezdir.egg-info/top_level.txt
+tests/__init__.py
+tests/test_changer.py
