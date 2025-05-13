@@ -1,0 +1,2 @@
+[console_scripts]
+csvbro = csvbro.app.main:main

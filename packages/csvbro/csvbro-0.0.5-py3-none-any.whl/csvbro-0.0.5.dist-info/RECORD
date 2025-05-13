@@ -1,0 +1,14 @@
+csvbro/app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csvbro/app/command_parser.py,sha256=gyGWbgQeUW3KJYbSOultAv_bZ50iYgl3y4fJhoCvwfs,14116
+csvbro/app/csv_loader.py,sha256=nOyGNxKmSFjlBbc97VyDEXdfQLgcrbvvNon8972tBxE,1255
+csvbro/app/dataframe_viewer.py,sha256=9E1i5XHhPD_4tpzNg1Ne-TVCjU7INUHdnQQZTYlow_s,2302
+csvbro/app/json_exporter.py,sha256=RUUKuqYETz3BecgnasI-rDrLqhIhvvH5LAm_MvhRqOg,1974
+csvbro/app/main.py,sha256=-AVyvpf2x46pw7KygfjcBeApDvEWmpRUXxl8xg5gqX4,1195
+csvbro/app/pivot_table_creator.py,sha256=ruWFODO0L0n6vRSTXBKpseBAzf57mFJugF7g5Prgvws,18594
+csvbro/app/ui.py,sha256=HmZlv4kG20rKzFRtEYtWFV-qBR1wCNtGi6wRXcBXRjY,3062
+csvbro/app/where_clause_handler.py,sha256=1W8XabVSosabENBM9roJ6UXCbbmu3zQVu7G4UGZQt5M,5982
+csvbro-0.0.5.dist-info/METADATA,sha256=__whJHq4x6um47WWlRCagTm5NSghhZ2OSCzJ1sQX2go,3503
+csvbro-0.0.5.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+csvbro-0.0.5.dist-info/entry_points.txt,sha256=qXdzjGHY5csv6bMx2-1V7zXMhibpXrj50VGbvg5__WU,48
+csvbro-0.0.5.dist-info/top_level.txt,sha256=NFqgqA92Ya9oA4cnXnB81CZA1j1xORHkRnW6g7wSiLw,7
+csvbro-0.0.5.dist-info/RECORD,,
