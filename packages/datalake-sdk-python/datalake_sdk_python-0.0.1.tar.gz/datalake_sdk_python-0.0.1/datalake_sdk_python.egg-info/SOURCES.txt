@@ -1,0 +1,6 @@
+setup.py
+datalake-sdk-python/__init__.py
+datalake_sdk_python.egg-info/PKG-INFO
+datalake_sdk_python.egg-info/SOURCES.txt
+datalake_sdk_python.egg-info/dependency_links.txt
+datalake_sdk_python.egg-info/top_level.txt
