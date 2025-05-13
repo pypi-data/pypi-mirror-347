@@ -1,0 +1,11 @@
+text_prettifier/__init__.py,sha256=EeJkMgiJlEwH4A68C9C4_wn2kU13pUgjBLCMurP8VEQ,518
+text_prettifier/_version.py,sha256=vLhXEI_obe7JXZueQXvmqOSW0Q7MDRO0Y7REgEi_pXE,270
+text_prettifier/text_prettifier.py,sha256=Enjr7gDBDaLYL3ctkceJ_ZoEZdUgscjhkIbff-NJDe0,24627
+text_prettifier/version.py,sha256=8qmy0K5iaLyeSduTouZXN8r2h3Ih5TzvRTDxnSprfOM,344
+text_prettifier/utils/__init__.py,sha256=T5pOnIipqj7mUrexaQfIJU5lyb-JZQgCyeMe6QtSFVc,178
+text_prettifier/utils/patterns.py,sha256=ZdfJIpeI5zrc8XsXIQS0V3T-_94e28a8YbY38PEX78s,6558
+text_prettifier-2.0.1.dist-info/licenses/LICENSE,sha256=mW0I8j09InDD50fOb_j1zq7hBnOCLc_GIjdiVMUnrxY,1069
+text_prettifier-2.0.1.dist-info/METADATA,sha256=MIazqzsuizvvWqUX_2WmhvPHzyKtpiG-JBySN-C6h24,8104
+text_prettifier-2.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+text_prettifier-2.0.1.dist-info/top_level.txt,sha256=_hjZLndtMCTONZOAUxMD6m-0xsXy1D2sPBhICLwV7-c,16
+text_prettifier-2.0.1.dist-info/RECORD,,
