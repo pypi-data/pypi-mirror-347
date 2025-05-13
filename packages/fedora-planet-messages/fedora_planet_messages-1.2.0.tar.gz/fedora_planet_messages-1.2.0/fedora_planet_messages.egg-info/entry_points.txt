@@ -1,0 +1,3 @@
+[fedora.messages]
+planet.build = fedora_planet_messages:Build
+planet.post.new = fedora_planet_messages:PostNew
