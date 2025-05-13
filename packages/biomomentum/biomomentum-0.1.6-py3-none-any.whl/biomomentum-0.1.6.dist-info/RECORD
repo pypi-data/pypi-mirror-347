@@ -1,0 +1,13 @@
+biomomentum/__init__.py,sha256=i3hBS57xL31ud1BqdIjBcDsmNtWso2YUKXm2bqowkCM,156
+biomomentum/analysis_dynamic.py,sha256=zOutK5w0Rhdgod3Ejb9dVt_TzUOh3DF8eJbVZgO3wlI,9936
+biomomentum/analysis_static.py,sha256=q0Z2Nbn-9IdG7A1BCBX7YT5UoGlRKJPqDVMEwkKOVXY,14743
+biomomentum/interpolation.py,sha256=1ZwXBs0gvlGhEDuZB8s_3l5N6OAvuylVrLPPOOvu1-4,4597
+biomomentum/ios.py,sha256=9oQC3wab3IuaPmKyoWELBqBOAODjvMae9rbVIjbuOtc,9607
+biomomentum/stats.py,sha256=Eme76aiT2VKkIttuvErQtCBxKR4OEoz1FHaO6CNCcRg,1083
+biomomentum/utils.py,sha256=edB0ZYjTup8_N4ECr2-6VxEDU9veTazPRhR6oeQ8lYA,14372
+biomomentum/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biomomentum/data/sveff_tab.mat,sha256=5D0uv_HCnoOGLrsb3OSzXsWphBlPLYwOzNmFB85fcyA,17272
+biomomentum-0.1.6.dist-info/METADATA,sha256=VKxPz1NFiRNdOf2x6TChtMFIw69ZLlcr1K2OxXKsSqk,14680
+biomomentum-0.1.6.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+biomomentum-0.1.6.dist-info/top_level.txt,sha256=Paax7Svuu9bjlOcSG2zqCyX7quKP5F_SR-Q3ydQNBNk,12
+biomomentum-0.1.6.dist-info/RECORD,,
