@@ -1,0 +1,7 @@
+case,phase,values,mt
+A,Baseline,2,1
+A,Baseline,3,2
+A,Intervention,5,3
+B,Baseline,1,1
+B,Baseline,4,2
+B,Intervention,6,3
