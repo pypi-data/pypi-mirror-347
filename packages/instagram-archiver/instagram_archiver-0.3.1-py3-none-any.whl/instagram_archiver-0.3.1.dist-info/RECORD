@@ -1,0 +1,15 @@
+instagram_archiver/__init__.py,sha256=FtYFsiDxC03kcF2BoC_fCDdSIV_Q81cMBQIeYhA9hwk,270
+instagram_archiver/__main__.py,sha256=oQ6s6zvZTBiEOgt-qep3bDY9ayxSanQr7KHzr6ENK0o,115
+instagram_archiver/client.py,sha256=xde2O-ADvyFw5q7bZxbX9R2ae02ToJUElw-IKSbQhss,11091
+instagram_archiver/constants.py,sha256=NJ8QlQZviY3dwwrIONThK_G9VcvAzOQM6Yg-hSyaj9A,1459
+instagram_archiver/main.py,sha256=5blHCN2PSNGdTlIvXPyWr5vbgM6fW1Wn9nbzJUtBS2Y,4173
+instagram_archiver/profile_scraper.py,sha256=BGnJZD3rF2e4aHpqSvG7UBoAiDjTyrpcYKSzsDgHO3M,7988
+instagram_archiver/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+instagram_archiver/saved_scraper.py,sha256=PyrRCQ00x65nyiIUvmMw5-paJ6_aVrl5xmcTrHi5tHo,2769
+instagram_archiver/typing.py,sha256=svEWoYwGXhkbdISw1r6tuOzo_5TwrhQTn3q0VxzBIlY,4359
+instagram_archiver/utils.py,sha256=l6f0W_brZhVPOjlKwoFYYum7ICyHJXpboTU7ANIQSPI,3842
+instagram_archiver-0.3.1.dist-info/LICENSE.txt,sha256=cDLmbhzFwEUz5FL_OnA6Jp9zdz80330J6YyEq-00yNQ,1093
+instagram_archiver-0.3.1.dist-info/METADATA,sha256=qoIzF1FkbuqwVB9npS6JE7xS5o-fVdVSf9k4XqvDISs,5925
+instagram_archiver-0.3.1.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+instagram_archiver-0.3.1.dist-info/entry_points.txt,sha256=kNXd0Sy6896DEBRcx2mVYiaE-OR9-XR56MpWuaNa49g,128
+instagram_archiver-0.3.1.dist-info/RECORD,,
