@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/loremipsum/__init__.py
+src/loremipsum/generator.py
+src/loremipsum_pro.egg-info/PKG-INFO
+src/loremipsum_pro.egg-info/SOURCES.txt
+src/loremipsum_pro.egg-info/dependency_links.txt
+src/loremipsum_pro.egg-info/requires.txt
+src/loremipsum_pro.egg-info/top_level.txt
+test/test_edge_cases.py
+test/test_integration.py
+test/test_lorem.py
+test/test_loremipsum.py
+test/test_performance.py

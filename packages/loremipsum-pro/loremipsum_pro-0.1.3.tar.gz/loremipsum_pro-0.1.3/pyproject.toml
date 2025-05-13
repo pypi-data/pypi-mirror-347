@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loremipsum-pro"
+version = "0.1.3"
+description = "A lightweight Python library for generating Lorem Ipsum placeholder text with zero dependencies"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Lorem Ipsum Generator"}
+]
+keywords = ["lorem", "ipsum", "placeholder", "text", "generator"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/bearboy80/loremipsum-pro"
+"Bug Tracker" = "https://github.com/bearboy80/loremipsum-pro/issues"
+
+# --- Setuptools specific configuration (for src-layout) ---
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "twine",
+]
