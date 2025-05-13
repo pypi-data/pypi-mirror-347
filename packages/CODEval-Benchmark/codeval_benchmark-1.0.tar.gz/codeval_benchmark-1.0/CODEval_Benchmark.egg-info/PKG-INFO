@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: CODEval-Benchmark
+Version: 1.0
+Requires-Dist: langchain
+Requires-Dist: langchain-core
+Requires-Dist: langchain-ollama
+Requires-Dist: langchain-text-splitters
+Requires-Dist: langsmith
+Dynamic: requires-dist
