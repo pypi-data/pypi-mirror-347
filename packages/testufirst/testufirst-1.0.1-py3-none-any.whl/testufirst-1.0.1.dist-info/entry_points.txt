@@ -1,0 +1,2 @@
+[console_scripts]
+testufirst = testufirst.main:main
