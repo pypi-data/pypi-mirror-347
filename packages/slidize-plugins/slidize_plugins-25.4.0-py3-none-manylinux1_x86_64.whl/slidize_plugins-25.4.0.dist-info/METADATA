@@ -1,0 +1,192 @@
+Metadata-Version: 2.1
+Name: slidize-plugins
+Version: 25.4.0
+Summary: Slidize.Plugins is a lightweight Python library for managing presentations and converting them to PowerPoint, OpenDocument, and image formats.
+Home-page: https://docs.slidize.com/
+Author: Slidize
+License: https://about.smallize.com/legal/eula/
+Project-URL: Docs, https://docs.slidize.com/
+Project-URL: Demos, https://github.com/slidize/slidize-plugins-python
+Project-URL: API Reference, https://docs.slidize.com/python/api
+Project-URL: Free Support, https://smallize.forumize.com/c/slidize/7
+Project-URL: Temporary License, https://www.slidize.com/docs/temp-license.html
+Keywords: ppt,pptx,potx,pot,pps,ppsx,odt,import,export,convert,edit,pdf,xps,swf,svg,html,html5,powerpoint,presentation
+Platform: linux_x86_64
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Other/Proprietary License
+Classifier: License :: Free To Use But Restricted
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Office Suites
+Classifier: Topic :: Multimedia :: Graphics :: Presentation
+Requires-Python: >=3.5,<3.14
+Description-Content-Type: text/markdown
+
+# Slidize.Plugins for Python Library
+
+[Product Page](https://slidize.com/) | [Docs](https://docs.slidize.com/docs/python/Getting_Started.html) | [API Reference](https://docs.slidize.com/python/api/) | [Examples](https://github.com/slidize/slidize-plugins-python) | [Free Support](https://smallize.forumize.com/c/slidize/7) | [Temporary License](https://www.slidize.com/docs/temp-license.html)
+
+Slidize.Plugins is a lightweight Python library for managing presentations and converting them to PowerPoint, OpenDocument, and image formats. With its unique licensing system, you can plug in and purchase only the functionality you need. It supports advanced image processing, customizable presentation formats, merging presentations, and controlling notes, comments, and hidden slides. The library also offers PDF compliance control and multi-page TIFF exports, making it ideal for batch conversions and complex workflows.
+
+## Supported Formats
+
+Slidize.Plugins supports a wide variety of output formats for flexibility in handling presentation files:
+- **PowerPoint Formats:** PPT, PPTX, PPTM, PPS, PPSX, PPSM, POT, POTX, POTM
+- **OpenDocument Formats:** ODP, FODP, OTP
+- **Image Formats:** PNG, JPEG, TIFF, SVG
+- **Document Formats:** PDF, HTML, XML
+
+## Key Features
+
+- Convert presentations to a wide range of formats including PDF, PNG, JPEG, TIFF, SVG, HTML.
+- Convert presentations to other presentation formats like PPT, PPTX, POT, POTX, PPS, PPSX, ODP, FODP.
+- Merge multiple presentations into a single file.
+- Customize handout layouts, notes, and comments for export.
+- Advanced image processing with pixel format, resolution, and compression control.
+- Support for both PowerPoint 97-2003 and Open XML formats.
+- Support OpenDocument formats.
+
+## License Management
+
+The license management system in Slidize.Plugins is designed to give you complete control over the features and tools you acquire. Instead of being forced into purchasing an entire package, you can choose only the functionalities that are directly relevant to your tasks, allowing for a more personalized and cost-efficient experience. This system empowers you to customize your usage based on your specific needs, ensuring that you don’t pay for features you won’t use. Moreover, as your needs evolve, you have the flexibility to expand your toolkit by purchasing additional functionalities, making it a scalable solution. Whether you are working on small projects or managing large-scale tasks, you can adjust your access to match the exact demands of your workflow. By offering this targeted approach, the License Management system helps to eliminate waste, streamline operations, and provide a tailored set of tools that enhances your productivity without unnecessary expenses.
+
+The following code example shows how to enable licenses to plug in the Slidize.Plugins functionality for converting presentations to PDF documents and merging PowerPoint and OpenDocument presentations.
+
+```python
+import slidize
+
+license_file_paths = [
+    "MyLicenses/PresentationToPDFConverter.lic",
+    "MyLicenses/PresentationMerger.lic"
+]
+
+for file_path in license_file_paths:
+    slidize.License.plug_license(file_path)
+```
+
+## Convert PowerPoint to PDF
+
+Converting a PowerPoint presentation to PDF is a common requirement for many applications, whether for distributing static copies of slides or archiving presentations. With Slidize.Plugins, you can convert any presentation to PDF while maintaining full control over the export options, such as embedding fonts, adjusting compliance levels (e.g., PDF/A), and controlling hidden slides and notes.
+
+```python
+import slidize
+
+options = slidize.PdfConverterOptions()
+options.compliance_level = slidize.PdfComplianceLevel.PDF_A1B
+options.embed_full_fonts = True
+
+slidize.PresentationToPdfConverter.process("presentation.pptx", "output.pdf", options)
+```
+
+## Convert PowerPoint to PNG
+
+Exporting slides as high-quality PNG images is useful for creating slide previews, embedding them in reports, or sharing individual slide images. Slidize.Plugins allows you to control the resolution, size, and scale of the images produced. This ensures that your output fits the exact dimensions and quality required for your project.
+
+```python
+import slidize
+
+options = slidize.ImageConverterOptions()
+options.image_width = 960
+options.image_height = 720
+
+slidize.PresentationToPngConverter.process("presentation.pptx", "output.png", options);
+```
+
+## Convert PowerPoint to HTML
+
+Converting presentations to HTML enables embedding slides in web pages, providing easy access and sharing for presentations in a browser-friendly format. The Slidize.Plugins library allows customization of the HTML export, such as scaling images, and even handling hidden slides. This is ideal for users who need to distribute presentations online while maintaining slide quality and structure.
+
+```python
+import slidize
+
+options = slidize.HtmlConverterOptions()
+options.pictures_compression = slidize.PicturesCompressionLevel.DPI330
+options.slide_image_scale = 2
+
+slidize.PresentationToHtmlConverter.process("presentation.pptx", "output.html", options);
+```
+
+## Convert PowerPoint to Other Presentation Formats
+
+In addition to exporting to image and document formats, Slidize.Plugins supports converting PowerPoint presentations to a variety of presentation file formats, such as PPTX, PPSX, ODP, and more. This is especially useful for users who need to transition presentations between different platforms or software environments. The ability to convert to OpenDocument Presentation (ODP) format ensures compatibility with open-source tools, while converting to macro-enabled formats like PPTM retains functionality for presentations with embedded macros.
+
+```python
+import slidize
+
+# Convert to PPTX
+slidize.PresentationConverter.process("presentation.ppt", "output.pptx", slidize.ConvertFormat.PPTX);
+
+// Convert to ODP
+slidize.PresentationConverter.process("presentation.pptx", "output.odp", slidize.ConvertFormat.ODP);
+```
+
+## Merge PowerPoint Files
+
+Merging multiple PowerPoint presentations into a single file is a valuable feature for users managing large presentations or combining content from different sources. The Slidize.Plugins package provides an easy way to merge files with minimal effort. This functionality supports combining PowerPoint presentations in both the legacy and modern formats.
+
+```python
+import slidize
+
+presentations = ["presentation1.pptx", "presentation2.pptx"]
+slidize.PresentationMerger.process(presentations, "merged.pptx");
+```
+
+## Advanced Export Options
+
+The library offers extensive control over how presentations are exported. You can customize the output with advanced options, such as setting the image scale, specifying compression levels for images, and choosing how notes and comments are displayed in the final output. Here's an example of exporting a presentation with custom options:
+
+```python
+import slidize
+
+slides_view_options = slidize.NotesCommentsViewOptions()
+slides_view_options.notes_position = slidize.NotesPositions.BOTTOM_FULL
+slides_view_options.comments_position = slidize.CommentsPositions.RIGHT
+options = slidize.PdfConverterOptions()
+options.compliance_level = slidize.PdfComplianceLevel.PDF_A1B
+options.slides_view_options = slides_view_options
+
+slidize.PresentationToPdfConverter.process("presentation.pptx", "output_with_notes.pdf", options);
+```
+
+## Extract Raw Text from Presentation
+
+```python
+import slidize
+
+raw_slides_text = slidize.PresentationTextExtractor.process("presentation.pptx", slidize.TextExtractionMode.UNARRANGED)
+for slide_text in raw_slides_text:
+    # Print the text extracted from the slide
+    print(slide_text.text)
+
+	# Print the text extracted from the master of the slide
+    print(slide_text.master_text)
+
+    # Print the text extracted from the layout of the slide
+    print(slide_text.layout_text)
+
+    # Print the notes text extracted from the slide
+    print(slide_text.notes_text)
+
+    # Print the comments text extracted from the slide
+    print(slide_text.comments_text)
+```
+
+[Product Page](https://slidize.com/) | [Docs](https://docs.slidize.com/docs/python/Getting_Started.html) | [API Reference](https://docs.slidize.com/python/api/) | [Examples](https://github.com/slidize/slidize-plugins-python) | [Free Support](https://smallize.forumize.com/c/slidize/7) | [Temporary License](https://www.slidize.com/docs/temp-license.html)
