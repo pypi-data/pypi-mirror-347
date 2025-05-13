@@ -1,0 +1,2 @@
+[console_scripts]
+tpms-monitor = tpms_lib.example:main

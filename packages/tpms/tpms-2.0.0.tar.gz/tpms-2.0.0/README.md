@@ -1,0 +1,309 @@
+# TPMS
+
+Tire Pressure Monitoring System Python Library
+
+## Overview
+
+The TPMS (Tire Pressure Monitoring System) Python library is designed to monitor tire pressure and temperature for vehicles equipped with generic (AliExpress) TPMS sensors. This library has been tested on the TY06 hardware type but should also work with TY05.
+
+Pairing 'should' work but seems a bit iffy currently.
+ 
+V2 of this library has breaking changes and is not directly compatible with V1.
+
+
+## Installation
+
+Install the TPMS library using pip:
+
+```bash
+pip install tpms-python
+```
+
+## Usage
+
+### Basic Usage
+
+```python
+from tpms_python.tpms_lib import TPMSDevice, TirePosition
+
+# Create TPMS device
+tpms = TPMSDevice()
+
+# Find available devices
+available_ports = tpms.find_device()
+if available_ports:
+    # Connect to the first available port
+    tpms.connect(available_ports[0])
+    
+    # Query sensor IDs
+    tpms.query_sensor_ids()
+    
+    # Get tire states
+    tire_states = tpms.get_all_tire_states()
+    for position, state in tire_states.items():
+        print(f"{position.name}: {state}")
+    
+    # Disconnect when done
+    tpms.disconnect()
+```
+
+### Temperature and Pressure Conversion
+
+```python
+from tpms_python.tpms_lib import TPMSDevice, TirePosition
+
+# Create TPMS device
+tpms = TPMSDevice()
+
+# Connect to device
+tpms.connect()
+
+# Get tire states
+tire_states = tpms.get_all_tire_states()
+
+# Convert and display values
+for position, state in tire_states.items():
+    # Convert pressure from kPa to PSI
+    pressure_psi = state.air_pressure * 0.145038
+    
+    # Convert temperature from Celsius to Fahrenheit
+    temp_f = (state.temperature * 9/5) + 32
+    
+    print(f"{position.name}:")
+    print(f"  Pressure: {pressure_psi:.1f} PSI")
+    print(f"  Temperature: {temp_f:.1f}°F")
+    
+    # Check status
+    status = []
+    if state.no_signal:
+        status.append("NO SIGNAL")
+    if state.is_leaking:
+        status.append("LEAKAGE")
+    if state.is_low_power:
+        status.append("LOW BATTERY")
+    
+    print(f"  Status: {', '.join(status) if status else 'Normal'}")
+    print()
+
+# Disconnect when done
+tpms.disconnect()
+```
+
+### Continuous Monitoring with Callback
+
+```python
+from tpms_python.tpms_lib import TPMSDevice, TirePosition, TireState
+import time
+
+def on_tire_state_update(position, state):
+    """Callback for tire state updates"""
+    # Convert pressure from kPa to PSI
+    pressure_psi = state.air_pressure * 0.145038
+    
+    # Convert temperature from Celsius to Fahrenheit
+    temp_f = (state.temperature * 9/5) + 32
+    
+    print(f"Update for {position.name}:")
+    print(f"  Pressure: {pressure_psi:.1f} PSI")
+    print(f"  Temperature: {temp_f:.1f}°F")
+    
+    # Check status
+    status = []
+    if state.no_signal:
+        status.append("NO SIGNAL")
+    if state.is_leaking:
+        status.append("LEAKAGE")
+    if state.is_low_power:
+        status.append("LOW BATTERY")
+    
+    print(f"  Status: {', '.join(status) if status else 'Normal'}")
+    print()
+
+# Create TPMS device
+tpms = TPMSDevice()
+
+# Register callback
+tpms.register_tire_state_callback(on_tire_state_update)
+
+# Connect to device
+tpms.connect()
+
+try:
+    # Run for 60 seconds
+    print("Monitoring for 60 seconds...")
+    time.sleep(60)
+except KeyboardInterrupt:
+    print("Monitoring stopped by user")
+finally:
+    # Disconnect when done
+    tpms.disconnect()
+```
+
+## TL;DR
+
+```bash
+pip install tpms-python
+```
+
+```python
+from tpms_python.tpms_lib import TPMSDevice
+
+# Create and connect to TPMS device
+tpms = TPMSDevice()
+tpms.connect()
+
+# Get tire states
+tire_states = tpms.get_all_tire_states()
+
+# Display with unit conversion
+for position, state in tire_states.items():
+    # Convert to PSI and Fahrenheit
+    psi = state.air_pressure * 0.145038
+    temp_f = (state.temperature * 9/5) + 32
+    
+    print(f"{position.name}: {psi:.1f} PSI, {temp_f:.1f}°F")
+    
+    # Check if any alerts
+    if state.no_signal or state.is_leaking or state.is_low_power:
+        print("  ALERT: Check tire!")
+
+# Disconnect when done
+tpms.disconnect()
+```
+
+### Pairing Sensors (Sem-functional)
+
+To pair a new sensor with a specific tire position:
+
+```python
+from tpms_python.tpms_lib import TPMSDevice, TirePosition
+import time
+
+# Create and connect to TPMS device
+tpms = TPMSDevice()
+tpms.connect()
+
+# Define a callback to be notified when pairing is complete
+def on_pairing_complete(position, tire_id):
+    print(f"Successfully paired sensor with ID {tire_id} to {position.name}")
+
+# Register the callback
+tpms.register_pairing_callback(on_pairing_complete)
+
+# Start pairing mode for the front left tire
+print("Starting pairing mode for front left tire...")
+print("Please activate the sensor (add/release air or move the tire)...")
+tpms.pair_sensor(TirePosition.FRONT_LEFT)
+
+# Wait for pairing to complete (or timeout)
+time.sleep(30)  # Wait for 30 seconds
+
+# Stop pairing mode
+tpms.stop_pairing()
+print("Pairing mode stopped")
+
+# Disconnect when done
+tpms.disconnect()
+```
+
+### Exchanging Tire Positions
+
+To exchange two tire positions (e.g., after rotating tires):
+
+```python
+from tpms_python.tpms_lib import TPMSDevice, TirePosition
+
+# Create and connect to TPMS device
+tpms = TPMSDevice()
+tpms.connect()
+
+# Define a callback to be notified when exchange is complete
+def on_exchange_complete(position1, position2):
+    print(f"Successfully exchanged {position1.name} with {position2.name}")
+
+# Register the callback
+tpms.register_exchange_callback(on_exchange_complete)
+
+# Exchange front tires
+print("Exchanging front left and front right tires...")
+tpms.exchange_tires(TirePosition.FRONT_LEFT, TirePosition.FRONT_RIGHT)
+
+# Disconnect when done
+tpms.disconnect()
+```
+
+### Resetting the Device (Clearing All Paired Sensors)
+
+To reset the device and clear all paired sensors:
+
+```python
+from tpms_python.tpms_lib import TPMSDevice
+
+# Create and connect to TPMS device
+tpms = TPMSDevice()
+tpms.connect()
+
+# Reset the device (clear all paired sensors)
+tpms.reset_device()
+print("Device has been reset. All paired sensors have been cleared.")
+
+# Disconnect when done
+tpms.disconnect()
+```
+
+## Example Application
+
+An example application is included in `example.py`. To run it:
+
+```bash
+python -m tpms_python.example
+```
+
+Or after installation:
+
+```bash
+tpms-monitor
+```
+
+The example application provides a menu-driven interface for:
+- Showing current tire states
+- Querying sensor IDs
+- Pairing sensors
+- Exchanging tire positions
+- Resetting the device
+- Toggling debug logging
+
+## Debugging
+
+To enable debug logging:
+
+```python
+import logging
+logging.getLogger("tpms_python.tpms_lib").setLevel(logging.DEBUG)
+```
+
+## Protocol Details
+
+The library implements the TPMS protocol based on reverse engineering of the Android app. The protocol uses a simple frame structure:
+
+```
+[0x55, 0xAA, length, command, data..., checksum]
+```
+
+Where:
+- 0x55, 0xAA: Header bytes
+- length: Length of the frame (command + data + checksum)
+- command: Command code
+- data: Command-specific data
+- checksum: XOR of all previous bytes
+
+## TODO
+
+- Complete pairing functions
+- Add helper functions for unit conversion
+- Improve error handling and recovery
+- Add more documentation
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
