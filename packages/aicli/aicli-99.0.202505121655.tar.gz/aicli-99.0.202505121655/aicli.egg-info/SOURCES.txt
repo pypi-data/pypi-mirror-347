@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+aicli.egg-info/PKG-INFO
+aicli.egg-info/SOURCES.txt
+aicli.egg-info/dependency_links.txt
+aicli.egg-info/entry_points.txt
+aicli.egg-info/requires.txt
+aicli.egg-info/top_level.txt
+ailib/common/__init__.py
+ailib/common/registries.conf.templ
+ailib/kfish/__init__.py
