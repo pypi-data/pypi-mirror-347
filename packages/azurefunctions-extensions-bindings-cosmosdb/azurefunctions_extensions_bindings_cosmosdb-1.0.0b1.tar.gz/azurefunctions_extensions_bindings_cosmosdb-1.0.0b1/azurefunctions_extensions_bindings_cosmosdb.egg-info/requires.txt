@@ -1,0 +1,12 @@
+azurefunctions-extensions-base
+azure-cosmos~=4.9.0
+azure-identity~=1.19.0
+
+[dev]
+pytest
+pytest-cov
+coverage
+pytest-instafail
+pre-commit
+mypy
+flake8
