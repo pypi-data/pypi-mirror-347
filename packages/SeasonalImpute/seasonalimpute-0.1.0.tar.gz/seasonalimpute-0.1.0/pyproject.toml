@@ -1,0 +1,26 @@
+[project]
+name = "SeasonalImpute"
+version = "0.1.0"
+description = "A Python package for imputing missing values in time series data using seasonal weighted averages."
+readme = "README.md"
+authors = [{ name = "Hanif Kia", email = "kia.hanif@gmail.com" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.20",
+    "gluonts>=0.12",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/hanifkia/SeasonalImpute"
+Repository = "https://github.com/hanifkia/SeasonalImpute.git"
+Issues = "https://github.com/hanifkia/SeasonalImpute/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
