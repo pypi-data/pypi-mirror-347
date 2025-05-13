@@ -1,0 +1,73 @@
+[project]
+name = "metapensiero.deform.semantic_ui"
+version = "1.0"
+description = "Replace standard Deform widgets with Semantic-UI equivalents"
+readme = "README.rst"
+authors = [
+    { name = "Lele Gaifax", email = "lele@metapensiero.it" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "chameleon",
+    "colander",
+    "deform",
+]
+
+[project.license]
+text = "GPL-3.0-or-later"
+
+[project.optional-dependencies]
+dev = [
+    "readme_renderer",
+    "twine",
+]
+
+[project.urls]
+Source = "https://gitlab.com/metapensiero/metapensiero.deform.semantic_ui.git"
+Changelog = "https://gitlab.com/metapensiero/metapensiero.deform.semantic_ui.git/-/blob/master/CHANGES.rst"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.build]
+package-dir = "src"
+includes = [
+    "src/metapensiero",
+]
+source-includes = [
+    "*.nix",
+    "*.rst",
+    "Justfile",
+    "**/*.pt",
+]
+
+[tool.bumpversion]
+current_version = "1.0"
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)"
+serialize = [
+    "{major}.{minor}",
+]
+allow_dirty = false
+commit = false
+ignore_missing_files = false
+ignore_missing_version = false
+regex = false
+sign_tags = false
+tag = false
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = "version = \"{current_version}\""
+replace = "version = \"{new_version}\""
