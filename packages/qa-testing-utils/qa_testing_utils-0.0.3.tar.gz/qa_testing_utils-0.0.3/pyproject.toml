@@ -1,0 +1,36 @@
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "scm"
+write_to = "qa_testing_utils/__init__.py"
+write_template = "__version__ = '{}'"
+fallback_version = "0.0.0"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "qa-testing-utils"
+dynamic = []
+description = "QA testing utilities"
+authors = [
+    { name = "Adrian Herscu", email = "adrian.herscu@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "PyHamcrest",
+    "pyfunctional",
+    "ppretty",
+    "allure-pytest",
+    "more-itertools",
+    "returns",
+]
+version = "0.0.3"
+
+[project.license]
+text = "Apache-2.0"
