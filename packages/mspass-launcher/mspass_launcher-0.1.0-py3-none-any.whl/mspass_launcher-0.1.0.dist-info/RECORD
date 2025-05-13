@@ -1,0 +1,15 @@
+mspass_launcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mspass_launcher/desktop.py,sha256=_vN_chOGyypH6GBA0XEL5K-_zeHCcxvcd2GjI0nR4Uw,41896
+mspass_launcher/hpc.py,sha256=L4dLHNnRlt65xwKzSDBwgfFjVOIa9u_SICWuXR7ug-g,30954
+mspass_launcher/util.py,sha256=1RRc8Kk8vmXledDH3rvIEz0JPf9pJD5LJRAzqcEdfXE,4279
+mspass_launcher/data/yaml/DesktopCluster.yaml,sha256=uvpO1K3nRORioTNcmpJUd-rEL8uwi3MYVTGILihv3FU,1451
+mspass_launcher/data/yaml/HPCClusterLauncher.yaml,sha256=i0nmObAcH34VmS3sXb8LLz8KQKJtSIWtMvmU8-zkoVo,1708
+mspass_launcher/data/yaml/MsPASSDesktopGUI.yaml,sha256=WYmThzv2Mt0bICAxuXzmQjyQj7710r19LDDp_RkT0Ks,1041
+mspass_launcher/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mspass_launcher/scripts/mspass_desktop.py,sha256=8skQrMnrk-7S8Z1BKn1TW-73YXaAuP1fLx3Iz1n3aGU,1543
+mspass_launcher-0.1.0.dist-info/licenses/LICENSE,sha256=VCqS09-oS0rl73JE2golbB-bQtL2zBtC5IlNJWvvEhE,1498
+mspass_launcher-0.1.0.dist-info/METADATA,sha256=Dxhw7HopD6bCHzuiqASImL67kAL4-TxQ8-CX8ENMvv4,4521
+mspass_launcher-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+mspass_launcher-0.1.0.dist-info/entry_points.txt,sha256=hNPyCMBtRSPDoWJYwC1P0V5GKR0nH6SxwwErPurkQaI,79
+mspass_launcher-0.1.0.dist-info/top_level.txt,sha256=cX5oMPfiFn1LgQw4-OBOq9sbYbu0EihH6Assp4D3Bmc,16
+mspass_launcher-0.1.0.dist-info/RECORD,,
