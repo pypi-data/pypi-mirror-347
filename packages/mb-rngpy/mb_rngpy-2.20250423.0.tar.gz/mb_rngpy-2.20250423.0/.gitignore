@@ -1,0 +1,6 @@
+/MANIFEST
+/dist
+/mb_rngpy.egg-info
+/venv
+/.pytest_cache
+__pycache__
