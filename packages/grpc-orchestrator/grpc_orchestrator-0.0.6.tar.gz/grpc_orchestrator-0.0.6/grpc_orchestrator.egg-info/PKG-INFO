@@ -1,0 +1,97 @@
+Metadata-Version: 2.4
+Name: grpc_orchestrator
+Version: 0.0.6
+Summary: A gRPC-based Saga Orchestration System for distributed transactions
+Home-page: https://github.com/bunrongGithub/grpc_orchestrator/tree/backup/simple_python_sdk
+Author: Ron Saroeun
+Author-email: ronsaroeun668@gmail.com
+Keywords: grpc,grpc orchestrator,grpc microservices,distributed transactions,python grpc,saga pattern,grpc saga,transaction orchestrator,python microservices
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Framework :: AsyncIO
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: grpcio>=1.56
+Requires-Dist: protobuf>=4.21
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ðŸ§© grpc-orchestrator
+
+**`grpc-orchestrator`** is a lightweight, gRPC-based Saga orchestration system for coordinating distributed transactions across microservices. It helps ensure data consistency by executing a series of steps with compensating rollbacks in case of failures.
+
+---
+
+## ðŸš€ Key Features
+
+- **Saga Pattern Implementation**: Coordinates multi-step transactions with compensation support for failures.
+- **gRPC-Native Architecture**: Fast and type-safe communication using Protocol Buffers and gRPC.
+- **Flexible Step Definition**: Each step supports service, method, timeout, and optional compensation logic.
+- **Asynchronous Orchestration**: Steps execute in order, compensation runs in reverse on failure.
+- **In-Memory Storage**: Ideal for prototyping and testing. Easily swappable for custom persistent backends.
+- **Execution Logging**: Tracks timestamps, success/failure, payloads, and error messages per step.
+
+---
+
+## ðŸ“¦ Components
+
+### 1. Protobuf APIs
+
+Defines the orchestrator and participant interfaces:
+
+```proto
+service SagaOrchestratorService {
+  rpc StartSagaTransaction (StartSagaRequest) returns (StartSagaResponse);
+  rpc GetSagaStatusTransaction (GetSagaStatusRequest) returns (GetSagaStatusResponse);
+}
+
+service SagaParticipant {
+  rpc Execute (SagaParticipantRequest) returns (SagaParticipantResponse);
+  rpc Compensate (SagaParticipantRequest) returns (SagaParticipantResponse);
+}
+
+###pip install grpc_orchestrator
+
+```python
+
+from grpc_orchestrator.core.client.client import GrpcOrchestratorClient
+
+client = GrpcOrchestratorClient(orchestrator_host="localhost")
+steps = [
+    {
+        "port": 50052,
+        "rpc_method": "CleateOrder",
+        "compensation_method": "RollbackOrder",
+        "timeout_seconds": 5,
+    },
+    {
+        "port": 50052,
+        "rpc_method": "CheckoutOrder",
+        "compensation_method": "CheckoutOrder",
+        "timeout_seconds": 5,
+    },
+]
+client.start_transaction(transaction_id="1234",steps=steps,payload={
+    "id": "1",
+    "name":"item1"
+})
+
+status = client.get_transaction_status(transaction_id="order_123")
+print(status)
+
+![Saga Flow Diagram](grpc_orchestrator/images/flow.png)
