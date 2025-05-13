@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+ai6lib/__init__.py
+ai6lib/eprint.py
+ai6lib.egg-info/PKG-INFO
+ai6lib.egg-info/SOURCES.txt
+ai6lib.egg-info/dependency_links.txt
+ai6lib.egg-info/top_level.txt
