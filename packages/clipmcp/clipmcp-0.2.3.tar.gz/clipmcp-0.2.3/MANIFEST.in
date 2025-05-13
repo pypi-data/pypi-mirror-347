@@ -1,0 +1,15 @@
+include README.md
+include requirements.txt
+include LICENSE
+include mcp.example.json
+include CHANGES.md
+include pyproject.toml
+include setup.cfg
+include clipmcp_server.py
+recursive-include videomcp *.py
+recursive-include static *
+recursive-include clipmcp *
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude *.so
+global-exclude .DS_Store 
