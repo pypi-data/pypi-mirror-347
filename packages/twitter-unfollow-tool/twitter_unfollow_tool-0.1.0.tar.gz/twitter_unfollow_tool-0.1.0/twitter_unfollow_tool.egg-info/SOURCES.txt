@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_extractor.py
+twitter_unfollow_tool/__init__.py
+twitter_unfollow_tool/extractor.py
+twitter_unfollow_tool/scroll.py
+twitter_unfollow_tool/unfollow.py
+twitter_unfollow_tool.egg-info/PKG-INFO
+twitter_unfollow_tool.egg-info/SOURCES.txt
+twitter_unfollow_tool.egg-info/dependency_links.txt
+twitter_unfollow_tool.egg-info/requires.txt
+twitter_unfollow_tool.egg-info/top_level.txt
