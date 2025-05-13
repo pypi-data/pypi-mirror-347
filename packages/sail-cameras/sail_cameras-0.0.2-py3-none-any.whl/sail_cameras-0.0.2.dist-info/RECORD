@@ -1,0 +1,10 @@
+sail_cameras/BaseCameraInterface.py,sha256=LT-hckvqN2BdrYaxG770QG-gYh2rBtVcS_adAYF3jbA,5053
+sail_cameras/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+sail_cameras/_modidx.py,sha256=ZnkXBl20d_WQa304YxycCBKL1eLz4BnCXEGyxv1jBoE,9634
+sail_cameras/cameras.py,sha256=JmHFBgFng8NlpsV8FvvwX6NynFy1MdRI6G87GBv0PaA,19180
+sail_cameras-0.0.2.dist-info/licenses/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+sail_cameras-0.0.2.dist-info/METADATA,sha256=QIqT4DqWpCkft2h-zHam4Pf1F32HD43MY4OmBChORk0,2567
+sail_cameras-0.0.2.dist-info/WHEEL,sha256=wXxTzcEDnjrTwFYjLPcsW_7_XihufBwmpiBeiXNBGEA,91
+sail_cameras-0.0.2.dist-info/entry_points.txt,sha256=KBz8KrLeym-EiFZ8wNw5HpYDUUGC2r9GBSi85grzTs8,46
+sail_cameras-0.0.2.dist-info/top_level.txt,sha256=jSpG-vc-hV8aszCPz6UWp_5C4fTBKSghuNTGzw4z2rk,13
+sail_cameras-0.0.2.dist-info/RECORD,,
