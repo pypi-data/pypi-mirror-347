@@ -1,0 +1,12 @@
+textbasic/__init__.py,sha256=P9hUMblSqfO8edE6ZIcdLZVD6NNVmJxWczgwdz9UHDY,159
+textbasic/utils.py,sha256=nI4wsmixs6dGwcEobyrF5R32VKJud0fO4wJG_duRvcY,1261
+textbasic/basic/__init__.py,sha256=_uuBEtECJWSsj1h3esZjR8KrAvkohOvx2tqVOiWNnCw,29
+textbasic/basic/dictionary.json,sha256=A-AahXjjm1r-ON3CaITg1bW3tLOO2-_vfd9Lfl-nJ9s,1015
+textbasic/basic/preprocessor.py,sha256=rXVuOE8GkJ_vOM19gJ4Jsknbn7bouFlgWZOPKh6QHD4,14192
+textbasic/compare/__init__.py,sha256=WiXb26WvgHVwU5ML6rqgk7Afly6AUIhol-A7bFxBvSA,39
+textbasic/compare/similarityanalysis.py,sha256=NVZ-CAjSOFjtXaDFRsJdOwWbXcL-6bYs6_Kz8XCX-_s,5101
+textbasic/compare/similarityverification.py,sha256=KYNixP21vxDxGs57aoXd10-9BcUK58sYoar3JowRYIM,5174
+textbasic-0.1.2.dist-info/METADATA,sha256=fq0tA32b7SP5r0E6RmDfiMjC340AP7AqRNHIyrZ-rxM,762
+textbasic-0.1.2.dist-info/WHEEL,sha256=lTU6B6eIfYoiQJTZNc-fyaR6BpL6ehTzU3xGYxn2n8k,91
+textbasic-0.1.2.dist-info/top_level.txt,sha256=QWiBheloD-Ov_Zd32dYETj01KkXKGKv_AIXcXzfFnV8,10
+textbasic-0.1.2.dist-info/RECORD,,
