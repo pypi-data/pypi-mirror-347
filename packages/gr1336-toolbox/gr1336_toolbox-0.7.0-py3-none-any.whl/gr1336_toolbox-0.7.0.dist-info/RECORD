@@ -1,0 +1,13 @@
+gr1336_toolbox/__init__.py,sha256=7sh8IZmi0tueBvQbvkUyWYd_YUJkfz6l1KLax8KIt9w,2028
+gr1336_toolbox/files.py,sha256=02RvYuTNJ6QHA7J2MzBR7sueuxNX69FvuAzrB-BVk0g,14008
+gr1336_toolbox/misc.py,sha256=afxs3nCSLCPCmIkeL9OqGw43rZUhhb80i70qkHsveow,8736
+gr1336_toolbox/text.py,sha256=2ugpEzC2cpHD1IojNq64w9T0SI16YLhXN_O9UNCXfu4,27562
+gr1336_toolbox/types.py,sha256=bGlHblgYZSHKYCb7KWOaOhENhvsdH9Wt2ikdCNJz23U,8371
+gr1336_toolbox/backbones/misc/json_call_tools.py,sha256=ouo6TfPeZ3-j2ypdnC6I-3-dBEaS8StS7D0Fm-vGXKk,5574
+gr1336_toolbox/backbones/texts/txt_requoter.py,sha256=wEYghxNn_N7ggGTktgZJodbGdbr61-WRsqxJdH4f34o,3199
+gr1336_toolbox/backbones/texts/txt_splitter.py,sha256=N2i3VY0dJFd148ZWgZGAeL5avrJFfOUW5noPC03WR2w,2845
+gr1336_toolbox-0.7.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gr1336_toolbox-0.7.0.dist-info/METADATA,sha256=t5RAHZc8rkoIVUGRZlDgMm7v4z591g7gXdqXiBux7jw,1619
+gr1336_toolbox-0.7.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+gr1336_toolbox-0.7.0.dist-info/top_level.txt,sha256=3wqw_J5z3p1QYtR-KiaxUeUWe-3Lvj-mwgILWMnvA68,15
+gr1336_toolbox-0.7.0.dist-info/RECORD,,
