@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: uc_vmwarecloud_aws
+Version: 1.64.2
+Summary: Client bindings for VMware Cloud on AWS
+Home-page: https://github.com/vmware/vsphere-automation-sdk-python/tree/master/lib/src/vmwarecloud-aws
+Author: VMware, Inc.
+License: License :: OSI Approved :: MIT License
+Keywords: VMware
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: uc_vapi_common_client==2.44.1
+Requires-Dist: uc_vapi_runtime==2.44.1
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# VMwareCloud AWS
+ 
+vmwarecloud-aws is a client library to Build, Automate and Manage your Software Defined Data Centres (SDDCs) running on VMware Cloud on Amazon Web Services (AWS). This library is part of [vSphere Automation SDK for Python](https://github.com/vmware/vsphere-automation-sdk-python).
+ 
+[Source code](https://github.com/vmware/vsphere-automation-sdk-python/tree/master/lib/src/vmwarecloud-aws) | [Package (PyPI)](https://pypi.org/project/vmwarecloud-aws/) | [REST API documentation](https://developer.vmware.com/apis/vmc/latest/) | [Python API documentation](https://vmware.github.io/vsphere-automation-sdk-python/vmc/index.html)
+ 
+## Getting started
+ 
+### Prerequisites
+ 
+- Python 3.8+ is required to use this package.
+ 
+### Install the package
+ 
+```bash
+pip install vmwarecloud-aws
+```

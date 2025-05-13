@@ -1,0 +1,3 @@
+setuptools
+uc_vapi_common_client==2.44.1
+uc_vapi_runtime==2.44.1
