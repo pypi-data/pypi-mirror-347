@@ -1,0 +1,9 @@
+build*
+out.log
+*.pyc
+.#*
+*.so
+*.png
+.ipynb_checkpoints
+*.egg-info
+*.coverage
