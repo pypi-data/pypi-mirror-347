@@ -1,0 +1,10 @@
+lazy_managers/__init__.py,sha256=LXUJpcRcLkCgHqq7vs0V29RhbVuH-AVVx3CRx7g5pMw,181
+lazy_managers/attribute.py,sha256=vHTqhZASD1W4mOL0ZpobbFq-asnQEtv0BY8FR8HQEjM,3660
+lazy_managers/manager.py,sha256=xkOxyzgQN8DrzevFldMUC_6V_z3-MlrT-D0oKAZ5x-4,8084
+lazy_managers/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lazy_managers/typing.py,sha256=CoOyxhgJjjTtQkCmtsGGt0Bv4kTAN5n6pC0Ox3lkET0,419
+lazy_managers/utils.py,sha256=WEnFP6wF6ob5plLRv-s69Pfwo5J47PSdK71ID9ySIoU,3007
+django_lazy_managers-0.0.1.dist-info/LICENSE,sha256=1N9adiyLzxUm4_OQ7XuHnMlOS1g9M8s3mjO9C-EvV8k,1064
+django_lazy_managers-0.0.1.dist-info/METADATA,sha256=3W3stI9AjFq8lj6eaGCiFemX5dzfVCqNWCQzSbgOA3s,3350
+django_lazy_managers-0.0.1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+django_lazy_managers-0.0.1.dist-info/RECORD,,
