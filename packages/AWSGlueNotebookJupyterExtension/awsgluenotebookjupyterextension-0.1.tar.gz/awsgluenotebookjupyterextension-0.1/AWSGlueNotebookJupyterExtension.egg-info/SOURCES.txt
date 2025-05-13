@@ -1,0 +1,8 @@
+README.md
+setup.py
+AWSGlueNotebookJupyterExtension/__init__.py
+AWSGlueNotebookJupyterExtension/main.py
+AWSGlueNotebookJupyterExtension.egg-info/PKG-INFO
+AWSGlueNotebookJupyterExtension.egg-info/SOURCES.txt
+AWSGlueNotebookJupyterExtension.egg-info/dependency_links.txt
+AWSGlueNotebookJupyterExtension.egg-info/top_level.txt
