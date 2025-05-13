@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/py_pypr/__init__.py
+src/py_pypr/core.py
+src/py_pypr/decos.py
+src/py_pypr.egg-info/PKG-INFO
+src/py_pypr.egg-info/SOURCES.txt
+src/py_pypr.egg-info/dependency_links.txt
+src/py_pypr.egg-info/top_level.txt
+tests/test_py_pypr.py
