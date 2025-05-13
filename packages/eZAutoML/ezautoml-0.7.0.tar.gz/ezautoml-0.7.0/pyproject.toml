@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eZAutoML"
+version = "0.7.0"
+description = "A Democratized lightweight and transparent AutoML framework"
+authors = [
+    { name="eZWALT", email="waltertv02@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "scikit-learn",
+    "numpy",
+    "pandas",
+    "loguru",
+    "xgboost",
+    "catboost",
+    "lightgbm",
+    "rich",
+]
+classifiers = [
+  'Intended Audience :: Science/Research',
+  'Intended Audience :: Developers',
+  'Programming Language :: Python',
+  'Operating System :: POSIX',
+  'Operating System :: Unix',
+  'Operating System :: MacOS',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+
+]
+license = "BSD-3-Clause"
+
+[project.urls]
+Repository = "https://github.com/eZWALT/eZAutoML"
+Issues = "https://github.com/eZWALT/eZAutoML/issues"
+[project.optional-dependencies]
+path_loaders = ["openpyxl", "pyarrow"]
+
+[project.scripts]
+ezautoml = "ezautoml.cli:run_cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ezautoml = ["resources/search_spaces/*.yaml"]
