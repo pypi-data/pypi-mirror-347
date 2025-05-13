@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/dbgpkg/__init__.py
+src/dbgpkg.egg-info/PKG-INFO
+src/dbgpkg.egg-info/SOURCES.txt
+src/dbgpkg.egg-info/dependency_links.txt
+src/dbgpkg.egg-info/top_level.txt
