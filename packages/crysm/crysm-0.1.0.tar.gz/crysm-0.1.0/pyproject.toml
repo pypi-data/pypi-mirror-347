@@ -1,0 +1,24 @@
+[project]
+name = "crysm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "imagecodecs>=2025.3.30",
+    "numpy>1.24.4",
+    "matplotlib>=3.7.5",
+    "pydantic>=2.11.3",
+    "rich>=13.7.1",
+    "tifffile>=2025.5.10",
+    "typer>=0.15.2",
+]
+
+[dependency-groups]
+dev = ["ipympl>=0.9.3", "jupyter>=1.1.1", "pyxem>=0.20.0"]
+
+[project.scripts]
+crysm = "main:app"
+
+[tool.uv]
+package=true

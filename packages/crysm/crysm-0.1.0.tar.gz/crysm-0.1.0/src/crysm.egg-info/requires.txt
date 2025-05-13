@@ -1,0 +1,7 @@
+imagecodecs>=2025.3.30
+numpy>1.24.4
+matplotlib>=3.7.5
+pydantic>=2.11.3
+rich>=13.7.1
+tifffile>=2025.5.10
+typer>=0.15.2
