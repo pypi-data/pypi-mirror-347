@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cloudcat/__init__.py
+cloudcat/cli.py
+cloudcat.egg-info/PKG-INFO
+cloudcat.egg-info/SOURCES.txt
+cloudcat.egg-info/dependency_links.txt
+cloudcat.egg-info/entry_points.txt
+cloudcat.egg-info/requires.txt
+cloudcat.egg-info/top_level.txt
