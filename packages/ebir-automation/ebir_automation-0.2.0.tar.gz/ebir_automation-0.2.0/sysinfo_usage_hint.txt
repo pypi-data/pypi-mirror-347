@@ -1,0 +1,5 @@
+// This file is for reference only. See sysinfo documentation for details.
+// The correct signature for sysinfo 0.35.x is:
+// pub fn refresh_processes_specifics(&mut self, filter: ProcessesToUpdate, with_user: bool, with_cmd: bool)
+// Example usage:
+// system.refresh_processes_specifics(ProcessesToUpdate::All, true, true);
