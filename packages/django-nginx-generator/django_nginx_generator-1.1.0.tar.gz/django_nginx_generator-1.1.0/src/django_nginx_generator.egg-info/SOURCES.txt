@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/django_nginx_generator/__init__.py
+src/django_nginx_generator/cli.py
+src/django_nginx_generator.egg-info/PKG-INFO
+src/django_nginx_generator.egg-info/SOURCES.txt
+src/django_nginx_generator.egg-info/dependency_links.txt
+src/django_nginx_generator.egg-info/entry_points.txt
+src/django_nginx_generator.egg-info/requires.txt
+src/django_nginx_generator.egg-info/top_level.txt
+tests/test_cli.py
