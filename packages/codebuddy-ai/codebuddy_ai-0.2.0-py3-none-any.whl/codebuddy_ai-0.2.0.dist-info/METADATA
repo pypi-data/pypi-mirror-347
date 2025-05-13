@@ -1,0 +1,78 @@
+Metadata-Version: 2.2
+Name: codebuddy-ai
+Version: 0.2.0
+Summary: AI-powered CLI to generate commit messages, review code, and suggest fixes
+Home-page: https://github.com/UP11SRE/agent-client
+Author: Naman Kansal
+Author-email: namankansal91@gmail.com
+License: Proprietary
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Commit-Gen CLI Tool
+
+Commit-Gen is a powerful Python CLI tool designed to streamline your commit workflow. It automatically extracts the staged Git diff, sends it to a commit-generation server, and prints a clear, concise commit message based on the changes made. This process helps ensure that your commit history remains informative and consistent.
+
+## Features
+
+- **Automated Commit Messages:**  
+  Generates detailed commit messages based on staged code changes.
+- **Easy Integration:**  
+  Works directly with your Git workflow.
+
+## Installation
+
+Install Commit-Gen directly from PyPI using pip:
+
+```bash
+pip install commit-generator
+```
+
+# Usage
+
+# Basic Workflow
+
+- **Stage Your Changes:**
+
+Begin by staging your changes in Git using:
+
+```
+git add .
+```
+
+- **Generate the Commit Message:**
+
+Execute the Commit-Gen tool to generate your commit message:
+
+```
+commit-gen
+```
+
+The CLI tool will:
+
+- Extract the staged Git diff.
+- Communicate with the commit-generation server.
+- Output a generated commit message that summarizes your changes.
+
+* **Apply the Commit Message:**
+
+Use the generated message when committing your changes:
+
+```
+git commit -m "$(commit-gen)"
+```
