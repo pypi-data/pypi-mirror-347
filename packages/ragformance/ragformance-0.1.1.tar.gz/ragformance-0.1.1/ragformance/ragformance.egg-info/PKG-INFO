@@ -1,0 +1,51 @@
+Metadata-Version: 2.4
+Name: ragformance
+Version: 0.1.1
+Summary: A library for generating dataset and evaluating these datasets on RAG based solutions
+Author-email: FOR Team <jonathan.sprauel@irt-saintexupery.com>
+Project-URL: Homepage, https://github.com/FOR-sight-ai/RAGFORmance
+Project-URL: Bug Tracker, https://github.com/FOR-sight-ai/RAGFORmance/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: forcolate
+Requires-Dist: sentence-transformers
+Requires-Dist: tqdm
+Dynamic: license-file
+
+# RAGFORmance
+Benchmark for RAG
+
+# Usage
+
+## Using test suite with BEIR datasets 
+
+``` python
+from ragformance.scripts.RAG_abstractions.naive_rag import upload_corpus, ask_queries
+from ragformance.eval.utils.beir_dataloader import load_beir_dataset
+
+import logging
+
+logging.basicConfig(format='%(asctime)s - %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S',
+                    level=logging.INFO)
+
+corpus, queries = load_beir_dataset(filter_corpus = True)
+
+upload_corpus(corpus)
+ask_queries(queries[:10])
+
+```
+
+## Example configuration file
+
+``` json
+{
+    "corpus_text_key": "text"
+}
+
+
+```
