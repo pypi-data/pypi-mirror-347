@@ -1,0 +1,2 @@
+[console_scripts]
+DiscordDox = DiscordDox.app:start_app
