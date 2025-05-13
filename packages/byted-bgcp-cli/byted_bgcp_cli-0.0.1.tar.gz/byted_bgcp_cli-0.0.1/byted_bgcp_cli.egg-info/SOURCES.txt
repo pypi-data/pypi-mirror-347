@@ -1,0 +1,6 @@
+README.md
+setup.py
+byted_bgcp_cli.egg-info/PKG-INFO
+byted_bgcp_cli.egg-info/SOURCES.txt
+byted_bgcp_cli.egg-info/dependency_links.txt
+byted_bgcp_cli.egg-info/top_level.txt
