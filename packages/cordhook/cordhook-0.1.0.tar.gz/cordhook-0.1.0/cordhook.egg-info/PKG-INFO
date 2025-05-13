@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: cordhook
+Version: 0.1.0
+Summary: A simple Discord webhook wrapper for Python
+Home-page: 
+Author: Mocha
+Author-email: ohplot@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications :: Chat
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# cordhook
+
+> Minimalist, powerful Python wrapper for Discord webhooks.  
+
+## ðŸš€ Quick Start
+
+```bash
+pip install cordhook
+```
