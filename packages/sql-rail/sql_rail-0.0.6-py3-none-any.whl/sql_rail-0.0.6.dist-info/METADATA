@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: sql_rail
+Version: 0.0.6
+Summary: A module to analyze SQL query parameters and suggest corrections based on reference data.
+Project-URL: Homepage, https://github.com/ajayanilkumar/SQL-GuardRails
+Project-URL: Bug Tracker, https://github.com/ajayanilkumar/SQL-GuardRails/issues
+Author-email: Ajay Anil Kumar <ajay.anilkumar0304@gmail.com>, Agamdeep Singh <agammessi10@gmail.com>
+License-File: LICENSE.txt
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Requires-Dist: fuzzywuzzy[speedup]
+Requires-Dist: numpy
+Requires-Dist: pydantic
+Requires-Dist: python-levenshtein
+Requires-Dist: scikit-learn
+Requires-Dist: sqlglot[rs]
+Requires-Dist: sqlparse
+Description-Content-Type: text/markdown
+
+# SQL Rail Module
+
+Version: 0.0.5
+Date: May 13, 2025
+
+A Python module to parse parameters within the WHERE clauses of an SQL query and suggest the closest valid or intended matches from predefined reference datasets.
+
+## Features
+
+* Parses SQL WHERE clauses to identify parameters.
+* Compares parameters against reference lists using multiple similarity/distance metrics.
+* Supports Levenshtein distance, Semantic Similarity (via sentence-transformers), and FuzzyWuzzy-like matching.
+* Extensible design for adding custom distance metrics.
+* Structured JSON output for analysis results.
+
+## Installation
+
+```bash
+pip install sql_rail
+```
+
+
+
+
