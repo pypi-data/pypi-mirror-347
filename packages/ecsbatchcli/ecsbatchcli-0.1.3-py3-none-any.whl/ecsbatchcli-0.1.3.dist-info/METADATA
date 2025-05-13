@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: ecsbatchcli
+Version: 0.1.3
+Summary: A CLI tool for batch management of Volcano Engine ECS instances
+Home-page: https://github.com/volcengine/ecsbatchcli
+Author: Volcano Engine Team
+Author-email: support@volcengine.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: tqdm>=4.64.0
+Requires-Dist: colorama>=0.4.4
+
+# ECSBatchCLI - 火山引擎ECS批量管理CLI工具
+
+ECSBatchCLI是一款基于Python的命令行工具，用于高效、自动化地批量创建和销毁火山引擎云主机（ECS实例）。通过读取用户定义的YAML配置文件和接收命令行参数，简化操作流程，减少人工干预，满足特定业务场景下对资源快速响应和成本控制的需求。
+
+## 主要功能
+
+- **批量创建云主机**：通过简单的命令行参数，批量创建符合特定配置的云主机
+- **批量销毁云主机**：安全、精确地批量销毁特定范围内的云主机
+- **配置管理**：通过YAML配置文件管理常用的云主机配置模板
+- **结果反馈**：清晰展示每次批量操作的执行结果和潜在问题
+
+## 安装
+
+### 要求
+
+- Python 3.6+
+- 火山引擎账号和访问凭证（AK/SK）
+- 火山引擎SDK（volcengine-python-sdk>=1.0.0）
+
+### 安装火山引擎SDK
+
+详细安装方法请参考[火山引擎SDK安装指南](VOLCENGINE_SDK_INSTALLATION.md)。
+
+简要步骤：
+```bash
+# 安装火山引擎Python SDK
+pip install volcengine-python-sdk>=1.0.0
+```
+
+### 通过pip安装
+
+```bash
+pip install ecsbatchcli
+```
+
+### 从源码安装
+
+```bash
+git clone https://github.com/volcengine/ecsbatchcli.git
+cd ecsbatchcli
+pip install -e .
+```
+
+**注意**：从源码安装时，您仍需要单独安装火山引擎SDK。
+
+## 快速开始
+
+### 1. 创建配置文件
+
+在当前目录下创建`config.yaml`文件，或使用`--config`参数指定配置文件路径。配置文件示例：
+
+```yaml
+credentials:
+  access_key_id: "your_access_key_id"
+  secret_access_key: "your_secret_access_key"
+
+profiles:
+  - name: "test-profile"
+    region_id: "cn-beijing"
+    availability_zone_id: "cn-beijing-a"
+    image_id: "image-xxxxxxxxx"
+    security_group_id: "sg-xxxxxxxxx"
+    vpc_id: "vpc-xxxxxxxxx"
+    subnet_id: "subnet-xxxxxxxxx"
+    default_instance_type: "ecs.g1ie.large"
+    system_disk_type: "ESSD_PL0"
+    system_disk_size_gb: 40
+    hostname_prefix: "test-server"
+    project_id: "project-xxxxxxxxx"
+```
+
+### 2. 批量创建云主机
+
+```bash
+ecsbatchcli create --config-group test-profile --instance-type ecs.g1ie.large --count 5
+```
+
+### 3. 批量销毁云主机
+
+```bash
+ecsbatchcli delete --config-group test-profile --count 3
+```
+
+## 详细文档
+
+更多详细用法和配置选项，请参考[完整文档](docs/usage.md)。
+
+## 许可证
+
+本项目采用MIT许可证。详见[LICENSE](LICENSE)文件。
