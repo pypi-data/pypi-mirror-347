@@ -1,0 +1,16 @@
+foxwire/__init__.py,sha256=9tByGIuGLfS9PNzo2Hegq1p_bPdrZzC6UkGuv4Peszo,22
+foxwire/cli.py,sha256=HWbo2eKLXLUAdVKMlzB8IQ5iPp2t6vqAAfUPg-y8T0A,10356
+foxwire/foxwire.py,sha256=Lu7ZDvQ8KlVkRL3uPWKsXvnBdaIvQ2gK-1QYMXRHRnI,8202
+foxwire-0.1.0.dist-info/licenses/LICENSE,sha256=cJKmxjN_i52nVpsX7SmT50KN_6-9AMaIR0kUNiUc8PQ,1114
+tests/FXS50_FoxWire.py,sha256=-aewWfUSzdQheKISgYOpOgw9SAPQ7rfnQQssMDod9mw,3508
+tests/FXS50_change_addr.py,sha256=8nA58RIqBGK6N4VnHZweM3xVKpj_AGwePL-n9eDxahE,719
+tests/FXS50_configure.py,sha256=4myrZI2bvyVpTksVCTTi0FdfFe0O1TAGVLkoiFhVXkE,1363
+tests/FoxWire.py,sha256=ufojpqPq3ImJ9Monbadhr5e0i0NxVfOIDRzTwTrnsns,4196
+tests/FoxWire_scandump.py,sha256=pK0W_otMVyDogamEjmPHJeC4P3Gk-ZCKczD_l8ENrGI,2971
+tests/FoxWire_test.py,sha256=ia6RR7AnPSh6mCueFq7_iQ1CtO7yvtBwR4VxOlTQ34A,418
+tests/tests.py,sha256=kEFWzk4rb56hQ8jq4flos_1ebVb27T-SD2hlPash7U4,833
+foxwire-0.1.0.dist-info/METADATA,sha256=eXEG5kTZyixkNl7UsUdSRnZAJWK3-WKlpn47As3G1xM,3616
+foxwire-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+foxwire-0.1.0.dist-info/entry_points.txt,sha256=xYr5cDFyrHblmQXw61GTi1UGMXbk6Bm6UMWmJ0ZyEEY,45
+foxwire-0.1.0.dist-info/top_level.txt,sha256=jmnZvaiqGuCODP-oLbRnO22w6uEuBgNcQPKJtPF7BCI,14
+foxwire-0.1.0.dist-info/RECORD,,
