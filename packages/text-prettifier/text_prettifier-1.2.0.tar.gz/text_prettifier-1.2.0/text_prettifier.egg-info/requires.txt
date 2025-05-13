@@ -1,0 +1,6 @@
+contractions
+nltk
+internet-words-remover
+
+[:python_version < "3.8"]
+typing
