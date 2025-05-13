@@ -1,0 +1,11 @@
+pydra/compose/bidsapp/__init__.py,sha256=mBXV7J44Aqj7piYK6yWNa7ACeT4CAzeJ2JsRkRymooY,586
+pydra/compose/bidsapp/_version.py,sha256=iB5DfB5V6YB5Wo4JmvS-txT42QtmGaWcWp3udRT7zCI,511
+pydra/compose/bidsapp/app.py,sha256=xQph7nQf6Fvy9xlrVewDP3OCDue2TiHxsKAvVcBpYb0,1408
+pydra/compose/bidsapp/builder.py,sha256=w_S1hApTizZaYpHIL1yh6LMdG2fURo7G6jaTwPqdqQk,6044
+pydra/compose/bidsapp/fields.py,sha256=Ujp6oZVOzxKz_TM5T6Ehv9JvJeqgfGWEGGSjWs6zXXA,3537
+pydra/compose/bidsapp/task.py,sha256=Rw6VnPckCpGFoCuigZiiJxi_qJzRZ_kJ4NzYsDECQGw,6334
+pydra/compose/bidsapp/tests/test_bids_app.py,sha256=nhXU95K41Sncx4ajcbnQzJuNAElreYbKcftPCGL2xyk,2511
+pydra_compose_bidsapp-0.2.0.dist-info/METADATA,sha256=nsAy9L1q6lzEZ-V0c2jbZIOsZw0_FuwAXneJeymzg_g,2977
+pydra_compose_bidsapp-0.2.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+pydra_compose_bidsapp-0.2.0.dist-info/licenses/LICENSE,sha256=1UwTTk2FSa_OpgWlBMDqe_u6T0NNnRbBx3oGHHgxzpo,588
+pydra_compose_bidsapp-0.2.0.dist-info/RECORD,,
