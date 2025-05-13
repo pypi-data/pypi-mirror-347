@@ -1,0 +1,10 @@
+aiohttp
+camoufox[geoip]
+beartype
+fake-useragent
+tqdm
+
+[tests]
+pytest
+pytest-asyncio
+snapshottest~=1.0.0a1
