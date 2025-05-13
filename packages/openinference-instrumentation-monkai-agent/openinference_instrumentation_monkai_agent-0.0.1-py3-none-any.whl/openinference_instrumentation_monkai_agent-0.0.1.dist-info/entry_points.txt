@@ -1,0 +1,2 @@
+[openinference.instrumentations]
+monkai_agent = openinference.instrumentation.monkai_agent:MonkaiAgentInstrumentor

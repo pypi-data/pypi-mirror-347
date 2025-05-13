@@ -1,0 +1,8 @@
+openinference/instrumentation/monkai_agent/__init__.py,sha256=GGJBE3n0CCEunEteKgzZilqW8w72VrIwyITkpszJPn8,2844
+openinference/instrumentation/monkai_agent/_wrappers.py,sha256=2SRLUVh0VmgnXSvmtg4dLiiimb9DQuR0rNKVvDehGx4,3825
+openinference/instrumentation/monkai_agent/version.py,sha256=c_r8yhZUS827zcFpk8ICiftqq6q9qUf2o1vM_vEH63I,49
+openinference_instrumentation_monkai_agent-0.0.1.dist-info/METADATA,sha256=3x0UQ_dYKWwnjaE8DW9oAJXfHQ5_NhOvVgyoXzYkPZU,2378
+openinference_instrumentation_monkai_agent-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+openinference_instrumentation_monkai_agent-0.0.1.dist-info/entry_points.txt,sha256=jkAaCG6VgwTUFNc25k5u4JVgK2Q-Gm30ArquW9CKAGI,115
+openinference_instrumentation_monkai_agent-0.0.1.dist-info/licenses/LICENSE,sha256=1VTei0MEnuPQH6LfKsOlx_Jg0Iab3GB_PGnanX4rxKg,1067
+openinference_instrumentation_monkai_agent-0.0.1.dist-info/RECORD,,
