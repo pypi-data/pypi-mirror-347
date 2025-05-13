@@ -1,0 +1,9 @@
+twitter_unfollow_tool/__init__.py,sha256=DhL_WrV9i4SiWA86DJdTnS1tFWqWSYkwvYBO2t1hs68,443
+twitter_unfollow_tool/extractor.py,sha256=ZSxGTKl1pnfOYGWFU65TcASAZz37GaBVQLVhugO6Kxk,1815
+twitter_unfollow_tool/scroll.py,sha256=kC0sojUpXJH_5N80FimVd_sITmTqDTXsvgUnQ4EGgB8,2830
+twitter_unfollow_tool/unfollow.py,sha256=Ns80MZv8cDTjwDHG3XfS0mn4OryKj33gP92CJPMQZx8,2737
+twitter_unfollow_tool-0.1.0.dist-info/licenses/LICENSE,sha256=2VNE4Aau8u0WP84Lnf3uev1Ulb4O-1CU65yAIGDTqno,1092
+twitter_unfollow_tool-0.1.0.dist-info/METADATA,sha256=AGRqXTPGnrn-Z01s3aIt-5ZmBvoFhboxz8_BFRX9kSk,2827
+twitter_unfollow_tool-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+twitter_unfollow_tool-0.1.0.dist-info/top_level.txt,sha256=nzxkPyUGgkdzImyCFeCQdwW19ndW3AMnqRzE_Pdqkbc,22
+twitter_unfollow_tool-0.1.0.dist-info/RECORD,,
