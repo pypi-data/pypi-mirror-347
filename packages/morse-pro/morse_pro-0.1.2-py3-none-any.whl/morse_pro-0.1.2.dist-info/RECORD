@@ -1,0 +1,11 @@
+morse/__init__.py,sha256=ZyIKx2LOPHCo1kVgaBOiSv2_lXJkwkpaWpe8s00FnjU,97
+morse/decoder.py,sha256=VvWIf0rdNCgtS4P-O4UG-G237ruY6QB_VJfM2nz_Hfw,1432
+morse/encoder.py,sha256=PxI4Y9SrkN-1MbYz5FG59eJVuiTNgJ4YB9AdjjbJzRs,1227
+morse/morse.py,sha256=nlTGJDk5CAYin59aBaspFrkPrpOgdHCXd6-FHueg6pg,693
+morse/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morse_pro-0.1.2.dist-info/licenses/LICENSE,sha256=8pFWKXfP1eMaqEFAPeXxRR1QuuETXzQst09pc9EFFyA,1077
+morse_pro-0.1.2.dist-info/METADATA,sha256=d1h2cxCugtNZfvPv0IX0v8MHBFXsixAO7OzJqL7nuN4,4465
+morse_pro-0.1.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+morse_pro-0.1.2.dist-info/entry_points.txt,sha256=tkjeT8M7dRBijRtAYSmDi2qZ9Rl797evlMZtftHwbyU,38
+morse_pro-0.1.2.dist-info/top_level.txt,sha256=ozKkUrOA8WyVD7DKyMRH19bF3ZiNy-48B1N87S5crII,6
+morse_pro-0.1.2.dist-info/RECORD,,
