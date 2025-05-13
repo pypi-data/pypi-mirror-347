@@ -1,0 +1,13 @@
+JSONGrapher/JSONRecordCreator.py,sha256=rClBw0XfaGNx3LGwuT9gWwfW8TNzlnnZnaLbWqdsE9g,96177
+JSONGrapher/UnitPytesting.py,sha256=xizJ-2fg9C5oNMFJyfavbBLMusayE9KWQiYIRrQQd4A,4363
+JSONGrapher/UnitpyCustomUnitsTesting.py,sha256=Rwq5p8HXN0FP54lRFgLTV0kgJ9TpcFaD3_C0MEOoEzw,1297
+JSONGrapher/__init__.py,sha256=cc5qXQidP_ABPXdnXy_DTdgPanHuR7ya45LV-BdWVh8,277
+JSONGrapher/drag_and_drop_gui.py,sha256=-7QJHLhzadHotWhONH4inerMaZ_xuwoTQSMRF_MPVe0,5632
+JSONGrapher/units_list.py,sha256=ROrlAsD66oPozZmOaE65xjNUEg3CxkSmA8iPE2_ihYI,34438
+jsongrapher-2.8.data/data/LICENSE,sha256=KrPIO2Ij3T_47dfpfngKzpC4EXohIZMsHauG0R4M-kM,1234
+jsongrapher-2.8.data/data/README.md,sha256=0gza4X7_6Sb7NAgeaiQfaizwmT7-PT_YsOHZMt0oQ_8,3921
+jsongrapher-2.8.dist-info/LICENSE,sha256=KrPIO2Ij3T_47dfpfngKzpC4EXohIZMsHauG0R4M-kM,1234
+jsongrapher-2.8.dist-info/METADATA,sha256=KfobXnAyNaLZV9fZuEUNYrQ6PcR090Ujhj2JHSSNnOg,4886
+jsongrapher-2.8.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+jsongrapher-2.8.dist-info/top_level.txt,sha256=5f7Ui2hCKCPTQOjD540WKghKNYOvUDNfdpnDbIlAD3Y,12
+jsongrapher-2.8.dist-info/RECORD,,
