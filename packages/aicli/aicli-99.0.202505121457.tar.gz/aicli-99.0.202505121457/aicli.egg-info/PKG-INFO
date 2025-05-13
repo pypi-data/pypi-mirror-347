@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: aicli
+Version: 99.0.202505121457
+Summary: Assisted installer assistant
+Author-email: Karim Boumedhel <karimboumedhel@gmail.com>
+License: ASL
+Project-URL: Homepage, http://github.com/karmab/assisted-installer-cli
+Description-Content-Type: text/x-rst
+Requires-Dist: assisted-service-client
+Requires-Dist: prettytable
+Requires-Dist: PyYAML
