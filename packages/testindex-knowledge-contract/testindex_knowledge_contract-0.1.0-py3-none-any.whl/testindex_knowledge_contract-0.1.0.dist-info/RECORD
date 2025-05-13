@@ -1,0 +1,9 @@
+testindex_knowledge_contract/__init__.py,sha256=Vh3KhCMY8VeI2bBVItu9x4ccuh_xOxcNUumzDaNXWj0,201
+testindex_knowledge_contract/bench_constants.py,sha256=jQQJ77F11XW-TSnHnXu6M68oLm_Bt9ykn0P0gz9Y_FE,676
+testindex_knowledge_contract/neo4j_client.py,sha256=huN0I3YZDtsgs5wYFcAB35nRR6DjYHeKnET7Xg2KDPA,3180
+testindex_knowledge_contract/schema.py,sha256=-QVhJfmSXNXCsXFi3FbN9zexou506AiG81R74ZBSqdE,652
+testindex_knowledge_contract/test_data/gold_schema.json,sha256=x1iz2yWT2sJjA35QlIq_pfsxUv_cZ1CSCUzKGq41ihI,678
+testindex_knowledge_contract-0.1.0.dist-info/METADATA,sha256=uTkSbtPFmOgXP-48cr0NzAjOF39442vVHEWxit9u31k,4461
+testindex_knowledge_contract-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+testindex_knowledge_contract-0.1.0.dist-info/top_level.txt,sha256=zDOdmQlJ4l9V3rd8SkNbHDr-zLOc9gYxgdESj3vxVUY,29
+testindex_knowledge_contract-0.1.0.dist-info/RECORD,,
