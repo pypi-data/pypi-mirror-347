@@ -1,0 +1,3 @@
+[console_scripts]
+msbench-report-error=msbench_utils.cli:main
+
