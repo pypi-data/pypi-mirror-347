@@ -1,0 +1,17 @@
+dotmap
+docopt
+jinja2
+
+[:python_version <= "3.6"]
+beautifulsoup4<4.13
+
+[:python_version > "3.6"]
+beautifulsoup4
+
+[css_inlining]
+css_inline>=0.11
+
+[testing]
+HTMLCompare>=0.3.0
+lxml
+pytest
