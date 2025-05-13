@@ -1,0 +1,23 @@
+↩Fix reverse issue (#1193) (#1194)
+
+# Description
+
+Unfortunately it is possible to deploy invalid models to CDF with
+reverse direct pointing direct relations that does not point in the
+opposite way. This makes it impossible to read these models into CDF
+(and fix them). Thus replacing the error with a warning in the
+validation.
+
+## Bump
+
+- [x] Patch
+- [ ] Minor
+- [ ] Skip
+
+## Changelog
+### Fixed
+
+- Reading a data model from CDF with `neat.read.cdf.data_model(...)`
+with a reverse direct relation that points to a direct relation that is
+not pointing in the opposite direction now gives a warning instead of an
+error.
