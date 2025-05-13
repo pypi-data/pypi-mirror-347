@@ -1,0 +1,17 @@
+formulate/AST.py,sha256=pKyhKB03ab6dM7PzqFki-0R-9lU_fTERqY7vo7CIXgQ,15424
+formulate/__init__.py,sha256=_VW3azXdLeOR72YlNdcIVePWaLxlDzylJfGE37bXLZU,761
+formulate/_utils.py,sha256=BdYyvyhT-UpoEUC3ciBElsSNTGWPS-7vfxgPDHi3FEU,3849
+formulate/_version.py,sha256=fo5PXsZuloQZu3LdpIFTUAXvJmY2L9N5sNGe2tvdU98,511
+formulate/convert_ptree.py,sha256=SB_Lfq1MPbqC8UoT1yHhZFUR5CrBH3p1g9uNkWnbCMU,422
+formulate/error_handler.py,sha256=NVsAgSTrRoRHpfkSrML-ubQLJxfUaP1xi7HW20_n_Tc,268
+formulate/func_translations.py,sha256=rpKnR09pC6Zw389Ecx_CRPrDNSOPZ-D7Sti7UZrVUcM,973
+formulate/matching_tree.py,sha256=ejS2PDBQfkAwv0LKWCOREWfMw-xMbv_d9gJfbVyKY3g,229
+formulate/numexpr_parser.py,sha256=TWvJl9RDwfCidjRV3_P-PsXfRjV5k-1cCQgX05xjEEs,144835
+formulate/toast.py,sha256=58LbZdGyAa1GQ6dl8SbNsupoUD_RMyyI1bud2lixuGU,5806
+formulate/ttreeformula_parser.py,sha256=CXP3q2iqEG3XIiDU1DLWR9YsmrNMvmX9zefecprJRz0,162340
+formulate/_compat/__init__.py,sha256=flGrKlMcAfjTJoHna9moM4bh9l-IAmCQ1hlq9_kEjiU,96
+formulate/_compat/typing.py,sha256=aPgn71ngSRPzxiAnC4jHWEfpPfO8ecBTiifBifEgBPU,381
+formulate-1.0.0.dist-info/METADATA,sha256=QL8_wyZD8DkXi5gOKn_-QFBKAVhIMR-ikfjryD36mPw,4588
+formulate-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+formulate-1.0.0.dist-info/licenses/LICENSE,sha256=LkrsiJFnoFKwjjPdO7qSCjcuoZ7LCf4FYEJowY0JgvM,1537
+formulate-1.0.0.dist-info/RECORD,,
