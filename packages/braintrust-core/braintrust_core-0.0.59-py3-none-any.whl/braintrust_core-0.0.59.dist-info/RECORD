@@ -1,0 +1,9 @@
+braintrust_core/__init__.py,sha256=Ay4mxX7oNIgz_PMGcEXDbP2WXt8vgdxNGlIDfdGk6ko,60
+braintrust_core/score.py,sha256=qZt1xnekOJ5pq1MoflAXPtoAbMHOuozwfC_-wj967sM,2495
+braintrust_core/serializable_data_class.py,sha256=TjlLpUmVAJ_VW7-aiEecBVQ5d3k4bgQsVeJo_5yIAU0,2471
+braintrust_core/test_serializable_data_class.py,sha256=b04Ym64YtC6GJRGbKIN4J20RG1QN1FlnODwtEQh4sv0,1897
+braintrust_core/version.py,sha256=5EJFseSpBlkf-OfiCAF4o6K8rquMo1bHKa-etEa5TZE,19
+braintrust_core-0.0.59.dist-info/METADATA,sha256=stID3GIaX_ZPyZ4jt5HxG_9VwtKrPckVEMH56O5Y1Sw,669
+braintrust_core-0.0.59.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+braintrust_core-0.0.59.dist-info/top_level.txt,sha256=OwmlPKvlJ_J5y_PuKFhDj3fm42A3YAZuUmKXmSkGrj0,16
+braintrust_core-0.0.59.dist-info/RECORD,,
