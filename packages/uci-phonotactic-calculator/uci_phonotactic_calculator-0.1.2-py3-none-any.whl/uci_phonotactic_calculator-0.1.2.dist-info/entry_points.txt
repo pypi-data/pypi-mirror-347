@@ -1,0 +1,3 @@
+[console_scripts]
+ngram-calculator = uci_phonotactic_calculator.ngram_calculator:main
+uci-phonotactic-calculator = uci_phonotactic_calculator.ngram_calculator:main
