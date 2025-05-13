@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: dsloader
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/NREL-Distribution-Suites/dsloader#readme
+Project-URL: Issues, https://github.com/NREL-Distribution-Suites/dsloader/issues
+Project-URL: Source, https://github.com/NREL-Distribution-Suites/dsloader
+Author-email: Kapil Duwadi <Kapil.Duwadi@nrel.gov>, Aadil Latif <Aadil.Latif@nrel.gov>, Abodh Poudyal <abodh.poudyal@nrel.gov>
+License-Expression: BSD-3-Clause
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.11
+Requires-Dist: boto3~=1.37.38
+Requires-Dist: loguru~=0.7.3
+Requires-Dist: paramiko~=3.5.1
+Requires-Dist: scp~=0.15.0
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# dsloader
+Load distribution system from cloud or HPC evnironment to your local machine. The tests folder contains an example to load the OpenDSS model from the SMART-DS S3 bucket hosted in OEDI.
+
+> [!Note]
+> Currently we only support SMART-DS models in OpenDSS format. Stay tuned for extended features.

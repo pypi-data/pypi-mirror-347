@@ -1,0 +1,15 @@
+dsloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsloader/constants.py,sha256=sOW-hRWI52KDBnsfZ0_t7HoIj8sw1ngE58z8V4jFmNI,80
+dsloader/exceptions.py,sha256=R-D-PshvxSq24ofcXhzt0TxZyH4KUE_cvSRGqFLs13A,405
+dsloader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsloader/utils.py,sha256=8PNk-MqgIePbMrqZ9pPjZbSpsB4Yl3NCoGQRMaHns2k,640
+dsloader/case/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsloader/case/aws.py,sha256=hmMkqMFf6QCKWFLiQDE1Q7sqY5gSq-aLfxbmIl2-AKk,2018
+dsloader/case/hpc.py,sha256=tx3QY1KKBBy0w2sgUJMlpATNFy-G2rCv-Ws9ygOJCuQ,2046
+dsloader/case/smartds.py,sha256=Cz0CC6yQFWr2OITNY5SaawWkyeu5hCDLObNRZTSS57M,2725
+dsloader/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsloader/cli/cli.py,sha256=TuHmRKSyHu_t5v2fUC_ZRPvf9Yahr6bkSKfpk3oJVGI,142
+dsloader/cli/download_case.py,sha256=yXpVehsXQ9V02kDH8ko8Clmtk3OjqXangHTXeE_uEFQ,4654
+dsloader-0.0.1.dist-info/METADATA,sha256=0XTxE8Dq3_UejhCPA2r4TUxU7QkxDdoaJVG7yeIE55g,1325
+dsloader-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dsloader-0.0.1.dist-info/RECORD,,
