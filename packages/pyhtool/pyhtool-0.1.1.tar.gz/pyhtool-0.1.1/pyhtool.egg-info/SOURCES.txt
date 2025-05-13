@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pyhtool/Operator.py
+pyhtool/QRCode.py
+pyhtool/Verification.py
+pyhtool/__init__.py
+pyhtool.egg-info/PKG-INFO
+pyhtool.egg-info/SOURCES.txt
+pyhtool.egg-info/dependency_links.txt
+pyhtool.egg-info/requires.txt
+pyhtool.egg-info/top_level.txt
+tests/test.py
+tests/test_gui.py
