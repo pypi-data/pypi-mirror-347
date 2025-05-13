@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=ZvqTY8nfaEnzzlEMgrXKGpCgXkLQLvMTg9ecKiZwwsI,170
+README.md,sha256=XSLUpay8s9xYgvVmmAcq5FzCSgEEedFkKd7sl8BG1A4,6173
+dataclass_settings/__init__.py,sha256=RhX9HcBe0fdsdWeiH05_0qBu8l8z_wZFuPu78H-QW3s,264
+dataclass_settings/base.py,sha256=d2qsB-4gkXoXNsMJFZSaN7dnpQ4GKCdZRMRrgoNX7II,3468
+dataclass_settings/class_inspect.py,sha256=ZwDN93AZw4uLpwjifEwm-q0FfTOcdzq-JKuN95AA5v8,7394
+dataclass_settings/context.py,sha256=sH61CbN5Bv03ZndypdBrBP-SbV1wRP1LTya1grIZ_1w,2071
+dataclass_settings/loaders.py,sha256=7gwzbYo0BiFm-9N5xyVRm0qX2s7bK4nRPYPJ8tbgpzU,3609
+dataclass_settings/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataclass_settings-0.5.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dataclass_settings-0.5.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+dataclass_settings-0.5.2.dist-info/METADATA,sha256=Qk-9v3XiBGGiWsDR81O9tb1qnBGJopYc_tfLP-KTI5g,7062
+dataclass_settings-0.5.2.dist-info/RECORD,,
