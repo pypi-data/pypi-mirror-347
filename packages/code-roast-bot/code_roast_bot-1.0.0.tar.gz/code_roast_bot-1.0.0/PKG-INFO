@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: code_roast_bot
+Version: 1.0.0
+Summary: A security-hardened, personality-driven GPT-powered Python code roasting tool.
+Author: Your Name
+License: BSD-3-Clause
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai==1.16.2
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: tiktoken==0.6.0
+Requires-Dist: tenacity==8.2.3
+Requires-Dist: colorama==0.4.6
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-BSD--3--Clause-green)
+![Security Audited](https://img.shields.io/badge/security-a%2B-brightgreen)
+
+# Code Roast Bot
+
+(README content goes here.)
