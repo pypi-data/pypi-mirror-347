@@ -1,0 +1,2 @@
+[console_scripts]
+TelegramDoxing = TelegramDoxing.app:start_app
