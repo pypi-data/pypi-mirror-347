@@ -1,0 +1,14 @@
+from setuptools import setup,find_packages
+setup(
+    name="moonmake",
+    version="0.1",
+    packages=find_packages(),
+    entry_points={
+        "console_scripts":[
+            "moonmake-new=moonmake.create:__main"
+        ]
+    },
+    install_requires=[
+        "requests==2.32.3"
+    ]
+)
