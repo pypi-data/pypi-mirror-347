@@ -1,0 +1,9 @@
+dynawrap/__init__.py,sha256=KtnoF21PKG3N1F2BL2Wr20cl86uzQwd0AplJH6BLXeg,1554
+dynawrap/_version.py,sha256=AGmG_Lx0-9ztFw_7d9mYbaYuC-2abxE1oXOUNAY29YY,511
+dynawrap/dbitem.py,sha256=TFAha5Z_pXhAJjBgqVoCzxo4ynodxx3mITzaoa956uQ,4837
+dynawrap/dynamodb.py,sha256=pGtSpttrrH5bVSTbX_hWlN6KCm9AiWJ6Vr88LG74vVM,6477
+dynawrap/model_registry.py,sha256=q0mpSht9E7n9ouIJSetmoVPpfUY35LzkUwqjjugc8gI,708
+dynawrap-0.3.0.dist-info/METADATA,sha256=eXMgI-9my7t6iXHtV0Ltw5h0fcHfhihDVB0FmWH552M,3465
+dynawrap-0.3.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+dynawrap-0.3.0.dist-info/top_level.txt,sha256=DnAtJiS2uMUNLceq5ko8PtYod4WmTM7WENTRxeLBhlI,9
+dynawrap-0.3.0.dist-info/RECORD,,
