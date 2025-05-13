@@ -1,0 +1,9 @@
+pyproject.toml
+setup.cfg
+setup.py
+bin/sdbmigrate.py
+sdbmigrate.egg-info/PKG-INFO
+sdbmigrate.egg-info/SOURCES.txt
+sdbmigrate.egg-info/dependency_links.txt
+sdbmigrate.egg-info/requires.txt
+sdbmigrate.egg-info/top_level.txt
