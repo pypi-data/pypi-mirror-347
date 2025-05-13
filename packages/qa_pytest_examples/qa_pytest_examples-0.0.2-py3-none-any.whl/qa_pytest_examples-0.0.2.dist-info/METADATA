@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: qa_pytest_examples
+Version: 0.0.2
+Summary: PyTest examples
+Author-Email: Adrian Herscu <adrian.herscu@gmail.com>
+License-Expression: Apache-2.0
+Requires-Python: >=3.13
+Requires-Dist: qa-testing-utils
+Requires-Dist: qa-pytest-commons
+Requires-Dist: qa-pytest-rest
+Requires-Dist: qa-pytest-webdriver
+Requires-Dist: tenacity
+Requires-Dist: PyHamcrest
+Requires-Dist: pytest
+Requires-Dist: pyfunctional
+Requires-Dist: more-itertools
+Description-Content-Type: text/markdown
+
+# qa-pytest-examples
