@@ -1,0 +1,28 @@
+// this is the main mapping json file to map source technologies to appropriate json files
+// the converters will use this file to map the command line arg to the config file
+{
+	"INFA" : {
+		"output_tech_config" : {
+			"SPARKSQL" : "final_infapc2sparksql.json",
+			"PYSPARK" : "final_infapc2pyspark.json"
+		}
+	},
+	"DATASTAGE" : {
+		"output_tech_config" : {
+			"SPARKSQL" : "final_datastage2sparksql.json",
+			"PYSPARK" : "final_datastage2pyspark.json"
+		}
+	},
+	"SQL" : {
+		"ATHENA" : "base_athena2databricks_sql.json",
+		"REDSHIFT" : "base_redshift2databricks_sql.json",
+		"SYNAPSE" : "base_synapse2databricks_sql.json",
+		"ORACLE" : "oracle2databricks_base.json",
+		"MSSQL" : "mssql2databricks_sql.json",
+		"NETEZZA" : "netezza2sparksql.json",
+		"TERADATA" : "teradata2databricksql_main.json",
+		"GREENPLUM" : "base_greenplum2databricks_sql.json",
+		"BIGQUERY" : "base_bq2databricks_sql.json",
+		"DEFAULT" : "mssql2databricks_sql.json" // this is random, we can choose another default mapper
+	}
+}
