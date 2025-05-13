@@ -1,0 +1,13 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fmconsult/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fmconsult/mailerapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fmconsult/mailerapi/api.py,sha256=YkUueQPZ4hkd3Y9SVCBtWpi_ORJ5Qx_qanvTRDxHS9A,280
+fmconsult/mailerapi/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fmconsult/mailerapi/apis/emails.py,sha256=QVSxxLGmImODY0Y4YTxtC9Vcit4cz3fwdg66wFXyxdE,889
+fmconsult/mailerapi/dtos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fmconsult/mailerapi/dtos/email.py,sha256=LyYD6G-u2rTrpzIhVvBNet6-_fJLAy9PZ6OkZg09sCM,796
+fmconsult_mailer_api_python_sdk-1.0.0.dist-info/licenses/LICENSE,sha256=YZjQnFjzXGFa0D3iCQkNDwGBNuTGJREkRmItGX1B3YM,122
+fmconsult_mailer_api_python_sdk-1.0.0.dist-info/METADATA,sha256=TdrE59d5Yhspiao3amGsKi5JSXZx-SxGuej0Df8yLsM,796
+fmconsult_mailer_api_python_sdk-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+fmconsult_mailer_api_python_sdk-1.0.0.dist-info/top_level.txt,sha256=q7f6ezwPmpsLq0feZx3vFnNAMRFM88R5IMcMK0YIyUo,19
+fmconsult_mailer_api_python_sdk-1.0.0.dist-info/RECORD,,
