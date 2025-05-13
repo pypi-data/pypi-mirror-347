@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+Franko/__init__.py
+Franko/decline.bundle.js
+Franko/franko.py
+Franko/validate.py
+Franko.egg-info/PKG-INFO
+Franko.egg-info/SOURCES.txt
+Franko.egg-info/dependency_links.txt
+Franko.egg-info/requires.txt
+Franko.egg-info/top_level.txt
+tests/test.py
