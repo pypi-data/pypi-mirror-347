@@ -1,0 +1,10 @@
+.pytest_cache
+.DS_Store
+**/.ipynb_checkpoints
+ensemble_store
+mock_data
+data
+__pycache__
+test_ensemble_store_integration
+*.png
+/logs
