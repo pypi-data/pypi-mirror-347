@@ -1,0 +1,16 @@
+com/__init__.py,sha256=5WW_tcX7g-gWvJaz6C3PtYM5Xu19QTGKaOfM0NR_lX4,265
+com/vmware/__init__.py,sha256=5WW_tcX7g-gWvJaz6C3PtYM5Xu19QTGKaOfM0NR_lX4,265
+com/vmware/vmc/__init__.py,sha256=5WW_tcX7g-gWvJaz6C3PtYM5Xu19QTGKaOfM0NR_lX4,265
+com/vmware/vmc/draas_client.py,sha256=rdlPe7t27tPNe0xFiYal_hr0Sp3QDaK9jqtgdoy1fTo,65413
+com/vmware/vmc/draas/__init__.py,sha256=5WW_tcX7g-gWvJaz6C3PtYM5Xu19QTGKaOfM0NR_lX4,265
+com/vmware/vmc/draas/model_client.py,sha256=g_FLcvE2xKyoVrkfiQxnu1kail9PhThxjKho5FsJ6N0,54888
+oab_vmwarecloud_draas-1.23.0.dist-info/licenses/LICENSE,sha256=FsziOoa5uh_ouZry-c0o9pafWscBfwB4V00UHKyvfBo,1081
+vmware/__init__.py,sha256=5WW_tcX7g-gWvJaz6C3PtYM5Xu19QTGKaOfM0NR_lX4,265
+vmware/vapi/__init__.py,sha256=5WW_tcX7g-gWvJaz6C3PtYM5Xu19QTGKaOfM0NR_lX4,265
+vmware/vapi/vmc/__init__.py,sha256=5WW_tcX7g-gWvJaz6C3PtYM5Xu19QTGKaOfM0NR_lX4,265
+vmware/vapi/vmc/client.py,sha256=QYTaHYJ11ja8KPhUGTgOE-IAMVQR-mlhhONFy1T-Pz8,2950
+vmware/vapi/vmc/csp_filter.py,sha256=w39D_LNfdSxgLgr0j0pHgLfoqqzf4gZyWNTmCvVAe5o,2937
+oab_vmwarecloud_draas-1.23.0.dist-info/METADATA,sha256=0keZKPzW-Rl0efXUtdB26nJjhO2CGO2XeS8IA9AOaiM,2068
+oab_vmwarecloud_draas-1.23.0.dist-info/WHEEL,sha256=joeZ_q2kZqPjVkNy_YbjGrynLS6bxmBj74YkvIORXVI,109
+oab_vmwarecloud_draas-1.23.0.dist-info/top_level.txt,sha256=JGiQu6l2wCfsKX5c_tsmNe6tM5B6HtwYdwAOF37BeJs,11
+oab_vmwarecloud_draas-1.23.0.dist-info/RECORD,,
