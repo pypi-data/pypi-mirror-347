@@ -1,0 +1,9 @@
+typer
+kink
+loguru
+pandas
+pyarrow
+pydantic
+langchain-openai
+langchain
+tqdm
