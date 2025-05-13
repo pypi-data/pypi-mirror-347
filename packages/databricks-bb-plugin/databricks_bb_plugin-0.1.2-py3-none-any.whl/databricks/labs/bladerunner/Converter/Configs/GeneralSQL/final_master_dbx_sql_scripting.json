@@ -1,0 +1,10 @@
+// this is the main dbx sql converter config file
+// it enables all the main hooks necessary to process any source sql dialects
+{
+	//"inherit_from" : ["general_sql_specs.json"]
+	"CUSTOM_CONVERTER_MODULES" : ["final_master_dbx_sql_scripting"],
+	"prescan_and_collect_info_hook" : "::handler_master_dbx_sql_scripting_prescan",
+	"initialize_hooks_call" : "::handler_master_dbx_init_hooks",
+	"preprocess_file" : 1,
+	"preprocess_routine" : "::handler_master_dbx_preprocess_file"
+}
