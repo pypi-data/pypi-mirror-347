@@ -1,0 +1,15 @@
+setup.py
+RPG_Dice_Roller.egg-info/PKG-INFO
+RPG_Dice_Roller.egg-info/SOURCES.txt
+RPG_Dice_Roller.egg-info/dependency_links.txt
+RPG_Dice_Roller.egg-info/top_level.txt
+rpg_dice_roller/__init__.py
+rpg_dice_roller/src/__init__.py
+rpg_dice_roller/src/main.py
+rpg_dice_roller/src/functions/__init__.py
+rpg_dice_roller/src/functions/dice_roll.py
+rpg_dice_roller/src/functions/statistics.py
+rpg_dice_roller/src/models/__init__.py
+rpg_dice_roller/src/models/dice_controller.py
+rpg_dice_roller/src/models/dice_input.py
+rpg_dice_roller/src/models/errors.py
