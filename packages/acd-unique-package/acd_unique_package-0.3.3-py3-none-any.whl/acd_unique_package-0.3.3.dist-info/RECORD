@@ -1,0 +1,12 @@
+acd_unique_package/__init__.py,sha256=PpNxKtHTT5s3NdAJPolasZEx8RW_tvJeALfyagzeNig,54
+acd_unique_package/__main__.py,sha256=k0EMQHzjqacJsC4PfHLOpX-dkhXTMGU-jFZK47PeKQU,269
+acd_unique_package/names.txt,sha256=-8NLs7k_3pj8QHYh-m7XaXxv7X_w3eVv-Zy6jU_0T-c,34
+acd_unique_package/speaker.py,sha256=5TliRaUd6gby4_qCqBBLl6zCsAJ0MBmhIeGij4uMX6Y,192
+acd_unique_package/speakers/__init__.py,sha256=riEhCfL4q2Wql0Yhc33Afx1obQ5CTjqmGNiDLgPJaPw,21
+acd_unique_package/speakers/acd.py,sha256=kRDp0wxh8vfKerX4Tgx6TVGt0Fbw-4i3yZaaSC8nhGk,155
+acd_unique_package-0.3.3.dist-info/licenses/LICENSE.txt,sha256=OAqKWf4zhqOXjxv3KDn1eI4ctSME_UhgVP_oBqcKGic,1451
+acd_unique_package-0.3.3.dist-info/METADATA,sha256=3Kql5gw_c5vUYrYo4kCOnkctT6XNvP7P-JW8eUfBmIw,4292
+acd_unique_package-0.3.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+acd_unique_package-0.3.3.dist-info/entry_points.txt,sha256=qW0HGWJNSlKU7urPjhWrpJ0k2E5y_V-yEvIsexGNZjc,72
+acd_unique_package-0.3.3.dist-info/top_level.txt,sha256=U9LIr3-WvNzxxaK8Xtpa-89JFjO2cvJCKOcoIrQKIEo,19
+acd_unique_package-0.3.3.dist-info/RECORD,,
