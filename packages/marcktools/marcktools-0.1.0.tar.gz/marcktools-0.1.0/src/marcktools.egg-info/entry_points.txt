@@ -1,0 +1,2 @@
+[console_scripts]
+marcktools = marcktools.server:main

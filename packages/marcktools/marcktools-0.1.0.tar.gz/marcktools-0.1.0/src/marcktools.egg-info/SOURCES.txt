@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/marcktools/__init__.py
+src/marcktools/server.py
+src/marcktools.egg-info/PKG-INFO
+src/marcktools.egg-info/SOURCES.txt
+src/marcktools.egg-info/dependency_links.txt
+src/marcktools.egg-info/entry_points.txt
+src/marcktools.egg-info/requires.txt
+src/marcktools.egg-info/top_level.txt
