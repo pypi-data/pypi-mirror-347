@@ -1,0 +1,5 @@
+numpy
+matplotlib
+imageio>=2.37.0
+moviepy>=2.1.1
+seaborn>=0.13.2
