@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: safentic
+Version: 1.0.4
+Summary: Safentic SDK for behavior analysis
+Home-page: https://safentic.com
+Author: Safentic
+Author-email: contact@safentic.com
+License: Proprietary :: Safentic Commercial License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: PyYAML
+Requires-Dist: sentence-transformers==3.2.1
+Requires-Dist: sqlalchemy
+Requires-Dist: python-dotenv
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# Safentic SDK
+
+Safentic is a runtime guardrail SDK for agentic AI systems.  
+It intercepts and evaluates unsafe tool calls between agent **intent** and **execution**, enforcing custom safety policies.
+
+---
+
+## Installation
+
+Install from PyPI:
+
+    pip install safentic
+
+---
+
+## API Key Required
+
+Safentic requires a valid API key to function.  
+To obtain one, contact: contact@safentic.com
+
+---
+
+## Quick Start
+
+```python
+from safentic import SafetyLayer, SafenticError
+
+layer = SafetyLayer(api_key="your-api-key", agent_id="agent-007")
+
+try:
+    layer.protect("send_email", {"body": "Refund me now!"})
+except SafenticError as e:
+    print("Blocked by policy:", e)
