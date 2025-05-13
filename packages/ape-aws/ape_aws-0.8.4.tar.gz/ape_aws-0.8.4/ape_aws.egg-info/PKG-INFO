@@ -1,0 +1,235 @@
+Metadata-Version: 2.4
+Name: ape-aws
+Version: 0.8.4
+Summary: Ape AWS KMS: Ape plugin to make transactions through AWS KMS
+Home-page: https://github.com/ApeWorX/ape-aws
+Author: ApeWorX Ltd.
+Author-email: admin@apeworx.io
+License: Apache-2.0
+Keywords: ethereum
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.7,<4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: importlib-metadata; python_version < "3.8"
+Requires-Dist: boto3<2,>=1.34.79
+Requires-Dist: eth-ape<0.9,>=0.8.2
+Requires-Dist: ecdsa<1,>=0.19.0
+Requires-Dist: cryptography<38,>=37.0.4
+Provides-Extra: test
+Requires-Dist: pytest<9.0,>=8.0; extra == "test"
+Requires-Dist: pytest-xdist; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: hypothesis<7.0,>=6.2.0; extra == "test"
+Provides-Extra: lint
+Requires-Dist: black<25,>=24.2.0; extra == "lint"
+Requires-Dist: mypy<2,>=1.8.0; extra == "lint"
+Requires-Dist: flake8<8,>=7.0.0; extra == "lint"
+Requires-Dist: isort<6,>=5.10.1; extra == "lint"
+Provides-Extra: release
+Requires-Dist: setuptools>=75.6.0; extra == "release"
+Requires-Dist: wheel; extra == "release"
+Requires-Dist: twine; extra == "release"
+Provides-Extra: dev
+Requires-Dist: pytest<9.0,>=8.0; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: hypothesis<7.0,>=6.2.0; extra == "dev"
+Requires-Dist: black<25,>=24.2.0; extra == "dev"
+Requires-Dist: mypy<2,>=1.8.0; extra == "dev"
+Requires-Dist: flake8<8,>=7.0.0; extra == "dev"
+Requires-Dist: isort<6,>=5.10.1; extra == "dev"
+Requires-Dist: setuptools>=75.6.0; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: commitizen; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest-watch; extra == "dev"
+Requires-Dist: IPython; extra == "dev"
+Requires-Dist: ipdb; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Ape AWS KMS
+
+Ape plugin to make transactions through AWS KMS
+
+## Dependencies
+- [python3](https://www.python.org/downloads) version 3.10 or greater, python3-dev
+
+## Installation
+
+### via `pip`
+
+You can install the latest release via [`pip`](https://pypi.org/project/pip/):
+
+```bash
+pip install ape-aws
+```
+
+### via `setuptools`
+
+You can clone the repository and use [`setuptools`](https://github.com/pypa/setuptools) for the most up-to-date version:
+
+```bash
+git clone https://github.com/ApeWorX/ape-aws.git
+cd ape-aws
+python3 setup.py install
+```
+
+## Quick Usage
+
+```bash
+pip install ape-aws
+```
+
+### Using CLI tool
+
+List commands:
+
+```bash
+ape aws -h
+```
+
+See logged in profile (useful for debugging auth in containers)
+
+```bash
+ape aws whoami
+```
+
+To create a new user (recommended for cloud usage)
+
+```bash
+ape aws users new USER
+```
+
+To delete this user (WARNING this is permanent)
+
+```bash
+ape aws users remove USER
+```
+
+Create an access key for this user (WARNING don't lose generated token)
+
+```bash
+ape aws users tokens new USER > .env.USER
+```
+
+To create a new Ethereum signing key (recommended to generate)
+
+```bash
+ape aws keys generate KEY
+```
+
+To schedule this signing key for deletion (WARNING takes 30 days)
+
+```bash
+ape aws keys remove KEY
+```
+
+To grant your user access to the signing key (don't forget to do this!)
+
+```bash
+ape aws keys grant KEY -u USER
+```
+
+
+
+### IPython
+
+First, create a KMS key with the CLI tool
+
+```bash
+ape console
+```
+
+```python
+In [1]: kms_signer = accounts.load("KEY")
+In [2]: kms_signer.sign_message("12345")
+Out[2]: <MessageSignature v=27, r=0x..., s=0x...>
+```
+
+Now to test your new IAM user's access, you can do the following
+
+```bash
+env $(echo .env.USER | xargs) ape console
+```
+
+and you should be able to do the same as the above!
+
+Use the access token above to run with your containers by supplying them as environment variables
+
+WARNING: Don't forget to cycle your access tokens on a regular basis to prevent access leakage!
+
+## Development
+
+This project is in development and should be considered a beta.
+Things might not be in their final state and breaking changes may occur.
+Comments, questions, criticisms and pull requests are welcomed.
+
+## Prerequisites to AWS Setup
+
+To begin, create a virtual environment set up and activate the virtual environment before doing anything for the setup of AWS
+
+1. You must have an AWS account
+2. Must be an AWS Identity and Access Management (IAM) user with administrator access
+3. Must have configured AWS credentials
+4. Must have [Docker](https://docs.docker.com/get-docker/),
+   [Python3](https://www.python.org/downloads/) and
+   [pip](https://pip.pypa.io/en/stable/installation/) installed on your workstation
+
+## AWS Setup
+
+#### For Mac and Linux
+Create a `~/.aws` folder in your home directory:
+```bash
+mkdir ~/.aws
+```
+
+Note: get your access key and key id from your IAM in you AWS account [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
+Create a `credentials` file in the `~/.aws` folder:
+```bash
+cat <<EOF > ~/.aws/credentials
+[default]
+aws_access_key_id = YOUR_ACCESS_KEY
+aws_secret_access_key = YOUR_SECRET
+EOF
+```
+
+Create a `config` file in the `~/.aws` folder:
+```bash
+cat <<EOF > ~/.aws/config
+[default]
+region = YOUR_REGION
+output = json
+EOF
+```
+
+## AWS KMS Key Import Steps
+
+For manual setup, follow this [article](https://aws.amazon.com/blogs/database/import-ethereum-private-keys-to-aws-kms/)
+
+## License
+
+This project is licensed under the [Apache 2.0](LICENSE).
