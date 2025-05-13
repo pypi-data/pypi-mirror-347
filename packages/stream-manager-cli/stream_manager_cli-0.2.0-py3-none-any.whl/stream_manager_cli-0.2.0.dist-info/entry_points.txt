@@ -1,0 +1,2 @@
+[console_scripts]
+stream-manager = stream_manager_cli.main:main
