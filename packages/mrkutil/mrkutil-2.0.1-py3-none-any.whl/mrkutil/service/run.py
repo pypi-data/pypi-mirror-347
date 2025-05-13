@@ -1,0 +1,91 @@
+import os
+import sys
+from mrkutil.utilities import import_all_subclasses_from_package, register_service_pid
+from mrkutil.communication import listen
+from typing import Callable
+import logging
+
+logger = logging.getLogger(__name__)
+
+
+def __run_service_prod(
+    exchange: str,
+    exchange_type: str,
+    queue: str,
+    max_threads: int,
+    on_message_processing_complete: Callable = None,
+):
+    """
+    Service starting point
+    """
+    import_all_subclasses_from_package("package.app.handlers")
+    pidfile = register_service_pid(exchange)
+    try:
+        logger.info("Starting ...")
+        listen(
+            exchange=exchange,
+            exchange_type=exchange_type,
+            queue=queue,
+            max_threads=max_threads,
+            on_message_process_complete=on_message_processing_complete,
+        )
+        sys.exit(0)
+    finally:
+        os.unlink(pidfile)
+
+
+def __run_service_develop(
+    exchange: str,
+    exchange_type: str,
+    queue: str,
+    max_threads: int,
+    on_message_processing_complete: Callable = None,
+):
+    """
+    Service starting point with watchfiles
+    """
+    try:
+        __run_service_prod(
+            exchange, exchange_type, queue, max_threads, on_message_processing_complete
+        )
+    except KeyboardInterrupt:
+        logger.info("Detecting changes, reloading..")
+
+
+def run_service(
+    develop: bool,
+    exchange: str,
+    exchange_type: str,
+    queue: str,
+    max_threads: int,
+    on_message_processing_complete: Callable = None,
+    root_package: str = "package",
+):
+    """
+    Run service in develop mode or production mode
+    develop: bool, if True, run service in develop mode
+    exchange: str, exchange name - make sure its unique
+    exchange_type: str, exchange type usually direct
+    queue: str, queue name
+    max_threads: int, max threads - start with 5 and increase if needed
+    root_package: str, root package name
+    """
+    if develop:
+        from watchfiles import run_process
+
+        logger.info("Running watchfiles, will watch for changes in current service ...")
+        run_process(
+            root_package,
+            target=__run_service_develop,
+            args=(
+                exchange,
+                exchange_type,
+                queue,
+                max_threads,
+                on_message_processing_complete,
+            ),
+        )
+    else:
+        __run_service_prod(
+            exchange, exchange_type, queue, max_threads, on_message_processing_complete
+        )
