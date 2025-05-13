@@ -1,0 +1,2 @@
+[console_scripts]
+nginx = soda_nginx.main:main

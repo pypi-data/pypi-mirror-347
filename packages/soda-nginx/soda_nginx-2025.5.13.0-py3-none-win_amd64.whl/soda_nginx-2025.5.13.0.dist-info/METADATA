@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: soda-nginx
+Version: 2025.5.13.0
+Summary: dev nginx server via pip (Windows only)
+Project-URL: Repository, https://github.com/soda92/soda-nginx
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: sodatools>=2025.2.16.0
+Description-Content-Type: text/markdown
+
+# soda-nginx
+dev nginx server via pip (Windows only)
