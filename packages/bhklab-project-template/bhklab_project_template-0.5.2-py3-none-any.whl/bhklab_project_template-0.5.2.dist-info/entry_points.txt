@@ -1,0 +1,2 @@
+[console_scripts]
+bhk-project-template = bhklab_project_template.__init__:cli
