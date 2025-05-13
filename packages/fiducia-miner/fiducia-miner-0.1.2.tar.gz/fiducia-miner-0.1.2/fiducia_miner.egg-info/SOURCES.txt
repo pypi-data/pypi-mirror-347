@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fiducia_miner/__init__.py
+fiducia_miner/cli.py
+fiducia_miner/miner.py
+fiducia_miner.egg-info/PKG-INFO
+fiducia_miner.egg-info/SOURCES.txt
+fiducia_miner.egg-info/dependency_links.txt
+fiducia_miner.egg-info/entry_points.txt
+fiducia_miner.egg-info/requires.txt
+fiducia_miner.egg-info/top_level.txt

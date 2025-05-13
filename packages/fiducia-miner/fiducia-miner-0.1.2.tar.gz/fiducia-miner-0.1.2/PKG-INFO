@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: fiducia-miner
+Version: 0.1.2
+Summary: A mining client for Fiducia blockchain
+Home-page: https://github.com/yourusername/fiducia-miner
+Author: Fiducia Team
+Author-email: info@fiducia.org
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Fiducia Mining Client
+
+A Python package for mining Fiducia blockchain.
+
+## Installation
+
+### From PyPI
+
+```bash
+pip install fiducia-miner
+```
+
+### From Source
+
+```bash
+git clone https://github.com/yourusername/fiducia-miner.git
+cd fiducia-miner
+pip install -e .
+```
+
+## Requirements
+
+- Python 3.6+
+- No external dependencies required!
+
+## Quick Start
+
+After installation, you can run the miner with just your wallet address:
+
+```bash
+fiducia-miner --miner-address YOUR_WALLET_ADDRESS
+```
+
+## What's Included?
+
+This package contains a complete, standalone implementation of the Fiducia blockchain miner. It includes:
+
+- A full blockchain implementation with Proof of Work mining
+- SQLite database storage for blocks and transactions
+- Mining rewards sent to your wallet address
+- API and dashboard simulation
+- P2P network capabilities (simulation)
+
+## Usage
+
+```
+usage: fiducia-miner [-h] --miner-address MINER_ADDRESS
+                     [--db DB] [--p2p-port P2P_PORT] [--api-port API_PORT]
+                     [--connect-to CONNECT_TO] [--mining-threads MINING_THREADS]
+                     [--clean]
+
+Fiducia Blockchain Mining Client
+
+options:
+  -h, --help            show this help message and exit
+  --miner-address MINER_ADDRESS
+                        Address to receive mining rewards
+  --db DB               Database filename (default: mining.db)
+  --p2p-port P2P_PORT   P2P port (default: 8333)
+  --api-port API_PORT   API port (default: 8545)
+  --connect-to CONNECT_TO
+                        Connect to an existing node (format: host:port)
+  --mining-threads MINING_THREADS
+                        Number of mining threads (default: 1)
+  --clean               Clean existing data before starting
+```
+
+## Features
+
+- Self-contained blockchain implementation
+- No external repository or Git required
+- SQLite database for persistent storage
+- Multi-threaded mining capability
+- Configurable P2P and API ports
+- Node connection support
+- Clean data option for fresh start
+
+## Examples
+
+### Basic Mining
+
+```bash
+fiducia-miner --miner-address 1A2B3C4D5E6F7G8H9I0J
+```
+
+### Mine with Custom Settings
+
+```bash
+fiducia-miner --miner-address 1A2B3C4D5E6F7G8H9I0J \
+            --db custom_blockchain.db \
+            --p2p-port 9000 \
+            --api-port 9001 \
+            --mining-threads 4
+```
+
+### Connect to Existing Node
+
+```bash
+fiducia-miner --miner-address 1A2B3C4D5E6F7G8H9I0J \
+            --connect-to 192.168.1.100:8333
+```
+
+### Clean Installation
+
+```bash
+fiducia-miner --miner-address 1A2B3C4D5E6F7G8H9I0J --clean
+```
+
+## Dashboard Access
+
+Once the miner is running, a simulated dashboard is available at:
+```
+http://localhost:8545/dashboard
+```
+(Or whichever API port you specified with --api-port)
+
+## Data Storage
+
+All blockchain data is stored in:
+```
+~/fiducia-miner-data/
+```
+
+This includes your blockchain database and related files.
+
+## Notes
+
+- All mining rewards will be sent to the address specified with --miner-address
+- The miner runs in the foreground by default; use Ctrl+C to stop
+- To run in the background, consider using tools like `nohup`, `screen`, or `tmux`
+- The default difficulty is set to 4 leading zeros for faster mining
+- Mining rewards are set to 50 FID per block
+
+## Development
+
+To develop on this package:
+
+```bash
+git clone https://github.com/yourusername/fiducia-miner.git
+cd fiducia-miner
+pip install -e .
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
