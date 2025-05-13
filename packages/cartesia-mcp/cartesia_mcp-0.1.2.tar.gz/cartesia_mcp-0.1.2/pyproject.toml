@@ -1,0 +1,24 @@
+[project]
+name = "cartesia-mcp"
+version = "0.1.2"
+description = "The official Cartesia MCP server"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cartesia>=2.0.2",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.7.1",
+]
+
+[tool.hatch.build]
+package-dir = {"" = "src"}
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+cartesia-mcp = "cartesia_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cartesia-mcp"]
