@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-couchbase = mcp_server:main
