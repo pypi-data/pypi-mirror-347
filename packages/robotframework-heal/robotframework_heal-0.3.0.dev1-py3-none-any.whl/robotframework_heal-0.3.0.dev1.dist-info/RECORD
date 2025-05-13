@@ -1,0 +1,13 @@
+SelfHealing/__init__.py,sha256=JWP-fESvoHuSLYUkfn3eHiueWAHVbv2zvk3L9vtCdXY,47
+SelfHealing/appium_healing.py,sha256=2oIbYFv5OGAZHNYBPWcXQPYO-zABjfeCcFZmO4avYeY,18925
+SelfHealing/browser_healing.py,sha256=5M3J1IRrDpcWh_mPx3FfwXVqCgJJHBU-c4wdIwLi3fc,37376
+SelfHealing/llm_client.py,sha256=3TBVDtwShchP1UHK5KJFlZqAAdpV6jkUQI4RU59-Ydo,631
+SelfHealing/locator_db.py,sha256=AQ1mKhLTrg9yLUP6wOgEU0vrnEtsrEHU-H9Pmrle-wQ,973
+SelfHealing/SelfHealing.py,sha256=d64bAabQuTGkweaEKu3RtLUegY2dfxrx7DjdGurABvQ,11909
+SelfHealing/template.html,sha256=E-v2Rk4NKbq-xZ7e8Ey5rYDEogPi16rxIdeCkFZg9-o,3340
+SelfHealing/utils.py,sha256=zahcUeIfjEOzLWaWj5Z8KiNpEKzjtRJLo92rU68C-2k,36628
+SelfHealing/visual_healing.py,sha256=xwB0GRam7slaELIFRjisSsFgSxvw5tAWdI8MzFMVEbM,14350
+robotframework_heal-0.3.0.dev1.dist-info/LICENSE,sha256=DSde58AeGOX6yzeMUkO3J9DorXKM9YpIJtf_i1s-p28,10443
+robotframework_heal-0.3.0.dev1.dist-info/METADATA,sha256=0smOHF3FxTTkY_P7pDsKGoBKiHgRBd6UxO6IUYo3nDA,4265
+robotframework_heal-0.3.0.dev1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+robotframework_heal-0.3.0.dev1.dist-info/RECORD,,
