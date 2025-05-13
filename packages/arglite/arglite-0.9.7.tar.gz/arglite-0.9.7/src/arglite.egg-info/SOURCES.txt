@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/arglite/__init__.py
+src/arglite/arglite.py
+src/arglite/argument.py
+src/arglite/code.py
+src/arglite.egg-info/PKG-INFO
+src/arglite.egg-info/SOURCES.txt
+src/arglite.egg-info/dependency_links.txt
+src/arglite.egg-info/requires.txt
+src/arglite.egg-info/top_level.txt
