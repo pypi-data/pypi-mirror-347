@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+  - file: markdown
+  - file: installation
+  - file: create-dataframe
+  - file: import-update
+  - file: import-export
+  - file: fill_missing
+  - file: describe
+  - file: rci
+  - file: ird
+  - file: nap
+  - file: pand
+  - file: autocorrelation
