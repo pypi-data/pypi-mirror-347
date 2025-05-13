@@ -1,0 +1,10 @@
+mojentic
+structlog
+fastapi
+uvicorn
+
+[dev]
+pytest>=7.0.0
+pytest-cov
+pytest-mock>=3.10.0
+flake8>=6.0.0
