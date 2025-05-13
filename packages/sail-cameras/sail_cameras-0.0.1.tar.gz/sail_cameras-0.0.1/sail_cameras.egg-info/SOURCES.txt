@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+sail_cameras/BaseCameraInterface.py
+sail_cameras/__init__.py
+sail_cameras/_modidx.py
+sail_cameras/cameras.py
+sail_cameras.egg-info/PKG-INFO
+sail_cameras.egg-info/SOURCES.txt
+sail_cameras.egg-info/dependency_links.txt
+sail_cameras.egg-info/entry_points.txt
+sail_cameras.egg-info/not-zip-safe
+sail_cameras.egg-info/requires.txt
+sail_cameras.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[nbdev]
+sail_cameras = sail_cameras._modidx:d
