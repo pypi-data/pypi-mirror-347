@@ -1,0 +1,16 @@
+local_ai_utils_core/__init__.py,sha256=gCtOtt2h33vekGGSwiP_rEqOG9aiClbETd8iXqrUFcE,66
+local_ai_utils_core/clients.py,sha256=mcum0heD3jQI7-dCJQSLWcGG6UXAQk7ZZQarvQGQ-do,538
+local_ai_utils_core/config.py,sha256=4xKrZxu5HKVmzybfeKTqf2_m7cS_opoghRPX66i07DQ,788
+local_ai_utils_core/core.py,sha256=vNRbTuZrEXmR8x-hYfosJB8slyJxsfJQJaOlDzEwcEc,377
+local_ai_utils_core/plugin_manager.py,sha256=mvt2rr_Kb5wPQ-wmqTQY89g9dcfrqzy9CK6JCf0NNRI,999
+local_ai_utils_core/ui/__init__.py,sha256=o24uDF0IJ1HoeIJFFbGqxqmoPS2aP5Ae2RJjaolumR0,44
+local_ai_utils_core/ui/base.py,sha256=L5_QZIKN_F5jujm_uktVxqsa8Lyp7G6hg0aGzjweB6s,347
+local_ai_utils_core/ui/external.py,sha256=P9qdUBLAVoBa7TtOIoSqc5xwbVEa8-tp4NIXTovkaFQ,712
+local_ai_utils_core/ui/push_notifications.py,sha256=HrOU44pdSOwxJWMG_ElmVLOJnxgyS5bFOK24frj4CyI,2528
+local_ai_utils_core/ui/terminal.py,sha256=yjHOONfLml4ZfOveCffBhxsqgWL-vHoM_S37MfiorMk,504
+local_ai_utils_core/ui/ui.py,sha256=DNBUI9qy1lAX-jNkam8G06Xt-QjwrlPw5kvbWzKixbQ,1081
+local_ai_utils_core-0.2.4.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+local_ai_utils_core-0.2.4.dist-info/METADATA,sha256=wzUDulHr1Ek2Hg4Vz2NYyY6FCSYKc3lpoE80QDYub8c,228
+local_ai_utils_core-0.2.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+local_ai_utils_core-0.2.4.dist-info/top_level.txt,sha256=8gT5gKnEzIcEVj1KEkxkamHBG5fGm8gEDAQRFq38yt4,20
+local_ai_utils_core-0.2.4.dist-info/RECORD,,
