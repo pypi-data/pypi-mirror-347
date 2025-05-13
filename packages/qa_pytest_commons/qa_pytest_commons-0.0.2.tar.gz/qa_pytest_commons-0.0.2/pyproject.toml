@@ -1,0 +1,26 @@
+[tool.pdm]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "qa_pytest_commons"
+version = "0.0.2"
+description = "PyTest commons library"
+authors = [
+    { name = "Adrian Herscu", email = "adrian.herscu@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.13"
+license = "Apache-2.0"
+dependencies = [
+    "qa-testing-utils",
+    "tenacity",
+    "PyHamcrest",
+    "pytest",
+    "pyfunctional",
+    "more-itertools",
+]
