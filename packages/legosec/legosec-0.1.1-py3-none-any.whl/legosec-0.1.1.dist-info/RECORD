@@ -1,0 +1,10 @@
+legosec/__init__.py,sha256=F3zWLvHxtrrnPcqqNzpcZjnv4IftEBITn3uCWtqqGQY,65
+legosec/encrypted_socket.py,sha256=2QcjnYBEt93lGkLPkMsV6AV9RqYC3YXCnmuuPJpNwf4,1174
+legosec/identity_manager.py,sha256=VAse06Sf5_UKpeLpIcaZQ0F7IzaCsKbIgs9pbqKc9pY,13276
+legosec/sdk.py,sha256=shRAorp3z15jjUDbvZWRUrmFNMbgfTZ4zOP9ZXytDQI,33644
+legosec/version.py,sha256=jZ5uWOiyV1Hb9rhNyo3bAgfWmHx8_xkueUWpcUrkz_w,21
+legosec-0.1.1.dist-info/LICENSE,sha256=sLelDYbo783FQl_QhF_4p6bd5ACsI4Tz0o-OXbOnrdg,1172
+legosec-0.1.1.dist-info/METADATA,sha256=ed8Y9xIvbBSTXY5rbEklcFix4NyqJIYFDScGOp1B7Zc,436
+legosec-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+legosec-0.1.1.dist-info/top_level.txt,sha256=KnuSZj-F_Re1x6ZWY_Q082Xf59tVZlOBJbPF4aiuafM,8
+legosec-0.1.1.dist-info/RECORD,,
