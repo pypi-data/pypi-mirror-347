@@ -1,0 +1,4 @@
+include GladUI/lib/windows/*.dll
+include GladUI/include/SDL2/*.h
+include GladUI/assets/GladG/*.h
+include LICENSE
