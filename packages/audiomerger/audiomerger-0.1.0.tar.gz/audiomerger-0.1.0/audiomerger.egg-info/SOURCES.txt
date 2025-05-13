@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+audiomerger/__init__.py
+audiomerger.egg-info/PKG-INFO
+audiomerger.egg-info/SOURCES.txt
+audiomerger.egg-info/dependency_links.txt
+audiomerger.egg-info/requires.txt
+audiomerger.egg-info/top_level.txt
