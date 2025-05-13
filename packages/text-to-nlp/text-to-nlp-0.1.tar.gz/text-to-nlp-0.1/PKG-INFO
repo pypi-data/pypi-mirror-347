@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: text-to-nlp
+Version: 0.1
+Summary: A simple text preprocessing package for NLP
+Home-page: https://github.com/moraix/text_preprocessor
+Author: Mehdi Omidi
+Author-email: mohammadmehdiomidi95@gmail.com
