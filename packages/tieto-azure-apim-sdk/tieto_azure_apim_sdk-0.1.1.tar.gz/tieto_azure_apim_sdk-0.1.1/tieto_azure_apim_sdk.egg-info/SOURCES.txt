@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+tests/test_client.py
+tieto_azure_apim_sdk/__init__.py
+tieto_azure_apim_sdk/tieto_client.py
+tieto_azure_apim_sdk.egg-info/PKG-INFO
+tieto_azure_apim_sdk.egg-info/SOURCES.txt
+tieto_azure_apim_sdk.egg-info/dependency_links.txt
+tieto_azure_apim_sdk.egg-info/requires.txt
+tieto_azure_apim_sdk.egg-info/top_level.txt
