@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: legosec
+Version: 0.1.0
+Summary: Secure E2E Communication SDK using KDC, ECDH, and PSK-TLS
+Author: LegoSec Team
+Author-email: toleenabuadi@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: cryptography>=41.0.3
+Requires-Dist: pyopenssl>=24.0.0
