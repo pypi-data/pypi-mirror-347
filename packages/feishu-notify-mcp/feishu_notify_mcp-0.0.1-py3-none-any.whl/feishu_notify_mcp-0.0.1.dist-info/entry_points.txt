@@ -1,0 +1,2 @@
+[console_scripts]
+feishu-notify-mcp = feishu_notify_mcp.server:main
