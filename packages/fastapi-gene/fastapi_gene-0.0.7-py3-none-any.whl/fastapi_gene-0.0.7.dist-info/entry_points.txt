@@ -1,0 +1,5 @@
+[console_scripts]
+fastapi_gene = fastapi_gen.gen:main
+
+[gui_scripts]
+
