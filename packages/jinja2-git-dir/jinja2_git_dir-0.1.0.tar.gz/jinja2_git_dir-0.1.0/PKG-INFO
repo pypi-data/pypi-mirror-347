@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: jinja2-git-dir
+Version: 0.1.0
+Summary: Jinja2 filter extension for detecting if a directory is a git repository
+Project-URL: repository, https://github.com/gordoncode/jinja2-git-dir/
+Author-email: Will Gordon <will@gordoncode.dev>
+License: MIT License
+        
+        Copyright (c) 2025 Gordon Code LLC
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: copier,extension,filters,jinja,jinja2
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: jinja2>=3.0
+Description-Content-Type: text/markdown
+
+# Git Directory Extension
+
+Jinja2 filter extension for detecting if a directory is a git repository.
+
+## Usage
+
+Examples:
+
+- Detect if `git_path` is a git directory  
+    `{{ git_path | gitdir }}`
+- Assert that `git_path` is a git directory  
+    `{{ git_path | gitdir is true }}`
+- Assert that `git_path` is **NOT** a git directory  
+    `{{ git_path | gitdir is false }}`
+- Using `gitdir` in a conditional  
+    `{% if (git_path | gitdir) %}{{ git_path }} is a git directory{% else %}no git directory at {{ git_path }}{% endif %}`
+
+### Copier
+
+This can be utilized within a Copier `copier.yaml` file for determining if the destination
+path is already initialized as a git directory.
+
+Example:  
+
+This will configure a Copier `_task` to run `git init` but _only_ if the destination
+path isn't already a git directory.
+
+```yaml
+_jinja_extensions:
+    - jinja2_git_dir.GitDirectoryExtension
+_tasks:
+  - command: "git init"
+    when: "{{ _copier_conf.dst_path | realpath | gitdir }}"
+```
