@@ -1,0 +1,2 @@
+[console_scripts]
+marinholab_papers_icra2023_orbitalmanipulation = marinholab.papers.icra2023.orbital_manipulation._main:main
