@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+morse/__init__.py
+morse/decoder.py
+morse/encoder.py
+morse/morse.py
+morse/py.typed
+morse_pro.egg-info/PKG-INFO
+morse_pro.egg-info/SOURCES.txt
+morse_pro.egg-info/dependency_links.txt
+morse_pro.egg-info/entry_points.txt
+morse_pro.egg-info/top_level.txt
+tests/test_decoder.py
+tests/test_encoder.py

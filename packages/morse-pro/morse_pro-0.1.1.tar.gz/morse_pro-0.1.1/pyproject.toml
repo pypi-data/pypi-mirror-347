@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "morse_pro"
+version = "0.1.1"
+description = "Encode and decode Morse code messages easily from Python or the command line."
+
+[tool.poetry.scripts]
+morse_pro = "cli:main"
