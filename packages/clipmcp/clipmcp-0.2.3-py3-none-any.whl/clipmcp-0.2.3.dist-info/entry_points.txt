@@ -1,0 +1,4 @@
+[console_scripts]
+clipmcp = clipmcp.cli:main
+clipmcp-mcp = clipmcp.main:run_mcp
+clipmcp-server = clipmcp_server:main
