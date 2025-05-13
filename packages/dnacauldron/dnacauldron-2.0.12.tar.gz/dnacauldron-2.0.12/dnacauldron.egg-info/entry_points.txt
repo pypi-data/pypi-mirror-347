@@ -1,0 +1,2 @@
+[console_scripts]
+dnacauldron = dnacauldron.cli:main
