@@ -1,0 +1,10 @@
+[distutils]
+index-servers =
+  azure
+  pypi
+
+[azure]
+repository = https://pkgs.dev.azure.com/devdiv/_packaging/MicrosoftSweBench/pypi/upload/
+
+[pypi]
+repository = https://upload.pypi.org/legacy/
