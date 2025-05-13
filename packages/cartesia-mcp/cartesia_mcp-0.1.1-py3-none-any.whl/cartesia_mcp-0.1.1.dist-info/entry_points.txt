@@ -1,0 +1,2 @@
+[console_scripts]
+cartesia-mcp = cartesia-mcp.server:main
