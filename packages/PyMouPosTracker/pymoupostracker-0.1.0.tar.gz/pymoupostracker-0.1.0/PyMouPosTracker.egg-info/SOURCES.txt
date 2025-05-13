@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+PyMouPosTracker/PyMouPosTracker.py
+PyMouPosTracker/__init__.py
+PyMouPosTracker.egg-info/PKG-INFO
+PyMouPosTracker.egg-info/SOURCES.txt
+PyMouPosTracker.egg-info/dependency_links.txt
+PyMouPosTracker.egg-info/requires.txt
+PyMouPosTracker.egg-info/top_level.txt
