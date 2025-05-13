@@ -1,0 +1,11 @@
+ckan
+
+[pycharm2024]
+pydevd-pycharm==241.18034.82
+
+[pycharm2025]
+pydevd-pycharm==251.25410.122
+
+[test]
+pytest-ckan
+junit2html==31.0.2

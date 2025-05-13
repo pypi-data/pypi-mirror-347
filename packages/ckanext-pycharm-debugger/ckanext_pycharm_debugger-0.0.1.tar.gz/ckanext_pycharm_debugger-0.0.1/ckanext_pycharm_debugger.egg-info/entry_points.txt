@@ -1,0 +1,2 @@
+[ckan.plugins]
+pycharm_debugger = ckanext.pycharm_debugger.plugin:PycharmDebugger

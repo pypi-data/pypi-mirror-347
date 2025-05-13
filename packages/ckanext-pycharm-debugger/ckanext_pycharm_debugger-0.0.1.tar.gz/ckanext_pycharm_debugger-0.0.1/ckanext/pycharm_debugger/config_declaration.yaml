@@ -1,0 +1,53 @@
+version: 1
+groups:
+    - annotation: pycharm debugger configuration
+      options:
+          - key: debug.remote.egg_dir
+            type: str
+            example: /local/path/to/pydev_pycharm egg
+            description: |
+              This is required if you run the debugger in a remote 
+              environment and not installed the egg in the local environment.
+          - key: debug.remote.egg_file
+            type: str
+            example: pydevd_pycharm-241.18034.82.egg_file
+          - key: debug.remote
+            type: bool
+            example: true
+            default: false
+            description: |
+              To enable the remote debugger, set this to true.
+          - key: debug.remote.host.ip
+            type: str
+            default: 'host.docker.internal'
+            example: 'host.docker.internal'
+            description: |
+              This is the IP address of the host machine where PyCharm is running.
+              If you are using Docker, this should be set to 'host.docker.internal'.
+          - key: debug.remote.host.port
+            type: int
+            default: 5678
+            example: 5678
+            description: |
+                This is the port number that the remote debugger will listen on.
+                Make sure this port is open and not blocked by a firewall.
+          - key: debug.remote.stdout_to_server
+            type: bool
+            default: true
+            example: true
+            description: |
+              If set to true, the output from the remote debugger will be sent to the server.
+              This is useful for debugging in a remote environment.
+          - key: debug.remote.stderr_to_server
+            type: bool
+            example: true
+            description: |
+                If set to true, the error output from the remote debugger will be sent to the server.
+                This is useful for debugging in a remote environment.
+          - key: debug.remote.suspend
+            type: bool
+            default: true
+            example: false
+            description: |
+              If set to true, the remote debugger will suspend the execution of the program
+              until a connection is made to the debugger and allowed to resume.

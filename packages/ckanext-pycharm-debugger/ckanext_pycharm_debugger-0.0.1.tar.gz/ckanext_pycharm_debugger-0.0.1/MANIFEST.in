@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+recursive-include ckanext/pycharm_debugger *.html *.json *.js *.less *.css *.mo *.yml
+recursive-include ckanext/pycharm_debugger/migration *.ini *.py *.mako
+include ckanext/pycharm_debugger/config_declaration.yaml
+exclude site/*
+exclude node_modules/*
+recursive-exclude node_modules *
