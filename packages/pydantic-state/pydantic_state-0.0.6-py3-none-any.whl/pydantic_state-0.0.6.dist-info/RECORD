@@ -1,0 +1,9 @@
+pydantic_state/__init__.py,sha256=NSUVQYQnot516tDy0WxecCGjZgTXCE_JH_qi65y2b7c,55
+pydantic_state/base_redis_state_model.py,sha256=_jGF2p7OrF6pGrrRyCthICloCc7oKQr2L2CDZA2VIA8,1869
+pydantic_state/config.py,sha256=sFSsZAZ7K0onbHWsuWDyPQB5_8-OjFhMvl0M-vT-Z-s,199
+pydantic_state/redis_client.py,sha256=dH2aT88uG7TdHrG1YCXit5-GiQpDmcp2dNwg-ez8rx8,136
+pydantic_state-0.0.6.dist-info/licenses/LICENCE,sha256=39WR8BFWix4ybs7ZRZZpE04A2Lp_qQsl1QZ5tUelJRY,1087
+pydantic_state-0.0.6.dist-info/METADATA,sha256=BGaDaYEa5A3Yd2ETKT5w7SVv5YNk21dBIu7xBlAuO0A,3024
+pydantic_state-0.0.6.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+pydantic_state-0.0.6.dist-info/top_level.txt,sha256=Au8fHyxM2ppm27S7Y75PmHNaUArX1epOLTMdfqKKezo,15
+pydantic_state-0.0.6.dist-info/RECORD,,
