@@ -1,0 +1,12 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/example.py,sha256=OwxGsA0Gu3M8_wqC6LyxHD7_RDJq-wU7RKyHY9-_STw,162
+ezdir/__init__.py,sha256=15tCdS7xdpK5HzqORZnyyT4A_daWdhc5kC4z8-mQ7aE,107
+ezdir/_version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+ezdir/changer.py,sha256=xq3uywgQlNBsnzjo5LMcnzZXB2rWub0al2Flj9blUNs,2202
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_changer.py,sha256=AGMi1Xy4eTGVPeUnDYcjwyNjDUhDjDW_TvI0PKX2Oe0,410
+ezdir-0.1.0.dist-info/LICENSE,sha256=dyajdTnL8RvMsPE8lr1TdzG-SzsGDRFYu6If5bhlj9o,1070
+ezdir-0.1.0.dist-info/METADATA,sha256=U7TUigdrtgYBGJ1DeMDdEY8cAIUS_pm6IQ-v9jWjCNA,872
+ezdir-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ezdir-0.1.0.dist-info/top_level.txt,sha256=qAVxSis-yGH4iH30LJqtzPM3y9u7kRdc5t7ZMsd31Dc,20
+ezdir-0.1.0.dist-info/RECORD,,
