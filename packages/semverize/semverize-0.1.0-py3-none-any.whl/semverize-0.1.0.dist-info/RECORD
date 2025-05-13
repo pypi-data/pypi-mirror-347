@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=0uGjc8G6AGizeF6COfiVR9hZ_GxGzIY9LzLk9xvr3Kc,55
+semverize/__init__.py,sha256=XfpON0mUOZvOdmArNuXuhNBTNLKfGcPuG4wK-PxrZIE,53
+semverize/_convert.py,sha256=mbG1kepiZXMaYDMtLWgwDL-fFTLEiE3Xq8x5gE2pmDo,1713
+semverize/cli.py,sha256=1TTAPVEAjcAEETTM3BJqjWufF1IWMOAhQ6yn9V3IHWU,458
+semverize/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+semverize-0.1.0.dist-info/entry_points.txt,sha256=uoA24dfDSarwNMSYnb3TjHnkzOztpTxDeb7eEabxq6c,53
+semverize-0.1.0.dist-info/LICENSE,sha256=_pO-2OHLu_CIuLIp1vdgfYt-YZxFAE5qCWuszcQ7B2M,604
+semverize-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+semverize-0.1.0.dist-info/METADATA,sha256=7seyBZuBuBMB_mqcjQgLDRzc2A2Pta0rkHUlZnTvNo4,912
+semverize-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+semverize=semverize.cli:semverize
+
