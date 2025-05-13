@@ -1,0 +1,5 @@
+click>=8.1.8
+couchbase>=4.3.5
+lark-sqlpp>=0.0.1
+mcp[cli]>=1.5.0
+python-dotenv>=1.0.0
