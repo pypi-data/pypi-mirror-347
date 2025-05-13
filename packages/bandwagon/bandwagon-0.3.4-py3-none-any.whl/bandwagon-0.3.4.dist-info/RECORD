@@ -1,0 +1,13 @@
+bandwagon/Band.py,sha256=n2d1sIwFEA-sSsC7wx3kt6D74-2m9_Oz9p2dpCtXmuw,4336
+bandwagon/BandsPattern.py,sha256=_lLY-yMePjDQZsxKodvfEY8f8D1mht9HX0aRohCuvm0,9858
+bandwagon/BandsPatternsSet.py,sha256=6MUmdMG_AoD3B09GisdgUreVgM5GG17B_oY17D1X4E0,9959
+bandwagon/__init__.py,sha256=y7WLx2ZGJQMfwA0s3kKEI4Sb08OlFPuGnj4ygFhvzKw,492
+bandwagon/ladders.py,sha256=ekvNM6uy9seINvAmBDmMF5iEzoaj87WIYbcgM7YAGdw,2341
+bandwagon/plot_records_digestions.py,sha256=I6Zy9lPgXsvTj5YZBx-iTwjdsV8M1E9FY97oJA9IZP0,9423
+bandwagon/tools.py,sha256=e-7HGwBXHatD-KKKXQFdEs10yd4uczLe-wEJXSVSbS4,6768
+bandwagon/version.py,sha256=oYLGMpySamd16KLiaBTfRyrAS7_oyp-TOEHmzmeumwg,22
+bandwagon-0.3.4.dist-info/licenses/LICENSE,sha256=q9ldW0qy7lPkiqaNRA0G-RTByGqBvdSnaLCs9E4z5Vg,1106
+bandwagon-0.3.4.dist-info/METADATA,sha256=b-s8GDXe6T1kO5ImDukT_JU4cS3g1ocUKQj2JUABL4I,1881
+bandwagon-0.3.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+bandwagon-0.3.4.dist-info/top_level.txt,sha256=tDon03ytylP8BWVf-whKz_RAB3O5YBcHpbA4Qf4hdEs,10
+bandwagon-0.3.4.dist-info/RECORD,,
