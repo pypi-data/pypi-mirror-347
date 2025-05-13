@@ -1,0 +1,10 @@
+htfbox/__init__.py,sha256=W7kE4cj0LxtYnHgonGtTuwyyuvw-NwZnOQWDavXF9Bs,102
+htfbox/dirs.py,sha256=TgPgoGJmXfG2gVH8mIpA-tKCQxVPODJVoWdZNoavEQs,1219
+htfbox/number.py,sha256=iTKghjDCMfsLEGnAT6PQcibSbtl7CDNIoA5ewvvXBpM,355
+htfbox/string.py,sha256=21oP16ahOxuhkBECamv-d0h7p5tKYDe3HprfibDI2kg,484
+htfbox/term.py,sha256=_D40kaKrshdSCxo875PK3azhIyDxcRCifJHUbawzIx0,2503
+htfbox/toys.py,sha256=2w6TTcSrgdAnKrn7OzCA4ZQ7NoRWwjqWbGgzxf46vlY,1066
+htfbox-1.0.dist-info/METADATA,sha256=B_sDh08sdoPidUaHgv_V7S138RzXHZBOuuZwRi1J0bY,90
+htfbox-1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+htfbox-1.0.dist-info/top_level.txt,sha256=k2jZaYEWaQxQ0XGFGbPojBJkqpC1J-M5IWH52OzpcxE,7
+htfbox-1.0.dist-info/RECORD,,
