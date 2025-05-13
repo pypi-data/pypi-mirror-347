@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Main/prism_bio.egg-info/PKG-INFO
+Main/prism_bio.egg-info/SOURCES.txt
+Main/prism_bio.egg-info/dependency_links.txt
+Main/prism_bio.egg-info/entry_points.txt
+Main/prism_bio.egg-info/requires.txt
+Main/prism_bio.egg-info/top_level.txt

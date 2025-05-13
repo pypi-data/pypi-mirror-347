@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: prism-bio
+Version: 1.0.1
+Summary: PCR primer design & optimization pipeline
+Home-page: https://github.com/William-A-Wang/PRISM
+Author: Ao Wang
+Author-email: wang.ao@ufl.edu
+License: GPL-3.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: primer3-py
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: numba
+Requires-Dist: joblib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
