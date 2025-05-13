@@ -1,0 +1,8 @@
+openmm
+MDAnalysis
+numpy
+rdkit
+biopython
+tqdm
+requests
+termol
