@@ -1,0 +1,4 @@
+
+# lsttrends module
+
+::: lsttrends.lsttrends

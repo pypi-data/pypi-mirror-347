@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: lsttrends
+Version: 0.0.1
+Summary: Analyze summer Land Surface Temperature trends from satellite imagery
+Author-email: Alex McCorkel <amccorketutoring@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/amccorketutoring/lsttrends
+Keywords: lsttrends
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: lsttrends[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+Dynamic: license-file
+
+# lsttrends
+
+
+[![image](https://img.shields.io/pypi/v/lsttrends.svg)](https://pypi.python.org/pypi/lsttrends)
+[![image](https://img.shields.io/conda/vn/conda-forge/lsttrends.svg)](https://anaconda.org/conda-forge/lsttrends)
+
+
+**Analyze summer Land Surface Temperature trends from satellite imagery**
+
+
+-   Free software: MIT License
+-   Documentation: https://amccorketutoring.github.io/lsttrends
+    
+
+## Features
+
+-   TODO
