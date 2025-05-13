@@ -1,0 +1,9 @@
+yfpy_nhl_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yfpy_nhl_sqlite/main.py,sha256=uiIV5KOCNrKK3xsWxW8AVxRF71uT9mYBAhXqApqraa0,4516
+yfpy_nhl_sqlite/queries.py,sha256=uF7DqGTMtHe2jKjRdae7Sf8BlMw9wu4WdFc35XIuF1A,32334
+yfpy_nhl_sqlite/schema.sql,sha256=HEk_ppkntBnTrYa7jCPvgmUqXL_0g4C4p_rst2hplrk,2508
+yfpy_nhl_sqlite-1.0.0.dist-info/METADATA,sha256=zYh3cf1q6xRWXEoD3XeJxr0p0Egu5HYPHJfEcha-6aI,2919
+yfpy_nhl_sqlite-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+yfpy_nhl_sqlite-1.0.0.dist-info/entry_points.txt,sha256=TPnfXs-VhxqCvX2FybY_5CLQ4QlAE3njUzSMzmn6esk,61
+yfpy_nhl_sqlite-1.0.0.dist-info/licenses/LICENSE,sha256=PxZL3kjzPlev4y1EtPFhHyjcrSfvWWDSD9TMoaRPcxo,35151
+yfpy_nhl_sqlite-1.0.0.dist-info/RECORD,,
