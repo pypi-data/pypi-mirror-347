@@ -1,0 +1,17 @@
+pyhatchery/__about__.py,sha256=bP2iL5RH0d8cuzkULWkie3ceTXhZ04IfDQQrUFAlwRQ,65
+pyhatchery/__init__.py,sha256=cH54dVtPyTeYigriQvUabJ9pmTb5UrtQUJHkOb5LHSM,116
+pyhatchery/__main__.py,sha256=jM03lgc5AeNNjE5GqNmf1qXrF_6PEOyzojnqZE89Fd4,165
+pyhatchery/cli.py,sha256=vMgSxIem5kWlTpkZgJD2Ler7sU6HLfdlPqLIE7O_rWE,10919
+pyhatchery/components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyhatchery/components/config_loader.py,sha256=WdAmagFBUpshH9Kjhq2CsttUekiVb2swt599e_EIiLk,1531
+pyhatchery/components/http_client.py,sha256=MeFIDHKkm9L7b5J8gkN839MZck8lA1K-mnIK8PXmnAM,2897
+pyhatchery/components/interactive_wizard.py,sha256=75fGT3GwKMym6I9Io6KX5DFnycYXIEjWMTFwLKgiLUY,5915
+pyhatchery/components/name_service.py,sha256=1DRZFCPOZTLCb9O0Zf17GScdorRdIsTF_QbJtHVET9s,4979
+pyhatchery/components/project_generator.py,sha256=CEWWGDWr1O4t6C6pLUB2P0eTIFY6odqQ0NLlJGFFKpc,1681
+pyhatchery/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyhatchery/utils/config.py,sha256=oCCUSS7tmFfAv4RGlxnsEF0S6BOSuIxEcBtfsFdrpek,708
+pyhatchery-0.8.0.dist-info/METADATA,sha256=blEzZ0TfzQlCv3JcFVc9-OZLOnDrbMrx-FZlMu_XV60,7948
+pyhatchery-0.8.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyhatchery-0.8.0.dist-info/entry_points.txt,sha256=Z24LKVu5ooTV0cyFK4qo2Nmy7_FVxrFO3cJjP8W5yT0,50
+pyhatchery-0.8.0.dist-info/licenses/LICENSE,sha256=lQkKeSfTRIuK3smOXl94p2eiwb6rhKbUEvC5UYXak78,1091
+pyhatchery-0.8.0.dist-info/RECORD,,
