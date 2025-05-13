@@ -1,0 +1,10 @@
+ailib/__init__.py,sha256=Qq2pHdvbA30W-MhrKzIEZytgjIEmBWhHFeqXQA1lbXg,85619
+ailib/cli.py,sha256=cz1dPyl5cj1iGfx2rGO_KUpLD6W4nMiN0-fUR5XQROc,75452
+ailib/common/__init__.py,sha256=2YRatlrrRC_18bZdqFFWtLav7ViMGPM-KHr7YFsJrhw,12180
+ailib/common/registries.conf.templ,sha256=4-QCZhi53vARMQztzjSPBx63WMY7naWBhYMJvJ9TNL4,975
+ailib/kfish/__init__.py,sha256=jMT5jAXAqeQhTyJHjR5IdOgk6iG4xDTmUKxabNejuFw,14450
+aicli-99.0.202505121442.dist-info/METADATA,sha256=34sAMoM1yc4JOsE-sGKTwAXW1nm4liycYKdXLYCrcok,487
+aicli-99.0.202505121442.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+aicli-99.0.202505121442.dist-info/entry_points.txt,sha256=7uqZ_1svrJHY6WVurmsOhlEb_FiRFEgdEnKj_7BuT0Q,40
+aicli-99.0.202505121442.dist-info/top_level.txt,sha256=uCyBeu-We3_G6jzv4SY05Rg3VHcZ2_Dr7dcFduB8Wsw,6
+aicli-99.0.202505121442.dist-info/RECORD,,
