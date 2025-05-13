@@ -1,0 +1,10 @@
+platformdirs
+cmocean
+configobj
+numba
+python>=3.10
+setuptools
+scipy
+xarray>=0.17
+
+
