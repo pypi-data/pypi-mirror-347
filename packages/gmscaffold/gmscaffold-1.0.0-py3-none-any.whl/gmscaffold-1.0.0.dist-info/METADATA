@@ -1,0 +1,42 @@
+Metadata-Version: 2.3
+Name: gmscaffold
+Version: 1.0.0
+Summary: GM Scaffold
+License: MIT
+Author: yao
+Author-email: 1125564921@qq.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: cleo (>=2.1.0,<3.0.0)
+Requires-Dist: fire (>=0.7.0,<0.8.0)
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: pydispatch (>=1.1.0,<2.0.0)
+Requires-Dist: pyfiglet (>=1.0.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+[![Latest Version](https://img.shields.io/pypi/v/gmscaffold.svg)](https://pypi.python.org/pypi/gmscaffold/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/gmscaffold.svg)](https://pypi.python.org/pypi/gmscaffold/)
+[![Downloads](https://img.shields.io/pypi/dm/gmscaffold.svg)](https://pypi.org/project/gmscaffold/)
+
+gmscaffold
+==========
+
+
+# 1. Getting Started Quickly
+
+### 1.1 Install SDK
+
+Install the SDK using pip:
+
+```bash
+pip3 install gmscaffold
+```
+
+> Once installed, you can import and use the SDK functions in your project.
+
+---
