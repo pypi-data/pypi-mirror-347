@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+pydantic_state/__init__.py
+pydantic_state/base_redis_state_model.py
+pydantic_state/config.py
+pydantic_state/redis_client.py
+pydantic_state.egg-info/PKG-INFO
+pydantic_state.egg-info/SOURCES.txt
+pydantic_state.egg-info/dependency_links.txt
+pydantic_state.egg-info/requires.txt
+pydantic_state.egg-info/top_level.txt
