@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/mongo_role_manager.py
+src/mongodb_solution_assurance_iam_util.egg-info/PKG-INFO
+src/mongodb_solution_assurance_iam_util.egg-info/SOURCES.txt
+src/mongodb_solution_assurance_iam_util.egg-info/dependency_links.txt
+src/mongodb_solution_assurance_iam_util.egg-info/requires.txt
+src/mongodb_solution_assurance_iam_util.egg-info/top_level.txt
