@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+auto_website_visitor.egg-info/PKG-INFO
+auto_website_visitor.egg-info/SOURCES.txt
+auto_website_visitor.egg-info/dependency_links.txt
+auto_website_visitor.egg-info/entry_points.txt
+auto_website_visitor.egg-info/requires.txt
+auto_website_visitor.egg-info/top_level.txt
+awv/__init__.py
+awv/awv.py
