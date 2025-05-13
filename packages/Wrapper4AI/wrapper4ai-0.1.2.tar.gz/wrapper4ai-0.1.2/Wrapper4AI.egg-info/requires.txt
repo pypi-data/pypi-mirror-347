@@ -1,0 +1,6 @@
+openai
+tiktoken
+requests
+huggingface_hub
+boto3
+anthropic
