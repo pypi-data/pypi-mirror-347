@@ -1,0 +1,15 @@
+pyOpenSSL
+requests<3.0.0,>=2.0.0
+six<2.0.0,>=1.0.0
+
+[server]
+lxml>=4.3.0
+werkzeug>=0.14.1
+urllib3>=1.25.1
+
+[twisted]
+twisted>=18.0.0
+service_identity>=18.0.0
+lxml>=4.3.0
+werkzeug>=0.14.1
+urllib3>=1.25.1

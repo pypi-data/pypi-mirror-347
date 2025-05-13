@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: oab_vapi_runtime
+Version: 2.44.0
+Summary: vAPI Runtime
+Home-page: UNKNOWN
+Author: VMware
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: VMware
+Platform: UNKNOWN
+Provides-Extra: twisted
+Provides-Extra: server
