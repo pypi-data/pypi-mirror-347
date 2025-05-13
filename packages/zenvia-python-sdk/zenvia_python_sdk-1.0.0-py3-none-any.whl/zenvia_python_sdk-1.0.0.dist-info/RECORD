@@ -1,0 +1,12 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zenvia/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zenvia/api.py,sha256=8BKLqFG519dQ5MggLF0KxSiKlyMCYfaBbPbrwugr_cg,260
+zenvia/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zenvia/apis/sms.py,sha256=t8TI3P-Ow5EgmOvMIVGvf7HiJZbYaxrduJqteL0G2f4,673
+zenvia/dtos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zenvia/dtos/sms.py,sha256=GR3mkz6jFIHez2KsiDTCX_tr6ctx3sfs6WHl54DaGNk,391
+zenvia_python_sdk-1.0.0.dist-info/licenses/LICENSE,sha256=YZjQnFjzXGFa0D3iCQkNDwGBNuTGJREkRmItGX1B3YM,122
+zenvia_python_sdk-1.0.0.dist-info/METADATA,sha256=c4Xa0fdM-_cAY2vrvidOhrg6gEN3FYR3_qNyW8L43mA,784
+zenvia_python_sdk-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+zenvia_python_sdk-1.0.0.dist-info/top_level.txt,sha256=PeXmQ3ynjkx2BKk0119sDmF8nzjYjis6bK5hJo4GwBo,16
+zenvia_python_sdk-1.0.0.dist-info/RECORD,,
