@@ -1,0 +1,87 @@
+Metadata-Version: 2.4
+Name: mqtt-presence
+Version: 0.1.0
+Summary: A Python application for MQTT presence detection
+Author-email: Björn Böckle <bjoern@boeckle-net.de>
+License-Expression: Apache-2.0
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paho-mqtt>=1.5.0
+Requires-Dist: cryptography>=3.4.0
+Requires-Dist: requests
+Requires-Dist: flask
+Requires-Dist: pyyaml
+Requires-Dist: waitress
+Dynamic: license-file
+
+# mqtt_presence
+
+
+
+## Start 
+
+### As binary
+    Run executable created by Installer
+
+    mqtt-presence
+    mqtt-presence.exe
+
+
+### as module in python:
+    python -m mqtt_presence.main
+
+
+### Using run.py
+    python run.py
+
+
+### Start Container
+        docker-compose up -d
+
+        docker run -d -p 5000:5000 --name mqtt_presence mqtt_presence
+        
+        If  GPIO is required  (only  Raspberry Pi):
+        docker run --privileged -d -p 5000:5000 --name mqtt_presence mqtt_presence
+
+
+## Virtuell environment
+
+### create environment
+    python -m venv venv
+
+### Activate
+    .\venv\Scripts\activate      # Windows
+    source venv/bin/activate     # Linux
+
+### Deactivate
+    source venv/bin/deactivate
+    deactivate     ??
+
+
+
+# Create deployments
+
+
+## Installer
+
+    pyinstaller --onefile --name mqtt-presence mqtt_presence/main.py
+    python -m PyInstaller --onefile --name mqtt-presence mqtt_presence/main.py
+
+
+## Container
+
+### Build container:
+    docker compose build
+    docker compose up --build
+
+
+### Delete image/existing container
+    docker container rm mqtt-presence
+    docker image rm mqtt-presence
+
+
+### Save/load image:
+    docker save -o mqtt-presence.tar mqtt-presence
+    docker load -i ./mqtt-presence.tar
+
