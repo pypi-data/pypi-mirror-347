@@ -1,0 +1,13 @@
+cpvexcel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpvexcel/__main__.py,sha256=AzYREXUh6-U1ZH9O6m-o01OcYfs9N5QZRDMtxA44NN0,1783
+cpvexcel/dw_zip.py,sha256=7GtBw1RM4zpbftOXAONP4S6T68n3YB_n35yjdwEhP6c,524
+cpvexcel/pr_path.py,sha256=gDPOEvAcGlsOb9TI5CkEn58m9Oo3TeoiUbEgzxdgFts,381
+cpvexcel/pr_url.py,sha256=ILbcgVGGZ11xNgvGm8L-79apA8rZ9deBW0U7kWfYDKw,254
+cpvexcel/tree_view.py,sha256=aNS0XqTc4_rpn3RQKRx2dUtC849d2uOOL-Yrc-EgXIg,569
+cpvexcel/utils.py,sha256=H1K21Z5grNi9c8rHVxIRsjMlMuGue50Rpass5aQtG7g,382
+cpvx-1.0.0.dist-info/licenses/LICENSE.md,sha256=DImlztev_C7Hdy9iW6RBZyNxmQnIOSKY_CXBX4y11zg,1066
+cpvx-1.0.0.dist-info/METADATA,sha256=hzFlhPEb5gnnQ5jXmsaFb4XXxXahi9qxDW6HwFUIwUE,2272
+cpvx-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+cpvx-1.0.0.dist-info/entry_points.txt,sha256=-ONi2VsWBOwDll5bq69k_Ho1uM8uRIxAf7WIn_zSpNE,48
+cpvx-1.0.0.dist-info/top_level.txt,sha256=oxEYWEdY747gIvf3g-CyBlVH0wPJZ7iDa_V9x1VVzj8,9
+cpvx-1.0.0.dist-info/RECORD,,
