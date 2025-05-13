@@ -1,0 +1,7 @@
+README.md
+setup.py
+datafaker_ai.egg-info/PKG-INFO
+datafaker_ai.egg-info/SOURCES.txt
+datafaker_ai.egg-info/dependency_links.txt
+datafaker_ai.egg-info/requires.txt
+datafaker_ai.egg-info/top_level.txt
