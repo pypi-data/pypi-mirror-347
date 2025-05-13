@@ -1,0 +1,190 @@
+Metadata-Version: 2.4
+Name: linhub
+Version: 0.1.1
+Summary: Linguistic Data Hub API
+Author-email: Linalgo <admin@linalgo.com>
+License: MIT
+Project-URL: Homepage, https://github.com/linalgo/linhub
+Project-URL: Documentation, https://github.com/linalgo/linhub#readme
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Django
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cachetools==4.1.1
+Requires-Dist: certifi==2024.7.4
+Requires-Dist: cffi==1.14.3
+Requires-Dist: chardet==3.0.4
+Requires-Dist: cryptography==43.0.1
+Requires-Dist: defusedxml==0.6.0
+Requires-Dist: Django==5.0.2
+Requires-Dist: django-autoslug==1.9.8
+Requires-Dist: django-bulk-update==2.2.0
+Requires-Dist: django-cors-headers==4.3.1
+Requires-Dist: django-debug-toolbar==4.3.0
+Requires-Dist: django-dirtyfields==1.4
+Requires-Dist: django-environ==0.11.2
+Requires-Dist: django-extensions==3.2.3
+Requires-Dist: django-filter==24.1
+Requires-Dist: django-guardian==2.4.0
+Requires-Dist: django-health-check==3.18.3
+Requires-Dist: django-import-export==3.3.6
+Requires-Dist: django-jet==1.0.8
+Requires-Dist: django-nose==1.4.7
+Requires-Dist: django-oauth-toolkit==1.3.2
+Requires-Dist: django-organizations==2.5.0
+Requires-Dist: django-rest-framework-social-oauth2==1.1.0
+Requires-Dist: django-templated-mail==1.1.1
+Requires-Dist: djangorestframework==3.15.0
+Requires-Dist: djangorestframework-bulk==0.2.1
+Requires-Dist: djangorestframework-guardian==0.3.0
+Requires-Dist: djangorestframework-simplejwt==5.3.1
+Requires-Dist: djoser==2.0.5
+Requires-Dist: drf-dynamic-fields==0.3.1
+Requires-Dist: drf-nested-routers==0.91
+Requires-Dist: drf-spectacular==0.28.0
+Requires-Dist: drf-writable-nested==0.6.1
+Requires-Dist: drf-yasg==1.17.1
+Requires-Dist: flex==6.14.1
+Requires-Dist: gunicorn==22.0.0
+Requires-Dist: idna==3.7
+Requires-Dist: jsonfield==3.1.0
+Requires-Dist: nose==1.3.7
+Requires-Dist: numpy==1.22.0
+Requires-Dist: oauthlib==3.1.0
+Requires-Dist: pandas==1.3.5
+Requires-Dist: Pillow==9.5.0
+Requires-Dist: psutil==5.7.2
+Requires-Dist: psycopg2==2.8.6
+Requires-Dist: Pygments==2.15.1
+Requires-Dist: PyJWT==2.9.0
+Requires-Dist: python-dotenv==0.14.0
+Requires-Dist: python-jose==3.2.0
+Requires-Dist: python3-openid==3.2.0
+Requires-Dist: pytz==2020.1
+Requires-Dist: requests==2.32.0
+Requires-Dist: requests-oauthlib==1.3.0
+Requires-Dist: rest-framework-generic-relations==2.0.0
+Requires-Dist: scikit-learn==1.3.2
+Requires-Dist: scipy==1.7.3
+Requires-Dist: six==1.15.0
+Requires-Dist: social-auth-app-django==5.4.1
+Requires-Dist: social-auth-core==4.4.1
+Requires-Dist: swagger-spec-validator>=2.1.0
+Requires-Dist: urllib3==1.26.11
+Requires-Dist: validators==0.18.1
+Dynamic: license-file
+
+[![CircleCI](https://circleci.com/gh/linalgo/linapi.svg?style=shield&circle-token=6023c3a8e19c1e36309c2fa254e8658c5350c3a1)](https://circleci.com/gh/linalgo/linapi)
+
+# LinHub API
+
+LinHub is a Django-based API for managing linguistic data and annotations.
+
+## Installation
+
+You can install LinHub as part of the Linalgo package:
+
+```bash
+pip install linalgo[hub]
+```
+
+Or install it directly:
+
+```bash
+pip install .
+```
+
+For development:
+
+```bash
+pip install -e .
+```
+
+## Running the Server
+
+After installation, you can run the server in several ways:
+
+1. Using the installed command:
+```bash
+linhub
+```
+
+2. As a Python module:
+```bash
+python -m linhub
+```
+
+3. Directly from source:
+```bash
+python linhub/management/commands/run.py
+```
+
+## Configuration
+
+You can configure LinHub using environment variables:
+
+```bash
+# Debug mode
+export LINHUB_DEBUG=true
+
+# Database settings
+export LINHUB_DB_ENGINE=django.db.backends.postgresql_psycopg2
+export LINHUB_DB_NAME=linhub
+export LINHUB_DB_USER=postgres
+export LINHUB_DB_PASSWORD=your_password
+export LINHUB_DB_HOST=localhost
+export LINHUB_DB_PORT=5432
+
+# Site settings
+export LINHUB_SITE_NAME="My LinHub"
+export LINHUB_SITE_DOMAIN=my-linhub.example.com
+export LINHUB_SITE_PROTOCOL=https
+
+# Email settings
+export LINHUB_NOTIFICATION_FROM_EMAIL="LinHub <noreply@example.com>"
+export LINHUB_NOTIFICATION_TO_EMAILS="admin1@example.com,admin2@example.com"
+```
+
+## Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/linalgo/linhub.git
+cd linhub
+```
+
+2. Create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install development dependencies:
+```bash
+pip install -e ".[dev]"
+```
+
+4. Run the development server:
+```bash
+linhub
+```
+
+## API Documentation
+
+Once the server is running, you can access:
+- Swagger UI: http://localhost:8000/v1/doc/
+- ReDoc: http://localhost:8000/v1/redoc/
+- OpenAPI Schema: http://localhost:8000/v1/schema/
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Creating a task
+
+TODO: Describe how to add a task
+ 
+
