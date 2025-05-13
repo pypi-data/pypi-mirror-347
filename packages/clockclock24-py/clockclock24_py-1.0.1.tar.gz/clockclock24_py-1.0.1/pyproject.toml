@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clockclock24-py"
+version = "1.0.1"
+description = "Python port of ClockClock24 - A kinetic clock display"
+authors = [
+    {name = "TBOY1337"}
+]
+readme = "README.md"
+requires-python = ">=3.6"
+keywords = ["clock", "animation", "tkinter"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+clockclock24 = "clockclock24_py.main:main"
+
+[tool.setuptools]
+packages = [
+    "clockclock24_py",
+    "clockclock24_py.components",
+    "clockclock24_py.constants",
+    "clockclock24_py.utils",
+    "clockclock24_py.tests"
+] 
