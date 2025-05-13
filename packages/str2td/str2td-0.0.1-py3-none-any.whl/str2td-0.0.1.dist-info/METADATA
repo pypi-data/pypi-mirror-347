@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: str2td
+Version: 0.0.1
+Summary: Add your description here
+Project-URL: Documentation, https://xkcd.com/730/
+Project-URL: Source (GitHub), https://github.com/anamoyee/tcrutils
+Author: anamoyee
+Requires-Python: >=3.13
+Requires-Dist: lark>=1.2.2
