@@ -1,0 +1,9 @@
+fiducia_miner/__init__.py,sha256=sAStHfoWYFW7ryScEkpvGn9znxynGeb3_G-sHpOZgI8,145
+fiducia_miner/cli.py,sha256=bdCTgAUjWdK-HRcHZotbG4oaDMM3JNxTEO4d68cGpoU,2312
+fiducia_miner/miner.py,sha256=fQ7O7UUp3wn2KBpaVI_hpDGaBApKPK5jDBMyDeR9bW8,14677
+fiducia_miner-1.0.0.dist-info/LICENSE,sha256=TAkvOdVspUbFHZidYVEXpk9xjSNXjCCwKTSjkUaIyQw,1069
+fiducia_miner-1.0.0.dist-info/METADATA,sha256=TkTY9yNfvS94wTSyB2RCpmIPC5xkyliiJxY_2YZ73O0,3941
+fiducia_miner-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+fiducia_miner-1.0.0.dist-info/entry_points.txt,sha256=_TxBUIaxISQLWXxjnKWlqcJ3Rm38Lnt5eVhq1GMyVr4,57
+fiducia_miner-1.0.0.dist-info/top_level.txt,sha256=1sPSMSxLAaocZ1vnggsQM__pd6RySPUhEsls2beZFVA,14
+fiducia_miner-1.0.0.dist-info/RECORD,,
