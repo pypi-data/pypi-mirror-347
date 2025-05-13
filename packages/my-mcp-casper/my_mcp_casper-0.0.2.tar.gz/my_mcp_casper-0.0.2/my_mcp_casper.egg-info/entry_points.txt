@@ -1,0 +1,2 @@
+[console_scripts]
+my-mcp-casper = allvoicelab_mcp.server:main
