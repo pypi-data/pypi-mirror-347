@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+orange_uc_vsphere_automation_sdk.egg-info/PKG-INFO
+orange_uc_vsphere_automation_sdk.egg-info/SOURCES.txt
+orange_uc_vsphere_automation_sdk.egg-info/dependency_links.txt
+orange_uc_vsphere_automation_sdk.egg-info/requires.txt
+orange_uc_vsphere_automation_sdk.egg-info/top_level.txt
+tests/test_vmc_client.py
+tests/test_vsphere_client.py
