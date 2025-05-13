@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: ebir-automation
+Version: 0.2.1
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+License-File: LICENSE
+Summary: A Python package for automating E-BIR forms
+Author-email: noizrom <noizrom@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/noizrom/ebir-automation
+Project-URL: Source, https://github.com/noizrom/ebir-automation
+Project-URL: Issues, https://github.com/noizrom/ebir-automation/issues
+
+# ebir-automation
+
+A Python package for robust automation of the eBIRForms application on Windows, powered by Rust, PyO3, and UIAutomation.
+
+## Features
+
+- Launches or focuses the eBIRForms application (including mshta.exe child windows)
+- Waits for the application to be fully loaded before proceeding
+- Snaps the window to the left half of the screen (Windows 11 supported)
+- Reliable window and element polling (no fixed sleeps)
+- Python bindings via PyO3
+
+## Installation
+
+Install via pip:
+
+```sh
+pip install ebir-automation
+```
+
+## Usage
+
+```python
+from ebir_automation import open_ebir_window_py
+
+# Launch or focus eBIRForms, snap window (default: use_winapi=True, ebir_path=None)
+open_ebir_window_py()
+
+# With custom options:
+open_ebir_window_py(use_winapi=False, ebir_path=r"C:\\eBIRForms\\BIRForms.exe")
+```
+
+## Project Links
+
+- Source code: https://github.com/noizrom/ebir-automation
+- Issue tracker: https://github.com/noizrom/ebir-automation/issues
+
+## License
+
+MIT
+
