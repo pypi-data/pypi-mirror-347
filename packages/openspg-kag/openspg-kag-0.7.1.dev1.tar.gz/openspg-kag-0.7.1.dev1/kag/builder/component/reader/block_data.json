@@ -1,0 +1,1027 @@
+{
+    "has_more": false,
+    "items": [
+        {
+            "block_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "block_type": 1,
+            "children": [
+                "Qwe3dTjFbogTFixCsZic0zYxnBc",
+                "RPJsd1B2Io9ZUmxufqKcceXCn8c",
+                "ESSkd9O8uoIpYKxUXqqc7uSQnCg",
+                "JpktdzfOsodvGXxCkpecQrmynXg",
+                "LwLRdcj6horQjUxV09Yc34o4nfk",
+                "KAoGdxdweojCKWxdPQ1c6MWQnCx",
+                "NmQMd8plJo9zkQxOMBKcJ3XBnRc",
+                "Hd4ZdwqXdo46cjx3CjMclqVCnyd",
+                "Qg2mdZAoiozfXvxsLN5cAj5xnif",
+                "B9r4dHxoPohrQwxYRsncLmeunrf",
+                "PpaadyZ2LoTrAwxZCvZcUFYanvh",
+                "Gp4HdKsZFoNWYixNyrgczHTJnze",
+                "QCnednF19oJMSvxFOxbcjMkdnBg",
+                "CREjdDDvFo5sbSxaDWscDwGinUg",
+                "JOQyd8FBbo0ayLxa6Rzcohjdn9e",
+                "ORUAdRahFoUPQWxc62dcZJgLnvf",
+                "NQw2dvedEogKoKxwlkOcCiUgnKg",
+                "FFnpdrhr8oZQfrxSfoUciRCQn2b",
+                "PKYWdU2nyon7IDxRlE1cPLJ2nzb",
+                "AM4LdO7F4oe170xQq9TcmjEXnib",
+                "CpB7dCgX8otD50xp8wHcJBjKncg",
+                "P3Kwd43oDoXj0vx0jJBcHEUOnsh",
+                "Fdlmd5Cl8oTq2DxW3llcTcTynJg",
+                "MnFWdVcDco1X7XxmMHgcDpSun5g",
+                "BLPudU6RFon9zyxLIMfc7YZnnKb",
+                "Sfj6dIqWDo9Ri1xERGvc15iondf",
+                "JIm5dQQPPonCorxWeGncb7VMnab"
+            ],
+            "page": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "算法岗八股Transformer篇之注意力",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1
+                }
+            },
+            "parent_id": ""
+        },
+        {
+            "block_id": "Qwe3dTjFbogTFixCsZic0zYxnBc",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "自注意力Self attention公式：",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "RPJsd1B2Io9ZUmxufqKcceXCn8c",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "equation": {
+                            "content": "Atten = softmax(\\frac{QK^T}{\\sqrt{d}})V\n",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "ESSkd9O8uoIpYKxUXqqc7uSQnCg",
+            "block_type": 3,
+            "heading1": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "为什么attention中要除以根号d?",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            },
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb"
+        },
+        {
+            "block_id": "JpktdzfOsodvGXxCkpecQrmynXg",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "答：",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "LwLRdcj6horQjUxV09Yc34o4nfk",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "     当我们计算点积注意力时，输入序列的每个元素都会与其他元素进行点积运算，得到一个分数。这个分数在经过softmax函数后，会得到一个注意力权重。然而，当输入序列较长时，点积的结果可能会非常大，导致softmax函数在计算时出现梯度爆炸或梯度消失的问题。为了解决这个问题，我们通常会使用一个缩放因子来缩放这些分数，使其变得更加平滑。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "KAoGdxdweojCKWxdPQ1c6MWQnCx",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "      而除以根号d的操作就是这个缩放因子的一种实现方式。其中，d是输入序列中每个元素的维度大小。通过除以根号d，我们可以将点积的结果标准化，使其不会因为输入序列的长度或维度而变得过大或过小。这样，softmax函数在计算注意力权重时就能更加稳定地工作，避免梯度爆炸或梯度消失的问题。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "NmQMd8plJo9zkQxOMBKcJ3XBnRc",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "     简答版：对点积结果进行正则化，防止点积结果过大导致softmax出现梯度爆炸或消失。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "Hd4ZdwqXdo46cjx3CjMclqVCnyd",
+            "block_type": 3,
+            "heading1": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "Transformer为什么Q,K使用不同的权重矩阵生成，而不是进行自身的点乘？",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            },
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb"
+        },
+        {
+            "block_id": "Qg2mdZAoiozfXvxsLN5cAj5xnif",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "B9r4dHxoPohrQwxYRsncLmeunrf",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "PpaadyZ2LoTrAwxZCvZcUFYanvh",
+            "block_type": 3,
+            "heading1": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "多头注意力机制的作用是什么？",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            },
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb"
+        },
+        {
+            "block_id": "Gp4HdKsZFoNWYixNyrgczHTJnze",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "答：多头注意力通过并行运行多个Self-Attention层并综合其结果，能够同时捕捉输入序列在不同子空间中的信息，从而增强模型的表达能力。Multi-Head Attention通过不同的 ",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "equation": {
+                            "content": "W_{Q},W_{K},W_{V}\n",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "把X映射到不同子空间，实际上MHSA做了多个并行的Self-Attention运算，每个“头”都独立地学习不同的注意力权重。再将这些头的输出拼接并线性变换，从而实现在不同表示子空间中同时捕获和整合多种交互信息，提升模型的表达能力。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "QCnednF19oJMSvxFOxbcjMkdnBg",
+            "block_type": 3,
+            "heading1": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "Self-Attention和Multi-Head Attention的对比",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            },
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb"
+        },
+        {
+            "block_id": "CREjdDDvFo5sbSxaDWscDwGinUg",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "Self-Attention关注序列内每个位置对其他所有位置的重要性",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "JOQyd8FBbo0ayLxa6Rzcohjdn9e",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "Multi-Head Attention则通过在多个子空间中并行计算注意力，使模型能够同时捕获和整合不同空间的上下文信息，从而增强了对复杂数据内在结构的建模能力。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "ORUAdRahFoUPQWxc62dcZJgLnvf",
+            "block_type": 3,
+            "heading1": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "KV cache原理",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            },
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb"
+        },
+        {
+            "block_id": "NQw2dvedEogKoKxwlkOcCiUgnKg",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "KV Cache（键-值缓存）是一种在大模型推理中广泛应用的优化技术，其核心思想是利用缓存 key 和 value 来避免重复计算，从而提高推理效率。代价是显存占用会增加。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "text_color": 7,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "FFnpdrhr8oZQfrxSfoUciRCQn2b",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "kvcache一句话来说就是把",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "text_color": 7,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "每个token在过Transformer时乘以W_K,W_V这俩参数矩阵得到的key，value缓存下来",
+                            "text_element_style": {
+                                "bold": true,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "text_color": 7,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "text_color": 7,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "PKYWdU2nyon7IDxRlE1cPLJ2nzb",
+            "block_type": 27,
+            "image": {
+                "align": 2,
+                "height": 435,
+                "token": "GZimbb9OLorwMXxJavfctCjunwd",
+                "width": 1080
+            },
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb"
+        },
+        {
+            "block_id": "AM4LdO7F4oe170xQq9TcmjEXnib",
+            "block_type": 12,
+            "bullet": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "Key和Value向量的计算及缓存",
+                            "text_element_style": {
+                                "bold": true,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "：\n",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "在自注意力机制中，给定一个输入序列，模型会为每个token计算key和value向量。这些向量在序列生成过程中是固定的，不会随着新token的生成而改变。因此，当我们在多次迭代或推理过程中，可以缓存这些key和value向量，以便在后续步骤中直接使用，而不需要每次都重新计算。这种缓存策略可以显著提高计算效率。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            },
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb"
+        },
+        {
+            "block_id": "CpB7dCgX8otD50xp8wHcJBjKncg",
+            "block_type": 12,
+            "bullet": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "Decoder的推理过程",
+                            "text_element_style": {
+                                "bold": true,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "：\n",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "Decoder在每次推理时只输出一个token。这个输出的token会与之前的输入tokens拼接在一起，形成新的输入序列，并作为下一次推理的输入。这个过程会一直持续，直到遇到终止符为止。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            },
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb"
+        },
+        {
+            "block_id": "P3Kwd43oDoXj0vx0jJBcHEUOnsh",
+            "block_type": 12,
+            "bullet": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "Embedding层与Logits层",
+                            "text_element_style": {
+                                "bold": true,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "：\n",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "在每一步中，输入的token序列首先会经过Embedding层，将每个token转换为固定大小的向量表示。这个向量表示（即三维张量[b, s, h]）随后会经过一系列的计算层，最终通过logits层将计算结果映射到词表空间，输出一个张量。这个张量的维度是[b, s, vocab_size]，表示batch中每个序列的每个位置上可能的词汇表大小。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            },
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb"
+        },
+        {
+            "block_id": "Fdlmd5Cl8oTq2DxW3llcTcTynJg",
+            "block_type": 12,
+            "bullet": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "第i+1轮的输入数据相比于第i轮新增了一个token，但其他部分是相同的。这意味着第i轮中已经计算过的key和value向量在第i+1轮仍然是可用的。KV Cache的出发点就是利用这种重复性，缓存可重复利用的计算结果，以便在下一轮计算时直接读取，从而避免不必要的重复计算。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            },
+            "children": [
+                "Esa7dgYGLoInsuxSW9dc4ONunRh",
+                "Hz3DdmmfhoiVu9xWggpcpGcMnod",
+                "WC9XdxG9YoWwj8xyKefcQM38nKb",
+                "DsvddmgKcofyF6xSCnbcEL7YnWc",
+                "EyI1dP1H5o62MHxz9TWcGXU1nRg"
+            ],
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb"
+        },
+        {
+            "block_id": "Esa7dgYGLoInsuxSW9dc4ONunRh",
+            "block_type": 3,
+            "heading1": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "为什么有KV cache没有Q cache?",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            },
+            "parent_id": "Fdlmd5Cl8oTq2DxW3llcTcTynJg"
+        },
+        {
+            "block_id": "Hz3DdmmfhoiVu9xWggpcpGcMnod",
+            "block_type": 13,
+            "ordered": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "计算效率",
+                            "text_element_style": {
+                                "bold": true,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "：在自注意力层的计算中，每个token都会产生一个query向量和一个与之对应的key-value对。由于query是根据当前token的输入直接计算得出的，其值会随着输入序列的改变而改变。而key和value则是根据整个输入序列计算得到的，它们在整个推理过程中是固定的。因此，在多次推理步骤中，我们往往需要重新计算query向量，而key和value对则可以在不同的推理步骤中重复使用。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false,
+                    "sequence": "1"
+                }
+            },
+            "parent_id": "Fdlmd5Cl8oTq2DxW3llcTcTynJg"
+        },
+        {
+            "block_id": "WC9XdxG9YoWwj8xyKefcQM38nKb",
+            "block_type": 13,
+            "ordered": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "模型设计",
+                            "text_element_style": {
+                                "bold": true,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "：Transformer模型的设计使得key和value向量在整个推理过程中是可复用的。因此，通过缓存这些向量，可以显著减少计算量并加速推理过程。而query向量由于其动态性，不适合进行缓存。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false,
+                    "sequence": "auto"
+                }
+            },
+            "parent_id": "Fdlmd5Cl8oTq2DxW3llcTcTynJg"
+        },
+        {
+            "block_id": "DsvddmgKcofyF6xSCnbcEL7YnWc",
+            "block_type": 13,
+            "ordered": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "内存与计算权衡",
+                            "text_element_style": {
+                                "bold": true,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "：缓存机制需要权衡内存和计算效率。由于query向量的数量与序列长度成正比，如果缓存query向量，可能会导致内存消耗巨大。而key和value向量由于在整个推理过程中是固定的，其缓存成本更加可控。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false,
+                    "sequence": "auto"
+                }
+            },
+            "parent_id": "Fdlmd5Cl8oTq2DxW3llcTcTynJg"
+        },
+        {
+            "block_id": "EyI1dP1H5o62MHxz9TWcGXU1nRg",
+            "block_type": 13,
+            "ordered": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "系统实现复杂性",
+                            "text_element_style": {
+                                "bold": true,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    },
+                    {
+                        "text_run": {
+                            "content": "：从系统实现的角度来看，仅实现KV Cache可以简化模型的复杂性。实现一个有效的Q Cache可能需要额外的逻辑来管理查询的缓存和检索机制，这可能会增加实现的复杂性和潜在的错误来源。",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false,
+                    "sequence": "auto"
+                }
+            },
+            "parent_id": "Fdlmd5Cl8oTq2DxW3llcTcTynJg"
+        },
+        {
+            "block_id": "MnFWdVcDco1X7XxmMHgcDpSun5g",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "BLPudU6RFon9zyxLIMfc7YZnnKb",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "Sfj6dIqWDo9Ri1xERGvc15iondf",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        },
+        {
+            "block_id": "JIm5dQQPPonCorxWeGncb7VMnab",
+            "block_type": 2,
+            "parent_id": "H4wAd04lGojhwRxsUuucUw4fnGb",
+            "text": {
+                "elements": [
+                    {
+                        "text_run": {
+                            "content": "",
+                            "text_element_style": {
+                                "bold": false,
+                                "inline_code": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            }
+                        }
+                    }
+                ],
+                "style": {
+                    "align": 1,
+                    "folded": false
+                }
+            }
+        }
+    ]
+}
