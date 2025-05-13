@@ -1,0 +1,16 @@
+fastapi
+requests
+cryptography
+python-jose[cryptography]
+
+[style]
+black
+isort
+pydocstyle
+autoflake
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+httpx
