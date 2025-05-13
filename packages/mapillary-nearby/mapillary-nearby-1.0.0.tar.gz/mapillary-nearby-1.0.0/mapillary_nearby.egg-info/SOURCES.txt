@@ -1,0 +1,10 @@
+README.md
+setup.py
+mapillary_nearby/__init__.py
+mapillary_nearby/main.py
+mapillary_nearby.egg-info/PKG-INFO
+mapillary_nearby.egg-info/SOURCES.txt
+mapillary_nearby.egg-info/dependency_links.txt
+mapillary_nearby.egg-info/entry_points.txt
+mapillary_nearby.egg-info/requires.txt
+mapillary_nearby.egg-info/top_level.txt
