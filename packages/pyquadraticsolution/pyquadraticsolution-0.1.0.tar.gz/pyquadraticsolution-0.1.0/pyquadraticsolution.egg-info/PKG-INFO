@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: pyquadraticsolution
+Version: 0.1.0
+Summary: A callable Python package that solves and explains quadratic equations.
+Author: Md. Ismiel Hossen Abir
+Author-email: ismielabir1971@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: License
+
+# pyquadraticsolution
+
+**pyquadraticsolution** is a simple, intuitive, and callable Python package for solving quadratic equations.  
+Just import it and pass the coefficients — it returns the roots and explains their nature!
+
+---
+
+## 🚀 Features
+
+- ✅ Callable package (`pyquadraticsolution(a, b, c)`)
+- ✅ Solves:
+  - Real and distinct roots
+  - Real and repeated roots
+  - Complex roots
+- ✅ Handles linear equations when `a = 0`
+- ✅ No external dependencies
+
+---
+
+## 📦 Installation
+
+```bash
+pip install pyquadraticsolution
+```
+## Usage
+
+### Example 1: Two real and distinct roots
+```bash
+import pyquadraticsolution
+
+print(pyquadraticsolution(1, -3, 2))
+```
+### Output:
+The solutions are real and distinct: x1 = 2.0, x2 = 1.0. 
+Reason: Discriminant is positive, which indicates two real roots.
+
+### Example 2: One real and repeated root
+```bash
+import pyquadraticsolution
+
+print(pyquadraticsolution(1, -2, 1))
+```
+
+### Output:
+The solution is real and repeated: x = 1.0. 
+Reason: Discriminant is zero, indicating a repeated real root.
+
+### Example 3: Complex roots
+```bash
+import pyquadraticsolution
+
+print(pyquadraticsolution(1, 2, 5))
+```
+### Output:
+The solutions are complex: x1 = -1.0 + 2.0i, x2 = -1.0 - 2.0i. 
+Reason: Discriminant is negative, indicating complex roots.

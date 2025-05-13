@@ -1,0 +1,8 @@
+License
+setup.py
+pyquadraticsolution/__init__.py
+pyquadraticsolution/solver.py
+pyquadraticsolution.egg-info/PKG-INFO
+pyquadraticsolution.egg-info/SOURCES.txt
+pyquadraticsolution.egg-info/dependency_links.txt
+pyquadraticsolution.egg-info/top_level.txt
