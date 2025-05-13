@@ -1,0 +1,14 @@
+pyproject.toml,sha256=2c1Z_tYWGyd7r9qUuLhvGKgUf17My9mqIt1hs7ZM3kg,907
+setup.cfg,sha256=HEc8uu6NpfxG5_AVh5SvXOpEFMNKPPPxgMIAH144vT4,38
+setup.py,sha256=nj5BkVlAxC7_Kau0UgphWYYPtQawI2o89zWelt9D5L8,515
+bin/sdbmigrate.py,sha256=OE3UeOUWEurX7W6EpCKFxSBQDGAjkqDEdXqjaxZwoKI,37316
+sdbmigrate-1.1.1.data/scripts/sdbmigrate.py,sha256=v1DafpDdgEZfijaXlrbo6oVoJxb1WAd18rq9YqagiFA,37303
+sdbmigrate.egg-info/PKG-INFO,sha256=hIXEpABW2CQQEONnrQ1NE97m5EMFT-F2yA3X1LyKHow,939
+sdbmigrate.egg-info/SOURCES.txt,sha256=ISw2OcQNDmTtnIILHtt40VPuElsThUUVfRu6Zp5s1rk,220
+sdbmigrate.egg-info/dependency_links.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sdbmigrate.egg-info/requires.txt,sha256=neSl7cP2qyvcU8ahPPNtLiBURNw7MDoukErWHjOg3E8,72
+sdbmigrate.egg-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sdbmigrate-1.1.1.dist-info/METADATA,sha256=hIXEpABW2CQQEONnrQ1NE97m5EMFT-F2yA3X1LyKHow,939
+sdbmigrate-1.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+sdbmigrate-1.1.1.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sdbmigrate-1.1.1.dist-info/RECORD,,
