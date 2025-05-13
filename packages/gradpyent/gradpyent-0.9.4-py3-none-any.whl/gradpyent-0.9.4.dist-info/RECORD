@@ -1,0 +1,10 @@
+gradpyent/__init__.py,sha256=UqtyumlmSCLe7aDFOmIIuPOfkGFNGh-ZMqjLHFbWjAw,540
+gradpyent/colors.py,sha256=iVOk8Q-mMoakc3awThXKcCe0D3Fj5cbjnnmEjNj5jZY,969
+gradpyent/formats.py,sha256=iRaW9nN0QODXUt4vKCUrXBxa99EfjRsw3DnseN3crqw,5952
+gradpyent/gradient.py,sha256=lklhs8Swv42DkmVWYLKdIY9UCZ0DBawGyHOJa02GDlE,5958
+gradpyent/rgb.py,sha256=shv8cd8f_KhewsXnlyKnKw9OI5l31VnKUpHVInTkh2E,2362
+gradpyent-0.9.4.dist-info/licenses/LICENSE,sha256=-980cPdorrib9kqGsWkMvFP0k2e31q-lDMJvlX3zd4Y,1071
+gradpyent-0.9.4.dist-info/METADATA,sha256=N0Wm_9z_gtGDbFNvoUQ3O652seza38II4S6eYFfgs9c,3542
+gradpyent-0.9.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+gradpyent-0.9.4.dist-info/top_level.txt,sha256=kXaYg79bDenhH7-cgTTbUw0ddohY39yAhtq-DjyGKHA,10
+gradpyent-0.9.4.dist-info/RECORD,,
