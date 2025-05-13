@@ -1,0 +1,4 @@
+[console_scripts]
+orbitals = morca.visualization.apps:orbitals_app
+soc_tddft = morca.visualization.apps:soc_tddft_app
+tddft = morca.visualization.apps:tddft_app
