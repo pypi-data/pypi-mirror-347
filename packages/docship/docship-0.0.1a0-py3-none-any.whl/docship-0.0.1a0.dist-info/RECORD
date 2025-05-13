@@ -1,0 +1,10 @@
+docship/__init__.py,sha256=8zI9FqEYewi6b4IBCfVg_OsYZO7WkVqfK3tgDCzAsP4,590
+docship/__main__.py,sha256=StdRbtgUks8t7SK0Dvj62h0FhnL5xGkhrS71ANImfaQ,2107
+docship/exceptions.py,sha256=Dd2NaLjJg1rr6cE7ToVkCnMYz2y1LFAZeLxRZNFzqBY,445
+docship/utils.py,sha256=_nziOOBy2WPfzbI_9dGvilX9IQI3NVLUqlDKZALO_Oo,4663
+docship-0.0.1a0.dist-info/licenses/LICENSE,sha256=YHX4rZNMRHqhMiri4zHUBfqd0jAXFqWKt7Mzkb0P0S8,1104
+docship-0.0.1a0.dist-info/METADATA,sha256=fqtKF2YKjeas9BXhme8U5Ee7MYQxcOPQV6NS57kjdeo,2777
+docship-0.0.1a0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+docship-0.0.1a0.dist-info/entry_points.txt,sha256=tsyjAWZLQIAM9UXk9pFZG9VeM6tuvDoq8JXWKPfYW8I,50
+docship-0.0.1a0.dist-info/top_level.txt,sha256=1IiM7DS6myBx6CjfAN0XnepJr-Jc5v3GHEQWFzlTqY8,8
+docship-0.0.1a0.dist-info/RECORD,,
