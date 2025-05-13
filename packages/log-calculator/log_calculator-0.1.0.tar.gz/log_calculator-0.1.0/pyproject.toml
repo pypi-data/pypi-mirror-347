@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "log-calculator"
+version = "0.1.0"
+description = ""
+authors = ["rebuglio <m.rebuglio@gmail.com>"]
+readme = "readme.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
