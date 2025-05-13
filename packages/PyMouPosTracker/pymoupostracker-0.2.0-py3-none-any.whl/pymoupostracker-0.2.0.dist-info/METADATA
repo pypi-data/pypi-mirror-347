@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: PyMouPosTracker
+Version: 0.2.0
+Summary: A Python library that tracks the x and y positions of your mouse cursor.
+Author-email: hlee100 <henrylee1606@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/hlee100/PyMouPosTracker
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pyautogui
+Requires-Dist: keyboard
+Dynamic: license-file
+
+# PyMouPosTracker Libary
+A Python library that tracks the x and y positions of your mouse cursor.
