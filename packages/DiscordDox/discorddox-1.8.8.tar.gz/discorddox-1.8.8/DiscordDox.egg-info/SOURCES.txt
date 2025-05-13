@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+DiscordDox/DiscordDox.exe
+DiscordDox/__init__.py
+DiscordDox/app.py
+DiscordDox.egg-info/PKG-INFO
+DiscordDox.egg-info/SOURCES.txt
+DiscordDox.egg-info/dependency_links.txt
+DiscordDox.egg-info/entry_points.txt
+DiscordDox.egg-info/top_level.txt
