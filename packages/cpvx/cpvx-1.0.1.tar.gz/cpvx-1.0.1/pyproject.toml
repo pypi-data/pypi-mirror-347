@@ -1,0 +1,41 @@
+[project]
+name = "cpvx"
+version = "1.0.1"
+description = "📊 cpvx - CLI Plugin Excel untuk pembelajaran berbasis file .cpvxclrc"
+authors = [
+    { name = "openpineaplehub", email = "openpineaple@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["excel", "cli", "cpvxxclrc", "plugin", "education"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Education",
+    "Topic :: Utilities"
+]
+
+dependencies = [
+    "requests",
+    "rich",
+]
+
+[project.scripts]
+cpvx = "cpvexcel.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+cpvxexcel = ["LICENSE.txt"]
+
+[project.urls]
+Homepage = "https://github.com/pineplugins/cpvexcel"
+Documentation = "https://pineplugins.github.io/cpvexcel/"
+Source = "https://github.com/pineplugins/cpvexcel"
+Issues = "https://github.com/pineplugins/cpvexcel/issues"
+Changelog = "https://github.com/pineplugins/cpvexcel/releases"
+Download = "https://github.com/pineplugins/cpvexcel/archive/refs/heads/main.zip"

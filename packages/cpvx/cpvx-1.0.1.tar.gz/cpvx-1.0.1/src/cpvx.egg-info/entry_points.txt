@@ -1,0 +1,2 @@
+[console_scripts]
+cpvx = cpvexcel.__main__:main
