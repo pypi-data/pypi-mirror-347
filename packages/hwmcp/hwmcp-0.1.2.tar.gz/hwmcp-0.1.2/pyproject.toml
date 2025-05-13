@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hwmcp"
+version = "0.1.2"
+description = "My MCP server for reading and extracting text from PDF and DOCX files"
+readme = "README.md"
+authors = [
+    {name = "Shawn", email = "123@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.2.10",
+    "markitdown[all]>=0.1.1"
+]
+
+[[tool.uv.index]]
+url = "https://rspm.merck.com/pypi/latest/simple"
+
+[project.scripts]
+mcp-document-reader = "doc_reader.server:main"
+mcp-url-extractor = "url_extractor.server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}

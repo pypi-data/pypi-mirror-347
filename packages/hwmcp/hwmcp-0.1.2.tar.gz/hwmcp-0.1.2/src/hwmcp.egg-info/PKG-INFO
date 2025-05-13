@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: hwmcp
+Version: 0.1.2
+Summary: My MCP server for reading and extracting text from PDF and DOCX files
+Author-email: Shawn <123@example.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastmcp>=2.2.10
+Requires-Dist: markitdown[all]>=0.1.1

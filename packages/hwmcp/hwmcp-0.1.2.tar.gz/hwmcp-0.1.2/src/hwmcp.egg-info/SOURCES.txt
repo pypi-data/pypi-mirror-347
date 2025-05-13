@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/doc_reader/__init__.py
+src/doc_reader/server.py
+src/hwmcp.egg-info/PKG-INFO
+src/hwmcp.egg-info/SOURCES.txt
+src/hwmcp.egg-info/dependency_links.txt
+src/hwmcp.egg-info/entry_points.txt
+src/hwmcp.egg-info/requires.txt
+src/hwmcp.egg-info/top_level.txt
+src/url_extractor/__init__.py
+src/url_extractor/server.py
