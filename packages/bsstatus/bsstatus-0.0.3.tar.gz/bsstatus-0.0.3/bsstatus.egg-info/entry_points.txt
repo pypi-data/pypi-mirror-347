@@ -1,0 +1,2 @@
+[console_scripts]
+bsstatus = bsstatus.__main__:main

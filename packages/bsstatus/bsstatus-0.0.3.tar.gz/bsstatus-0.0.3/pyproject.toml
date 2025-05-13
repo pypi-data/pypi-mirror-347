@@ -1,0 +1,52 @@
+[project]
+name = "bsstatus"
+description = "A project for bsstatus"
+dynamic = ["version"]
+authors = [{name = "csm10495", email = "csm10495@gmail.com"}]
+license = "MIT"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.10"
+dependencies = [
+    'pydantic>2',
+    'platformdirs'
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
+
+[project.urls]
+homepage = "https://github.com/csm10495/bsstatus"
+repository = "https://github.com/csm10495/bsstatus"
+documentation  = "https://csm10495.github.io/bsstatus"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.scripts]
+bsstatus = "bsstatus.__main__:main"
+
+[tool.setuptools]
+packages = ["bsstatus"]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "bsstatus.__version__"}
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "."
+]
+
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
