@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gradpyent"
+version = "0.9.4"
+authors = [
+    { name = "Lyle Schlueter", email = "lyle.schlueter@proton.me" },
+]
+description = "Create color gradients based on list-like input data"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = [
+    "color",
+    "gradient",
+    "palette",
+    "rgb",
+    "visualization",
+]
+license = { text = "MIT" }
+
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "ruff",
+]
+
+docs = [
+    "myst_parser",
+    "sphinx",
+    "sphinx-rtd-theme",
+]
+
+[project.urls]
+Homepage = "https://github.com/lyle-schlueter/gradpyent"
+Documentation = "https://lyle-schlueter.github.io/gradpyent/"
+Repository = "https://github.com/lyle-schlueter/gradpyent"
+Issues = "https://github.com/lyle-schlueter/gradpyent/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests"
+]
+required_plugins = [
+    "pytest-mock",
+    "pytest-cov"
+]
+
+[tool.coverage.run]
+branch = false
+source = ["src"]
+
+[tool.coverage.report]
+fail_under = 40
+skip_covered = true
+skip_empty = true
+omit = [
+    "*/__init__.py",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D100", # Ignore missing docstring in public modules (customize as needed)
+    "D104", # Ignore missing docstring in public packages
+    "D203",
+    "D213",
+    "COM812"
+]

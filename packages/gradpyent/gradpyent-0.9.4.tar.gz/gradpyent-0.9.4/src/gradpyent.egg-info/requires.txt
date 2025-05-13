@@ -1,0 +1,11 @@
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+ruff
+
+[docs]
+myst_parser
+sphinx
+sphinx-rtd-theme
