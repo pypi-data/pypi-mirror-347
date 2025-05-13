@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+legosec/__init__.py
+legosec/encrypted_socket.py
+legosec/identity_manager.py
+legosec/sdk.py
+legosec/version.py
+legosec.egg-info/PKG-INFO
+legosec.egg-info/SOURCES.txt
+legosec.egg-info/dependency_links.txt
+legosec.egg-info/requires.txt
+legosec.egg-info/top_level.txt
