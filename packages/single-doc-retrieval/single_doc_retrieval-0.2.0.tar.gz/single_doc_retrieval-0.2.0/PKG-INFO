@@ -1,0 +1,77 @@
+Metadata-Version: 2.4
+Name: single_doc_retrieval
+Version: 0.2.0
+Summary: A retrieval pipeline for single documents.
+Home-page: 
+Author: Vahan Martirosyan
+Author-email: vahan@kiwidata.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Single Document Retrieval Pipeline
+
+A Python library to perform retrieval on a single, pre-parsed document. 
+It identifies relevant text sections from a document based on a query (label description) and, if necessary, refines the search query iteratively to find the most sufficient context.
+
+## Testing
+
+The main way to use the library is by calling the `find_relevant_context` function.
+
+```python
+DOC_FILES_DIRECTORY = ""
+
+OPENAI_API_KEY_INPUT = ""
+
+LABELS_FILE_PATH = "labels.json" 
+LABEL_NAME_TO_USE = "governing_law_clause"
+
+EMBEDDING_MODEL_NAME = "text-embedding-3-large" 
+CHAT_MODEL_NAME = "gpt-4o"      
+
+# Derive doc_id and extraction_dir from DOC_FILES_DIRECTORY
+doc_id_from_path = os.path.basename(DOC_FILES_DIRECTORY)
+extraction_dir_from_path = os.path.dirname(DOC_FILES_DIRECTORY)
+
+# Prepare pipeline options if custom models are specified
+pipeline_opts = {}
+pipeline_opts["embedding_model"] = EMBEDDING_MODEL_NAME
+
+pipeline_opts["chat_model"] = CHAT_MODEL_NAME
+
+relevant_context = find_relevant_context(doc_id=doc_id_from_path,
+                                         label_name=LABEL_NAME_TO_USE,
+                                         extraction_dir=extraction_dir_from_path,
+                                         labels_file_path=LABELS_FILE_PATH,
+                                         openai_api_key=OPENAI_API_KEY_INPUT,
+                                         pipeline_options=pipeline_opts)
+```
+
+The labels.json file should be formatted as follows:
+
+```python
+{
+    "label_1": {
+    "description": "",
+    "examples": []
+    },
+    "label_2": {
+    "description": "",
+    "examples": []
+    }
+}
+```
