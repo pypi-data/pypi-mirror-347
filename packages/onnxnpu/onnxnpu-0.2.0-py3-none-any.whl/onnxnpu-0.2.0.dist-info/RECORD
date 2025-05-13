@@ -1,0 +1,15 @@
+onnxnpu/__init__.py,sha256=lLKqikRvoTgouwp9SSbllb4RxkC6AvUcYxy25E9AbOc,1386
+onnxnpu/checker.py,sha256=StpaTAsq4_7yNrNDsI4eYSEyI8G5TB6cvZWTc_RBOtg,19180
+onnxnpu/cli.py,sha256=bGuIqaiVKTXsbVkvSZjJC2AbVZQ4wMPRthPXWAJ9trM,8288
+onnxnpu/optimizer.py,sha256=50I2TXjxqQUIJyPnI_8WwKQzfGGZPSewk2sCmUpku8E,7995
+onnxnpu/profiles/KL520.json,sha256=SI0dcML-BmofysLZhHr2vZj4BdB-NhhuSnzOppLPqts,4185
+onnxnpu/profiles/KL530.json,sha256=WcnmfOS1kTZl9_V_wRPwouN_In604l5TlbqiGjURRJc,4148
+onnxnpu/profiles/KL630.json,sha256=AuC8pk_OrWfsEyfbPfz3rOzrd0QfOfa48Vi75fqKHS4,4274
+onnxnpu/profiles/KL720.json,sha256=LXQiJCKmc4MeKXJkufllJD6TeigVim-q8zOj07KAGLI,4460
+onnxnpu/profiles/KL730.json,sha256=JChCrMi21jsBJFQb-zNLZe9AbpS97Ost-DQqDfI3Nps,4066
+onnxnpu-0.2.0.dist-info/licenses/LICENSE,sha256=witI0SFXFKnbS4BPIpNg2ImeziookERisc2yTMQL4-I,11357
+onnxnpu-0.2.0.dist-info/METADATA,sha256=MGwhzpH-3t1yMulF7LeEYgzxRstKF7oGS5dpVsakuL8,9020
+onnxnpu-0.2.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+onnxnpu-0.2.0.dist-info/entry_points.txt,sha256=b61kYRXpMnGgt-JrKhHV7q08QivByFolRwKZgNP_igs,69
+onnxnpu-0.2.0.dist-info/top_level.txt,sha256=Z1MRUZV0p_jnbAsXcJEhKCdZPPR2JYaTo9GQwUZWUZw,8
+onnxnpu-0.2.0.dist-info/RECORD,,
