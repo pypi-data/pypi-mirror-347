@@ -1,0 +1,3 @@
+[aiida.schedulers]
+core.flux=aiida_flux_scheduler.flux:FluxScheduler
+

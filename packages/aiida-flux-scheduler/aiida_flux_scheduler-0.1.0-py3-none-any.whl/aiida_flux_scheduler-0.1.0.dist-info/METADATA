@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: aiida_flux_scheduler
+Version: 0.1.0
+Summary: aiida_flux_scheduler
+Keywords: aiida,workflows,flux,scheduler
+Author-email: Nathan Keilbart <keilbart1@llnl.gov>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AiiDA
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE.txt
+Requires-Dist: aiida-core~=2.0
+Requires-Dist: numpy
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-autoapi ; extra == "docs"
+Requires-Dist: sphinx-book-theme ; extra == "docs"
+Requires-Dist: sphinx-click ; extra == "docs"
+Requires-Dist: sphinx-copybutton ; extra == "docs"
+Requires-Dist: pre-commit ; extra == "pre-commit"
+Requires-Dist: pylint ; extra == "pre-commit"
+Requires-Dist: pgtest ; extra == "tests"
+Requires-Dist: pytest ; extra == "tests"
+Requires-Dist: pytest-regressions ; extra == "tests"
+Project-URL: Homepage, https://github.com/LLNL/aiida-flux-scheduler
+Project-URL: Issues, https://github.com/LLNL/aiida-flux-scheduler/issues
+Project-URL: Repository, https://github.com/LLNL/aiida-flux-scheduler
+Provides-Extra: docs
+Provides-Extra: pre-commit
+Provides-Extra: tests
+
+# AiiDA Flux Scheduler
+
+AiiDA plugin for the LLNL developed Flux scheduler.
+
+A basic understanding of how to interact with AiiDA is required.
+
+At this moment, the plugin works at the same level as the slurm scheduler plugin. AiiDA will use the plugin to submit individual jobs to the flux scheduler and retrieve the jobs when they are done. In the future, the hope is to keep the initial allocation open and have AiiDA interact with the instance through the `flux proxy` command to submit additional jobs in the workchain and reduce wait time between steps in the workflow.
+
+# Basic installation
+
+To get the latest developments and features it is recommended to check the 
+git repository and install from source.
+
+```bash
+git clone https://github.com/LLNL/aiida-flux-scheduler.git
+cd aiida-flux-scheduler
+pip install -e .
+```
+
+# Release information
+
+`LLNL-CODE-2005941`
+
+AiiDA-Flux-Scheduler is provided under a standard MIT license.

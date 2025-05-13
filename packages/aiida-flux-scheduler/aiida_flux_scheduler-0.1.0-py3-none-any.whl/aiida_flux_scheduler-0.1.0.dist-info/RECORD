@@ -1,0 +1,7 @@
+aiida_flux_scheduler/__init__.py,sha256=vGBh4hkpR_ue7JVx6UWkRdXA0dW4Qyqx04b-BFv8hcw,111
+aiida_flux_scheduler/flux.py,sha256=cwozjQm8gAPMcuiVgz2CoqNvxuyYOcsnxvSm6NXkBao,17391
+aiida_flux_scheduler-0.1.0.dist-info/entry_points.txt,sha256=C1-pzd1W0jwxB0VkEPHJwUiQ7tFw99EnMn53f1frWds,70
+aiida_flux_scheduler-0.1.0.dist-info/licenses/LICENSE.txt,sha256=SE5t7queJ9G1v8RqvzUAIS36tp3STlVoVkPj5eieuMI,1095
+aiida_flux_scheduler-0.1.0.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+aiida_flux_scheduler-0.1.0.dist-info/METADATA,sha256=zslTUBYZ2rfQjcqcm46UyozOSLDEP5DteNbS6_7-MGc,2470
+aiida_flux_scheduler-0.1.0.dist-info/RECORD,,
