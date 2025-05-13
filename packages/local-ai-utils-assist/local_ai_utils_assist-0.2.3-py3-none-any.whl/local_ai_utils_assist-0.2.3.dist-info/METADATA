@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: local-ai-utils-assist
+Version: 0.2.3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing_extensions
+Requires-Dist: openai
+Requires-Dist: fire
+Requires-Dist: pyyaml
+Requires-Dist: mcp-agent
+Requires-Dist: local-ai-utils-core
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+
+# Local AI Utils - Assist
+A plugin for [local-ai-utils](https://github.com/local-ai-utils/core), adding the ability to interact with an LLM Assistant. It is exposed as a CLI utility named `assist`, which can be sent a prompt. It also adds tool support that other LAIU plugins can tie in to.
+
+![Assist Demo](/docs/assist.gif)
+
+## Quickstart
+
+### Installation
+Currently installation is only supported via the GitHub remote.
+```
+pip install git+https://github.com/local-ai-utils/core
+```
+
+### Configuration
+Then update your `ai-utils.yml` file.
+
+- `assist.assitant` is an [OpenAI Assistant](https://platform.openai.com/docs/api-reference/assistants/object) `id`
+- `assist.thread` is an [OpenAI Thread](https://platform.openai.com/docs/api-reference/threads/object) that has been started with the above assitant
+- `assist.mcp.servers` takes a configuration block following the [mcp-agent schema](https://github.com/lastmile-ai/mcp-agent/blob/main/schema/mcp-agent.config.schema.json) _(it's functionally equivalent to Claude Code's format)_
+- `assist.mcp.servers.[name].skip_confirmation` allows you to list tools from that server that can be run without any confirmation.
+- `keys.openai` is your [Open AI secret key](https://platform.openai.com/settings/organization/api-keys).
+
+### Usage
+```
+$ # Run once for new installs, and whenever new plugins are added
+$ assist update_assistant
+<outputs the configuration details of your assistant>
+
+
+$ assist prompt "Make a note to call Joe"
+OK, I've created a note to call Joe!
+```
+
+## Configuration
+These fields are required:
+- `assist.assistant`
+- `assist.thread`
+- `keys.openai`
+
+`~/.config/ai-utils.yaml`
+```
+plugins:
+    assist:
+        assistant: "asst_123"
+        thread: "thread_321"
+        mcp:
+            servers:
+                heroku:
+                    command: npx
+                    args: ["-y", "@heroku/mcp-server"]
+                    env:
+                        HEROKU_API_KEY: "HRKU-12345"
+                    skip_confirmation:
+                        - list_apps
+keys:
+    openai: "sk-proj-abc"
+```
+
+> [!WARNING]
+> There is a known bug right now that failed tool calls can leave a Thread in a broken state. If encountered, you will see errors referencing an inability to create new runs on threads that are in-progress. You can reset this by generating a new thread, and updating `assist.thread` in your `ai-utils.yml`.
+
+## Plugin Tools
+
+When `local-ai-utils-assist` is installed, all other LAIU plugins can now make use of the `functions` keyword in their PluginConfig object. This key can be passed an array of objects matching the [OpenAI Function Definition](https://platform.openai.com/docs/guides/function-calling). See the [notes plugin](https://github.com/local-ai-utils/notes/blob/main/src/notes/plugin.py#L7) for an example.
