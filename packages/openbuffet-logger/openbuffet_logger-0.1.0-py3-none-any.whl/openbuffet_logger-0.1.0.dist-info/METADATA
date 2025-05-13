@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: openbuffet_logger
+Version: 0.1.0
+Summary: Flexible, pluggable and testable logger manager for Python.
+Home-page: https://github.com/ferdikurnazdm/openbuffet_logger
+Author: Ferdi Kurnaz
+Author-email: ferdikurnazdm@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# openbuffet_logger
+
+`openbuffet_logger` is a flexible and extensible Python logging package that supports dependency injection and pluggable logger backends. You can use it with Python's built-in `logging` module or implement your own logging service via an abstract interface.
+
+---
+
+## ✨ Features
+
+- ✅ Plug-and-play logger manager
+- ✅ Abstract logger interface (`ILoggerService`)
+- ✅ Logging to console and file
+- ✅ Easily extendable for other services (e.g., Sentry, database, etc.)
+- ✅ Designed for testability
+
+---
+
+## 🛠️ Installation
+
+```bash
+pip install openbuffet_logger  # (PyPI link when available)

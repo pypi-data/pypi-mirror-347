@@ -1,0 +1,11 @@
+openbuffet_logger/__init__.py,sha256=9adpXuSaWQ_kMmSiDyTvClfx6NIl4R3Pe2M-_Gphan0,76
+openbuffet_logger/logger_manager.py,sha256=cuop-zVyhXD8RcFfjsDEGyoczPPs8sA-sXIbwcbICE8,534
+openbuffet_logger/interfaces/__init__.py,sha256=XcV6JBSWGyDUgHOPp-bLITXxLEcItikvfF2SrujlaLY,71
+openbuffet_logger/interfaces/ilogger_service.py,sha256=jkGQwH6OVKNxtUZrbE5j3rXtJJXgW1mypZap92-4vTw,373
+openbuffet_logger/services/__init__.py,sha256=gM0N-5AgF3yeOiLd3w4nU6UmXSACPoIh62WJvdE0mjU,80
+openbuffet_logger/services/logging_logger_service.py,sha256=boSFE7H6ZcYENHwvJZOiZQ5V3YZK_IPH1ENJnKT3NYI,1278
+openbuffet_logger-0.1.0.dist-info/licenses/LICENSE,sha256=IEdhgb9XhBB-6X0KbATaqPU1YBA-cIRk277OFRjOdv0,1091
+openbuffet_logger-0.1.0.dist-info/METADATA,sha256=j6iVVsrSMrA8xzAllqrgBv262STrdOg48iORLBDQ_jY,1348
+openbuffet_logger-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+openbuffet_logger-0.1.0.dist-info/top_level.txt,sha256=pidKowawrWRje6WtG9F7bTAyPr6N6J7HeIhVYHkfQp0,18
+openbuffet_logger-0.1.0.dist-info/RECORD,,
