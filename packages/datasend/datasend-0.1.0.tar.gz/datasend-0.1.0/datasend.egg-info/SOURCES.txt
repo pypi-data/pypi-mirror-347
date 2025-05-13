@@ -1,0 +1,7 @@
+README.md
+setup.py
+datasend/__init__.py
+datasend.egg-info/PKG-INFO
+datasend.egg-info/SOURCES.txt
+datasend.egg-info/dependency_links.txt
+datasend.egg-info/top_level.txt

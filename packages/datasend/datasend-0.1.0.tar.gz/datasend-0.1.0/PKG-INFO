@@ -1,0 +1,71 @@
+Metadata-Version: 2.4
+Name: datasend
+Version: 0.1.0
+Summary: The quickest way to share data with your team
+Home-page: https://bigdatalab.ai
+Author: DataShare Team
+Author-email: p.korovesis@bigdatalab.ai
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# DataSend
+
+**Work in Progress** - More will be announced soon.
+
+## Description
+DataSend is a Python package for quickly sharing data with your team. This project is currently under development.
+
+## Installation
+
+You can install the package using pip:
+
+```
+pip install datasend
+```
+
+Alternatively, you can install directly from the GitHub repository:
+
+```
+pip install git+https://github.com/yourusername/datasend.git
+```
+
+## Development Installation
+
+To install the package for development:
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/datasend.git
+   ```
+
+2. Navigate to the directory:
+   ```
+   cd datasend
+   ```
+
+3. Install in development mode:
+   ```
+   pip install -e .
+   ```
+
+## Usage
+
+More details coming soon.
+
+## License
+
+TBD
