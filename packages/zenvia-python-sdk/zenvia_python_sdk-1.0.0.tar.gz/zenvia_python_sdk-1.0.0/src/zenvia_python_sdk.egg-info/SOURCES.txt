@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/zenvia/__init__.py
+src/zenvia/api.py
+src/zenvia/apis/__init__.py
+src/zenvia/apis/sms.py
+src/zenvia/dtos/__init__.py
+src/zenvia/dtos/sms.py
+src/zenvia_python_sdk.egg-info/PKG-INFO
+src/zenvia_python_sdk.egg-info/SOURCES.txt
+src/zenvia_python_sdk.egg-info/dependency_links.txt
+src/zenvia_python_sdk.egg-info/top_level.txt
