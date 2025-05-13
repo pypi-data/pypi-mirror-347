@@ -1,0 +1,11 @@
+inat2wiki/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inat2wiki/cli.py,sha256=rybhwclFwUP7C6OhCYcH-rUhzxDLiZXCSYnoPaYvfiA,330
+inat2wiki/get_user_observations.py,sha256=OoRd4NjORw7fFQaoMvp5OfuhAgNVHHUjtvFhc6_cOH0,10591
+inat2wiki/inat_taxon2wikidata.py,sha256=Snu0vKrdXyfGAFZGMWCQAFphdfFsgxYBKH7RRJXQ6X8,1337
+inat2wiki/parse_observation.py,sha256=6z8pCxDgjOJnLPsEk5P3DLx3iQaS5E2DOjDR3mLyA5c,3855
+inat2wiki-0.0.4.dist-info/licenses/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+inat2wiki-0.0.4.dist-info/METADATA,sha256=mHr2jn7tIAhivN9BM9urqfX3AmqjTxXU6pDFzcyZhno,363
+inat2wiki-0.0.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+inat2wiki-0.0.4.dist-info/entry_points.txt,sha256=5YopTy5k1ltKkU_aNDS53nrYybBedRhC0fjsgfHLgx8,44
+inat2wiki-0.0.4.dist-info/top_level.txt,sha256=ak80I-tsfOKMMAsxielHMxL4tjcbqNHywm5InlS3p-Y,10
+inat2wiki-0.0.4.dist-info/RECORD,,
