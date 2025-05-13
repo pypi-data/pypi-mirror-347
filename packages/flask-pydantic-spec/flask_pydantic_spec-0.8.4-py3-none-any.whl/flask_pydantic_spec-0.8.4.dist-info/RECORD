@@ -1,0 +1,13 @@
+flask_pydantic_spec/__init__.py,sha256=STku4ppV21BMx19nyLpD_QqArMzvEGqwV0FinBXniao,331
+flask_pydantic_spec/config.py,sha256=wmTECQHM8q9PtzIEOgzx34nlOp3tWOpoFkw_Pfx4Qko,2149
+flask_pydantic_spec/constants.py,sha256=yulJM-NQUDQim1SxOnvIdil4G7T-o7jpl1B13f3Pb80,57
+flask_pydantic_spec/flask_backend.py,sha256=UuSBT4IyMIdrywZOG6gQLbR13vWEjFz41DBvBX71iu4,9048
+flask_pydantic_spec/page.py,sha256=a5uEljO-qFWx9_TpWNIdFRAetZ9squIWVnxro-kwpGw,2377
+flask_pydantic_spec/spec.py,sha256=mw-WlSxeYL7Ek6AYtGvbg0psAf4S-PU0FJTqJD7PwUc,11642
+flask_pydantic_spec/types.py,sha256=de9_IwBJy95NhTxC6WJQAJyuU9gHBdnlX2HwByCxdCs,10144
+flask_pydantic_spec/utils.py,sha256=kqpe7icVfYch6TnCBP7j2_yvur6PaFlV83PEhKF72CA,9231
+flask_pydantic_spec-0.8.4.dist-info/licenses/LICENSE,sha256=ahV6kP_D8Qatd5eEeLekGQkuVGP9SjLCSlvpeJMPVZY,11436
+flask_pydantic_spec-0.8.4.dist-info/METADATA,sha256=d-afrwdao9YUE_dspdAI16ZUEtOmbh_6PYc5xTXchM0,6834
+flask_pydantic_spec-0.8.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+flask_pydantic_spec-0.8.4.dist-info/top_level.txt,sha256=1PzohghqGHYaFsAMPWDcJXpvdyHX0w2QaXgQc6_NJoM,20
+flask_pydantic_spec-0.8.4.dist-info/RECORD,,
