@@ -1,0 +1,3 @@
+[console_scripts]
+sf-helper=sf_helper.cli:cli
+
