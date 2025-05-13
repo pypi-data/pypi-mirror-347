@@ -1,0 +1,14 @@
+pdfshelver/__init__.py,sha256=IZ6Q_ryuZawWfLX1Tl4EqfsIfF0xhh8P1ndqlZO8foY,100
+pdfshelver/cmdline_parser.py,sha256=iWLxAEn8O9tpZXnIHxLNTL9dicapNWLalEIeZGqYxYA,6311
+pdfshelver/config.py,sha256=ySU9ZcdDC1nvBgVzB0xQ8XbzMtWqZPnyvWNdXPYCMTE,4963
+pdfshelver/helper_fs.py,sha256=Po66RSBntMG6bdtxVfhM6IzhTATWJzJMhzEhQ2IETLo,1564
+pdfshelver/helper_knowledgebase.py,sha256=YpNweAc7g3zvHwI2bv1vF2gX5jns3bhlmqRlNf8WOSQ,2401
+pdfshelver/helper_ollama.py,sha256=VEYQxMFhgTzMOlkJFkuLHMRcROIbEj40JdX3GMj0XaM,4861
+pdfshelver/helper_text.py,sha256=khYYoHa3uzv4DtTRDtYjCmCRxQOW8Pys6ApNYRq5uxk,4790
+pdfshelver/pdfshelver_main.py,sha256=JQ3BLf_jemhwuN87ehA90FIy7y9V5DHwwj7L3655mLg,9981
+pdfshelver/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdfshelver-0.1.2.dist-info/METADATA,sha256=RtW686TAn7uGcdvKq_Qi05V-rSFo2Mda1rW_WthIQf4,11026
+pdfshelver-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pdfshelver-0.1.2.dist-info/entry_points.txt,sha256=V051tcHcVzbgqwBhK_fj8RkzcGKCzt4E4h4axdroEW8,52
+pdfshelver-0.1.2.dist-info/licenses/LICENSE,sha256=97FooerY2qHHrfaR2GV4yuWegPfbgrL5t9tSsQ2JUHU,1073
+pdfshelver-0.1.2.dist-info/RECORD,,
