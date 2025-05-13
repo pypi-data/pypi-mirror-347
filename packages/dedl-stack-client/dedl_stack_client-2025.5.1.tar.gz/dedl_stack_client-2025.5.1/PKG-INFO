@@ -1,0 +1,64 @@
+Metadata-Version: 2.3
+Name: dedl-stack-client
+Version: 2025.5.1
+Summary: Python client for DEDL Stack services
+License: Apache-2.0
+Author: Christoph Reimer
+Author-email: christoph.reimer@eodc.eu
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: cloudpickle (==2.2.1)
+Requires-Dist: dask (==2023.8.0)
+Requires-Dist: dask-gateway (==2023.1.1)
+Requires-Dist: distributed (==2023.8.0)
+Requires-Dist: ipykernel (>=6.26.0)
+Requires-Dist: lz4 (==4.3.2)
+Requires-Dist: msgpack (==1.0.5)
+Requires-Dist: pyjwt[crypto] (>=2.8.0)
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: rich[jupyter] (>=13.6.0)
+Requires-Dist: toolz (==0.12.0)
+Requires-Dist: tornado (==6.3.2)
+Description-Content-Type: text/markdown
+
+# DestinE Data Lake (DEDL) Stack Client
+
+Python client to facilitate the use of DestinE Data Lake Stack Service.
+
+## Installation
+
+To install the latest version of the client library run:
+```shell
+pip install dedl-stack-client
+```
+
+## Usage
+### Dask
+An example notebook is provided [here](examples/client-usage.ipynb).
+The client will guide a user through the needed authentication flow and will automatically create dedicated Dask cluster on each DEDL bridge.
+
+```python
+from dedl_stack_client.authn import DaskOIDC
+from dedl_stack_client.dask import DaskMultiCluster
+from rich.prompt import Prompt
+
+myAuth = DaskOIDC(username=Prompt.ask(prompt="Username"))
+myDEDLClusters = DaskMultiCluster(auth=myAuth)
+myDEDLClusters.new_cluster()
+```
+
+The DaskMultiCluster class provides an abstraction layer to interact with the various clusters on each DEDL bridge. Computations can be directed to the different Dask clusters by making use of a context manager as given in the following.
+
+```python
+with myDEDLClusters.as_current(location="central") as myclient:
+    myclient.compute(myarray)
+with myDEDLClusters.as_current(location="lumi") as myclient:
+    myclient.compute(myarray)
+with myDEDLClusters.as_current(location="leonardo") as myclient:
+    myclient.compute(myarray)
+```
+
