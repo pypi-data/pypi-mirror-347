@@ -1,0 +1,14 @@
+mater/__init__.py,sha256=ERzyWrVGxclfqEfCccCIWe9qotRiTgU2WVq-iYQZai8,156
+mater/_bio_physical.py,sha256=I2NSO10gGnKuOozFieAQdmyTszrtElb5u7QOtFGIgsw,37651
+mater/_non_physical.py,sha256=48C2dvL1jwV1LUJ0Dzy1k6fA7EsipT4Mc_JOeAQLoUI,9196
+mater/_pre_processing.py,sha256=zo2uMksvmFXhxdkDETMj6P4Hqak0MbEcyJoLWlxeUyY,37387
+mater/_utils.py,sha256=F8zHcVYx-IkC6lD3gW5wo4FhPiRYKiVvuMiGJC9skAk,8621
+mater/_variable_classes.py,sha256=KmWmCNv2lpEH2i8i57d-TVukhF8gs2O7cqO73tr7uBw,9932
+mater/main.py,sha256=idcdZ_oDn018I6QSTAVKvdS79iLl_0wfabkPQQh50JM,1935
+mater/model.py,sha256=Um2kwj80MsXnSPrQE9rdg6wBiuHBElqcmojxoZSFNhY,15658
+mater/plot.py,sha256=dEPzGqeL7Z6O2H9doMgsPjqQjjPrEoBqNtyKHOP7NvI,5600
+mater-0.9.1.dist-info/METADATA,sha256=BTYmQgLFpcT0oQDiahJoUbOp0-8ezcyCyHfxemG3zK4,15958
+mater-0.9.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mater-0.9.1.dist-info/entry_points.txt,sha256=Vvqmbh-fcKQ-aNcvRCc4Ug2htkynTgQV1zZh2hE4YTg,41
+mater-0.9.1.dist-info/licenses/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+mater-0.9.1.dist-info/RECORD,,
