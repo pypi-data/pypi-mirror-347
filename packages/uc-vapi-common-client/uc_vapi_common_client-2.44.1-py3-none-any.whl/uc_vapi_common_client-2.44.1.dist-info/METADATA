@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: uc_vapi_common_client
+Version: 2.44.1
+Summary: vAPI Common Services Client Bindings
+Author: VMware
+License-File: LICENSE.txt
+Requires-Dist: uc_vapi-runtime==2.44.1
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
