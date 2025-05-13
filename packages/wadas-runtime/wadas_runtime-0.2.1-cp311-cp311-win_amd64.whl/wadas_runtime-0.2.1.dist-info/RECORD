@@ -1,0 +1,7 @@
+wadas_runtime/.gitignore,sha256=ztkjgRwL9Uud1OEi36hGQeDGk3OLK1NfDEO8YqGYy8o,11
+wadas_runtime/__init__.py,sha256=w0G6WruiPNsw64EbEmhY2x331jFqfCKj7D6OVbMqiNg,183
+wadas_runtime/_core.cp311-win_amd64.pyd,sha256=q0w6XnBAN9LAemxtopjBBGOR9LUXsm4JvTpwNvFdZes,153088
+wadas_runtime/_version.py,sha256=cTPlZaUCc20I4ZWsDjY35UftpFNRgfDaDBgkWxfIQmg,532
+wadas_runtime-0.2.1.dist-info/METADATA,sha256=ZtRySf8DIzpxbQlqKcJf0XIeSaKz71iK6cgq1asdQSA,3056
+wadas_runtime-0.2.1.dist-info/WHEEL,sha256=9chgXTnQy64NgqUZRxsRIV_VV-XNzOg00AtYXb7VS90,106
+wadas_runtime-0.2.1.dist-info/RECORD,,
