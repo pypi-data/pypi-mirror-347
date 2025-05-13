@@ -1,0 +1,13 @@
+bleak~=0.22.3
+bleak-retry-connector~=3.8.1
+asyncio
+logging
+statistics
+typing
+
+[dev]
+pytest
+pytest-asyncio
+pytest-cov
+mypy
+ruff
