@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: geotex
+Version: 0.1.1
+Summary: Geogram texturing (atlas) bindings
+Author-Email: Mark Boss <hello@markboss.me>
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: numpy>=1.20.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Description-Content-Type: text/markdown
+
+# GeoTex: Expose the UV unwrapping from Geogram for Python
+
+Small wrapper to expose the UV unwrapping related functions from [Geogram](https://github.com/BrunoLevy/geogram).
+
+## Installation
+
+Either via [Pypi](https://pypi.org/project/geotex) or install via github `pip install git+https://github.com/vork/geotex.git`.
+
+## Usage
+
+Check the [unit tests](tests/test_geotex.py) for an example overview.
+
+## License
+
+The project is licensed under [BSD 3](LICENSE)
+
+Geogram is also licensed under [BSD 3](https://github.com/BrunoLevy/geogram/blob/main/LICENSE).
