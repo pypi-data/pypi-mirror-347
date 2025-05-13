@@ -1,0 +1,11 @@
+colormap_tool/__init__.py,sha256=SrOA5BO-uud0ICrCl11DvCXWTxmoSNHmjpKy3n1FCFM,1207
+colormap_tool/_cmps.py,sha256=oRj7N6jYe6ppQTWlrkQzG2Xv0JOk_M2QmVJrV_bNqRw,894
+colormap_tool/_cv.py,sha256=4Z0fHIFiJIU2q2j8bY5vZtPOlcERoCwxCEldLB716Vs,4316
+colormap_tool/_mpl.py,sha256=4q2VEYDprevcxZ9AJYR0jLjnx490Z3M3LvInegzg1Jw,6581
+colormap_tool/resources/cv_colormaps.pickle,sha256=zzbTsw82ZYWCBWZeNz8yLzpjp7xp9yoC1pVvtTlrZM0,18053
+colormap_tool/resources/mpl_colormaps.pickle,sha256=hxxKI0Aq6JXnENmix6Nz9_uWgIuTuwqWZlrvdoaI9Js,147018
+colormap_tool-0.2.0.dist-info/licenses/LICENSE,sha256=s20_ZocKEzl-GCPSKUUQcVN2k0QoD6NeXruu74RQCo8,1076
+colormap_tool-0.2.0.dist-info/METADATA,sha256=j956Zv0SNzlZILPn901p7mn_31NxUpnGU3QM54Zi0g0,6186
+colormap_tool-0.2.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+colormap_tool-0.2.0.dist-info/top_level.txt,sha256=_lhrHJAITAPtLh1eaHNx4Z6sk1ND2EelQNkW8etrhrc,14
+colormap_tool-0.2.0.dist-info/RECORD,,
