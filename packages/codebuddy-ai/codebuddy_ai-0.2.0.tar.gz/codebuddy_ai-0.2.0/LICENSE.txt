@@ -1,0 +1,32 @@
+PROPRIETARY LICENSE
+
+Copyright (c) 2025 Naman Kansal
+
+THIS SOFTWARE IS PROVIDED UNDER A PROPRIETARY LICENSE. YOU ARE GRANTED A LIMITED, NON-EXCLUSIVE, NON-TRANSFERABLE LICENSE TO USE THIS SOFTWARE FOR PERSONAL, NON-COMMERCIAL PURPOSES ONLY, SUBJECT TO THE TERMS SET FORTH BELOW. ANY OTHER USE, INCLUDING BUT NOT LIMITED TO MODIFICATION, REDISTRIBUTION, OR COMMERCIAL EXPLOITATION, IS STRICTLY PROHIBITED WITHOUT THE PRIOR WRITTEN PERMISSION OF THE COPYRIGHT HOLDER.
+
+1. GRANT OF LICENSE  
+Subject to your compliance with the terms of this License, Naman Kansal hereby grants you a revocable, non-exclusive, non-transferable license to use the Software solely for your personal purposes.
+
+2. RESTRICTIONS  
+You shall not:  
+   a. Reproduce, distribute, or publicly display any portion of the Software.  
+   b. Modify, adapt, or create derivative works from the Software without explicit written consent.  
+   c. Use the Software for any commercial or revenue-generating purpose.  
+   d. Remove, alter, or obscure any proprietary notices or labels on the Software.
+
+3. OWNERSHIP  
+All title, including but not limited to copyrights, are retained entirely by Naman Kansal. This License does not constitute an assignment of rights to you.
+
+4. TERMINATION  
+This License is effective until terminated. Your rights under this License will automatically terminate if you fail to comply with any of its terms. Upon termination, you must cease all use of the Software and destroy all copies, including derivative works, in your possession.
+
+5. DISCLAIMER OF WARRANTIES  
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE.
+
+6. MISCELLANEOUS  
+This License represents the complete agreement concerning the subject matter herein and supersedes all prior agreements. If any provision of this License is found to be unenforceable, the remaining provisions will remain in full force and effect.
+
+By using this Software, you acknowledge that you have read, understood, and agree to be bound by the terms and conditions of this Proprietary License.
+
+------------------------------------------------------------
+Naman Kansal
