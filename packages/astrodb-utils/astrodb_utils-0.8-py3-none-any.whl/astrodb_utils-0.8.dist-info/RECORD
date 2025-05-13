@@ -1,0 +1,13 @@
+astrodb_utils/__init__.py,sha256=YQfSYOL-mfFpkMBeTznS39itZoUS3aYHdOnlxzrcT5Y,937
+astrodb_utils/fits.py,sha256=oJJu7mSZu1WNRrBw9DNhiO0vnIUbuqNqZEIa-G-4M9E,13919
+astrodb_utils/photometry.py,sha256=TO5La3Dpd50YfnTewbYQnYApeuuFkXPBZ8uWDcnowqE,12368
+astrodb_utils/publications.py,sha256=KhXUAIE1YNqyq7-PG5WwdCbSHH_dboicuQ6C2RCG1Sk,15260
+astrodb_utils/sources.py,sha256=3MdcVd6opty3rHsg7V22IrpEgAnKe9UMYzztRDazfck,16931
+astrodb_utils/spectra.py,sha256=SPAjF6-T--lXdnHIG2QVmqrlYJ-QZ9GAm_HktFMTuFE,4851
+astrodb_utils/utils.py,sha256=vx8ajgbk_Jxa8bwabZfe9wglRlOd6mCCXxy69IrqSto,6412
+astrodb_utils/version.py,sha256=i6raU8IDbjX2_qal-So090T9KiZO76P0n85Br_T16qg,506
+astrodb_utils-0.8.dist-info/licenses/LICENSE,sha256=ccQ5vbaR8gp0WTi2JiTxwTi0_i6thA064CVFlAA_ujc,1501
+astrodb_utils-0.8.dist-info/METADATA,sha256=ZJ_KVAX3pNu6nB5_hezTtNV5SET_TD683XWvIcT2kjM,2288
+astrodb_utils-0.8.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+astrodb_utils-0.8.dist-info/top_level.txt,sha256=HswdoI9w_NYx5OD9uFj_QVwO0r1AntwmPXhGQ0-aCyY,14
+astrodb_utils-0.8.dist-info/RECORD,,
