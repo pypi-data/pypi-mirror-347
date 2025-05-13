@@ -1,0 +1,17 @@
+freealg/__init__.py,sha256=K92neXJZ9VE1U_j_pj28Qyq1MzlMXhOuYK2ZihgwCaU,463
+freealg/__version__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+freealg/_chebyshev.py,sha256=Cw48gXF6kd3IAQuLTEWadySeKGnY9TynzX9MNmycMUU,4697
+freealg/_damp.py,sha256=k2vtBtWOxQBf4qXaWu_En81lQBXbEO4QbxxWpvuVhdE,1802
+freealg/_decompress.py,sha256=H7ocq09gQnCY-q_8xHi6qyYj3qp239MCgj406hn0yeE,3344
+freealg/_jacobi.py,sha256=HVnaujwAcaILVFGEgxk26UyIaLdP2FZMY44C8TG3Qcc,4763
+freealg/_pade.py,sha256=rWILLpEL910YdixC2c5Cw77HqogAYoxi2YZgRVXEELM,4022
+freealg/_plot_util.py,sha256=Q_LWLbqJefjympbcF2ylpeiYupbj5YAvTLwnpjEDeC4,19009
+freealg/_util.py,sha256=wJ-t8LMZZFEr2PsZEVqTJP_jQTQ3rHUf0dO27F6L7YQ,2310
+freealg/freeform.py,sha256=PsI0cnN38J-97jXDMSqERxgJZw-Tr13pPbIGmpgnRcc,23846
+freealg/distributions/__init__.py,sha256=7t4HbP_EofiFDYLH6jbD94AIumOdcHn1y_Qo54mpLFM,614
+freealg/distributions/marchenko_pastur.py,sha256=k8SoEgB2DFXLqGF-Hyqm8Sfh1DlF3khMssuxak5Uaqw,15827
+freealg-0.0.3.dist-info/licenses/LICENSE.txt,sha256=J-EEYEtxb3VVf_Bn1TYfWnpY5lMFIM15iLDDcnaDTPA,1443
+freealg-0.0.3.dist-info/METADATA,sha256=Z1wF6CU_RomE2Q9ICEuYyNr6R3vQgrW0eZ3HIuEkRs8,2888
+freealg-0.0.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+freealg-0.0.3.dist-info/top_level.txt,sha256=eR2wrgYwDdnnJ9Zf5PruPqe4kQav0GMvRsqct6y00Q8,8
+freealg-0.0.3.dist-info/RECORD,,
