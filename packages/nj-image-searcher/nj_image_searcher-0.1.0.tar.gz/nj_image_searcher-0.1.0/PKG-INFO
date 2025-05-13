@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: nj-image-searcher
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/joxa9889/image-finder
+License: MIT
+Author: joxa2008
+Author-email: javohir.akhmad@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Repository, https://github.com/joxa9889/image-finder
+Description-Content-Type: text/markdown
+
+# Image Finder
+
+A Python package to search and download images from the web based on specified topics or queries.
+
+## Installation
+
+```bash
+pip install image-finder
