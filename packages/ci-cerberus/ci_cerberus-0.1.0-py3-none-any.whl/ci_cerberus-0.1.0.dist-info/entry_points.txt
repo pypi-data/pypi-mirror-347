@@ -1,0 +1,2 @@
+[console_scripts]
+ci-cerberus = mainfile:main
