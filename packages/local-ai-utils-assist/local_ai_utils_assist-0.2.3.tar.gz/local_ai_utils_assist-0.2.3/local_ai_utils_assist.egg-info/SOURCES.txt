@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+assist/__init__.py
+assist/cli.py
+assist/main.py
+assist/mcp_manager.py
+assist/plugin.py
+local_ai_utils_assist.egg-info/PKG-INFO
+local_ai_utils_assist.egg-info/SOURCES.txt
+local_ai_utils_assist.egg-info/dependency_links.txt
+local_ai_utils_assist.egg-info/entry_points.txt
+local_ai_utils_assist.egg-info/requires.txt
+local_ai_utils_assist.egg-info/top_level.txt
+tests/test_main.py
