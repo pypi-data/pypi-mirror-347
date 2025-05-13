@@ -1,0 +1,29 @@
+[tool.pdm]
+distribution = true
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "qa-testing-utils"
+version = "0.0.2"
+description = "QA testing utilities"
+authors = [
+    { name = "Adrian Herscu", email = "adrian.herscu@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "PyHamcrest",
+    "pyfunctional",
+    "ppretty",
+    "allure-pytest",
+    "more-itertools",
+    "returns",
+]
+
+[project.license]
+text = "Apache-2.0"

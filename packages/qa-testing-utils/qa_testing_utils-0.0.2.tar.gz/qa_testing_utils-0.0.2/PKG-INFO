@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qa-testing-utils
+Version: 0.0.2
+Summary: QA testing utilities
+Author-Email: Adrian Herscu <adrian.herscu@gmail.com>
+License: Apache-2.0
+Requires-Python: >=3.13
+Requires-Dist: PyHamcrest
+Requires-Dist: pyfunctional
+Requires-Dist: ppretty
+Requires-Dist: allure-pytest
+Requires-Dist: more-itertools
+Requires-Dist: returns
+Description-Content-Type: text/markdown
+
+# qa-testing-utils
