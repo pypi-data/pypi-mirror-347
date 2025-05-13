@@ -1,0 +1,2 @@
+[console_scripts]
+cellpose-quant = cellpose_quantification.cli:cli
