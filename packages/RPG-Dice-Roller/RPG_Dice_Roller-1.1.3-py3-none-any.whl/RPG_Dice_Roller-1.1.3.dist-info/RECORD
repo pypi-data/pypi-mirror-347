@@ -1,0 +1,14 @@
+rpg_dice_roller/__init__.py,sha256=F2d1twB0_BHDvjv97tiWi9RcVUAlbehQtQGws9nwXPY,229
+rpg_dice_roller/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rpg_dice_roller/src/main.py,sha256=Hau1zbuRBUb8mWFStE5QfsEoB4uznOSIb7GZcDuysfw,254
+rpg_dice_roller/src/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rpg_dice_roller/src/functions/dice_roll.py,sha256=wVDa_4WciPqfs2t778nf3IS9Bx_67G_ZWNz_ld00fu0,135
+rpg_dice_roller/src/functions/statistics.py,sha256=cvgQheOweS0bUM3A3hjIcyJrdluK9I5D5njtIdEHQfY,229
+rpg_dice_roller/src/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rpg_dice_roller/src/models/dice_controller.py,sha256=zSa9nARHFdgvn3q8CLGuJZn-nXvPV9V3V6ZzQfA7-3k,1261
+rpg_dice_roller/src/models/dice_input.py,sha256=FYwlSkffJlF87JDgv2B1YN9nqO28PZq7DbxGqFhsYZY,1925
+rpg_dice_roller/src/models/errors.py,sha256=S1JZtNx8G8hCcVhiTDKonLKitjFHE3wpp0h6GsMpWCY,269
+RPG_Dice_Roller-1.1.3.dist-info/METADATA,sha256=vq9j2SDPgAlKoCCFg0CD8zc6Sg4ogegsTso-1X00Qlo,3824
+RPG_Dice_Roller-1.1.3.dist-info/WHEEL,sha256=HiCZjzuy6Dw0hdX5R3LCFPDmFS4BWl8H-8W39XfmgX4,91
+RPG_Dice_Roller-1.1.3.dist-info/top_level.txt,sha256=Ak8zHVdpEHexJuMkO-ylsnqKDJwP9tAtn-R8sCXmGZk,16
+RPG_Dice_Roller-1.1.3.dist-info/RECORD,,
