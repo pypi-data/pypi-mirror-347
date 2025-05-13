@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: aiwb
+Version: 0.0.1.dev0
+Summary: Renesas AI Workbench Command-Line Tools.
+Home-page: https://ai.aws.renesasworkbench.com/
+Author: Renesas AI Workbench
+License: Apache License 2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >= 3.10
+Requires-Dist: requests
+Requires-Dist: click~=8.1.7
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+aws-cli
+=======
+
+Getting Started
+---------------
+
+Requirements
+~~~~~~~~~~~~
+
+The aws-cli package works on Python versions:
+
+-  3.8.x and greater
+-  3.9.x and greater
+-  3.10.x and greater
+-  3.11.x and greater
+-  3.12.x and greater
