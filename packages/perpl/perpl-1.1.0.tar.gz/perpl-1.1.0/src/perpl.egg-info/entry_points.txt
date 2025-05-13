@@ -1,0 +1,3 @@
+[console_scripts]
+relpos = perpl.relative_positions:main
+rotsym2d = perpl.rot_2d_symm_fit:main
