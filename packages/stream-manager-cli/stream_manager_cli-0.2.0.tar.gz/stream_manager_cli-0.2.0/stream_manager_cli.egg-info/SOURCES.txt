@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+stream_manager_cli/__init__.py
+stream_manager_cli/config.py
+stream_manager_cli/core.py
+stream_manager_cli/main.py
+stream_manager_cli/player.py
+stream_manager_cli/storage.py
+stream_manager_cli/stream_checker.py
+stream_manager_cli/ui.py
+stream_manager_cli.egg-info/PKG-INFO
+stream_manager_cli.egg-info/SOURCES.txt
+stream_manager_cli.egg-info/dependency_links.txt
+stream_manager_cli.egg-info/entry_points.txt
+stream_manager_cli.egg-info/requires.txt
+stream_manager_cli.egg-info/top_level.txt
