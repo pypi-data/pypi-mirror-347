@@ -1,0 +1,6 @@
+setup.py
+sheet_task_uploader.egg-info/PKG-INFO
+sheet_task_uploader.egg-info/SOURCES.txt
+sheet_task_uploader.egg-info/dependency_links.txt
+sheet_task_uploader.egg-info/requires.txt
+sheet_task_uploader.egg-info/top_level.txt
