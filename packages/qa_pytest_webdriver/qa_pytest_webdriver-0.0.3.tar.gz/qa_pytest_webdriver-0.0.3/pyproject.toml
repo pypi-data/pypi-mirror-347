@@ -1,0 +1,34 @@
+[tool.pdm.version]
+source = "scm"
+write_to = "qa_pytest_webdriver/__init__.py"
+write_template = "__version__ = '{}'"
+fallback_version = "0.0.0"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "qa_pytest_webdriver"
+dynamic = []
+description = "PyTest WebDriver library"
+authors = [
+    { name = "Adrian Herscu", email = "adrian.herscu@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.13"
+license = "Apache-2.0"
+dependencies = [
+    "qa-testing-utils",
+    "qa-pytest-commons",
+    "tenacity",
+    "PyHamcrest",
+    "pytest",
+    "pyfunctional",
+    "more-itertools",
+    "webdriver-manager",
+    "selenium",
+]
+version = "0.0.3"
