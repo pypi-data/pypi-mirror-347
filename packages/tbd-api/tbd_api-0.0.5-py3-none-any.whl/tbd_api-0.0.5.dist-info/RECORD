@@ -1,0 +1,16 @@
+tbd_api-0.0.5.dist-info/licenses/LICENSE,sha256=jrLOW6_cdB94sq1jdtaImFGqZyWATa9q3YuKx1GAcIE,1069
+torrentbd_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torrentbd_api/api.py,sha256=yDRv1EDSD091HqWFhekL18_4oATFvPRLVKDZFxTBkeY,1903
+torrentbd_api/login.py,sha256=l_0-H5fefvVa3GpppBZzP2wCMAVE7MKNvwRSAHaKt-k,5250
+torrentbd_api/main.py,sha256=wVE-s-_5jI_8gG2En2_IgDIilwSCvYL_nVyGHovAN-o,4215
+torrentbd_api/profile.py,sha256=VJRQ2TvjeKGMA6UTH4J5GztCNqPYsY4oUQ4iStM02uc,13518
+torrentbd_api/search.py,sha256=K244O9QZSBJ6-ZQZMQM3vl7ujqsTZRrDgGB-xJTNeNk,16501
+torrentbd_api/version.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+torrentbd_api/static/index.html,sha256=qjYIEguvyqURJkmmsekXb2OQGgq-zXJFmxMBiTeJVFU,10340
+torrentbd_api/static/css/styles.css,sha256=5Ei0HgRxiPqPXdZ9hWmrS2e-1aTqZU-dri5n3LBrprw,1958
+torrentbd_api/static/js/script.js,sha256=8thyul75tlOZkAemJ4JOQ2tIqjmy_23IYdquATDxj_U,10189
+tbd_api-0.0.5.dist-info/METADATA,sha256=l7p51jEzRbBx8NVXGKt5p0Tj3TXC4Bv_eQKnx6kiGIA,5038
+tbd_api-0.0.5.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+tbd_api-0.0.5.dist-info/entry_points.txt,sha256=YEbYm6O9CF4RmdtRn1cj8nz66YIf09Fe0RiF597qc5k,52
+tbd_api-0.0.5.dist-info/top_level.txt,sha256=GQwocTdaTiYJWbo3MEFRLnJVjB_gdOkRFQwX-7vRFlk,14
+tbd_api-0.0.5.dist-info/RECORD,,
