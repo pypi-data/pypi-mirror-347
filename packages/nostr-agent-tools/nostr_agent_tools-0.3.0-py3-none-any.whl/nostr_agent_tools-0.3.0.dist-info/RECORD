@@ -1,0 +1,11 @@
+nostr_agent_tools-0.3.0.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+nostr_agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nostr_agents/nostr_client.py,sha256=21UiIw_jv1G4LPYDO5dfFb-nz4Y8Fzp8dQ2N09Ui9VI,8280
+nostr_agents/nostr_mcp_client.py,sha256=4DuU0Um1Qo20-UFpQz8wmGypkEMRM1hBQcgmYSeMH7o,3372
+nostr_agents/nostr_mcp_server.py,sha256=4esvYEVfsdMqDjOQB7BFaH5cPzQ6GW9DTRoBvj3OCk4,7620
+nostr_agents/nwc.py,sha256=v6ms0SOt7S6c6xG3Tye4j6lIT49MXmlcpfOrLUrFHw0,12668
+nostr_agents/nwc_client.py,sha256=FlGyKhnJw2GeHeOWOayncdXF3WUsYtBYS824E2z3IgE,2365
+nostr_agent_tools-0.3.0.dist-info/METADATA,sha256=G5f5u9bv3McgKwff5YYsIUK1ty4Obo0l-HIuzKi4N6M,780
+nostr_agent_tools-0.3.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+nostr_agent_tools-0.3.0.dist-info/top_level.txt,sha256=kKlgxobMmjyXUoX7Hd84_NN9ls1tRYMMe6I6fNZileM,13
+nostr_agent_tools-0.3.0.dist-info/RECORD,,
