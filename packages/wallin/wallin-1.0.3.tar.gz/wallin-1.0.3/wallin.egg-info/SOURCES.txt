@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+wallin/__init__.py
+wallin/solver.py
+wallin.egg-info/PKG-INFO
+wallin.egg-info/SOURCES.txt
+wallin.egg-info/dependency_links.txt
+wallin.egg-info/requires.txt
+wallin.egg-info/top_level.txt

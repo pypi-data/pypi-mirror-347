@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wallin"
+version = "1.0.3"
+description = "Constraint-based Excel optimizer powered by OR-Tools"
+authors = [{ name="Jake Wallin" }]
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+dependencies = ["pandas", "ortools"]
