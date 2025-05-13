@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: Adaptive-MCMC
+Version: 0.1.1
+Summary: Adaptive Markov Chain Monte Carlo (MCMC) algorithms
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=2.2.5
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: tqdm>=4.67.1
+Dynamic: license-file
+
+# Adaptive-MCMC
+Adaptive Markov Chain Monte Carlo (MCMC) algorithms
+
+## Examples
+
+```{python}
+    from scipy.stats import multivariate_normal
+
+    dim = 20
+    cov = 0.5 * np.eye(dim) + 0.5
+    inv_cov = np.linalg.inv(cov)
+
+    def logp(x):
+        return multivariate_normal.logpdf(x, mean=np.zeros(dim), cov=cov)
+
+    def grad_logp(x):
+        return -inv_cov @ x
+
+    mala = ESJDMALA(logp, grad_logp, initial_sample=np.zeros(dim), eps0=0.5)
+    samples, acc, eps_hist, esjd_hist = mala.run(20_000)
+    print(f"Acceptance: {acc:.3f}, Final epsilon = {eps_hist[-1]:.4f}")
+```
