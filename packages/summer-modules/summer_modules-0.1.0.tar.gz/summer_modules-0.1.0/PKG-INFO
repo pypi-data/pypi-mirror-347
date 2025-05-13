@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: summer-modules
+Version: 0.1.0
+Summary: summery233 python modules
+Home-page: https://github.com/233Official/summer_modules
+License: MIT
+Author: 233
+Author-email: ayusummer233@vip.qq.com
+Requires-Python: >=3.10,<3.14
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: bs4 (>=0.0.2,<0.0.3)
+Requires-Dist: cryptography (>=44.0.2,<45.0.0)
+Requires-Dist: httpx (>=0.28.1,<0.29.0)
+Requires-Dist: openai (>=1.66.3,<2.0.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/233Official/summer_modules
+Description-Content-Type: text/markdown
+
+# summer_modules
+
+233的Python工具箱
+
+---
+
+## 项目结构
+
+```bash
+├── CHANGELOG.md           # 更新日志
+├── README.md              # 项目说明    
+├── config copy.toml       # 配置文件（示例）
+├── config.toml            # 配置文件
+├── poetry.lock            # poetry依赖锁定文件
+├── pyproject.toml         # poetry项目配置文件
+├── summer_modules         # 模块㊗主目录
+│   ├── __init__.py
+│   ├── ai
+│   │   ├── __init__.py    
+│   │   ├── deepseek.py    # deeepseek英译中
+│   ├── excel              # excel相关模块
+│   │   ├── __init__.py
+│   ├── logger.py          # 自定义彩色日志模块
+│   ├── utils.py           # 通用工具模块
+│   ├── vulnerability      # 漏洞信息相关模块
+│   │   ├── __init__.py
+│   │   ├── attck          # attck官网漏洞信息
+│   │   ├── cnnvd          # CNNVD官网漏洞信息
+│   │   ├── cnvd    
+│   │   ├── cve            # CVE官网漏洞信息查询
+│   │   ├── github_repo    # nuclei仓库模板信息查询
+│   │   └── nvd
+│   └── web_request_utils  # 随机 UA 生成器
+│       ├── __init__.py
+│       └── browsers.json
+├── tests
+│   ├── __init__.py
+│   ├── test.json
+│   ├── test_main.py
+│   └── test_oneline.json
+```
+
+
+---
+
