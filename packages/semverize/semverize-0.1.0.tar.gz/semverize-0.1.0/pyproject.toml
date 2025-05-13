@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "semverize"
+version = "0.1.0"
+description = "Coerce PEP 440 to SemVer, when possible"
+authors = ["Paul Melnikow <github@paulmelnikow.com>", "Metabolize LLC"]
+license = "Apache-2.0"
+include = ["CHANGELOG.md"]
+exclude = ["*/test_*.py"]
+repository = "https://github.com/metabolize/semverize"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+
+[tool.poetry.dependencies]
+python = ">= 3.9, < 4"
+click = {version = ">= 8, < 9", optional = true}
+semver = ">= 3, < 4"
+packaging = ">= 23.0"
+
+[tool.poetry.extras]
+cli = ["click"]
+
+[tool.poetry.dev-dependencies]
+black = "25.1.0"
+coverage = "7.8.0"
+executor = "23.2"
+flake8 = "7.2.0"
+flake8-import-order = "0.18.2"
+mypy = "1.15.0"
+myst-parser = "3.0.1"
+pytest = "8.3.5"
+pytest-cov = "6.1.1"
+
+[tool.poetry.scripts]
+semverize = "semverize.cli:semverize"
+
+[build-system]
+# Lint requires setuptools.
+requires = ["setuptools", "poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.report]
+omit = ["**/test_*.py"]
+fail_under = 100.0
+
+[tool.mypy]
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+ignore_missing_imports = true
