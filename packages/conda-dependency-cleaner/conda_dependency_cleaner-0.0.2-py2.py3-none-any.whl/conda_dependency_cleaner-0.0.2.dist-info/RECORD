@@ -1,0 +1,13 @@
+conda_dependency_cleaner/__init__.py,sha256=LQSz-zbSWR6rqBYmqhgVz13vlK8LBGXvAa_zpZUoVlA,138
+conda_dependency_cleaner/_clean_environment_from_file.py,sha256=ZRAwq6KTgFGjqRu4IZOqs9ncptzlirF8mIscRjRtj-8,2486
+conda_dependency_cleaner/_version.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+conda_dependency_cleaner/clean.py,sha256=r16MtviOd05NvmHJFxne0CG76JAqxhkHJFswBIn-kMw,1334
+conda_dependency_cleaner/utility/__init__.py,sha256=kd5zSyJBsXRP5PDXhx5ftOp5dM-47zXOeYvGsb6Cz4E,266
+conda_dependency_cleaner/utility/_dependency.py,sha256=XmMW94mxvnfm5bIMaGNpTOSuTBFM2XmasYOE8OakIzQ,912
+conda_dependency_cleaner/utility/_get_dependeny_graph.py,sha256=YBZADu2x_1I2BRb47SmJRYN4w3UCXEgy8LtK70D385s,731
+conda_dependency_cleaner/utility/_to_yaml_patch.py,sha256=33NzDE7FXRL0qT6ZpGgzlnFruG6u-5OZmCiRvDIYZoA,515
+conda_dependency_cleaner-0.0.2.dist-info/LICENSE,sha256=yf9ZbfArRLmHGCy-226QTJOe5C3i1JFXd_GYkt1p6pY,1070
+conda_dependency_cleaner-0.0.2.dist-info/METADATA,sha256=td8VrS4FuNX-Cvj3hXJDWMEDI8juL2EybI0lFgelDzs,2336
+conda_dependency_cleaner-0.0.2.dist-info/WHEEL,sha256=5druYqcII7zHXzX7qmN0TH895Jg3yuTtfjMgJIVBrKE,92
+conda_dependency_cleaner-0.0.2.dist-info/entry_points.txt,sha256=rS8zPULnz3LLQhendNXey_26c6kxH23tP0O_s5k0ZOo,66
+conda_dependency_cleaner-0.0.2.dist-info/RECORD,,
