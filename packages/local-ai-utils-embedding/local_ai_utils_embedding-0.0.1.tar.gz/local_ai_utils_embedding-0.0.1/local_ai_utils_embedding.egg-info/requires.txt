@@ -1,0 +1,8 @@
+lancedb
+local-ai-utils-core
+fire
+numpy
+platformdirs
+pyarrow
+pylance
+pandas

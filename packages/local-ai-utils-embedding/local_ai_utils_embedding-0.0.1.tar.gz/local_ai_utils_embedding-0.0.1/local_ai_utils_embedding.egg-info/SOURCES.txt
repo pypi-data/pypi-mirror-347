@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+embedding/__init__.py
+embedding/cli.py
+embedding/constants.py
+embedding/main.py
+embedding/migration_runner.py
+embedding/plugin.py
+embedding/schema.py
+embedding/tools.py
+local_ai_utils_embedding.egg-info/PKG-INFO
+local_ai_utils_embedding.egg-info/SOURCES.txt
+local_ai_utils_embedding.egg-info/dependency_links.txt
+local_ai_utils_embedding.egg-info/entry_points.txt
+local_ai_utils_embedding.egg-info/requires.txt
+local_ai_utils_embedding.egg-info/top_level.txt
