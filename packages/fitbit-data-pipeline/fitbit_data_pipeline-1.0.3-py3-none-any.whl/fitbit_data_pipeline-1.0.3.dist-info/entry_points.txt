@@ -1,0 +1,4 @@
+[console_scripts]
+fitbit-app=fitbit_data_pipeline.cli:run_pipeline
+fitbit-auth=fitbit_data_pipeline.cli:start_server
+
