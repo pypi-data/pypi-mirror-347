@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: Franko
+Version: 25.5.1
+Summary: Project for declension of Ukrainian names
+Author: Danila Aleksandrov
+Author-email: danila.alexandrov24@gmail.com
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools>=61.0
+Requires-Dist: wheel
+Requires-Dist: pydantic
+Provides-Extra: dev-deps
+Requires-Dist: pytest; extra == "dev-deps"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Franko Ua
+
+[![Documentation](https://img.shields.io/badge/Documentation-Read%20The%20Docs-blue.svg)](https://franko.readthedocs.io/en/latest/index.html)
+
+
+to be continued...
