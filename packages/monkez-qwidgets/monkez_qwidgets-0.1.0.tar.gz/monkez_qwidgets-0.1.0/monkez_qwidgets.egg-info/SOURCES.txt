@@ -1,0 +1,9 @@
+README.md
+setup.py
+monkez_qwidgets/__init__.py
+monkez_qwidgets/widgets.py
+monkez_qwidgets.egg-info/PKG-INFO
+monkez_qwidgets.egg-info/SOURCES.txt
+monkez_qwidgets.egg-info/dependency_links.txt
+monkez_qwidgets.egg-info/requires.txt
+monkez_qwidgets.egg-info/top_level.txt
