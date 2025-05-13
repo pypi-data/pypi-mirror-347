@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: testumbrella
+Version: 1.1.0
+Summary: Test umbrella project
+Home-page: 
+Author: Irakli Gzirishvili
+Author-email: gziraklirex@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: clight
+Requires-Dist: testufirst==1.1.5
+Requires-Dist: testusecond==1.0.4
+Requires-Dist: testuthird==1.0.2
+Requires-Dist: testufirst
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
+
+# TestUmbrella v1.1.0
+
+**Project**: TestUmbrella
+<br>**Version**: 1.1.0
+<br>**OS**: OS Independent
+<br>**Author**: Irakli Gzirishvili
+<br>**Mail**: gziraklirex@gmail.com
+
+**TestUmbrella** is a Python command-line interface application. Test umbrella project
+
+## Installation
+
+To use **TestUmbrella**, follow these steps:
+
+- Open CMD and run the following command to install `pip install testumbrella` then restart your CMD
+- To check if **TestUmbrella** is installed correctly, run the following command `testumbrella`
+
+## Commands
+
+These are the available commands you can use:
+
+- `testumbrella` - To list available commands
+- `testumbrella demo (param)` - Test demo method with param
