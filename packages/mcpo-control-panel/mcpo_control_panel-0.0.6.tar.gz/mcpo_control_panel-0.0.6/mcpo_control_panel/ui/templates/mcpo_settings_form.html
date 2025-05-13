@@ -1,0 +1,348 @@
+<!-- ================================================ -->
+<!-- FILE: mcpo_control_panel/ui/templates/mcpo_settings_form.html -->
+<!-- (Improved design and alignment) -->
+<!-- ================================================ -->
+{% extends "base.html" %}
+
+{% block title %}MCPO Settings - MCP Manager{% endblock %}
+{% block page_title %}MCPO Settings{% endblock %}
+{% block page_subtitle %}Configuration of mcpo server startup parameters and manager interface{% endblock %}
+
+{% block head_extra %}
+<style>
+    /* Improve vertical alignment for switch next to input */
+    .input-field-with-switch {
+        display: flex;
+        align-items: center; /* Align vertically center */
+        flex-wrap: wrap; /* Allow wrapping on mobile */
+    }
+    .input-field-with-switch .input-part {
+        flex-grow: 1; /* Takes available space */
+        min-width: 200px; /* Minimum width for input field */
+        margin-right: 20px; /* Margin from the switch */
+    }
+    .input-field-with-switch .switch-part {
+        flex-shrink: 0; /* Don't shrink the switch */
+        margin-top: 15px; /* Small top margin for alignment with input */
+    }
+
+    /* Alignment for the main switch (Health Check Enable) */
+     .main-switch-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px; /* Bottom margin */
+     }
+     .main-switch-row .switch {
+        margin-right: 15px;
+     }
+      .main-switch-row p.caption {
+         margin-top: 0;
+         margin-bottom: 0;
+         flex-grow: 1;
+      }
+
+    /* Reduce bottom margin for .row inside cards */
+    .card-content .row {
+        margin-bottom: 10px;
+    }
+     .card-content .row:last-child {
+        margin-bottom: 0;
+    }
+    /* Additional margin for helper-text to avoid sticking */
+    .input-field .helper-text {
+        margin-top: 2px;
+    }
+    /* Styles for the info block in Health Check */
+    .health-check-info {
+        margin-top: 20px;
+        padding: 10px 12px;
+        background-color: rgba(0,0,0, 0.1);
+        border-radius: 3px;
+        border-left: 3px solid #607d8b; /* Accent */
+        font-size: 0.85rem;
+    }
+     .health-check-info i {
+        vertical-align: middle;
+        margin-right: 5px;
+        font-size: 1.1em;
+     }
+     .health-check-info code {
+         background-color: rgba(255, 255, 255, 0.1);
+         padding: 1px 4px;
+         border-radius: 2px;
+         font-size: 1em; /* Slightly larger */
+     }
+</style>
+{% endblock %}
+
+
+{% block content %}
+
+{% if error %}
+<div class="card-panel red lighten-3 black-text">
+    <strong><i class="material-icons left tiny">error_outline</i>Error:</strong> {{ error }}
+</div>
+{% endif %}
+
+{% if success %}
+<div class="card-panel green lighten-3 black-text">
+    <strong><i class="material-icons left tiny">check_circle_outline</i>Success:</strong> {{ success }}
+</div>
+{% endif %}
+
+<div class="row">
+    <form class="col s12" method="post" action="{{ url_for('ui_update_mcpo_settings') }}">
+        <!-- Core MCPO Settings -->
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title grey-text text-darken-1" style="margin-bottom: 20px;">Core MCPO Settings</span>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">settings_input_antenna</i>
+                        <input type="number" id="port" name="port" value="{{ settings.port if settings else 8000 }}" required min="1024" max="65535" class="validate">
+                        <label for="port">MCPO Port (local)</label>
+                        <span class="helper-text">Port for running the mcpo server on this machine (1024-65535).</span>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">public</i>
+                        <input type="url" id="public_base_url" name="public_base_url" value="{{ settings.public_base_url if settings and settings.public_base_url is not none else '' }}" placeholder="e.g., http://your.domain.com:8000">
+                        <label for="public_base_url">Public Base URL (optional)</label>
+                        <span class="helper-text">URL for external links. If empty, http://127.0.0.1:PORT is used.</span>
+                    </div>
+                </div>
+                {# API Key + Switch #}
+                <div class="row input-field-with-switch">
+                     <div class="input-field input-part col s12 m8"> {# Using m8 for the input field #}
+                        <i class="material-icons prefix">key</i>
+                        <input type="text" id="api_key" name="api_key" value="{{ settings.api_key if settings and settings.api_key is not none else '' }}">
+                        <label for="api_key">MCPO API Key (optional)</label>
+                         <span class="helper-text">Key for protecting endpoints (Bearer token).</span>
+                    </div>
+                    <div class="switch-part col s12 m4"> {# Using m4 for the switch #}
+                         <div class="switch">
+                            <label>
+                                Off
+                                <input type="checkbox" id="use_api_key" name="use_api_key" value="true" {% if settings and settings.use_api_key %}checked{% endif %}>
+                                <span class="lever"></span>
+                                Use API Key
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                {# Config File Path #}
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">description</i>
+                        <input type="text" id="config_file_path" name="config_file_path" value="{{ settings.config_file_path if settings else 'mcp_generated_config.json' }}" required class="validate">
+                        <label for="config_file_path">MCPO Configuration File Path</label>
+                        <span class="helper-text">The file that will be generated to run mcpo.</span>
+                    </div>
+                </div>
+                 {# Log File Path #}
+                 <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">assignment</i>
+                        <input type="text" id="log_file_path" name="log_file_path" value="{{ settings.log_file_path if settings and settings.log_file_path is not none else '' }}">
+                        <label for="log_file_path">MCPO Log File Path (optional)</label>
+                        <span class="helper-text">File for writing mcpo process logs. If empty, logs go to stdout/stderr.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Log Display Settings -->
+        <div class="card" style="margin-top: 20px;">
+             <div class="card-content">
+                <span class="card-title grey-text text-darken-1" style="margin-bottom: 20px;">Log Display in Manager</span>
+                 {# Log Refresh Interval + Switch #}
+                 <div class="row input-field-with-switch">
+                    <div class="input-field input-part col s12 m7"> {# Using m7 for the input field #}
+                        <i class="material-icons prefix">timer</i>
+                        <input type="number" id="log_auto_refresh_interval_seconds" name="log_auto_refresh_interval_seconds"
+                               value="{{ settings.log_auto_refresh_interval_seconds if settings else 180 }}"
+                               required min="5" max="3600" class="validate">
+                        <label for="log_auto_refresh_interval_seconds">Auto-Refresh Interval (sec)</label>
+                        <span class="helper-text">How often to refresh logs on the logs page (5-3600 sec).</span>
+                    </div>
+                     <div class="switch-part col s12 m5"> {# Using m5 for the switch #}
+                         <div class="switch">
+                            <label>
+                                Auto-Refresh Off
+                                <input type="checkbox" id="log_auto_refresh_enabled" name="log_auto_refresh_enabled"
+                                       value="true" {% if settings and settings.log_auto_refresh_enabled %}checked{% endif %}>
+                                <span class="lever"></span>
+                                Auto-Refresh On
+                            </label>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <!-- Health Check Settings -->
+        <div class="card" style="margin-top: 20px;">
+            <div class="card-content">
+                <span class="card-title grey-text text-darken-1" style="margin-bottom: 20px;">MCPO Health Check & Auto-Restart</span>
+                 {# Main Health Check Enable Switch + Description #}
+                 <div class="row main-switch-row">
+                     <div class="switch">
+                        <label>
+                            Off
+                            <input type="checkbox" id="health_check_enabled" name="health_check_enabled"
+                                   value="true" {% if settings and settings.health_check_enabled %}checked{% endif %}>
+                            <span class="lever"></span>
+                            On
+                        </label>
+                    </div>
+                     <p class="caption grey-text text-darken-1">
+                         Enable periodic checking of MCPO availability via an echo request.
+                     </p>
+                </div>
+                {# Interval + Failure Attempts #}
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">timer</i>
+                        <input type="number" id="health_check_interval_seconds" name="health_check_interval_seconds"
+                               value="{{ settings.health_check_interval_seconds if settings else 10 }}"
+                               required min="5" class="validate">
+                        <label for="health_check_interval_seconds">Check Interval (sec)</label>
+                        <span class="helper-text">Check frequency on success (minimum 5 sec).</span>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">error_outline</i> {# Changed icon #}
+                        <input type="number" id="health_check_failure_attempts" name="health_check_failure_attempts"
+                               value="{{ settings.health_check_failure_attempts if settings else 3 }}"
+                               required min="1" class="validate">
+                        <label for="health_check_failure_attempts">Attempts Before Restart</label>
+                        <span class="helper-text">Consecutive failures before restart (minimum 1).</span>
+                    </div>
+                </div>
+                {# Failure Delay + Auto-Restart Switch #}
+                <div class="row input-field-with-switch">
+                    <div class="input-field input-part col s12 m7"> {# Using m7 for the input field #}
+                        <i class="material-icons prefix">replay</i> {# Changed icon #}
+                        <input type="number" id="health_check_failure_retry_delay_seconds" name="health_check_failure_retry_delay_seconds"
+                               value="{{ settings.health_check_failure_retry_delay_seconds if settings else 5 }}"
+                               required min="1" class="validate">
+                        <label for="health_check_failure_retry_delay_seconds">Delay on Failure (sec)</label>
+                        <span class="helper-text">Pause between failed checks (minimum 1 sec).</span>
+                    </div>
+                     <div class="switch-part col s12 m5"> {# Using m5 for the switch #}
+                         <div class="switch">
+                            <label>
+                                Restart Off
+                                <input type="checkbox" id="auto_restart_on_failure" name="auto_restart_on_failure"
+                                       value="true" {% if settings and settings.auto_restart_on_failure %}checked{% endif %}>
+                                <span class="lever"></span>
+                                Auto-Restart On
+                            </label>
+                        </div>
+                         {# A small description can be added here or left as is #}
+                         <p class="caption grey-text text-darken-1" style="font-size:0.8rem; margin-top: 5px;">
+                             Restart mcpo if checks fail.
+                         </p>
+                    </div>
+                </div>
+                {# Info Block #}
+                <div class="health-check-info grey-text text-lighten-1">
+                    <i class="material-icons tiny">info_outline</i>
+                    <span>The check uses the built-in echo server <code>{{ settings.INTERNAL_ECHO_SERVER_NAME }}</code>. It is added to the configuration if the check is enabled. Command: <code>{{ settings.INTERNAL_ECHO_SERVER_COMMAND }} {{ ' '.join(settings.INTERNAL_ECHO_SERVER_ARGS) }}</code>.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Save/Cancel Buttons -->
+        <div class="row" style="margin-top: 30px;">
+            <div class="col s12">
+                 <button class="btn waves-effect waves-light blue darken-1" type="submit" style="margin-right: 10px;">
+                     <i class="material-icons left">save</i>Save All Settings
+                 </button>
+                 <a href="{{ url_for('ui_root') }}" class="btn waves-effect waves-light grey lighten-1 black-text">
+                      <i class="material-icons left">cancel</i>Cancel
+                 </a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize Materialize components (if needed, e.g., Select)
+        // M.FormSelect.init(document.querySelectorAll('select'));
+    
+        // Example: Dynamically enable/disable Health Check fields
+        const healthCheckEnabledSwitch = document.getElementById('health_check_enabled');
+        const healthCheckFields = [
+            document.getElementById('health_check_interval_seconds'),
+            document.getElementById('health_check_failure_attempts'),
+            document.getElementById('health_check_failure_retry_delay_seconds'),
+            document.getElementById('auto_restart_on_failure') // Target the checkbox itself for the switch
+        ];
+    
+        function toggleHealthCheckFields() {
+            const isDisabled = !healthCheckEnabledSwitch.checked;
+            healthCheckFields.forEach(field => {
+                if (field) {
+                    field.disabled = isDisabled;
+                    // Optionally add/remove a class for visual indication of inactivity
+                    const parentWrapper = field.closest('.input-field') || field.closest('.switch-part');
+                     if (parentWrapper) {
+                         parentWrapper.style.opacity = isDisabled ? 0.6 : 1;
+                     }
+                     // For switches, specifically disable the input inside the label
+                     if (field.type === 'checkbox') {
+                         field.disabled = isDisabled; // Disable the checkbox input directly
+                     }
+                }
+            });
+             // Update Materialize state (if Select or other components were used)
+             // M.updateTextFields();
+        }
+    
+        if (healthCheckEnabledSwitch) {
+            healthCheckEnabledSwitch.addEventListener('change', toggleHealthCheckFields);
+            // Set initial state on page load
+            toggleHealthCheckFields();
+        }
+    
+        // --- Similar logic for API Key ---
+        const useApiKeySwitch = document.getElementById('use_api_key');
+        const apiKeyInput = document.getElementById('api_key');
+    
+        function toggleApiKeyInput() {
+            if (apiKeyInput) {
+                apiKeyInput.disabled = !useApiKeySwitch.checked;
+                const parentWrapper = apiKeyInput.closest('.input-field');
+                if (parentWrapper) {
+                     parentWrapper.style.opacity = apiKeyInput.disabled ? 0.6 : 1;
+                 }
+            }
+        }
+    
+         if (useApiKeySwitch) {
+            useApiKeySwitch.addEventListener('change', toggleApiKeyInput);
+            toggleApiKeyInput(); // Initial state
+        }
+    
+         // --- Similar logic for Log Auto Refresh ---
+         const logRefreshEnabledSwitch = document.getElementById('log_auto_refresh_enabled');
+         const logRefreshIntervalInput = document.getElementById('log_auto_refresh_interval_seconds');
+    
+         function toggleLogRefreshInput() {
+             if (logRefreshIntervalInput) {
+                 logRefreshIntervalInput.disabled = !logRefreshEnabledSwitch.checked;
+                  const parentWrapper = logRefreshIntervalInput.closest('.input-field');
+                  if (parentWrapper) {
+                     parentWrapper.style.opacity = logRefreshIntervalInput.disabled ? 0.6 : 1;
+                 }
+             }
+         }
+    
+          if (logRefreshEnabledSwitch) {
+            logRefreshEnabledSwitch.addEventListener('change', toggleLogRefreshInput);
+            toggleLogRefreshInput(); // Initial state
+        }
+    
+    });
+    </script>
+{% endblock %}
