@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+coboarding.egg-info/PKG-INFO
+coboarding.egg-info/SOURCES.txt
+coboarding.egg-info/dependency_links.txt
+coboarding.egg-info/top_level.txt
+tests/test_sample.py
