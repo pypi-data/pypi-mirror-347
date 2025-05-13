@@ -1,0 +1,4 @@
+[console_scripts]
+main=pydynamicestimator.main:main
+pydynamicestimator=pydynamicestimator.__main__:main
+
