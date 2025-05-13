@@ -1,0 +1,23 @@
+bio/1.seq_concat_transcribe_translate.ipynb,sha256=OTcKGNxFIMc2ymwlPvfS5oFIPtuGLKHOh9BrFr5Hgu4,1806
+bio/10.3d.ipynb,sha256=h3wpOme87tTAqw593TR5iPF1BkAt8g37inrbImxbl74,252386
+bio/2.read_from_fasta.ipynb,sha256=JtcFj7LdjnaTkOXvuuX2eTKu6r85lsN7fntuknz7jCw,81503
+bio/3.seqRec_genbank.ipynb,sha256=Pe-pdDcNoBTVdl8HmyWAE6jQLi6GnPdNXFkhWc2V9dw,1755
+bio/4.fasta_to_genbank.ipynb,sha256=pTcPsSoUeT4maNI6V9BukyEnRedVO1_qkMN38ebbTnk,2056
+bio/5.modifying_seqRecord.ipynb,sha256=6xWcUwHD28Iq-WHxBRG97KTRBhBGVrg6u1tXPYTrLGE,2563
+bio/6.Fecth_fasta_entrez.ipynb,sha256=FWJqZTE8s4YQI0NHczDDc_iN9wfmOc_SAA--Iz0i-ws,5429
+bio/7.Align.ipynb,sha256=dqu0El5J6N7g_Jwya2h6ZfPkmjV3DAMhXlN0criA-MI,1313
+bio/8.muscle.ipynb,sha256=5RFntl-ioBDwCwdcIn5rj-AGvVaYJ8t5L-DoYul16jM,3870
+bio/9.phylogenetic.ipynb,sha256=aoo9Od4EcokRaEl-sU0QFcSzfvrkxwLF8XukCVhVdKo,27080
+bio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bio/All Files/aligned_sequences.aln,sha256=Rxb4zgzdXjAs9iU2jGnR5YlpNMPumNhF0WwJ329G110,8824
+bio/All Files/aligned_sequences.fasta,sha256=Rxb4zgzdXjAs9iU2jGnR5YlpNMPumNhF0WwJ329G110,8824
+bio/All Files/example2_4.fasta,sha256=0uY_QPYALXv8ut_qIApLEpeOmflHJu7v9SW78B0iN3o,77675
+bio/All Files/input_sequences.fasta,sha256=XQyaRHhlIOzkNM6_7ZEAHUL_eRaRP3a7P2kC4e2AA5Q,7879
+bio/All Files/outputGen3.genbank,sha256=Ux46XZYpJOT6hugrDa25owSF4Rwcg4e1G2GEztGWpGM,295
+bio/All Files/outputGen4.genbank,sha256=HBKkZJDr_weUMUSk1D9pza3ydtNcadFFo42-De-g2wM,122202
+bio/All Files/outputgen6.genbank,sha256=auCt3hERqymQ_YaW7N7oNPXknJMe2Rn7N2TmOKnFhjE,13912
+bio/All Files/phylogenetic_tree.nwk,sha256=fTvm9_jhlXzIaGUL3QCFMGwZGQn8Low2eIml1esH_vk,99
+bio_tools_26-0.1.0.dist-info/METADATA,sha256=0JznVqZLc8GgF2PIOAqDPjcSV_f1Z3bOisX80xTM_SM,702
+bio_tools_26-0.1.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+bio_tools_26-0.1.0.dist-info/top_level.txt,sha256=3fOSDXLDiqW2ugxbAPFhqieRxelwLCze5YYKvqiI_ao,4
+bio_tools_26-0.1.0.dist-info/RECORD,,
