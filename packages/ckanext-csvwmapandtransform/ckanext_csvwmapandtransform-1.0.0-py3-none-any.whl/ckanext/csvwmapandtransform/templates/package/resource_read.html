@@ -1,0 +1,8 @@
+{% ckan_extends %}
+
+{% block action_manage %}
+{{ super() }}
+{% if h.csvwmapandtransform_show_tools(res) %}
+<li>{% link_for _('Transform'), named_route='csvwmapandtransform.transform', id=pkg.name, resource_id=res.id, class_='btn btn-secondary', icon='play' %}</li>
+{% endif %}
+{% endblock action_manage %}
