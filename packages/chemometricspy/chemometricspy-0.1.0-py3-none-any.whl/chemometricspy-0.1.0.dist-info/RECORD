@@ -1,0 +1,13 @@
+chemometricspy/__init__.py,sha256=Jpf-MVKaZxcF20k05lUz64-1c2JCup1C71gjyxVpWgk,18
+chemometricspy/doe/__init__.py,sha256=tOW3BuFh8POl0mJezLV6pSVMLTwLg8ZX4SH0QV7yeko,203
+chemometricspy/doe/bbd.py,sha256=jtwft68k_u7t9-07arcU4MkOw9oT_TwW9JcyulDX6M8,3210
+chemometricspy/doe/ccd.py,sha256=QtJcD26xYClVrc68O4UJXBKzRWgJMlAmvmEByJ-gQO0,4927
+chemometricspy/doe/efeitos.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chemometricspy/doe/factorial.py,sha256=CYv6ZqGOOG7KgfuiMIRDF8qETkTJwZYWHcZbm-isSbI,14849
+chemometricspy/doe/fractional_factorial.py,sha256=5jGhQj-y2AQEuu0uvpOeimuqEAr4Z4tAzYdSmIS98p0,6145
+chemometricspy/doe/regression.py,sha256=L_2oNK4r40Sma1mP_lmH9QKc3oM6awp9BbqFn2n7NFc,7711
+chemometricspy-0.1.0.dist-info/licenses/LICENSE,sha256=RJzuM8KZvLcxFTmRQNUwnx8Btkd0ig0JYCyaaRSDVHk,1075
+chemometricspy-0.1.0.dist-info/METADATA,sha256=MntVOxv9CIeLDjAUqmCVY_rjvdZtKJsR4_B43zjUfoc,2199
+chemometricspy-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+chemometricspy-0.1.0.dist-info/top_level.txt,sha256=uNDr5oMXrNOUktpIX-d1BrUu_jfMqY3gPmu48S8izAc,15
+chemometricspy-0.1.0.dist-info/RECORD,,
