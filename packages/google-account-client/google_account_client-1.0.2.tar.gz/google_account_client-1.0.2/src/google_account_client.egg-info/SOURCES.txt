@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/google_account_client.egg-info/PKG-INFO
+src/google_account_client.egg-info/SOURCES.txt
+src/google_account_client.egg-info/dependency_links.txt
+src/google_account_client.egg-info/requires.txt
+src/google_account_client.egg-info/top_level.txt
