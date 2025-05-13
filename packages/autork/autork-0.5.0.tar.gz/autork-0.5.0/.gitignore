@@ -1,0 +1,6 @@
+.gitignore
+ark_scan_results.csv
+ark_scan_results.json
+ark_scan_session.json
+ark_scan_export.csv
+ark_scan_export.json

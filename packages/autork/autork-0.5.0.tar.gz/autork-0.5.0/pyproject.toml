@@ -1,0 +1,80 @@
+# ark_project/pyproject.toml
+
+[build-system]
+requires = ["hatchling>=1.11.0"] # Specify a reasonable minimum version
+build-backend = "hatchling.build"
+
+[project]
+name = "autork"
+version = "0.5.0" 
+authors = [
+  { name="Jacob Werner" }, 
+]
+description = "A Python library for orchestrating Nmap scans, offering flexible control over scan types, NSE scripts, target management, and providing structured output with export options."
+readme = "README.md" # Your main README file
+requires-python = ">=3.8" # Minimum Python version you support
+
+license = { file = "LICENSE" } 
+
+keywords = [
+    "nmap", "scanner", "network", "reconnaissance", "security", 
+    "pentest", "automation", "port scanner", "nse", "ipv6", 
+    "cybersecurity", "network mapping"
+]
+classifiers = [
+    # See https://pypi.org/classifiers/
+    "Development Status :: 4 - Beta", # Or "3 - Alpha" if you prefer
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Information Technology",
+    "Topic :: Security",
+    "Topic :: System :: Networking",
+    "Topic :: System :: Networking :: Monitoring",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    # !!! REPLACE with your chosen license classifier !!!
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",      # For running tests
+    "pytest-mock>=3.0", # For mocking capabilities in tests
+]
+dev = [
+    "autork[test]",   # Includes the 'test' dependencies
+    "build>=0.10",    # For building the package
+    "twine>=4.0",     # For uploading to PyPI (later, if you choose)
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JakeWerner/autork"
+"Repository" = "https://github.com/JakeWerner/autork"
+"Bug Tracker" = "https://github.com/JakeWerner/autork/issues"
+# "Documentation" = "https://autork.readthedocs.io" # If you set up Read the Docs later
+
+[tool.hatch.version]
+
+[tool.hatch.build.targets.sdist]
+
+include = [
+    "/autork",
+    "/tests",
+    "/README.md",
+    "/LICENSE",
+    "/pyproject.toml"
+]
+# exclude = []
+
+[tool.hatch.build.targets.wheel]
+
+packages = ["autork"]
