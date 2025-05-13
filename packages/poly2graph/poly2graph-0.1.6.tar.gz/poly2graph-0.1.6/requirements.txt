@@ -1,0 +1,7 @@
+numpy
+sympy
+numba
+networkx
+scikit-image
+scikit-learn
+matplotlib
