@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "cg-jupyter-mux"
+version = "0.1.1"
+description = "A multiplexer for the Jupyter kernel protocol using JSON Lines (JSONL) over stdin/stdout."
+authors = ["CodeGrade <info@codegrade.com>"]
+license = "MIT"
+readme = "README.md"
+
+packages = [{ include = "cg_jupyter_mux" }]
+
+keywords = ["jupyter", "kernel", "protocol", "multiplexer", "mux", "jsonl", "asyncio", "jupyter-client", "codegrade"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Networking",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: Jupyter",
+    "Environment :: Console",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter_client = "^8.0"
+
+[tool.poetry.scripts]
+# Assumes the main function is in main.py within the cg_jupyter_mux package
+cg_jupyter_mux = "cg_jupyter_mux.main:main" # Matched structure
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+pytest-asyncio = "^0.21.0"
+ipykernel = "^6.29.5"
+pytest-mock = "^3.14.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.15.0"
+yapf = "^0.40.2"
+isort = "^5.12.0"
+nox = "^2023.4.22"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
+no_implicit_reexport = false
+
+[tool.pytest.ini_options]
+# Register custom pytest markers to avoid warnings
+markers = [
+    "integration: marks tests as integration tests (these may require external resources like installed kernels and might be slower)"
+]
