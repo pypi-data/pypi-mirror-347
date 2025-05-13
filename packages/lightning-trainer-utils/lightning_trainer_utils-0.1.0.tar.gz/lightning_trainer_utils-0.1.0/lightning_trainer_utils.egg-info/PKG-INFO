@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: lightning-trainer-utils
+Version: 0.1.0
+Summary: A Python package for using PyTorch Lightning with custom callbacks and model wrappers.
+Home-page: https://github.com/manavmahan/lightning-trainer-utils
+Author: Manav Mahan Singh
+Author-email: manav@genaec.ai
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# PyTorch Lightning Trainer Utilities
+
+## ML Model Assumptions
+
+### forward
+
+- The batch will be passed as `kwargs` to `forward` function of the ML model.
+```python
+self.model(**batch)
+```
+
+### return
+- ML model should return a dict with the following keys:
+    - `loss`
+    - `loss-dict`
+    - `output` [optional]
