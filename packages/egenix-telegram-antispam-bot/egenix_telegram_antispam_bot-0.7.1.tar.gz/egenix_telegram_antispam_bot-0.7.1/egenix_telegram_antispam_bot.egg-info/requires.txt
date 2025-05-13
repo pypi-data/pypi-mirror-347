@@ -1,0 +1,3 @@
+Pyrogram~=2.0
+TgCrypto~=1.2
+emoji~=2.14
