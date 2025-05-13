@@ -1,0 +1,10 @@
+toller/__init__.py,sha256=4jN6hRZCzxzf4v17BB_GO9wBsfuBFZwoFbe-6MzuQlg,494
+toller/breakers.py,sha256=aV50A-BYLDZsZrQuARU2tIQiF3m9D9aLkVq4_lRQ66E,5084
+toller/decorators.py,sha256=3OLM0S6RDizpWMGLKnwcjjwUcPBmJ1_JqpCAtE0w6Kc,7292
+toller/exceptions.py,sha256=Q7-Yo-PTdBoZ3387acSXF1OEY1Sn9yYcfepOXplJMSs,695
+toller/limiters.py,sha256=9AoPCsjmsHgRbFehz-bnlseyqKnJ1l8MgCXFZgCdx1Q,5143
+toller/retry.py,sha256=mAWrCaGcCM0N-nQAY_nOF_VTezkNbHx7GftyguzBMP8,6273
+toller-0.0.2.dist-info/METADATA,sha256=yoqEd-FnWljfJEPLWO-7J7_WZXDaS_b6bZj_6TLq4F8,11140
+toller-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+toller-0.0.2.dist-info/licenses/LICENSE,sha256=DI22V4rCCivfe9l2dzyf0PvcjkIERWYGKDdfGzjwtkI,1073
+toller-0.0.2.dist-info/RECORD,,
