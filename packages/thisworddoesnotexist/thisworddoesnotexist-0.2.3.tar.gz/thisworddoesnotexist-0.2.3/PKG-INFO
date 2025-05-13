@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: thisworddoesnotexist
+Version: 0.2.3
+Summary: Fetch a fake word from thisworddoesnotexist.com
+Home-page: https://codeberg.org/poofbirb/thisworddoesnotexist
+Author: Poofbirb
+Author-email: poofbirb@protonmail.com.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.31.0
+Requires-Dist: beautifulsoup4>=4.12.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ThisWordDoesNotExist
+
+Fetches a fake word from thisworddoesnotexist.com.
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+```python
+from thisworddoesnotexist import get_fake_word
+
+# Get a random fake word
+word = get_fake_word()
+print(word)  # Prints a randomly generated fake word
+```
+
+## Requirements
+
+- Python 3.6+
+- requests
+- beautifulsoup4
+
+## License
+
+MIT 

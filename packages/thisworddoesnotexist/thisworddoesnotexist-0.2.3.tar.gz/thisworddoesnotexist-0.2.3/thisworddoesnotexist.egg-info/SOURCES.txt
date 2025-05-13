@@ -1,0 +1,9 @@
+README.md
+setup.py
+thisworddoesnotexist/__init__.py
+thisworddoesnotexist.egg-info/PKG-INFO
+thisworddoesnotexist.egg-info/SOURCES.txt
+thisworddoesnotexist.egg-info/dependency_links.txt
+thisworddoesnotexist.egg-info/entry_points.txt
+thisworddoesnotexist.egg-info/requires.txt
+thisworddoesnotexist.egg-info/top_level.txt
