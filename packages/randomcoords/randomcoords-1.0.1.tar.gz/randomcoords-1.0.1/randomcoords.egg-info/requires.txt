@@ -1,0 +1,6 @@
+
+[dev]
+pytest
+python-dotenv
+mypy
+ruff

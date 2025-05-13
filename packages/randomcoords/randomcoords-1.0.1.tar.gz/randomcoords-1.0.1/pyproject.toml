@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "randomcoords"
+version = "1.0.1"
+description = "The Python client for the RandomCoords API to fetch random geographic coordinates worldwide."
+authors = [
+  { name = "Talha Awan", email = "talha@talhaawan.net" }
+]
+readme = "readme.md"
+license = { text = "MIT" }
+dependencies = []
+requires-python = ">=3.8"
+
+keywords = [
+  "api",
+  "random",
+  "geographic",
+  "location",
+  "coordinates",
+  "latitude",
+  "longitude",
+  "world",
+  "regions",
+  "countries"
+]
+
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+Homepage = "https://github.com/talhaawan/randomcoords-python"
+
+[project.optional-dependencies]
+dev = ["pytest", "python-dotenv", "mypy", "ruff"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.setuptools]
+packages = ["randomcoords"]
+
+[tool.setuptools.package-data]
+"randomcoords" = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
