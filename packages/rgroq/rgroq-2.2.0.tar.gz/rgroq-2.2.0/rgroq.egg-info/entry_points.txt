@@ -1,0 +1,2 @@
+[console_scripts]
+rgroq = rgroq.main:main
