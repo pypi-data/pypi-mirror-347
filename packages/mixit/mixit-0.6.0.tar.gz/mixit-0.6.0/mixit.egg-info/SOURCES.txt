@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mixit/__init__.py
+mixit/base.py
+mixit/core.py
+mixit/decorators.py
+mixit/exceptions.py
+mixit.egg-info/PKG-INFO
+mixit.egg-info/SOURCES.txt
+mixit.egg-info/dependency_links.txt
+mixit.egg-info/requires.txt
+mixit.egg-info/top_level.txt
