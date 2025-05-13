@@ -1,0 +1,85 @@
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: zypper-changelog-lib
+DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-f14df27c-e376-4049-84bc-1e5eda63ecd0
+Creator: Person: Anonymous ()
+Creator: Organization: Anonymous ()
+Creator: Tool: reuse-5.0.2
+Created: 2025-05-12T15:53:46Z
+CreatorComment: <text>This document was created automatically using available reuse information consistent with REUSE.</text>
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-02af75179764deb5f2036c15b22fec92
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-e88be5ae18b0d158c5cc08aa064e619e
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-53f5c19a1749e2882d8ab75942d254f0
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-9fa18d7a85d6e8c65752906549d167be
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-33adfa0e04de2ff8cee4bbdca1c1cd65
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-bd47d71deb16b65b31369dda4ead4399
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-f57c99f39a44f63240d8039cc0dc2889
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-d4afed2e5121caa357959718406f64d6
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-770a414572dea43ecc04e1c7b4e6fa4b
+
+FileName: ./.gitignore
+SPDXID: SPDXRef-02af75179764deb5f2036c15b22fec92
+FileChecksum: SHA1: e3d9ca0eec2748591e9e4fa2d815bcf5685412b5
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: GPL-3.0-or-later
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2025 The Rockstor Project <support@rockstor.com></text>
+
+FileName: ./README.md
+SPDXID: SPDXRef-e88be5ae18b0d158c5cc08aa064e619e
+FileChecksum: SHA1: 5095c82a6ff1b792a75ff5854879337f608e3261
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: CC-BY-SA-4.0
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2025 The Rockstor Project <support@rockstor.com></text>
+
+FileName: ./dev-notes.md
+SPDXID: SPDXRef-53f5c19a1749e2882d8ab75942d254f0
+FileChecksum: SHA1: cb2b21349c713f8e60120bb9fb779173415d9bcc
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: CC-BY-SA-4.0
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2025 The Rockstor Project <support@rockstor.com></text>
+
+FileName: ./poetry.lock
+SPDXID: SPDXRef-9fa18d7a85d6e8c65752906549d167be
+FileChecksum: SHA1: a38f2bef3acced581a896fcf9a370434adfdea24
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: CC0-1.0
+FileCopyrightText: <text>2025 The Rockstor Project <support@rockstor.com></text>
+
+FileName: ./poetry.toml
+SPDXID: SPDXRef-33adfa0e04de2ff8cee4bbdca1c1cd65
+FileChecksum: SHA1: 1c649ae527a1a1c281200f1ad37d95b46328827c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: GPL-3.0-or-later
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2025 The Rockstor Project <support@rockstor.com></text>
+
+FileName: ./pyproject.toml
+SPDXID: SPDXRef-bd47d71deb16b65b31369dda4ead4399
+FileChecksum: SHA1: 559990dd6e51b84e0e010326f44a681e1a30098f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: GPL-3.0-or-later
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2025 The Rockstor Project <support@rockstor.com></text>
+
+FileName: ./src/zypper_changelog_lib/__init__.py
+SPDXID: SPDXRef-f57c99f39a44f63240d8039cc0dc2889
+FileChecksum: SHA1: 10344af414e375a2d660d5c61ac8348252c2aff5
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: GPL-3.0-or-later
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2025 The Rockstor Project <support@rockstor.com></text>
+
+FileName: ./src/zypper_changelog_lib/__main__.py
+SPDXID: SPDXRef-d4afed2e5121caa357959718406f64d6
+FileChecksum: SHA1: 24739dcc76e50e23f67377546c97422079df497f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: GPL-3.0-or-later
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2025 The Rockstor Project <support@rockstor.com></text>
+
+FileName: ./src/zypper_changelog_lib/zyppchangelog.py
+SPDXID: SPDXRef-770a414572dea43ecc04e1c7b4e6fa4b
+FileChecksum: SHA1: 39f4cb787ddf502f21a66ebef794ef6681611ed0
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: LGPL-2.1-only
+FileCopyrightText: <text>Copyright © 2018 SUSE LLC
+SPDX-FileCopyrightText: 2018 SUSE LLC
+SPDX-FileCopyrightText: 2025 The Rockstor Project <support@rockstor.com></text>
+
