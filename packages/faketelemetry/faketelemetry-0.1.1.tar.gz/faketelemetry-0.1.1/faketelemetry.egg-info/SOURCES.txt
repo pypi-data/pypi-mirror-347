@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+faketelemetry/__init__.py
+faketelemetry/enums.py
+faketelemetry/multi_channel.py
+faketelemetry/noise_injector.py
+faketelemetry/telemetry_generator.py
+faketelemetry.egg-info/PKG-INFO
+faketelemetry.egg-info/SOURCES.txt
+faketelemetry.egg-info/dependency_links.txt
+faketelemetry.egg-info/top_level.txt
+tests/test_generator.py
+tests/test_noise.py
