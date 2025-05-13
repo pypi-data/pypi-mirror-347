@@ -1,0 +1,2 @@
+[console_scripts]
+oauth2 = oauth2handler.cli:main
