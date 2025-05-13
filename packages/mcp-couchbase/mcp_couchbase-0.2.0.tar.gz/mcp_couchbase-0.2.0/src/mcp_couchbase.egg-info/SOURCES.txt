@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/mcp_server.py
+src/mcp_couchbase.egg-info/PKG-INFO
+src/mcp_couchbase.egg-info/SOURCES.txt
+src/mcp_couchbase.egg-info/dependency_links.txt
+src/mcp_couchbase.egg-info/requires.txt
+src/mcp_couchbase.egg-info/top_level.txt
