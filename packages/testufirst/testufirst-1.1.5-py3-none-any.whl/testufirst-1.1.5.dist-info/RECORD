@@ -1,0 +1,12 @@
+testufirst/__init__.py,sha256=UHu_kX12jclCIv9V3ab2Iw0YIXO6fNimRNzmH6cVRuo,397
+testufirst/main.py,sha256=FJeznCb7VNE6SDWLSbuN7KhH6XnEZRfrGkI4ctBEbzE,616
+testufirst/__system__/imports.py,sha256=y-R8vyqH4uveeZcSqIm_9LPYCbuQFbhy90My8t8Ss94,174
+testufirst/__system__/index.py,sha256=ttbs24MzYRQF5qKJ8c6Gvzyeayb0weSDDIBrPBKYSZs,712
+testufirst/__system__/modules/jobs.py,sha256=0bCFXXkfXKpilr17xmQi0mPEIN-5G2A3vx8cnRNZsYE,560
+testufirst/__system__/sources/clight.json,sha256=tVQKAg22ITnE7hD4IqZBCSnXI88Qos_JKDRN27dJTNw,280
+testufirst/__system__/sources/logo.ico,sha256=uGPVXqDB8-B0i3nniK613X-kcUMPxAqMOFb1-hQ0qPY,13701
+testufirst-1.1.5.dist-info/METADATA,sha256=Nymqzd9Y-VU7JlcFgFXOG3pleOpYCEfoZ57aF0o0w5U,1167
+testufirst-1.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+testufirst-1.1.5.dist-info/entry_points.txt,sha256=FSO1fn42GtProLKNaWZRFeyDOkPOxBYd-fU5dmWlQ8g,52
+testufirst-1.1.5.dist-info/top_level.txt,sha256=O2GLHN5UkuCkPJlI7G3ZkJaHqk1j0wb_a3_b6KYkJTg,11
+testufirst-1.1.5.dist-info/RECORD,,
