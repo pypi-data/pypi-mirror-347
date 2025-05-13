@@ -1,0 +1,15 @@
+README.md
+setup.py
+testusecond/__init__.py
+testusecond/main.py
+testusecond.egg-info/PKG-INFO
+testusecond.egg-info/SOURCES.txt
+testusecond.egg-info/dependency_links.txt
+testusecond.egg-info/entry_points.txt
+testusecond.egg-info/requires.txt
+testusecond.egg-info/top_level.txt
+testusecond/__system__/imports.py
+testusecond/__system__/index.py
+testusecond/__system__/modules/jobs.py
+testusecond/__system__/sources/clight.json
+testusecond/__system__/sources/logo.ico
