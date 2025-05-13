@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/fmconsult/__init__.py
+src/fmconsult/mailerapi/__init__.py
+src/fmconsult/mailerapi/api.py
+src/fmconsult/mailerapi/apis/__init__.py
+src/fmconsult/mailerapi/apis/emails.py
+src/fmconsult/mailerapi/dtos/__init__.py
+src/fmconsult/mailerapi/dtos/email.py
+src/fmconsult_mailer_api_python_sdk.egg-info/PKG-INFO
+src/fmconsult_mailer_api_python_sdk.egg-info/SOURCES.txt
+src/fmconsult_mailer_api_python_sdk.egg-info/dependency_links.txt
+src/fmconsult_mailer_api_python_sdk.egg-info/top_level.txt
