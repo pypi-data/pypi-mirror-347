@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: metapensiero.deform.semantic_ui
+Version: 1.0
+Summary: Replace standard Deform widgets with Semantic-UI equivalents
+Author-Email: Lele Gaifax <lele@metapensiero.it>
+License: GPL-3.0-or-later
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Project-URL: Source, https://gitlab.com/metapensiero/metapensiero.deform.semantic_ui.git
+Project-URL: Changelog, https://gitlab.com/metapensiero/metapensiero.deform.semantic_ui.git/-/blob/master/CHANGES.rst
+Requires-Python: >=3.11
+Requires-Dist: chameleon
+Requires-Dist: colander
+Requires-Dist: deform
+Provides-Extra: dev
+Requires-Dist: readme_renderer; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Description-Content-Type: text/x-rst
+
+.. -*- coding: utf-8 -*-
+.. :Project:   metapensiero.deform.semantic_ui -- Semantic-UI based Deform widgets
+.. :Created:   Fri 16 Feb 2018 17:21:24 CET
+.. :Author:    Lele Gaifax <lele@metapensiero.it>
+.. :License:   GNU General Public License version 3 or later
+.. :Copyright: © 2018 Lele Gaifax
+..
+
+=================================
+ metapensiero.deform.semantic_ui
+=================================
+
+Replace standard Deform widgets with Semantic-UI equivalents
+============================================================
+
+:author: Lele Gaifax
+:contact: lele@metapensiero.it
+:license: GNU General Public License version 3 or later
+
+This package replaces standard Deform_ Bootstrap_ based widgets with `Semantic-UI`_
+equivalents.
+
+.. _deform: https://pypi.python.org/pypi/deform
+.. _bootstrap: http://getbootstrap.com/
+.. _semantic-ui: https://semantic-ui.com
