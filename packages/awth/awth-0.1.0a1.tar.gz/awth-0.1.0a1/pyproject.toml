@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "awth"
+version = "0.1.0a1"
+description = "awth your way into aws, again, with mfa"
+authors = [
+	"jessebot <jessebot@linux.com>",
+        "Max Roby <emax@cloudydev.net>"
+]
+license = "MIT"
+readme = "README.md"
+documentation = "https://github.com/small-hack/awth"
+repository    = "http://github.com/small-hack/awth"
+keywords = ["aws"]
+classifiers   = ["Development Status :: 3 - Alpha",
+                 "Programming Language :: Python :: 3.12",
+                 "Operating System :: MacOS :: MacOS X",
+                 "Operating System :: POSIX :: Linux"]
+packages      = [{include = "awth"}]
+
+[tool.poetry.dependencies]
+boto3         = "^1.38"
+click         = "^8.1"
+keyring       = "^25.6"
+python        = "^3.12"
+rich          = "^13.6"
+secretstorage = "^3.3"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0"
+
+[tool.poetry.plugins."awth.application.plugin"]
+"awth" = "awth:main"
+
+[tool.poetry.scripts]
+awth = 'awth:main'
+
+[tool.poetry.urls]
+"Bug Tracker" = "http://github.com/small-hack/awth/issues"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
