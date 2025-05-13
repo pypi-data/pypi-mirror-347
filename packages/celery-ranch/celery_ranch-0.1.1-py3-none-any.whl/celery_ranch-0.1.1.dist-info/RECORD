@@ -1,0 +1,12 @@
+celery_ranch/__init__.py,sha256=RllpySqhCfJ0_YYSukMkC_M_CWAxmD29ZCtjAID6pRk,847
+celery_ranch/task.py,sha256=m-zO0h6jFN5WYf_JyLnaudkj2l8El-_HCSRzjv0snAM,8660
+celery_ranch/utils/__init__.py,sha256=Fz8rAE0WrgyRWZH88eNL3_jW3Qko8U90TNPLrW0w66E,31
+celery_ranch/utils/backlog.py,sha256=gjWUZF3lTG4obyIqaiQhasbgm8TluXbHNm6b5MRffws,15985
+celery_ranch/utils/lru_tracker.py,sha256=8E41Kyaa0feQpiEM_zQXksBaEIsxepMwkVgVQ7sBhws,13385
+celery_ranch/utils/persistence.py,sha256=x83t0soO5mNq9tAacmb77SvKIkt6Ouj2grXfhOoXhtM,14065
+celery_ranch/utils/prioritize.py,sha256=NrRV0jS2fZPxGiRcB_PZpTijNe_HUUSA4wwfKpo2C6o,12764
+celery_ranch-0.1.1.dist-info/licenses/LICENSE.md,sha256=lA0zmTuuUfQB9CR0FQcJ_h9OW3SBHNiy94ONblT6HU4,1083
+celery_ranch-0.1.1.dist-info/METADATA,sha256=p1qXmRzNb0Z5dwkBS3JwZTXYI6uVJ4sj5IOruPXolAM,11334
+celery_ranch-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+celery_ranch-0.1.1.dist-info/top_level.txt,sha256=pQEk7tSCx5qVNdISSsrp7EmwflKebI_2DNaFrPhrY4Q,13
+celery_ranch-0.1.1.dist-info/RECORD,,
