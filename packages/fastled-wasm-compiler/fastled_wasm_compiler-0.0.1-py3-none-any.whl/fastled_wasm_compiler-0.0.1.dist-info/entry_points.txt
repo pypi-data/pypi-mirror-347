@@ -1,0 +1,2 @@
+[console_scripts]
+fastled_wasm_compiler = fastled_wasm_compiler.cli:main
