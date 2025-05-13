@@ -1,0 +1,7 @@
+README.md
+setup.py
+kalci.egg-info/PKG-INFO
+kalci.egg-info/SOURCES.txt
+kalci.egg-info/dependency_links.txt
+kalci.egg-info/requires.txt
+kalci.egg-info/top_level.txt
