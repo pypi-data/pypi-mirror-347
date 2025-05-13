@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: mse-inf
+Version: 0.2.0
+Summary: Набор классов для автоматической проверки задач на Moodle
+Home-page: UNKNOWN
+Author: mse-24-inf team
+Author-email: justbringit16@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Как добавить новое задание
+1. Создать файл с заданием, например: `paradigm_lab1_var1.py`. В этом файле создать класс `ParadigmLab1Var1`, который наследуется от `BaseTaskClass`.
+2. Какие методы нужно переопределить:
+	- `__init__` -- добавление своих аргументов, добавление инициализации внутренних параметров;
+	- `_generate_tests` -- добавление генерации тестов. Тесты нужно создавать в виде экземпляров класса `TestItem` и добавлять их в список тестов `self.tests`.
+3. Какие методы можно переопределить:
+	- `check_sol_prereq` - если требуется дополнительная проверка текста решения на содержание запрещенных инструкций и т.п.
+	- `run_solution` - если требуется изменить логику проверки удовлетворения программы тест-кейсу
+
+# Как формировать тест-кейс
+Экземпляр тест-кейса состоит из трёх полей:
+1. Значения параметров, которые соответствуют данному тест-кейсу (т.е. словарь: keys  -- названия параметров, values -- конкретные значения);
+2. Ожидаемый результат работы программы (т.е. строка -- результат эталонного решения);
+3. Функция, которая сравнивает результат работы программы пользователя и ожидаемый результат.
+
+# Как интегрировать в Moodle
+## Поле "Параметры шаблона"
+1. С помощью инструкции `import` получить доступ к проверяющему классу:
+```
+from example_package import TaskTest
+```
+2. Инициализировать переменную с id студента:
+```
+import sys
+
+user_id = int(sys.argv[2].split("=")[1]) # получение id
+user_id = (((user_id ** 2) << 10) * 43) >> 5 # преобразования для сокрытия id студента
+```
+3. Инициализировать иные требуемые переменные:
+```
+...
+max_string_lenght = 5
+...
+```
+4. Создать экземпляр проверяющего класса:
+```
+checker = TaskTest(
+	seed = user_id, 
+	max_string_lenght = max_string_lenght,
+	...
+)
+```
+5. Сформировать словарь, в котором keys -- имена параметризованных переменных, а values -- конкретные значения для текущего студента:
+```
+params_dict = {
+	"string_lenght": checker.params["string_lenght"]
+	...
+	"max_errors_count" = checker.calculate_max_errors_count()
+}
+```
+6. Сделать параметры видимыми на уровне всей задачи:
+```
+import json
+
+print(json.dumps(params_dict))
+```
+
+## Поле "Шаблон"
+Пункты 1-4 аналогично "Параметры шаблона".
+
+5. Получить доступ к решению студента:
+```
+student_answer = """{{ STUDENT_ANSWER | e('py') }}"""
+student_answer = student_answer.strip()
+```
+6. Загрузить код студента в проверяющий класс для дальнейшего использования:
+```
+checker.load_student_solution(solcode=student_answer)
+```
+7. Запустить проверку решения студента и обработать результаты проверки:
+```
+ans = checker.check()
+if isinstance(ans, tuple):
+    print(ans[1]) # если код студента запустился без ошибок
+else:
+    print(ans) # если код студента не запустился
+```
+
+
