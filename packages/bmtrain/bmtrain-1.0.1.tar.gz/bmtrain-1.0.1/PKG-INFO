@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bmtrain
+Version: 1.0.1
+Summary: A toolkit for training big models
+Author: Guoyang Zeng
+Author-email: qbjooo@qq.com
+License-File: LICENSE
