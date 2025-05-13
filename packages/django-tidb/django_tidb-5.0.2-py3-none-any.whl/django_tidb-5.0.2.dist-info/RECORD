@@ -1,0 +1,15 @@
+django_tidb/__init__.py,sha256=2wZEBTl2fnpMTz10tzoLR8Mn9z0sNK9TM9Hc00at5po,689
+django_tidb/base.py,sha256=cYeqeAwVObNn-NPD-w5lwRQzyIrwRPt_eBQCJqSooX8,3798
+django_tidb/features.py,sha256=_gEDVeK5Rxk-2zXAo74vLghRL2gTGYV5zGPdiB2KQaA,18537
+django_tidb/introspection.py,sha256=FKgPg6qlijNh-LkAznQMcPj5UcJi3ffhB6Q9etxkc80,9291
+django_tidb/operations.py,sha256=5bgaVCeNADmNfcxmHKOB4O9pXnYiEABOIgr1g7UEFYg,2244
+django_tidb/patch.py,sha256=emuG79GqdLv_sesI0CRuSMjGLJwFUfUaPekyx_xOrHE,1496
+django_tidb/schema.py,sha256=CJiUm29P6YpkH8H11sfJK6V10F2tih5zvXISBLPJXPI,2591
+django_tidb/version.py,sha256=OgsiMxwFakIaw3Am5CHTQgMWgOU3VqzkBSCv1uAIr3M,1113
+django_tidb/fields/__init__.py,sha256=QXgrKggMxFkmdBHOwgsq1jpQm5u0cZcPJbip4XyULec,2641
+django_tidb/fields/vector.py,sha256=3IOgZ_z9l5qI_MsZrr2uhTEgj3BO9bYk_DRfp4qc0gc,7601
+django_tidb-5.0.2.dist-info/licenses/LICENSE,sha256=LaW8yM_wrlujbZkjFF407tM0CkWKJp9mPDWCQw-MNY8,11294
+django_tidb-5.0.2.dist-info/METADATA,sha256=MQi14UThsgfZfcC780E6mMEw71WcZhCdwu9FvPd0Zdo,9495
+django_tidb-5.0.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+django_tidb-5.0.2.dist-info/top_level.txt,sha256=itaPskAceMK62NFu5BbgwfmRoIGcmV21owTuGgz_N4M,12
+django_tidb-5.0.2.dist-info/RECORD,,
