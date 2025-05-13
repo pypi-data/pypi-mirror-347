@@ -1,0 +1,17 @@
+simplejrpc/__init__.py,sha256=2FnOsauotc93Hwa-7v4fdjipGb8XyB_bzsp-xCGypt8,691
+simplejrpc/_mapping.py,sha256=J8yFEfC9d_rXUM1ldGA3jneYZCYfKZGhvVFn9xuKEV8,10972
+simplejrpc/_sockets.py,sha256=6nZlq0JGo0eDmx1WWMPy71kvtj7qhgzuaEK9PJFYIKs,6395
+simplejrpc/app.py,sha256=IFwWgwPBFhy-sBuk1b6ojX5D9QiHI4yWa1eM2MN3CXQ,3809
+simplejrpc/client.py,sha256=BF9GNNLeSXx2Gx8y-PJUE6OswxcK_ik_sEI8SVXHlzQ,3111
+simplejrpc/config.py,sha256=OBBUho8LRkd-zi-7Y68ApzF8iJx1ZcI5kWE0P4XCfL8,884
+simplejrpc/exceptions.py,sha256=FkHn2g83kEO5N61cDbL1gKHnwI_Mrmg5utlM4FS8fYU,978
+simplejrpc/i18n.py,sha256=3hAASu788IHUuocpwC218KXDvUNHUFGYDerOpXk4keM,13065
+simplejrpc/interfaces.py,sha256=UhDCPNlpXBBTYHwXiXcKKqCx6jkfhzya5iVgorG3Wmw,1063
+simplejrpc/parse.py,sha256=jAkWKoKjWyhC89nERDdniXN-UhTJIfeWvFOJUXB5djg,1416
+simplejrpc/response.py,sha256=WUSoVq1kNJhrDaKs3L9oWWo_x1RsdSeylTFB9clcHcM,1159
+simplejrpc/schemas.py,sha256=ygRBUKBBFpTfR_a7QPJ5-DJ-UzppkWFTwgjb_xyZzFc,1659
+simplejrpc-2.0.2.dist-info/licenses/LICENSE.txt,sha256=hkX3aDIg3NAMgCJxq3W7kkLdrplbEpSmJe5kXtniK9I,1060
+simplejrpc-2.0.2.dist-info/METADATA,sha256=sG4QO65N7E6AE4_dShOtRLM3Wmv46VfrOJ5rbcylU1c,11593
+simplejrpc-2.0.2.dist-info/WHEEL,sha256=joeZ_q2kZqPjVkNy_YbjGrynLS6bxmBj74YkvIORXVI,109
+simplejrpc-2.0.2.dist-info/top_level.txt,sha256=RCaaMb0GiGF2NpeyCmuQ8HJO3D9MwYT2rIzaXJc8Wso,11
+simplejrpc-2.0.2.dist-info/RECORD,,
