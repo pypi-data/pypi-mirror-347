@@ -1,0 +1,9 @@
+tests/wigner.py,sha256=F2vVVuipsdj4_5zwoVbBzw1g7aXpzZYm16Vqc5eT1e0,1415
+wigners/__init__.py,sha256=t7nP6fnKLmUzVN50Zobt9C3CzHLXKUuYyEC2rj1TV1I,2071
+wigners/_wigners.so,sha256=xwz6QOdv2kijR-RqlVMkI1QFyXDoqjQRKACoHTfwzR8,349696
+wigners-0.3.1.dist-info/licenses/LICENSE-APACHE,sha256=fP1zjFPWHHnwfjSPYiv3cHyQhCNwVNN_vgd4inX1iBw,11048
+wigners-0.3.1.dist-info/licenses/LICENSE-MIT,sha256=U9Rp8js2KZ5aeOogSqxYiikYcI-_re6Zks4YALXNSPQ,1184
+wigners-0.3.1.dist-info/METADATA,sha256=rqvFfuFYczBvzhnokDgEnRtvv4Qe8_y7Dqpk9atuE-Y,6917
+wigners-0.3.1.dist-info/WHEEL,sha256=nDLMn7pkiQvtFGhz5mtxGAG0DIfcYMrzUVdPAvQkTJE,98
+wigners-0.3.1.dist-info/top_level.txt,sha256=LtpXJ1yh8UGqZKB2bT6ON_Wsu6e2ii0LOHlUvF8kkCc,35
+wigners-0.3.1.dist-info/RECORD,,
