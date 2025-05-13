@@ -1,0 +1,21 @@
+[project]
+name = "gdoc-dumper"
+version = "0.2.2"
+description = "Lightweight python package for downloading Google Docs documents in various formats."
+readme = "README.md"
+authors = [
+    { name = "natrofimov", email = "nikolaytroofimov@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "httpx>=0.28.1",
+    "twine>=6.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+lint = []
