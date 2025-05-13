@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: code_roast_bot
+Version: 1.4.0
+Summary: A sarcastic and secure GPT-powered Python code roaster.
+Home-page: https://github.com/yourusername/code-roast-bot
+Author: Your Name
+Author-email: you@example.com
+License: BSD-3-Clause
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Security
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai==1.16.2
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: tiktoken==0.6.0
+Requires-Dist: tenacity==8.2.3
+Requires-Dist: colorama==0.4.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-BSD--3--Clause-green)
+![Security Audited](https://img.shields.io/badge/security-a%2B-brightgreen)
+
+# Code Roast Bot
+
+Code Roast Bot is a terminal tool that humorously and securely roasts your Python code using GPT-4. It detects security red flags, hardcoded secrets, and code crimes — then flames them with sarcasm and style.
+
+## Features
+
+- 🔐 Static analysis of security risks (eval, exec, secrets, etc.)
+- 🧠 Obfuscation detection (AST + regex)
+- 🤖 GPT-powered roasting with tone and verbosity controls
+- 🎭 Choose a voice: Colbert, Trump, Clarkson, Bill Burr, etc.
+- 🧪 Includes unit tests and redaction logic
+- 📤 Output as Markdown or plain text
+
+## Usage
+
+```bash
+code-roast your_script.py --roast-level 7 --voice billburr --verbosity 3
+```
+
+You can also pipe code in via stdin or scan multiple files.
+
+## License
+
+BSD 3-Clause License
