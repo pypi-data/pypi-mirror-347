@@ -1,0 +1,111 @@
+[![CircleCI](https://circleci.com/gh/linalgo/linapi.svg?style=shield&circle-token=6023c3a8e19c1e36309c2fa254e8658c5350c3a1)](https://circleci.com/gh/linalgo/linapi)
+
+# LinHub API
+
+LinHub is a Django-based API for managing linguistic data and annotations.
+
+## Installation
+
+You can install LinHub as part of the Linalgo package:
+
+```bash
+pip install linalgo[hub]
+```
+
+Or install it directly:
+
+```bash
+pip install .
+```
+
+For development:
+
+```bash
+pip install -e .
+```
+
+## Running the Server
+
+After installation, you can run the server in several ways:
+
+1. Using the installed command:
+```bash
+linhub
+```
+
+2. As a Python module:
+```bash
+python -m linhub
+```
+
+3. Directly from source:
+```bash
+python linhub/management/commands/run.py
+```
+
+## Configuration
+
+You can configure LinHub using environment variables:
+
+```bash
+# Debug mode
+export LINHUB_DEBUG=true
+
+# Database settings
+export LINHUB_DB_ENGINE=django.db.backends.postgresql_psycopg2
+export LINHUB_DB_NAME=linhub
+export LINHUB_DB_USER=postgres
+export LINHUB_DB_PASSWORD=your_password
+export LINHUB_DB_HOST=localhost
+export LINHUB_DB_PORT=5432
+
+# Site settings
+export LINHUB_SITE_NAME="My LinHub"
+export LINHUB_SITE_DOMAIN=my-linhub.example.com
+export LINHUB_SITE_PROTOCOL=https
+
+# Email settings
+export LINHUB_NOTIFICATION_FROM_EMAIL="LinHub <noreply@example.com>"
+export LINHUB_NOTIFICATION_TO_EMAILS="admin1@example.com,admin2@example.com"
+```
+
+## Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/linalgo/linhub.git
+cd linhub
+```
+
+2. Create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install development dependencies:
+```bash
+pip install -e ".[dev]"
+```
+
+4. Run the development server:
+```bash
+linhub
+```
+
+## API Documentation
+
+Once the server is running, you can access:
+- Swagger UI: http://localhost:8000/v1/doc/
+- ReDoc: http://localhost:8000/v1/redoc/
+- OpenAPI Schema: http://localhost:8000/v1/schema/
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Creating a task
+
+TODO: Describe how to add a task
+ 
+

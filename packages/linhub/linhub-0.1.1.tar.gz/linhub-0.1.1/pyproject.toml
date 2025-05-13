@@ -1,0 +1,95 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linhub"
+version = "0.1.1"
+description = "Linguistic Data Hub API"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Linalgo", email = "admin@linalgo.com" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.10",
+    "Framework :: Django",
+]
+dependencies = [
+    "cachetools==4.1.1",
+    "certifi==2024.7.4",
+    "cffi==1.14.3",
+    "chardet==3.0.4",
+    "cryptography==43.0.1",
+    "defusedxml==0.6.0",
+    "Django==5.0.2",
+    "django-autoslug==1.9.8",
+    "django-bulk-update==2.2.0",
+    "django-cors-headers==4.3.1",
+    "django-debug-toolbar==4.3.0",
+    "django-dirtyfields==1.4",
+    "django-environ==0.11.2",
+    "django-extensions==3.2.3",
+    "django-filter==24.1",
+    "django-guardian==2.4.0",
+    "django-health-check==3.18.3",
+    "django-import-export==3.3.6",
+    "django-jet==1.0.8",
+    "django-nose==1.4.7",
+    "django-oauth-toolkit==1.3.2",
+    "django-organizations==2.5.0",
+    "django-rest-framework-social-oauth2==1.1.0",
+    "django-templated-mail==1.1.1",
+    "djangorestframework==3.15.0",
+    "djangorestframework-bulk==0.2.1",
+    "djangorestframework-guardian==0.3.0",
+    "djangorestframework-simplejwt==5.3.1",
+    "djoser==2.0.5",
+    "drf-dynamic-fields==0.3.1",
+    "drf-nested-routers==0.91",
+    "drf-spectacular==0.28.0",
+    "drf-writable-nested==0.6.1",
+    "drf-yasg==1.17.1",
+    "flex==6.14.1",
+    "gunicorn==22.0.0",
+    "idna==3.7",
+    "jsonfield==3.1.0",
+    "nose==1.3.7",
+    "numpy==1.22.0",
+    "oauthlib==3.1.0",
+    "pandas==1.3.5",
+    "Pillow==9.5.0",
+    "psutil==5.7.2",
+    "psycopg2==2.8.6",
+    "Pygments==2.15.1",
+    "PyJWT==2.9.0",
+    "python-dotenv==0.14.0",
+    "python-jose==3.2.0",
+    "python3-openid==3.2.0",
+    "pytz==2020.1",
+    "requests==2.32.0",
+    "requests-oauthlib==1.3.0",
+    "rest-framework-generic-relations==2.0.0",
+    "scikit-learn==1.3.2",
+    "scipy==1.7.3",
+    "six==1.15.0",
+    "social-auth-app-django==5.4.1",
+    "social-auth-core==4.4.1",
+    "swagger-spec-validator>=2.1.0",
+    "urllib3==1.26.11",
+    "validators==0.18.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/linalgo/linhub"
+Documentation = "https://github.com/linalgo/linhub#readme"
+
+[tool.setuptools]
+packages = ["linhub", "linauth"]
+package-dir = {"" = "."}
+
+[project.scripts]
+linhub = "manage:main" 
