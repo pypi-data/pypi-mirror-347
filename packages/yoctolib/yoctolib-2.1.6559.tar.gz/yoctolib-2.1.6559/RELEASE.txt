@@ -1,0 +1,3 @@
+TypedPython v2.1.6559
+
+- Fix Typed Python HTML documentation
