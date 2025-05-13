@@ -1,0 +1,17 @@
+myutils/Remove_pdf_fig_watermark.py,sha256=MFUAGD7-qSoaHu-jM65efio862zEznRlFCGJvMTc5Wc,5781
+myutils/Remove_pdf_watermark.py,sha256=U-rgGvlJA480Av5IHZfhlh42sTv6K3BVSpnLMx1EV4U,6742
+myutils/__init__.py,sha256=cXMojHFWXnwDiJqhxfrjfE4ti4tEnht-i5Uoo5hwFOI,598
+myutils/batch_print_pdf.py,sha256=AbkXcOEFzCAA5Jtuv7RenuP3uBWAxCy-aw_okZs1HQQ,2472
+myutils/batch_renamer.py,sha256=MqrTD8t7HZ2ihPXkAiwhJ-p96FvvZPXeGDOQ02O8D5o,7089
+myutils/combine_images.py,sha256=AhLN7OO2lsGhDA04nHBGMma_SeZypY4OVf6zXyeG1_I,20011
+myutils/combine_images_vertically.py,sha256=_yT9D2gjHzKYzUgf-JT57UU9vi5vPGXFvtYJ9RidSDc,1890
+myutils/date_calculator.py,sha256=GT_G7WBvTtoRZXi3nrRy2MKEIMYrgT0AjBI-P5oyC-8,8877
+myutils/gis_map.py,sha256=IsTY6BnKWq44_oz5OIwlfJYs8-PlXWWZmFvBRZo4o4I,29270
+myutils/launcher.py,sha256=0_BlfK-YAojYUrSkHyAXQ6XddEJpGNRs2iA5VkslmQc,2930
+myutils/tools.json,sha256=eCcIBuPVH3CMelGiA-5dRO9SOw_DVOgF1ScBkl2sDag,402
+myutils/word2excel.py,sha256=w49ai5RlIQuVZnJIZBHOVFbyRFovodg2jZKRSKQ21YI,3317
+myutils_xsy-0.1.0.dist-info/METADATA,sha256=Y_kSCUAUrXrx0_IxzqbQvCWLwip1bcWBnyCX18lJ21E,661
+myutils_xsy-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+myutils_xsy-0.1.0.dist-info/entry_points.txt,sha256=GQyDFfYRVAmmMUhYK6dSuPmk_VzYWN2wZ3l9V7pFCBU,50
+myutils_xsy-0.1.0.dist-info/top_level.txt,sha256=tpfkIXHAJq_DB1s6KTMC2q50M5vTIRcGcfCvdVKRXHA,8
+myutils_xsy-0.1.0.dist-info/RECORD,,

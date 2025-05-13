@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: myutils-xsy
+Version: 0.1.0
+Summary: A small utility package with a date calculator GUI.
+Author-email: Shengyi Xu <xushengyichn@users.noreply.github.com>
+Project-URL: Homepage, https://github.com/yourusername/myutils
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: branca
+Requires-Dist: chinese-calendar
+Requires-Dist: fiona
+Requires-Dist: PyMuPDF
+Requires-Dist: folium
+Requires-Dist: geopandas
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: PyQt5
+Requires-Dist: PyQt5_sip
+Requires-Dist: PySide6
+Requires-Dist: python-docx
+Requires-Dist: tkcalendar
+Requires-Dist: zhdate
