@@ -1,0 +1,10 @@
+pyvirtualcam/__init__.py,sha256=JlW31Kwjx6Uu8qgvtSpHNB5mzEbQMzxvCsAGp97J40A,102
+pyvirtualcam/_native_linux_v4l2loopback.cpython-311-aarch64-linux-gnu.so,sha256=xNXHIptGpTIttisMmD7LhRiWoKEi-8rHUWGNRigJuq0,313784
+pyvirtualcam/_version.py,sha256=DgpLNbv0e1LIEOOe54Db8_390i9pelMEFEnsBsNmyhA,23
+pyvirtualcam/camera.py,sha256=-3lOM2QJGZhn1TdyFERhfIQGpHnNyXHKPrg6cPSLn4w,13382
+pyvirtualcam/util.py,sha256=TSW8LTCdf2MK-d2xA6bJ9vPkGc4on6inNEc7mDa7Yw0,962
+pyvirtualcam-0.13.0.dist-info/METADATA,sha256=7uh2FiyWPTYUUrPBb7jK7mTrk9eWrBRpIwcasHJeqts,5484
+pyvirtualcam-0.13.0.dist-info/WHEEL,sha256=yEDGObFy5TZ6llRmdB9gZ973ztU7lCBr4RpZ2deHRGA,154
+pyvirtualcam-0.13.0.dist-info/top_level.txt,sha256=KQx1d-fCmPSs6x5SfMnxPkS-3KbN8cd5DIyOQjgFAhI,13
+pyvirtualcam-0.13.0.dist-info/RECORD,,
+pyvirtualcam-0.13.0.dist-info/licenses/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
