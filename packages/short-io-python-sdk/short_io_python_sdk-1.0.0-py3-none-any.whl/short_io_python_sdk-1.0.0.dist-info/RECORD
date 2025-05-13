@@ -1,0 +1,12 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+short_io_python_sdk-1.0.0.dist-info/licenses/LICENSE,sha256=YZjQnFjzXGFa0D3iCQkNDwGBNuTGJREkRmItGX1B3YM,122
+shortio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shortio/api.py,sha256=zS8B0863nb3pLmk37qBvjvJ3HYODa6oyKTpWK1mqvIM,297
+shortio/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shortio/apis/links.py,sha256=vG2vkXhtSRIkeLPxAoOz9Om8PYD6OCqV4pyRi1DI7SQ,526
+shortio/dtos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shortio/dtos/link.py,sha256=7kAN4S0QemrirStxu0CucUuOEyITmJ3Vba4a59aS8uI,498
+short_io_python_sdk-1.0.0.dist-info/METADATA,sha256=3mV2XetAEa-01lqvF_GGgdJ78qALE_rUeGw3h3K205g,774
+short_io_python_sdk-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+short_io_python_sdk-1.0.0.dist-info/top_level.txt,sha256=XK8eXKV_jsRGSg0p3V_2Fy84ArmuBJQADW_MoMoNqKM,17
+short_io_python_sdk-1.0.0.dist-info/RECORD,,
