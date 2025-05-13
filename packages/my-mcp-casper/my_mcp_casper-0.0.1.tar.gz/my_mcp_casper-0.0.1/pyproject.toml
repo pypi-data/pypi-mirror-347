@@ -1,0 +1,33 @@
+[project]
+name = "my-mcp-casper"
+version = "0.0.1"
+description = "My MCP Server"
+authors = [
+    {name = "My", email = "support@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "requests>=2.32.3",
+    "setuptools>=45",
+]
+
+keywords = [
+    "elevenlabs",
+    "mcp",
+    "text-to-speech",
+    "speech-to-text",
+    "voice-cloning",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["client*", "allvoicelab_mcp*"]
+
+[project.scripts]
+allvoicelab-mcp = "allvoicelab_mcp.server:main"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
