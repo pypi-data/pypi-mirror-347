@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: streamlit-secure-context
+Version: 0.1.2
+Summary: Streamlit Secure Context Component
+Author: Edward Joseph
+License: MIT
+License-File: LICENSE
+Requires-Dist: streamlit>=0.63
+Dynamic: author
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
