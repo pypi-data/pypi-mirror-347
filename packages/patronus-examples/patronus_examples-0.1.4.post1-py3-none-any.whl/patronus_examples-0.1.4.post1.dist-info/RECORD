@@ -1,0 +1,16 @@
+patronus_examples/otel_tracing_integration.py,sha256=_-_ecOtKwDJeUW6NVduH0kFSS286K_hXuEYUvjWTNT4,1262
+patronus_examples/task_openai.py,sha256=z6aPWolvXHv8C9KBjBFf317Mo8vUNF0Lwftbre5pFmk,2046
+patronus_examples/tracing.py,sha256=SphFN8Pr7RjADOaGtYwbYFDSlCnCMmeu20bOW4TC7Dw,1151
+patronus_examples/experiments/evaluator_class.py,sha256=9KW34mqw1xICyndR3zy_wps2LPFoO5zd9HJlA8txVq8,2147
+patronus_examples/experiments/evaluator_function.py,sha256=5jFIFL9L8sz-mLPR34JD-ypkTJd--4LJC3PondzPmXo,771
+patronus_examples/experiments/evaluator_remote_pii.py,sha256=vNt8ZPGuDlkmkgJVAWiQUASBWvllUmxv1c4r1OZ6HpA,610
+patronus_examples/tracking/anthropic_weather.py,sha256=kK6WsqtXTw0zXrAEUqrFHJtFY3czBsejGzxfTclAB1M,2481
+patronus_examples/tracking/crewai_weather.py,sha256=UVxZxycA--qj1uBixy0ZhZ3fQF1RqVhqi--KkmOuV20,3311
+patronus_examples/tracking/langchain_weather.py,sha256=YiDfQ5nO6o7kVqxCykTsGKGWBsx5rQgJ-O-DpNPrChU,6693
+patronus_examples/tracking/openai_agents_weather.py,sha256=Vs2FWPYBpGGyuWYeeiLVpUxoRt_BMVNsxEmxLDLji-Y,1718
+patronus_examples/tracking/openai_weather.py,sha256=diF7vow2326ZP_-x3L11qkFuYgdlPY2OecdHbwwrqNU,2508
+patronus_examples/tracking/pydanticai_weather.py,sha256=WmKgYSf6V2l_AILT_n3i766h6oChnMSnM5aa_oD8DYI,1986
+patronus_examples/tracking/smolagents_weather.py,sha256=Z21KHQJx-OXYorpkkVcu5Z9BaWudN_yQTriS588pEO0,2550
+patronus_examples-0.1.4.post1.dist-info/METADATA,sha256=LrQ-Stb5FdR2RevzTWGt-NaCyId_T7csdevEXBM0h1I,1826
+patronus_examples-0.1.4.post1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+patronus_examples-0.1.4.post1.dist-info/RECORD,,
