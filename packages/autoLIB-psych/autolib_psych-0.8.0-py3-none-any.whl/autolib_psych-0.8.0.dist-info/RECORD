@@ -1,0 +1,8 @@
+autoLIB/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoLIB/autoLIB.py,sha256=Q-QEtCJz9a7WOmjx9n31czdSIx9tma98Lg7ynpb1cvg,6145
+autoLIB/data/linguistic-category-model-lcm-dictionary.csv,sha256=lP3p4XdH5Y7xT6xEphKc5iVF2aMxX9ZtSKD3nS3Jgqg,98495
+autolib_psych-0.8.0.dist-info/licenses/LICENSE,sha256=inssU8XceBgOz625xz-LDcM6XTdFh-f38tDtghx4-O0,1089
+autolib_psych-0.8.0.dist-info/METADATA,sha256=C14P9fyggq0nAxGaeB6E8WTWo7X2WWrLyCRplLIxCQk,4237
+autolib_psych-0.8.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+autolib_psych-0.8.0.dist-info/top_level.txt,sha256=Lkdp5MyKnVxo2yA8CNpPm-tc8EP0EM55BW1t4lE6I1w,8
+autolib_psych-0.8.0.dist-info/RECORD,,
