@@ -1,0 +1,41 @@
+[build-system]
+build-backend = 'mesonpy'
+requires = ['meson-python', 'numpy']
+
+[project]
+name = 'paulaner_colormaps'
+version = '1.0.0'
+description = 'Paulaner-inspired colormaps'
+readme = { file = 'README.md', content-type = 'text/markdown' }
+keywords = [
+    'paulaner',
+    'science',
+    'spezi',
+    'visualization',
+]
+authors = [
+    { name = 'Sebastian Stammler', email = 'sebastian.stammler@gmail.com' },
+]
+maintainers = [
+    { name = 'Sebastian Stammler', email = 'sebastian.stammler@gmail.com' },
+]
+license = { file = 'LICENSE' }
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: BSD License',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3 :: Only',
+    'Topic :: Education',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Scientific/Engineering :: Mathematics',
+    'Topic :: Scientific/Engineering :: Physics',
+    'Topic :: Scientific/Engineering :: Visualization',
+]
+dependencies = ['matplotlib']
+
+[project.urls]
+Repository = 'https://github.com/stammler/paulaner_colormaps/'
