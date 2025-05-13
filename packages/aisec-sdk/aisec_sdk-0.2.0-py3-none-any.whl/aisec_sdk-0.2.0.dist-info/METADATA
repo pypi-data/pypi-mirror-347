@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aisec-sdk
+Version: 0.2.0
+Summary: AI应用安全SDK，用于检测会话中的prompt注入等恶意攻击行为
+Author: 安全团队
+Author-email: anquan@ly.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Requires-Dist: requests
+
