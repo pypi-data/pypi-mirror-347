@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: pipex_loss
+Version: 0.1.0
+Summary: A PyTorch loss package with log-cosh and PIPEX loss
+Author-email: Your Name <you@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/pipex-loss
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=1.8
+Requires-Dist: pytorch-msssim
