@@ -1,0 +1,11 @@
+daisys_mcp/__init__.py,sha256=fRLz3h2jmbp6PWX_02_V8h6awz1FAynPd8DLXKE7fVI,55
+daisys_mcp/http_tts.py,sha256=cCRQuYCpxccix97ZDN0vmW5NYD0cAbT0x2CZc4q0alE,1753
+daisys_mcp/model.py,sha256=HdZWxthyYKx4N6wGPAfF50n_k9TU8Ct9HFbtmSP6t3Q,787
+daisys_mcp/server.py,sha256=1c-zIqrJ7Wtis3rTkn6FCT63RO0j6wzvQbx17QxvXXY,9572
+daisys_mcp/utils.py,sha256=KrxQ09RGWfQZT1r7WNTozRHk1dodccgNudhd6-16F_A,1407
+daisys_mcp/websocket_tts.py,sha256=4-Savpl5-VS2yGZb1ZR2ePBb0HXa4csr989kN4JMfTM,3125
+daisys_mcp-1.0.2.dist-info/METADATA,sha256=aN_rLE1jnftnkvXgz_-kzxb8dy4zmVHCJbOOAmMhZgQ,4181
+daisys_mcp-1.0.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+daisys_mcp-1.0.2.dist-info/entry_points.txt,sha256=90chMMFm9mwCq_ZbiNTsxsZI5-Fu4NIrR83zHb_rJzk,54
+daisys_mcp-1.0.2.dist-info/top_level.txt,sha256=TCaQn-OoTJIome1BlZpYd8x_l1c7KErDpsVLWfPMZAA,11
+daisys_mcp-1.0.2.dist-info/RECORD,,
