@@ -1,0 +1,15 @@
+README.md
+setup.py
+testufirst/__init__.py
+testufirst/main.py
+testufirst.egg-info/PKG-INFO
+testufirst.egg-info/SOURCES.txt
+testufirst.egg-info/dependency_links.txt
+testufirst.egg-info/entry_points.txt
+testufirst.egg-info/requires.txt
+testufirst.egg-info/top_level.txt
+testufirst/__system__/imports.py
+testufirst/__system__/index.py
+testufirst/__system__/modules/jobs.py
+testufirst/__system__/sources/clight.json
+testufirst/__system__/sources/logo.ico
