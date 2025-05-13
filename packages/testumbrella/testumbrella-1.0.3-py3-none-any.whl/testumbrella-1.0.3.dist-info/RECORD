@@ -1,0 +1,12 @@
+testumbrella/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testumbrella/main.py,sha256=FJeznCb7VNE6SDWLSbuN7KhH6XnEZRfrGkI4ctBEbzE,616
+testumbrella/.system/imports.py,sha256=h9fAdytJFVK4epKbSJY5cs_EzCUYyFnJWhLjno-Simo,374
+testumbrella/.system/index.py,sha256=DiRGSr-9w0coHJLbn_8kTYv2yDEwdpV-HZ-8kiqkJVA,964
+testumbrella/.system/modules/jobs.py,sha256=kATR6WexrH4kKCZjzwgqYXS2McslSwMW21qnq_jimFQ,519
+testumbrella/.system/sources/clight.json,sha256=9DifoAdmXCK68uAtaMzb9JyFODORnZqTRfmwq-LScl4,288
+testumbrella/.system/sources/logo.ico,sha256=uGPVXqDB8-B0i3nniK613X-kcUMPxAqMOFb1-hQ0qPY,13701
+testumbrella-1.0.3.dist-info/METADATA,sha256=VmSZTEitrhs-Re2GPcfQ1btuHERwjk4jKL3w_gyrvEg,1331
+testumbrella-1.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+testumbrella-1.0.3.dist-info/entry_points.txt,sha256=imxnYDYZa0TN9hD3m_wqS19WRQYmtxR7qEGdzSrUar8,56
+testumbrella-1.0.3.dist-info/top_level.txt,sha256=NnN03SyL6Aqw8HxG6M1jkEmM0RupXH6EtOAKwHXtUNI,13
+testumbrella-1.0.3.dist-info/RECORD,,
