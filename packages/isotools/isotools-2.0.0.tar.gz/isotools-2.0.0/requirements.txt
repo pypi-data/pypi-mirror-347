@@ -1,0 +1,16 @@
+numpy
+pandas
+tqdm
+intervaltree
+matplotlib
+seaborn
+biopython
+pysam
+umap-learn
+scikit-learn
+scipy
+statsmodels
+pyhmmer
+requests
+CPAT
+python-ternary
