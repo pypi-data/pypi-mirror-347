@@ -1,0 +1,9 @@
+dep_guardian/__init__.py,sha256=AJwTskb5eur14idvXGfvKwfzAL3jyjl7xsegEWSG2Do,103
+dep_guardian/cli.py,sha256=kP733_AFM-9y1cAunEr26Mp-WIE1mtOEYo-s4tN9atA,31065
+dep_guardian/semver_checker.js,sha256=_kQM6wUmjuUeunfy1Ia3PcJVZeg5qGnrDjOTxneWD-A,1712
+dep_guardian-0.1.1.dist-info/licenses/LICENSE,sha256=u1mDuZDaGDHixsYu31O_uga9q_9qIMNyF9w0W_adZlQ,1074
+dep_guardian-0.1.1.dist-info/METADATA,sha256=IAkxhqh9TJciM2ACdvBwD85EjvyxKsjmMzXrw3XpdME,7395
+dep_guardian-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+dep_guardian-0.1.1.dist-info/entry_points.txt,sha256=2l5UitMliclJ70kJZxGrtPWYoVxI0JyLfAIo0pyGPaE,46
+dep_guardian-0.1.1.dist-info/top_level.txt,sha256=iE2hlD25WMZSFPyR31Hq_SjjQSdmMoSySDWBW3hLTiQ,13
+dep_guardian-0.1.1.dist-info/RECORD,,
