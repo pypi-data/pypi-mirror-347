@@ -1,0 +1,2 @@
+[console_scripts]
+morse_pro = cli:cli
