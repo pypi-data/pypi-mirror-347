@@ -1,0 +1,17 @@
+mcp_manager/__init__.py,sha256=zeaPpKtXN3LS1nAGFhLf6jqBd7LJQkCmdl3lLwE4NM4,80
+mcp_manager/analytics.py,sha256=e82n7uKee3bFi-g_xNMot5EHfEPoRaiLmkwfiIig_pg,11514
+mcp_manager/app_manager.py,sha256=eSW0jeaqvL2iSCLLCnD9TUMG0-guB2i9cSY-cdeDs_4,4236
+mcp_manager/cli.py,sha256=6x1iznqjZl_OT-g_gM94WOzM75_96DDsXPLZylbMSr8,3760
+mcp_manager/client_integration.py,sha256=pdVnGR5kbJICEGTMwp35m_GE_O7PVy4UIlt6QT0b7x4,7523
+mcp_manager/config_manager.py,sha256=RJkXYKRfM2OGnpNjoC9127LGF09kS-ENcgyY7JoM2Gw,9998
+mcp_manager/configuration_handler.py,sha256=rdifi551POnSbfD4y5pZp8lIj-N3lFnA8e6tnQktcsQ,4956
+mcp_manager/env_manager.py,sha256=IOO1Dv5t3XYZG2S1BhVQuIG8K2oH0uY7zZ7HJjqak0w,4479
+mcp_manager/package.py,sha256=FZY-Sx92A8V0MkmROox-O82Pf9zNOOza-fUp6iZ2-U8,6599
+mcp_manager/runtime_utils.py,sha256=fK0Ua27t6JLy6D6rROCxd20V4EhbXt3J7mmkYkA24sw,3698
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_package.py,sha256=VzauNHIY9uE2KwGv_Z3E5BsMjnlERDUlq3dr3cZUNGM,1781
+omcp_manager-0.1.0.dist-info/METADATA,sha256=JKQ0SpdZuPxlWg7oKMaM7aCwuArP8g7PG_A278wnjw8,2612
+omcp_manager-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+omcp_manager-0.1.0.dist-info/entry_points.txt,sha256=Fp5VNP4eGdWuw9iaB2caK1QcHWpeTU0DSQ6A44dWHYM,45
+omcp_manager-0.1.0.dist-info/top_level.txt,sha256=wgwVVVz-SKtHBTJ9FtU2genP6x19Ed4Z7gT2S8ykWHA,18
+omcp_manager-0.1.0.dist-info/RECORD,,
