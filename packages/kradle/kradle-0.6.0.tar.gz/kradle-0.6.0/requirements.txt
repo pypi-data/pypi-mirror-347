@@ -1,0 +1,17 @@
+anthropic
+flask
+flask-cors
+glom
+mypy
+openai
+psutil
+python-dotenv
+redis
+requests
+rich
+ruff
+setuptools
+types-flask
+types-flask-cors
+types-requests
+typing-extensions
