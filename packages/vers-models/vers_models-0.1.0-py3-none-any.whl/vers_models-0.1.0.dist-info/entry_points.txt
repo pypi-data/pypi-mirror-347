@@ -1,0 +1,2 @@
+[console_scripts]
+vers = vers_models.cli:cli
