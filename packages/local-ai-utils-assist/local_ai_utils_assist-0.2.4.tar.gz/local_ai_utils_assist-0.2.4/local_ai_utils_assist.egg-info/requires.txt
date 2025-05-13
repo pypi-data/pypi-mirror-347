@@ -1,0 +1,6 @@
+typing_extensions
+openai
+fire
+pyyaml
+mcp-agent
+local-ai-utils-core
