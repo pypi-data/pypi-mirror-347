@@ -1,0 +1,7 @@
+setuptools
+oasys1>=1.2.131
+syned-gui>=1.0.2
+scikit-image
+oasys-srwpy>=1.0.5
+shadow-hybrid-methods>=1.0.7
+OASYS1-ShadowOui>=1.5.201
