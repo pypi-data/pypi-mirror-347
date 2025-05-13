@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+testindex_knowledge_contract/__init__.py
+testindex_knowledge_contract/bench_constants.py
+testindex_knowledge_contract/neo4j_client.py
+testindex_knowledge_contract/schema.py
+testindex_knowledge_contract.egg-info/PKG-INFO
+testindex_knowledge_contract.egg-info/SOURCES.txt
+testindex_knowledge_contract.egg-info/dependency_links.txt
+testindex_knowledge_contract.egg-info/requires.txt
+testindex_knowledge_contract.egg-info/top_level.txt
+testindex_knowledge_contract/test_data/gold_schema.json
