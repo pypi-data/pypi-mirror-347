@@ -1,0 +1,2 @@
+[console_scripts]
+autoa2a = autoa2a.cli:autoa2a
