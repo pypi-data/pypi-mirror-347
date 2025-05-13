@@ -1,0 +1,14 @@
+embedding/__init__.py,sha256=nVFXiZlwIk2A-67Nmj_OTSK_e-MIyJtZ62heNi3kAS0,28
+embedding/cli.py,sha256=FlvCJezxT8l4_9JrbAtmtnDa00Chh3RqSd_6DXmjTg4,4796
+embedding/constants.py,sha256=oJIHbb9uKijX5E2N5AoyP-lZ94EVS9MruCwhRZ0Vl2I,96
+embedding/main.py,sha256=7r52t_bttWhuzKxbigt6IBdEge_woEU5xlolG82vIG8,12797
+embedding/migration_runner.py,sha256=O_KhMfKUPFtNBKij-xtxoczLIs_PObg65n0RkRKwQ4s,5590
+embedding/plugin.py,sha256=6Wi4hC5KkEaMlhQ3YOTAJ8xMOxGCtcRLKq6wq96FCNk,4289
+embedding/schema.py,sha256=n5eg6gqfKGT1Ef4fwKfDEfTijdtUzJeUseNOj796olk,547
+embedding/tools.py,sha256=vXfQi_rwdfyYWMJyAee9VmEHv3YyMf8XOB4pERoOYeA,2128
+local_ai_utils_embedding-0.0.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+local_ai_utils_embedding-0.0.1.dist-info/METADATA,sha256=p0UA1y2LNsSPLThMaOKuMBiqGhUeCPokBq1xjzy03Gc,330
+local_ai_utils_embedding-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+local_ai_utils_embedding-0.0.1.dist-info/entry_points.txt,sha256=K6Q6tJ9RuoHmSETj2uIb4OD4PcdYzvCBsSTZw1YXE0E,49
+local_ai_utils_embedding-0.0.1.dist-info/top_level.txt,sha256=Q10g3IOEbFEK6dLPABwB1FFw7u5FdURLTUc56j5WEP0,10
+local_ai_utils_embedding-0.0.1.dist-info/RECORD,,

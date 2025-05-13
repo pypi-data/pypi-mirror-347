@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: local-ai-utils-embedding
+Version: 0.0.1
+License-File: LICENSE
+Requires-Dist: lancedb
+Requires-Dist: local-ai-utils-core
+Requires-Dist: fire
+Requires-Dist: numpy
+Requires-Dist: platformdirs
+Requires-Dist: pyarrow
+Requires-Dist: pylance
+Requires-Dist: pandas
+Dynamic: license-file
+Dynamic: requires-dist
