@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "contactsoftware-functions-client"
+version = "0.5.4"
+readme = "README.md"
+license = "MIT"
+authors = [
+    "Jens Kürten <jku@contact.de>",
+    "Julian Alberts <jal@contact.de>"
+]
+description = "Client for uploading and managing Functions in CIM Database Cloud."
+
+packages = [
+    { include = "cfc"}
+   ]
+
+
+[tool.poetry.dependencies]
+python = ">=3.10, <4"
+typer = ">=0.15.3"
+PyYAML = ">=6.0"
+click = ">=8.0.4, <8.2.0"
+requests = ">=2.20.0, <3.0.0"
+urllib3 = ">=1.26.16"
+rich = ">=12.0.1"
+appdirs = ">=1.4.4"
+
+
+[tool.poetry.scripts]
+cfc = 'cfc:main'
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+requests-mock = "^1.11.0"
