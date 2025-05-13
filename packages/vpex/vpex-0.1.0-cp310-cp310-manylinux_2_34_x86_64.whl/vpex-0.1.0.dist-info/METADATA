@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: vpex
+Version: 0.1.0
+Summary: PyTorch backend for VeriSilicon GPGPU/NPU device
+Author: VeriSilicon
+License: MIT
+Project-URL: Repository, https://github.com/VeriSilicon/VPEX
+Keywords: pytorch,deep-learning
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch ~=2.7.0
+
+# VPEX
+
+## Setup
+
+Build wheel
+
+```sh
+VTAL_DIR=/path/to/vtal/install/dir pip3 wheel --no-deps --no-build-isolation .
+```
+
+Develop
+
+```sh
+DEBUG=1 VTAL_DIR=/path/to/vtal/install/dir pip3 install --no-build-isolation --editable .
+```
