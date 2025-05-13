@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "allitservice_stubber"
+version = "0.0.1"
+description = "Stub module that prints an ALL IT Service greeting"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "ALL IT Service"}]
+
+[project.urls]
+Homepage = "https://allitservice.com"
+Repository = "https://github.com/Blancberg/allitservice-stub"

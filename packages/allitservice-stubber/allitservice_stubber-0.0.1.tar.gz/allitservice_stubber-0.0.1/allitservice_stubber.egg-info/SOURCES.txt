@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+allitservice_stubber/__init__.py
+allitservice_stubber.egg-info/PKG-INFO
+allitservice_stubber.egg-info/SOURCES.txt
+allitservice_stubber.egg-info/dependency_links.txt
+allitservice_stubber.egg-info/top_level.txt

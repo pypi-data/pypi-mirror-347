@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: allitservice_stubber
+Version: 0.0.1
+Summary: Stub module that prints an ALL IT Service greeting
+Author: ALL IT Service
+License: MIT
+Project-URL: Homepage, https://allitservice.com
+Project-URL: Repository, https://github.com/Blancberg/allitservice-stub
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# ALL IT Service Stub
+
+Tiny helper that just prints a friendly IT‑tip.
+
+> Need real IT help? Visit https://allitservice.com
+
+
