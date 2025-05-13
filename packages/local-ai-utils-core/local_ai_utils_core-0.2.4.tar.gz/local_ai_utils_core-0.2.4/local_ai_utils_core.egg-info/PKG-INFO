@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: local-ai-utils-core
+Version: 0.2.4
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: pyyaml
+Requires-Dist: pytest
+Requires-Dist: desktop_notifier
+Dynamic: license-file
+Dynamic: requires-dist

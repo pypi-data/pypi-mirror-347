@@ -1,0 +1,4 @@
+openai
+pyyaml
+pytest
+desktop_notifier
