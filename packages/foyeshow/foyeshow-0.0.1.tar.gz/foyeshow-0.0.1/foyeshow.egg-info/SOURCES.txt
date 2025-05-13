@@ -1,0 +1,7 @@
+foyeshow.py
+setup.py
+foyeshow.egg-info/PKG-INFO
+foyeshow.egg-info/SOURCES.txt
+foyeshow.egg-info/dependency_links.txt
+foyeshow.egg-info/requires.txt
+foyeshow.egg-info/top_level.txt
