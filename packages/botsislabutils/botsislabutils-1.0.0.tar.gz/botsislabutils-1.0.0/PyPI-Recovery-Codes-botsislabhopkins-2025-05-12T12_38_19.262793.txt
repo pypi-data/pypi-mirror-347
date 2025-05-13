@@ -1,0 +1,9 @@
+// 2FA recovery codes
+76b3f6e154d399b0 - used to finish the 2FA setup
+0ad7882393f154ee
+78f2d7d386d58209
+24afeece40f5fd2b
+893f4a2d64c222f9
+e9cca31fcbae8af9
+7210dd8b8973d177
+fe6464a60bc6efdd
