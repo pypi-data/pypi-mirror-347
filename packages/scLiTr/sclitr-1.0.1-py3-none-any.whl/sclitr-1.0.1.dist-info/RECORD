@@ -1,0 +1,10 @@
+sclitr/__init__.py,sha256=b28IWSI3VI66zYPXKBEwQmS3UayFF--Ro2rVDAXRxCs,117
+sclitr/datasets.py,sha256=ahtGHUJ0kL6L83QhHTv2CPoMjLljtp_ch9lEwoKtXM4,3101
+sclitr/pl.py,sha256=EMJu83WNtCHh8t3k1dHkT5ZwF3MfR3VtcoFPbDdGjUg,20544
+sclitr/pp.py,sha256=nsY1zJoJQn9TB9rxnS_vEaFrfn2afwfQPh_De62qpY8,6272
+sclitr/tl.py,sha256=vovRwG0oSyTWT3GZQesDHaS0oXSyNrLv7W974J8-9x4,28980
+sclitr/utils.py,sha256=c3Kp-sbQfuN_CZeq86sX39shkD_yq9-8ykiHS_Gm6Fk,11697
+sclitr-1.0.1.dist-info/METADATA,sha256=4S-UqwfFg7qVYlGrj-8Rc9d0nrmgzKC57uNCrFVbUeI,3320
+sclitr-1.0.1.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+sclitr-1.0.1.dist-info/top_level.txt,sha256=SSfi6-5AOmb4P6CHhMDnQp7kA-yFAgSqgLiNgn1mdgU,7
+sclitr-1.0.1.dist-info/RECORD,,
