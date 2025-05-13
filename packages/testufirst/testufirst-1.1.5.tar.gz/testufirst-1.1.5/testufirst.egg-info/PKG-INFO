@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: testufirst
+Version: 1.1.5
+Summary: Test Project 1
+Home-page: 
+Author: Irakli Gzirishvili
+Author-email: gziraklirex@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: clight
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
+
+# TestUfirst v1.1.5
+
+**Project**: TestUfirst
+<br>**Version**: 1.1.5
+<br>**OS**: OS Independent
+<br>**Author**: Irakli Gzirishvili
+<br>**Mail**: gziraklirex@gmail.com
+
+**TestUfirst** is a Python command-line interface application. Test Project 1
+
+## Installation
+
+To use **TestUfirst**, follow these steps:
+
+- Open CMD and run the following command to install `pip install testufirst` then restart your CMD
+- To check if **TestUfirst** is installed correctly, run the following command `testufirst`
+
+## Commands
+
+These are the available commands you can use:
+
+- `testufirst` - To list available commands
+- `testufirst demo (param)` - Test demo method with param
