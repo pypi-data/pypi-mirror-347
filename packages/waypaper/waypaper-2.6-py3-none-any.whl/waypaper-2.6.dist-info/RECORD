@@ -1,0 +1,17 @@
+waypaper/__main__.py,sha256=Nm2qkfIw_-5Bw_5zp9uD_hWVsl1DTGkv--X_aDiwD9A,5104
+waypaper/app.py,sha256=6l14OlGvD2JB1DzCAk4cLPb3tW-RoQpQFa2MICCHSmc,37761
+waypaper/changer.py,sha256=8DE_YHcGfTwj4sHlPgPJaBgJQ2PclTNThiZpIcXKHGo,9178
+waypaper/common.py,sha256=JGZTps_ynSN939gRPStJzJvphGXqMN3mI2l4Qpvq4YU,7012
+waypaper/config.py,sha256=6FLzYx4TAfTeBCvNWLaICc4-0TH2OlUsXl1yxKR4vYE,13447
+waypaper/options.py,sha256=b9wjTcme6K0FXRMHKztLHMCQI7C2Y_c_-oBo7ObDp6Y,2062
+waypaper/translations.py,sha256=A0p84cyLjEKVT5_MTRc6f3nNMucWfWtta7sDiTqAWGQ,40041
+waypaper/waypaperd.py,sha256=DrUHVqgt_pKa7X7WoKU4TAkZLbRmyK0-ZUXiWCnJE4s,775
+waypaper-2.6.data/data/share/applications/waypaper.desktop,sha256=GTd_Z6Mtz7uw7QOE8J4DlcEniAAxH_f4NbKKa_dNK94,251
+waypaper-2.6.data/data/share/icons/hicolor/scalable/apps/waypaper.svg,sha256=26TfBzgE8rnAgzl6YZVRMZvy4jPwf-ZNu9ixTNFLpfc,4453
+waypaper-2.6.data/data/share/man/man1/waypaper.1.gz,sha256=f_4o-e1WMJmaU93JmeDOVrM6QmgOdvSomE9J07rGQi8,822
+waypaper-2.6.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+waypaper-2.6.dist-info/METADATA,sha256=try9hI_KacYdWL_gpLIBEgkNDq-leZm4pgueuUZbwhY,5731
+waypaper-2.6.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+waypaper-2.6.dist-info/entry_points.txt,sha256=3md8ouZzZYrnNprwYwSbTrDg-50Ez5O9aREUQC0OhrA,47
+waypaper-2.6.dist-info/top_level.txt,sha256=TbFBwf6qNuG_ARQgWTUBlvy6QAYc6E1ZayOXhSf2O90,9
+waypaper-2.6.dist-info/RECORD,,
