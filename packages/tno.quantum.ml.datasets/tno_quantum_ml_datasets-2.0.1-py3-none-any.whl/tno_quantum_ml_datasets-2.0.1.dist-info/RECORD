@@ -1,0 +1,11 @@
+tno/quantum/ml/datasets/__init__.py,sha256=dQ4tykK5ITeh2diVrEZkQPyLbn7Q5mh26M6Fluw1F78,880
+tno/quantum/ml/datasets/_datasets.py,sha256=veGlfXJ1a3TuidipKmpXBZkpF7K2Vhol1JArR4ppwt4,19022
+tno/quantum/ml/datasets/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tno/quantum/ml/datasets/test/test_datasets.py,sha256=YHFudgowgouMg0-_lDz8-0J0CTQEG_hLzIA_IGqzlhA,6606
+tno/quantum/ml/datasets/test/__pycache__/test_datasets.cpython-311-pytest-8.3.5.pyc,sha256=AneH88s-2ZTKWPGU52RlayqLNgNqATryFgpuSgkkFa0,34760
+tno/quantum/ml/datasets/test/__pycache__/test_datasets.cpython-311.pyc,sha256=_AF_241axLtZtXE93yFJXvPMh0F--XbB4MZAQpdUFto,9150
+tno_quantum_ml_datasets-2.0.1.dist-info/licenses/LICENSE,sha256=BnFwUNnp9R3bd2d50nV0HaKfqINMUBVxdrDlMQiXZ4c,11597
+tno_quantum_ml_datasets-2.0.1.dist-info/METADATA,sha256=31FEA2QhBdNyy-BwVwwlTQv55B2J43x5usjJEArD_Nk,2740
+tno_quantum_ml_datasets-2.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+tno_quantum_ml_datasets-2.0.1.dist-info/top_level.txt,sha256=7cHKx5j6ibiq14EYKPAhHk_NqB8u-nPUjh5R4TDqpHo,4
+tno_quantum_ml_datasets-2.0.1.dist-info/RECORD,,
