@@ -1,0 +1,15 @@
+tno/quantum/ml/classifiers/vc/__init__.py,sha256=ffBTF6jCs38lnbNwd692XOzZOBNtKSSXS6Om0kGxlz8,2992
+tno/quantum/ml/classifiers/vc/_variational_classifier.py,sha256=EOZh4m8SkjcqO-4f9xQksswqjDGuyB0sYZZ8M1NTUsg,14480
+tno/quantum/ml/classifiers/vc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tno/quantum/ml/classifiers/vc/models/__init__.py,sha256=rIhvVEC-bVfuyKBLBvIIGz16WziKABslkbTQhjioiv0,1734
+tno/quantum/ml/classifiers/vc/models/_base.py,sha256=RKvJeFsRpntqN3TPDFN_PlMtNHXarrS-8V4j7cFovtQ,1952
+tno/quantum/ml/classifiers/vc/models/expected_value_model.py,sha256=G_HoKNFQA7xLbCewa0gr0pnzoUhxkwVvsMbcfELgnNk,5930
+tno/quantum/ml/classifiers/vc/models/probability_model.py,sha256=_f8qyCrSmP93vLi44b8BDvyQB9GiYHDTPPJ8heycs60,11029
+tno/quantum/ml/classifiers/vc/test/__init__.py,sha256=x0W6PnhuG5xXOoJ-5LZvw-yNUYhR280_mA9bw0-CNoA,71
+tno/quantum/ml/classifiers/vc/test/test_parity_model.py,sha256=64APY7trtO0N8jtfXpu0K1PohUu3tdQFmkh16yjK5oY,2125
+tno/quantum/ml/classifiers/vc/test/test_variational_classifier.py,sha256=hKO38SHjOSn6rYZXpQlboO7AfwuN2xcCeraq9WYwWfY,8305
+tno_quantum_ml_classifiers_vc-3.0.1.dist-info/licenses/LICENSE,sha256=Zk9pgNR8856JkW2Hi74yCuJzdoX4wBsr0jUlucNcKto,11597
+tno_quantum_ml_classifiers_vc-3.0.1.dist-info/METADATA,sha256=tgaxLQp91hqvgtBA4oWtggsP4VJeS9rjZe-GK9luP1I,3760
+tno_quantum_ml_classifiers_vc-3.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+tno_quantum_ml_classifiers_vc-3.0.1.dist-info/top_level.txt,sha256=7cHKx5j6ibiq14EYKPAhHk_NqB8u-nPUjh5R4TDqpHo,4
+tno_quantum_ml_classifiers_vc-3.0.1.dist-info/RECORD,,
