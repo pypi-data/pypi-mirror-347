@@ -1,0 +1,2 @@
+[console_scripts]
+mlx-server = app.cli:cli
