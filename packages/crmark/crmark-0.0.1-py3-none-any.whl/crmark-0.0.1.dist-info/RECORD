@@ -1,0 +1,14 @@
+crmark/__init__.py,sha256=cBYITVN7WFkM_nm_6o-BfferE0o4lv8-zVMSXB89eq8,74
+crmark/crmark.py,sha256=xJkqRvJCJBafNYoNm8I82l3B4CBFmQPeA5Cf9YVLDKw,25595
+crmark/compressor/__init__.py,sha256=tRPZyqTuovThXtBjROWxPcHua0rdpMczzEbU2-QC8S4,126
+crmark/compressor/arithmeticcoder.py,sha256=yn_FUfP8kNG62xgk8wWJUu_gCTvmFjGkfMkSEy0F2-E,38584
+crmark/compressor/rdh.py,sha256=5CJB7_ByyPI2uy2BnVdncEZGTapUmBzOEs8lOtv0U3I,50195
+crmark/compressor/utils.py,sha256=u_Yx9RviC5BOF3ihyqEUAVo3LBBqW40mdrRINpK7bO8,12076
+crmark/compressor/utils_compressors.py,sha256=tSfNarMApZO9a-rOXzFVO22OwiPqRb2uaJGtmUxMnfE,26056
+crmark/nets/__init__.py,sha256=ORJQhxPjyvJHkmv8u_9NWrkjM1OP01cnXthZZOPdpSY,25
+crmark/nets/nets.py,sha256=57OFTY0kpfYRxu5IDmTzI6DM6h037g8Lpd6tXo_zRsU,15615
+crmark-0.0.1.dist-info/licenses/LICENSE,sha256=ldKM258z3jLj2HWQlMxBEoOho_8XAY9J00Z0mqODdc8,1112
+crmark-0.0.1.dist-info/METADATA,sha256=MO18_bnkcVU1ampP487DW9bHh64Qd7h1LDrr3UDLAg8,5602
+crmark-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+crmark-0.0.1.dist-info/top_level.txt,sha256=Xr-p1Uu5kFeaA-nnKo-14MrBADT43NFp6qdu7t1DVzY,7
+crmark-0.0.1.dist-info/RECORD,,
