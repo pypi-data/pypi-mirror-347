@@ -1,0 +1,7 @@
+python-sdk-remote
+logger-local
+database-infrastructure-local>=0.1.4
+database-mysql-local>=0.1.2
+database-postgresql-local>=0.1.1
+database-redis-local>=0.1.3
+opensearch-local>=0.0.8
