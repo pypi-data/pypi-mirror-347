@@ -1,0 +1,15 @@
+pytempura-0.2.0.dist-info/RECORD,,
+pytempura-0.2.0.dist-info/LICENSE,sha256=VEDkJZhTZohs_wIgW0g3SWts_T-7M-lZ3ZtjNCI7gYM,1546
+pytempura-0.2.0.dist-info/WHEEL,sha256=WhlQtcU_d_WnkEPbPtvtLRABKzc5a4qvY0znl1V9XlE,94
+pytempura-0.2.0.dist-info/METADATA,sha256=17olZHoNq6s-M5aKJo8vInxk5DPAXrfjv0UbM5ldJiI,5516
+pytempura/norm_lens.py,sha256=Qzxs_qLcvkFEWid49nIWXrkHaEkaXQSzi5muas1TQMg,15121
+pytempura/norm.py,sha256=TQl71oMLtVe7ctpIdXm03DKGSfLznIsxoo1oChS-TII,9302
+pytempura/__init__.py,sha256=SipuV2i3h2Usp0B0VLIXrv90IdADJ-4PyyjFs8x76Y8,406
+pytempura/_libtempura.cpython-310-darwin.so,sha256=uEbvK-LJzfoS2VgQVt8K0TaR2BBIYrtm15vhN3yRLOU,400720
+pytempura/norm_src.py,sha256=oX5kOdlQwjDqfJVtAJ5uI3KqCi6vCD0iFelWmOWcEYw,659
+pytempura/norm_general.py,sha256=kuQVdqzZLeqAgf3mHYFiQd9mev_FJyh6eeIuAJcOkb0,16859
+pytempura/noise_spec.py,sha256=ou9s6F4EU0PG-HNiHdS5nMl6-JRsn90baLksPjhmOp0,1912
+pytempura/.dylibs/libgfortran.5.dylib,sha256=WDLp-kBRSbVqWVxv61fO6_ZpvHR1bIpC8Y7ket-Ix0E,3435136
+pytempura/.dylibs/libquadmath.0.dylib,sha256=b5Rc_hRT-SX_ZZxPXgu3vJqFC3JMeytYOoOtrvLZzWI,369040
+pytempura/.dylibs/libgcc_s.1.1.dylib,sha256=8r_-C9obFF95xN_4DThJz3duMm9Q33K8lwANefjAI0g,199392
+pytempura/.dylibs/libgomp.1.dylib,sha256=FwSCQ4n1mBWfmFd2P61Y7hLAHYav-2lxPDPwszhY7P8,437504
