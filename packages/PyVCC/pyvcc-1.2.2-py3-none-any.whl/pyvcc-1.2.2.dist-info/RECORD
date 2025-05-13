@@ -1,0 +1,9 @@
+pyvcc-1.2.2.dist-info/METADATA,sha256=oBYm3HMFkV_bmtpwyccah0M-M-4MRwE5JdMPFvNZCx0,757
+pyvcc-1.2.2.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+pyvcc-1.2.2.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+pyvcc-1.2.2.dist-info/licenses/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+pyvcc/__init__.py,sha256=RmBuVRJe0JPS5H6lt3ijpeDPJ8PA7FP757xlIEd5Gy4,156
+pyvcc/__main__.py,sha256=QuN-SbZooLYU_z65E5GlLVRQRcQ6NZosX-FqTpH-vJ0,888
+pyvcc/cli.py,sha256=hvrNbRW2dF1tTuanTw81fCWz_LtZXxn_Jv6y3uokMEY,1567
+pyvcc/semver.py,sha256=4SVd4kcaP9-57f_QrJwLYEZq5mY0HWz0SykghbusHao,4196
+pyvcc-1.2.2.dist-info/RECORD,,
