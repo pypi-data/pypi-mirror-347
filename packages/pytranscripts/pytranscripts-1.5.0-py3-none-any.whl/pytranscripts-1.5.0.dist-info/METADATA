@@ -1,0 +1,201 @@
+Metadata-Version: 2.1
+Name: pytranscripts
+Version: 1.5.0
+Summary: A python package for extracting electronic health transcripts ,  and then classifying them based on human annotated data.
+Author: DataBackedAfrica
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: transformers[torch]==4.47.1
+Requires-Dist: datasets==3.2.0
+Requires-Dist: evaluate==0.4.3
+Requires-Dist: accelerate==1.2.1
+Requires-Dist: einops==0.8.0
+Requires-Dist: python-docx==1.1.2
+
+# pytranscripts
+An Open source👨‍🔧 Python Library for Automated classification of Electronic Medical records 
+
+## Installation
+To install the latest version , simply use
+
+```sh
+pip install -U pytranscripts
+```
+
+
+### Stages
+1. Data Extraction
+2. Target Identification
+3. Finetuning Annotated Data on Pretrained models (Bert & Electra)
+4. Extracting Interviwer/Interviewee records from the specified docx file storage
+5. Metrics Evaluation (Accuracy & Cohen Kappa Score)
+6. Reordering records as a neatly arranged and flagged spreadsheet, alongside metrics and reports from pretrained models.
+7. Running inference on raw documents and Color Coding them
+
+## Example Usage
+
+#### Mount Google Drive (Optional)
+If using Google Drive as the data source:
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+
+## Automated Data Export
+
+To export and combine all .docx files from a folder into a single file:
+
+
+```python
+
+from pytranscripts import export_docx_from_folder
+
+# Define paths for document processing
+INPUT_FOLDER = "/content/drive/MyDrive/Kalu+Deola/PYTRANSCRIPTS PUBLIC DEMO/synthetic_transcripts"  # Folder containing source DOCX files
+
+OUTPUT_FILE = "FULL_INTERVIEW.csv"  # Output consolidated spreadsheet (either .csv or .excel)
+
+LABELS = [
+    "Clinical_Experience",        # Descriptions of personal experience using lung ultrasound
+    "Diagnostic_Utility",         # How lung ultrasound helps in diagnosing diseases
+    "Comparative_Analysis",       # Comparisons with other imaging modalities like X-ray or CT
+    "Implementation_Challenges",  # Barriers to adoption and practical difficulties
+    "Training_and_Education",     # Aspects related to learning and teaching lung ultrasound
+    "System_Infrastructure",      # How hospital systems, devices, and software support ultrasound use
+    "Administrative_Buying",       # Role of hospital leadership and institutional support
+    "Workflow_Impact",            # How lung ultrasound affects daily hospital operations
+    "Patient_Engagement",         # Ways ultrasound enhances patient understanding and involvement
+    "Future_Adoption",            # Predictions about the role of lung ultrasound in hospital practice
+]  # Labels to be used for the columns in the output spreadsheet to be filled up with empty 0s
+
+
+
+#-------------------------------------        PLEASE NOTE         --------------------------------------
+
+# AS YOU SELECT YOUR PREDEFINED LIST OF   LABELS ABOVE THEY SHOULD BE  SAME ONE YOU WOULD PASS INTO YOUR "TranscriptTrainer"
+
+# Export and combine all DOCX files from the input folder
+# This function will:
+# 1. Read all .docx files from INPUT_FOLDER
+# 2. Combine their contents
+# 3. Save to a single OUTPUT_FILE
+
+export_docx_from_folder(
+    input_directory=INPUT_FOLDER,
+    output_file=OUTPUT_FILE,
+    labels = LABELS
+)
+
+```
+
+This will:
+
+- Read all .docx files from INPUT_FOLDER.
+- Combine their content into a single file.
+- Apply the defined labels to create a structured dataset.
+
+## Requirements
+Python 3.6 or later
+GPU access recommended for optimal performance (if using Jupyter Notebook).
+pytranscripts version 1.2.4 or higher.
+
+
+## Model Training
+Now , the detailed class shows how to properly use our transcript trainer in making training and inference easy based on your document
+
+
+```python
+from pytranscripts import TranscriptTrainer
+
+
+trainer = TranscriptTrainer(
+    input_file='/content/drive/MyDrive/Kalu+Deola/PYTRANSCRIPTS PUBLIC DEMO/FULL_INTERVIEW_TAGGED.xlsx',  # Path to the CSV / XLSX file containing the tagged documents. This is the main data source for training and evaluation.
+
+    destination_path='/content/',  # Directory where all the training results, models, and logs will be saved. , We are using colab path to make things seamless
+
+    text_column='Interviewee',  # Specifies the column name in the CSV file that contains the text data to be used for training.
+
+    test_size=0.2,  # Determines the fraction of the data that will be used for testing the model, instead of training it. Here, 20% of data will be used for testing.
+
+    max_length=512, #The maximum number of tokens to include in each input sequence, this helps in managing memory and computational resources. Sequences longer than this will be truncated.
+
+    num_train_epochs=10, # The number of times the model will iterate over the entire training dataset during training. More epochs will mean more training.
+
+    labels=[
+    "Clinical_Experience",        # Descriptions of personal experience using lung ultrasound
+    "Diagnostic_Utility",         # How lung ultrasound helps in diagnosing diseases
+    "Comparative_Analysis",       # Comparisons with other imaging modalities like X-ray or CT
+    "Implementation_Challenges",  # Barriers to adoption and practical difficulties
+    "Training_and_Education",     # Aspects related to learning and teaching lung ultrasound
+    "System_Infrastructure",      # How hospital systems, devices, and software support ultrasound use
+    "Administrative_Buying",       # Role of hospital leadership and institutional support
+    "Workflow_Impact",            # How lung ultrasound affects daily hospital operations
+    "Patient_Engagement",         # Ways ultrasound enhances patient understanding and involvement
+    "Future_Adoption",            # Predictions about the role of lung ultrasound in hospital practice
+    ],
+
+
+     # PLEASE MAKE SURE THAT THE LIST YOU ARE GOING TO BE USING HERE MATCHES THE ONE IN YOUR INPUT FILE
+
+
+    upper_lower_mapping = {
+    "multi_level_org_char": [  # High-level category
+        "Clinical_Experience",  # Provider Characteristics
+        "System_Infrastructure"  # Health System Characteristics
+    ],
+
+    "multi_level_org_perspect": [  # High-level category
+        "Comparative_Analysis",  # Imaging modalities in general
+        "Administrative_Buying",  # Value equation
+        "Diagnostic_Utility",  # Clinical utility & efficiency-Provider perspective
+        "Patient_Engagement",  # Patient/Physician interaction in LUS
+        "Workflow_Impact"  # Workflow related problems
+    ],
+
+    "impl_sust_infra": [  # High-level category
+        "Training_and_Education",  # Training
+        "Implementation_Challenges",  # Credentialing / Quality Assurance Infrastructure
+        "Future_Adoption"  # Financial Impact
+    ]
+}
+)
+```
+
+## One Liner Training
+```python
+bert_model, electra_model = trainer.train_and_classify()
+```
+
+
+
+## Inferencing and Automated Document Classification (via Color Coding)
+
+This involves making use of any of the trained models to predict on a folder containing raw EHR transcripts
+
+```python
+trainer.inference_documents(
+    input_folder = "/content/drive/MyDrive/Kalu+Deola/PYTRANSCRIPTS PUBLIC DEMO/synthetic_transcripts",
+    output_folder = "/content/drive/MyDrive/Kalu+Deola/PYTRANSCRIPTS PUBLIC DEMO/inferenced_transcripts",
+    threshold  = 0.15, # default value = 0.15
+    model_type = 'bert' # defaults to bert ,  options (bert, electra)
+)
+```
+
+
+
+
+
+## Contributing
+We welcome contributions! Please follow the contributing guidelines.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+
