@@ -1,0 +1,90 @@
+[project]
+name = "mqss-qiskit"
+version = "0.2.0"
+description = "MQSS adapter for Qiskit as an interface to MQP and HPCQC."
+authors = [
+    { name = "mqss", email = "mqss@munich-quantum-valley.de" },
+]
+keywords = [
+    "MQSS",
+    "quantum-computing",
+    "Qiskit",
+]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "qiskit>=0.45",
+    "requests>=2.32.3",
+    "python-decouple>=3.8",
+    "qiskit-qasm3-import>=0.5.1",
+    "mqss-client>=0.2.0",
+]
+requires-python = ">=3.9,<3.14"
+readme = "README.md"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.optional-dependencies]
+docs = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.2",
+    "mkdocstrings[python]>=0.26.1",
+    "mkdocs-autorefs>=1.2.0",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.isort]
+profile = "black"
+src_paths = [
+    "mqss",
+    "test",
+]
+known_first_party = [
+    "mqss",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "test",
+]
+addopts = [
+    "-v",
+    "-s",
+]
+markers = [
+    "backend: mark tests related to backend operations",
+    "job: mark tests that involve job submission",
+]
+
+[tool.pdm.build]
+includes = [
+    "mqss",
+]
+
+[dependency-groups]
+dev = [
+    "nox>=2023.4.22",
+    "pytest>=8.2.2",
+    "mypy>=1.10.1",
+    "isort>=5.13.2",
+    "pre-commit>=3.5.0",
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings[python]",
+    "ruff>=0.11.5",
+    "pytest-cov>=6.1.1",
+]
