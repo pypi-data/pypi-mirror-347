@@ -1,0 +1,4 @@
+[console_scripts]
+protlib-designer = scripts.run_protlib_designer:run_protlib_designer
+protlib-ifold-scorer = scripts.run_ifold_scorer:run_ifold_scorer
+protlib-plm-scorer = scripts.run_plm_scorer:run_plm_scorer
