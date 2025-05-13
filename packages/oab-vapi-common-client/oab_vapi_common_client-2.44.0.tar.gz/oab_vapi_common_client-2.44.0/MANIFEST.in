@@ -1,0 +1,2 @@
+include egg_utils.py
+include setup_wheel.py

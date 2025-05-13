@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: oab_vapi_common_client
+Version: 2.44.0
+Summary: vAPI Common Services Client Bindings
+Author: VMware
+License-File: LICENSE.txt
+Requires-Dist: oab_vapi-runtime==2.44.0
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
