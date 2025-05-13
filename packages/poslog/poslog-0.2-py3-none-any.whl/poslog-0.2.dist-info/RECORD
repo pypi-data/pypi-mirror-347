@@ -1,0 +1,12 @@
+poslog/AbstractPosTagger.py,sha256=Wf8bBY16WLHa91WPkUOcCYe2AZxTSbFzpeLzGwlcbgc,432
+poslog/PosLogCRF.py,sha256=gyxLCwahGfzikLLOJlLWailjPmLOsCJicC0epzhKD4A,7888
+poslog/__init__.py,sha256=SGXibiSNy7rEPHQnYvzk5KommaGUp1wPh49FHU-EEUk,81
+poslog/models/pos_log_upos_crf_10k_model.pkl,sha256=7Jx2PsA-uNhYRB2ZAmz-y-gassPljvvOAuMJSeUur9w,1144795
+poslog/words/KnownWordsDetector.py,sha256=7R92wjt6V-E0CbuQisEQt1SHhOGw35JM1_kbKdPlDCg,3419
+poslog/words/RegexTokenClassMatcher.py,sha256=L_5W1_SztgIKK4mMm4k_q6XZmcxX5eni2XsQj1YLR7w,13909
+poslog/words/__init__.py,sha256=ZqB7utWafM4zPmXzl6FgUXde6xIN2h3Bgzt3mdBrMRw,71
+poslog-0.2.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+poslog-0.2.dist-info/METADATA,sha256=YoCFxmNzegImhSCPa8hl8eW7zLZshx1BZQ47T-1QEOg,1613
+poslog-0.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+poslog-0.2.dist-info/top_level.txt,sha256=vNwLTiPmYC9wb2v6tqQipduwklgD8u5faJUJsG-Q8pI,7
+poslog-0.2.dist-info/RECORD,,
