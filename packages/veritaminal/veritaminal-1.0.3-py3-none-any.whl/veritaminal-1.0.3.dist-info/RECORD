@@ -1,0 +1,15 @@
+game/__init__.py,sha256=x_-bT6jlWwghfdTTzV2NDFR0Ca0kVtFsqUkP9h6bdeU,211
+game/api.py,sha256=r3uxItSrenyoVMKj4EW8GsP9tDsWCjoUxkwGSRYvQQI,22089
+game/gameplay.py,sha256=H1KZbF8PC6PnIddhA5LEPYrCsULhgAq_fAIUx01BceI,12008
+game/main.py,sha256=qh8cy8hDppS6R8gs7mjBnveAc67qblZIvNj-x_OEJH4,10782
+game/main_menu.py,sha256=AZn8jHiCGGeOBZBPIxTmtO_uhe0CjGWiHVxmqr0B-Fw,12070
+game/memory.py,sha256=T8Z6LpbVCV24vMi5nGwP7zHPIghDkCfgCv6XgrZP32U,10808
+game/narrative.py,sha256=HMep9hjCubLTKKPPQSkYvZs3eHGQZZouqXf-WF3fa2g,7197
+game/settings.py,sha256=fEzTU95-iZoI-JqhcJQ64I-5_9cbswILPywXAlWvmzc,7369
+game/ui.py,sha256=SdoD8XHIgBVV6OZP5nlrKbmC7Mm7OVXAYu6wJpNFIAw,16720
+veritaminal-1.0.3.dist-info/licenses/LICENSE,sha256=38JdanScxCGt-PjdrHfj9h04e0iSsB9ttv3pe87paw0,1094
+veritaminal-1.0.3.dist-info/METADATA,sha256=e-HpTZcer_4GC0o_Ljq3y3PGCTR2F_LeeMhR_XHMRw0,8031
+veritaminal-1.0.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+veritaminal-1.0.3.dist-info/entry_points.txt,sha256=tRm6td-TezBTIbJWvfvHujLdFmt_hgb1tLFxQASX9WY,47
+veritaminal-1.0.3.dist-info/top_level.txt,sha256=qwGyB-Va1sUTRvt4anB-6UfFjkcjtKjjyZE1wOdZ9-E,5
+veritaminal-1.0.3.dist-info/RECORD,,
