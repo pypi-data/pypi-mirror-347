@@ -1,0 +1,7 @@
+cytodataframe/__init__.py,sha256=g0J2taup9uohccu_2V44M5Yb9U-lGwVKamWABXMdtgI,191
+cytodataframe/frame.py,sha256=QTwsGNJ1ycmPdxkVnI1vffJSvea-K603viVGlWh5YQs,48787
+cytodataframe/image.py,sha256=fLavmqXBgFDBJQr252NMBZBGhcTBgT3JpG1qlaIOD5g,8821
+cytodataframe-0.0.22.dist-info/LICENSE,sha256=Zs74y-hiRjDg7VlGslINZlrVSrrcIvdhgT9SNa5c8Fg,1498
+cytodataframe-0.0.22.dist-info/METADATA,sha256=NUYGlW-mdqOMEhSrO-Wtk2mNzybW-47bXCreA5V4rxU,3699
+cytodataframe-0.0.22.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+cytodataframe-0.0.22.dist-info/RECORD,,
