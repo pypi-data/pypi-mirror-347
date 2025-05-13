@@ -1,0 +1,10 @@
+oar/__init__.py,sha256=9V_jU5MJRF8UZq5q90VK-L-anAYSE31JAX8O0nuwW8o,266
+oar/client.py,sha256=j9D98iYDs_xlueFIXOSZx2zKb7z8EdfmpetcVRpuW7c,6508
+oar/config.py,sha256=eHCV2uyFsYF9ie36eQTnmI_5kCkgOlYccE4ITcmOlFk,2447
+oar/consts.py,sha256=T068ElU9owvN4LLzfCdadhZuUfdt7_ng1oikGywwfD0,538
+oar/models.py,sha256=8_x6zt0d3pZMjk6grqrE7HFxxoXR17xRunUsCjy5gcc,3693
+oar/plugin.py,sha256=03eCrjBgLVpz_kv6vC3qP-jTteq-fBiyWlp0aoNB6_k,6299
+oar/report.py,sha256=pk0E_mPQ0GXdmPO7HTokny41LnKRrhTwN91_m6wak1Q,757
+pytest_oar-2.0.3.dist-info/METADATA,sha256=Xd8z1Oawwv9G3-y2z_rFIHscUMP-SEY3KTU_S6-8UTI,11761
+pytest_oar-2.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytest_oar-2.0.3.dist-info/RECORD,,
