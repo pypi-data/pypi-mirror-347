@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: sdbmigrate
+Version: 1.1.1
+Summary: DB migration tool for PostgreSQL/MySQL with sharding support
+Home-page: https://github.com/alex-ramanau/sdbmigrate
+Author: Alex Ramanau
+Author-email: Alex Ramanau <a.ramanau.pl@gmail.com>, Stanislav Ivankin <s_ivankin@wargaming.net>
+Project-URL: Homepage, https://github.com/alex-ramanau/sdbmigrate
+Project-URL: Bug Tracker, https://github.com/alex-ramanau/sdbmigrate/issues
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: sqlparse>=0.3.1
+Provides-Extra: postgres
+Requires-Dist: psycopg2<=2.8.6; extra == "postgres"
+Provides-Extra: mysql
+Requires-Dist: mysqlclient; extra == "mysql"
+Dynamic: author
+Dynamic: home-page
