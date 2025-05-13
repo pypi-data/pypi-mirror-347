@@ -1,0 +1,16 @@
+
+[:python_version < "3.12"]
+torch==2.1
+torchvision==0.16
+torchaudio==2.1
+opencv-python==4.10.0.84
+tensorflow==2.11
+ultralytics==8.3.28
+
+[:python_version >= "3.12"]
+torch
+torchvision
+torchaudio
+opencv-python
+tensorflow
+ultralytics
