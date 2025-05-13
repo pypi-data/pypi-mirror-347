@@ -1,0 +1,9 @@
+pandas
+numpy
+networkx
+xarray
+
+[testing]
+pytest
+pytest-cov
+python-coveralls

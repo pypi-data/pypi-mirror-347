@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: greengraph
+Version: 0.0.0
+Summary: A Python package for graph/matrix-based (hybrid) life-cycle calculations.
+Author-email: Michael Weinold <michaelphilippweinold+greengraph@gmail.com>
+Maintainer-email: Michael Weinold <michaelphilippweinold+greengraph@gmail.com>
+License: MIT
+Project-URL: source, https://github.com/greengraph/greengraph
+Project-URL: homepage, https://greengraph.readthedocs.io
+Project-URL: tracker, https://github.com/greengraph/greengraph
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: xarray
+Provides-Extra: testing
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Requires-Dist: python-coveralls; extra == "testing"
+Dynamic: license-file
+
+# greengraph
+Experimental Python Package for Graph+Matrix-based LCA Calculations

@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+greengraph/__init__.py
+greengraph.egg-info/PKG-INFO
+greengraph.egg-info/SOURCES.txt
+greengraph.egg-info/dependency_links.txt
+greengraph.egg-info/requires.txt
+greengraph.egg-info/top_level.txt

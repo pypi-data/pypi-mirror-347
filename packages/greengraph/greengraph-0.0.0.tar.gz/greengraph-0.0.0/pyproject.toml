@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "greengraph"
+authors = [
+  { name="Michael Weinold", email="michaelphilippweinold+greengraph@gmail.com" }
+]
+maintainers = [
+  { name="Michael Weinold", email="michaelphilippweinold+greengraph@gmail.com" }
+]
+description = "A Python package for graph/matrix-based (hybrid) life-cycle calculations."
+readme = "README.md"
+license = {text = "MIT"}
+dynamic = ["version"]
+# Add here all kinds of additional classifiers as defined under
+# https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering"
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "numpy",
+    "networkx",
+    "xarray",
+]
+
+[project.urls]
+source = "https://github.com/greengraph/greengraph"
+homepage = "https://greengraph.readthedocs.io"
+tracker = "https://github.com/greengraph/greengraph"
+
+[project.optional-dependencies]
+# Getting recursive dependencies to work is a pain, this
+# seems to work, at least for now
+testing = [
+    "pytest",
+    "pytest-cov",
+    "python-coveralls",
+]
+
+[tool.setuptools]
+include-package-data = true
+packages = { find = { where = ["."] } }
+
+[options.packages.find]
+where = ["greengraph"]
+
+[options.package_data]
+greengraph = ["py.typed"]
+
+[tool.setuptools.dynamic]
+version = {attr = "greengraph.__version__"} 
+readme = {file = "README.md"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests/*.py"] 
