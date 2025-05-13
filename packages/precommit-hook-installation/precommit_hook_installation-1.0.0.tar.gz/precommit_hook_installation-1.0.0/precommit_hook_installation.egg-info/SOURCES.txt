@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+precommit_hook_installation/__init__.py
+precommit_hook_installation/install_hook.py
+precommit_hook_installation.egg-info/PKG-INFO
+precommit_hook_installation.egg-info/SOURCES.txt
+precommit_hook_installation.egg-info/dependency_links.txt
+precommit_hook_installation.egg-info/entry_points.txt
+precommit_hook_installation.egg-info/top_level.txt

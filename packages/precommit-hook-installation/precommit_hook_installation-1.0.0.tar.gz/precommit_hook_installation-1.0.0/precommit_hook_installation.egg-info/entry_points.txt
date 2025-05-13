@@ -1,0 +1,2 @@
+[console_scripts]
+install-precommit-hook = precommit_hook_installation.install_hook:install_pre_commit_hook

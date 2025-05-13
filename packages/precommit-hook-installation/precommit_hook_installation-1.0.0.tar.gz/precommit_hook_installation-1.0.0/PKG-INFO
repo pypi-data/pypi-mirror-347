@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: precommit_hook_installation
+Version: 1.0.0
+Summary: A package to install pre-commit hooks for Snyk and Talisman.
+Author: Ramagomathy-N
+Author-email: rama.gomathy@contentstack.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
