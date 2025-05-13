@@ -1,0 +1,10 @@
+unsub/__init__.py,sha256=KmSuM411XcDRJYfID-DQuNZ5SwXCoqDNFSA-sREePzs,59
+unsub/applets.py,sha256=4YrUygf89K390BTsUjgYr8WJzpiEDkqY8mvuTwcEPhg,10436
+unsub/cli.py,sha256=DD_8dxeENuV6_sDwPGMglfO5N1C3w6zEF27RR8hSwKU,6877
+unsub/email.py,sha256=TYlA56DSKdC0OynO4A-_CubFoRFbYwN7mrCZpsWPgcg,8803
+unsub/models.py,sha256=G7YzOC3UOwH8aj7I0oP1RVAYKZprya4Hah3fpLcn89Y,1585
+unsub/storage.py,sha256=SGWqZ0vmC1LJl1m-KKA72trz_H9jxGiwW0coj-P-rPY,2980
+unsub-0.5.0.dist-info/METADATA,sha256=WnKEly9emdNsK_jMHIkp8SvurXLa0dkoh9JvPVRgAwU,354
+unsub-0.5.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+unsub-0.5.0.dist-info/entry_points.txt,sha256=xfEWTJN0H5u1s5shyz84A_nDiS4Y5UIkQzsjNCAlwa4,41
+unsub-0.5.0.dist-info/RECORD,,
