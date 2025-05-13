@@ -1,0 +1,61 @@
+## Integrantes
+## Jorge Andrés Rodríguez Castaño y Carlos Andrés Ramos García
+## Machine Learning y Algoritmos Genéticos / Universidad de Cundinamarca
+
+# lib_rr
+
+**lib_rr** es una librería de Python diseñada para facilitar la experimentación con algoritmos genéticos, especialmente aplicada a la optimización de parámetros en sistemas de energía solar. Esta herramienta también incluye funciones auxiliares básicas para la generación de poblaciones y evaluación de funciones objetivo.
+
+## 🚀 Características principales
+
+- 🧬 Implementación de un **algoritmo genético adaptativo** para encontrar el ángulo óptimo de inclinación de paneles solares.
+- 📉 Cálculo de la **distancia mínima (DM)** entre paneles solares con base en la latitud y condiciones de invierno.
+- 🔢 Funciones auxiliares para la creación de individuos y poblaciones aleatorias.
+- 🧪 Código modular, limpio y fácil de integrar en otros proyectos.
+
+---
+
+## 📦 Instalación
+
+Puedes instalar directamente desde PyPI:
+
+```bash
+pip install lib_rr
+
+from lib_rr import crear_poblacion, crear_individuo, ejecutar_algoritmo_genetico
+
+# Crear población inicial
+poblacion = crear_poblacion(5, -10, 10)
+print("Población:", poblacion)
+
+# Ejecutar algoritmo genético con parámetros de ejemplo
+mejor_beta, mejor_DM, historial = ejecutar_algoritmo_genetico(
+    tam_poblacion=10,
+    ngen=50,
+    p_cruce=0.8,
+    p_mutacion=0.1,
+    B=1.0,
+    latitud=4.5,
+    invierno=10
+)
+
+
+## 🚀 Funcionalidades modulo Funciones.py
+
+print(f"Ángulo óptimo beta: {mejor_beta}")
+print(f"Distancia mínima: {mejor_DM}")
+
+| Función            | Descripción                                             |
+| ------------------ | ------------------------------------------------------- |
+| `crear_individuo`  | Genera un número aleatorio dentro de un rango.          |
+| `crear_poblacion`  | Genera una lista de individuos aleatorios.              |
+| `funcion_objetivo` | Función cuadrática simple (x²) como ejemplo de aptitud. |
+
+## 🚀 Funcionalidades Modulo Algoritmo Genetico
+
+| Función                       | Descripción                                                              |
+| ----------------------------- | ------------------------------------------------------------------------ |
+| `calcular_Hmin`               | Calcula el ángulo mínimo solar en invierno según latitud.                |
+| `calcular_DM`                 | Calcula la distancia mínima entre paneles solares.                       |
+| `fitness`                     | Evalúa el arreglo de ángulos beta con base en la distancia mínima.       |
+| `ejecutar_algoritmo_genetico` | Ejecuta un algoritmo genético adaptativo para encontrar el mejor ángulo. |
