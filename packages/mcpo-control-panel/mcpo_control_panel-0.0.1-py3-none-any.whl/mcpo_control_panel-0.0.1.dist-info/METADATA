@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: mcpo-control-panel
+Version: 0.0.1
+Summary: Web UI and API for managing MCP Orchestrator (mcpo) instances and configurations.
+Author-email: daswer123 <daswer123@gmail.com>
+Project-URL: Homepage, https://github.com/daswer123/mcpo-control-panel
+Project-URL: Repository, https://github.com/daswer123/mcpo-control-panel
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi[all]>=0.115.12
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcpo>=0.0.14
+Requires-Dist: sqlmodel>=0.0.24
