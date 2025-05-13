@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: wolfhece_tools
+Version: 0.0.2
+Summary: Pure Python tools for wolfhece
+Author-email: Pierre Archambeau <pierre.archambeau@uliege.be>
+Project-URL: Homepage, https://uee.uliege.be/hece
+Project-URL: Issues, https://uee.uliege.be/hece
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: shapely
+Requires-Dist: gettext
