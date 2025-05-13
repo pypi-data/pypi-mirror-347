@@ -1,0 +1,9 @@
+moviessdk/__init__.py,sha256=L9Q2McImL9zSivgJgzQxSHKXEbMKJjKYGvSfu8fJypU,77
+moviessdk/movie_config.py,sha256=YpMxJtT0WGw_rRTLHuhb0UzNuFR-bpfxQH3dB7_KHgY,1747
+moviessdk/movie_customer.py,sha256=UwIkyOMZtUyzUKg1tZEjfaTAzsWi3oR-diZaXvmHsAU,4889
+moviessdk/schemas/__init__.py,sha256=D-fxzbTSdYLf_ic3qe1tho4N9TI6ZQoLYoqco5YVgo0,22
+moviessdk/schemas/schemas.py,sha256=KD1YMtSwKergzQkmLBIulpjqcJ8s_F1pCeW9UsZ4CGs,1666
+moviessdk-0.0.1.dist-info/METADATA,sha256=B_ai0X9mTMPYHKH-qzJ2K3QWBtzumW11jfsSiye4rwk,565
+moviessdk-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+moviessdk-0.0.1.dist-info/top_level.txt,sha256=sx8F-hJfrNnPkkvhPRY-gtIRsX6tkQ8R5xRYScVwc5g,10
+moviessdk-0.0.1.dist-info/RECORD,,
