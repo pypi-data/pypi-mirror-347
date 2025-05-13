@@ -1,0 +1,7 @@
+datastore/cassandra_util.py,sha256=0G4-ad25tMMXwIfCrqdUoJVVOucJIhbrN0KUSSoQWwY,10268
+datastore/simple_cassandra_datastore.py,sha256=qvEGS1UcAg7V5ussMTo9SwIWZAiW-ZbDy0hQK7Pz2lg,17484
+fastastra/fastastra.py,sha256=Dkuzu82AavFo28HueN4zp0NfwGw6xea7WMtsEQp86ys,19804
+fastastra-0.1.37.dist-info/METADATA,sha256=H6GpaPFMHYGeUJI4xyqCpO3KVizMhF4LuOpqzH8va7c,3244
+fastastra-0.1.37.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fastastra-0.1.37.dist-info/entry_points.txt,sha256=6vgDUzxenxJSYlsHL_vNV0lME3ju9brimGQ-1RRydlM,72
+fastastra-0.1.37.dist-info/RECORD,,
