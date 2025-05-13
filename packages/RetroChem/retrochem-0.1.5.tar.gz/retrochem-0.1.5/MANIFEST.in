@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include Package_retrosynth *.py
+recursive-include .streamlit *
+recursive-include Images *
+recursive-include Model *
+
