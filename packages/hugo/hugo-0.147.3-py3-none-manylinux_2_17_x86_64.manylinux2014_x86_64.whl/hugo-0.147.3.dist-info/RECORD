@@ -1,0 +1,11 @@
+hugo-0.147.3.dist-info/WHEEL,sha256=LO02Z2ojlZ2LBpaR06tAjP4s6aSpJKC20-4DDQ_ogOU,145
+hugo-0.147.3.dist-info/METADATA,sha256=ShPXoF39Hq2K8zDjw6CTmXV6zwlKkhcuMooDsiniq3Y,23215
+hugo-0.147.3.dist-info/top_level.txt,sha256=1YLtTirNxzts10vTa7nWCluyqrKG0jKpK87fgAIvTqI,5
+hugo-0.147.3.dist-info/entry_points.txt,sha256=Ls4oXWdn8_WPbp5MRF8E8fSO0sbSv780-1MwtEbjUTI,41
+hugo-0.147.3.dist-info/RECORD,,
+hugo-0.147.3.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hugo-0.147.3.dist-info/licenses/LICENSE-hugo.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hugo/cli.py,sha256=-98abooFXVvZ0I-u_XheAIzCrBBugofh7sIZpHt1kFU,1773
+hugo/__main__.py,sha256=oivVy03lY91Mbd-m9lhsKaceYjtCFkvlL27ja35lBbI,278
+hugo/binaries/.gitignore,sha256=kCpRPdl3S_jqYYZaOrc0-xa6-l3KqVjNRXc6jCkd_-Q,12
+hugo/binaries/hugo-0.147.3-linux-amd64,sha256=znclRasmpOKld6gA17ccQgBDKUwGN3O2xFxK-NfInf4,76027384
