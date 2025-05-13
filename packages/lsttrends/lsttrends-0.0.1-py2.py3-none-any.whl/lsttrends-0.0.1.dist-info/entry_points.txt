@@ -1,0 +1,2 @@
+[console_scripts]
+lsttrends = lsttrends.cli:main
