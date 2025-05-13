@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyMouPosTracker"
+version = "0.2.0"
+description = "A Python library that tracks the x and y positions of your mouse cursor."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  { name="hlee100", email="henrylee1606@gmail.com" }
+]
+dependencies = [
+  "pyautogui",
+  "keyboard"
+]
+
+[project.urls]
+Homepage = "https://github.com/hlee100/PyMouPosTracker"
