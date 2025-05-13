@@ -1,0 +1,13 @@
+paid_ai_client-0.4.6.dist-info/licenses/LICENSE,sha256=wl9sXtu67ZlPQKAUgoci8I9ekwk2Dyt2Yf7w-zpE8u0,1066
+paid_client/__init__.py,sha256=vkPD7XqYdxPHB35ZE2baSohC89fKYMI4tJ24Ll46728,1314
+paid_client/core.py,sha256=EDdJFpK0sbL16YzbWxPPldt9DfgTpv5h-tr2WNUVNwk,41811
+paid_client/models/__init__.py,sha256=0FsXgImCdChe1SOUAoNQ8XGrugd8tSShd6Tl3P9Vpf4,1212
+paid_client/models/account.py,sha256=XLL6qkbJ0QstdrS9iqaNUZ0p9kjjejxYlOpV5HU4eO0,6098
+paid_client/models/agent.py,sha256=25Jse4HuLUhSE2-gfUdypBxIOBXlMwErbX1WoGQsOhE,5396
+paid_client/models/contact.py,sha256=7gcQholuuUDt13m3-wb8jL0-YFZuEA3H3BOigx5VDe4,3053
+paid_client/models/order.py,sha256=Fm67Q1nN8zCVW9jvH_eH0OxTkuB0uy0s2_x_en5CtII,9811
+paid_client/models/signal.py,sha256=onV2UN_De2u4qOZpddRb1XgRB_eU8PB83V8Md5_-pHg,310
+paid_ai_client-0.4.6.dist-info/METADATA,sha256=FF4MGsC2a6KGhmnJ2_prLI0xt8iDz5yihIwTQ5k1Ob0,2759
+paid_ai_client-0.4.6.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+paid_ai_client-0.4.6.dist-info/top_level.txt,sha256=1bKRzqfDMGsj7c9n4Psb4B7cSODswhp7u7pBkWcyezE,12
+paid_ai_client-0.4.6.dist-info/RECORD,,
