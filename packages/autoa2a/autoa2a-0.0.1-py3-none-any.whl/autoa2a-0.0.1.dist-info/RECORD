@@ -1,0 +1,13 @@
+autoa2a/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoa2a/cli.py,sha256=kv8uaZ2n3NuLxdSP-_nV-92RAsSSzlTKwoTlGY8cz-g,3035
+autoa2a/templates/agent_specific/crewai/agent.py.jinja2,sha256=eRt5F6P7OBgcJQ4O6UZklEhyfqONKdFocwMh7e0TGRs,1491
+autoa2a/templates/agent_specific/langgraph/agent.py.jinja2,sha256=VVsmT1a0vGmXs-Mreacomo5Us1mzMmHCUpXToiwCR9Y,3202
+autoa2a/templates/agent_specific/llama-index/agent.py.jinja2,sha256=GHCvtPL8wtbwqroJ2ViOqhrMtF9L8Ve7O6ZqbWt44nc,2809
+autoa2a/templates/agent_specific/openai/agent.py.jinja2,sha256=sSiMXlG1VvFu_S_b2NR_nd1khYzwDOdigDrIA0Z0Cz4,2242
+autoa2a/templates/agent_specific/pydantic/agent.py.jinja2,sha256=N8Pfnco0dL8bv0f_851ItbXohgIF6UGns-wNSufLDoY,2837
+autoa2a/templates/common/run_a2a.py.jinja2,sha256=XYyiVu9mGyvFl7sb9aWUt0OnY_e9aAuV2WTLYfuNj6w,2544
+autoa2a/templates/common/taskmanager.py.jinja2,sha256=TrmOGmexGXisn-WMhnrhRQY16Z6dDjuiE55Bg6F4VW8,7311
+autoa2a-0.0.1.dist-info/METADATA,sha256=hU94xE3uCBUjA95n3bq4awh4a_zmznfRMWWMbR9E3Mo,537
+autoa2a-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+autoa2a-0.0.1.dist-info/entry_points.txt,sha256=z56HPdL-JX0RapKXSATCyDub7itzebRYi7YR9JIpv1E,48
+autoa2a-0.0.1.dist-info/RECORD,,
