@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/docship/__init__.py
+src/docship/__main__.py
+src/docship/exceptions.py
+src/docship/utils.py
+src/docship.egg-info/PKG-INFO
+src/docship.egg-info/SOURCES.txt
+src/docship.egg-info/dependency_links.txt
+src/docship.egg-info/entry_points.txt
+src/docship.egg-info/top_level.txt
