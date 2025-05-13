@@ -1,0 +1,16 @@
+future
+six
+numpy
+sympy
+prettytable
+scipy
+lxml
+pandas
+beautifulsoup4
+pymatgen
+
+[:python_version < "3"]
+numpy==1.16.4
+
+[:python_version >= "3"]
+numpy
