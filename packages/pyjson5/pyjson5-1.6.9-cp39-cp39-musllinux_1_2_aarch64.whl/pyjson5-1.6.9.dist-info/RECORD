@@ -1,0 +1,12 @@
+pyjson5/__init__.py,sha256=WhNlBcv6Xej-Z4eORGA9h27O-0jntQG4dfE9tBnW-Yw,99
+pyjson5/__init__.pyi,sha256=vPxEj9_ZYf5q4VjyLogkUmcNumrxgZG0mGcDKYo_ZUI,8414
+pyjson5/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyjson5/pyjson5.cpython-39-aarch64-linux-gnu.so,sha256=90VfvBi1cVz_oMs9it-lB48CRwrss3E-O1CbRSB6uNU,599465
+pyjson5.libs/libgcc_s-69c45f16.so.1,sha256=BOFjRP57t9LgRNNAnFVK5VHmrp5UU-p5NcfcZ10dnd4,201673
+pyjson5.libs/libstdc++-1f1a71be.so.6.0.33,sha256=sURAhanafc8tH6FGDqPKz7dsPGNb0Aym8vBo6UbJ3Ok,3650097
+pyjson5-1.6.9.dist-info/METADATA,sha256=Urz6m2T9KJbCgFna4-3IBGqPiCAG-IcySTGjsICf9q0,3014
+pyjson5-1.6.9.dist-info/WHEEL,sha256=1W4A6nTKdAXksV75yRIkOR599J2LBAIfJVmTpx0uMgU,111
+pyjson5-1.6.9.dist-info/top_level.txt,sha256=N5XE5x5NaHOF70RJXclTamY-8L3s6cQ8SO-MAdPAhsA,8
+pyjson5-1.6.9.dist-info/RECORD,,
+pyjson5-1.6.9.dist-info/licenses/LICENSE.Apache,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+pyjson5-1.6.9.dist-info/licenses/LICENSE.MIT,sha256=-cTHe6o4KABO5UuKTy2y6I7USmI3pJOWW_VR-sD8ti0,1023
