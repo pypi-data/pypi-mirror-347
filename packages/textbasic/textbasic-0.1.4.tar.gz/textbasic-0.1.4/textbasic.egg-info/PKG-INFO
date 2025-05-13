@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: textbasic
+Version: 0.1.4
+Summary: Text preprocessing package
+Author: Kimyh
+Author-email: kim_yh663927@naver.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: konlpy>=0.6.0
+Requires-Dist: emoji>=2.14.1
+Requires-Dist: pyarrow>=19.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+0.1.0 아직은 테스트 단계입니다.
+0.1.0 normal 함수에 보편적으로 발생하는 오타 수정 추가
