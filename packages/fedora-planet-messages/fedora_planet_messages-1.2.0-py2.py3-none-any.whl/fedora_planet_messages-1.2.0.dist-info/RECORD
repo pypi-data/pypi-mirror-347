@@ -1,0 +1,9 @@
+fedora_planet_messages/__init__.py,sha256=OQUuxUH-m6Xp70CEZaLlhPqhaP-IlWQF3xxI7KDxb1M,803
+fedora_planet_messages/build.py,sha256=rmMUW6AmSJ3IC0fn8s5FpQ1Q9k0YgjSkbKG1NK4onGw,2117
+fedora_planet_messages/post_messages.py,sha256=OAikd30e0cCnGWzQbiOeKVaUHzXkBTQnBWS91ouhH0M,2595
+fedora_planet_messages-1.2.0.dist-info/licenses/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+fedora_planet_messages-1.2.0.dist-info/METADATA,sha256=mwlaSsf71Tl0xpTVkPjB2ySA2sK4WnZuS50IGEmg-1I,1716
+fedora_planet_messages-1.2.0.dist-info/WHEEL,sha256=joeZ_q2kZqPjVkNy_YbjGrynLS6bxmBj74YkvIORXVI,109
+fedora_planet_messages-1.2.0.dist-info/entry_points.txt,sha256=0k29sGdU8e9_j1vFK438ik0voZpBStL8xPgFWBp3VaM,111
+fedora_planet_messages-1.2.0.dist-info/top_level.txt,sha256=J4mr1m5oXpvYfIS84GZDr95ejE0RF4c8Ua0bvk-ZEpQ,23
+fedora_planet_messages-1.2.0.dist-info/RECORD,,
