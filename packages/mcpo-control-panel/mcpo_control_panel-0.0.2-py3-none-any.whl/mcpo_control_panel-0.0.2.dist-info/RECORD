@@ -1,0 +1,14 @@
+mcpo_control_panel/__main__.py,sha256=qu1-74yQ31VGUzJzGg1-djUS6ZeEKTt9M_9wPCDdsY0,3608
+mcpo_control_panel/main.py,sha256=vYDwMul1ga9PVfhInCiofRBWEUR7yfUGgHoeMYwzR_Y,3852
+mcpo_control_panel/api/mcpo_control.py,sha256=-iWkI_FZvlNRlWCI_S3_35hquen0KALcjghixE8ykH8,9322
+mcpo_control_panel/api/server_crud.py,sha256=TC-J2cirm471XMHDy__hDEBwkl4kLMPX53tRpJvKtqo,2400
+mcpo_control_panel/db/database.py,sha256=ly92a9pHEGKctIi76nDpG4B7uWrPx-qXqKf9SiZcYqY,5516
+mcpo_control_panel/models/mcpo_settings.py,sha256=Jx_zyI0FXjNx68Cy58eE2Jm8m14WL0ECz1sA9DZ8Fxw,5940
+mcpo_control_panel/models/server_definition.py,sha256=Oecm35Y7L96JctP8ZQGHLt9ImBjQL8GykouaIPpynqQ,3609
+mcpo_control_panel/services/config_service.py,sha256=-9-3Vd-oTdYfBRqm1iHuC8Z3BDpE3LXqbro4xIjOI9o,29114
+mcpo_control_panel/services/mcpo_service.py,sha256=HK_9kVKo6znwDremUVHdF1zf3IM9YGs7DuqWB9VorHY,33304
+mcpo_control_panel/ui/routes.py,sha256=2QB-o1CuTtstSgfqsf2rP7b9w9Xs6dGtPPoeUdNCqJU,37092
+mcpo_control_panel-0.0.2.dist-info/METADATA,sha256=nhMy9L_40_HcHbnFMDCqdFo1naQ5hlBhh61rF_XeyA4,7168
+mcpo_control_panel-0.0.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+mcpo_control_panel-0.0.2.dist-info/top_level.txt,sha256=U21w20oCpJb8QBxmvumitpoXy_I0he895mCHfx52Ttw,19
+mcpo_control_panel-0.0.2.dist-info/RECORD,,
