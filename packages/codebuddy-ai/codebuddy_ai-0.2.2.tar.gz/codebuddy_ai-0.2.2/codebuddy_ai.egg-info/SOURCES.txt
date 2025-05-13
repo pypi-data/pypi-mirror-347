@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.py
+app/__init__.py
+app/cli.py
+codebuddy_ai.egg-info/PKG-INFO
+codebuddy_ai.egg-info/SOURCES.txt
+codebuddy_ai.egg-info/dependency_links.txt
+codebuddy_ai.egg-info/entry_points.txt
+codebuddy_ai.egg-info/requires.txt
+codebuddy_ai.egg-info/top_level.txt

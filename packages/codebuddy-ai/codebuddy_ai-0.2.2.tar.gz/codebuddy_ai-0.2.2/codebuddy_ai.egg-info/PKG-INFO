@@ -1,0 +1,143 @@
+Metadata-Version: 2.2
+Name: codebuddy-ai
+Version: 0.2.2
+Summary: AI-powered CLI to generate commit messages, review code, and suggest fixes
+Home-page: https://github.com/UP11SRE/agent-client
+Author: Naman Kansal
+Author-email: namankansal91@gmail.com
+License: Proprietary
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## CodeBuddy AI CLI Tool
+
+CodeBuddy AI is a powerful Python CLI tool designed to save developers valuable time by automating critical aspects of the development workflow. From generating precise commit messages to delivering AI-powered code reviews and actionable fix suggestions, CodeBuddy AI helps engineers ship cleaner code and close pull requests faster.
+
+## 🚀 Why CodeBuddy?
+
+Software engineers spend a significant amount of time writing commit messages, reviewing their code for best practices, and fixing common issues. CodeBuddy AI automates these steps using AI so that:
+
+✅ Your commit messages are professional and context-aware.
+
+✅ You get comprehensive code reviews before pushing.
+
+✅ You receive intelligent, line-by-line fix suggestions.
+
+✅ You can close PRs faster and maintain high code quality.
+
+## ✨ Features
+
+### 🔸 Automated Commit Messages
+
+Generates clear and concise commit messages based on your staged Git diff. This helps you maintain a clean and informative Git history with minimal manual effort.
+
+### 🔸 AI-Powered Code Reviews (✨USP Feature)
+
+Quickly analyze your code for potential issues, best practices, and code smells using AI. Unlike traditional linters or static analysis tools, CodeBuddy AI reviews your actual logic and structure, providing a more human-like perspective.
+
+Each review includes:
+
+✅ Best practice adherence checks (naming, logic structure, modularity).
+
+✅ Identification of code smells (e.g., deep nesting, duplicated logic).
+
+✅ Clear explanations with severity levels (low, medium, high).
+
+✅ Line-by-line annotations so you know exactly where to improve.
+
+✅ Actionable insights—not just what’s wrong, but why and how to fix it.
+
+Think of it as an AI engineering buddy who reviews your code with context and insight, not just rules.
+
+### 🔸 Line-by-Line Code Fix Suggestions (✨USP Feature)
+
+After reviewing your code, CodeBuddy AI can suggest improvements or complete fixes for problematic sections. These suggestions are tailored to your code and context, not just generic linting hints.
+
+Each suggestion includes:
+
+📌 The problematic line.
+
+💡 The improved version with rationale.
+
+📊 Severity classification so you can prioritize easily.
+
+🧠 AI-generated context explaining the fix.
+
+This feature is ideal for junior developers learning best practices or senior developers aiming for faster turnarounds.
+
+## Installation
+
+You can install CodeBuddy AI directly from PyPI using pip:
+
+```
+pip install codebuddy-ai
+```
+
+# Usage
+
+# Basic Workflow
+
+- **Stage Your Changes:**
+
+Begin by staging your changes in Git using:
+
+```
+git add .
+```
+
+- **Generate the Commit Message:**
+
+Execute the Commit-Gen tool to generate your commit message:
+
+```
+codebuddy generate-commit
+```
+
+The CLI tool will:
+
+1. Extract the staged Git diff.
+2. Communicate with the commit-generation server.
+3. Output a generated commit message that summarizes your changes.
+
+- **Run Code Review:**
+
+You can run the code review process to analyze the quality of your code:
+
+```
+codebuddy run-code-review
+```
+
+Run a detailed code review to analyze the quality of your code. This process examines your code for potential issues, best practices, code smells, and areas for improvement. The review includes:
+
+✅ Best practice violations
+
+✅ Code smells
+
+✅ Severity ratings
+
+✅ Line-by-line improvement suggestions
+
+- **Suggest Code Fixes:**
+
+To get suggestions for code improvements, run:
+
+```
+codebuddy suggest-code-fixes
+```
+
+Automatically generates improvement suggestions, including refactored versions of problematic lines along with explanations and severity.
