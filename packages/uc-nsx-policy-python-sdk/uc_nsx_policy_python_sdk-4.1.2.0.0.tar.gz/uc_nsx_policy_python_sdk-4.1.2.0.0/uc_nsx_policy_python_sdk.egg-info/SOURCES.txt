@@ -1,0 +1,5 @@
+setup.py
+uc_nsx_policy_python_sdk.egg-info/PKG-INFO
+uc_nsx_policy_python_sdk.egg-info/SOURCES.txt
+uc_nsx_policy_python_sdk.egg-info/dependency_links.txt
+uc_nsx_policy_python_sdk.egg-info/top_level.txt
