@@ -1,0 +1,11 @@
+mashumaro<4.0,>=3.5
+loguru<1.0,>=0.7
+cookiecutter<3.0,>=2.1
+py-app-dev<3.0,>=2.5
+customtkinter<6.0,>=5.2
+pillow<11.0,>=10.1
+kspl<2.0,>=1.0
+pick<3.0,>=2.2
+typer<1.0,>=0.12
+hammocking<1.0,>=0.2
+pypeline-runner<2.0,>=1.0

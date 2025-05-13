@@ -1,0 +1,2 @@
+[console_scripts]
+yanga = yanga.ymain:main
