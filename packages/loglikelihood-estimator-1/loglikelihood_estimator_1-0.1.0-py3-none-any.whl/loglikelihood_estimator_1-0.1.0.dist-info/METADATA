@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: loglikelihood-estimator-1
+Version: 0.1.0
+Summary: Log-likelihood estimator for stochastic frontier models with endogeneity (LIML component)
+Home-page: https://gitlab2.tamucc.edu/smudhurakola/loglikehood_estimator_1
+Author: Sandeep Mudhurakola
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
+# Log-Likelihood Estimator
+
+This package provides functions for simulating datasets, estimating log-likelihood values, and calculating the UCI value and conditional variance \( \sigma_c^2 \).
+
+## Installation
+
+You can install the package from PyPI (if uploaded) or directly from the source:
+
+```bash
+pip install loglikelihood_estimator_1
