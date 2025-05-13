@@ -1,0 +1,12 @@
+chameli/__init__.py,sha256=9xFNfFrSUi8HwpHsZUe0d9C_hTV-O0mDcj97e_p1_Ac,4636
+chameli/config.py,sha256=XOTdm8KuVemKYdq0vWhEIZwBQa5f6Sp4meVI790bncM,2765
+chameli/config_extra_fn.py,sha256=X94_HWPdLuh6Y43TkJN2mNeA1DwTadLW1kcf8-DEi9s,6421
+chameli/dateutils.py,sha256=GwwjSFZLgXX9YxOeJZbY1QyTnljqBvPIVp6u5RQtOPU,24188
+chameli/europeanoptions.py,sha256=xB68k4JvT0IzXizHm77nytMOqtGv-MlYZE2dEPCwSlA,23759
+chameli/interactions.py,sha256=I8hN9JIpaOAME71PL6balsT10HMAlYct-EMajzWLcO8,31201
+chameli/miscutils.py,sha256=XkJo6kckem1eZncofTQkISnOp4lw9BGKlyuki6yjP4o,1774
+chameli/config/config_sample.yaml,sha256=7kveOS3Udbq-_bSvxXjsswqFVoQF9yLg_cIN_BnKNGU,9516
+chameli-0.1.1.dist-info/METADATA,sha256=9SXvw6cb2uvZ5nhpeAMVb1yOkQv6-pFmzjfdCYuWZrQ,3558
+chameli-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+chameli-0.1.1.dist-info/top_level.txt,sha256=SXfTWTnVgH-6alTu7FQzCHbciWOTJbp8ksZm_pRASZk,8
+chameli-0.1.1.dist-info/RECORD,,
