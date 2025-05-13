@@ -1,0 +1,3 @@
+[console_scripts]
+mcp-document-reader = doc_reader.server:main
+mcp-url-extractor = url_extractor.server:main
