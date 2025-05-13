@@ -1,0 +1,10 @@
+pymoors-0.2.1.dist-info/METADATA,sha256=sdi1AaOAq0w-RDIVruaIvbdnEH6IWktxpu0cYiwF2mw,4924
+pymoors-0.2.1.dist-info/WHEEL,sha256=R3V4k9N_qW87ls3_ev8HY8kVpG68Jr_AAcumMxO8F0c,96
+pymoors-0.2.1.dist-info/licenses/LICENSE,sha256=ELQwY21SIwVaSW9h4k5VPXeTHvYh5OZUC8bvvNen64E,1094
+pymoors/__init__.py,sha256=5jJr6nJREJIj-hvVhzyWcT7GY1KuserC7Aoj3zRdxUU,4191
+pymoors/_pymoors.cp311-win_amd64.pyd,sha256=8BtMrxER0ppXQo3K3mG3_MaefuqZyB4n-PPYHPsCUUY,1981440
+pymoors/_pymoors.pyi,sha256=2QLmYRMdUtmdpQEAB1Z7l3X8zpP-K67IATYRyY8KX1Y,18577
+pymoors/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymoors/schemas.py,sha256=dZWB2e6GK4Msw3y3gZzx3xbOQdKKvhVJM1DwVzYexD8,4141
+pymoors/typing.py,sha256=-B9yFb5OWfk7cj2kfZWhCPIUGFvxcTllagC_Fyj5iOc,438
+pymoors-0.2.1.dist-info/RECORD,,
