@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: phoenix-ai
+Version: 0.1.0
+Summary: GenAI library for RAG , MCP and Agentic AI
+License: MIT
+Author: Praveen Govindaraj
+Author-email: 38414524+Praveengovianalytics@users.noreply.github.com
+Requires-Python: >=3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: faiss-cpu (>=1.11.0,<2.0.0)
+Requires-Dist: mlflow (>=2.22.0,<3.0.0)
+Requires-Dist: nltk (>=3.9.1,<4.0.0)
+Requires-Dist: numpy (>=2.2.5,<3.0.0)
+Requires-Dist: openai (>=1.78.1,<2.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: pymupdf (>=1.25.5,<2.0.0)
+Requires-Dist: scikit-learn (>=1.6.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# 🐍 phoenix_ai
+
+**phoenix_ai** is a Python library to streamline GenAI workflows including:
+- Vector embedding & FAISS indexing
+- RAG inference (Standard / Hybrid / HyDE)
+- Evaluation with LLM-as-a-Judge
+- Ground Truth Dataset Generation
+
+## 📦 Installation
+
+``` pip install phoenix_ai```
+
+### How. phoenix_ai is organized
+
