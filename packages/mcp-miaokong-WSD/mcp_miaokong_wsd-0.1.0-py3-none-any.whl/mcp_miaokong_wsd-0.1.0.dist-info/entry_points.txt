@@ -1,0 +1,2 @@
+[console_scripts]
+mcp_miaokong_WSD = main:main
