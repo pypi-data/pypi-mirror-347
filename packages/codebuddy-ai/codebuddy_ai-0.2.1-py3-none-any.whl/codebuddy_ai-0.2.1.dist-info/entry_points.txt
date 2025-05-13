@@ -1,0 +1,4 @@
+[console_scripts]
+generate-commit = app.cli:generate_commit
+run-code-review = app.cli:run_code_review
+suggest-code-fixes = app.cli:suggest_code_fixes
