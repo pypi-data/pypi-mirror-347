@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "videomcp": {
+      "command": "uvx",
+      "args": [
+        ".",
+        "python",
+        "-m",
+        "videomcp.server"
+      ],
+      "env": {
+        "VIDEOMCP_ACCESS_KEY": "IX_xl1q9A25p3MxQw99XRw",
+        "VIDEOMCP_SECRET_KEY": "yIAbc4G_p-eleS9wLUllO95rEp4w-bSa",
+        "VIDEOMCP_API_BASE_URL": "https://openapi.liblibai.cloud",
+        "VIDEOMCP_DOWNLOAD_DIR": "D:/Downloads/VideoMCP"
+      },
+      "cwd": "D:/game/TubeScanner/VideoMCP"
+    }
+  }
+}
