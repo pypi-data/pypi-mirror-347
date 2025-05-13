@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: Umpire
+Version: 0.8.2
+Summary: Generic dependency resolver.
+Home-page: https://www.signiant.com
+Author: Signiant SRE
+Author-email: sre@signiant.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: MaestroOps>=0.9
+Requires-Dist: tqdm>=4.64.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
