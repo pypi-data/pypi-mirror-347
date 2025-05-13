@@ -1,0 +1,210 @@
+
+
+Starting PSSFSS 1.13.1 analysis on 2025-05-12 at 19:33:13.253
+Julia Version 1.11.5
+Commit 760b2e5b73 (2025-04-14 06:53 UTC)
+Build Info:
+  Official https://julialang.org/ release
+Platform Info:
+  OS: Windows (x86_64-w64-mingw32)
+  CPU: 28 × Intel(R) Core(TM) i7-14700
+  WORD_SIZE: 64
+  LLVM: libLLVM-16.0.6 (ORCJIT, alderlake)
+Threads: 28 default, 0 interactive, 14 GC (on 28 virtual cores)
+  BLAS: LBTConfig([ILP64] libopenblas64_.dll)
+
+
+
+Dielectric layer information... 
+
+ Layer  Width  units  epsr   tandel   mur  mtandel modes  beta1x  beta1y  beta2x  beta2y
+ ----- ------------- ------- ------ ------- ------ ----- ------- ------- ------- -------
+     1    0.0000  mm    1.00 0.0000    1.00 0.0000     2   785.4    -0.0    -0.0   785.4
+     2    3.0000  mm    2.20 0.0009    1.00 0.0000    18   785.4    -0.0    -0.0   785.4
+ ==================  Sheet   1  ========================   785.4    -0.0    -0.0   785.4
+     3    3.0000  mm    2.20 0.0009    1.00 0.0000    18   785.4    -0.0    -0.0   785.4
+     4   -6.0000  mm    1.00 0.0000    1.00 0.0000     2   785.4    -0.0    -0.0   785.4
+
+
+
+PSS/FSS sheet information...
+
+Sheet  Loc         Style      Rot  J/M Faces Edges Nodes Unknowns  NUFP
+-----  ---  ---------------- ----- --- ----- ----- ----- -------- ------
+   1     2          polyring   0.0  J   1896  3032  1136    2656  348268
+
+
+
+Beginning (θ = 0.0, ϕ = 0.0)
+  10.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0699 seconds to compute 144 × 144 electric modal tables
+      0.19 seconds for spatial face integrals
+      0.0066 seconds for spectral face integrals
+      0.0752 seconds to fill 2656 × 2656 matrix entries
+      0.35 seconds total matrix fill time for sheet 1
+      0.154 seconds to factor matrix for sheet 1
+      0.0 seconds to extract 1296 GSM entries
+    0.003 seconds for cascading at 10.0 GHz
+  0.645 seconds total at 10.0 GHz
+  12.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0166 seconds to compute 144 × 144 electric modal tables
+      0.0072 seconds for spectral face integrals
+      0.0763 seconds to fill 2656 × 2656 matrix entries
+      0.107 seconds total matrix fill time for sheet 1
+      0.155 seconds to factor matrix for sheet 1
+      0.003 seconds to extract 1296 GSM entries
+    0.014 seconds for cascading at 12.0 GHz
+  0.411 seconds total at 12.0 GHz
+  14.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0169 seconds to compute 150 × 150 electric modal tables
+      0.0075 seconds for spectral face integrals
+      0.0738 seconds to fill 2656 × 2656 matrix entries
+      0.113 seconds total matrix fill time for sheet 1
+      0.163 seconds to factor matrix for sheet 1
+      0.002 seconds to extract 1296 GSM entries
+    0.015 seconds for cascading at 14.0 GHz
+  0.412 seconds total at 14.0 GHz
+Beginning (θ = 10.0, ϕ = 0.0)
+  10.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0146 seconds to compute 144 × 144 electric modal tables
+      0.277 seconds for spatial face integrals
+      0.0081 seconds for spectral face integrals
+      0.0738 seconds to fill 2656 × 2656 matrix entries
+      0.392 seconds total matrix fill time for sheet 1
+      0.166 seconds to factor matrix for sheet 1
+      0.0 seconds to extract 1296 GSM entries
+    0.007 seconds for cascading at 10.0 GHz
+  0.693 seconds total at 10.0 GHz
+  12.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0133 seconds to compute 144 × 144 electric modal tables
+      0.283 seconds for spatial face integrals
+      0.0079 seconds for spectral face integrals
+      0.0765 seconds to fill 2656 × 2656 matrix entries
+      0.383 seconds total matrix fill time for sheet 1
+      0.16 seconds to factor matrix for sheet 1
+      0.0 seconds to extract 1296 GSM entries
+    0.011 seconds for cascading at 12.0 GHz
+  0.678 seconds total at 12.0 GHz
+  14.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0187 seconds to compute 150 × 150 electric modal tables
+      0.262 seconds for spatial face integrals
+      0.0089 seconds for spectral face integrals
+      0.0736 seconds to fill 2656 × 2656 matrix entries
+      0.372 seconds total matrix fill time for sheet 1
+      0.158 seconds to factor matrix for sheet 1
+      0.0 seconds to extract 1296 GSM entries
+    0.0 seconds for cascading at 14.0 GHz
+  0.657 seconds total at 14.0 GHz
+Beginning (θ = 20.0, ϕ = 0.0)
+  10.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0157 seconds to compute 144 × 144 electric modal tables
+      0.248 seconds for spatial face integrals
+      0.008 seconds for spectral face integrals
+      0.0724 seconds to fill 2656 × 2656 matrix entries
+      0.359 seconds total matrix fill time for sheet 1
+      0.157 seconds to factor matrix for sheet 1
+      0.032 seconds to extract 1296 GSM entries
+    0.016 seconds for cascading at 10.0 GHz
+  0.655 seconds total at 10.0 GHz
+  12.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0183 seconds to compute 144 × 144 electric modal tables
+      0.269 seconds for spatial face integrals
+      0.008 seconds for spectral face integrals
+      0.0753 seconds to fill 2656 × 2656 matrix entries
+      0.397 seconds total matrix fill time for sheet 1
+      0.152 seconds to factor matrix for sheet 1
+      0.0 seconds to extract 1296 GSM entries
+    0.016 seconds for cascading at 12.0 GHz
+  0.692 seconds total at 12.0 GHz
+  14.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0147 seconds to compute 150 × 150 electric modal tables
+      0.278 seconds for spatial face integrals
+      0.0088 seconds for spectral face integrals
+      0.0744 seconds to fill 2656 × 2656 matrix entries
+      0.406 seconds total matrix fill time for sheet 1
+      0.158 seconds to factor matrix for sheet 1
+      0.0 seconds to extract 1296 GSM entries
+    0.016 seconds for cascading at 14.0 GHz
+  0.706 seconds total at 14.0 GHz
+Beginning (θ = 30.0, ϕ = 0.0)
+  10.0 GHz
+    Beginning matrix fill for sheet 1
+      0.017 seconds to compute 144 × 144 electric modal tables
+      0.297 seconds for spatial face integrals
+      0.0083 seconds for spectral face integrals
+      0.0749 seconds to fill 2656 × 2656 matrix entries
+      0.424 seconds total matrix fill time for sheet 1
+      0.158 seconds to factor matrix for sheet 1
+      0.002 seconds to extract 1296 GSM entries
+    0.016 seconds for cascading at 10.0 GHz
+  0.72 seconds total at 10.0 GHz
+  12.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0149 seconds to compute 144 × 144 electric modal tables
+      0.299 seconds for spatial face integrals
+      0.0081 seconds for spectral face integrals
+      0.0756 seconds to fill 2656 × 2656 matrix entries
+      0.401 seconds total matrix fill time for sheet 1
+      0.16 seconds to factor matrix for sheet 1
+      0.0 seconds to extract 1296 GSM entries
+    0.016 seconds for cascading at 12.0 GHz
+  0.704 seconds total at 12.0 GHz
+  14.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0151 seconds to compute 150 × 150 electric modal tables
+      0.296 seconds for spatial face integrals
+      0.0083 seconds for spectral face integrals
+      0.0731 seconds to fill 2656 × 2656 matrix entries
+      0.398 seconds total matrix fill time for sheet 1
+      0.15 seconds to factor matrix for sheet 1
+      0.0 seconds to extract 1296 GSM entries
+    0.016 seconds for cascading at 14.0 GHz
+  0.691 seconds total at 14.0 GHz
+Beginning (θ = 40.0, ϕ = 0.0)
+  10.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0166 seconds to compute 144 × 144 electric modal tables
+      0.279 seconds for spatial face integrals
+      0.0083 seconds for spectral face integrals
+      0.0739 seconds to fill 2656 × 2656 matrix entries
+      0.401 seconds total matrix fill time for sheet 1
+      0.157 seconds to factor matrix for sheet 1
+      0.0 seconds to extract 1296 GSM entries
+    0.016 seconds for cascading at 10.0 GHz
+  0.697 seconds total at 10.0 GHz
+  12.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0153 seconds to compute 144 × 144 electric modal tables
+      0.299 seconds for spatial face integrals
+      0.008 seconds for spectral face integrals
+      0.0738 seconds to fill 2656 × 2656 matrix entries
+      0.392 seconds total matrix fill time for sheet 1
+      0.166 seconds to factor matrix for sheet 1
+      0.005 seconds to extract 1296 GSM entries
+    0.016 seconds for cascading at 12.0 GHz
+  0.686 seconds total at 12.0 GHz
+  14.0 GHz
+    Beginning matrix fill for sheet 1
+      0.0171 seconds to compute 150 × 150 electric modal tables
+      0.284 seconds for spatial face integrals
+      0.0093 seconds for spectral face integrals
+      0.0749 seconds to fill 2656 × 2656 matrix entries
+      0.396 seconds total matrix fill time for sheet 1
+      0.156 seconds to factor matrix for sheet 1
+      0.016 seconds to extract 1296 GSM entries
+    0.007 seconds for cascading at 14.0 GHz
+  0.699 seconds total at 14.0 GHz
+
+
+ PSSFSS analysis exiting on 2025-05-12 at 19:33:24.997 (11.7 seconds elapsed time)
+
+
