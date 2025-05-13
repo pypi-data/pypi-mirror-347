@@ -1,0 +1,10 @@
+classyclick/__init__.py,sha256=WOkj7SGidulFS1cuyfiVr0BSjAE_beO14E1BFH-_mNk,261
+classyclick/__version__.py,sha256=H9yFwBhTtinLnmponr0VqUcw18ML4sxdjcDtir3v8Vc,406
+classyclick/command.py,sha256=hoMAPqAxVGTjhU9Ih2dAYZ6LKRV4wpdNi0XGFNn7NZ4,2267
+classyclick/fields.py,sha256=awtebAt3peOTAq5YIeY9MA-Vc42GEYLvefJYRdGt41o,4899
+classyclick/utils.py,sha256=TGI5eDa4q7wj43rMCfaPSJVjhIIHzLMOOwXZVN3tjXo,354
+classyclick-0.4.0.dist-info/LICENSE,sha256=VhFKvmhFGR5Zd6R5B2Nnq2qISn_ZpvhVwZHt_0MllMA,1067
+classyclick-0.4.0.dist-info/METADATA,sha256=tQ_-Y12JV0xz-p0dLANE1O6i2CsyMYVAdC3WBTM6cHA,11178
+classyclick-0.4.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+classyclick-0.4.0.dist-info/top_level.txt,sha256=3qP2i4HsRgelBczfLZj6eiEY7vXyY08I1rZQnwloP7M,12
+classyclick-0.4.0.dist-info/RECORD,,
