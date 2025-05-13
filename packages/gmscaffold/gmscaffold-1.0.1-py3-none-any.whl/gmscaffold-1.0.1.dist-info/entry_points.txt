@@ -1,0 +1,3 @@
+[console_scripts]
+gm=gmscaffold.cmdline:execute
+
