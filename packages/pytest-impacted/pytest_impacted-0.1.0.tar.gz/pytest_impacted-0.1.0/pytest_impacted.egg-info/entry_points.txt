@@ -1,0 +1,2 @@
+[pytest11]
+impacted = pytest_impacted.plugin
