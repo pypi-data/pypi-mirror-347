@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "acd_unique_package"
+version = "0.3.3"
+description = "My unique package"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "ACD", email = "test@test.com"}
+]
+maintainers = [
+    { name = "ACD", email = "test@test.com" }
+]
+license = { file = "LICENSE.txt" }
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "License :: OSI Approved :: BSD License",
+    "Intended Audience :: Developers",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: MacOS :: MacOS X",
+]
+dependencies = [
+    "colorama~=0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "twine",
+    "build"
+]
+
+[project.urls]
+Homepage = "https://github.com/xxx/python-packaging"
+Documentation = "https://github.com/xxx/python-packaging/README.md"
+
+[project.scripts]
+acd_unique_package = "acd_unique_package.__main__:main"

@@ -1,0 +1,4 @@
+include README.md
+include LICENSE.txt
+include pyproject.toml
+include acd_unique_package/names.txt
