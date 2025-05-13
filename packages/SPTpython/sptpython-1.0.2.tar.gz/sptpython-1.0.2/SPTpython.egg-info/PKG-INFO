@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: SPTpython
+Version: 1.0.2
+Summary: A Python package for processing and analyzing single-particle tracking (SPT) data
+Author: Christopher Rademacher
+Author-email: Christopher Rademacher <christopherrademacher2026@u.northwestern.edu>
+License: MIT
+Requires-Python: <=3.9.17
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy==1.20.0
+Requires-Dist: pandas==1.0.5
+Requires-Dist: pims==0.5
+Requires-Dist: tifffile==2022.5.4
+Requires-Dist: matplotlib==3.7.5
+Requires-Dist: dominate==2.9.1
+Requires-Dist: scipy==1.5.2
+Requires-Dist: trackpy==0.4.2
+Requires-Dist: psutil==5.7.2
+Requires-Dist: Pillow==9.1.1
+Requires-Dist: opencv-python
+Requires-Dist: Cython==3.0.11
+Requires-Dist: pyperclip==1.8.2
+Requires-Dist: scikit-image==0.19.2
+Requires-Dist: pywin32
+Requires-Dist: dpath
+Requires-Dist: platformdirs
+
+# SPTpython
+
+This package enables simple processing for single-particle tracking data. Currently a command-line interface is supported for processing results, but a GUI is planned to be added later. For details on what commands are supported by the CLI, refer to CLI.py.
+
+This is intended to be used when taking large amounts of similar data in the form of .tif files. Functionality allows for easy comparison between datasets, using SPTpython.compare
+
+## Installation
+This project was built on Python 3.8.3, so install it [here](https://www.python.org/downloads/release/python-383/). I am not planning to add support for more recent versions.
+
+Install python as normal, then make sure your pip and setuptools are upgraded:
+
+`python -m pip install --upgrade pip ` 
+
+`pip install --upgrade setuptools`
+
+`pip install SPTpython`
+
+(last updated v1.0.1)

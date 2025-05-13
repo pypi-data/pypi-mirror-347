@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=75.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SPTpython"
+version = "1.0.2"
+description = "A Python package for processing and analyzing single-particle tracking (SPT) data"
+authors = [{ name="Christopher Rademacher", email="christopherrademacher2026@u.northwestern.edu" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = "==3.8.*"
+
+dependencies = [
+    "numpy==1.20.0",
+    "pandas==1.0.5",
+    "pims==0.5",
+    "tifffile==2022.5.4",
+    "matplotlib==3.7.5",
+    "dominate==2.9.1",
+    "scipy==1.5.2",
+    "trackpy==0.4.2",
+    "psutil==5.7.2",
+    "Pillow==9.1.1",
+    "opencv-python",
+    "Cython==3.0.11",
+    "pyperclip==1.8.2",
+    "scikit-image==0.19.2",
+
+    "pywin32",
+    "dpath",
+    "platformdirs",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.scripts]
+SPTpython-cli = "SPTpython.scripts.CLIdriver:main"
