@@ -1,0 +1,5 @@
+bits/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+bits/auth/__init__.py,sha256=wxPcu5PQCFTz9LJ21Gjinz4ANa2mFKJOq28Dh6ymMyM,38574
+bits_auth-3.0.0.dist-info/METADATA,sha256=MmujmB0AZNpOf5t0_DG_10he-im7a8rUsc-iMevU5_8,1005
+bits_auth-3.0.0.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+bits_auth-3.0.0.dist-info/RECORD,,
