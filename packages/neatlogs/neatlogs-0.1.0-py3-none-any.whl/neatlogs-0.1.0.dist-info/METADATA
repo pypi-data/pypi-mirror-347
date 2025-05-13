@@ -1,0 +1,79 @@
+Metadata-Version: 2.4
+Name: neatlogs
+Version: 0.1.0
+Summary: A Python package for extracting and managing logs to build a collaborative workspace for agents
+Project-URL: Homepage, https://github.com/yourusername/neatlogs
+Project-URL: Repository, https://github.com/yourusername/neatlogs.git
+Project-URL: Issues, https://github.com/yourusername/neatlogs/issues
+Author-email: Shubham Kanyal <your.email@example.com>
+License: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: aiohappyeyeballs>=2.4.6
+Requires-Dist: aiohttp>=3.11.12
+Requires-Dist: litellm>=1.59.8
+Requires-Dist: python-dotenv>=1.0.1
+Description-Content-Type: text/markdown
+
+# NeatLogs
+
+This repository contains Python scripts that work as the 'NeatLogs' module to extract logs to build a collaborative workspace for agents. 
+
+
+## Installation
+
+```bash
+cd neatlogs
+pip install -r requirements.txt
+```
+
+## Quick Start
+
+```python
+import NeatLogs as nl
+
+# Initialize logging
+nl.init()
+
+# That's it! Your LLM conversations will now be logged to demo.txt
+```
+
+## Example Output
+(If used directly with litellm)
+```
+📝 Conversation Log
+==================================================
+
+🕒 2025-02-11 15:30:45
+🤖 Model: gpt-4
+--------------------------------------------------
+👤 User:
+What's the weather like today?
+
+🤖 Assistant:
+I don't have access to real-time weather data, but I can help you find weather information for your location.
+==================================================
+```
+
+## Project Structure
+(Not updated completely)
+```
+neatlogs/
+├── __init__.py
+├── llm_logger.py     #Core logging functionality
+├── log_parser.py     #Log parsing and formatting
+├── requirements.txt
+└── README.md
+```
+
+
+
