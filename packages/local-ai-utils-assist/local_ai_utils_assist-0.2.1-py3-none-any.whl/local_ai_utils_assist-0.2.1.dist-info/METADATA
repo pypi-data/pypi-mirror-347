@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: local-ai-utils-assist
+Version: 0.2.1
+License-File: LICENSE
+Requires-Dist: typing_extensions
+Requires-Dist: openai
+Requires-Dist: fire
+Requires-Dist: pyyaml
+Requires-Dist: mcp-agent
+Requires-Dist: local-ai-utils-core
+Dynamic: license-file
+Dynamic: requires-dist
