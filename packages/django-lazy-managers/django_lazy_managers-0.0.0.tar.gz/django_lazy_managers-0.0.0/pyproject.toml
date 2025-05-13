@@ -1,0 +1,59 @@
+[project]
+name = "django-lazy-managers"
+version = "0.0.0"
+description = "Lazy model managers for Django"
+authors = [
+    { name = "Matti Lamppu", email = "lamppu.matti.akseli@gmail.com" },
+]
+license = "MIT"
+readme = "README.md"
+keywords = [
+    "django",
+    "model",
+    "manager",
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    # "Development Status :: 2 - Pre-Alpha",
+    # "Development Status :: 3 - Alpha",
+    # "Development Status :: 4 - Beta",
+    # "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+]
+requires-python = ">=3.11,<4"
+dynamic = [
+    "dependencies",
+]
+
+[project.urls]
+"Homepage" = "https://mrthearman.github.io/django-lazy-managers"
+"Repository" = "https://github.com/MrThearMan/django-lazy-managers"
+"Bug Tracker" = "https://github.com/MrThearMan/django-lazy-managers/issues"
+"Documentation" = "https://mrthearman.github.io/django-lazy-managers"
+
+[tool.poetry]
+requires-poetry = ">=2.0.0"
+packages = [
+    { include = "lazy_managers" },
+]
+
+[tool.poetry.dependencies]
+Django = ">=4.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
