@@ -1,0 +1,15 @@
+tardis/__init__.py,sha256=1l59mT49s5US2hJ5mUwa7qiE1p8bT8J1P9zohw_4zpY,3791
+tardis/bibtex.py,sha256=pW1fcbxjxGGNAzp3mZCGaOdO_1BrxiPh3i83ilcdThM,4513
+tardis/constants.py,sha256=-L-FH4-q1di4nlYxzaIjY5UPqqVWAxboDMaFnRzfOBc,1482
+tardis/icon.png,sha256=0GS9-afhGyt_G5nltN3wlhVtaNIbOPyHax3A7bXyBjI,356769
+tardis/protocols.conf,sha256=I48SCJhH3024Yy12zxwjoZ1uKQtosypdU8gOVJODQ3k,270
+tardis/protocols/__init__.py,sha256=B0oaooQkPNba1g41fPoBJuh58epP0uHAZMkvrMA4xTY,63
+tardis/protocols/protocol_tardis_seg.py,sha256=wgj0hAQ7KGByk_38JmCH8Co6YnMWZF12oZ9JbiGYYd0,19791
+tardis/tests/__init__.py,sha256=Q9s10qiIwgCWIocSsiTCHRB6dMfySQmX__3Odt3J5iQ,187
+tardis/tests/tests_tardis.py,sha256=aTenzZf-PR8PANTE2oOxMoCoO3c9NLIxXT4ANGf9w38,9590
+scipion_em_tardis-3.0.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+scipion_em_tardis-3.0.0.dist-info/METADATA,sha256=RSoMJjMrnVaFNZ4MWNO-fTUpRSW1GWSQ_KCuB56Yjvg,4239
+scipion_em_tardis-3.0.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+scipion_em_tardis-3.0.0.dist-info/entry_points.txt,sha256=GoIBH4ObqJF9plGGPIGgVMNA_p11fZy-0ohivaseCoI,36
+scipion_em_tardis-3.0.0.dist-info/top_level.txt,sha256=8ZAN3grqQ7rj0VqSqSZkQYBVl-_XUcnTICqAF-4zCTA,7
+scipion_em_tardis-3.0.0.dist-info/RECORD,,
