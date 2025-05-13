@@ -1,0 +1,7 @@
+build>=1.2.2.post1
+lark>=1.2.2
+lark-oapi>=1.4.15
+mcp[cli]>=1.6.0
+requests>=2.32.3
+setuptools>=45
+twine>=6.1.0

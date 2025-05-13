@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+feishu_notify_mcp/server.py
+feishu_notify_mcp.egg-info/PKG-INFO
+feishu_notify_mcp.egg-info/SOURCES.txt
+feishu_notify_mcp.egg-info/dependency_links.txt
+feishu_notify_mcp.egg-info/entry_points.txt
+feishu_notify_mcp.egg-info/requires.txt
+feishu_notify_mcp.egg-info/top_level.txt
