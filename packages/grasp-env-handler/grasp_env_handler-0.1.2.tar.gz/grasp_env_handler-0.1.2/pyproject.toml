@@ -1,0 +1,17 @@
+[project]
+name = "grasp-env-handler"
+version = "0.1.2"
+description = "A utility for managing .env files using Google Cloud Secret Manager"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "gitpython>=3.1.44",
+    "google-cloud-secret-manager>=2.23.3",
+    "python-dotenv>=1.1.0",
+    "rich>=14.0.0",
+    "typer>=0.15.3",
+    "click==8.1.7",
+]
+
+[project.scripts]
+grasp = "grasp_env_handler.cli:app"
