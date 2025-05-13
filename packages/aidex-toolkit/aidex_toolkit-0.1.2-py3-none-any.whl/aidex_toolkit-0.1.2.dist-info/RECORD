@@ -1,0 +1,16 @@
+aidex_toolkit/__init__.py,sha256=K5SiDdEGYMpdqXThrqwTqECJJBOQNTQDrnpc2K5mzKs,21
+aidex_toolkit/__main__.py,sha256=PSSaFJ9BuICFlsPi5OVZ5VZlmVVv8vl7Xl6L9AHx3ns,294
+aidex_toolkit/project1/__init__.py,sha256=wfdWGkk5AVFycaiwjU5J_X4yKlK5Q9DnRSw5Av6AfOg,119
+aidex_toolkit/project1/advanced_linear_regression.py,sha256=3rOdq2Gsd6w9shMFPuT7nR8y5zaiqyjaKaYxdxc3Cg0,1340
+aidex_toolkit/project1/simple_linear.py,sha256=n4Kd_ItmGizwiWewCBfqGTka7v4RtDOmqzrYXJRF7DU,547
+aidex_toolkit/project2/__init__.py,sha256=Gv-n8EQnLzXAgS2iI9LHQALpdBQfCWZDCIir7XKh5p8,91
+aidex_toolkit/project2/xor_neural_network_basic.py,sha256=82qmBOAfxufE5lTw_ha3xSYgZh7Yv6u9TODbw5gug-0,2235
+aidex_toolkit/project3/__init__.py,sha256=6p8mrQG70AsXExWv8DplzTXR51LWK6yBVO1msra25oU,115
+aidex_toolkit/project3/binary_logistic_trainer.py,sha256=GU5GpKhHXLAIKmOltK9i_cs6SkAgAfo9emwwrJR2VgY,1098
+aidex_toolkit/project3/sample_data_loader.py,sha256=PmsGTonnOe9WxmWvk4UXfh1r09wjgd0qTFvqv939PMU,552
+aidex_toolkit-0.1.2.dist-info/LICENSE,sha256=33vIBJJ7y1AhHtvgQvTlWVfKTZBuB3TfMDj3McFYps8,1093
+aidex_toolkit-0.1.2.dist-info/METADATA,sha256=On85l6PNNYFXvifAPoLVNP710ED2ak_bc6-spXSGQ1Y,684
+aidex_toolkit-0.1.2.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+aidex_toolkit-0.1.2.dist-info/entry_points.txt,sha256=yQa2vwRWH_ScLRFPji7Sy6PXXiBaFjl2FsxZPmAPdVg,63
+aidex_toolkit-0.1.2.dist-info/top_level.txt,sha256=jP5vLWrVTyzlTdHFjU8cR6NymxVtjlDT3KBw533BLho,14
+aidex_toolkit-0.1.2.dist-info/RECORD,,
