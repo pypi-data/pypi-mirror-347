@@ -1,0 +1,13 @@
+girder_sample_tracker/__init__.py,sha256=jhZyg1FkX7ORucGyxWFcWK3YjJMGehu8SZdqWamyZY8,744
+girder_sample_tracker/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+girder_sample_tracker/models/sample.py,sha256=jhOSUbKXWwFSoMHpB2Xvz_bSy_IEFGuep8uvjvHp-BM,2845
+girder_sample_tracker/rest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+girder_sample_tracker/rest/sample.py,sha256=SAsWrRymRNInuwdkKTZYLv5KRIUfeW5L86d-d7WlEkc,13419
+girder_sample_tracker/web_client/dist/girder-plugin-sample-tracker.umd.cjs,sha256=PkXguMLI7MecpyxOvifOkLrxVrM3_Cm8F4IKely4F9o,245670
+girder_sample_tracker/web_client/dist/style.css,sha256=2toEUNjH5czbRuJOa0bQyl1QrkMaHTTSk46kBuaMNjo,2859
+girder_sample_tracker-2.0.3.dist-info/licenses/LICENSE,sha256=8A_A7iyf7ds0J7IHfLDkmST50OuRUbKiaoaJR8F55hM,1532
+girder_sample_tracker-2.0.3.dist-info/METADATA,sha256=wzg9cNVCF0KkGS4IbvSjP6jx4f8oFl0DMAhazHW3Qb0,988
+girder_sample_tracker-2.0.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+girder_sample_tracker-2.0.3.dist-info/entry_points.txt,sha256=IHdKYvhuQnNBriIzopu90OZ2PkglKsiLOyYxqW0s7uE,75
+girder_sample_tracker-2.0.3.dist-info/top_level.txt,sha256=qkIBthxvFbZbHi0G7_-Mj1DpTVxrCB416rOBKVztC14,22
+girder_sample_tracker-2.0.3.dist-info/RECORD,,
