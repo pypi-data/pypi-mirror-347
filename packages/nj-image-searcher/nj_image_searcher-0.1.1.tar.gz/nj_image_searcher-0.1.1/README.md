@@ -1,0 +1,170 @@
+# Image Finder Documentation
+
+## Overview
+
+Image Finder is a Python package that allows you to search and download images from the web based on search queries or topics. It provides both a command-line interface and a Python API for easy integration into your projects.
+
+## Installation
+
+```bash
+pip install image-finder
+```
+
+## Command-Line Usage
+
+After installation, you can use the `image-finder` command from your terminal:
+
+### Basic Usage
+
+```bash
+image-finder "search query"
+```
+
+This will search for images related to your query and download up to 10 images to a folder named `downloaded_images` in your current directory.
+
+### Options
+
+| Option | Short | Description | Default |
+|--------|-------|-------------|---------|
+| `--output` | `-o` | Directory where images will be saved | `downloaded_images` |
+| `--max` | `-m` | Maximum number of images to download | `10` |
+
+### Examples
+
+Download up to 5 images of mountains:
+```bash
+image-finder "mountains" --max 5
+```
+
+Download images of cats to a specific folder:
+```bash
+image-finder "cats" --output cat_images
+```
+
+## Python API
+
+You can also use Image Finder in your Python code:
+
+### Basic Usage
+
+```python
+from image_finder import ImageFinder
+
+# Create an instance
+finder = ImageFinder()
+
+# Search and download images
+downloaded_files = finder.search_and_download("sunset beach")
+```
+
+### Configuring the Finder
+
+```python
+from image_finder import ImageFinder
+
+# Customize output directory and max images
+finder = ImageFinder(
+    output_dir="my_images",  # Custom directory
+    max_images=15            # Download up to 15 images
+)
+```
+
+### Just Searching Without Downloading
+
+```python
+from image_finder import ImageFinder
+
+finder = ImageFinder()
+
+# Only search for image URLs
+image_urls = finder.search_images("vintage cars")
+print(f"Found {len(image_urls)} image URLs")
+```
+
+### Downloading a Single Image
+
+```python
+from image_finder import ImageFinder
+
+finder = ImageFinder(output_dir="single_image")
+
+# Download a specific image
+finder.download_image(
+    url="https://example.com/image.jpg",
+    index=0,
+    query="example"
+)
+```
+
+## API Reference
+
+### `ImageFinder` Class
+
+```python
+ImageFinder(output_dir="downloaded_images", max_images=10)
+```
+
+#### Parameters:
+- `output_dir` (str): Directory where images will be saved
+- `max_images` (int): Maximum number of images to download
+
+#### Methods:
+
+##### `search_images(query)`
+Searches for images based on the query without downloading them.
+
+Parameters:
+- `query` (str): The search query/topic for images
+
+Returns:
+- `list`: List of image URLs found
+
+##### `download_image(url, index, query)`
+Downloads a single image from the given URL.
+
+Parameters:
+- `url` (str): URL of the image to download
+- `index` (int): Index to use in the filename
+- `query` (str): Original search query for filename creation
+
+Returns:
+- `str`: Path to the downloaded file, or `None` if download failed
+
+##### `search_and_download(query)`
+Searches for images and downloads them based on the query.
+
+Parameters:
+- `query` (str): The search query/topic for images
+
+Returns:
+- `list`: List of paths to the downloaded files
+
+## Notes on Usage
+
+- The package uses Bing image search to find images
+- Downloaded images are saved with filenames based on the search query
+- The package uses multiple threads to download images concurrently
+- Small delays are added between downloads to avoid being blocked by servers
+
+## Common Issues and Solutions
+
+### No Images Found
+
+If no images are found for your query, try:
+- Using more generic search terms
+- Checking your internet connection
+- Verifying that your query doesn't have special characters
+
+### Download Failures
+
+If images fail to download:
+- Check your internet connection
+- Verify you have write permissions to the output directory
+- Try reducing the number of concurrent downloads with a smaller `max_images` value
+
+## Limitations
+
+- The package can only download images that are publicly accessible
+- It may not work with all image formats
+- Some websites may block automated downloads
+- Search results depend on Bing's search algorithm and may change over time

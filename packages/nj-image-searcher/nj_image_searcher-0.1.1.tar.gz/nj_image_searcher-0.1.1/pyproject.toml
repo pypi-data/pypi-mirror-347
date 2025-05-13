@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "nj-image-searcher"
+version = "0.1.1"
+description = ""
+authors = ["joxa2008 <javohir.akhmad@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nj_image_searcher"}]
+license = "MIT"
+repository = "https://github.com/joxa9889/image-finder"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+twine = "^6.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[tool.poetry.scripts]
+image-finder = "nj_image_searcher.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
