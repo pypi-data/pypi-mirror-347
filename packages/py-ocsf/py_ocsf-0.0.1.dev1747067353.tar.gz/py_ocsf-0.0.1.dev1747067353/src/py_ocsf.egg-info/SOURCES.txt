@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/py_ocsf/__init__.py
+src/py_ocsf/__main__.py
+src/py_ocsf/py.typed
+src/py_ocsf.egg-info/PKG-INFO
+src/py_ocsf.egg-info/SOURCES.txt
+src/py_ocsf.egg-info/dependency_links.txt
+src/py_ocsf.egg-info/entry_points.txt
+src/py_ocsf.egg-info/requires.txt
+src/py_ocsf.egg-info/top_level.txt
+tests/test_main.py
