@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: bmtrain
+Version: 1.0.1
+Summary: A toolkit for training big models
+Author: Guoyang Zeng
+Author-email: qbjooo@qq.com
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: nvidia-nccl-cu11>=2.14.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
