@@ -1,0 +1,8 @@
+pyproject.toml
+requirements.txt
+src/oracpod-core/__init__.py
+src/orcapod_python.egg-info/PKG-INFO
+src/orcapod_python.egg-info/SOURCES.txt
+src/orcapod_python.egg-info/dependency_links.txt
+src/orcapod_python.egg-info/requires.txt
+src/orcapod_python.egg-info/top_level.txt
