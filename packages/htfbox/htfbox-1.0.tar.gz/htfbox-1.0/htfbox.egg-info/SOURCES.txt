@@ -1,0 +1,11 @@
+setup.py
+htfbox/__init__.py
+htfbox/dirs.py
+htfbox/number.py
+htfbox/string.py
+htfbox/term.py
+htfbox/toys.py
+htfbox.egg-info/PKG-INFO
+htfbox.egg-info/SOURCES.txt
+htfbox.egg-info/dependency_links.txt
+htfbox.egg-info/top_level.txt
