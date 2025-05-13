@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pypi-readme.rst
+pyproject.toml
+seqreport/SeqCollection.py
+seqreport/__init__.py
+seqreport/reports.py
+seqreport.egg-info/PKG-INFO
+seqreport.egg-info/SOURCES.txt
+seqreport.egg-info/dependency_links.txt
+seqreport.egg-info/requires.txt
+seqreport.egg-info/top_level.txt
+seqreport/report_assets/report_style.css
+seqreport/report_assets/seq_report.pug
+tests/test_SeqCollection.py
+tests/test_reports.py
