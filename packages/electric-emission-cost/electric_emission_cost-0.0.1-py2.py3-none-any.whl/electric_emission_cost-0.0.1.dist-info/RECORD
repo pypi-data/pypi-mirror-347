@@ -1,0 +1,11 @@
+electric_emission_cost/__init__.py,sha256=ApJ22w82pShWdFT5fxw2TFJol85hL9rGlxpYDH_0xmk,297
+electric_emission_cost/costs.py,sha256=kbmwmgH-xzIkSExCQ0gpNgP31Fsp4nTHVSR9-pKADj8,34824
+electric_emission_cost/emissions.py,sha256=jzXjil6hMIBadXLyigor0UhVtkXnJ3qgJ42t7OlPOPg,12632
+electric_emission_cost/units.py,sha256=kyrxipHCT-HEYKpqHdbhC7FOvuzEIF4NzgtC4vQSK0s,684
+electric_emission_cost/utils.py,sha256=7YlX3LdlCSczsos8H_G8h0EtnFPo3Y165KURZ4J2pyY,18231
+electric_emission_cost/data/emissions.csv,sha256=_0JWoR-viADF_k9P4IFOYB_pazoQovaWDtC7O-3Gl-k,4518
+electric_emission_cost-0.0.1.dist-info/licenses/LICENSE,sha256=oi3RXrjfvCo_xu-l1WjhBhs_CROk98IrDnX3jKR_Xxc,1063
+electric_emission_cost-0.0.1.dist-info/METADATA,sha256=wyis1fmjszyy5Cmh7jlmieGJfHtnb1vmxVbgifwqU5o,4785
+electric_emission_cost-0.0.1.dist-info/WHEEL,sha256=joeZ_q2kZqPjVkNy_YbjGrynLS6bxmBj74YkvIORXVI,109
+electric_emission_cost-0.0.1.dist-info/top_level.txt,sha256=4kom6ZogOdoljdUhGNlbRNlPJQV34YSDcJXvUz_Cp98,23
+electric_emission_cost-0.0.1.dist-info/RECORD,,
