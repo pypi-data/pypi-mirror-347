@@ -1,0 +1,2 @@
+[console_scripts]
+daisys-mcp = daisys_mcp.server:main
