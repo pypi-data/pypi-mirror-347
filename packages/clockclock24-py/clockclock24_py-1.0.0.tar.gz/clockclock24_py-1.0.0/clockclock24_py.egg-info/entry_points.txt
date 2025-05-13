@@ -1,0 +1,2 @@
+[console_scripts]
+clockclock24 = clockclock24_py.main:main
