@@ -1,0 +1,4 @@
+Django<6.0,>=3.2
+requests>=2.31
+beautifulsoup4>=4.13
+nh3>=0.2.21

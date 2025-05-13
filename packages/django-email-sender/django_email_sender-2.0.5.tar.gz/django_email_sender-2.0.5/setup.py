@@ -1,0 +1,48 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="django-email-sender",
+    version="2.0.5",
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[
+        "Django>=3.2,<6.0",
+        "requests>=2.31",
+        "beautifulsoup4>=4.13",
+        "nh3>=0.2.21",
+    ],
+    author="Egbie Uku",
+    author_email="egbieuku@hotmail.com",
+    description="A chainable Django email sender utility.",
+    long_description=open("README.md", encoding="utf-8").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/EgbieAndersonUku1/django-email-sender",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Framework :: Django",
+        "Framework :: Django :: 3.2",
+        "Framework :: Django :: 4.0",
+        "Framework :: Django :: 5.0",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
+    keywords=[
+        "django", 
+        "email", 
+        "email-sender", 
+        "html-email", 
+        "plain-text-email",
+        "email-utility", 
+        "rich-template",
+        "chaining", 
+        "logger", 
+        "logging", 
+        "database-integration", 
+        "email-templates", 
+        "django-email"
+    ],
+    python_requires='>=3.10, <3.13',
+)
