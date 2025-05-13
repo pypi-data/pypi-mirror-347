@@ -1,0 +1,8 @@
+text_preprocessor/__init__.py,sha256=AITfnJya12OZH4fCnh0ar5pWw7zMb1vA60laMCJP9dM,40
+text_preprocessor/preprocess.py,sha256=fwda7clLvxCN90leBOlb0ZXr1c_1gUQZgOLRIsZj5A0,962
+text_to-nlp/__init__.py,sha256=AITfnJya12OZH4fCnh0ar5pWw7zMb1vA60laMCJP9dM,40
+text_to-nlp/preprocess.py,sha256=IcATRY_TJ8u4vS96X6YnNPndR44EEYNL3ghbmW_f8G8,821
+text_to_nlp-0.1.3.dist-info/METADATA,sha256=b3jyKoqOdWzutXa8tM2_G-tUzfs4FE7IQqpPFMRypDU,1355
+text_to_nlp-0.1.3.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+text_to_nlp-0.1.3.dist-info/top_level.txt,sha256=ac_-KN2HHDOEy1v-mLN8rWcaFD2aLZBYWIGRaApAwKs,12
+text_to_nlp-0.1.3.dist-info/RECORD,,
