@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: Annchih
+Version: 0.1.0
+Summary: Утилита для извлечения ключевых слов и краткого резюме из текста
+Home-page: https://github.com/yourusername/Annchih
+Author: Твое Имя
+Author-email: you@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# Annchih
+
+рџ“љ РЈС‚РёР»РёС‚Р° РґР»СЏ РёР·РІР»РµС‡РµРЅРёСЏ РєР»СЋС‡РµРІС‹С… СЃР»РѕРІ Рё РєСЂР°С‚РєРѕРіРѕ СЂРµР·СЋРјРµ РёР· С‚РµРєСЃС‚Р°.
+
+## РЈСЃС‚Р°РЅРѕРІРєР°
+
