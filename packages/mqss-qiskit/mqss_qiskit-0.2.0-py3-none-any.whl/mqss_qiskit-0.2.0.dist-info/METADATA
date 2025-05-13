@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mqss-qiskit
+Version: 0.2.0
+Summary: MQSS adapter for Qiskit as an interface to MQP and HPCQC.
+Keywords: MQSS,quantum-computing,Qiskit
+Author-Email: mqss <mqss@munich-quantum-valley.de>
+License: Apache-2.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: <3.14,>=3.9
+Requires-Dist: qiskit>=0.45
+Requires-Dist: requests>=2.32.3
+Requires-Dist: python-decouple>=3.8
+Requires-Dist: qiskit-qasm3-import>=0.5.1
+Requires-Dist: mqss-client>=0.2.0
+Provides-Extra: docs
+Requires-Dist: mkdocs>=1.6.1; extra == "docs"
+Requires-Dist: mkdocs-material>=9.6.2; extra == "docs"
+Requires-Dist: mkdocstrings[python]>=0.26.1; extra == "docs"
+Requires-Dist: mkdocs-autorefs>=1.2.0; extra == "docs"
+Description-Content-Type: text/markdown
+
+# MQSS Qiskit Adapter
+
+[![Documentation](https://img.shields.io/badge/Documentation-Read%20the%20Docs-blue)](https://munich-quantum-software-stack.github.io/MQSS-Qiskit-Adapter/)\
+![PyPI - Version](https://img.shields.io/pypi/v/mqss-qiskit)\
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mqss-qiskit)\
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/:user/:repo/:workflow)\
+![GitHub License](https://img.shields.io/github/license/Munich-Quantum-Software-Stack/MQSS-Qiskit-Adapter)
