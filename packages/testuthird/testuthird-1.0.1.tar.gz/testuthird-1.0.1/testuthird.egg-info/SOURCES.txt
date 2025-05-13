@@ -1,0 +1,15 @@
+README.md
+setup.py
+testuthird/__init__.py
+testuthird/main.py
+testuthird.egg-info/PKG-INFO
+testuthird.egg-info/SOURCES.txt
+testuthird.egg-info/dependency_links.txt
+testuthird.egg-info/entry_points.txt
+testuthird.egg-info/requires.txt
+testuthird.egg-info/top_level.txt
+testuthird/__system__/imports.py
+testuthird/__system__/index.py
+testuthird/__system__/modules/jobs.py
+testuthird/__system__/sources/clight.json
+testuthird/__system__/sources/logo.ico
