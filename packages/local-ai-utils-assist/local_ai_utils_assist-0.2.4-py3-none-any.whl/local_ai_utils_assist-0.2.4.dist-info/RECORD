@@ -1,0 +1,11 @@
+assist/__init__.py,sha256=nVFXiZlwIk2A-67Nmj_OTSK_e-MIyJtZ62heNi3kAS0,28
+assist/cli.py,sha256=L8O5YZ4xOPWQsVOA1BRMtwRZlzX7HVXJx6MIEdSQixw,201
+assist/main.py,sha256=21zaeKZqJ8z3d4G0JNEFn9UtwgEcFrD9i8InWEqJRT0,5482
+assist/mcp_manager.py,sha256=O2BOGHlxWGQAAQqaWp55Cw9AdRWAej9ZD-2KgV4h6ac,3263
+assist/plugin.py,sha256=n1vlnww7t0phCcvJDfUaNEtMFxAPU-DLuVssGtzj4AU,2560
+local_ai_utils_assist-0.2.4.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+local_ai_utils_assist-0.2.4.dist-info/METADATA,sha256=N589c-cFnZ59FDPNW9HHw_LIwbirDU_Zb-DEJrrFeJg,3167
+local_ai_utils_assist-0.2.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+local_ai_utils_assist-0.2.4.dist-info/entry_points.txt,sha256=m-CrWOhkFRniN95cI7csrvFNFyz01KhXCSiMBmr4VrQ,43
+local_ai_utils_assist-0.2.4.dist-info/top_level.txt,sha256=kuDtzeQU2n41jEdHTXEJ65Mg1q4Vk82qWgne1PeT2zE,7
+local_ai_utils_assist-0.2.4.dist-info/RECORD,,
