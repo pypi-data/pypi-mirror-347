@@ -1,0 +1,9 @@
+cg_jupyter_mux/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cg_jupyter_mux/config.py,sha256=vBn-xHjWHWBH6G51WJeZj43QXW6BVVKNNdigpGbT3as,1217
+cg_jupyter_mux/kernel_manager.py,sha256=ng23BrNJtQDqgc_qYWXvtnviF_nHsRb4AjRcfWqqV_s,3104
+cg_jupyter_mux/main.py,sha256=vkwG0_J8yXMV06WXJ81NpDnTmuzpTChfIyFdLpw-xZc,8617
+cg_jupyter_mux/message_handler.py,sha256=BfqywnzErJO35L5HDJiYZF14TdgX6HZxTapu7hSfl_M,3863
+cg_jupyter_mux-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+cg_jupyter_mux-0.1.1.dist-info/METADATA,sha256=1mxThgwOuDOFVF4u9-z3b-7z0HdMl-GSaXx2fZoH5Iw,6355
+cg_jupyter_mux-0.1.1.dist-info/entry_points.txt,sha256=6pIYI6qopN50TC06DRS8Y-ea4knf-q1BgBMj8tR36eM,59
+cg_jupyter_mux-0.1.1.dist-info/RECORD,,
