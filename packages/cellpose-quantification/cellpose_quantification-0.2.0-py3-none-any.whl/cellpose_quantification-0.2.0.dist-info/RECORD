@@ -1,0 +1,11 @@
+cellpose_quantification/__init__.py,sha256=hJU2Vs2WWtHw-_Sro4644ZbROC-BsT0zx3IGWvuRw_Q,25
+cellpose_quantification/cli.py,sha256=DEmM4tpjw415DKbyomzgR5scM71Fvq-T_Qkzrwe5Qqo,2360
+cellpose_quantification/quantification.py,sha256=8aMp0hUaeXP5B3hl0AgMKDttCq1ZsV6-X6gISchxNeM,8054
+tests/test_cli.py,sha256=djx7k7Pc80zYXRwBy93jYLeM9Z_SmGPhZNMQdw0ZJtE,3605
+tests/test_integration.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_quantification.py,sha256=Bm8gIwCB-LycWZjpvUDr98Cg0KymyjNkjjNPC4W7-4Y,5133
+cellpose_quantification-0.2.0.dist-info/METADATA,sha256=eIrI3YVLx-4HXk1B-wUxKIDoYOSWu6_mHdljE_jKDLM,1320
+cellpose_quantification-0.2.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+cellpose_quantification-0.2.0.dist-info/entry_points.txt,sha256=f626Wro0SYv8KPJsnKx7D1osw7_w-j5m7dwQg1VUR1k,67
+cellpose_quantification-0.2.0.dist-info/top_level.txt,sha256=Cw0oY_qeoxBhkDRg2RaOhQT2ruA_2Wj3tNZ9PH5TUo4,30
+cellpose_quantification-0.2.0.dist-info/RECORD,,
