@@ -1,0 +1,11 @@
+gwalk/__init__.py,sha256=9YRjm1e_USgpHySlZv4sjBfAqqH6ScIz_7-JTo0dw6U,386
+gwalk/gapply.py,sha256=yiN6NkSq6hbMlXV4DmVSohK0sBTdTUkqTkbgIDVuSiM,5031
+gwalk/gcp.py,sha256=GNNPJltFftgtodMCwahcBYBVFg8nig45IBkJj8J9gHA,4850
+gwalk/gl.py,sha256=341be_15KpYEKdrhC85_0eZIJz_IPB1Q21T0CAjloPg,2062
+gwalk/gwalk.py,sha256=t6vKDw1lNky8ZeA-O1dFb_RUevIWKK3c3XidG6rDOx8,24496
+pygwalk-0.2.3.dist-info/licenses/LICENSE,sha256=7la95lb5i_MMCSaeNnOb8mSGl_TWdM04pf4vOd0Mkdk,1090
+pygwalk-0.2.3.dist-info/METADATA,sha256=1xD7TCkg66EAg7kIHLIInfWT7IAJqrXtrpX1Kp_xkWE,4837
+pygwalk-0.2.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+pygwalk-0.2.3.dist-info/entry_points.txt,sha256=qaOQEPqusXouFEXbPs5NrhtQRnVHMXVMJwNJE7vGp_o,110
+pygwalk-0.2.3.dist-info/top_level.txt,sha256=Iahd9MER3GUbTyf2KZ9-vUkPKYkFAnkKaxmZpQlTBko,6
+pygwalk-0.2.3.dist-info/RECORD,,
