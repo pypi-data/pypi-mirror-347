@@ -1,0 +1,12 @@
+advisor_core/__init__.py,sha256=P1shb-SYkAAEXDaQx_BBUyr88sW-GmK2vhOxd2RjuPk,1145
+advisor_core/advisor_core.py,sha256=244_lLKwp6mMjPlvyBEFuoAIIqH-IVzHrSPQzG_fdYQ,1969
+advisor_core/grouped_routes.py,sha256=VzSWkJQDbC2-5qOedLtKABP7adsYTfqdO-RPztTEXlY,11879
+advisor_core/header.py,sha256=tonBQJDU56KSF2v_pyfTbT0KuCBbAqlWJHvnNSz6ENg,426
+advisor_core/payloads.py,sha256=QgHq3kpMVdrDQtWApBCI_v3GvrR1jzZM9Pr_wNjY1EE,8993
+advisor_core/query_builder.py,sha256=ud1MZ1cDpQ6QBUDaAaAuKZnu6KioqFN6vcfP1vFP4Dg,424
+advisor_core/request_handler.py,sha256=h57NgTqdTOMD8JV9vqEIZK0UOuv0gH6MBAA2d36HMIg,2550
+stormgeo.advisor_core-1.1.0.dist-info/LICENSE.txt,sha256=qGgto1PPDlFD5SnQWINv9kJJA7SBnn-L8k88aGXOvUs,1078
+stormgeo.advisor_core-1.1.0.dist-info/METADATA,sha256=OCKMEmsQJbU6v3t9jzW1_MuzJRBb-7y_k2t-5-qfKgQ,10553
+stormgeo.advisor_core-1.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+stormgeo.advisor_core-1.1.0.dist-info/top_level.txt,sha256=Tv-Ndo0tbFBsqoHJgLouOwuD0N3Pgjg_ojpq7LlzzoQ,13
+stormgeo.advisor_core-1.1.0.dist-info/RECORD,,
