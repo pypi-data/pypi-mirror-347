@@ -1,0 +1,3 @@
+[console_scripts]
+image-finder=nj_image_searcher.cli:main
+
