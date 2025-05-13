@@ -1,0 +1,9 @@
+vedro_debug_prompt/__init__.py,sha256=4QxYNSnS7g23BxCcV6_uLT_THIohDefXn6igR2F0tZE,189
+vedro_debug_prompt/_debug_prompt.py,sha256=CmkDWzurTNzsIwx0t6ZWTPZ-2U1nPVsd5ulUsDs_TSk,3194
+vedro_debug_prompt/_prompt_builder.py,sha256=sOciQIRmF5nMvitEZcQpbqE-j1AWAgrDRyTvPLWXBfI,10389
+vedro_debug_prompt/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vedro_debug_prompt-0.2.1.dist-info/licenses/LICENSE,sha256=PO_kFIcjYPVGAgB8kZL4PXaD4_hP97QejhxX6quQyuk,11345
+vedro_debug_prompt-0.2.1.dist-info/METADATA,sha256=unf8hRj7DnFd5CbsSd35ELyv23PrCj0tD_WeoUj2MZU,2754
+vedro_debug_prompt-0.2.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+vedro_debug_prompt-0.2.1.dist-info/top_level.txt,sha256=I6sMC6qphgU5YhEqZSPxeyhZ4hpE6ML4h_fa9Anpw70,19
+vedro_debug_prompt-0.2.1.dist-info/RECORD,,
