@@ -1,0 +1,10 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gene_thesaurus.py,sha256=0nhgaoDb-c_VOqhE_cEcl4R6nipZwPuZO40In-QKh_k,3031
+hgnc_translation_provider.py,sha256=WKbYK9L5tMDzezzJ3FZzRUjO0QnyXSr7T6mVy642sBE,9045
+ncbi_translation_provider.py,sha256=mg3V_Hrr8oIa8hQSqmtPt6gbABAV_oQ_aivefNJNlqA,3237
+translation_provider.py,sha256=kon6m9Hj_8dMh0dP9okTlO5sMCoD3xFedQqJq6frY4M,780
+gene_thesaurus-3.0.1.dist-info/LICENSE,sha256=EtBEFc_EfUEVvR4uBmRIWNb_hCL8iEbZZdF0HMmTeh8,1137
+gene_thesaurus-3.0.1.dist-info/METADATA,sha256=ayS5vI_JBLb4-XZCvHa349zngfJ5VZ9ta04l3LdpSPw,3586
+gene_thesaurus-3.0.1.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+gene_thesaurus-3.0.1.dist-info/top_level.txt,sha256=KKLZzf_ccWMa5GINPg9dSuXAKfYNP_KtdxiA1qx9P94,97
+gene_thesaurus-3.0.1.dist-info/RECORD,,
