@@ -1,0 +1,206 @@
+Metadata-Version: 2.4
+Name: gemiTask
+Version: 0.1.2
+Summary: AI-powered terminal task manager using Google's Gemini for smart task breakdown and management
+Home-page: https://github.com/sanjaymalladi/gemiTask
+Author: Sanjay Malladi
+Author-email: malladisanjay29@gmail.com
+Project-URL: Bug Reports, https://github.com/sanjaymalladi/gemiTask/issues
+Project-URL: Source, https://github.com/sanjaymalladi/gemiTask
+Project-URL: Documentation, https://github.com/sanjaymalladi/gemiTask/blob/main/README.md
+Keywords: cli,task-management,ai,gemini,productivity,todo,task-breakdown,project-management,terminal,command-line
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Topic :: Office/Business :: Scheduling
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-generativeai>=0.3.0
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: rich>=10.0.0
+Requires-Dist: typing-extensions>=4.0.0
+Requires-Dist: pydantic>=2.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# gemiTask
+
+A powerful AI-powered command-line task management tool that helps you easily manage and track task progress with the help of Google's Gemini AI.
+
+## Features
+
+- 🤖 AI-Powered Task Analysis: Break down complex tasks into actionable steps
+- 📝 Natural Language Input: Describe tasks in plain English
+- 🌲 Subtask Support: Break down large tasks into manageable subtasks
+- 🔄 Task Status Tracking: Track task progress (pending, in progress, done)
+- ⭐ Priority Management: High, medium, and low priority levels
+- 🔗 Task Dependencies: Set dependencies between tasks
+- 💾 Local Storage: Auto-save task data in JSON format
+- 🎨 Beautiful Terminal Interface: Clear visual display with Rich
+
+## Installation
+
+```bash
+pip install gemiTask
+```
+
+## Quick Start
+
+1. **Get your Gemini API key**
+   - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+   - Create a new API key
+   - Copy your API key
+
+2. **Configure gemiTask**
+   ```bash
+   # Create config directory
+   mkdir -p ~/.config/gemiTask
+   
+   # Create config file
+   echo '{
+     "gemini_api_key": "your-api-key-here"
+   }' > ~/.config/gemiTask/config.json
+   ```
+
+## Usage
+
+### 1. Add a New Task
+```bash
+# Basic usage
+gemiTask add "Complete project documentation"
+
+# Add with description and priority
+gemiTask add "Complete project documentation" -d "Write README and API docs" -p high
+
+# Priority options: high, medium, low
+```
+
+### 2. Add Subtasks
+```bash
+# Syntax: gemiTask add-subtask <parent_id> "subtask title" [-d "description"]
+gemiTask add-subtask 1 "Write unit tests" -d "Ensure code quality"
+```
+
+### 3. Update Task Status
+```bash
+# Syntax: gemiTask status <task_id> <status>
+gemiTask status 1 in_progress
+
+# Available statuses:
+# - pending
+# - in_progress
+# - done
+# - blocked
+# - deferred
+
+# Update subtask status
+gemiTask status 1.1 done
+```
+
+### 4. Manage Task Dependencies
+```bash
+# Syntax: gemiTask depend <task_id> <dependency_id>
+gemiTask depend 2 1  # Task 2 depends on Task 1
+```
+
+### 5. View Task List
+```bash
+gemiTask list
+
+# Example output:
+# 📋 Task List
+# └── 1: Project Documentation (in progress)
+#     ├── 1.1: Write README (done)
+#     └── 1.2: API Documentation (pending)
+```
+
+### 6. Get Next Tasks
+```bash
+gemiTask next
+
+# Shows all tasks that can be started
+# (no uncompleted dependencies)
+```
+
+## Data Storage
+
+Task data is stored in `tasks.json` in your project directory. This enables:
+- Version control of task data with project code
+- Easy sharing of task status in teams
+- Simple viewing and editing of task data
+
+## Use Cases
+
+### Personal Project Management
+- Track project progress
+- Break down large tasks
+- Prioritize work
+
+### Team Collaboration
+- Manage tasks in code repositories
+- Share task status via Git
+- Track dependencies
+
+### Daily Work Management
+- To-do list management
+- Progress tracking
+- Task planning
+
+## Development
+
+### Install Development Dependencies
+```bash
+pip install -r requirements-dev.txt
+```
+
+### Run Tests
+```bash
+pytest
+```
+
+### Build Project
+```bash
+python -m build
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Author
+
+- Sanjay Malladi (@sanjaymalladi)
+- Email: malladisanjay29@gmail.com
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Related Links
+
+- [GitHub](https://github.com/sanjaymalladi/gemiTask)
+- [PyPI](https://pypi.org/project/gemiTask/)
+- [Issue Tracker](https://github.com/sanjaymalladi/gemiTask/issues) 
