@@ -1,0 +1,8 @@
+adafruit_circuitpython_ra8875-3.1.23.dist-info/licenses/LICENSE,sha256=tjBHDWKpiVJ171hjZ-zoEAlk6qhBBCr-RBNtY036cWU,1115
+adafruit_ra8875/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adafruit_ra8875/ra8875.py,sha256=iJG3jmbLiv_9YL_cn4vrN_IjkjQEUex-XX9_srHyomI,34890
+adafruit_ra8875/registers.py,sha256=-oCd4os5f1Ial5klvqVk4S2_fjLMUGh6tI1cdwaFLiE,2995
+adafruit_circuitpython_ra8875-3.1.23.dist-info/METADATA,sha256=gt6KpUMANHRh_VaUOrsR0SMY2Uva0C2zof3zry8DOBY,3936
+adafruit_circuitpython_ra8875-3.1.23.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+adafruit_circuitpython_ra8875-3.1.23.dist-info/top_level.txt,sha256=ur11lcigw733u89qK9cifqLglBoTTzLHClxxX5t0Ixk,16
+adafruit_circuitpython_ra8875-3.1.23.dist-info/RECORD,,
