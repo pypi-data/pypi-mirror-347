@@ -1,0 +1,5 @@
+argparse>=1.4.0
+matplotlib>=3.10.3
+mcp>=1.6.0
+pandas>=2.2.3
+requests>=2.32.3

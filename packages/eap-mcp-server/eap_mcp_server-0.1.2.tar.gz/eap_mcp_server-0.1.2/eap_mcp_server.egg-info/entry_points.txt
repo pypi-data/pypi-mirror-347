@@ -1,0 +1,2 @@
+[console_scripts]
+eap-mcp-server = main:main

@@ -1,0 +1,83 @@
+# EAP MCP Server
+
+[English](#english) | [中文](#chinese)
+
+## English
+
+### Overview
+EAP MCP Server is a Python-based server application designed for handling Message Control Protocol (MCP) communications. It specializes in EAP (Enterprise Application Platform) data integration and provides intelligent data analysis capabilities.
+
+### Features
+- EAP data integration and processing
+- Intelligent data analysis and insights
+- Real-time data monitoring and visualization
+- Advanced data processing using pandas
+- Interactive data visualization with matplotlib
+- Command-line interface for easy operation
+
+### Requirements
+- Python >= 3.12
+- Required packages:
+  - argparse >= 1.4.0
+  - matplotlib >= 3.10.3
+  - mcp >= 1.6.0
+  - pandas >= 2.2.3
+  - requests >= 2.32.3
+
+### Installation
+```bash
+pip install eap-mcp-server
+```
+
+### Usage
+```bash
+eap-mcp-server [options]
+```
+
+### Development
+To set up the development environment:
+1. Clone the repository
+2. Install dependencies:
+```bash
+pip install -e .
+```
+
+## Chinese
+
+### 概述
+EAP MCP Server 是一个基于 Python 的服务器应用程序，专门用于处理企业应用平台（EAP）数据接入和智能化分析。它提供强大的数据处理、分析和可视化功能，帮助企业实现数据驱动的决策。
+
+### 功能特点
+- EAP 数据接入与集成
+- 智能化数据分析与洞察
+- 实时数据监控与可视化
+- 基于 pandas 的高级数据处理
+- 使用 matplotlib 的交互式数据可视化
+- 便捷的命令行操作界面
+
+### 系统要求
+- Python >= 3.12
+- 所需包：
+  - argparse >= 1.4.0
+  - matplotlib >= 3.10.3
+  - mcp >= 1.6.0
+  - pandas >= 2.2.3
+  - requests >= 2.32.3
+
+### 安装
+```bash
+pip install eap-mcp-server
+```
+
+### 使用方法
+```bash
+eap-mcp-server [选项]
+```
+
+### 开发
+设置开发环境：
+1. 克隆仓库
+2. 安装依赖：
+```bash
+pip install -e .
+```
