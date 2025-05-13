@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+algoritmos_geneticos_DG_PV/__init__.py
+algoritmos_geneticos_DG_PV/cruce.py
+algoritmos_geneticos_DG_PV/genetico.py
+algoritmos_geneticos_DG_PV/mutacion.py
+algoritmos_geneticos_DG_PV/reemplazo.py
+algoritmos_geneticos_DG_PV/seleccion.py
+algoritmos_geneticos_DG_PV.egg-info/PKG-INFO
+algoritmos_geneticos_DG_PV.egg-info/SOURCES.txt
+algoritmos_geneticos_DG_PV.egg-info/dependency_links.txt
+algoritmos_geneticos_DG_PV.egg-info/top_level.txt
+tests/test_genetico.py
