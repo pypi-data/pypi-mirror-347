@@ -1,0 +1,12 @@
+docx_renderer/__init__.py,sha256=9SL59eFYATuJ166GLKvCfCjMNfMW50bBwNCo5TBQioE,63
+docx_renderer/command_line.py,sha256=iTrnHg8mX09u9XLZzOFeeFpiR0Y7uIAqhWzkvm8Spyc,1161
+docx_renderer/docx_renderer.py,sha256=bYn-JBBdbyd_J2mYLvckx1p96sjz1tgXqMCZ6oBqER8,3745
+docx_renderer/exceptions.py,sha256=RAMnNSSND0N_roXznX6W-R2dqZjr_pC_bofZrilHXlo,93
+docx_renderer/plugins.py,sha256=ULnluD7e6VU-13zA05CIwtPFIyL_D6-xqqgegJQV4Yg,2945
+docx_renderer/utils.py,sha256=E4dvJcr7E1rUEojr7ChneUZn4B8OwaclVLbWYik8WMc,5740
+docx_renderer-0.1.0.dist-info/licenses/LICENSE,sha256=xu7iodDABMItKytrQ_zck-_YHg9__xFHIJAcoLrI19g,1072
+docx_renderer-0.1.0.dist-info/METADATA,sha256=zDEhPUnLE_-VSKpmGBqGkMsFphvp9CQUIg_R0GM5aps,5072
+docx_renderer-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+docx_renderer-0.1.0.dist-info/entry_points.txt,sha256=MOOG0qaLBfLyJzRPsKS25iaAR56VPQ68pX-9jrcCK2Q,66
+docx_renderer-0.1.0.dist-info/top_level.txt,sha256=iDWhqNsD8NjSSK7rSu-IRd5rXcbWQGcu2KiT1v9JRvA,14
+docx_renderer-0.1.0.dist-info/RECORD,,

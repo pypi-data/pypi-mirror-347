@@ -1,0 +1,2 @@
+[console_scripts]
+docx-renderer = docx_renderer.command_line:main
