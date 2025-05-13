@@ -1,0 +1,155 @@
+Metadata-Version: 2.4
+Name: wallin
+Version: 1.0.3
+Summary: Constraint-based Excel optimizer powered by OR-Tools
+Author: Jake Wallin
+License-Expression: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: ortools
+Dynamic: license-file
+Dynamic: requires-python
+
+# Wallin
+
+Wallin is a simple, expressive optimization library that lets you define constraints and objectives in plain English. It’s designed for business analysts, accountants, and operations pros who want to solve real-world allocation problems without having to learn an optimization language.
+
+Built on top of Google OR-Tools, Wallin turns your Excel data and rule logic into a solvable optimization model.
+
+---
+
+## Features
+
+- **Plain English syntax**: Write rules like `SUM(Cost) <= 1000` or `Location = "NY"`
+- **Aggregate math**: SUM, COUNT, AVG, ratios, SUMPRODUCT, scaling, cross-column constraints
+- **Row-level logic**: Conditions like `Region = "West"` or `Profit / Cost > 1.5`
+- **Per-row math**: Addition, subtraction, multiplication, division, scaling
+- **`SETVALUE` support**: Target-based objectives with optional tolerance
+- **`GROUPSUM()` support**: Enables ratio-based constraints across selected rows
+- **Handles negative numbers and quoted column names**
+- **Minimal setup**: Just define rules and call `solve(df, rules)`
+
+---
+
+## Installation
+
+Install from PyPI:
+
+```bash
+pip install wallin
+```
+
+---
+
+## How It Works
+
+You provide:
+
+1. A **Pandas DataFrame** (typically from Excel)
+2. A block of **plain English rules**
+
+Wallin returns the same DataFrame with a `Selected` column showing which rows were chosen.
+
+---
+
+## Example
+
+```python
+import pandas as pd
+import wallin as wl
+
+df = pd.read_excel("Transaction Detail.xlsx")
+
+RULES = """
+MAXIMIZE: SUM(Profit)
+CONSTRAINT: COGS/Profit < 0.06
+CONSTRAINT: SUMPRODUCT(COGS, Profit) <= 60000
+CONSTRAINT: Location = "NC"
+"""
+
+result = wl.solve(df, RULES)
+selected = result[result["Selected"]]
+selected.to_excel("selected_rows.xlsx", index=False)
+```
+
+---
+
+## Supported Syntax
+
+### Objectives
+
+```text
+MAXIMIZE: SUM(Profit)
+MINIMIZE: COUNT(*)
+SETVALUE: SUM(Amount) = 100
+TOLERANCE: 1.5          # optional, works with SETVALUE
+```
+
+---
+
+### Aggregate Constraints
+
+```text
+CONSTRAINT: SUM(Cost) <= 1000
+CONSTRAINT: COUNT(*) = 5
+CONSTRAINT: AVG(Score) > 3.5
+CONSTRAINT: SUM(COGS) + SUM(Fees) <= 2000
+CONSTRAINT: 2 * SUM(Value) / 3 >= 50
+CONSTRAINT: SUM(COGS) / SUM(Profit) <= 0.2
+CONSTRAINT: SUM(COGS * Profit) <= 30000
+CONSTRAINT: SUMPRODUCT(COGS, Profit) <= 30000
+```
+
+---
+
+### Row-Level Math
+
+```text
+CONSTRAINT: Profit / Cost >= 1.5
+CONSTRAINT: Score + Bonus >= 10
+CONSTRAINT: 3 * Cost / 2 <= 500
+CONSTRAINT: COGS * Profit < 2000
+```
+
+---
+
+### Filters and Conditions
+
+```text
+CONSTRAINT: Region = "West"
+CONSTRAINT: Profit >= 50
+CONSTRAINT: Type = "Hardware"
+```
+
+---
+
+### `GROUPSUM()` Constraints
+
+```text
+CONSTRAINT: Amount / GROUPSUM(Amount) <= 0.3
+CONSTRAINT: Ending / GROUPSUM(Ending) = Beginning / GROUPSUM(Beginning)
+CONSTRAINT: Sales / GROUPSUM(Sales WHERE Category = "Books") <= 0.4
+```
+
+> `GROUPSUM(col)` computes the sum of a column over selected rows (optionally filtered).
+> This enables proportional, fairness, and relational constraints.
+
+---
+
+## Output
+
+Wallin appends a boolean `Selected` column to the DataFrame.
+
+```python
+result[result["Selected"]]
+```
+
+This shows the rows the optimizer picked based on your objective and constraints.
+
+---
+
+## License
+
+MIT License — free for commercial and non-commercial use.
