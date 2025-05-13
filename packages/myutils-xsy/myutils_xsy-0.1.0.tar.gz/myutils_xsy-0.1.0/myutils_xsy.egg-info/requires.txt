@@ -1,0 +1,15 @@
+branca
+chinese-calendar
+fiona
+PyMuPDF
+folium
+geopandas
+numpy
+pandas
+Pillow
+PyQt5
+PyQt5_sip
+PySide6
+python-docx
+tkcalendar
+zhdate
