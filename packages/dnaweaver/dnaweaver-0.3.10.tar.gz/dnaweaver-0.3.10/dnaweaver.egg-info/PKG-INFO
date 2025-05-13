@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: dnaweaver
+Version: 0.3.10
+Summary: Make ordering and assembly plans for DNA sequences
+Author: Zulko
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/Edinburgh-Genome-Foundry/dnaweaver
+Keywords: DNA,optimization,assembly,ordering,synthetic,biology
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: Biopython
+Requires-Dist: proglog
+Requires-Dist: networkx
+Requires-Dist: flametree
+Requires-Dist: dna_features_viewer
+Requires-Dist: weasyprint
+Requires-Dist: pandas
+Requires-Dist: jinja2
+Dynamic: license-file
+
+DNA Weaver
+===========
+
+DNA Weaver is a Python library to find optimal strategies for assembling large
+DNA constructs. Given an arbitrary sequence, DNA Weaver will select the most
+adapted commercial DNA providers, cloning methods and parts repositories
+(depending on your preferences), and will design all necessary assembly fragments
+and assembly steps.
+
+DNA Weaver was written with versatility and extensibility in mind:
+each DNA source and assembly method can be customized, and assembly plans can
+be optimized with respect to total price, overall duration of the assembly,
+or assembly success probabilities.
+
+Infos
+-----
+
+**PIP installation:**
+
+.. code:: bash
+
+  pip install dnaweaver
+
+**Web documentation:**
+
+`<https://edinburgh-genome-foundry.github.io/DnaWeaver/>`_
+
+**Github Page**
+
+`<https://github.com/Edinburgh-Genome-Foundry/Dnaweaver>`_
+
+**Live demo**
+
+`<https://dnaweaver.genomefoundry.org>`_
+
+**License:** MIT
+
+Copyright 2021, 2025 Edinburgh Genome Foundry, University of Edinburgh
+
+
+More biology software
+---------------------
+
+.. image:: https://raw.githubusercontent.com/Edinburgh-Genome-Foundry/Edinburgh-Genome-Foundry.github.io/master/static/imgs/logos/egf-codon-horizontal.png
+  :target: https://edinburgh-genome-foundry.github.io/
+
+DNA Weaver is part of the `EGF Codons <https://edinburgh-genome-foundry.github.io/>`_ synthetic biology software suite for DNA design, manufacturing and validation.
