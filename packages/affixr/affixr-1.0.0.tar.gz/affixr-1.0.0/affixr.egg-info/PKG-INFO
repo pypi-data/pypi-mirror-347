@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: affixr
+Version: 1.0.0
+Summary: Affixr package
+Author: Armani Ruiz
+Author-email: <armanini1@gmail.com>
+License: MIT License
+Keywords: affixr
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: first-rec
+Requires-Dist: safe-return
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# Affixr
+कस्टम IOC परियोजना के लिए मेरा पहला मॉड्यूल

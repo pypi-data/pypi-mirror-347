@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+affixr/__init__.py
+affixr.egg-info/PKG-INFO
+affixr.egg-info/SOURCES.txt
+affixr.egg-info/dependency_links.txt
+affixr.egg-info/requires.txt
+affixr.egg-info/top_level.txt
