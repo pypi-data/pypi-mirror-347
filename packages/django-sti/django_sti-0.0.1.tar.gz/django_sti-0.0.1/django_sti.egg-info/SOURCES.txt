@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+django_sti/__init__.py
+django_sti.egg-info/PKG-INFO
+django_sti.egg-info/SOURCES.txt
+django_sti.egg-info/dependency_links.txt
+django_sti.egg-info/top_level.txt
