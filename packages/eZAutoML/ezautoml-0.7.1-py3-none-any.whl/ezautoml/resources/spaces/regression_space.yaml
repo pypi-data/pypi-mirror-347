@@ -1,0 +1,335 @@
+data_processors:
+- constructor: NoDataProcessing
+  hyperparams: []
+  name: no_data_proc
+  tag: data_processing
+  task: both
+feature_processors:
+- constructor: NoFeatureProcessing
+  hyperparams: []
+  name: no_feat_proc
+  tag: feature_processing
+  task: both
+models:
+- constructor: RandomForestRegressor
+  hyperparams:
+  - name: n_estimators
+    space:
+      high: 1000
+      low: 10
+      type: Integer
+  - name: max_depth
+    space:
+      high: 50
+      low: 1
+      type: Integer
+  - name: min_samples_split
+    space:
+      high: 20
+      low: 2
+      type: Integer
+  - name: min_samples_leaf
+    space:
+      high: 10
+      low: 1
+      type: Integer
+  - name: max_features
+    space:
+      categories:
+      - sqrt
+      - log2
+      - null
+      type: Categorical
+  name: RandomForestRegressor
+  tag: model_selection
+  task: regression
+- constructor: GradientBoostingRegressor
+  hyperparams:
+  - name: n_estimators
+    space:
+      high: 1000
+      low: 10
+      type: Integer
+  - name: learning_rate
+    space:
+      high: 0.5
+      low: 0.01
+      type: Real
+  - name: max_depth
+    space:
+      high: 50
+      low: 1
+      type: Integer
+  - name: subsample
+    space:
+      high: 1.0
+      low: 0.5
+      type: Real
+  name: GradientBoostingRegressor
+  tag: model_selection
+  task: regression
+- constructor: Ridge
+  hyperparams:
+  - name: alpha
+    space:
+      high: 100.0
+      low: 0.0001
+      type: Real
+  name: Ridge
+  tag: model_selection
+  task: regression
+- constructor: Lasso
+  hyperparams:
+  - name: alpha
+    space:
+      high: 10.0
+      low: 0.0001
+      type: Real
+  - name: max_iter
+    space:
+      high: 1000
+      low: 100
+      type: Integer
+  name: Lasso
+  tag: model_selection
+  task: regression
+- constructor: ElasticNet
+  hyperparams:
+  - name: alpha
+    space:
+      high: 10.0
+      low: 0.0001
+      type: Real
+  - name: l1_ratio
+    space:
+      high: 1.0
+      low: 0.0
+      type: Real
+  - name: max_iter
+    space:
+      high: 1000
+      low: 100
+      type: Integer
+  name: ElasticNet
+  tag: model_selection
+  task: regression
+- constructor: LinearRegression
+  hyperparams: []
+  name: LinearRegression
+  tag: model_selection
+  task: regression
+- constructor: KNeighborsRegressor
+  hyperparams:
+  - name: n_neighbors
+    space:
+      high: 20
+      low: 1
+      type: Integer
+  - name: weights
+    space:
+      categories:
+      - uniform
+      - distance
+      type: Categorical
+  - name: leaf_size
+    space:
+      high: 100
+      low: 10
+      type: Integer
+  - name: p
+    space:
+      high: 2
+      low: 1
+      type: Integer
+  name: KNeighborsRegressor
+  tag: model_selection
+  task: regression
+- constructor: DecisionTreeRegressor
+  hyperparams:
+  - name: criterion
+    space:
+      categories:
+      - squared_error
+      - friedman_mse
+      - absolute_error
+      - poisson
+      type: Categorical
+  - name: max_depth
+    space:
+      high: 50
+      low: 1
+      type: Integer
+  - name: min_samples_split
+    space:
+      high: 20
+      low: 2
+      type: Integer
+  - name: min_samples_leaf
+    space:
+      high: 10
+      low: 1
+      type: Integer
+  name: DecisionTreeRegressor
+  tag: model_selection
+  task: regression
+- constructor: XGBRegressor
+  hyperparams:
+  - name: n_estimators
+    space:
+      high: 1000
+      low: 10
+      type: Integer
+  - name: learning_rate
+    space:
+      high: 0.3
+      low: 0.01
+      type: Real
+  - name: max_depth
+    space:
+      high: 15
+      low: 3
+      type: Integer
+  - name: min_child_weight
+    space:
+      high: 10
+      low: 1
+      type: Integer
+  - name: subsample
+    space:
+      high: 1.0
+      low: 0.5
+      type: Real
+  - name: colsample_bytree
+    space:
+      high: 1.0
+      low: 0.5
+      type: Real
+  - name: gamma
+    space:
+      high: 5.0
+      low: 0.0
+      type: Real
+  - name: reg_alpha
+    space:
+      high: 10.0
+      low: 0.0
+      type: Real
+  - name: reg_lambda
+    space:
+      high: 10.0
+      low: 0.0
+      type: Real
+  name: XGBRegressor
+  tag: model_selection
+  task: regression
+- constructor: AdaBoostRegressor
+  hyperparams:
+  - name: n_estimators
+    space:
+      high: 1000
+      low: 10
+      type: Integer
+  - name: learning_rate
+    space:
+      high: 2.0
+      low: 0.01
+      type: Real
+  name: AdaBoostRegressor
+  tag: model_selection
+  task: regression
+- constructor: BaggingRegressor
+  hyperparams:
+  - name: n_estimators
+    space:
+      high: 100
+      low: 10
+      type: Integer
+  - name: max_samples
+    space:
+      high: 1.0
+      low: 0.1
+      type: Real
+  - name: max_features
+    space:
+      high: 1.0
+      low: 0.1
+      type: Real
+  name: BaggingRegressor
+  tag: model_selection
+  task: regression
+- constructor: ExtraTreesRegressor
+  hyperparams:
+  - name: n_estimators
+    space:
+      high: 1000
+      low: 10
+      type: Integer
+  - name: max_depth
+    space:
+      high: 50
+      low: 1
+      type: Integer
+  - name: min_samples_split
+    space:
+      high: 20
+      low: 2
+      type: Integer
+  - name: min_samples_leaf
+    space:
+      high: 10
+      low: 1
+      type: Integer
+  name: ExtraTreesRegressor
+  tag: model_selection
+  task: regression
+- constructor: LGBMRegressor
+  hyperparams:
+  - name: n_estimators
+    space:
+      high: 1000
+      low: 10
+      type: Integer
+  - name: learning_rate
+    space:
+      high: 0.3
+      low: 0.001
+      type: Real
+  - name: num_leaves
+    space:
+      high: 150
+      low: 20
+      type: Integer
+  - name: max_depth
+    space:
+      high: 30
+      low: -1
+      type: Integer
+  - name: min_child_samples
+    space:
+      high: 100
+      low: 5
+      type: Integer
+  - name: subsample
+    space:
+      high: 1.0
+      low: 0.5
+      type: Real
+  - name: colsample_bytree
+    space:
+      high: 1.0
+      low: 0.5
+      type: Real
+  - name: reg_alpha
+    space:
+      high: 10.0
+      low: 0.0
+      type: Real
+  - name: reg_lambda
+    space:
+      high: 10.0
+      low: 0.0
+      type: Real
+  name: LGBMRegressor
+  tag: model_selection
+  task: regression
+task: regression
