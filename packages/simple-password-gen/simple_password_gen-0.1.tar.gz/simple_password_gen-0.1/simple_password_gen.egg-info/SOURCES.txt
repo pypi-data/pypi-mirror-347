@@ -1,0 +1,8 @@
+README.md
+setup.py
+simple_password/__init__.py
+simple_password/generator.py
+simple_password_gen.egg-info/PKG-INFO
+simple_password_gen.egg-info/SOURCES.txt
+simple_password_gen.egg-info/dependency_links.txt
+simple_password_gen.egg-info/top_level.txt
