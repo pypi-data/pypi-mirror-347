@@ -1,0 +1,10 @@
+gemini_srt_translator/__init__.py,sha256=7YUC8Gob_KS8RLw9ewUCfZZqTKPVhv1Acsn7RcMIeHY,5306
+gemini_srt_translator/helpers.py,sha256=NuN-yHfpT68P4X0gGa6fVstbiPFweqqB534VaNnXOmc,2352
+gemini_srt_translator/logger.py,sha256=Zfl_kAEYLgyC2H7RcdzhI68P9dyam4QgrvBR8lRqrcU,11938
+gemini_srt_translator/main.py,sha256=4UhBPOlBO6gWHFteG3NZH6hAou5_oXBYSJVJCEv89sk,25170
+gemini_srt_translator/utils.py,sha256=vSeuOy6Rxi_PueExaVtOaprWM_3gSY6neeZ4rpFZqzE,4304
+gemini_srt_translator-1.8.6.dist-info/licenses/LICENSE,sha256=wSQyu2rOwgFuKt2khTK_234CkcjE2HNYo1Txrc2sD74,1092
+gemini_srt_translator-1.8.6.dist-info/METADATA,sha256=jZUyclCKl83kREJgGs321EdFF2nAJ2qJoInEwV4f5gg,5302
+gemini_srt_translator-1.8.6.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+gemini_srt_translator-1.8.6.dist-info/top_level.txt,sha256=iShFmrrOScSR8C5sfQp7zutzSRu-LF5HmVjkcLeHyEo,22
+gemini_srt_translator-1.8.6.dist-info/RECORD,,
