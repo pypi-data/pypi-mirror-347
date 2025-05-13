@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PipexLossPython"
+version = "0.1.1"
+description = "A PyTorch loss package with log-cosh and PIPEX loss"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "Rasmus Börjesson Dahlstedt"}
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+dependencies = [
+    "torch>=1.8",
+    "pytorch-msssim"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/pipexloss"

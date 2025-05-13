@@ -1,0 +1,8 @@
+pyproject.toml
+PipexLossPython.egg-info/PKG-INFO
+PipexLossPython.egg-info/SOURCES.txt
+PipexLossPython.egg-info/dependency_links.txt
+PipexLossPython.egg-info/requires.txt
+PipexLossPython.egg-info/top_level.txt
+pipexlosspython/__init__.py
+pipexlosspython/losses.py
