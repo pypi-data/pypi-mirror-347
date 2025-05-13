@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: bsstatus
+Version: 0.0.4
+Summary: A project for bsstatus
+Author-email: csm10495 <csm10495@gmail.com>
+License-Expression: MIT
+Project-URL: homepage, https://github.com/csm10495/bsstatus
+Project-URL: repository, https://github.com/csm10495/bsstatus
+Project-URL: documentation, https://csm10495.github.io/bsstatus
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: cachetools
+Requires-Dist: platformdirs
+Requires-Dist: pydantic>2
+Requires-Dist: slack_sdk
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Dynamic: license-file
+
+# bsstatus
+
+A repo for bsstatus

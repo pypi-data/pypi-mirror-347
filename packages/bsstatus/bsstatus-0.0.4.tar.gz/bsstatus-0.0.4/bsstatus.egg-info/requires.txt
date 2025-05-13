@@ -1,0 +1,7 @@
+cachetools
+platformdirs
+pydantic>2
+slack_sdk
+
+[dev]
+pytest

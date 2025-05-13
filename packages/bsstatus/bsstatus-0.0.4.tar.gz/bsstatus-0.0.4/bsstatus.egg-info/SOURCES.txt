@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+pyproject.toml
+bsstatus/__init__.py
+bsstatus/__main__.py
+bsstatus/config.py
+bsstatus/status.py
+bsstatus.egg-info/PKG-INFO
+bsstatus.egg-info/SOURCES.txt
+bsstatus.egg-info/dependency_links.txt
+bsstatus.egg-info/entry_points.txt
+bsstatus.egg-info/requires.txt
+bsstatus.egg-info/top_level.txt
+tests/test_config.py
+tests/test_finders_base.py
+tests/test_finders_slack.py
