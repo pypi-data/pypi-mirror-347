@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: RetroChem
+Version: 0.1.0
+Summary: Outil de rétrosynthèse, visualisation et machine learning
+Author: Jacques Grandjean, Noah Paganuzzi, Florian Follet, Giulio Garotti
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: streamlit
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: joblib
+Requires-Dist: rdkit
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: pillow
+Requires-Dist: streamlit-ketcher
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
