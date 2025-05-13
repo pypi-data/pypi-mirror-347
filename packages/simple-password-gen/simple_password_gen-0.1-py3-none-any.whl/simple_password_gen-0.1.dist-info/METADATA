@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: simple_password-gen
+Version: 0.1
+Summary: کتابخانه‌ای ساده برای تولید پسورد تصادفی در پایتون
+Home-page: https://github.com/yourusername/simple_password
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# simple_password
+
+این یک کتابخانه‌ی ساده برای ساخت پسورد تصادفی در پایتون است.
+
+## نحوه استفاده
+
+```python
+from simple_password import generate_password
+
+password = generate_password(length=12, use_uppercase=True, use_digits=True, use_symbols=True)
+print(password)
+```
+
+## پارامترها
+
+- `length`: طول پسورد (پیش‌فرض ۱۲)
+- `use_uppercase`: استفاده از حروف بزرگ (پیش‌فرض True)
+- `use_digits`: استفاده از عدد (پیش‌فرض True)
+- `use_symbols`: استفاده از نمادها مثل @#% (پیش‌فرض True)
