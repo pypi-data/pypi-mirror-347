@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: inat2wiki
+Version: 0.0.5
+Summary: Collection of functions to move stuff from iNaturalist to Wikidata.
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: Flask-Session
+Requires-Dist: requests
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Dynamic: license-file
