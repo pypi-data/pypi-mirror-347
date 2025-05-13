@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+openrouter_model_filter/__init__.py
+openrouter_model_filter/__main__.py
+openrouter_model_filter/filter.py
+openrouter_model_filter.egg-info/PKG-INFO
+openrouter_model_filter.egg-info/SOURCES.txt
+openrouter_model_filter.egg-info/dependency_links.txt
+openrouter_model_filter.egg-info/entry_points.txt
+openrouter_model_filter.egg-info/requires.txt
+openrouter_model_filter.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+openrouter_model_filter = openrouter_model_filter.filter:cli
