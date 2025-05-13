@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+memory_plus.egg-info/PKG-INFO
+memory_plus.egg-info/SOURCES.txt
+memory_plus.egg-info/dependency_links.txt
+memory_plus.egg-info/entry_points.txt
+memory_plus.egg-info/requires.txt
+memory_plus.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+fastmcp>=2.0.0
+qdrant-client
+langchain
+google-generativeai
+plotly
+pandas
+numpy
+scikit-learn
+umap-learn
+aiofiles
+boto3
+python-dotenv
