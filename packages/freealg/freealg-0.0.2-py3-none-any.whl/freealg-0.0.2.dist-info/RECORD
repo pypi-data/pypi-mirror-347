@@ -1,0 +1,16 @@
+freealg/__init__.py,sha256=K92neXJZ9VE1U_j_pj28Qyq1MzlMXhOuYK2ZihgwCaU,463
+freealg/__version__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+freealg/_chebyshev.py,sha256=Cw48gXF6kd3IAQuLTEWadySeKGnY9TynzX9MNmycMUU,4697
+freealg/_damp.py,sha256=k2vtBtWOxQBf4qXaWu_En81lQBXbEO4QbxxWpvuVhdE,1802
+freealg/_jacobi.py,sha256=F9K0IzbExpxGQY2OJQb-XT4Ee1zWTZvMXRUdU8cbwSE,4916
+freealg/_pade.py,sha256=rWILLpEL910YdixC2c5Cw77HqogAYoxi2YZgRVXEELM,4022
+freealg/_plot_util.py,sha256=OILqOqKdLGEabk41KnmxNftItzMMFHOL-LZ35yNvdyk,18653
+freealg/_util.py,sha256=wJ-t8LMZZFEr2PsZEVqTJP_jQTQ3rHUf0dO27F6L7YQ,2310
+freealg/freeform.py,sha256=LLkGoPLxvn8VMHuVQ1LGNkcAYZUi3GduFB8qlsr69qg,18595
+freealg/distributions/__init__.py,sha256=7t4HbP_EofiFDYLH6jbD94AIumOdcHn1y_Qo54mpLFM,614
+freealg/distributions/marchenko_pastur.py,sha256=k8SoEgB2DFXLqGF-Hyqm8Sfh1DlF3khMssuxak5Uaqw,15827
+freealg-0.0.2.dist-info/licenses/LICENSE.txt,sha256=J-EEYEtxb3VVf_Bn1TYfWnpY5lMFIM15iLDDcnaDTPA,1443
+freealg-0.0.2.dist-info/METADATA,sha256=lMjLvkUpPUAr_QPthjnrIfg9KTs8DLEpTG68w8Ak0rU,2888
+freealg-0.0.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+freealg-0.0.2.dist-info/top_level.txt,sha256=eR2wrgYwDdnnJ9Zf5PruPqe4kQav0GMvRsqct6y00Q8,8
+freealg-0.0.2.dist-info/RECORD,,
