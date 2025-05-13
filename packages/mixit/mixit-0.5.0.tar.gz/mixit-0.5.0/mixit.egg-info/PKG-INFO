@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: mixit
+Version: 0.5.0
+Summary: A simple mixin system with method exports
+Requires-Python: >=3.7
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
