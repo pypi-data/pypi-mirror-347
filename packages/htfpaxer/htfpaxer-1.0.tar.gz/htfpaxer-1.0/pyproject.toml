@@ -1,0 +1,7 @@
+[project]
+name="htfpaxer"
+version="1.0"
+dependencies=["colorama", "htfbox"]
+
+[project.scripts]
+paxer="paxer.cli:main"
