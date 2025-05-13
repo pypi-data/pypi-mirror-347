@@ -1,0 +1,3 @@
+[console_scripts]
+aidex_toolkit = aidex_toolkit.__main__:main
+
