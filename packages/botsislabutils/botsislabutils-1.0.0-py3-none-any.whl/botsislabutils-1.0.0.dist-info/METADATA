@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: botsislabutils
+Version: 1.0.0
+Summary: Commonly used utilities for Botsis Lab
+Project-URL: Homepage, https://gitlab.com/botsis-lab/botsis-lab-utilities
+Project-URL: Bug Tracker, https://gitlab.com/botsis-lab/botsis-lab-utilities/-/issues
+Author-email: Jonathan Spiker <jspiker3@jhmi.edu>, Kory Kreimeyer <kkreime1@jhu.edu>, Taxiarchis Botsis <tbotsis1@jhmi.edu>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: flask==2.2.5
+Requires-Dist: mysql-connector-python==8.0.23
+Description-Content-Type: text/markdown
+
+The Botsis Lab Utilities package provides a set of commonly used tools within projects developed at the Botsis Lab at Johns Hopkins University.
+
+## Installation
+
+The package can be installed using pip:
+
+```bash
+TODO (requires access to private repo in GitLab)
+```
+
+## Available Tools
+
+TODO
