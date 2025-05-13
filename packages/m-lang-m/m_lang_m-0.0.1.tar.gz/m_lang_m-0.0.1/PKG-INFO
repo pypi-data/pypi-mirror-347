@@ -1,0 +1,202 @@
+Metadata-Version: 2.4
+Name: m-lang-m
+Version: 0.0.1
+Summary: Mini localization manager for Python using JSON/YAML files
+Author-email: dusska <officialalexprofile@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Poshkovat
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: GitHub, https://github.com/poopscoin/mlangm
+Keywords: localization,i18n,translation,python,json,yaml,language
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Localization
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml>=6.0.2
+Dynamic: license-file
+
+# Mini language Manager
+
+**Mini localization manager for Python using JSON/YAML files**
+
+Mini language Manager is a lightweight and developer-friendly localization tool for Python. It allows you to organize translations in plain JSON or YAML files and access them with nested keys. Supports fallback and placeholders.
+
+---
+
+## 📦 Installation
+
+```bash
+pip install m-lang-m
+```
+
+---
+
+## 🧰 Features
+
+- Supports both `.json` and `.yaml`/`.yml` translation files
+- Automatic directory resolution relative to the caller
+- Nested key support (e.g., `menu.settings.language`)
+- String formatting with `{placeholders}`
+- Returns the current config if needed
+
+---
+
+## 📁 Translation File Example
+
+**locale/en.json**
+```json
+{
+    "title": "Main",
+    "menu": {
+        "settings": {
+            "language": "Language",
+            "placeholders": "Many {one}, {two} and {thee}"
+        },
+        "back" : "Go back"
+    }
+}
+```
+
+**locale/ua.yml**
+```yml
+title: "Головна"
+menu:
+  settings:
+    language: "Мова"
+    placeholders: "Багато {one}, {two} і {thee}"
+  back: "Повернутися"
+```
+
+---
+
+## 🚀 Usage
+
+### Configure the localizer
+
+```python
+from mlangm import configure, translate, get_config
+
+config_info = configure(default_lang='en', translations_path='locale')
+# config_info = {
+#     'default_lang': 'en',
+#     'path': 'locale',
+#     'mode': False
+# }
+
+print(translate('menu.settings.language'))  # Output: "Language"
+print(translate('menu.back')) # Output: "Go back"
+print(translate('menu.settings.language', 'ua'))  # Output: "Мова"
+print(translate('title', 'ua')) # Output: "Головна"
+
+print(translate('menu.settings.placeholders', one='first', two='second', thee='third'))
+# Output: "Many first, second and third"
+```
+
+---
+
+## 🔧 API
+
+### `configure(default_lang = 'en', translations_path = 'translations', strict_mode = False) -> dict`
+
+Initializes the localizer and loads translations.
+
+- `default_lang`(str): The default language code.
+- `translations_path`(str): Directory with `.json` / `.yaml` files.
+- `strict_mode`(bool): If True, disables fallbacks.
+
+Returns the configuration dictionary.
+
+Example:
+```python
+config_info = configure(default_lang = 'en', translations_path = 'locale', strict_mode = False)
+```
+```python
+configure()
+```
+---
+
+### `translate(key: str, lang: str = None, **kwargs) -> str`
+
+Retrieves a translated string.  
+Supports fallback and placeholders.
+
+Example:
+```python
+translate('hello', 'en', name='Alex') # Output: "Hello, Alex!" | if 'hello' key -> "Hello, {name}!"
+```
+```python
+translate()
+```
+---
+
+### `get_config(key: str = None) -> str | bool | dict`
+
+Returns the current configuration or a single setting.
+
+- `default_lang`(str): Returns the default language code
+- `path`(str): Returns the path to the translations directory
+- `mode`(bool): Returns whether strict mode is enabled
+
+
+Example:
+```python
+get_config("path") # Output: "locale"
+```
+```python
+get_config()
+```
+---
+
+### `_extra() -> Localizer`
+
+Technical action, under normal conditions, **not to be used**.
+
+Access the internal `Localizer` instance directly.
+
+Example:
+```python
+from mlangm import configure, _extra
+
+configure(default_lang='en', translations_path='locale')
+
+print(_extra().config) # Output: {'default_lang': 'en', 'path': 'locale', 'mode': False}
+print(_extra().default_lang) # Output: 'en'
+print(_extra().translations) # Output: Dictionary with translations from the 'locale' folder
+```
+```python
+_extra()
+```
+---
+
+## 📄 License
+
+MIT License

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "m-lang-m"
+version = "0.0.1"
+description = "Mini localization manager for Python using JSON/YAML files"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+authors = [
+    { name = "dusska", email = "officialalexprofile@gmail.com" }
+]
+keywords = ["localization", "i18n", "translation", "python", "json", "yaml", "language"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Localization",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
+]
+dependencies = [
+    "pyyaml>=6.0.2"
+]
+
+[project.urls]
+GitHub = "https://github.com/poopscoin/mlangm"
+
+[tool.setuptools.packages.find]
+exclude = ["tests", "tests.*"]
