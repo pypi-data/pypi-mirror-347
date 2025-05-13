@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: marinholab-papers-icra2023-orbitalmanipulation
+Version: 25.5.11
+Summary: Package related to the paper https://doi.org/10.1109/ICRA48891.2023.10160795.
+Author-email: "Murilo M. Marinho" <murilomarinho@ieee.org>
+Maintainer-email: "Murilo M. Marinho" <murilomarinho@ieee.org>
+Project-URL: Homepage, https://github.com/mmmarinho/icra2023_orbitalmanipulation
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: quadprog
+Requires-Dist: dqrobotics>=22.10.0a2
+Dynamic: license-file
