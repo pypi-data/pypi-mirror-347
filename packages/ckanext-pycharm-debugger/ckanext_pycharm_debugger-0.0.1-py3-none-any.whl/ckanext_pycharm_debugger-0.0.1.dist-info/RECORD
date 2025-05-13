@@ -1,0 +1,12 @@
+ckanext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/pycharm_debugger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/pycharm_debugger/config_declaration.yaml,sha256=-aLZh6zUvGOc84wGmLGTCz2Tp6ZWcbNDLPb4ydIYbB0,2244
+ckanext/pycharm_debugger/plugin.py,sha256=9t305urjnuSksliPhVIH6HvasoUKYqbgP3l4T6FtQiI,2205
+ckanext/pycharm_debugger/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/pycharm_debugger/test/test_pycharm_debugger_plugin.py,sha256=UH24ejZutScE8-axLm9xhzJAFsUo75BxVHOk9WNM66s,4799
+ckanext_pycharm_debugger-0.0.1.dist-info/licenses/LICENSE,sha256=566LXaF3CUdLolMWRBvAZBSIQc8QHn7vMYw8PuWggns,34499
+ckanext_pycharm_debugger-0.0.1.dist-info/METADATA,sha256=fQv-ZECV_mLSR88uUi_tURTka5OijW9gEp42db-67PU,4646
+ckanext_pycharm_debugger-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+ckanext_pycharm_debugger-0.0.1.dist-info/entry_points.txt,sha256=JzIswLWeaviEBePYsyTqdgT7TTP2ADuhk9n3c-sjz60,82
+ckanext_pycharm_debugger-0.0.1.dist-info/top_level.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_pycharm_debugger-0.0.1.dist-info/RECORD,,
