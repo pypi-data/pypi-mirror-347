@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+musicline/__main__.py
+musicline.egg-info/PKG-INFO
+musicline.egg-info/SOURCES.txt
+musicline.egg-info/dependency_links.txt
+musicline.egg-info/requires.txt
+musicline.egg-info/top_level.txt
