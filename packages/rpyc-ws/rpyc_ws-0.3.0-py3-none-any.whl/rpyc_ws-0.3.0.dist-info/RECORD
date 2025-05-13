@@ -1,0 +1,8 @@
+rpyc_ws/__init__.py,sha256=tK6w61zYKdfpFVEwZh4FQrixF70n7a1TF6wMO7rIUcU,142
+rpyc_ws/client.py,sha256=01aiPcMxff2fKfM4C8J8_XQ-Tf7B2yWycrHp2EbPUts,876
+rpyc_ws/server.py,sha256=XvS65FF6CvYGYlj7S2004BKXMVB9NtzujPl_6wvjS-4,1497
+rpyc_ws/stream.py,sha256=DUvU4lUx12IyB4KDa4ujJrY9_BfZ6QncuwFaqd611eE,2044
+rpyc_ws-0.3.0.dist-info/METADATA,sha256=fNKOoSQv-8MI-iLiP6xIjOXpu8DLpu9ePypiZij402M,375
+rpyc_ws-0.3.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+rpyc_ws-0.3.0.dist-info/licenses/LICENSE,sha256=xs457KUzncdpF3j8vrlS4j67sTZEfDIegeOEQKnPU4o,1070
+rpyc_ws-0.3.0.dist-info/RECORD,,
