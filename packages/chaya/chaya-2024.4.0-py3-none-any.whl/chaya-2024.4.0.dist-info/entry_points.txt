@@ -1,0 +1,8 @@
+[console_scripts]
+chaya = chaya.cli:app
+chaya-utils = chaya.utils.cli:app
+
+[chaya.plugins]
+storage.sqlite = chaya.plugins.storage.sqlite
+storage.yaml = chaya.plugins.storage.yaml
+ui.tui = chaya.plugins.ui.tui
