@@ -1,0 +1,152 @@
+# TestIndex Knowledge Contract
+
+This package provides the minimal contract interface for working with Knowledge v1 data, designed for other internal testing tools to build on top of the Knowledge v1 system.
+
+## Installation
+
+There are two ways to install the package:
+
+### 1. Local Installation (Recommended)
+
+Install the package directly from the included wheel file:
+
+```bash
+# From within this repository
+pip install testindex_knowledge_contract/dist/testindex_knowledge_contract-0.1.0-py3-none-any.whl
+
+# OR using absolute path (works from any directory)
+pip install /Users/btsznh/kine/vsearch/testindex_knowledge_contract/dist/testindex_knowledge_contract-0.1.0-py3-none-any.whl
+```
+
+### 2. GitHub Release (Not currently working)
+
+```bash
+# NOTE: There are currently issues with the GitHub release.
+# Please use the local installation method above instead.
+pip install https://github.com/thusai/testindex-graph/releases/download/v0.1.0/testindex_knowledge_contract-0.1.0-py3-none-any.whl
+```
+
+Or add to requirements.txt:
+
+```
+# For now, it's recommended to use a local path to the wheel file
+# instead of this PyPI reference
+testindex-knowledge-contract==0.1.0
+```
+
+## Local Development 
+
+If you need to rebuild the package:
+
+```bash
+# Activate your virtual environment first
+source venv/bin/activate
+
+# Build the wheel
+cd testindex_knowledge_contract
+bash build_wheel.sh
+
+# Install the freshly built wheel
+pip install dist/testindex_knowledge_contract-0.1.0-py3-none-any.whl
+
+# OR using absolute path (works from any directory)
+pip install /Users/btsznh/kine/vsearch/testindex_knowledge_contract/dist/testindex_knowledge_contract-0.1.0-py3-none-any.whl
+```
+
+## Components
+
+The package contains four main components:
+
+1. **Schema Constants** - Node labels and property names
+2. **Neo4j Client** - Minimal interface for Neo4j access
+3. **Benchmark Constants** - For consistent testing
+4. **Gold Sample** - For precision validation
+
+## Usage
+
+### Schema Constants
+
+```python
+from testindex_knowledge_contract.schema import (
+    IMPL_LABEL, GAP_LABEL, PROP_ID, PROP_PATH, PROP_START, PROP_END, PROP_COVER
+)
+
+# Example: Use schema constants in a query
+query = f"MATCH (n:{IMPL_LABEL}) WHERE n.{PROP_COVER} < 50 RETURN n"
+```
+
+### Neo4j Client
+
+```python
+from testindex_knowledge_contract.neo4j_client import Neo4jClient
+
+# Connect using environment variables (NEO4J_URI, NEO4J_USER, NEO4J_PASS)
+client = Neo4jClient()
+
+# Or connect with specific credentials
+client = Neo4jClient(
+    uri="bolt://localhost:7687",
+    username="neo4j",
+    password="password"
+)
+
+# Run a query
+results = client.run_query(
+    "MATCH (n:Implementation) WHERE n.coverage < $threshold RETURN n",
+    {"threshold": 50}
+)
+
+# Results are returned as a list of dictionaries
+for record in results:
+    print(record)
+```
+
+### Using Benchmark Constants
+
+```python
+from testindex_knowledge_contract.bench_constants import DJANGO_SHA, PATCH_FILE
+
+print(f"Using Django at commit: {DJANGO_SHA}")
+print(f"With test patch: {PATCH_FILE}")
+```
+
+### Using Gold Schema for Testing
+
+```python
+import json
+import importlib.resources
+from testindex_knowledge_contract import test_data
+
+# Access the gold schema data
+gold_schema_path = importlib.resources.files(test_data).joinpath('gold_schema.json')
+with open(gold_schema_path, 'r') as f:
+    gold_schema = json.load(f)
+
+# Use gold schema for precision testing
+print(f"Gold schema has {len(gold_schema['nodes'])} nodes and {len(gold_schema['edges'])} edges")
+```
+
+## Example: Coverage Map 360 Integration
+
+```python
+from testindex_knowledge_contract.schema import (
+    IMPL_LABEL, GAP_LABEL, PROP_ID, PROP_PATH, PROP_START, PROP_END, PROP_COVER
+)
+from testindex_knowledge_contract.neo4j_client import Neo4jClient
+
+# Create client
+client = Neo4jClient()
+
+# Query uncovered implementation functions
+query = f"""
+MATCH (n:{IMPL_LABEL})
+WHERE n.{PROP_COVER} < 10
+RETURN n.{PROP_ID} as id, n.{PROP_PATH} as path, n.{PROP_START} as start_line, n.{PROP_END} as end_line
+"""
+
+results = client.run_query(query)
+
+# Process results
+for record in results:
+    print(f"Low coverage detected: {record['path']} (lines {record['start_line']}-{record['end_line']})")
+``` 

@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {
+      "id": "F_example_function_42",
+      "labels": ["Implementation"]
+    },
+    {
+      "id": "F_helper_function_55",
+      "labels": ["Implementation"]
+    },
+    {
+      "id": "C_ExampleClass_123",
+      "labels": ["Module"]
+    },
+    {
+      "id": "F_test_example_77",
+      "labels": ["Test"]
+    }
+  ],
+  "edges": [
+    {
+      "src": "F_example_function_42",
+      "type": "CALLS",
+      "dst": "F_helper_function_55"
+    },
+    {
+      "src": "F_test_example_77",
+      "type": "TESTS",
+      "dst": "F_example_function_42"
+    },
+    {
+      "src": "F_example_function_42",
+      "type": "DEFINES",
+      "dst": "C_ExampleClass_123"
+    }
+  ]
+} 

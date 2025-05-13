@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astgraph"
+version = "0.1.0"
+description = "Knowledge v1 Contract for TestIndex"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+    "neo4j>=5.0.0,<6.0.0",
+]
+
+[tool.setuptools]
+packages = ["testindex_knowledge_contract"] 
