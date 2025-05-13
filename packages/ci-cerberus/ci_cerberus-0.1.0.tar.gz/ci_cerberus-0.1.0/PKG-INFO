@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: ci-cerberus
+Version: 0.1.0
+Summary: Scans GitHub workflows for known vulnerable actions using the NIST National Vulnerability Database (NVD) API
+Author-email: Gavin Roderick <gavin.roderick@pm.me>
+Requires-Python: >=3.8
+Requires-Dist: requests==2.32.3
+Provides-Extra: dev
+Requires-Dist: black==25.1.0; extra == 'dev'
+Requires-Dist: flake8==7.0.0; extra == 'dev'
+Requires-Dist: isort==6.0.1; extra == 'dev'
+Requires-Dist: mccabe; extra == 'dev'
+Requires-Dist: mypy-extensions; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pycodestyle; extra == 'dev'
+Requires-Dist: pyflakes; extra == 'dev'
+Requires-Dist: pyproject-flake8; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: virtualenv; extra == 'dev'
+Description-Content-Type: text/markdown
+
+
+## Contributing
+
+### Environment Setup
+
+
+#### Pre-Commit Hooks
+This project makes use of pre-commit hooks in order to maintain a consistent codebase regardless of personal opinion or preferred coding style.
+
+To do this, the following tools are run in a pre-commit hook
+1. Black
+2. ISort
+3. flake8

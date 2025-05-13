@@ -1,0 +1,15 @@
+name: test build action
+on: push
+jobs:
+  build_test:
+      runs-on: ubuntu-latest
+      name: Build & Test
+      steps:
+        - uses: actions/checkout@v4
+
+        # -----------------------------------------------------------------------------------------------------------
+        # Example 1
+        # -----------------------------------------------------------------------------------------------------------
+        - name: Get changed files
+          id: changed-files
+          uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c
