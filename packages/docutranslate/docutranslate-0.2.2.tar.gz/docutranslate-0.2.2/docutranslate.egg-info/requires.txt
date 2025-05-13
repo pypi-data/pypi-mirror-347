@@ -1,0 +1,5 @@
+docling>=2.31.0
+httpx
+markdown2
+fastapi[standard]>=0.115.12
+pyinstaller>=6.13.0
