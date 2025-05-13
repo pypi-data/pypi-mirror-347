@@ -1,0 +1,6 @@
+PyGObject
+platformdirs
+Pillow
+imageio
+imageio-ffmpeg
+screeninfo
