@@ -1,0 +1,278 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Enso API",
+    "description": "Find detailed documentation on docs.enso.finance.",
+    "version": "1.0"
+  },
+  "components": {
+    "schemas": {
+      "ConnectedNetwork": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "example": "Ethereum"
+          },
+          "isConnected": {
+            "type": "boolean",
+            "example": true
+          }
+        },
+        "required": ["id", "name", "isConnected"]
+      },
+      "Price": {
+        "type": "object",
+        "properties": {
+          "decimals": {
+            "type": "number",
+            "example": 8
+          },
+          "price": {
+            "type": "number",
+            "example": 27052
+          },
+          "address": {
+            "type": "string",
+            "example": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+          },
+          "symbol": {
+            "type": "string",
+            "example": "WBTC"
+          },
+          "timestamp": {
+            "type": "number",
+            "example": 1695197412
+          },
+          "chainId": {
+            "type": "number",
+            "example": 1
+          }
+        },
+        "required": ["decimals", "price", "address", "symbol", "timestamp", "chainId"]
+      },
+      "Transaction": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "from": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        },
+        "required": ["data", "to", "from", "value"]
+      },
+      "Hop": {
+        "type": "object",
+        "properties": {
+          "tokenIn": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tokenOut": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "protocol": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "primary": {
+            "type": "string"
+          },
+          "internalRoutes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["tokenIn", "tokenOut", "protocol", "action", "primary", "internalRoutes"]
+      },
+      "RouteShortcutTransaction": {
+        "type": "object",
+        "properties": {
+          "gas": {
+            "type": "string"
+          },
+          "amountOut": {
+            "type": "object"
+          },
+          "priceImpact": {
+            "type": "number",
+            "description": "Price impact in basis points, null if USD price not found"
+          },
+          "feeAmount": {
+            "description": "An array of the fee amount collected for each tokenIn",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "createdAt": {
+            "type": "number",
+            "description": "Block number the transaction was created on"
+          },
+          "tx": {
+            "description": "The tx object to use in `ethers`",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Transaction"
+              }
+            ]
+          },
+          "route": {
+            "description": "The route the shortcut will use",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Hop"
+            }
+          }
+        },
+        "required": ["gas", "amountOut", "priceImpact", "feeAmount", "createdAt", "tx", "route"]
+      },
+      "RouteShortcutVariableInputs": {
+        "type": "object",
+        "properties": {
+          "chainId": {
+            "type": "number",
+            "description": "Chain ID of the network to execute the transaction on",
+            "default": 1
+          },
+          "fromAddress": {
+            "type": "string",
+            "description": "Ethereum address of the wallet to send the transaction from",
+            "default": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
+          },
+          "routingStrategy": {
+            "type": "string",
+            "description": "Routing strategy to use",
+            "nullable": true,
+            "enum": ["ensowallet", "router", "delegate"]
+          },
+          "receiver": {
+            "type": "string",
+            "description": "Ethereum address of the receiver of the tokenOut",
+            "example": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
+          },
+          "amountIn": {
+            "description": "Amount of tokenIn to swap in wei",
+            "example": ["1000000000000000000"],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tokenIn": {
+            "description": "Ethereum address of the token to swap from",
+            "example": ["0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tokenOut": {
+            "description": "Ethereum address of the token to swap to",
+            "example": ["0x6b175474e89094c44da98b954eedeac495271d0f"],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "slippage": {
+            "type": "string",
+            "description": "Slippage in basis points (1/10000)",
+            "example": "300",
+            "default": "50"
+          }
+        },
+        "required": ["fromAddress", "amountIn", "tokenIn", "tokenOut"]
+      },
+      "WalletApproveTransaction": {
+        "type": "object",
+        "properties": {
+          "tx": {
+            "type": "object",
+            "description": "The tx object to use in `ethers`"
+          },
+          "gas": {
+            "type": "string",
+            "description": "The gas estimate for the transaction"
+          },
+          "token": {
+            "type": "string",
+            "description": "The token address to approve"
+          },
+          "amount": {
+            "type": "string",
+            "description": "The amount of tokens to approve"
+          },
+          "spender": {
+            "type": "string",
+            "description": "The spender address to approve"
+          }
+        },
+        "required": ["tx", "gas", "token", "amount", "spender"]
+      },
+      "WalletBalance": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "description": "The address of the token"
+          },
+          "amount": {
+            "type": "string",
+            "description": "The unformatted balance of the token",
+            "example": "0x0000000"
+          },
+          "decimals": {
+            "type": "number",
+            "description": "The decimals of the token",
+            "example": 18
+          },
+          "price": {
+            "type": "string",
+            "description": "Price of the token in USD",
+            "example": "0.0"
+          }
+        },
+        "required": ["token", "amount", "decimals", "price"]
+      }
+    },
+    "securitySchemes": {
+      "bearer": {
+        "scheme": "bearer",
+        "bearerFormat": "apiKey",
+        "type": "http"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearer": []
+    }
+  ],
+  "servers": [
+    {
+      "url": "https://api.enso.finance"
+    }
+  ]
+}
