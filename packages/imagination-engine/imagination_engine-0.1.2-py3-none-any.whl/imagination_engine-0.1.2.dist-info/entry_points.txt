@@ -1,0 +1,2 @@
+[console_scripts]
+imagination-engine = imagination_engine.cli.test_commands:tests
