@@ -1,0 +1,12 @@
+databricks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databricks/labs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databricks/labs/remorph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databricks/labs/remorph/bladespector/__about__.py,sha256=t3ygaZ5BEYUORV-oYhHoRS3uOr1kZ-0l27T-2qJM0uk,48
+databricks/labs/remorph/bladespector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databricks/labs/remorph/bladespector/analyzer.py,sha256=zKVy_nb8bS2pXJLtDJWenHfpfHsgdu-NQJx90SALpA0,2430
+databricks/labs/remorph/bladespector/Analyzer/Linux/analyzer,sha256=oqrPe410eEWDjEKIEWf-22NB5wgQsKwQdgU-kywO3Ek,10477733
+databricks/labs/remorph/bladespector/Analyzer/MacOS/analyzer,sha256=I8WpimMLsJBUXvegNGgZxhSetHy_9F_S-VR6OVlrXX8,12351587
+databricks/labs/remorph/bladespector/Analyzer/Windows/analyzer.exe,sha256=gXYQhokKiEzEtmpunbmg13DJuTMFIxsL_poz2I1M328,14611830
+databricks_bb_analyzer-0.1.0.dist-info/METADATA,sha256=kFzQC74O0PIhnjwps4K0IYGRyE6EMzjT0zKOZDhXIWk,619
+databricks_bb_analyzer-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+databricks_bb_analyzer-0.1.0.dist-info/RECORD,,
