@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: orange-uc-vsphere-automation-sdk
+Version: 1.87.0
+Summary: VMware vSphere Automation SDK for Python
+Home-page: https://github.com/vmware/vsphere-automation-sdk-python
+Author: Broadcom, Inc.
+License: MIT
+License-File: LICENSE
+Requires-Dist: lxml>=4.3.0
+Requires-Dist: pyVmomi==8.0.3.0.1
+Requires-Dist: vmware-vapi-runtime==2.52.0
+Requires-Dist: vmware-vcenter==8.0.3.0
+Requires-Dist: vmware-vapi-common-client==2.52.0
+Requires-Dist: uc-vmwarecloud-aws==1.64.1
+Requires-Dist: uc-nsx-python-sdk==4.2.0
+Requires-Dist: uc-nsx-policy-python-sdk==4.2.0
+Requires-Dist: nsx-vmc-policy-python-sdk==4.1.2.0.1
+Requires-Dist: nsx-vmc-aws-integration-python-sdk==4.1.2.0.1
+Requires-Dist: uc-vmwarecloud-draas==1.23.1
+Dynamic: author
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
