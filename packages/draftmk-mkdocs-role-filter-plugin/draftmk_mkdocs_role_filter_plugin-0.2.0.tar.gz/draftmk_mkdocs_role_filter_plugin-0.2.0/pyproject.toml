@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "draftmk-mkdocs-role-filter-plugin"
+description = "MkDocs plugin for Draftmk to filter documentation by user roles"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [{ name = "Jonatan Mata", email = "jonmatum@gmail.com" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: MkDocs",
+    "Operating System :: OS Independent"
+]
+version = "0.2.0"
+
+[project.urls]
+Homepage = "https://github.com/jonmatum/draftmk-mkdocs-role-filter-plugin"
+Issues = "https://github.com/jonmatum/draftmk-mkdocs-role-filter-plugin/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.entry-points."mkdocs.plugins"]
+role-filter = "role_filter_plugin.plugin:RoleFilterPlugin"
+
+[tool.semantic_release]
+version_source = "pyproject.toml:project.version"
+version_variable = "src/role_filter_plugin/__init__.py:__version__"

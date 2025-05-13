@@ -1,0 +1,92 @@
+Metadata-Version: 2.4
+Name: draftmk-mkdocs-role-filter-plugin
+Version: 0.2.0
+Summary: MkDocs plugin for Draftmk to filter documentation by user roles
+Author-email: Jonatan Mata <jonmatum@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/jonmatum/draftmk-mkdocs-role-filter-plugin
+Project-URL: Issues, https://github.com/jonmatum/draftmk-mkdocs-role-filter-plugin/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: MkDocs
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+> **Note:** This plugin is part of the [DraftMk](https://github.com/jonmatum/draftmk) ecosystem – a full-stack markdown documentation platform with live editing, GitHub integration, and role-based publishing.
+
+# draftmk-mkdocs-role-filter-plugin
+
+A custom [MkDocs](https://www.mkdocs.org/) plugin that filters documentation pages based on role-based access metadata in your Markdown frontmatter.
+
+## Features
+
+- Filters content at build time based on allowed roles
+- Supports role-based navigation pruning
+- Easy to integrate into existing MkDocs projects
+
+## Installation
+
+You can install this plugin using pip (recommended in a virtual environment):
+
+```bash
+pip install draftmk-mkdocs-role-filter-plugin
+```
+
+## Usage
+
+In your `mkdocs.yml` configuration file, enable the plugin and set the allowed roles:
+
+```yaml
+plugins:
+  - role-filter:
+      allowed_roles:
+        - public
+```
+
+Pages not matching the specified roles will be excluded from the build and navigation.
+
+### Frontmatter Example
+
+Each Markdown file should declare its role in the frontmatter:
+
+```markdown
+---
+title: "Getting Started"
+role: public
+---
+```
+
+You can use custom roles such as `internal`, `admin`, etc.
+
+## How It Works
+
+The plugin performs two key operations:
+
+### `on_page_markdown`
+
+- Checks each page's frontmatter for a `role` field.
+- If the role matches one of the configured `allowed_roles`, the page is included in the build.
+- If not, the page content is hidden.
+
+### `on_nav`
+
+- Prunes the MkDocs navigation (`nav`) to exclude items that have no visible children or unauthorized pages.
+- This ensures the final navigation reflects only authorized content.
+
+## Development
+
+To test locally with editable install:
+
+```bash
+pip install -e .
+```
+
+## License
+
+MIT © [Jonmatum](https://github.com/jonmatum)
+
+---
+
+> echo "Pura Vida & Happy Coding!";
