@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/movieIsdk/__init__.py
+src/movieIsdk/film_client.py
+src/movieIsdk/film_config.py
+src/movieIsdk.egg-info/PKG-INFO
+src/movieIsdk.egg-info/SOURCES.txt
+src/movieIsdk.egg-info/dependency_links.txt
+src/movieIsdk.egg-info/requires.txt
+src/movieIsdk.egg-info/top_level.txt
+src/movieIsdk/schemas/__init__.py
+src/movieIsdk/schemas/schemas.py
