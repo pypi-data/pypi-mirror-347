@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: mcp-document-brain
+Version: 0.1.0
+Summary: MCP server for converting files to markdown using Markitdown
+Author-email: Armstrong Asenavi <zattufinancialanlyst@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.8.0
+Requires-Dist: Markitdown[all]>=0.1.1
