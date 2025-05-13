@@ -1,0 +1,4 @@
+recursive-include bio *.ipynb
+recursive-include bio *.exe
+recursive-include bio *.ent
+recursive-include bio/All\ Files *

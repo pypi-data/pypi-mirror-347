@@ -1,0 +1,26 @@
+MANIFEST.in
+README.md
+setup.py
+bio/1.seq_concat_transcribe_translate.ipynb
+bio/10.3d.ipynb
+bio/2.read_from_fasta.ipynb
+bio/3.seqRec_genbank.ipynb
+bio/4.fasta_to_genbank.ipynb
+bio/5.modifying_seqRecord.ipynb
+bio/6.Fecth_fasta_entrez.ipynb
+bio/7.Align.ipynb
+bio/8.muscle.ipynb
+bio/9.phylogenetic.ipynb
+bio/__init__.py
+bio/All Files/aligned_sequences.aln
+bio/All Files/aligned_sequences.fasta
+bio/All Files/example2_4.fasta
+bio/All Files/input_sequences.fasta
+bio/All Files/outputGen3.genbank
+bio/All Files/outputGen4.genbank
+bio/All Files/outputgen6.genbank
+bio/All Files/phylogenetic_tree.nwk
+bio_tools_26.egg-info/PKG-INFO
+bio_tools_26.egg-info/SOURCES.txt
+bio_tools_26.egg-info/dependency_links.txt
+bio_tools_26.egg-info/top_level.txt

@@ -1,0 +1,241 @@
+LOCUS       NM_001301717            2191 bp    mRNA    linear   PRI 30-APR-2025
+DEFINITION  Homo sapiens C-C motif chemokine receptor 7 (CCR7), transcript
+            variant 4, mRNA.
+ACCESSION   NM_001301717
+VERSION     NM_001301717.2
+KEYWORDS    RefSeq.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2191)
+  AUTHORS   Niemietz,P., Peiseler,M., Kohlhepp,M., Horn,P., Matchett,K.,
+            Wang,Y., Haas,L., Zhang,T., Bruneau,A., Guillot,A., Berger,H.,
+            Liepelt,A., Warzecha,K., Demske,C., Mockel,D., Lammers,T.,
+            Henderson,N., Heymann,F. and Tacke,F.
+  TITLE     C-C chemokine receptor type 7 (CCR7) regulates hepatic CD8 + T cell
+            homeostasis and response to acute liver injury
+  JOURNAL   Hepatology 80 (5), 1104-1119 (2024)
+   PUBMED   38231043
+  REMARK    GeneRIF: C-C chemokine receptor type 7 (CCR7) regulates hepatic CD8
+            + T cell homeostasis and response to acute liver injury.
+REFERENCE   2  (bases 1 to 2191)
+  AUTHORS   Gao,J., Wang,Z., Lin,S., Tian,Y., Wu,H., Li,Z. and Liu,F.
+  TITLE     CCR7/DUSP1 signaling Axis mediates iCAF to regulates head and neck
+            squamous cell carcinoma growth
+  JOURNAL   Cell Signal 122, 111305 (2024)
+   PUBMED   39067836
+  REMARK    GeneRIF: CCR7/DUSP1 signaling Axis mediates iCAF to regulates head
+            and neck squamous cell carcinoma growth. Erratum:[Cell Signal. 2025
+            Jul;131:111768. doi: 10.1016/j.cellsig.2025.111768. PMID: 40185659]
+REFERENCE   3  (bases 1 to 2191)
+  AUTHORS   Cardona,C.I., Rodriguez,A., Torres,V.C., Sanchez,A., Torres,A.,
+            Vazquez,A.E., Wagler,A.E., Brissette,M.A., Bill,C.A. and Vines,C.M.
+  TITLE     C-C Chemokine Receptor 7 Promotes T-Cell Acute Lymphoblastic
+            Leukemia Invasion of the Central Nervous System via beta2-Integrins
+  JOURNAL   Int J Mol Sci 25 (17), 9649 (2024)
+   PUBMED   39273598
+  REMARK    GeneRIF: C-C Chemokine Receptor 7 Promotes T-Cell Acute
+            Lymphoblastic Leukemia Invasion of the Central Nervous System via
+            beta2-Integrins. Publication Status: Online-Only
+REFERENCE   4  (bases 1 to 2191)
+  AUTHORS   Geraldo,L.H., Garcia,C., Xu,Y., Leser,F.S., Grimaldi,I., de Camargo
+            Magalhaes,E.S., Dejaegher,J., Solie,L., Pereira,C.M., Correia,A.H.,
+            De Vleeschouwer,S., Tavitian,B., Canedo,N.H.S., Mathivet,T.,
+            Thomas,J.L., Eichmann,A. and Lima,F.R.S.
+  TITLE     CCL21-CCR7 signaling promotes microglia/macrophage recruitment and
+            chemotherapy resistance in glioblastoma
+  JOURNAL   Cell Mol Life Sci 80 (7), 179 (2023)
+   PUBMED   37314567
+  REMARK    GeneRIF: CCL21-CCR7 signaling promotes microglia/macrophage
+            recruitment and chemotherapy resistance in glioblastoma. Publication
+            Status: Online-Only
+REFERENCE   5  (bases 1 to 2191)
+  AUTHORS   Moschovakis,G.L. and Forster,R.
+  TITLE     Multifaceted activities of CCR7 regulate T-cell homeostasis in
+            health and disease
+  JOURNAL   Eur J Immunol 42 (8), 1949-1955 (2012)
+   PUBMED   22700449
+  REMARK    Review article
+REFERENCE   6  (bases 1 to 2191)
+  AUTHORS   Yoshida,R., Imai,T., Hieshima,K., Kusuda,J., Baba,M., Kitaura,M.,
+            Nishimura,M., Kakizaki,M., Nomiyama,H. and Yoshie,O.
+  TITLE     Molecular cloning of a novel human CC chemokine EBI1-ligand
+            chemokine that is a specific functional ligand for EBI1, CCR7
+  JOURNAL   J Biol Chem 272 (21), 13803-13809 (1997)
+   PUBMED   9153236
+REFERENCE   7  (bases 1 to 2191)
+  AUTHORS   Burgstahler,R., Kempkes,B., Steube,K. and Lipp,M.
+  TITLE     Expression of the chemokine receptor BLR2/EBI1 is specifically
+            transactivated by Epstein-Barr virus nuclear antigen 2
+  JOURNAL   Biochem Biophys Res Commun 215 (2), 737-743 (1995)
+   PUBMED   7488016
+REFERENCE   8  (bases 1 to 2191)
+  AUTHORS   Schweickart,V.L., Raport,C.J., Godiska,R., Byers,M.G., Eddy,R.L.
+            Jr., Shows,T.B. and Gray,P.W.
+  TITLE     Cloning of human and mouse EBI1, a lymphoid-specific
+            G-protein-coupled receptor encoded on human chromosome 17q12-q21.2
+  JOURNAL   Genomics 23 (3), 643-650 (1994)
+   PUBMED   7851893
+REFERENCE   9  (bases 1 to 2191)
+  AUTHORS   Birkenbach,M., Josefsen,K., Yalamanchili,R., Lenoir,G. and Kieff,E.
+  TITLE     Epstein-Barr virus-induced genes: first lymphocyte-specific G
+            protein-coupled peptide receptors
+  JOURNAL   J Virol 67 (4), 2209-2220 (1993)
+   PUBMED   8383238
+REFERENCE   10  (bases 1 to 2191)
+  AUTHORS   Itoh,H., Toyama,R., Kozasa,T., Tsukamoto,T., Matsuoka,M. and
+            Kaziro,Y.
+  TITLE     Presence of three distinct molecular species of Gi protein alpha
+            subunit. Structure of rat cDNAs and human genomic DNAs
+  JOURNAL   J Biol Chem 263 (14), 6656-6664 (1988)
+   PUBMED   2834384
+COMMENT     ##Evidence-Data-START##
+            Transcript exon combination :: HY017993.1 [ECO:0000332]
+            RNAseq introns :: single sample supports all introns SAMEA2148874,
+            SAMEA2161674 [ECO:0000348]
+            ##Evidence-Data-END##
+            REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AK310277.1, HY017993.1 and
+            BC035343.1.
+            On Aug 13, 2020 this sequence version replaced NM_001301717.1.
+            Summary: The protein encoded by this gene is a member of the G
+            protein-coupled receptor family. This receptor was identified as a
+            gene induced by the Epstein-Barr virus (EBV), and is thought to be
+            a mediator of EBV effects on B lymphocytes. This receptor is
+            expressed in various lymphoid tissues and activates B and T
+            lymphocytes. It has been shown to control the migration of memory T
+            cells to inflamed tissues, as well as stimulate dendritic cell
+            maturation. The chemokine (C-C motif) ligand 19 (CCL19/ECL) has
+            been reported to be a specific ligand of this receptor. Signals
+            mediated by this receptor regulate T cell homeostasis in lymph
+            nodes, and may also function in the activation and polarization of
+            T cells, and in chronic inflammation pathogenesis. Alternative
+            splicing of this gene results in multiple transcript variants.
+            [provided by RefSeq, Sep 2014].
+            Transcript Variant: This variant (4) contains an alternate 5'
+            terminal exon, and it thus differs in its 5' UTR and initiates
+            translation at a downstream in-frame start codon, compared to
+            variant 1. The encoded isoform (c) is shorter at the N-terminus,
+            compared to isoform a. Variants 3, 4 and 5 all encode isoform c.
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            COMPLETENESS: complete on the 3' end.
+FEATURES             Location/Qualifiers
+     source          1..2191
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="17"
+                     /map="17q21.2"
+     gene            1..2191
+                     /gene="CCR7"
+                     /gene_synonym="BLR2; CC-CKR-7; CCR-7; CD197; CDw197;
+                     CMKBR7; EBI1"
+                     /note="C-C motif chemokine receptor 7"
+                     /db_xref="GeneID:1236"
+                     /db_xref="HGNC:HGNC:1608"
+                     /db_xref="MIM:600242"
+     exon            1..91
+                     /gene="CCR7"
+                     /gene_synonym="BLR2; CC-CKR-7; CCR-7; CD197; CDw197;
+                     CMKBR7; EBI1"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    73..75
+                     /gene="CCR7"
+                     /gene_synonym="BLR2; CC-CKR-7; CCR-7; CD197; CDw197;
+                     CMKBR7; EBI1"
+                     /note="upstream in-frame stop codon"
+     exon            92..141
+                     /gene="CCR7"
+                     /gene_synonym="BLR2; CC-CKR-7; CCR-7; CD197; CDw197;
+                     CMKBR7; EBI1"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             100..1218
+                     /gene="CCR7"
+                     /gene_synonym="BLR2; CC-CKR-7; CCR-7; CD197; CDw197;
+                     CMKBR7; EBI1"
+                     /note="isoform c precursor is encoded by transcript variant
+                     4; C-C chemokine receptor type 7; chemokine (C-C motif)
+                     receptor 7; MIP-3 beta receptor; EBV-induced G
+                     protein-coupled receptor 1; Epstein-Barr virus induced gene
+                     1; lymphocyte-specific G protein-coupled peptide receptor;
+                     CC chemokine receptor 7; Bukitt's lymphoma receptor 2;
+                     Epstein-Barr virus-induced G-protein coupled receptor 1"
+                     /codon_start=1
+                     /product="C-C chemokine receptor type 7 isoform c
+                     precursor"
+                     /protein_id="NP_001288646.1"
+                     /db_xref="CCDS:CCDS77026.1"
+                     /db_xref="GeneID:1236"
+                     /db_xref="HGNC:HGNC:1608"
+                     /db_xref="MIM:600242"
+                     /translation="MKSVLVVALLVIFQVCLCQDEVTDDYIGDNTTVDYTLFESLCSKK
+                     DVRNFKAWFLPIMYSIICFVGLLGNGLVVLTYIYFKRLKTMTDTYLLNLAVADILFLLT
+                     LPFWAYSAAKSWVFGVHFCKLIFAIYKMSFFSGMLLLLCISIDRYVAIVQAVSAHRHRA
+                     RVLLISKLSCVGIWILATVLSIPELLYSDLQRSSSEQAMRCSLITEHVEAFITIQVAQM
+                     VIGFLVPLLAMSFCYLVIIRTLLQARNFERNKAIKVIIAVVVVFIVFQLPYNGVVLAQT
+                     VANFNITSSTCELSKQLNIAYDVTYSLACVRCCVNPFLYAFIGVKFRNDLFKLFKDLGC
+                     LSQEQLRQWSSCRHIRRSSMSVEAETTTTFSP"
+     sig_peptide     100..153
+                     /gene="CCR7"
+                     /gene_synonym="BLR2; CC-CKR-7; CCR-7; CD197; CDw197;
+                     CMKBR7; EBI1"
+                     /inference="COORDINATES: ab initio prediction:SignalP:6.0"
+     exon            142..2191
+                     /gene="CCR7"
+                     /gene_synonym="BLR2; CC-CKR-7; CCR-7; CD197; CDw197;
+                     CMKBR7; EBI1"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      2161..2166
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="CCR7"
+                     /gene_synonym="BLR2; CC-CKR-7; CCR-7; CD197; CDw197;
+                     CMKBR7; EBI1"
+                     /note="hexamer: AAGAAA"
+     polyA_site      2191
+                     /gene="CCR7"
+                     /gene_synonym="BLR2; CC-CKR-7; CCR-7; CD197; CDw197;
+                     CMKBR7; EBI1"
+                     /note="major polyA site"
+ORIGIN
+        1 ctctagatga gtcagtggag ggcgggtgga gcgttgaacc gtgaagagtg tggttgggcg
+       61 taaacgtgga cttaaactca ggagctaagg gggaaaccaa tgaaaagcgt gctggtggtg
+      121 gctctccttg tcattttcca ggtatgcctg tgtcaagatg aggtcacgga cgattacatc
+      181 ggagacaaca ccacagtgga ctacactttg ttcgagtctt tgtgctccaa gaaggacgtg
+      241 cggaacttta aagcctggtt cctccctatc atgtactcca tcatttgttt cgtgggccta
+      301 ctgggcaatg ggctggtcgt gttgacctat atctatttca agaggctcaa gaccatgacc
+      361 gatacctacc tgctcaacct ggcggtggca gacatcctct tcctcctgac ccttcccttc
+      421 tgggcctaca gcgcggccaa gtcctgggtc ttcggtgtcc acttttgcaa gctcatcttt
+      481 gccatctaca agatgagctt cttcagtggc atgctcctac ttctttgcat cagcattgac
+      541 cgctacgtgg ccatcgtcca ggctgtctca gctcaccgcc accgtgcccg cgtccttctc
+      601 atcagcaagc tgtcctgtgt gggcatctgg atactagcca cagtgctctc catcccagag
+      661 ctcctgtaca gtgacctcca gaggagcagc agtgagcaag cgatgcgatg ctctctcatc
+      721 acagagcatg tggaggcctt tatcaccatc caggtggccc agatggtgat cggctttctg
+      781 gtccccctgc tggccatgag cttctgttac cttgtcatca tccgcaccct gctccaggca
+      841 cgcaactttg agcgcaacaa ggccatcaag gtgatcatcg ctgtggtcgt ggtcttcata
+      901 gtcttccagc tgccctacaa tggggtggtc ctggcccaga cggtggccaa cttcaacatc
+      961 accagtagca cctgtgagct cagtaagcaa ctcaacatcg cctacgacgt cacctacagc
+     1021 ctggcctgcg tccgctgctg cgtcaaccct ttcttgtacg ccttcatcgg cgtcaagttc
+     1081 cgcaacgatc tcttcaagct cttcaaggac ctgggctgcc tcagccagga gcagctccgg
+     1141 cagtggtctt cctgtcggca catccggcgc tcctccatga gtgtggaggc cgagaccacc
+     1201 accaccttct ccccataggc gactcttctg cctggactag agggacctct cccagggtcc
+     1261 ctggggtggg gatagggagc agatgcaatg actcaggaca tccccccgcc aaaagctgct
+     1321 cagggaaaag cagctctccc ctcagagtgc aagcccctgc tccagaagat agcttcaccc
+     1381 caatcccagc tacctcaacc aatgccaaaa aaagacaggg ctgataagct aacaccagac
+     1441 agacaacact gggaaacaga ggctattgtc ccctaaacca aaaactgaaa gtgaaagtcc
+     1501 agaaactgtt cccacctgct ggagtgaagg ggccaaggag ggtgagtgca aggggcgtgg
+     1561 gagtggcctg aagagtcctc tgaatgaacc ttctggcctc ccacagactc aaatgctcag
+     1621 accagctctt ccgaaaacca ggccttatct ccaagaccag agatagtggg gagacttctt
+     1681 ggcttggtga ggaaaagcgg acatcagctg gtcaaacaaa ctctctgaac ccctccctcc
+     1741 atcgttttct tcactgtcct ccaagccagc gggaatggca gctgccacgc cgccctaaaa
+     1801 gcacactcat cccctcactt gccgcgtcgc cctcccaggc tctcaacagg ggagagtgtg
+     1861 gtgtttcctg caggccaggc cagctgcctc cgcgtgatca aagccacact ctgggctcca
+     1921 gagtggggat gacatgcact cagctcttgg ctccactggg atgggaggag aggacaaggg
+     1981 aaatgtcagg ggcggggagg gtgacagtgg ccgcccaagg cccacgagct tgttctttgt
+     2041 tctttgtcac agggactgaa aacctctcct catgttctgc tttcgattcg ttaagagagc
+     2101 aacattttac ccacacacag ataaagtttt cccttgagga aacaacagct ttaaaagaaa
+     2161 aagaaaaaaa aagtctttgg taaatggcaa a
+//

@@ -1,0 +1,12 @@
+LOCUS       Exmaple_Seq               12 bp    DNA              UNK 01-JAN-1980
+DEFINITION  This is the exmaple data.
+ACCESSION   1bm22
+VERSION     1bm22
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  New variety
+            .
+FEATURES             Location/Qualifiers
+ORIGIN
+        1 atgcatgcgc ta
+//
