@@ -1,0 +1,2 @@
+[console_scripts]
+fiducia-miner = fiducia_miner.cli:main
