@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "robotframework-heal"
+version = "0.3.0dev1"
+description = "A Robot Framework Listener for library agnostic self-healing and smart recovery of tests"
+authors = ["Many Kasiriha <many.kasiriha@dbschenker.com>"]
+maintainers = ["Many Kasiriha <many.kasiriha@dbschenker.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+packages = [
+    { include = "SelfHealing", from = "src" }
+]
+exclude = ["src/SelfHealing/.env"]
+homepage = "https://github.com/manykarim/robotframework-heal"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+robotframework-browser = "*"
+beautifulsoup4 = "*"
+robotframework = "*"
+opencv-python-headless = "*"
+python-dotenv = "*"
+pyautogui = "*"
+tinydb = "*"
+cssify = "*"
+parsimonious = "*"
+lxml = "*"
+thefuzz = "*"
+robotframework-appiumlibrary = "*"
+jinja2 = "*"
+litellm = "*"
+
+
+[tool.poetry.group.dev.dependencies]    
+pytest = "*"
+invoke = "*"
+coverage = "*"
+robotframework-stacktrace = "*"
+mkdocs-material = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
