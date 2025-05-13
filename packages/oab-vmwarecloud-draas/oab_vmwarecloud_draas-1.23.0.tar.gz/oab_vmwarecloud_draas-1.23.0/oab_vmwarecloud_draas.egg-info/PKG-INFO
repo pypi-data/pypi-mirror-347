@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: oab_vmwarecloud_draas
+Version: 1.23.0
+Summary: Client bindings for VMware Cloud on AWS - Disaster Recovery As A Service
+Home-page: https://github.com/vmware/vsphere-automation-sdk-python/tree/master/lib/src/vmwarecloud-draas
+Author: VMware, Inc.
+License: License :: OSI Approved :: MIT License
+Keywords: VMware
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: oab_vapi_common_client
+Requires-Dist: oab_vapi_runtime
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# VMwareCloud AWS Disaster Recovery as a Service
+ 
+vmwarecloud-draas is a client library that contains disaster management and recovery related APIs for your Software Defined Data Centres (SDDCs) running on VMware Cloud on Amazon Web Services (AWS). This library is part of [vSphere Automation SDK for Python](https://github.com/vmware/vsphere-automation-sdk-python).
+ 
+[Source code](https://github.com/vmware/vsphere-automation-sdk-python/tree/master/lib/src/vmwarecloud-draas) | [Package (PyPI)](https://pypi.org/project/vmwarecloud-draas/) | [Python API documentation](https://vmware.github.io/vsphere-automation-sdk-python/vmc-draas/index.html)
+ 
+## Getting started
+ 
+### Prerequisites
+ 
+- Python 3.8+ is required to use this package.
+ 
+### Install the package
+ 
+```bash
+pip install vmwarecloud-draas
+```
