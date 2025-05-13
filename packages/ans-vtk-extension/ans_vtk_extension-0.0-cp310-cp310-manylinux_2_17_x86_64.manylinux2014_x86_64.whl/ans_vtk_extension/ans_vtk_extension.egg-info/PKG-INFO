@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: ans_vtk_extension
+Version: 0.0
+Summary: C++ extension.
+License-File: LICENSE
+Dynamic: license-file
+Dynamic: summary
