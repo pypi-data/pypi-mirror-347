@@ -1,0 +1,221 @@
+Metadata-Version: 2.4
+Name: kauri
+Version: 1.0.0
+Summary: Algebraic manipulation of non-planar rooted trees in Python
+Home-page: https://github.com/daniil-shmelev/kauri
+Author: Daniil Shmelev
+Author-email: daniil.shmelev23@imperial.ac.uk
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+Requires-Dist: tqdm
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+<p align="center">
+<img src="docs/_static/logo.png" width="350">
+</p>
+
+Kauri is a Python package for symbolic and algebraic manipulation of rooted trees,
+often used in the study of B-series, Runge-Kutta methods, and backward error analysis. It implements Hopf algebraic structures and provides tools for symbolic computation and visualization.
+
+## Installation
+
+```
+pip install kauri
+```
+
+## Documentation
+
+Full documentation is available at [https://kauri.readthedocs.io](https://kauri.readthedocs.io)
+
+## Functionalities
+
+The main goal of the kauri package is to provide implementations of:
+
+- The Butcher-Connes-Kreimer (BCK) Hopf algebra of (un)labelled non-planar rooted trees [[Connes & Kreimer, 1999](#reference)], 
+used for the analysis of B-series and Runge-Kutta schemes
+- The Calaque, Ebrahimi-Fard and Manchon (CEM) Hopf algebra [[Calaque, Ebrahimi-Fard & Manchon, 2011](#reference)], 
+used for backward error analysis of B-series and Runge-Kutta schemes
+- Evaluation and manipulation of Runge-Kutta schemes, including symbolic expressions for elementary weights functions
+and order conditions
+- Evaluation and symbolic manipulation of truncated B-series over unlabelled trees.
+
+## Simple Examples
+
+### Unlabelled BCK coproduct
+```python
+import kauri as kr
+import kauri.bck as bck
+
+t = kr.Tree([[], [[]]])
+cp = bck.coproduct(t)
+kr.display(cp)
+```
+Output:
+
+<img src="docs/_static/example1.png" width="600">
+
+### Labelled BCK antipode
+```python
+import kauri as kr
+import kauri.bck as bck
+
+t = kr.Tree([[[3],2],[1],0])
+s = bck.antipode(t)
+kr.display(s)
+```
+Output:
+
+<img src="docs/_static/example2.png" width="500">
+
+### Runge-Kutta order conditions
+```python
+import kauri as kr
+
+t = kr.Tree([[],[]])
+print(kr.rk_order_cond(t, s = 3, explicit = True))
+```
+Output:
+```
+a10**2*b1 + b2*(a20 + a21)**2 - 1/3
+```
+
+### Truncated B-series of RK4
+
+```python
+import kauri as kr
+import sympy as sp
+import numpy as np
+import matplotlib.pyplot as plt
+
+y1 = sp.symbols('y1')
+y = sp.Matrix([y1])
+f = sp.Matrix([y1 ** 2])
+
+m = kr.rk4.elementary_weights_map()
+bs = kr.BSeries(y, f, weights = m, order = 5)
+print(bs.series())
+
+t = np.linspace(0, 0.9, 100)
+true = [1 / (1 - x) for x in t]
+plt.plot(t, true, linestyle="--", color="black")
+plt.plot(t, [bs([1], h) for h in t], color = 'firebrick')
+plt.show()
+```
+
+## The BCK Hopf Algebra
+
+The Butcher-Connes-Kreimer Hopf algebra of (un)labelled non-planar rooted trees [[Connes & Kreimer, 1999](#reference)], is given by
+$(\mathcal{H}, \Delta_{BCK},\mu,\varepsilon_{BCK}, \emptyset, S_{BCK})$, where<br>
+- $\mathcal{H}$ is the set of all linear combinations of forests of (un)labelled trees
+- Multiplication $\mu$ is defined as the commutative juxtaposition of trees
+- Comultiplication $\Delta_{BCK}$ is defined by
+```math
+\Delta_{BCK}(t) = t \otimes \emptyset + \emptyset \otimes t + \sum_{s \subset t} s \otimes [t\setminus s]
+```
+where the sum is over proper rooted subtrees $s$ of $t$, and $[t\setminus s]$ is the product of all branches formed when
+$s$ is erased from $t$.
+- The unit $\emptyset$ is the empty tree
+- The counit $\varepsilon_{BCK}$ is given by $\varepsilon(\tau) = 1$ if $\tau = \emptyset$ and $0$ otherwise
+- The antipode $S_{BCK}$ is defined by
+```math
+S_{BCK}(t) = -t - \sum_{s \subset t} S([t \setminus s])s, \quad S_{BCK}(\bullet) = -\bullet
+```
+
+Given two maps $f,g : \mathcal{H} \to \mathcal{H}$, we define their product map by
+```math
+(f\cdot g)(\tau) = \mu \circ (f \otimes g) \circ \Delta(\tau).
+```
+
+## The CEM Hopf Algebra
+
+The Calaque, Ebrahimi-Fard and Manchon (CEM) [[Calaque, Ebrahimi-Fard & Manchon, 2011](#reference)] Hopf algebra
+$(\widetilde{H}, \Delta_{CEM}, \mu, \varepsilon_{CEM}, \bullet, S_{CEM})$ is defined as follows.
+
+- $\widetilde{H}$ is the space of non-empty unlabelled trees, defined as
+  $\widetilde{H} = H / J$ where $H$ is the space of unlabelled non-planar rooted trees and
+$J$ is the ideal generated by $\bullet - \emptyset$.
+- The unit is the single-node tree, $\bullet$.
+- The counit map is defined by $\varepsilon_{CEM}(\bullet) = 1$,
+  $\varepsilon_{CEM}(t) = 0$ for all $\bullet \neq t \in \widetilde{H}$.
+- Multiplication $\mu : \widetilde{H} \otimes \widetilde{H} \to \widetilde{H}$ is defined as the
+  commutative juxtaposition of two forests.
+- Comultiplication $\Delta : \widetilde{H} \to \widetilde{H} \otimes \widetilde{H}$ is defined as
+
+```math
+\Delta_{CEM}(t) = \sum_{s \subset t} s \otimes t / s
+```
+
+  where the sum runs over all possible subforests $s$ of $t$, and
+  $t / s$ is the tree obtained by contracting each connected component of
+  $s$ onto a vertex [[Calaque, Ebrahimi-Fard & Manchon, 2011](#reference)].
+- The antipode $S_{CEM}$ is defined by $S_{CEM}(\bullet) = \bullet$ and
+
+```math
+S_{CEM}(t) = -t - \sum_{t, \bullet \neq s \subset t} S_{CEM}(s) \,\, t / s.
+```
+
+## Truncated B-series
+
+Consider an ODE of the form
+```math
+\frac{dy}{ds} = f(y)
+```
+
+Given a weights function $\varphi$, the associated truncated B-Series is
+
+```math
+B_h(\varphi, y_0) := \sum_{|t| \leq n} \frac{h^{|t|}}{\sigma(t)} \varphi(t) F(t)(y_0),
+```
+
+where the sum runs over all trees of order at most $n$, $\sigma(t)$ is the symmetry factor
+of a tree, and $F(t)(y_0)$ are the elementary differentials, defined recursively on trees by:
+
+```math
+F(\emptyset) = y,
+```
+```math
+F(\bullet) = f(y),
+```
+```math
+F([t_1, t_2, \ldots, t_k])(y) = f^{(k)}(y)(F(t_1)(y), F(t_2)(y), \ldots, F(t_k)(y)).
+```
+
+## Citation
+
+```bibtex
+@misc{shmelev2025kauri,
+  title={Kauri: Algebraic manipulation of non-planar rooted trees in Python},
+  author={Shmelev, Daniil},
+  year={2025},
+  howpublished={\url{https://github.com/daniil-shmelev/kauri}}
+}
+```
+
+## References
+<a name="reference"></a>
+- Connes, A., & Kreimer, D. (1999). *Hopf algebras, renormalization and noncommutative geometry*. In *Quantum field theory: perspective and prospective* (pp. 59–109). Springer.
+- Calaque, D., Ebrahimi-Fard, K., & Manchon, D. (2011). Two interacting Hopf algebras of trees: A Hopf-algebraic approach to composition and substitution of B-series. Advances in Applied Mathematics, 47(2), 282–308. Elsevier.
+- Beyer, T., & Hedetniemi, S. M. (1980). *Constant time generation of rooted trees*. In *SIAM Journal on Computing 9.4* (pp. 706-712)
