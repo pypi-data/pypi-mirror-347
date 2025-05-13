@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+daisys_mcp/__init__.py
+daisys_mcp/http_tts.py
+daisys_mcp/model.py
+daisys_mcp/server.py
+daisys_mcp/utils.py
+daisys_mcp/websocket_tts.py
+daisys_mcp.egg-info/PKG-INFO
+daisys_mcp.egg-info/SOURCES.txt
+daisys_mcp.egg-info/dependency_links.txt
+daisys_mcp.egg-info/entry_points.txt
+daisys_mcp.egg-info/requires.txt
+daisys_mcp.egg-info/top_level.txt
