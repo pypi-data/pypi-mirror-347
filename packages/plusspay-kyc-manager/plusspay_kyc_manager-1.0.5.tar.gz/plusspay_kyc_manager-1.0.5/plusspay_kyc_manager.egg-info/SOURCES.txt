@@ -1,0 +1,11 @@
+README.md
+setup.py
+plusspay_kyc_manager/__init__.py
+plusspay_kyc_manager.egg-info/PKG-INFO
+plusspay_kyc_manager.egg-info/SOURCES.txt
+plusspay_kyc_manager.egg-info/dependency_links.txt
+plusspay_kyc_manager.egg-info/requires.txt
+plusspay_kyc_manager.egg-info/top_level.txt
+plusspay_kyc_manager/core/__init__.py
+plusspay_kyc_manager/didit/__init__.py
+plusspay_kyc_manager/dtos/__init__.py
