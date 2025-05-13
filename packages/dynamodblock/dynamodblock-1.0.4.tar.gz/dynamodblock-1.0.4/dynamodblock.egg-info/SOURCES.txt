@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dynamodblock/__init__.py
+dynamodblock/create_ddb_table.tf
+dynamodblock/dynamodblock.py
+dynamodblock.egg-info/PKG-INFO
+dynamodblock.egg-info/SOURCES.txt
+dynamodblock.egg-info/dependency_links.txt
+dynamodblock.egg-info/not-zip-safe
+dynamodblock.egg-info/top_level.txt
