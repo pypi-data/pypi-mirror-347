@@ -1,0 +1,53 @@
+name: Pre-commit Check
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pre-commit
+
+      - name: Run pre-commit
+        id: precommit
+        run: |
+          pre-commit install
+          pre-commit run --all-files || echo "::warning::Pre-commit hook(s) failed."
+
+      - name: Auto-fix & Commit changes
+        if: github.event_name == 'push'
+        shell: bash
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "Changes detected after pre-commit run."
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+            git add .
+
+            git reset HEAD .github/workflows/
+
+            if git diff --staged --quiet; then
+              echo "No non-workflow changes to commit after auto-fix."
+            else
+              echo "Committing auto-fixed (non-workflow) changes..."
+              git commit -m "chore: auto-fix pre-commit issues [skip ci]"
+              git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+            fi
+          else
+            echo "No changes made by pre-commit."
+          fi
