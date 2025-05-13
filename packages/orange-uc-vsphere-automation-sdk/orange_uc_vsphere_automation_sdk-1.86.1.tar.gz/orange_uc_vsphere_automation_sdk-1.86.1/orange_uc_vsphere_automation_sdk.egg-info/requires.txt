@@ -1,0 +1,11 @@
+lxml>=4.3.0
+pyVmomi>=6.7
+uc-vapi-runtime==2.44.0
+uc_vcenter_bindings==4.2.0
+uc-vapi-common-client==2.44.0
+uc-vmwarecloud-aws==1.64.0
+uc-nsx-python-sdk==4.1.2.0.0
+uc-nsx-policy-python-sdk==4.1.2.0.0
+uc-nsx-vmc-policy-python-sdk==4.1.2.0.0
+uc-nsx-vmc-aws-integration-python-sdk==4.1.2.0.0
+uc-vmwarecloud-draas==1.23.0
