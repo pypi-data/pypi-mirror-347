@@ -1,0 +1,12 @@
+marinholab/papers/icra2023/orbital_manipulation/__init__.py,sha256=XrEtyX_YdNQ3K1yV-U7foTV5k4HG6ERtxF6xlKVqMxU,83
+marinholab/papers/icra2023/orbital_manipulation/_lbr4_kinematics.py,sha256=0eHjaHmsiIBskOD4tPxu84qpaPE-LalBkh3eIshaY7Y,1567
+marinholab/papers/icra2023/orbital_manipulation/_main.py,sha256=gPphZ9S4h6lTqGal8CLm0Tg-g73ESpA3il0RIwt8x-U,8523
+marinholab/papers/icra2023/orbital_manipulation/_orbital_manipulation.py,sha256=1bjk6fy2TGb3NpdVN_zCTCoKTFDXgGjsu3e3yQcp5vk,6389
+marinholab/papers/icra2023/orbital_manipulation/_robot_manager.py,sha256=uDGf_OnRQgzksJc89wCU-XVemM8fag1NdPhtXqVNk0M,1371
+marinholab/papers/icra2023/orbital_manipulation/main_dqp.py,sha256=9QEXtwhB9lLn_DLB1HF6bxHifF4OEGUdReZ7MN5UveU,7449
+marinholab_papers_icra2023_orbitalmanipulation-25.5.4.dist-info/licenses/LICENSE,sha256=s23Bkw8ng0MJNvpn0_hl84-A-4tSzAY9QEZN9HLvR5Q,1073
+marinholab_papers_icra2023_orbitalmanipulation-25.5.4.dist-info/METADATA,sha256=hvA_1E_eOQ5OR4akYyNh7jk2EW8fju4gBHdIWRjnqmM,638
+marinholab_papers_icra2023_orbitalmanipulation-25.5.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+marinholab_papers_icra2023_orbitalmanipulation-25.5.4.dist-info/entry_points.txt,sha256=R20mb10U2G4M_aIw1US-uerR-tHxMRkqaGS7A2jmcKA,126
+marinholab_papers_icra2023_orbitalmanipulation-25.5.4.dist-info/top_level.txt,sha256=YjWgPRuEJHuJybYwNAopNHAxnpqzrOhNfv_H8xpLMLw,11
+marinholab_papers_icra2023_orbitalmanipulation-25.5.4.dist-info/RECORD,,
