@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ezdir
+Version: 0.1.1
+Summary: Change working directory up a number of levels or to a named folder
+Home-page: https://github.com/mshodge/ezdir
+Author: Michael Hodge
+Author-email: michaelstvnhodge@gmail.com
+Keywords: os,directory,path,utility
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ezdir
+
+Simple utilities to change the current working directory in Python:
+
+- `up(n)` goes up `n` directory levels.
+- `find("foldername")` goes up to the first parent folder matching a name.
+
+## Installation
+
+```bash
+pip install ezdir
+```
+
+## Example
+
+```python
+from updir import up, find
+
+up(2)               # Go up two levels
+find("scripts")     # Change to a parent folder named 'scripts', errors if it doesn't exist
+```
