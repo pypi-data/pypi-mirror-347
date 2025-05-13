@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/fatmanurprojects/__init__.py
+src/fatmanurprojects.egg-info/PKG-INFO
+src/fatmanurprojects.egg-info/SOURCES.txt
+src/fatmanurprojects.egg-info/dependency_links.txt
+src/fatmanurprojects.egg-info/top_level.txt
+tests/test_DataScience.py

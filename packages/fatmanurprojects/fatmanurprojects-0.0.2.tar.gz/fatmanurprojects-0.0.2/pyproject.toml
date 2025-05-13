@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fatmanurprojects"  # <-- Proje ismini değiştirdik
+version = "0.0.2"
+description = "A basic statistics package"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+  { name = "fatmanuryvz", email = "fatmanuryvz.3535@gmail.com" },
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/fatmanuryvz/fatmanurprojects"  # <-- GitHub linkini güncelledik
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["fatmanurprojects"]  # <-- Paket adı da projeyle uyumlu olmalı
