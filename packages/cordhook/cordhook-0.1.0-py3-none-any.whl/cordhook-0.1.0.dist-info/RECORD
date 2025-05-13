@@ -1,0 +1,10 @@
+cordhook/__init__.py,sha256=BQ-8zvsb9igNLzizun2-08ceLxALEzDkB719yLISFIk,668
+cordhook/embed.py,sha256=SRvF10MRCpZ0oiFqCmq9QbZzWWREIBncKNspZrLXDt0,1491
+cordhook/exceptions.py,sha256=QXOUZgEw322Hk9UMo604Jsp2GrRKHcSXsZAbc5a-Z-s,476
+cordhook/utils.py,sha256=0vcyPLywTumtNvXNetASjwxqGRXOmragdvviVbhR_vk,1800
+cordhook/webhook.py,sha256=urv-0Tp2E7MWeZ7TVpZ_yvF7RqDWKKemyqlupKWPJ-s,1442
+cordhook-0.1.0.dist-info/licenses/LICENSE,sha256=rdpxCh6k7j1oVmNKXWBb17x1b26B9eCA0gilYsD-MZQ,1164
+cordhook-0.1.0.dist-info/METADATA,sha256=gH-Q_Acc3wpi1CSrIBu5oJ3ZeKw6dFIiZA7SryCdgeY,838
+cordhook-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+cordhook-0.1.0.dist-info/top_level.txt,sha256=RmW7TUWLSiSQTu76wJdF9nxurB9PwsEnSLdzw_Q8108,9
+cordhook-0.1.0.dist-info/RECORD,,
