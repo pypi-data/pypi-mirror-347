@@ -1,0 +1,2 @@
+[console_scripts]
+mapillary-nearby = mapillary_nearby.main:main
