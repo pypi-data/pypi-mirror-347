@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: sheet-task-uploader
+Version: 0.1
+Summary: Google Sheets için otomatik görev listesi, checkbox ve renklendirme modülü
+Home-page: https://github.com/irfangedik/sheet-task-uploader
+Author: İrfan Gedik
+Author-email: irfangedik@gmail.com
+Keywords: google sheets,automation,task tracker,checkbox,gspread
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: gspread
+Requires-Dist: google-api-python-client
+Requires-Dist: oauth2client
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
