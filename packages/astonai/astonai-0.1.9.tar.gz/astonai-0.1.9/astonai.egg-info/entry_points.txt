@@ -1,0 +1,3 @@
+[console_scripts]
+aston = testindex.cli.main:main
+astonai-post-install = scripts.post_install:main
