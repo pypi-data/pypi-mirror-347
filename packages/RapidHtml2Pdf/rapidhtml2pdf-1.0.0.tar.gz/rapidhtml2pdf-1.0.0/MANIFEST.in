@@ -1,0 +1,9 @@
+exclude install.sh
+exclude install.bat
+exclude tests
+exclude .venv
+exclude .RapidHtml2Pdf_cache
+exclude .pytest_cache
+exclude tox.ini
+exclude requirement.txt
+exclude .tox

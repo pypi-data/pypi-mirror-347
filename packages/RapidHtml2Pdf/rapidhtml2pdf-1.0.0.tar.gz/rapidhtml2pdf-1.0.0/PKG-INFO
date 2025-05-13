@@ -1,0 +1,107 @@
+Metadata-Version: 2.4
+Name: RapidHtml2Pdf
+Version: 1.0.0
+Summary: Convert HTML (with CSS, SCSS, icons, and images) to PDF with async/threaded support
+Home-page: https://github.com/Xyhercode/RapidHtml2Pdf
+Author: Rakesh Sharma
+Author-email: Rakesh Sharma <rakeshsharmanine@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/Xyhercode/RapidHtml2Pdf
+Project-URL: Repository, https://github.com/Xyhercode/RapidHtml2Pdf
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4>=4.12
+Requires-Dist: aiohttp>=3.9
+Requires-Dist: aiofiles>=23.2
+Requires-Dist: typer>=0.9
+Requires-Dist: playwright>=1.41
+Requires-Dist: libsass>=0.22
+Requires-Dist: weasyprint>=61.0
+Requires-Dist: reportlab>=4.0
+Dynamic: license-file
+
+# RapidHtml2Pdf
+
+Convert HTML (with CSS, SCSS, icons, and images) to PDF with async and threaded support.
+
+## Features
+
+* Parse and inline HTML, CSS/SCSS, and inline, internal external stylesheets
+* Embed images, fonts (including Font Awesome, Google Fonts) as base64
+* Asynchronous asset fetching for performance
+* Dynamic single-page fitting to avoid blank pages
+* CLI command `h2p` for easy usage
+
+## Installation
+
+```bash
+pip install h2p
+# Then install Playwright browsers:
+python -m playwright install
+```
+
+## Usage
+
+### Synchronous
+
+```python
+from RapidHtml2Pdf import html_to_pdf, PDFOptions
+
+html = '<html><body><h1>Hello PDF</h1></body></html>'
+options = PDFOptions(fit_to_one_page=True)
+html_to_pdf(html, 'output.pdf', options)
+```
+
+### Asynchronous
+
+```python
+import asyncio
+from RapidHtml2Pdf import html_to_pdf_async, PDFOptions
+
+async def main():
+    html = '<html><body><h1>Async PDF</h1></body></html>'
+    options = PDFOptions(fit_to_one_page=False)
+    await html_to_pdf_async(html, 'async_output.pdf', options)
+
+asyncio.run(main())
+```
+
+## CLI
+
+```bash
+RapidHtml2Pdf input.html output.pdf --fit-to-one-page
+```
+
+## Configuration
+
+Customize options via `PDFOptions`:
+
+| Option            | Type   | Default                      | Description                                   |
+| ----------------- | ------ | ---------------------------- | --------------------------------------------- |
+| `page_size`       | `str`  | `A4`                         | Paper size (A4, Letter, etc.)                 |
+| `orientation`     | `str`  | `portrait`                   | `portrait` or `landscape`                     |
+| `margins`         | `dict` | top/bottom/left/right = 10mm | Margins in mm                                 |
+| `fit_to_one_page` | `bool` | `True`                       | Auto-fit content to a single page if possible |
+
+## Development & Testing
+
+```bash
+git clone https://github.com/Xyhercode/h2p.git
+cd RapidHtml2Pdf
+pip install -e .
+pytest
+```
+
+## CI Workflow
+
+Continuous integration runs on push and PR, testing on Linux, Windows, and macOS with Python 3.8 & 3.11, builds distributions.
+
+## License
+
+MIT © RAKESH SHARMA
