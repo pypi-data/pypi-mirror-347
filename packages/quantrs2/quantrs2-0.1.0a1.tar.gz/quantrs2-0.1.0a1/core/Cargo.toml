@@ -1,0 +1,19 @@
+[package]
+name = "quantrs2-core"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+keywords.workspace = true
+categories.workspace = true
+description = "Core types and traits for the QuantRS2 quantum computing framework"
+readme = "README.md"
+
+[dependencies]
+num-complex.workspace = true
+thiserror.workspace = true
+
+[features]
+default = []
