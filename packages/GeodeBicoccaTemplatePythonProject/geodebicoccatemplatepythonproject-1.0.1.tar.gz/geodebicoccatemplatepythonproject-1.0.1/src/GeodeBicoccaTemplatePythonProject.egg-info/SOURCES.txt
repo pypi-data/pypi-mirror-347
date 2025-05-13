@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/GeodeBicoccaTemplatePythonProject.egg-info/PKG-INFO
+src/GeodeBicoccaTemplatePythonProject.egg-info/SOURCES.txt
+src/GeodeBicoccaTemplatePythonProject.egg-info/dependency_links.txt
+src/GeodeBicoccaTemplatePythonProject.egg-info/entry_points.txt
+src/GeodeBicoccaTemplatePythonProject.egg-info/requires.txt
+src/GeodeBicoccaTemplatePythonProject.egg-info/top_level.txt
+src/template_python_project/functions.py
+tests/test_functions.py
