@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+acd_unique_package/__init__.py
+acd_unique_package/__main__.py
+acd_unique_package/speaker.py
+acd_unique_package.egg-info/PKG-INFO
+acd_unique_package.egg-info/SOURCES.txt
+acd_unique_package.egg-info/dependency_links.txt
+acd_unique_package.egg-info/entry_points.txt
+acd_unique_package.egg-info/requires.txt
+acd_unique_package.egg-info/top_level.txt
+acd_unique_package/speakers/__init__.py
+acd_unique_package/speakers/acd.py
