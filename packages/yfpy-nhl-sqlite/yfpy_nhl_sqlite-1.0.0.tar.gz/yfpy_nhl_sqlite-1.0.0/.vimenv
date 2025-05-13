@@ -1,0 +1,2 @@
+VIMPROJPATH=yfpy_nhl_sqlite/**
+DATABASE_URL=sqlite:yahoo-nhl-76201.db
