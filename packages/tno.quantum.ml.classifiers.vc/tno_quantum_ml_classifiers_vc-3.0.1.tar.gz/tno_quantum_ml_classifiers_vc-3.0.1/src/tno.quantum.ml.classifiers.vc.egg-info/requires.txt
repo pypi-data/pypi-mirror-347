@@ -1,0 +1,20 @@
+tno.quantum.utils~=5.1
+scikit-learn~=1.6
+numpy
+pennylane
+torch
+torchtyping
+tqdm
+
+[:python_version == "3.9"]
+networkx<=3.2.1
+
+[tests]
+pytest>=8.1.1
+pytest-cov>=4.1.0
+tomlkit
+pandas
+tno.quantum.ml.datasets
+
+[tests:python_version < "3.13"]
+pennylane-qiskit>=0.41
