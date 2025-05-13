@@ -1,0 +1,2 @@
+[console_scripts]
+puzzle-apt-mcp-server = puzzlelabs.puzzle_apt_mcp_server.server:main
