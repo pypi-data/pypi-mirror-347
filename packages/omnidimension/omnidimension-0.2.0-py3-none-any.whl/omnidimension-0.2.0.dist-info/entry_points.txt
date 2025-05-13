@@ -1,0 +1,2 @@
+[console_scripts]
+omnidim-mcp-server = omnidimension.mcp_server.__main__:main
