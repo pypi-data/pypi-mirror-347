@@ -1,0 +1,17 @@
+{
+  "simulation": {
+    "output_file": "acme-ouput-101.txt"
+  },
+  "grid": {
+    "x": {
+      "n": 101,
+      "min": 0,
+      "max": 0.009999999999999998
+    },
+    "y": {
+      "n": 10001,
+      "min": 0,
+      "max": 1
+    }
+  }
+}
