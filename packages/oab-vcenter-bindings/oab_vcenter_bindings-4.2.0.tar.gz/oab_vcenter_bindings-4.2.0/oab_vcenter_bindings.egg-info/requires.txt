@@ -1,0 +1,2 @@
+setuptools
+oab_vapi_runtime>=2.9.0
