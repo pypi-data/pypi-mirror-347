@@ -1,0 +1,54 @@
+# PyFCG
+
+*A Python interface to FCG and Babel, built on FCG Go.*
+
+## Installation
+
+To install this package from PyPI, run the following command.
+
+```bash
+pip install pyfcg
+```
+
+## Use
+
+Start a PyFCG session with:
+
+```
+import pyfcg as fcg
+fcg.init()
+```
+
+This starts up FCG Go, listening at port 9600.
+
+Then:
+
+```
+# Creating a new FCG agent
+fcg_agent = fcg.Agent()
+
+# Starting up the web interface and activating the trace-fcg monitor
+fcg.start_web_interface()
+fcg.activate_monitor('trace-fcg')
+```
+
+Optionally, you can test to add a construction to the agent's grammar:
+
+```
+cxn = fcg.Construction(name= 'good-morning-cxn', 
+                       contributing_pole = [('?good-morning-unit',
+                                            {'referent': '?m',
+                                             'category': 'greeting',
+                                             'form-args': ('?start', '?end')})],
+                       conditional_pole = [('?good-morning-unit',
+                                            {'#meaning': [('morning', '?m'), ('good-02', '?g'), (':arg1-of', '?m', '?g')]},
+                                            {'#form': [('sequence', '"Good morning!"', '?start', '?end')]})])
+fcg_agent.add_cxn(cxn)
+fcg_agent.comprehend("Good morning!")                            
+```
+
+And you can enjoy everything at http://localhost:8010 !
+
+## Documentation
+
+Full documentation of this package, including examples can be found on [pyfcg.readthedocs.io](https://pyfcg.readthedocs.io).
