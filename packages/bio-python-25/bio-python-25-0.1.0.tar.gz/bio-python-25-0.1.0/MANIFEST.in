@@ -1,0 +1,5 @@
+include *.ipynb
+include *.fasta
+include *.genbank
+include *.aln
+include *.nwk
