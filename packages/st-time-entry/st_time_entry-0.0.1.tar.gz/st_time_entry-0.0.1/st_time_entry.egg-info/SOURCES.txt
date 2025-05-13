@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+st_time_entry/__init__.py
+st_time_entry/example.py
+st_time_entry.egg-info/PKG-INFO
+st_time_entry.egg-info/SOURCES.txt
+st_time_entry.egg-info/dependency_links.txt
+st_time_entry.egg-info/requires.txt
+st_time_entry.egg-info/top_level.txt
