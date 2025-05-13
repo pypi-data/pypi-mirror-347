@@ -1,0 +1,26 @@
+[project]
+name = "acrm"
+version = "0.1.2"
+description = "An Arch Linux custom repository manager"
+authors = [
+    {name = "mistiru", email = "dev@mistiru.me"},
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cleo~=2.0",
+]
+
+[project.urls]
+source = "https://github.com/mistiru/acrm"
+
+[project.scripts]
+acrm = 'acrm.application:main'
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+#[tool.setuptools]
+#packages = ["acrm"]
