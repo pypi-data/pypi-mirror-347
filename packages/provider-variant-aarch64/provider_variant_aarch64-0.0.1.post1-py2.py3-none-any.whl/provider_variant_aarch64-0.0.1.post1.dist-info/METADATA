@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: provider-variant-aarch64
+Version: 0.0.1.post1
+Summary: A plugin to build variant for a specific AArch64 microarchitecture level
+Author-email: Michał Górny <mgorny@quansight.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Dist: archspec
+Requires-Dist: variantlib
+Project-URL: Home, https://github.com/wheelnext/provider-variant-aarch64/

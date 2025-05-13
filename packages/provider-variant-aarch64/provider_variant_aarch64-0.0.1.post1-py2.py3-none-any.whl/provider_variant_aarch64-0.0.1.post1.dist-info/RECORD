@@ -1,0 +1,7 @@
+provider_variant_aarch64/__init__.py,sha256=KXi7OL3x3Zm2XjPqX3zaMWDvUEfDOlYIssmooAOPrrA,108
+provider_variant_aarch64/plugin.py,sha256=IQ_9VFt9ss4tvkcXktARuVoE09Ow4IYyFjXwSOW2ZLc,2633
+provider_variant_aarch64-0.0.1.post1.dist-info/entry_points.txt,sha256=p2Y7o4scqJo3w2ZMvvY1EMHGh95zrVU7kCfrRDZhN7s,90
+provider_variant_aarch64-0.0.1.post1.dist-info/licenses/LICENSE,sha256=2TJfjcWIgZFSw81r5bvF9uUJQLUxn5AOiMUj3JTwvoQ,1081
+provider_variant_aarch64-0.0.1.post1.dist-info/WHEEL,sha256=Dyt6SBfaasWElUrURkknVFAZDHSTwxg3PaTza7RSbkY,100
+provider_variant_aarch64-0.0.1.post1.dist-info/METADATA,sha256=rkduIG58TTpWE5yQwhdMbZizIRdgm-ozwXy7rQ90pIk,378
+provider_variant_aarch64-0.0.1.post1.dist-info/RECORD,,
