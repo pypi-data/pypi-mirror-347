@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+starguard.py
+starguard.egg-info/PKG-INFO
+starguard.egg-info/SOURCES.txt
+starguard.egg-info/dependency_links.txt
+starguard.egg-info/entry_points.txt
+starguard.egg-info/requires.txt
+starguard.egg-info/top_level.txt
