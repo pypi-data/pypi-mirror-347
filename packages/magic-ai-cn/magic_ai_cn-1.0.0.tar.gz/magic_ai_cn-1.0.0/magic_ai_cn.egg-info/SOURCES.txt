@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+magic_ai_cn.egg-info/PKG-INFO
+magic_ai_cn.egg-info/SOURCES.txt
+magic_ai_cn.egg-info/dependency_links.txt
+magic_ai_cn.egg-info/requires.txt
+magic_ai_cn.egg-info/top_level.txt
+magic_cn/__init__.py
+magic_cn/gen.py
+magic_cn/reg_magic.py
