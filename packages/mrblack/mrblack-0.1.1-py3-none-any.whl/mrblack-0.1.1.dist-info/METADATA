@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: mrblack
+Version: 0.1.1
+Summary: Data extraction and text-extraction tools
+Home-page: https://github.com/woodyk/mrblack
+Author: Wadih Khairallah
+Author-email: woodyk@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: docx
+Requires-Dist: mss
+Requires-Dist: pymupdf
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: pydub
+Requires-Dist: pytesseract
+Requires-Dist: python_docx
+Requires-Dist: python_magic
+Requires-Dist: Requests
+Requires-Dist: rich
+Requires-Dist: SpeechRecognition
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## mrblack 
