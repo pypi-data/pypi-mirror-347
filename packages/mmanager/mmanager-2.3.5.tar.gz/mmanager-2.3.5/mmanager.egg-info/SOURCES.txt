@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+mmanager.egg-info/PKG-INFO
+mmanager.egg-info/SOURCES.txt
+mmanager.egg-info/dependency_links.txt
+mmanager.egg-info/requires.txt
+mmanager.egg-info/top_level.txt
