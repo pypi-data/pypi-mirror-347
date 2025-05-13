@@ -1,0 +1,12 @@
+testusecond/__init__.py,sha256=UHu_kX12jclCIv9V3ab2Iw0YIXO6fNimRNzmH6cVRuo,397
+testusecond/main.py,sha256=FJeznCb7VNE6SDWLSbuN7KhH6XnEZRfrGkI4ctBEbzE,616
+testusecond/__system__/imports.py,sha256=jnUU1GUoJX-Rf7V_RYI8tC2FKKo2ahCdqLRs9jGYDk4,173
+testusecond/__system__/index.py,sha256=hYpH6WvueA44FfnM3uuHMufCnZ9hV-LVqYk_kWx68Tk,795
+testusecond/__system__/modules/jobs.py,sha256=XyCb0nAss-nUgrq-vWIgMWV61Uaq7cVjyk3GF2xdxpo,561
+testusecond/__system__/sources/clight.json,sha256=Z2eQpemFwE7OMZR4ME36h12bnnF08ymasPEJdg67ao8,320
+testusecond/__system__/sources/logo.ico,sha256=uGPVXqDB8-B0i3nniK613X-kcUMPxAqMOFb1-hQ0qPY,13701
+testusecond-1.0.0.dist-info/METADATA,sha256=fVfN3gbFVNHA4SkiGRK5fySGUsqZF8jfwH3mmIXU4LU,1177
+testusecond-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+testusecond-1.0.0.dist-info/entry_points.txt,sha256=fciIIK9o5l5SF01MbpCIjnAetEwPs18J1dzhQYEHvCo,54
+testusecond-1.0.0.dist-info/top_level.txt,sha256=uN70H8GNpcuM-dQVAHsh_PyEThNkXCA8qNHc5W4QN30,12
+testusecond-1.0.0.dist-info/RECORD,,
