@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: cat-midich
+Version: 0.1.0
+Summary: Консольный расклад по системе Мидичи
+Author-email: Akio <lazzycatto@yandex.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: termcolor
+
+# Midich
+
+Консольная утилита для расклада карт по системе Мидичи. Позволяет наблюдать пошаговую визуализацию процесса, а также управлять цветами мастей и скоростью выполнения.
+
+---
+
+## Установка
+
+Установите напрямую из PyPI:
+
+```bash
+pip install cat-midich
+```
+
+Или локально из исходников:
+
+```bash
+git clone https://github.com/LazzyCatto/midichi
+cd midich
+pip install .
+```
+
+---
+
+## Использование
+
+```bash
+midich [опции]
+```
+
+### Доступные флаги:
+
+| Флаг               | Описание                          | По умолчанию |
+|--------------------|-----------------------------------|--------------|
+| `--guided`         | Показ пошаговой визуализации      | `False`      |
+| `--sleep`          | Задержка между шагами (в секундах)| `0.1`        |
+| `--add-color`      | Цвет новой карты                  | `green`      |
+| `--diamond-color`  | Цвет масти ♦                      | `red`        |
+| `--hearts-color`   | Цвет масти ♥                      | `red`        |
+| `--clubs-color`    | Цвет масти ♣                      | `white`      |
+| `--spades-color`   | Цвет масти ♠                      | `white`      |
+
+Пример:
+```bash
+midich --guided --sleep 0.2 --add-color yellow --diamond-color cyan --spades-color blue
+```
+
+---
+
+## В планах
+
+- Генерация аналитики расклада с помощью лёгкой языковой модели (например, GPT-2)
+- Возможность загрузки собственной колоды
+
+---
+
+## Автор
+
+**Akio**
