@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pr22"
+version = "2.2.0.22"
+description = "Passport Reader Interface"
+requires-python = ">=3.6"
+readme = "README.md"
+license = "MIT"
+
+[project.urls]
+Homepage = "https://adaptiverecognition.com/personal-document-reading-and-verification/"
+"Technical Support" = "https://adaptiverecognition.com/support/"
+
+[tool.hatch.build]
+ignore-vcs = true
+
+[tool.hatch.build.targets.sdist]
+exclude = ["/*.*"]
+
+[tool.pylint.basic]
+class-const-naming-style = "PascalCase"
+good-names = ["ix"]
+
+[tool.pylint."messages control"]
+disable = ["multiple-statements"]
