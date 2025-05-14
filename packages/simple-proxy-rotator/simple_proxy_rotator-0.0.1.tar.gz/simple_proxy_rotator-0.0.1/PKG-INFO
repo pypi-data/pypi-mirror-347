@@ -1,0 +1,135 @@
+Metadata-Version: 2.4
+Name: simple-proxy-rotator
+Version: 0.0.1
+Summary: A library to provide easy to use weighted proxy rotation and Proxy class to manage all of your proxies.
+Project-URL: Example usage 1 RU, https://timthewebmaster.com/ru/tools/kinopoisk-parser/
+Project-URL: Example usage 1 EN, https://timthewebmaster.com/en/tools/kinopoisk-parser/
+Project-URL: Example usage 2 RU, https://timthewebmaster.com/ru/tools/wildberries-scraper/
+Project-URL: Example usage 2 EN, https://timthewebmaster.com/en/tools/wildberries-scraper/
+Author-email: Tim The Webmaster <timachuduk@gmail.com>
+License-Expression: MIT
+License-File: LICENCE
+Keywords: proxies,proxy,proxy rotator,proxy swapping,proxy with requests library,proxy with selenium library,weighted proxy rotator
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# A library to add the ability to swap(rotate) proxies easily
+
+This library will provide a Proxy class to manage all of your porxies plus Rotator class to obtain a Proxy based on weights of proxies. An exelent fit for **requests** and **selenium** libraries
+
+## An example usage for "*selenium*" library
+``` python
+    from proxy_rotator import Proxy, Rotator
+    
+    proxies: list[Proxy] = []
+    # Load proxies from a file
+    proxies_json = load_proxies("proxies.json")
+    for proxy_item in proxies_json:
+        proxies.append(Proxy(
+            proxy_item['path'], 
+            proxy_item['type'], 
+            proxy_item['protocol'],
+            proxy_item['status'], 
+            proxy_item['weight'])
+        )
+
+    # Make a rotation for a proxy
+    rotator = Rotator(proxies)
+    # Get the random proxy by weight
+    proxy = rotator.get()
+    # Create a webdriver and put new proxy in use
+    firefox_opt = Options()
+    firefox_opt.add_argument('--headless')
+    firefox_opt.add_argument("--no-sandbox")
+    firefox_opt.add_argument("--disable-dev-shm-usage")  
+    firefox_opt.add_argument(f"--proxy-server={proxy}")
+    driver = webdriver.Firefox(options=firefox_opt)
+```
+
+## An example usage for "*requests*" library
+``` python
+    from simple_proxy_rotator import proxy_to_requests_proxy
+    from simple_proxy_rotator.proxy_rotator import Proxy, Rotator
+
+    proxies: list[Proxy] = []
+    # Load proxies from a file
+    proxies_json = load_proxies("proxies.json")
+    for proxy_item in proxies_json:
+        proxies.append(Proxy(
+            proxy_item['path'], 
+            proxy_item['type'], 
+            proxy_item['protocol'],
+            proxy_item['status'], 
+            proxy_item['weight'])
+        )
+
+    # Make a rotation for a proxy
+    rotator = Rotator(proxies)
+    # Get the random proxy by weight
+    rotator_proxy = rotator_.get()
+    # The returned proxy must be convert into string 
+    # to be passed to requests.get method
+    proxy = proxy_to_requests_proxy(rotator_proxy.ip, rotator_proxy.protocol)
+    board_page = requests.get(url=url_, headers=conf.headers, proxies=proxy)
+```
+
+## An example of "*proxies.json*" file content
+``` json
+  {
+    "path": "100.100.100.100:1080",
+    "protocol": "socks4",
+    "type": "mobile",
+    "weight": 1250.8024368286133,
+    "status": "alive"
+  },
+  {
+    "path": "100.100.100.100:1080",
+    "protocol": "http",
+    "type": "mobile",
+    "weight": 1258.7508733272552,
+    "status": "dead"
+  },
+  {
+    "path": "100.100.100.100:1080",
+    "protocol": "https",
+    "type": "datacenter",
+    "weight": 1350.0,
+    "status": "alive"
+  },
+  {
+    "path": "100.100.100.100:1080",
+    "protocol": "https",
+    "type": "datacenter",
+    "weight": 850.4147324562073,
+    "status": "dead"
+  },
+  {
+    "path": "100.100.100.100:1080",
+    "protocol": "socks4",
+    "type": "datacenter",
+    "weight": 1253.0103130340576,
+    "status": "alive"
+  },
+  {
+    "path": "100.100.100.100:1080",
+    "protocol": "socks5",
+    "type": "datacenter",
+    "weight": 1250.8180613517761,
+    "status": "alive"
+  }
+]
+```

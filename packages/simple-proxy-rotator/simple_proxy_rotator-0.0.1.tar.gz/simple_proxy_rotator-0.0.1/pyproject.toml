@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+[project]
+name = "simple-proxy-rotator"
+version = "0.0.1"
+authors = [
+  { name="Tim The Webmaster", email="timachuduk@gmail.com" },
+]
+description = "A library to provide easy to use weighted proxy rotation and Proxy class to manage all of your proxies."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Natural Language :: Russian",
+    "Topic :: Desktop Environment",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Terminals",
+    "Topic :: Utilities",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+keywords = ["proxy", "proxy rotator", "weighted proxy rotator", "proxy swapping", "proxies", "proxy with requests library", "proxy with selenium library"]
+[project.urls]
+"Example usage 1 RU" = "https://timthewebmaster.com/ru/tools/kinopoisk-parser/"
+"Example usage 1 EN" = "https://timthewebmaster.com/en/tools/kinopoisk-parser/"
+"Example usage 2 RU" = "https://timthewebmaster.com/ru/tools/wildberries-scraper/"
+"Example usage 2 EN" = "https://timthewebmaster.com/en/tools/wildberries-scraper/"
