@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: Vantora
+Version: 1.0.0
+Summary: A powerful cryptographic and utility library for advanced encryption and decryption techniques
+Home-page: https://t.me/NexiaHelpers
+Author: Nexia
+Author-email: nasrpy88@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+Description-Content-Type: text/plain
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+    UltraUtils is a Python library designed for developers looking for robust cryptographic and utility functions.
+    It includes encryption algorithms such as XOR, Caesar, Vigenere, and many more, offering enhanced security
+    and advanced features, including multi-stage encryption and custom cryptographic methods.
+
+    The library is intended for developers and security experts who need to perform complex cryptographic operations
+    or need secure data transformations in their applications.
+
+    The library is well-documented, easy to use, and constantly maintained.
