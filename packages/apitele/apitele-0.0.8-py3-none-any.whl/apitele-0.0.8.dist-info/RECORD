@@ -1,0 +1,13 @@
+apitele/__init__.py,sha256=NhUviSP6QDTMeN8WmsvQCRoxndGjza5oK73QbxK-sfc,321
+apitele/api.py,sha256=oELgqnTqZsGeeAjnUV9olJCqxorjpt4NcjwKa4DY-nM,30189
+apitele/client.py,sha256=OTocK0SQD6wQoLZ9h9vdR9L-WN4N1WpHsLWozbBavOc,327568
+apitele/constants.py,sha256=a3NrFikGqfp8BzredtquL5lLEJ72xPngVWklwJq10Kw,4374
+apitele/logging.py,sha256=yAU-i3GzzO2mqPDueH2F9eXoP9XvMzmtc6uv1g-uaE8,740
+apitele/types.py,sha256=lCkXTJ6_G5hMgvkydjBs_4yLIKwGQADQrLMA4hdlGQQ,451819
+apitele/update_manager.py,sha256=Pynp7AN17U4Opy4Kvf3uVTWr2a12i2QEfWrWMZmxjwE,9352
+apitele/utils.py,sha256=cySTN-TYi4rno3DY37d9no_daEH7PmtiwU-xm9PUUWY,641
+apitele-0.0.8.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+apitele-0.0.8.dist-info/METADATA,sha256=j-yooU4I6nmr8xEzY89HFY7kmZ5Wn4eSlZdmwFzrDKA,42129
+apitele-0.0.8.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+apitele-0.0.8.dist-info/top_level.txt,sha256=ewxS1DkxgF5YWa5VkiE1idjede5l68gqVS-1yadVeqY,8
+apitele-0.0.8.dist-info/RECORD,,
