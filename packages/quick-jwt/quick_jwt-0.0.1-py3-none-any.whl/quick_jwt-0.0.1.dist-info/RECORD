@@ -1,0 +1,12 @@
+quick_jwt/__init__.py,sha256=GJP0_SBLMp-hPsBpKSBHrLSLcDJyIf-Z8dhIUvN6dXk,142
+quick_jwt/_function_args.py,sha256=lvLD6UJlZeYvnNNs0e6v7x4FjnCBBuBugC4sGO4Yr5Q,254
+quick_jwt/authentication.py,sha256=xmbItMwSOMt0OK15-eQ7E54FalNhTLhYZPA7D7691WU,1602
+quick_jwt/config.py,sha256=0AmTHAa2TwmAypPXDvPggNqEaWKIqV2Y1eWDSLVIV3M,1851
+quick_jwt/depends.py,sha256=jPcxfDlob_meBiXW9CYmgXXI94DrNrtyj4CUb1aNNSc,528
+quick_jwt/middleware.py,sha256=bK0z73-vFonMGHXsI5mFCzshe63zFQ7d2bYuk0kDSuY,632
+quick_jwt/security.py,sha256=LAAp-U9FNMxnUDKvd1mhSN9oQrGvBM5kBN1s1FTwTjc,604
+quick_jwt/utils.py,sha256=9c6fdtcH6Akfmju7DibpcAaXVgV9tt1jFrGkxnsFNrQ,667
+quick_jwt-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+quick_jwt-0.0.1.dist-info/METADATA,sha256=mTS5D_Qg5TzWFZ97n1FS9qh51JEcKUwZm-ASqVUTyOw,426
+quick_jwt-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+quick_jwt-0.0.1.dist-info/RECORD,,
