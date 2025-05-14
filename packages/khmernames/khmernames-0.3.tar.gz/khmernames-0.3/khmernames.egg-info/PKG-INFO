@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: khmernames
+Version: 0.3
+Summary: Generate random Khmer names for your projects
+Home-page: https://github.com/sammykh/khmernames
+Author: Sammy KH
+Author-email: sammytoolsvplus@gmail.com
+License: MIT
+Keywords: khmer names generator random name-library khmer-language
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# Khmer Names 🇰🇭
+
+A Python library to generate random Khmer names.
+
+## Installation
+
+```bash
+pip install khmernames
+```
+
+## Usage
+
+```python
+from khmernames import random_full_name, generate_unique_names
+
+print(random_full_name())
+print(generate_unique_names(10))
+```

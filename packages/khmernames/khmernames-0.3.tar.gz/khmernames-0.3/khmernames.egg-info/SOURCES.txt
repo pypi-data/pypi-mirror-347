@@ -1,0 +1,7 @@
+README.md
+setup.py
+khmernames/__init__.py
+khmernames.egg-info/PKG-INFO
+khmernames.egg-info/SOURCES.txt
+khmernames.egg-info/dependency_links.txt
+khmernames.egg-info/top_level.txt
