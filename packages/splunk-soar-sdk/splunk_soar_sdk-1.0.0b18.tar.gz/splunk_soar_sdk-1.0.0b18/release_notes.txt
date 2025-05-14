@@ -1,0 +1,31 @@
+# [1.0.0-beta.18](https://github.com/phantomcyber/splunk-soar-sdk/compare/1.0.0-beta.17...1.0.0-beta.18) (2025-05-13)
+
+
+### Bug Fixes
+
+* apply suggestions from code review ([9e3fa20](https://github.com/phantomcyber/splunk-soar-sdk/commit/9e3fa20cf363d9249dfccec95234867a8bfb4744))
+* changes after code review ([eb598b9](https://github.com/phantomcyber/splunk-soar-sdk/commit/eb598b93ca64534b4d9cea93e6c27449df038eb6))
+* papp-35885 add get_product_installation_id and add tests ([bc41f0c](https://github.com/phantomcyber/splunk-soar-sdk/commit/bc41f0cb3a1cc690d85eca36e0f241f03466e139))
+* papp-35885 add get_product_installation_id function ([9e3416c](https://github.com/phantomcyber/splunk-soar-sdk/commit/9e3416c34e4e36befcd2ecbd0787854f955b5850))
+* papp-35885 add import and run pre-commit ([27143c0](https://github.com/phantomcyber/splunk-soar-sdk/commit/27143c0b1d6f9b4c2dd7182eb131340e339d1bae))
+* removing fields that aren't needed ([c2bf532](https://github.com/phantomcyber/splunk-soar-sdk/commit/c2bf5329014bb135396ff06e8ec303b82d820d0a))
+
+
+
+
+
+# [1.0.0-beta.18](https://github.com/phantomcyber/splunk-soar-sdk/compare/1.0.0-beta.17...1.0.0-beta.18) (2025-05-13)
+
+
+### Bug Fixes
+
+* apply suggestions from code review ([9e3fa20](https://github.com/phantomcyber/splunk-soar-sdk/commit/9e3fa20cf363d9249dfccec95234867a8bfb4744))
+* changes after code review ([eb598b9](https://github.com/phantomcyber/splunk-soar-sdk/commit/eb598b93ca64534b4d9cea93e6c27449df038eb6))
+* papp-35885 add get_product_installation_id and add tests ([bc41f0c](https://github.com/phantomcyber/splunk-soar-sdk/commit/bc41f0cb3a1cc690d85eca36e0f241f03466e139))
+* papp-35885 add get_product_installation_id function ([9e3416c](https://github.com/phantomcyber/splunk-soar-sdk/commit/9e3416c34e4e36befcd2ecbd0787854f955b5850))
+* papp-35885 add import and run pre-commit ([27143c0](https://github.com/phantomcyber/splunk-soar-sdk/commit/27143c0b1d6f9b4c2dd7182eb131340e339d1bae))
+* removing fields that aren't needed ([c2bf532](https://github.com/phantomcyber/splunk-soar-sdk/commit/c2bf5329014bb135396ff06e8ec303b82d820d0a))
+
+
+
+
