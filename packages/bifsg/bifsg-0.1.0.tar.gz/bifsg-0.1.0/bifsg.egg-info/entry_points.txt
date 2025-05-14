@@ -1,0 +1,2 @@
+[console_scripts]
+bifsg-prepare-data = bifsg.data_prep:main
