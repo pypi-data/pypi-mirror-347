@@ -1,0 +1,35 @@
+{
+  "template": "https://github.com/viseshrp/yapc",
+  "commit": "f0c0a3d287a39c0f220cef80711a6b403dc0f624",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "author": "Visesh Prasad",
+      "email": "viseshrprasad@gmail.com",
+      "github_username": "viseshrp",
+      "pypi_username": "viseshrp",
+      "project_name": "reelname",
+      "project_slug": "reelname",
+      "project_description": "A tool to fix media file names",
+      "cli_tool": "y",
+      "codecov": "n",
+      "git_init": "y",
+      "github_actions": "y",
+      "publish_to_pypi": "y",
+      "_template": "https://github.com/viseshrp/yapc",
+      "_commit": "f0c0a3d287a39c0f220cef80711a6b403dc0f624"
+    }
+  },
+  "directory": null,
+  "skip": [
+    ".venv",
+    "dist",
+    "build",
+    "*.egg-info",
+    ".DS_Store",
+    "__pycache__",
+    ".git",
+    ".idea",
+    ".vscode"
+  ]
+}
