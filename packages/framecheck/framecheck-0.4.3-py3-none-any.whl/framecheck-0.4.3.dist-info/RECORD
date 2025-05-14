@@ -1,0 +1,16 @@
+framecheck/__init__.py,sha256=RC6xi3YRgni6XM3gxnviIDxIKrzLrDw__EsSuKk6jhc,35
+framecheck/column_checks.py,sha256=hvYsdu3nOc4IHp3zgBpMxYWQmaKAevEfaf9u8dNlVr4,27459
+framecheck/dataframe_checks.py,sha256=UQ7Z_5SauzXJ_K18XMukfBDOmlABVudtPUnHwYAT9Ys,16677
+framecheck/frame_check.py,sha256=HZN1GTVT6CbWe_QwXTxNDWmT9xcNhvS7NLUlZYfsKdY,21725
+framecheck/utilities.py,sha256=5tuF2W3NFIc-KtUoriJ28LRrjcD5aH701BFuV0yo5Zw,3361
+tests/__init__.py,sha256=rq2dgyNqoAycu6nzL_rh7gI463SbGGBq7CVnTXR9g5M,19
+tests/test_column_checks.py,sha256=svAQFDclwj-PS71V6Gud_kEUbqVc8OoJJlXKxaumla4,29617
+tests/test_dataframe_checks.py,sha256=dcF4VR9AdXp-Z1LOG-KT77IzeUqfN8c_AJNTuQxpu_Y,27828
+tests/test_framecheck_integration.py,sha256=F8xyoTkZWG8PijKy4JLKgNvCYnBaavVDFkxD09h_eeQ,10060
+tests/test_schema.py,sha256=cpbekdT2qwMmtu7pLqsCf5he1E5ujtSs9GVi0Rphu-U,5889
+tests/test_utilities.py,sha256=Y82MHRj_J-LqEtoxskxRtPV-oF67P6QNHOrB_-16Lg8,4055
+tests/test_validation_result.py,sha256=aoPNg0ZscHCht64heq2JLHfNfVKrYjbhybUVOqXZ8_k,4920
+framecheck-0.4.3.dist-info/METADATA,sha256=CAEx1MSfrOF1q35hEDX3Phgq58oXilS8kQat23XNkW8,4786
+framecheck-0.4.3.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+framecheck-0.4.3.dist-info/top_level.txt,sha256=pTKJsx2ORiUIZZKoqd7FtyBu4UpC6OJa7c04gpgrMok,17
+framecheck-0.4.3.dist-info/RECORD,,
