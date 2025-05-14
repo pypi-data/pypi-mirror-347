@@ -1,0 +1,27 @@
+{% ckan_extends %}
+
+{% block resource_item_explore_links %}
+{{ super() }}
+{% if not url_is_edit and h.csvtocsvw_show_tools(res) %}
+{% if res.url and h.is_url(res.url) %}
+{% if h.check_access('csvtocsvw_annotate',res) %}
+<li>
+  <a href="{{ url }}/csv_annotate" class="dropdown-item" target="_blank"
+    rel="noreferrer">
+    <i class="fa fa-external-link"></i>
+    {{ _('Annotate') }}
+  </a>
+</li>
+{% endif %}
+{% if h.check_access('csvtocsvw_transform',res) %}
+<li>
+  <a href="{{ url }}/csv_transform" class="dropdown-item" target="_blank"
+    rel="noreferrer">
+    <i class="fa fa-external-link"></i>
+    {{ _('Transform') }}
+  </a>
+</li>
+{% endif %}
+{% endif %}
+{% endif %}
+{% endblock %}
