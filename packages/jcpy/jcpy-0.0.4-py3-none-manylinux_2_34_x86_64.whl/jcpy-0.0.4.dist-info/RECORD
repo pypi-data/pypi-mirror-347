@@ -1,0 +1,8 @@
+jcpy/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+jcpy/logger.py,sha256=rBgjevLCa46YQVxTkqjscRF3hqmYuXdsu0kC9T0E_RM,1998
+jcpy/redirect_stream.py,sha256=kVFyvuyH5ZZkG0T5PrOnTCaJ5Zk6yb8nZa9PMLHg-zI,646
+jcpy-0.0.4.dist-info/licenses/LICENSE,sha256=UQ9_d8goV9Jgz8KYXbF4WO9vzFB5jpthRka5VFNkMtc,1068
+jcpy-0.0.4.dist-info/METADATA,sha256=akmb857lXljsJALGS1Kfumdr5gcwU2zWTXa0Jcvd4wE,2065
+jcpy-0.0.4.dist-info/WHEEL,sha256=5MVrmHLlVTzUf5elt22S3ii6csWRfCKjjCoiZw0cHwE,109
+jcpy-0.0.4.dist-info/top_level.txt,sha256=aRdMjrTl1Hf4I5OESyij0s1W5BF27Izr11Do8_5vgZo,5
+jcpy-0.0.4.dist-info/RECORD,,
