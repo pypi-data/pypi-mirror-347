@@ -1,0 +1,14 @@
+polars~=1.27.0
+pyarrow
+numpy
+scikit-learn
+hydra-core
+meds~=0.4.0
+flexible_schema
+
+[dev]
+pre-commit<4
+
+[tests]
+pytest
+pytest-cov
