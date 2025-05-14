@@ -1,0 +1,11 @@
+perfumeme/__init__.py,sha256=4c3EixiEE47ehjgZrYG6TgvzQJ_KCQLOwkn8w7qG6nA,164
+perfumeme/core.py,sha256=ULiQBk-armPbQ1hsATnN4hfwdOcAcx19AXgLlKPwdWk,598
+perfumeme/main_functions.py,sha256=jbyPTEbysaUZrxWihB6Es-8i0bmwJ9hawniiP4QO7-c,8799
+perfumeme/perfume_molecule.py,sha256=ox2GOA6ZFzFdj-Lt6lZAD1wk7mpS959BHTUeTDOqAc8,1899
+perfumeme/scraper.py,sha256=NiEAKbzY9EAe7dRIcGX9VdF29StseUp1kSy8Iw4ZWDw,2020
+perfumeme/usable_in_perfume.py,sha256=0QB2WN9Uer-gLDauP4YfgQjeGgxbPNuv5kbDBRdlPJM,4051
+perfumeme/utils.py,sha256=pNHr4RE942_J94ITY-ZPNnMhumal6HaZ05SueUui0JE,5917
+perfumeme-0.1.3.dist-info/METADATA,sha256=Gm6tQc21PQWniIKo9SHAuU3Ew2gqqsNU_Oss-9zUpfo,5211
+perfumeme-0.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+perfumeme-0.1.3.dist-info/licenses/LICENSE,sha256=TFUGMPzES4xvj-JQi9jdWT07KGxl21GWjxiXAmGQdhs,1096
+perfumeme-0.1.3.dist-info/RECORD,,
