@@ -1,0 +1,7 @@
+akshare_one_mcp/__init__.py,sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,0
+akshare_one_mcp/__main__.py,sha256=9f43217370f3070b8b9d87f46e95080228c857b8819c07401b3f647c8b79ca06,282
+akshare_one_mcp/server.py,sha256=eeac0928ad90a9609dc28f4e6556d75bd66cc113420d49b0527fe2aacbac104e,3323
+akshare_one_mcp-0.1.1.dist-info/WHEEL,sha256=65f6765ba93534713730ff2172cd912ef280aa42867625a73f77c2fef0639dae,78
+akshare_one_mcp-0.1.1.dist-info/entry_points.txt,sha256=be71cb8226d9ea8bf4ca110789a563a13e52a5809833b00c24178f26bd3e47ac,67
+akshare_one_mcp-0.1.1.dist-info/METADATA,sha256=1eda97934601b5626aac2ec7477d5ea65ce2eeb4536f6d2929bd2ae6473aa3c6,4097
+akshare_one_mcp-0.1.1.dist-info/RECORD,,
