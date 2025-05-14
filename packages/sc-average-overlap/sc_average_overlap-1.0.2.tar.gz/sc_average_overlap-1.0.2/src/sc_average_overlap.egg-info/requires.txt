@@ -1,0 +1,6 @@
+scanpy
+anndata
+numpy
+pandas
+scipy
+seaborn
