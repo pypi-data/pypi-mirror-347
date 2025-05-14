@@ -1,0 +1,24 @@
+[project]
+name = "fragment-api-lib"
+version = "1.0.0"
+description = "🧩 Simple API client wrapper for Fragment, purchase of Telegram Stars & Premium"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "GNU General Public License v3.0 or later" }
+authors = [
+  { name="NightStrang6r", email="a@nightstranger.space" }
+]
+dependencies = [
+  "requests>=2.31.0"
+]
+classifiers=[
+  "Programming Language :: Python :: 3.8",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/NightStrang6r/fragment-api-lib"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
