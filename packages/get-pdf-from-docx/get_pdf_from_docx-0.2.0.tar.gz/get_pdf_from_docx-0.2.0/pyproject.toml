@@ -1,0 +1,31 @@
+[project]
+name = "get-pdf-from-docx"
+version = "0.2.0"
+description = ""
+authors = [{ name = "6vi7ms", email = "6vi7ms@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["pywin32 (>=310,<311)", "pypdf (>=5.5.0,<6.0.0)"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-pdf-from-docx = "get_pdf_from_docx.main:main"
+
+
+[tool.black]
+line-length = 2000
+target-version = ['py310']
+skip-string-normalization = true
+skip-magic-trailing-comma = true #
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | venv
+  | build
+  | dist
+)/
+'''
