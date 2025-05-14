@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+divisible_by_3_or_not/__init__.py
+divisible_by_3_or_not/check_divisable_by_3.py
+divisible_by_3_turing_machine.egg-info/PKG-INFO
+divisible_by_3_turing_machine.egg-info/SOURCES.txt
+divisible_by_3_turing_machine.egg-info/dependency_links.txt
+divisible_by_3_turing_machine.egg-info/top_level.txt

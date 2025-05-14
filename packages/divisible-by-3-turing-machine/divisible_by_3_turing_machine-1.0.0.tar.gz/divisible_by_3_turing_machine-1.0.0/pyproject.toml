@@ -1,0 +1,13 @@
+[project]
+name = "divisible_by_3_turing_machine"
+version = "1.0.0"
+description = "A simple Turing machine for checking binary divisibility by 3"
+authors = [
+  { name="Mohamed Khaled", email="mokhaled732003@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.6"
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
