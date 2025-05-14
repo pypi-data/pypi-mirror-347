@@ -1,0 +1,6 @@
+README.md
+setup.py
+bytedance_code_translator.egg-info/PKG-INFO
+bytedance_code_translator.egg-info/SOURCES.txt
+bytedance_code_translator.egg-info/dependency_links.txt
+bytedance_code_translator.egg-info/top_level.txt
