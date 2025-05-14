@@ -1,0 +1,56 @@
+<shape name="Split Border Rectangle (round)" h="100" w="100" aspect="variable" strokewidth="inherit">
+    <connections>
+        <constraint x="0" y="0" perimeter="0" name="NW" />
+        <constraint x="0.25" y="0" perimeter="0" name="N1" />
+        <constraint x="0.5" y="0" perimeter="0" name="N" />
+        <constraint x="0.75" y="0" perimeter="0" name="N2" />
+        <constraint x="1" y="0" perimeter="0" name="NE" />
+        <constraint x="0" y="0.25" perimeter="0" name="W1" />
+        <constraint x="0" y="0.5" perimeter="0" name="W" />
+        <constraint x="0" y="0.75" perimeter="0" name="W2" />
+        <constraint x="1" y="0.25" perimeter="0" name="E1" />
+        <constraint x="1" y="0.5" perimeter="0" name="E" />
+        <constraint x="1" y="0.75" perimeter="0" name="E2" />
+        <constraint x="0" y="1" perimeter="0" name="SW" />
+        <constraint x="0.25" y="1" perimeter="0" name="S1" />
+        <constraint x="0.5" y="1" perimeter="0" name="S" />
+        <constraint x="0.75" y="1" perimeter="0" name="S2" />
+        <constraint x="1" y="1" perimeter="0" name="SE" />
+    </connections>
+    <background>
+        <path>
+            <move x="0" y="85" />
+            <line x="0" y="15" />
+            <quad x1="0" y1="0" x2="15" y2="0" />
+            <line x="85" y="0" />
+            <quad x1="100" y1="0" x2="100" y2="15" />
+            <line x="100" y="85" />
+            <quad x1="100" y1="100" x2="85" y2="100" />
+            <line x="15" y="100" />
+            <quad x1="0" y1="100" x2="0" y2="85" />
+        </path>
+        <fill />
+    </background>
+    <foreground>
+        <strokecolor color="{{ color_1 }}" />
+        <path>
+            <move x="0" y="50" />
+            <line x="0" y="15" />
+            <quad x1="0" y1="0" x2="15" y2="0" />
+            <line x="85" y="0" />
+            <quad x1="100" y1="0" x2="100" y2="15" />
+            <line x="100" y="50" />
+        </path>
+        <stroke />
+        <strokecolor color="{{ color_2 }}" />
+        <path>
+            <move x="0" y="50" />
+            <line x="0" y="85" />
+            <quad x1="0" y1="100" x2="15" y2="100" />
+            <line x="85" y="100" />
+            <quad x1="100" y1="100" x2="100" y2="85" />
+            <line x="100" y="50" />
+        </path>
+        <stroke />
+    </foreground>
+</shape>
