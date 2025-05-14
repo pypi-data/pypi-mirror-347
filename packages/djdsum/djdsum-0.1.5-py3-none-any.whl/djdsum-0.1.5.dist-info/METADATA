@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: djdsum
+Version: 0.1.5
+Summary: A simple SDK for sum calculation
+Author-email: heifade <heifade@126.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/heifade/djdsum
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+
+## 安装依赖
+```sh
+pip install setuptools wheel twine
+```
+
+## 打包
+```sh
+python -m build
+```
+
+
+https://pypi.org/account/register/
+## 上传
+```sh
+twine upload dist/*
+```
+
