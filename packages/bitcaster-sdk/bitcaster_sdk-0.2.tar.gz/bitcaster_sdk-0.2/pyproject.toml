@@ -1,0 +1,66 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = [
+  "hatch-vcs>=0.4",
+  "hatchling>=1.25",
+]
+
+[project]
+name = "bitcaster-sdk"
+description = "Bitcaster Python SDK"
+readme = "README.md"
+license = { text = "MIT" }
+
+authors = [
+  { name = "mark", email = "hanarero@gmail.com" },
+]
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dynamic = [ "version" ]
+
+dependencies = [
+  "click",
+  "humanfriendly",
+  "requests",
+]
+
+scripts.bitcaster = "bitcaster_sdk:__main__.cli"
+
+[dependency-groups]
+dev = [
+  "pre-commit",
+  "pytest",
+  "pytest-coverage",
+  "pytest-django",
+  "pytest-xdist",
+  "responses",
+  "ruff",
+  "tox",
+]
+
+typing = [
+  "mypy>=1.9",
+  "types-requests>=2.32.0.20240712",
+]
+
+[tool.hatch]
+build.hooks.vcs.version-file = "src/bitcaster_sdk/version.py"
+version.source = "vcs"
+raw-options = { root = "../.." }
+
+[tool.hatch.build.targets.sdist]
+ignore-vcs = true
+include = [
+  "src/bitcaster_sdk/**/*.*",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [ "src/bitcaster_sdk" ]
