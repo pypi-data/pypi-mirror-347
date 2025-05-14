@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nua-sdk
+Version: 1.0.1
+Summary: SDK for NUA shared components
+Author: NUA Team
+Author-email: a.baqaleb@nuasecurity.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# NUA SDK
+
+## Overview
+
+The NUA SDK provides shared components and utilities for NUA security agents. This package serves as a foundation for building and extending NUA's security automation capabilities.
+
+## Installation
+You can install the NUA SDK by running:
+```sh
+pip install nua-sdk
+```
