@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+oab_vsphere_automation_sdk.egg-info/PKG-INFO
+oab_vsphere_automation_sdk.egg-info/SOURCES.txt
+oab_vsphere_automation_sdk.egg-info/dependency_links.txt
+oab_vsphere_automation_sdk.egg-info/requires.txt
+oab_vsphere_automation_sdk.egg-info/top_level.txt
+tests/test_vmc_client.py
+tests/test_vsphere_client.py

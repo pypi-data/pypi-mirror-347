@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: oab-vsphere-automation-sdk
+Version: 1.86.0
+Summary: VMware vSphere Automation SDK for Python
+Home-page: https://github.com/vmware/vsphere-automation-sdk-python
+Author: VMware, Inc.
+License: MIT
+License-File: LICENSE
+Requires-Dist: lxml>=4.3.0
+Requires-Dist: pyVmomi>=6.7
+Requires-Dist: oab-vapi-runtime==2.44.0
+Requires-Dist: oab-vcenter-bindings==4.2.0
+Requires-Dist: oab-vapi-common-client==2.44.0
+Requires-Dist: oab-vmwarecloud-aws==1.64.0
+Requires-Dist: oab-nsx-python-sdk==4.1.2.0.0
+Requires-Dist: oab-nsx-policy-python-sdk==4.1.2.0.0
+Requires-Dist: oab-nsx-vmc-policy-python-sdk==4.1.2.0.0
+Requires-Dist: oab-nsx-vmc-aws-integration-python-sdk==4.1.2.0.0
+Requires-Dist: oab-vmwarecloud-draas==1.23.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary

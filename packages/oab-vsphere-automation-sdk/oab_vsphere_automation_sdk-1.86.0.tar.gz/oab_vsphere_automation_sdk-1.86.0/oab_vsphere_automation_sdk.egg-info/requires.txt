@@ -1,0 +1,11 @@
+lxml>=4.3.0
+pyVmomi>=6.7
+oab-vapi-runtime==2.44.0
+oab-vcenter-bindings==4.2.0
+oab-vapi-common-client==2.44.0
+oab-vmwarecloud-aws==1.64.0
+oab-nsx-python-sdk==4.1.2.0.0
+oab-nsx-policy-python-sdk==4.1.2.0.0
+oab-nsx-vmc-policy-python-sdk==4.1.2.0.0
+oab-nsx-vmc-aws-integration-python-sdk==4.1.2.0.0
+oab-vmwarecloud-draas==1.23.0
