@@ -1,0 +1,11 @@
+oscfar/__init__.py,sha256=-AdUsAPFmW_vOZ6WVjNbvDf2g6TE4-AYri4gF3ZFSl0,2925
+oscfar/cfar.py,sha256=PHTL7lChZHQcozLdcQeRexL-XzRmvO-ESCEqCZQ4IBI,13294
+oscfar/filters.py,sha256=GKpnI2NOLRa7klcWobXraw5q6ErZQRBv481dp115N4s,21074
+oscfar/gaussian_fit.py,sha256=yy8bJyDlZp59msCCqjjWY10tBeNL6H0al2ccPCyNh9E,34312
+oscfar/readme.md,sha256=KNWPOryWwQPGhW8FMIMVBJh24qYbSCHn73O0JDVg1JI,31334
+oscfar/reload.py,sha256=XEaMwkNFtPGpY3DkvdoEmQgzzCQVSC-Sod_u1ojHbrw,1577
+oscfar/utils.py,sha256=GcKUxD3pFaEeUbpBQ75liMqZuE9a2gCz_ZfXeMNZ_Wo,15614
+oscfar-1.0.1.dist-info/METADATA,sha256=jyLb9nzn0Zw2cCdVcFOyIGiNgI020vSEQ-Hll61Gn28,31852
+oscfar-1.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+oscfar-1.0.1.dist-info/top_level.txt,sha256=HrdIuTtX1f3HOTwLU77fYI6gLKm40yZ0SG3sA-TIsnc,7
+oscfar-1.0.1.dist-info/RECORD,,
