@@ -1,0 +1,2 @@
+[console_scripts]
+jpj = jpj.jpj:main
