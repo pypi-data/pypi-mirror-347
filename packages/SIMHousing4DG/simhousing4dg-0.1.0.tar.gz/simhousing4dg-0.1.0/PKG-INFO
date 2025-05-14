@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: SIMHousing4DG
+Version: 0.1.0
+Summary: 用于揭示在住房–服务双重梯度调整背景下，不同收入群体的居住行为反应、匹配效用变化及其引发的财政与人口结构反馈机制的模拟器。模型通过设置结构性 HQG 与 SGI，结合居民对住房与服务的异质性偏好，动态模拟多类政策路径对居住效用、人口空间重构和财政支出结构的系统性影响，实现“住房–服务–人口–财政”四元系统的耦合演进。
+Author: ZHANG Zuo, WANG Zhe
+Requires-Python: >=3.7
+Requires-Dist: streamlit
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

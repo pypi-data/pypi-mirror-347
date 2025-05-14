@@ -1,0 +1,3 @@
+include README.md
+include SIMHousing4DG/*.py
+recursive-include SIMHousing4DG/fonts *.otf

@@ -1,0 +1,2 @@
+[console_scripts]
+simhousing4dg = SIMHousing4DG.launch:main
