@@ -1,0 +1,45 @@
+name: 🌙 Nightly
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *'   # daily at midnight UTC
+
+concurrency:
+  group: nightly
+  cancel-in-progress: true
+
+jobs:
+  nightly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with: { fetch-depth: 0 }
+
+      - uses: actions/setup-python@v4
+        with: { python-version: '3.x' }
+
+      - name: Install build tools
+        run: pip install --upgrade pip build twine setuptools-scm
+
+      - name: Build distributions
+        run: |
+          rm -rf dist
+          python -m build
+
+      - name: Publish to TestPyPI
+        env:
+          TWINE_USERNAME: ${{ secrets.TEST_PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_PASSWORD }}
+        run: |
+          twine upload \
+            --repository testpypi \
+            --non-interactive \
+            --verbose \
+            --skip-existing \
+            dist/*

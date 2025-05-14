@@ -1,0 +1,41 @@
+name: 🚀 Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install build tools
+        run: pip install --upgrade pip build twine setuptools-scm
+
+      - name: Build distributions
+        run: |
+          rm -rf dist
+          python -m build
+
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        run: |
+          twine upload \
+            --non-interactive \
+            --verbose \
+            --skip-existing \
+            dist/*
+
+      - name: Upload Release Assets
+        if: ${{ always() }}
+        run: |
+          gh release upload "${{ github.event.release.tag_name }}" dist/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
