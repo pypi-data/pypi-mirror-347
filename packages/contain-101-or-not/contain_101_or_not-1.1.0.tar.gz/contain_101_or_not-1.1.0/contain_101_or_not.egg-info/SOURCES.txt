@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+contain_101_or_not/__init__.py
+contain_101_or_not/checker.py
+contain_101_or_not.egg-info/PKG-INFO
+contain_101_or_not.egg-info/SOURCES.txt
+contain_101_or_not.egg-info/dependency_links.txt
+contain_101_or_not.egg-info/top_level.txt

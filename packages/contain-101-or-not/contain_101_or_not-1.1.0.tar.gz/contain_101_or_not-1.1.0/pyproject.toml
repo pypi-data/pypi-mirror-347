@@ -1,0 +1,14 @@
+# pyproject.toml
+[project]
+name = "contain_101_or_not"
+version = "1.1.0"
+description = "Check if a binary string contains 101 using DFA"
+authors = [
+  { name="Mohamed khaled", email="mokhaled732003@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.6"
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
