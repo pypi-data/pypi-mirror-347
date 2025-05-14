@@ -1,0 +1,8 @@
+README.md
+setup.py
+testpypi/__init__.py
+testpypi/main.py
+testpypi_yoochan35.egg-info/PKG-INFO
+testpypi_yoochan35.egg-info/SOURCES.txt
+testpypi_yoochan35.egg-info/dependency_links.txt
+testpypi_yoochan35.egg-info/top_level.txt
