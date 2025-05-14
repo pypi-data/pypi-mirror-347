@@ -1,0 +1,13 @@
+# expected_exit_code = 27
+
+# a comment with "a string"
+
+def main(): u64 {
+    total:u32=0
+    
+    for 2..8:1 as i:u64 {
+        total = total + u32|i|;
+    }
+    return u64|total|;
+   
+} 

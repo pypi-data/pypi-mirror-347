@@ -1,0 +1,17 @@
+# expected_exit_code = 27
+
+glob_array: u8[4]
+  
+def main(): u32 {
+    local_array: u8[4]
+    i:u32 = 0
+    local_array[0] = 20
+    glob_array[0] = 7
+
+    i=3
+    local_array[i]=99
+    if local_array[3]!=99:
+      return 1
+    
+    return local_array[0]+glob_array[0]
+} 
