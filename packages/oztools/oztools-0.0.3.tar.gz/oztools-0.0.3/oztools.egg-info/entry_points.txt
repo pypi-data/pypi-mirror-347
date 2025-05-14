@@ -1,0 +1,11 @@
+[console_scripts]
+gh_licenses = oztools.gh:gh_licenses
+gh_new_repo = oztools.gh:gh_new_repo
+kgl_list = oztools.kgl:kgl_list
+kgl_new = oztools.kgl:kgl_new
+nbd_add = oztools.nbd:nbd_add
+nbd_new = oztools.nbd:nbd_new
+nbd_watch = oztools.nbd:nbd_watch
+
+[nbdev]
+oztools = oztools._modidx:d

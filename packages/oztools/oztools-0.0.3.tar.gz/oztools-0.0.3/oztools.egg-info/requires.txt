@@ -1,0 +1,7 @@
+nbdev
+fastkaggle
+GitPython
+Pygments
+asyncinotify
+
+[dev]
