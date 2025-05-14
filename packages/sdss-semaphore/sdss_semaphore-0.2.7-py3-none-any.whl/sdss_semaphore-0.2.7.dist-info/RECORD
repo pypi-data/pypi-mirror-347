@@ -1,0 +1,11 @@
+sdss_semaphore/__init__.py,sha256=_xpT6N2h4j2ARNk0_GpTqXrxuIwL_UgNDfCXkPOG_cE,15442
+sdss_semaphore/targeting.py,sha256=6rxjt-jEHx38G95zWu2hOkTpeDhqGqLVhzbDgreHQ34,11440
+sdss_semaphore/etc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdss_semaphore/etc/sdss5_target_1_with_groups.csv,sha256=0Hzj7Z9lRvgXiNyoRN_TFIBbwrUlirjOL1Sfe0uVHLg,50416
+sdss_semaphore/etc/sdss5_target_2_with_groups.csv,sha256=Ea6_wMJvHlGyrAYHJa32OeAKiAbjD5XcNr2e37LBK-0,63009
+sdss_semaphore/etc/sdss5_target_3_with_groups.csv,sha256=0mbrDh4QGtVgn3pWjeMYEcUe_wj9_ZNHm2eLh5c96bo,65400
+sdss_semaphore-0.2.7.dist-info/licenses/LICENSE.md,sha256=_7dAUQQ5Ph_x1hcFXhi9aHBcqq9H11zco12eO4B3Cyg,1504
+sdss_semaphore-0.2.7.dist-info/METADATA,sha256=ugj0InxZTbWAHcAb6D9H-9QvYODWbC_XvKLmOhDd45w,2234
+sdss_semaphore-0.2.7.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+sdss_semaphore-0.2.7.dist-info/top_level.txt,sha256=Sgw00uSrnhg1fM01R4MFsyWa7F_5rJu3modxQlPNq_0,15
+sdss_semaphore-0.2.7.dist-info/RECORD,,
