@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: mkdocs-auto-figure-list
+Version: 0.1.2
+Summary: auto creation for figures
+Home-page: https://github.com/Privatacc/mkdocs-auto-figure-list
+Author: privatacc
+Requires-Dist: mkdocs
