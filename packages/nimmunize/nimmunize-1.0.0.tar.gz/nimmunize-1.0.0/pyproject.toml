@@ -1,0 +1,19 @@
+[project]
+name            = "nimmunize"
+version         = "1.0.0"
+description     = "Nigeria immunisation scheduling & survey analytics package"
+readme          = "README.md"           # points to your Markdown long description
+license         = { file = "LICENSE" }
+authors         = [{ name="Daniel T. Omole", email="topeomole55@gmail.com" }]
+requires-python = ">=3.9"
+dependencies    = [
+    "pandas >=2",
+    "click >=8",
+    "python-dateutil"
+]
+# project URLs that appear on PyPI
+[project.urls]
+"Homepage"      = "https://github.com/Nerdthink/nimmunize"
+"Source"        = "https://github.com/Nerdthink/nimmunize"
+"Issues"        = "https://github.com/Nerdthink/nimmunize/issues"
+"Documentation" = "https://nimmunize.readthedocs.io"  # if you host docs
