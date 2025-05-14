@@ -1,0 +1,9 @@
+universal_mcp_sendgrid/README.md,sha256=264p2ItmyjTVfg1bRwLKntc26za0Siy7EGzQgUMcwRU,52651
+universal_mcp_sendgrid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universal_mcp_sendgrid/app.py,sha256=HqrsIs8VXzRL7xPuUqAX8jwBx49ZInTsTC0OE3gq7q0,384182
+universal_mcp_sendgrid/mcp.py,sha256=UVOdE6U4jxmV0L5ITMm5r3fBv52Nlo-vGN16dgZuvVI,487
+universal_mcp_sendgrid-0.1.1.dist-info/METADATA,sha256=MPyKUgDczQ1WdEdxKrZybxE4TMurQrmdTmzzE3f72NY,3398
+universal_mcp_sendgrid-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+universal_mcp_sendgrid-0.1.1.dist-info/entry_points.txt,sha256=n0ZW8LE8LpeBbAMUWN0RKZwkGB-exkse5Uje6r6cix8,71
+universal_mcp_sendgrid-0.1.1.dist-info/licenses/LICENSE,sha256=NweDZVPslBAZFzlgByF158b85GR0f5_tLQgq1NS48To,1063
+universal_mcp_sendgrid-0.1.1.dist-info/RECORD,,

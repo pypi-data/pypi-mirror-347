@@ -1,0 +1,2 @@
+[console_scripts]
+universal_mcp_sendgrid = universal_mcp_sendgrid:main
