@@ -1,0 +1,77 @@
+Metadata-Version: 2.4
+Name: wxpay-mcp-python
+Version: 0.1.2
+Summary: 微信支付 MCP 工具包，提供微信支付 JSAPI 支付和订单查询功能的 MCP 实现
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography>=44.0.2
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: python-dotenv>=1.0.0
+
+# WeChat Pay MCP Tools
+
+微信支付 MCP 工具包，提供微信支付 JSAPI 支付和订单查询功能的 MCP（Model Context Protocol）实现。
+
+## 功能特性
+
+- 创建 JSAPI 支付订单
+- 查询订单状态
+- 支持服务商模式
+- 完整的签名验证
+- 详细的日志记录
+
+## 快速开始
+
+### 环境要求
+
+- Python 3.8+
+- pip 或 uv 包管理器
+
+### 安装
+
+```bash
+# 使用 pip 安装
+pip install -r requirements.txt
+
+# 或使用 uv 安装
+uv pip install -r requirements.txt
+```
+
+### 配置
+
+1. 复制环境变量配置文件：
+```bash
+cp .env.example .env
+```
+
+2. 编辑 `.env` 文件，至少填写其中的所有必填项
+
+### 使用示例
+TODO
+
+## 开发指南
+TODO
+
+## 安全说明
+
+- 请妥善保管您的 API 凭证和私钥文件
+- 不要将 `.env` 文件提交到版本控制系统
+- 建议在生产环境中使用环境变量而不是配置文件
+- 确保您的服务器时间准确，以避免签名验证失败
+
+## 贡献指南
+
+欢迎提交 Issue 和 Pull Request！在提交之前，请确保：
+
+1. 代码符合 PEP 8 规范
+2. 添加了必要的测试
+3. 更新了相关文档
+
+## 许可证
+
+MIT License
+
+## 联系方式
+
+如有问题，请提交 Issue 或联系维护者。 
