@@ -1,0 +1,2 @@
+[console_scripts]
+yggtools = yggtools:main
