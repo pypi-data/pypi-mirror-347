@@ -1,0 +1,6 @@
+setuptools
+six
+zc.buildout
+
+[test]
+zope.testing
