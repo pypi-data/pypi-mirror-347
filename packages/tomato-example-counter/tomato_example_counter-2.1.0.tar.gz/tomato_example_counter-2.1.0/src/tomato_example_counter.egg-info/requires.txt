@@ -1,0 +1,4 @@
+tomato>=2.1rc1
+
+[testing]
+pytest
