@@ -1,0 +1,15 @@
+findrum/__init__.py,sha256=vUIGCg0_aHW6bwerr_86nimQxNv8ABD51cqrCKwOyRQ,517
+findrum/clients/client.py,sha256=EnRqVcnDBN5CqnEr3-R0LSvDSm2T3yeFicOZbkA0cg8,459
+findrum/clients/local_client.py,sha256=mWZlBFwfsJ52wljR1HHjlrGqPNmNS26YalQ1yCKFjkM,2626
+findrum/clients/minio_client.py,sha256=VsVDNbMsChENq6qD9lHN3HCdN_BONQItYYvohrAkNFY,2969
+findrum/crawlers/crawler.py,sha256=qFHptwn1E0fiPdP-SShG-euxI-dlrpbOqaOB2I1qxNU,176
+findrum/crawlers/sec_crawler.py,sha256=_rJWl5QsnQlzLnZBmi90AoXH_dJF5roh6UGZqukKEus,3855
+findrum/crawlers/yahoo_crawler.py,sha256=FGz06K3yBnb-vv4S1X2aBz5-cy7ezlyOxEytXaMbm5I,2724
+findrum/readers/parquet_reader.py,sha256=jmz2Tljp3duaRhNpqhw7WRwPjyBwDIPv2mAEHjjI8Lk,2079
+findrum/readers/reader.py,sha256=9V8m9M53CxFX0ECAZOqW-CtESDAcKb6cLd9hJMXXbOc,174
+findrum/writers/parquet_writer.py,sha256=B8_1kpkBFJ5XyUCi4zmnFkhyUP3-xgh1r4HuX4HamHg,2731
+findrum/writers/writer.py,sha256=zQ0OBalHtCwfiOuc-fgLKdP7CoY059588S4w82jf1l0,191
+findrum-1.0.2.dist-info/METADATA,sha256=giUOmetCXorpwOYzj6362XFt8zJE7BecabD6SsRG7AE,504
+findrum-1.0.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+findrum-1.0.2.dist-info/top_level.txt,sha256=TB4tY3sr433vYHo5mtGU5hdte1GnmgduOdTIC1Y8vjY,8
+findrum-1.0.2.dist-info/RECORD,,
