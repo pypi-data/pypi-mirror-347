@@ -1,0 +1,95 @@
+Metadata-Version: 2.4
+Name: v2log
+Version: 0.1.2
+Summary: A visualization tool for access log analysis
+Home-page: https://github.com/s045pd/v2log
+Author: s045pd
+Author-email: s045pd.x@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit>=1.31.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: folium>=0.14.0
+Requires-Dist: plotly>=5.18.0
+Requires-Dist: IP2Location>=8.10.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: streamlit-folium>=0.12.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# V2Log - Access Log Analyzer
+
+一个基于 Streamlit 的访问日志分析器，提供可视化的日志分析功能。
+
+> 本项目98%内容由 Cursor 生成
+
+
+![](media/page1.png)
+![](media/page2.png)
+![](media/page3.png)
+
+
+
+## 功能特点
+
+- 日志分析
+- 地理位置可视化
+- 访问量时间趋势
+- 城市分布统计
+- 搜索和过滤功能
+- 分页数据展示
+
+## 安装说明
+
+通过 pip 安装
+
+```bash
+pip install v2log
+```
+
+## 使用说明
+
+可以通过如下命令运行测试应用
+
+```bash
+v2log --demo
+```
+
+日志分析器支持通过命令行参数指定日志文件路径：
+
+```bash
+v2log access.log
+```
+
+
+
+## 项目结构
+
+```
+├── dev.py
+├── v2log
+│   ├── __init__.py
+│   ├── analyzer.py
+│   ├── app.py
+│   ├── cli.py
+│   ├── components.py
+│   ├── data
+│   │   └── IP2LOCATION-LITE-DB11.BIN
+│   └── utils
+│       ├── __init__.py
+│       ├── generator.py
+│       └── helpers.py
+├── requirements.txt
+└── setup.py
+```

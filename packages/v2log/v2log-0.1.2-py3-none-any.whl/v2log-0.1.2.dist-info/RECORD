@@ -1,0 +1,16 @@
+v2log/__init__.py,sha256=Tz4fOS0ULjNkHLR8Rm8m4B7wzvdjax9RewZ5PXjn2L4,404
+v2log/analyzer.py,sha256=SUhvkH9X-ZeepBSM596BZqlJtWtxzLMAc6ftKsW9ztE,9765
+v2log/app.py,sha256=Dk4co1ElHh37hKrm28K1DW31YXa6bM_DRpp07UA51Qo,1782
+v2log/cli.py,sha256=tOcSl3q79qAUsYbDU8K0Z0_WeSZFnmbz1QR0vcHmL6s,1869
+v2log/components.py,sha256=6yiHchk0sKa2JxhUWamkSzS_jW43H4-42mzqGMUa-Tg,11164
+v2log/utils.py,sha256=5HUTsQ24erGN7lcdaFgVG2MZxyJIWmJkGWz_vm3UxEA,3243
+v2log/data/IP2LOCATION-LITE-DB11.BIN,sha256=2WhkXp3Sso3iZEDO6Gc4G5RD0Fk4IMf4kx4q6SmyEfc,100234586
+v2log/utils/__init__.py,sha256=yGES_5_hgybErqmxL51Gf9avHreZtShF-uTiQEeokjM,529
+v2log/utils/generator.py,sha256=jGR8MLwQBK6k2CApQ8_wTSLEyCDXZKQDxwdTAgjJa_M,1825
+v2log/utils/helpers.py,sha256=cB72Tc8lqDBEmcUZ9ftD5iv1MmJjfdwTXf0i7w_qjBk,3029
+v2log-0.1.2.data/data/example/demo_access.log,sha256=L3cCZzLeJASmy5-yuIIVkIwJejiGO4_SvoWrKmZ3X8o,952
+v2log-0.1.2.dist-info/METADATA,sha256=ZJNtJyMVO7zsJJwbUrbYo-MM8mEiIUvEfd4QV5GUAl4,1911
+v2log-0.1.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+v2log-0.1.2.dist-info/entry_points.txt,sha256=_gix48c0wLzKJTT4i1vxRmcsYkknAVNGWqOmbkFd77o,41
+v2log-0.1.2.dist-info/top_level.txt,sha256=L931YRyb99p_W_kEUGbL_7ZKL3RZ_ArGY5V-18wQe1U,6
+v2log-0.1.2.dist-info/RECORD,,
