@@ -1,0 +1,9 @@
+universal_mcp_digitalocean/README.md,sha256=rtCAeKh69EVYXqqopYeeEioNykQ6hyUdC2519Ns_0Lo,66543
+universal_mcp_digitalocean/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universal_mcp_digitalocean/app.py,sha256=2RP-8RmzFVF8hdCKHjgrrrA9DdKkPLLn_F2zXIYpNlg,490726
+universal_mcp_digitalocean/mcp.py,sha256=7A8K7PU6s9TT5zGMcpwOQpSvsWRS7jWW92acFqhKobc,495
+universal_mcp_digitalocean-0.1.1.dist-info/METADATA,sha256=nCFa8BZ7rCabTAIzsyHOJ795RX-1vKWs6bu-x3wYHWQ,3454
+universal_mcp_digitalocean-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+universal_mcp_digitalocean-0.1.1.dist-info/entry_points.txt,sha256=i8CBCgJo7yGYdtDuJsltvvZ5remdCQhRhN9eyECwDCI,79
+universal_mcp_digitalocean-0.1.1.dist-info/licenses/LICENSE,sha256=NweDZVPslBAZFzlgByF158b85GR0f5_tLQgq1NS48To,1063
+universal_mcp_digitalocean-0.1.1.dist-info/RECORD,,
