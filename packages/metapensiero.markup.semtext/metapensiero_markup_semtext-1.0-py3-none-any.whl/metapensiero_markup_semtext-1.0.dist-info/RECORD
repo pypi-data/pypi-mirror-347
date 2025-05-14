@@ -1,0 +1,13 @@
+metapensiero/markup/semtext/__init__.py,sha256=EYKsTmrffEVIT502AzGjsCq3PG469Eume6fbRMTasXo,804
+metapensiero/markup/semtext/ast.py,sha256=Y1K472DkEOIVXKtRyX9cFJKj8vca_Iozq4IZgSbLgk4,2357
+metapensiero/markup/semtext/exc.py,sha256=c7oZqvX1erBLT17Q5Q5UAaajySaRW8fnkGO_3WMakak,986
+metapensiero/markup/semtext/html.py,sha256=k3IFSpn7cb6Ae17nJ9lzi-bU9nLxiU5O85no2DJ34HU,13727
+metapensiero/markup/semtext/lexer.py,sha256=zyoQpkiFCuwYA45ptGEI8cYwaKC8DCpQ67WrCPXjsgM,11671
+metapensiero/markup/semtext/parser.py,sha256=M4LZZE1s440itGJNPTX8p8SlHiFSBX0pDKqWwttfgyQ,4757
+metapensiero/markup/semtext/quill.py,sha256=rvx7Fagmk2AaGPQdcJ6y57TFUfvexLL1LrCfCh9Geao,8990
+metapensiero/markup/semtext/text.py,sha256=xRoRJY6Lz6dIzkL8yH2cI0U8Hs0Tp4j11Oh9uF90Om4,1488
+metapensiero/markup/semtext/visitor.py,sha256=diCf3zxCPkstp1bz-qTyq-WTjG9icos9QR5OOvvXP5I,13336
+metapensiero_markup_semtext-1.0.dist-info/METADATA,sha256=j9b3UuFIxCW_048192f_i3vsgq-8_sTHkIeTvC8i-PU,1997
+metapensiero_markup_semtext-1.0.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+metapensiero_markup_semtext-1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+metapensiero_markup_semtext-1.0.dist-info/RECORD,,

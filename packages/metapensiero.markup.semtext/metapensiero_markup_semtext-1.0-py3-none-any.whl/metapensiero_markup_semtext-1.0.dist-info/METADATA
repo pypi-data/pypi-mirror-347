@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: metapensiero.markup.semtext
+Version: 1.0
+Summary: a Simple Enough Markup
+Author-Email: Lele Gaifax <lele@metapensiero.it>
+License: GPL-3.0-or-later
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Project-URL: Source, https://gitlab.com/metapensiero/metapensiero.markup.semtext
+Project-URL: Changelog, https://gitlab.com/metapensiero/metapensiero.markup.semtext/-/blob/master/CHANGES.rst
+Requires-Python: >=3.11
+Requires-Dist: lxml
+Requires-Dist: sly
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: bump-my-version; extra == "dev"
+Requires-Dist: readme_renderer; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Description-Content-Type: text/x-rst
+
+.. -*- coding: utf-8 -*-
+.. :Project:   metapensiero.markup.semtext -- a Simple Enough Markup
+.. :Created:   Wed 23 Nov 2016 09:14:23 CET
+.. :Author:    Lele Gaifax <lele@metapensiero.it>
+.. :License:   GNU General Public License version 3 or later
+.. :Copyright: © 2016, 2017 Arstecnica s.r.l.
+.. :Copyright: © 2018 Lele Gaifax
+..
+
+=============================
+ metapensiero.markup.semtext
+=============================
+
+a Simple Enough Markup
+======================
+
+:author: Lele Gaifax
+:contact: lele@metapensiero.it
+:license: GNU General Public License version 3 or later
+
+Implement a minimalistic markup usable in the various descriptions, with just the needed
+elements: headings and paragraphs containing plain, **bold** or *italic* text, `hyper
+<link>` and unordered lists.
+
+The internal representation is a tree of nodes, and a set of functions to transpose it to/from
+a textual format, HTML and `Quill Delta`__ are included.
+
+__ https://quilljs.com/docs/delta/
