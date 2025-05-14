@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: sdialog
+Version: 0.0.1
+Summary: Synthetic Dialogue Generation and Analysis
+Author-email: Sergio Burdisso <sergio.burdisso@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/idiap/sdialog
+Project-URL: Issues, https://github.com/idiap/sdialog/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: print-color
+Requires-Dist: langchain
+Requires-Dist: langchain-ollama
+Requires-Dist: tqdm
+Requires-Dist: plotly
+Requires-Dist: sentence-transformers
+Requires-Dist: pandas
+Requires-Dist: tenacity
+Requires-Dist: numpy
+Requires-Dist: flake8
+Requires-Dist: pytest
+Requires-Dist: ollama
+Dynamic: license-file
+
+# SDialog
+
+Synthetic Dialogue Generation and Analysis
+
+_(Comming soon)_
+
+This package requires `Ollama` running is your system.

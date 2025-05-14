@@ -1,0 +1,12 @@
+print-color
+langchain
+langchain-ollama
+tqdm
+plotly
+sentence-transformers
+pandas
+tenacity
+numpy
+flake8
+pytest
+ollama
