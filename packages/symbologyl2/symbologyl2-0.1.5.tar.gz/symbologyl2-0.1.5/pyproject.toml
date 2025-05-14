@@ -1,0 +1,56 @@
+[build-system]
+requires = ["maturin<2.0.0,>=1.8.6"]
+build-backend = "maturin"
+
+[project]
+authors = [
+    { name = "OneChronos Engineering", email = "engineering@onechronos.com" },
+]
+name = "symbologyl2"
+url = "https://github.com/onechronos/symbologyl2-py"
+version = "0.1.5"
+description = "A python wrapper for symbologyl2 (https://github.com/onechronos/symbologyl2)"
+license = { text = "MIT"}
+readme = "README.md"
+repository = "https://github.com/onechronos/symbologyl2-py"
+homepage = "https://github.com/onechronos/symbologyl2-py"
+requires-python = "<4.0,>=3.10"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Operating System :: OS Independent"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/onechronos/symbologyl2-py"
+Documentation = "https://symbologyl2-py.readthedocs.io/en/latest/index.html"
+Source = "https://github.com/onechronos/symbologyl2-py"
+homepage = "https://github.com/onechronos/symbologyl2-py"
+repository = "https://github.com/onechronos/symbologyl2-py"
+documentation = "https://symbologyl2-py.readthedocs.io/en/latest/index.html"
+
+[dependency-groups]
+dev = [
+    "maturin<2.0.0,>=1.8.6",
+    "mypy<2.0,>=1.15.0",
+    "pre-commit<5.0.0,>=4.2.0",
+    "Sphinx<9.0.0,>=8.0.0",
+    "myst-parser<5.0.0,>=4.0.1",
+    "sphinx-rtd-theme<4.0.0,>=3.0.2",
+    "coverage<8.0.0,>=7.8.0",
+    "pytest<9.0.0,>=8.3.5",
+    "ruff>=0.11.9",
+]
+
+[tool.uv]
+required-version = ">=0.7.0"
+default-groups = []
+
+[tool.maturin]
+module-name = "symbologyl2._native"

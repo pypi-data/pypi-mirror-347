@@ -1,0 +1,12 @@
+[package]
+name = "symbologyl2-py"
+version = "0.1.5"
+edition = "2024"
+
+[lib]
+name = "symbologyl2"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.24.2", features = ["extension-module"] }
+symbologyl2 = "0.1.1"
