@@ -1,0 +1,33 @@
+[project]
+name = "datasette-chronicle"
+version = "0.3"
+description = "Use sqlite-chronicle with tables in Datasette"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = "Apache-2.0"
+classifiers=[
+    "Framework :: Datasette",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "datasette",
+    "sqlite-chronicle>=0.4"
+]
+
+[project.urls]
+Homepage = "https://github.com/datasette/datasette-chronicle"
+Changelog = "https://github.com/datasette/datasette-chronicle/releases"
+Issues = "https://github.com/datasette/datasette-chronicle/issues"
+CI = "https://github.com/datasette/datasette-chronicle/actions"
+
+[project.entry-points.datasette]
+chronicle = "datasette_chronicle"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-asyncio", "sqlite-utils"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+
+[tool.setuptools.package-data]
+datasette_chronicle = ["templates/*"]
