@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+gemini-chat = mkdocs_gemini_chat:GeminiChatPlugin

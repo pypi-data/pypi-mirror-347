@@ -1,0 +1,13 @@
+include LICENSE
+include README.md
+include MANIFEST.in
+include pyproject.toml
+
+recursive-include mkdocs_gemini_chat *.py
+recursive-include mkdocs_gemini_chat *.html
+recursive-include mkdocs_gemini_chat *.css
+recursive-include mkdocs_gemini_chat *.js
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[cod]
+recursive-exclude * *.so 
