@@ -1,0 +1,14 @@
+wataproclient/__init__.py,sha256=OO-VXEbZDmDOMLf4N_hzWiavipWRuA8c-sT2X1XQrYk,766
+wataproclient/client.py,sha256=tVuCabt1axdaFMboE21wxDgyWGyfSyM56cXz7E7Wd9k,2662
+wataproclient/exceptions.py,sha256=0aFRC0suqPHTYlId5Vvjp8_RNs9Gp2GNidCBfGiO0IE,3539
+wataproclient/http.py,sha256=tGPgA2louKayG1KjgMDxGtd7A09uoa3HIZ75toQ9QyE,13484
+wataproclient/modules/__init__.py,sha256=OwzRNlorEbDyo211zbqyJo2FpSZRwz7D8Nzgs4MwU5A,279
+wataproclient/modules/base.py,sha256=N0awZ9r6F8wqFPXJFw7_0tSq9UL3-MFwErCMzyG6xI8,2767
+wataproclient/modules/links.py,sha256=xm9KcZxz2CAuwrcSE7N0rfwoEUS-ocObbkUf6Oz_zCg,6896
+wataproclient/modules/payments.py,sha256=ITMhNulw_Qvsm6PSm2zdO8XsfJVSa-JSoUMGvRPke5w,7280
+wataproclient/modules/transactions.py,sha256=30JAz1H-D7qN9ts_n7oTKV4OgYVOluuLLBWKfUry-sc,4006
+wataproclient/modules/webhooks.py,sha256=myq9K_PKJwDvJtSRHpsSF0BaQetFoSjX99quXsJtzHs,13182
+wataproclient-1.0.3.dist-info/METADATA,sha256=ftqVLm1E84hy9ixJWyaJGQjbwXQbs9tDflq4t4mgYNA,15964
+wataproclient-1.0.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+wataproclient-1.0.3.dist-info/top_level.txt,sha256=5vNSeK3M1ses7iW7YtTqPt-fLzWEYmRjnO3YjUBygf4,14
+wataproclient-1.0.3.dist-info/RECORD,,
