@@ -1,0 +1,169 @@
+
+# Sideko REST API Python SDK
+
+## Overview
+The Sideko API unlocks features including generating SDKs, setting up API Specifications with mock servers, creating documentation projects with generated API references and custom pages, managing roles and permissions, and more.
+
+### Synchronous Client
+
+```python
+from sideko_portal import SidekoClient
+from os import getenv
+
+client = SidekoClient(api_key=getenv("API_KEY"))
+```
+
+### Asynchronous Client
+
+```python
+from sideko_portal import AsyncSidekoClient
+from os import getenv
+
+client = AsyncSidekoClient(api_key=getenv("API_KEY"))
+```
+
+## Module Documentation and Snippets
+
+### [api](sideko_portal/resources/api/README.md)
+
+* [create](sideko_portal/resources/api/README.md#create) - Create a new API
+* [delete](sideko_portal/resources/api/README.md#delete) - Delete an API
+* [get](sideko_portal/resources/api/README.md#get) - Get one API
+* [init](sideko_portal/resources/api/README.md#init) - Create an API with an initial version
+* [list](sideko_portal/resources/api/README.md#list) - List your APIs
+* [patch](sideko_portal/resources/api/README.md#patch) - Update an existing API
+
+### [api.spec](sideko_portal/resources/api/spec/README.md)
+
+* [create](sideko_portal/resources/api/spec/README.md#create) - Add a new API specification
+* [delete](sideko_portal/resources/api/spec/README.md#delete) - Delete an API Specification and it's associated metadata
+* [get](sideko_portal/resources/api/spec/README.md#get) - Get API specification metadata
+* [get_openapi](sideko_portal/resources/api/spec/README.md#get_openapi) - Get OpenAPI specification
+* [get_stats](sideko_portal/resources/api/spec/README.md#get_stats) - Get Stats about the specification
+* [list](sideko_portal/resources/api/spec/README.md#list) - List specs of a collection
+* [patch](sideko_portal/resources/api/spec/README.md#patch) - Update an API Specification and/or metadata
+
+### [api_link](sideko_portal/resources/api_link/README.md)
+
+* [create](sideko_portal/resources/api_link/README.md#create) - Links API Version to Documentation project version with a specified update policy
+* [delete](sideko_portal/resources/api_link/README.md#delete) - Removes an API link
+* [get](sideko_portal/resources/api_link/README.md#get) - Retrieve single API link
+* [list](sideko_portal/resources/api_link/README.md#list) - List API links for doc version
+* [patch](sideko_portal/resources/api_link/README.md#patch) - Updates an API link
+* [reorder](sideko_portal/resources/api_link/README.md#reorder) - Reorder API links and groups
+
+### [api_link.group](sideko_portal/resources/api_link/group/README.md)
+
+* [create](sideko_portal/resources/api_link/group/README.md#create) - Create API group to organize API links
+* [delete](sideko_portal/resources/api_link/group/README.md#delete) - Deletes the api group and all its links
+* [list](sideko_portal/resources/api_link/group/README.md#list) - List API groups for doc version
+* [patch](sideko_portal/resources/api_link/group/README.md#patch) - Updates API link group
+
+### [asset](sideko_portal/resources/asset/README.md)
+
+* [create](sideko_portal/resources/asset/README.md#create) - Upload Assets
+* [delete](sideko_portal/resources/asset/README.md#delete) - Delete Asset
+* [list](sideko_portal/resources/asset/README.md#list) - List Assets
+* [patch](sideko_portal/resources/asset/README.md#patch) - Update Asset
+
+### [auth](sideko_portal/resources/auth/README.md)
+
+* [exchange_code](sideko_portal/resources/auth/README.md#exchange_code) - Exchange one-time auth key for api key
+
+### [cli](sideko_portal/resources/cli/README.md)
+
+* [check_updates](sideko_portal/resources/cli/README.md#check_updates) - Checks if current CLI has updates
+
+### [doc](sideko_portal/resources/doc/README.md)
+
+* [check_preview](sideko_portal/resources/doc/README.md#check_preview) - A simple check to see if the requesting user has access to the preview doc project
+* [create](sideko_portal/resources/doc/README.md#create) - Create a new Documentation Project
+* [delete](sideko_portal/resources/doc/README.md#delete) - Delete a specific Documentation Project
+* [get](sideko_portal/resources/doc/README.md#get) - Get a specific Documentation Project
+* [list](sideko_portal/resources/doc/README.md#list) - List Documentation Projects
+* [patch](sideko_portal/resources/doc/README.md#patch) - Update an existing Documentation Project
+
+### [doc.deployment](sideko_portal/resources/doc/deployment/README.md)
+
+* [get](sideko_portal/resources/doc/deployment/README.md#get) - Get a specific deployment for a specific documentation project
+* [list](sideko_portal/resources/doc/deployment/README.md#list) - List deployments for a specific documentation project
+* [trigger](sideko_portal/resources/doc/deployment/README.md#trigger) - Deploy a new generated version of documentation with linked guides & APIs
+
+### [doc.preview](sideko_portal/resources/doc/preview/README.md)
+
+* [create_password](sideko_portal/resources/doc/preview/README.md#create_password) - A password generator for a documentation project preview environment
+* [delete_password](sideko_portal/resources/doc/preview/README.md#delete_password) - Deletes a preview environment password
+* [list_passwords](sideko_portal/resources/doc/preview/README.md#list_passwords) - Lists generated passwords for a documentation project preview environment
+
+### [doc.theme](sideko_portal/resources/doc/theme/README.md)
+
+* [get](sideko_portal/resources/doc/theme/README.md#get) - Get the theme attached to a documentation project
+* [update](sideko_portal/resources/doc/theme/README.md#update) - Update a document project theme
+
+### [doc.version](sideko_portal/resources/doc/version/README.md)
+
+* [get](sideko_portal/resources/doc/version/README.md#get) - Get a specific version of an Documentation Project
+* [list](sideko_portal/resources/doc/version/README.md#list) - List versions of a specific Documentation Project
+
+### [doc.version.guide](sideko_portal/resources/doc/version/guide/README.md)
+
+* [create](sideko_portal/resources/doc/version/guide/README.md#create) - Create a guide for a specific version of a documentation project
+* [delete](sideko_portal/resources/doc/version/guide/README.md#delete) - Delete a specific guide for a specific version of a documentation project
+* [get](sideko_portal/resources/doc/version/guide/README.md#get) - Get a specific guide for a specific version of a documentation project
+* [get_content](sideko_portal/resources/doc/version/guide/README.md#get_content) - Get content for a specific guide for a specific version of a documentation project
+* [list](sideko_portal/resources/doc/version/guide/README.md#list) - List guides for a specific version of a documentation project
+* [patch](sideko_portal/resources/doc/version/guide/README.md#patch) - Update a specific guide for a specific version of a documentation project
+* [reorder](sideko_portal/resources/doc/version/guide/README.md#reorder) - Reorder guides for a specific version of a documentation project
+
+### [lint](sideko_portal/resources/lint/README.md)
+
+* [run](sideko_portal/resources/lint/README.md#run) - Lint an OpenAPI spec
+
+### [org](sideko_portal/resources/org/README.md)
+
+* [create](sideko_portal/resources/org/README.md#create) - Create a new organization
+* [get](sideko_portal/resources/org/README.md#get) - Get Organization
+
+### [org.theme](sideko_portal/resources/org/theme/README.md)
+
+* [get](sideko_portal/resources/org/theme/README.md#get) - Get organization theme
+* [update](sideko_portal/resources/org/theme/README.md#update) - Update organization theme
+
+### [role](sideko_portal/resources/role/README.md)
+
+* [create](sideko_portal/resources/role/README.md#create) - Create a new role
+* [delete](sideko_portal/resources/role/README.md#delete) - Delete role and all associated permissions
+* [list](sideko_portal/resources/role/README.md#list) - List roles
+
+### [sdk](sideko_portal/resources/sdk/README.md)
+
+* [generate](sideko_portal/resources/sdk/README.md#generate) - Generate a new managed SDK from a Sideko configuration file
+* [list](sideko_portal/resources/sdk/README.md#list) - List all managed SDKs
+* [update](sideko_portal/resources/sdk/README.md#update) - Update an SDK to reflect the latest state of the API
+
+### [sdk.config](sideko_portal/resources/sdk/config/README.md)
+
+* [init](sideko_portal/resources/sdk/config/README.md#init) - Initialize an SDK configuration with all defaults applied
+* [sync](sideko_portal/resources/sdk/config/README.md#sync) - Sync an SDK configuration with the latest state of the API
+
+### [sdk.doc](sideko_portal/resources/sdk/doc/README.md)
+
+* [create](sideko_portal/resources/sdk/doc/README.md#create) - Retrieve SDK documentation
+
+### [service_account](sideko_portal/resources/service_account/README.md)
+
+* [create](sideko_portal/resources/service_account/README.md#create) - Create a new service account with a set of project permissions
+* [delete](sideko_portal/resources/service_account/README.md#delete) - Delete a service account
+* [get](sideko_portal/resources/service_account/README.md#get) - Get service account by the ID
+* [list](sideko_portal/resources/service_account/README.md#list) - List all service accounts in organization
+
+### [user](sideko_portal/resources/user/README.md)
+
+* [invite](sideko_portal/resources/user/README.md#invite) - Invite a user to an organization with a specific role
+
+### [user.me](sideko_portal/resources/user/me/README.md)
+
+* [get](sideko_portal/resources/user/me/README.md#get) - Get current user profile
+* [get_key](sideko_portal/resources/user/me/README.md#get_key) - Get API key for the current user
+
+<!-- MODULE DOCS END -->
