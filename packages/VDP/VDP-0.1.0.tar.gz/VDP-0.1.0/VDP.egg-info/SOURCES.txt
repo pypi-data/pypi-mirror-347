@@ -1,0 +1,9 @@
+README.md
+setup.py
+VDP/__init__.py
+VDP/layers.py
+VDP.egg-info/PKG-INFO
+VDP.egg-info/SOURCES.txt
+VDP.egg-info/dependency_links.txt
+VDP.egg-info/requires.txt
+VDP.egg-info/top_level.txt

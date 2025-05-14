@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: VDP
+Version: 0.1.0
+Summary: Variational Density Propagation (VDP) CNN Layers for TensorFlow
+Home-page: https://github.com/dimahdera/PremiUm-CNN-CIFAR10-Tensorflow-2.x
+Author: Rohaan Nadeem
+Author-email: rohaan.nadeem@fulbrightmail.org
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+The original code can be found on Github [here](https://github.com/dimahdera/PremiUm-CNN-CIFAR10-Tensorflow-2.x/tree/main).
+
+This PyPi package was written to simplify imports in subsequent projects, experiments and replications. 
+
+Principle Researcher: [Dr Dima Dera](https://www.linkedin.com/in/dimah-dera-925aa532/).

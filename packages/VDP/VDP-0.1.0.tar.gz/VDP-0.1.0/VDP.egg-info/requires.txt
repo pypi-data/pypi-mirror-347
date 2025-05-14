@@ -1,0 +1,7 @@
+tensorflow
+numpy
+matplotlib
+pandas
+scipy
+xlsxwriter
+wandb
