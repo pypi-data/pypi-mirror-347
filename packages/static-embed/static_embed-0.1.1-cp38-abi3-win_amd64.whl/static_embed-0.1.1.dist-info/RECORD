@@ -1,0 +1,5 @@
+static_embed-0.1.1.dist-info/METADATA,sha256=kcbZ6wFmdK2GF_ZAP7ZFBCNj0utyzVGARpYYaywdzFM,2975
+static_embed-0.1.1.dist-info/WHEEL,sha256=qo08K5WTt1v9liGoFGXfI182ciKs5521XAErJtzFynQ,94
+static_embed/__init__.py,sha256=mWTvTQx3F3r1xql9WoHNVhAilwU27kP_fydMMsmM7vQ,131
+static_embed/static_embed.pyd,sha256=9HNydotdnOD6gfwu706whAkAPNrC1f-wYyxb3ZJR7lg,7217152
+static_embed-0.1.1.dist-info/RECORD,,
