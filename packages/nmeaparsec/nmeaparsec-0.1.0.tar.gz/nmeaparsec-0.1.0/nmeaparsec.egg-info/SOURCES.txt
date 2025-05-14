@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+nmeaparsec/__init__.py
+nmeaparsec/nmea_parser.py
+nmeaparsec.egg-info/PKG-INFO
+nmeaparsec.egg-info/SOURCES.txt
+nmeaparsec.egg-info/dependency_links.txt
+nmeaparsec.egg-info/requires.txt
+nmeaparsec.egg-info/top_level.txt
+nmeaparsec/tests/test_parser.py
+nmeaparsec/tests/test_real_files.py
+nmeaparsec/tests/test_visualization.py
