@@ -1,0 +1,9 @@
+name: Wheels
+on: [push, pull_request, release]
+jobs:
+  build:
+    uses: pypa/cibuildwheel@v2
+    with:
+      package-dir: .
+    env:
+      CIBW_BUILD: "cp38-* cp39-* cp310-* cp311-*"
