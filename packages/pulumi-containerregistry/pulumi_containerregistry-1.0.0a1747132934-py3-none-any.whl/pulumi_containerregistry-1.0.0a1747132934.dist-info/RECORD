@@ -1,0 +1,10 @@
+pulumi_containerregistry/__init__.py,sha256=NZCMSkubaDBZvw6zLPc-tHP8NYKdTj8LMfeI7MQk92A,745
+pulumi_containerregistry/_utilities.py,sha256=lOsQ2gsNwfgm_3UA3suX-Jj-e1wpL8LlAkadEF_TnS4,10862
+pulumi_containerregistry/provider.py,sha256=LMA4GuCejRH4rw7cmmN405DtSrj38re4QnUOjrxmHPs,4580
+pulumi_containerregistry/pulumi-plugin.json,sha256=WlWsm53egk63Zn4pUDZqsdZd1pfFJFisIjB5Zsd5pVk,166
+pulumi_containerregistry/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulumi_containerregistry/resource.py,sha256=gCvd4f34XOqKXbCQVKE_jN-sZ9eBPeaB3o8S1LjvBag,10223
+pulumi_containerregistry-1.0.0a1747132934.dist-info/METADATA,sha256=VgsBltRQRIX6vBzzwRRriZW_IXYD1OMpJpZDq1n2PtY,1787
+pulumi_containerregistry-1.0.0a1747132934.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+pulumi_containerregistry-1.0.0a1747132934.dist-info/top_level.txt,sha256=3eCJhLIxooHqZZPXEbRBY7VKBP5bU5YjgRSIvsRCWgc,25
+pulumi_containerregistry-1.0.0a1747132934.dist-info/RECORD,,
