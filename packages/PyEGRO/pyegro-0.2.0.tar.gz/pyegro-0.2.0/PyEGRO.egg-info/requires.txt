@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+scipy
+torch
+gpytorch
+scikit-learn
+pymoo
+rich
+pyDOE
+SALib
+Pillow
+joblib
+optuna
+choaspy
