@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: dantalabs
+Version: 0.1.0
+Summary: DantaLabs SDK collection (featuring Maestro)
+Author-email: DantaLabs <dev@dantalabs.com>
+License: wip :)
+Project-URL: Homepage, https://github.com/dantalabs/dantalabs-sdk
+Project-URL: Bug Tracker, https://github.com/dantalabs/dantalabs-sdk/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx<0.28.0,>=0.24.0
+Requires-Dist: pydantic<3.0,>=2.0
+Requires-Dist: typer[all]<1.0.0,>=0.9.0
+Requires-Dist: pydantic[email]<=3.0,>=2.0
+Requires-Dist: python-dotenv>=1.1.0
+Dynamic: license-file
+
+wip
