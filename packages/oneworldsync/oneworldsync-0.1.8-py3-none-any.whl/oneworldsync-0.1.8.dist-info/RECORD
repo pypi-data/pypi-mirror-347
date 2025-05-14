@@ -1,0 +1,11 @@
+oneworldsync/__init__.py,sha256=dXwFm4yK8zZOEyUAqh11Sbf6FQ9yc81SfLXQR71zYSk,400
+oneworldsync/auth.py,sha256=ViOgPAGKH5iBbg29luS_z2pG-5_NdstcXpu6OThOnWQ,6200
+oneworldsync/client.py,sha256=L3TihW1cySSHcI_k038Q-StDc15uf5Qb51AzRai4LKM,10411
+oneworldsync/exceptions.py,sha256=ucsyflGpX7WN5g5OKAqgSnfrCyC6UbOaRVpl0a0ovP8,839
+oneworldsync/models.py,sha256=a4wpVMOiHq3W8_4nPjSZKmi-WSGBw9ZEib2NCjAoFjU,8964
+oneworldsync/utils.py,sha256=0zc7csb0cX7BKERyouiisicmDNOqkEqYFDgNtdnMv4k,13202
+oneworldsync-0.1.8.dist-info/licenses/LICENSE,sha256=hn-Lyd4oBrbYHWx0nlDQu6UgZjtnrT50QhvNHhauoNU,1073
+oneworldsync-0.1.8.dist-info/METADATA,sha256=MMwW02Wn34CK6YZlQGkAbSJ3GwfdIdhaWRO6-xHfajE,9561
+oneworldsync-0.1.8.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+oneworldsync-0.1.8.dist-info/top_level.txt,sha256=WKlMjXyH_w1kb6r3QG2yb5pRynVUJSrrP0pgMeyUdhw,13
+oneworldsync-0.1.8.dist-info/RECORD,,
