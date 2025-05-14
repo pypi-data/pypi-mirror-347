@@ -1,0 +1,7 @@
+ioctx/__init__.py,sha256=CCgI4nA_G3gBeFNSK0viPk2TXh-Ye0QppXZIf0tLS9M,319
+ioctx/backends.py,sha256=hBzLaLkq5r0AuAlaLcmPihAA2Pr0zuWqlpUHQiCHqcs,7758
+ioctx/protocol.py,sha256=GZU3y-xMqkVm7xbTn7YyvqGP0hQCXfOUjWIdQUL5Npo,3614
+ioctx-0.1.0.dist-info/LICENSE,sha256=9rIpnI74Fzlam2L2v98ef6Eoq59x4NOkgnwGfiHXKNE,1078
+ioctx-0.1.0.dist-info/METADATA,sha256=tT9UqcNGEpiaO2cyei95XrKbQeESNApW9qNh3d7N0Qk,7655
+ioctx-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ioctx-0.1.0.dist-info/RECORD,,
