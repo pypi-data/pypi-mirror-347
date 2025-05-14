@@ -1,0 +1,2 @@
+[console_scripts]
+oqueue = app.cli.main:app
