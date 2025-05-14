@@ -1,0 +1,10 @@
+mcp_figma_tools/__init__.py,sha256=x9J-Si4gc-edPQx8QYoAeM420g9P4LD7ui39fogXY-Q,35
+mcp_figma_tools/server.py,sha256=eJtwpzlb5hUr9TdQmtlUz6hGrfpwFS6wUuqbjbj0_gQ,15847
+mcp_figma_tools-0.1.1.dist-info/licenses/LICENSE,sha256=MWv2eW_4ATTYYe4HtD19KsUdhJ1ZNWKwMYPoy-N7Q5Q,1081
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_server.py,sha256=rzWOGyk0RpAVlXzs1WTvQEJLoBEcSff9xLXCKNyST4U,998
+mcp_figma_tools-0.1.1.dist-info/METADATA,sha256=zq45Yoeebt-pzFe2VlI7Ht6CUwN_vUMrSigPiHh9o4s,7219
+mcp_figma_tools-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+mcp_figma_tools-0.1.1.dist-info/entry_points.txt,sha256=Q-W4KNbHs5cZ2LvcYp9NCJ4iFzU7NZvhOj0eCeSodFg,64
+mcp_figma_tools-0.1.1.dist-info/top_level.txt,sha256=S9PO1-11oAQYEOuOIZwJSulg8gOjtB1TzBn8rP5_ClA,22
+mcp_figma_tools-0.1.1.dist-info/RECORD,,
