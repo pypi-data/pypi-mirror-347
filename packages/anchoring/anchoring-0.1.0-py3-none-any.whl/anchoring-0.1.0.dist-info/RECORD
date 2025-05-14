@@ -1,0 +1,8 @@
+anchoring/__init__.py,sha256=FFM_8BkdFwMSU9yTRks_BVDHUCRosvP_GQ7w7U-19m0,947
+anchoring/spa.py,sha256=7uezhbCWdR_NyxmMqO9Hly4o7v9ATHUH7lwS0aPmjy8,22197
+anchoring/spa_pipeline.py,sha256=mvQ2O6rb4Op9wHoD7fQKcnHl9WX_lqw_r_kURorq2rA,12656
+anchoring-0.1.0.dist-info/licenses/LICENSE,sha256=zSDVORkj6join3RDTrXY5x8rY0i491NhidMKMobLzfI,1073
+anchoring-0.1.0.dist-info/METADATA,sha256=yWNc6BF2EPeMXtUBsI4PGrQxfcKVzlUS3-hazdCOmMo,10440
+anchoring-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+anchoring-0.1.0.dist-info/top_level.txt,sha256=kN7hlfJMpcLOfPzOwvoIdcW0qN4pkqdxUfmHw2jtvrY,10
+anchoring-0.1.0.dist-info/RECORD,,
