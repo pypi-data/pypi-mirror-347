@@ -1,0 +1,17 @@
+pg_migration/__init__.py,sha256=U3f_Jgr3zpgiYG2kLcvcT05TQsVzN9Kktg_f3Q9OZFA,22
+pg_migration/distribute_upgrader.py,sha256=BVvzMs8soyz5PnYbWtg_Ymbiff2GUkgdKo4vEgpOMKM,5527
+pg_migration/gitlab.py,sha256=fS-9bVHEyy0WgSzenRiIyQjoHa0uReok20v-5d7KWEE,2209
+pg_migration/initializer.py,sha256=ynPTBn5NLwjXP7SRNxs8O4JaDLGn9DgutGDd2PDFi6A,934
+pg_migration/main.py,sha256=MJgNfBELt_ilvhAUTCPQM8vDNcJv3aPTWIsH8puABuU,6989
+pg_migration/migration.py,sha256=r7On3Y4ygPeaMlxGscdpyCYKcvQl8ELLR73qtBgI1EM,7494
+pg_migration/pg.py,sha256=PT8339WetWMafsRatuY1bBPkW9RkzECcl6DxMvaQq78,2935
+pg_migration/plpgsql_checker.py,sha256=Yucj__B0xs5nccnjn2hlEt4SLO21XpXUiUebozdT2s8,811
+pg_migration/release_generator.py,sha256=tFo5dCLZRNClnezKkPGFkdRs8x51wRlKzreMRam7ICs,3132
+pg_migration/upgrader.py,sha256=Tfvpop6GTkBe2fmNTMd_8ivco900TssRJyLmQlm3Si8,1925
+pg_migration-1.2.0.dist-info/AUTHORS,sha256=BP1uVueuHep4YMmKlBQMs1WtE9yf_pvjK-qFzuRTE8I,93
+pg_migration-1.2.0.dist-info/LICENSE,sha256=cj3nlkj23e-fiX2YFfFAtFihJEN-kGsnQ_gbi0zlA0k,1507
+pg_migration-1.2.0.dist-info/METADATA,sha256=-Iw6Gs0XGYe3Joz2w8ws5587Urj64I2o7t-6EnjwId4,2136
+pg_migration-1.2.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pg_migration-1.2.0.dist-info/entry_points.txt,sha256=OUvc_1EZuobvIRcOM0tf0Wavr3OgLWRlYUXEQsZm0XQ,56
+pg_migration-1.2.0.dist-info/top_level.txt,sha256=RoKa4IZrwAkZwkEu0QDiy9whE72KCAsz_c0bzJpRLmM,13
+pg_migration-1.2.0.dist-info/RECORD,,
