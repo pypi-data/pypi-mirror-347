@@ -1,0 +1,11 @@
+# Falyx CLI Framework — (c) 2025 rtj.dev LLC — MIT Licensed
+"""protocols.py"""
+from __future__ import annotations
+
+from typing import Any, Protocol
+
+from falyx.action.action import BaseAction
+
+
+class ActionFactoryProtocol(Protocol):
+    def __call__(self, *args: Any, **kwargs: Any) -> BaseAction: ...
