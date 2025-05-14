@@ -1,0 +1,17 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/main.py,sha256=QOwO5n7J1daZ7k4t-s5b5QMtiBJ3tKlv9fKj5X104mA,4896
+app/models/__init__.py,sha256=w3gCLZlVivnOObKCeSZJND4xu74ciuPDUkxDaiYUA18,17
+app/models/video_downloader.py,sha256=o8z5I127PGh3SuhjSpcGijMPe9ZvBB1Pfm-imJWfUfc,2680
+app/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/providers/video.py,sha256=-jivVAFD5A13UmLMRshhUvPrqKKcZhfFIIPS33_l9Vk,849
+app/providers/video_providers/__init__.py,sha256=WazxUZfyz1QyaBgAc7gQSbo3ajxlk7YjOB8ilrWT1TI,36
+app/providers/video_providers/douyin.py,sha256=D9SBTk-2lXLfyxdcOyROv3WBwoyHjwjiquYDWN6RJgg,2890
+app/providers/video_providers/tiktok.py,sha256=-uI8gLlil31dMMSiknIoTmokqv_ZoqC2RiAh5GNwWxc,2940
+app/providers/video_providers/video_provider.py,sha256=Oci5U4oS9szzMNIIXPHq1nCKxALqq3eswa27gCLjXX0,1062
+app/providers/video_providers/youtube.py,sha256=NTIIeKUQHZ4MTd8sc9Zg4AjH4SJSuRjdV8hcad8xTis,726
+app/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/utils/helper.py,sha256=vvMK8gyw7MS6FaapfjqVOS-CPKmW_2NQTMfcatV64yc,1267
+octopus_downloader-0.1.9.dist-info/METADATA,sha256=6PGLRSwac7lKaSb3hcCp1OVucnJTPDTr2nkZREz_U8w,1400
+octopus_downloader-0.1.9.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+octopus_downloader-0.1.9.dist-info/entry_points.txt,sha256=EejGGM-DM1Joo_t3zIzpKGvXEUDIdvRhOnj7HRmtHZM,37
+octopus_downloader-0.1.9.dist-info/RECORD,,
