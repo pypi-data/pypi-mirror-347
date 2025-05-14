@@ -1,0 +1,123 @@
+"""
+Module Name: big_decimal_validator.py
+
+Description: Translates apache.commons.validator.routines.BigDecimalValidator.java
+Link: https://github.com/apache/commons-validator/blob/master/src/main/java/org/apache/commons/validator/routines/BigDecimalValidator.java
+
+Author: Jessica Breuhaus
+
+License (Taken from apache.commons.validator.routines.BigDecimalValidator.java):
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+        http:#www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+"""
+
+from typing import override
+from ..routines.abstract_number_validator import AbstractNumberValidator
+
+class BigDecimalValidator(AbstractNumberValidator):
+    """BigDecimal Validation and Conversion routines.
+
+    This validator provides a number of methods for validating/converting a string value
+    to a big decimal to parse either:
+        - using the default format for the default locale.
+        - using a specified pattern with the default locale.
+        - using the default format for a specified locale.
+        - using a specified pattern with a specified locale.
+
+    Use the is_valid() method to just validate or one of the validate() methods to
+    validate and receive a converted big decimal value.
+
+    Fraction/decimal values are automatically rounded to the appropriate length.
+
+    So that the same mechanism used for parsing an input value for validation can be used to format output,
+    corresponding format() methods are also provided. That is you can format either:
+        - using the default format for the default locale.
+        - using a specified pattern with the default locale.
+        - using the default format for a specified locale.
+        - using a specified pattern with a specified locale.
+    """
+
+    _VALIDATOR = None
+
+    def __init__(self, strict: bool=True, format_type: int=0, allow_fractions: bool=True):
+        """Construct an instance with the specified strict setting and format type or a
+        strict instance by default.
+
+        The format_type specifies what type of number format is created. Valid types are:
+            - AbstractNumberValidator.STANDARD_FORMAT: to create standard number formats (the default).
+            - AbstractNumberValidator.CURRENCY_FORMAT: to create currency number formats.
+            - AbstractNumberValidator.PERCENT_FORMAT: to create percent number formats.
+
+        Args:
+            strict (bool): `True` if strict parsing should be used, default is `True`.
+            format_type (int): The format type to create for validation,
+                default is `STANDARD_FORMAT`.
+            allow_fractions (bool): `True` if fractions are allowed or `False` if ints only,
+                default is `True`.
+        """
+        super().__init__(strict, format_type, allow_fractions)
+    
+    @classmethod
+    def get_instance(cls):
+        """Gets the singleton instance of this validator.
+
+        Returns:
+            A singleton instance of the validator.
+        """
+        if cls._VALIDATOR is None:
+            cls._VALIDATOR = BigDecimalValidator()
+        return cls._VALIDATOR
+
+    @override
+    def _process_parsed_value(self, value: str, formatter):
+        """Process the parsed value, performing any further validation and type
+        conversion required.
+
+        Args:
+            value (str): The value validation is being performed on.
+            formatter: The format (as a function) used to parse the value.
+
+        Returns:
+            The parsed value converted to the appropriate type if valid or `None` if invalid.
+        """
+        try:
+            return float(formatter(value))
+        except ValueError:
+            return None
+    
+    def validate(self, value: str, pattern: str=None, locale=None):
+        """Validate/convert a big decimal using the optional pattern and/or locale.
+
+        Args:
+            value (str): The value validation is being performed on.
+            pattern (str): The (optional) regex pattern used to validate the value against,
+                or the default for the locale if `None`.
+            locale (str): The (optional) locale to use for the format, defaults to the system default.
+        
+        Returns:
+            The parsed big decimal (as a float) if valid or `None` if invalid.
+        """
+        val = self._parse(value, pattern, locale)
+        
+        if val is None:
+            return val
+
+        if isinstance(val, int):
+            return val
+        
+        scale = self._determine_scale(pattern, locale)
+        if scale >= 0:
+            val = round(val, scale)
+        return val
