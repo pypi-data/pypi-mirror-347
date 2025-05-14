@@ -1,0 +1,16 @@
+skipper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skipper/builder.py,sha256=XYJKEmSjLrkXGRAsgBYCiuA0dqf5j_H2ljSU19-xJeE,5472
+skipper/cli.py,sha256=w6tsgGUy2hKe7T79ytEF6eNVH01XL23uNTWsYD-r1No,18323
+skipper/config.py,sha256=HsxhEPQTed7BriOGDXjtGUi34gQ244aCZRu6b5rGUoM,1498
+skipper/git.py,sha256=KWvCYSE1FHoRjYEMwUpapMXWtK51nc_3-NIvosG-m8U,907
+skipper/main.py,sha256=KwLDJIBMrsjxr4WQsREKxHWy8o1mnyHzWrQInjMiFOk,585
+skipper/runner.py,sha256=fd5Y0sbW69dVrxYTKEYgbgQ0xpM8gVVw-cNdxfvLWPo,8698
+skipper/utils.py,sha256=7WK3JbiAmg03D_pEEDcKli9-n5884y4I5ZcQDxzh_QU,7042
+skipper/data/skipper-complete.sh,sha256=OuJBrRYrj_A-ERsHDHl-QBC8cweBtor_Td9BsaOX56g,6644
+skipper/data/skipper-entrypoint.sh,sha256=eFCNz2MnfQIO37_1BAsw9qr91xY0XISRh0artzD4i6g,935
+strato_skipper-2.4.1.dist-info/licenses/LICENSE,sha256=MKezD8X7JzV_rcX56xSgCOvjdIbRclfByDBLWfZhYmY,11351
+strato_skipper-2.4.1.dist-info/METADATA,sha256=2sHg4B-pLaxDjUkh4lD3s46TLPEQwwoaPqNwdK0QSXY,13384
+strato_skipper-2.4.1.dist-info/WHEEL,sha256=joeZ_q2kZqPjVkNy_YbjGrynLS6bxmBj74YkvIORXVI,109
+strato_skipper-2.4.1.dist-info/entry_points.txt,sha256=to3L2x2g-xDecc_O7tZrh8IGESFTSa82F2000lGgtVY,46
+strato_skipper-2.4.1.dist-info/top_level.txt,sha256=xxLJr8ozwNPDgcDFsPKzhMcQrxM7ZQ_0krKF9HowkaQ,8
+strato_skipper-2.4.1.dist-info/RECORD,,
