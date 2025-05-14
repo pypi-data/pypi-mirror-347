@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+license.txt
+pyproject.toml
+darshika_khandelwal/__init__.py
+darshika_khandelwal/__main__.py
+darshika_khandelwal/speaker.py
+darshika_khandelwal.egg-info/PKG-INFO
+darshika_khandelwal.egg-info/SOURCES.txt
+darshika_khandelwal.egg-info/dependency_links.txt
+darshika_khandelwal.egg-info/entry_points.txt
+darshika_khandelwal.egg-info/requires.txt
+darshika_khandelwal.egg-info/top_level.txt
+darshika_khandelwal/speakers/__init__.py
+darshika_khandelwal/speakers/darshika.py
