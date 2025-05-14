@@ -1,0 +1,14 @@
+oztools/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+oztools/_modidx.py,sha256=BFTKSNxAFDZcv-jAwawGX21R4SzR41FxI6fyReE_Pfg,4525
+oztools/core.py,sha256=GDxDXmFesTYewhMJyhLaj9ZEC36SmyF1Dt1vF0n2rNU,1029
+oztools/format.py,sha256=V4wY8SE4ZWIfweg6TzkdWEBbGUSHZCpqefgu8ZrEQfs,1000
+oztools/gh.py,sha256=hjZWIbQ0aGRGRf7M-74Dk5rkn2MAh0w_Sfi4ce1A30c,3114
+oztools/kgl.py,sha256=GWWuFLDhwb1qzbcrkZ457IqYRpUK2Zkpl_xUbB95q1Q,4468
+oztools/nbd.py,sha256=bXpqwWoGIO00k3bj-EOi5ynsnIfeJ0Dfvtyfl5HpdSw,8752
+oztools/data/favicon.png,sha256=jxbQKm3qO4Mj7yK3-C5I-PTxDSyo8QvymZ1hVULH7bQ,815
+oztools-0.0.3.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+oztools-0.0.3.dist-info/METADATA,sha256=qbiPVXJqeeiakiexs-7nhWj4hnFWk4ovJeij37sDklw,2611
+oztools-0.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+oztools-0.0.3.dist-info/entry_points.txt,sha256=dCEDUwHr9NomkNyK4oEi92frhH1YN1W99rrO2KdsxSc,285
+oztools-0.0.3.dist-info/top_level.txt,sha256=dopsLL90MW-82Zd6ZVZIy-NL_b-6AnV1SHcMBy5bEkI,8
+oztools-0.0.3.dist-info/RECORD,,
