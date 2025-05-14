@@ -1,0 +1,8 @@
+name: push
+
+on:
+  - push
+
+jobs:
+  pre_commit:
+    uses: ./.github/workflows/pre_commit.yml

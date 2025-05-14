@@ -1,0 +1,22 @@
+name: pre-commit
+
+on:
+  workflow_call:
+
+jobs:
+  pre_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup environment
+        uses: ./.github/actions/uv
+
+      - name: Run maturin develop
+        run: uv run maturin develop
+
+      - name: Run pre-commit
+        run: uv run pre-commit run --all-files

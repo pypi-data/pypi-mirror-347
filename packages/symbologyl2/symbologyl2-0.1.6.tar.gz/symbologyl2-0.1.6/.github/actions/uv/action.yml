@@ -1,0 +1,34 @@
+name: "Setup uv and cache"
+description: "Setup uv and install/cache dependencies"
+runs:
+  using: "composite"
+  steps:
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v6
+      with:
+        enable-cache: true
+        activate-environment: true
+
+    - name: Load cached venv
+      id: cached-venv
+      uses: actions/cache@v4
+      with:
+        path: .venv
+        key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/uv.lock') }}
+
+    - name: Load pre-commit cache
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pre-commit
+        key: pre-commit|${{ env.PY }}|${{ hashFiles('.pre-commit-config.yaml') }}
+
+    - name: Install dependencies
+      if: steps.cached-venv.outputs.cache-hit != 'true'
+      shell: bash
+      run: uv sync --all-groups
+
+    - name: Install rust toolchain
+      uses: dtolnay/rust-toolchain@stable
+
+    - name: Cache rust build artifacts
+      uses: Swatinem/rust-cache@v2
