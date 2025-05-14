@@ -1,0 +1,18 @@
+# Essentials
+include LICENSE.txt
+include README.md
+include setup.py
+include pyproject.toml
+include requirements.txt
+
+# Include everything under safentic, including nested packages
+recursive-include safentic *.py *.txt *.yaml *.yml
+
+# Keep these if you ever add data/config dirs
+recursive-include safentic/data *
+recursive-include safentic/config *
+recursive-include safentic/policies *
+
+# Ignore test folders or cache
+prune tests
+global-exclude __pycache__ *.py[cod] *.pyo

@@ -1,0 +1,49 @@
+tools:
+  send_email:
+    checks:
+      - type: deny_phrase
+        phrases:
+          - "one device per subscription"
+          - "24 hours"
+          - "apology"
+          - "apologize"
+          - "sorry"
+          - "refund"
+          - "refund delay"
+      - type: semantic
+        trigger_phrases:
+          - "refund policy"
+          - "guarantee"
+          - "our policy"
+        reference_file: "example_policy.txt"
+
+  issue_refund:
+    checks:
+      - type: deny_phrase
+        phrases:
+          - "refund"
+          - "refunding"
+          - "issue refund"
+          - "send refund"
+          - "credit customer"
+          - "reverse charge"
+          - "double charge"
+          - "processed refund"
+          - "grant compensation"
+          - "money back"
+      - type: semantic
+        trigger_phrases:
+          - "we've sent your refund"
+          - "your money is on the way"
+        reference_file: "refund_statement.txt"
+
+  update_ticket:
+    checks: []  # Explicitly allow all
+
+  log_to_crm:
+    checks: []  # Explicitly allow all
+
+logging:
+  level: INFO
+  destination: "safentic/logs/txt_logs/safentic_audit.log"
+  jsonl: "safentic/logs/json_logs/safentic_audit.jsonl"
