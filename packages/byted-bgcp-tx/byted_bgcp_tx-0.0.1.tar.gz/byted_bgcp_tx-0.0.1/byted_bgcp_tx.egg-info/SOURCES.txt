@@ -1,0 +1,6 @@
+README.md
+setup.py
+byted_bgcp_tx.egg-info/PKG-INFO
+byted_bgcp_tx.egg-info/SOURCES.txt
+byted_bgcp_tx.egg-info/dependency_links.txt
+byted_bgcp_tx.egg-info/top_level.txt
