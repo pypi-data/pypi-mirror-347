@@ -1,0 +1,13 @@
+euriai/__init__.py,sha256=8YhbRV8s4wmNxDP9KmjOxQYLgKUCke450vnp-8-kPKs,449
+euriai/cli.py,sha256=hF1wiiL2QQSfWf8WlLQyNVDBd4YkbiwmMSoPxVbyPTM,3290
+euriai/client.py,sha256=USiqdMULgAiky7nkrJKF3FyKcOS2DtDmUdbeBSnyLYk,4076
+euriai/embedding.py,sha256=z-LLKU68tCrPi9QMs1tlKwyr7WJcjceCTkNQIFMG6vA,1276
+euriai/euri_chat.py,sha256=nqrZ88_ix9n_Bkh6BWUOf0fyLp-TNdUSd4dRFFtRuVY,2986
+euriai/euri_embed.py,sha256=a-KaWPmpnqXn3tqJFo2bZyno07AL2Z-_RPXKdI-oCIQ,1061
+euriai/langchain_embed.py,sha256=OXWWxiKJ4g24TFgnWPOCZvhK7G8xtSf0ppQ2zwHkIPM,584
+euriai/langchain_llm.py,sha256=D5YvYwV7q9X2_vdoaQiPs7tNiUmjkGz-9Q-7M61hhkg,986
+euriai-0.3.24.dist-info/METADATA,sha256=_YgxDGogG64CGwqLhL5CRButnocaIJ-2i8V8nM4vMPk,3249
+euriai-0.3.24.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+euriai-0.3.24.dist-info/entry_points.txt,sha256=9OkET8KIGcsjQn8UlnpPKRT75s2KW34jq1__1SXtpMA,43
+euriai-0.3.24.dist-info/top_level.txt,sha256=TG1htJ8cuD62MXn-NJ7DVF21QHY16w6M_QgfF_Er_EQ,7
+euriai-0.3.24.dist-info/RECORD,,
