@@ -1,0 +1,2 @@
+[gui_scripts]
+pyfalldown = pyfalldown.__main__:main
