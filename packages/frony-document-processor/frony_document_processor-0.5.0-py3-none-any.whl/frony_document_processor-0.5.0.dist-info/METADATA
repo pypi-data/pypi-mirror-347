@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: frony-document-processor
+Version: 0.5.0
+Requires-Dist: numpy>=2.2.4
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: python-dotenv>=1.1.0
+Requires-Dist: transformers>=4.50.1
+Requires-Dist: langchain-text-splitters==0.3.7
+Requires-Dist: openai>=1.68.2
+Requires-Dist: pdfplumber>=0.11.5
+Requires-Dist: pillow>=11.1.0
+Requires-Dist: tabulate>=0.9.0
+Requires-Dist: sentence-transformers>=4.0.1
+Requires-Dist: tqdm>=4.67.1
+Dynamic: requires-dist
