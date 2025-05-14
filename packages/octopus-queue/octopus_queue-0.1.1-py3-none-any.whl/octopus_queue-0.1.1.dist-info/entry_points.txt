@@ -1,0 +1,2 @@
+[console_scripts]
+oq = app.cli.main:app
