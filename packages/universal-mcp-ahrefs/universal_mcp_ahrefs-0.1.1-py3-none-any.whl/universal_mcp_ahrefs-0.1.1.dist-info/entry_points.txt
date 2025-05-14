@@ -1,0 +1,2 @@
+[console_scripts]
+universal_mcp_ahrefs = universal_mcp_ahrefs:main
