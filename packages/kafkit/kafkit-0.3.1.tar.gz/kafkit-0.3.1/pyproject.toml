@@ -1,0 +1,129 @@
+[project]
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+name = "kafkit"
+readme = "README.md"
+description = "Kafkit helps you write Kafka producers and consumers in Python with asyncio."
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Association of Universities for Research in Astronomy, Inc. (AURA)", email = "sqre-admin@lists.lsst.org" },
+]
+keywords = ["rubin", "lsst"]
+# https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: POSIX",
+    "Typing :: Typed",
+]
+requires-python = ">=3.11"
+dependencies = ["uritemplate", "fastavro"]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+aiohttp = ["aiohttp"]
+httpx = ["httpx"]
+dev = [
+    # Testing
+    "coverage[toml]",
+    "pytest",
+    "pytest-asyncio",
+    "pre-commit",
+    "mypy",
+    # Documentation
+    "sphinx",
+    "documenteer[guide]",
+]
+
+[project.urls]
+Homepage = "https://kafkit.lsst.io"
+Source = "https://github.com/lsst-sqre/kafkit"
+
+[build-system]
+requires = ["setuptools>=61", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools.packages.find]
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+where = ["src"]
+include = ["kafkit*"]
+
+[tool.setuptools_scm]
+
+[tool.coverage.run]
+parallel = true
+branch = true
+source = ["kafkit"]
+
+[tool.coverage.paths]
+source = ["src", ".tox/*/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+
+[tool.black]
+line-length = 79
+target-version = ["py313"]
+
+# Use the generic Ruff configuration in ruff.toml and extend it with only
+# project-specific settings. Add a [tool.ruff.lint.extend-per-file-ignores]
+# section for project-specific ignore rules.
+[tool.ruff]
+extend = "ruff-shared.toml"
+
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/*" = [
+    "T201", # Allow print in tests
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["kafkit", "tests"]
+split-on-trailing-comma = false
+
+[tool.pytest]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+python_files = ["tests/*.py", "tests/*/*.py"]
+markers = [
+    "docker", # marks tests as requiring docker-compose (deselect with '-m "not docker"')"
+]
+
+[tool.mypy]
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+ignore_missing_imports = true
+strict_equality = true
+warn_redundant_casts = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+[tool.scriv]
+categories = [
+    "Backwards-incompatible changes",
+    "New features",
+    "Bug fixes",
+    "Other changes",
+]
+entry_title_template = "{{ version }} ({{ date.strftime('%Y-%m-%d') }})"
+format = "md"
+md_header_level = "2"
+new_fragment_template = "file:changelog.d/_template.md"
+skip_fragments = "_template.md"
