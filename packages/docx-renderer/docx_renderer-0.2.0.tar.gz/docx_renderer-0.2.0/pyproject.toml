@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docx_renderer"
+dynamic = ["version"]
+description = "Render ppt like a jupyter notebook"
+authors = [{ name = "Najeem Muhammed", email = "najeem@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+keywords = ["microsoft","word", "doc", "docx", "document", "pages", "report"]
+dependencies = [
+    "python-docx>=1.1.0",
+    "click",
+    "Pillow >= 9.3",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+test = ["pytest", "coverage"]
+
+[project.urls]
+"Homepage" = "https://github.com/idling-mind/docx_renderer"
+"Bug Tracker" = "https://github.com/idling-mind/docx_renderer/issues"
+
+[project.scripts]
+docx-renderer = "docx_renderer.command_line:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "docx_renderer.__version__" }
