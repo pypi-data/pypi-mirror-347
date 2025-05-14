@@ -1,0 +1,22 @@
+[project]
+name = "wxpay-mcp-python"
+version = "0.1.2"
+description = "微信支付 MCP 工具包，提供微信支付 JSAPI 支付和订单查询功能的 MCP 实现"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cryptography>=44.0.2",
+    "mcp[cli]>=1.6.0",
+    "requests>=2.32.3",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+wxpay-mcp-python = "wxpay_mcp.server:run_server"
+
+[tool.setuptools.packages.find]
+include = ["wxpay_mcp*"]
