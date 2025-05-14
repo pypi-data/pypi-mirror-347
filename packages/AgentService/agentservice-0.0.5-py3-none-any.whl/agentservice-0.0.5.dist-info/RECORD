@@ -1,0 +1,15 @@
+AgentService/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AgentService/templates/project/Dockerfile,sha256=3-lZK4sfsPIvlSUKrQr0pN0zOwAidjHQWcGct1j8BwI,161
+AgentService/templates/project/agent.cfg,sha256=MGctjHVFA66SX-ajebpvOtdFsTkb93SiAaejDFhEIH0,162
+AgentService/templates/project/manage.py,sha256=kYcinM_Pbk1p4-5_dtqfKy97tWsykqjLIirA9Zs7r5g,122
+AgentService/templates/project/agent/__init__.py,sha256=Bp56JVtmHaBLqsU0o1L57QBQpzrnv4B-M-WwuoKz0lc,31
+AgentService/templates/project/agent/agent.py,sha256=zahgHOQUspVbO7LDDQUSMi9tEp7KfaiQtpDR_CL1jDY,250
+AgentService/templates/project/resources/logs/default,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AgentService/templates/project/tools/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+AgentService/templates/tool/default.py.tmpl,sha256=4blCj1BsnVFg-m4I7M-b527JzXuEAyqt9E8orq6YEL8,352
+agentservice-0.0.5.dist-info/licenses/LICENSE.txt,sha256=xTPPnoygTimYlpn9wR1CGXckKEJyQkNNvHkRbPkaR00,1068
+agentservice-0.0.5.dist-info/METADATA,sha256=WHIcMNIc03f5No-uFBPKibenlmSe87zTAMYq_qVOiTU,350
+agentservice-0.0.5.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+agentservice-0.0.5.dist-info/entry_points.txt,sha256=4YNJ_dWnsHmvqzgeN2yDbV10zw9Rr6drTaLPORTa1rM,58
+agentservice-0.0.5.dist-info/top_level.txt,sha256=3PZVdo7gPF4H9y30GQq7xB3B1RtqJLolnN4CC3axtCY,13
+agentservice-0.0.5.dist-info/RECORD,,
