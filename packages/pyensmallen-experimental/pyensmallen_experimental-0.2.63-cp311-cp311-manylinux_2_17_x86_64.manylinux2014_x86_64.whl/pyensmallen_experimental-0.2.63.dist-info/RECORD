@@ -1,0 +1,12 @@
+pyensmallen/__init__.py,sha256=u9567sPrwYt9lDCrbTGosC4LQLgruhjG-A4AV6nBUXY,777
+pyensmallen/_pyensmallen.cpython-311-x86_64-linux-gnu.so,sha256=m6cz-lWQjLPSzT3-KIQNd1xDJJxGL_Q9DsPRI8EQZOc,656400
+pyensmallen/constrained.hpp,sha256=SamD1J6z2o7Qd9O7LL512wzDxOsHEAOsZHtCZIlPjvY,3498
+pyensmallen/first_order.hpp,sha256=62EvAmzJf3YcK82wW1UQ4uin6zFMOHOzcp2sxn8mSZE,2622
+pyensmallen/gmm.py,sha256=fe0uieXaWkrx2EO0SuQVcsghJu1eEjJ28PIbkJ0O8WM,17585
+pyensmallen/losses.py,sha256=a86uGPyGNq5WEdUQvLDKFQsMQz3cLLV4ZXftGfNjBGU,1789
+pyensmallen/newton_type.hpp,sha256=SZ3hDPAfhg4HA9sswBmHVw0xHim0YJluI3xQwbIPUuI,3054
+pyensmallen/utils.hpp,sha256=l-g3DB7OUdGSSDgt6u0F7z6eNZjriLMCsNgoTnk2LM4,2283
+pyensmallen_experimental-0.2.63.dist-info/LICENSE.txt,sha256=MsmipaU84X28UgMkppdem6k0PpKxKcC__CrzfKJ7yIU,1086
+pyensmallen_experimental-0.2.63.dist-info/METADATA,sha256=uraR4XfJC4a9xnERLmo0kJzcSY_Eg0eRjW2MyPEyx7o,4169
+pyensmallen_experimental-0.2.63.dist-info/WHEEL,sha256=6uXuBuTHKYVHX38njLnDjCYRk1Z5gwaXJtzFqt6LRKw,137
+pyensmallen_experimental-0.2.63.dist-info/RECORD,,
