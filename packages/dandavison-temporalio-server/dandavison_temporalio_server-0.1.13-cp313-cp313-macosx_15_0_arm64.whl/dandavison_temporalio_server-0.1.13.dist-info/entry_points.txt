@@ -1,0 +1,2 @@
+[console_scripts]
+dandavison-temporalio-server = temporalio_server.main:run
