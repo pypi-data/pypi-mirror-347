@@ -1,0 +1,6 @@
+README.md
+setup.py
+bytedance_data_compliance.egg-info/PKG-INFO
+bytedance_data_compliance.egg-info/SOURCES.txt
+bytedance_data_compliance.egg-info/dependency_links.txt
+bytedance_data_compliance.egg-info/top_level.txt
