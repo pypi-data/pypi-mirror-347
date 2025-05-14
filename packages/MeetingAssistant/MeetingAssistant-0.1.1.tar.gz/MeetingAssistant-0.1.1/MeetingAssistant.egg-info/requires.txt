@@ -1,0 +1,9 @@
+PySimpleGUI
+openai
+faiss-cpu
+python-telegram-bot
+python-dotenv
+sentence-transformers
+scikit-learn
+torch
+tqdm
