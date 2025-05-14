@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+./ai_data_sdk/__init__.py
+./ai_data_sdk/client.py
+./ai_data_sdk/errors.py
+./ai_data_sdk/examples.py
+ai_data_sdk/__init__.py
+ai_data_sdk/client.py
+ai_data_sdk/errors.py
+ai_data_sdk/examples.py
+ai_data_sdk.egg-info/PKG-INFO
+ai_data_sdk.egg-info/SOURCES.txt
+ai_data_sdk.egg-info/dependency_links.txt
+ai_data_sdk.egg-info/requires.txt
+ai_data_sdk.egg-info/top_level.txt
