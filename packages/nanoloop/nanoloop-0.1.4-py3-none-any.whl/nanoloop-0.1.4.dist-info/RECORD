@@ -1,0 +1,12 @@
+nanoloop/__init__.py,sha256=CpHCPcd-wvZbVjmGGr91pp_HOm1NQbEnvwOQM3qMfEc,73
+nanoloop/arg_parser.py,sha256=KqLxOZAxA8S3WuYw8FNuEarC6YVxdDHLxvKb2BGrFDw,10750
+nanoloop/bam_to_tsv.py,sha256=l9c-GKU8wmk9Frmuh53qxL7hZ0Y_6QwiCp-_xtpjFC4,2997
+nanoloop/cli.py,sha256=QK1GjcTGJAfnJsho02pTHAnChU0ShVZFayvT2QQOlUI,519
+nanoloop/tsv_to_bed.py,sha256=kNO7TaqXZ0NNtBJawnGffiAPAxQX-A1DMoiNZsVdRtM,1907
+nanoloop/tsv_to_peak.py,sha256=mOc_EOTAOnMFYGixGfbKeHXL_RnaclOZzGfjxBjiICw,6406
+nanoloop/tsv_to_plot.py,sha256=hb2o0EYAe_52zVyWjH0rEhP8qzZMHN6uG5VKSrW07hk,6232
+nanoloop/utils.py,sha256=Jzkmr-ZFBaVrjV7aBKWVQ6vNYLhnfs8hyExZJqjGg7Q,6510
+nanoloop-0.1.4.dist-info/METADATA,sha256=1BNmtqFzb8qVHeroTm7R6_h0tXhvgJAbQxWw4Quxs24,12087
+nanoloop-0.1.4.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+nanoloop-0.1.4.dist-info/entry_points.txt,sha256=-Tg9rWJ1HwRDg3JWiBJ1Hc2-ch6u3suqWA_yaFIVw6c,46
+nanoloop-0.1.4.dist-info/RECORD,,
