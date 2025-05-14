@@ -1,0 +1,13 @@
+mortal_build/__init__.py,sha256=9OMage272zl_daZUetjzAhlEPVxHUFPllCW8ul3gSXU,1680
+mortal_build/build_ext_script.cpython-37m-x86_64-linux-gnu.so,sha256=D272JxnEP-pN3XxtiCw5UviQP0cjCQo2PgDIdjByx4c,762280
+mortal_build/build_fastapi.cpython-37m-x86_64-linux-gnu.so,sha256=B-sHVmkGMoXjUeeaw0QaadPYXiEgCPKJqaD0b8gYeJ8,646928
+mortal_build/build_main.cpython-37m-x86_64-linux-gnu.so,sha256=oEBSHdwUuWFxIZaObJyBrwAOPOp_Ze9XopMKcrFj4iU,511472
+mortal_build/build_send.cpython-37m-x86_64-linux-gnu.so,sha256=9FEGt2LSMrIaNnXk-AETLapYQxZIWRhPtpql3aCRR5A,920168
+mortal_build/build_wheel_script.cpython-37m-x86_64-linux-gnu.so,sha256=GrH138JIRPJp63pasw8a-5qSxR1Ni-fZwJ-Md1Rm4bA,596736
+mortal_build/setup_ext_template.j2,sha256=VfZY598WaJOTPOauvTo3xiEIaKXE1EgJCwo-GflTVv4,851
+mortal_build/setup_wheel_template.j2,sha256=QxayG-G4WIfWOn4-PXTwrzNHlav8XRTIJO0O-ok15tI,1299
+mortal_build-4.1.3.dist-info/METADATA,sha256=Liy5el6Otf_thddufwD9NZFLJ1oqRdau8hc3wbBjcOY,799
+mortal_build-4.1.3.dist-info/WHEEL,sha256=SXK3uRXy_xaG9J2EWMUQMmiqf-p4bmAky9P-iBSC2pk,110
+mortal_build-4.1.3.dist-info/entry_points.txt,sha256=lWDjmR4dWq5sus0978RQDTJDpUTBppR2SxpHSGKyYSc,69
+mortal_build-4.1.3.dist-info/top_level.txt,sha256=VEKI_0-U5SRym6724CunGuA3-4AubY8kHaFYsBpxd6Q,13
+mortal_build-4.1.3.dist-info/RECORD,,
