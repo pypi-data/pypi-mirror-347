@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-openai-image-generation = mcp_openai_image_generation.cli:app
