@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: ceco
+Version: 1.0.0
+Home-page: https://github.com/haniframadhani/cecopy
+Author: muhammad hanif ramadhani
+Author-email: mhaniframadhani985@gmail.com
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy>=1.19.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: twine>=4.0.2; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
