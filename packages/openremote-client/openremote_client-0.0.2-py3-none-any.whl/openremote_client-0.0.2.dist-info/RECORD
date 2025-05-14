@@ -1,0 +1,17 @@
+openremote_client/__init__.py,sha256=5flqFJOcYlZcRJPjXIgV1-gr2aeenn-qEUz6RC75_oM,751
+openremote_client/authenticator.py,sha256=LJsjSUnpoyA_Q7oiw4G9oYfiLQR-1jWXOVREh576VTc,1592
+openremote_client/http.py,sha256=WnITgCHpxar1LiyDUsowfHbN9w94_f6f7dsiyufTTQI,3060
+openremote_client/url_builder.py,sha256=HJCSiL2Mqg5L3iFu1DP-ioLgoOjDeG17yllPBpvkhZU,440
+openremote_client/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openremote_client/api/asset.py,sha256=tKXNz5cnrH3rAFpM-qDAtcJEzSb8s8uS2J-U6C6TGc8,711
+openremote_client/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openremote_client/schemas/asset_object.py,sha256=n3ctPGREtVN2sEF0T9GHEklkKxjIIp28H6jpsduTivg,638
+openremote_client/schemas/attribute_object.py,sha256=8ouZgyB_Fu302Zpfavig621h_pXMLGfvqB7thZiir9s,1229
+openremote_client/schemas/value_constraint.py,sha256=ctGLH0szDnpIGmWFvHX6iuVlSkb_ehOcQZ3YVNTaCcE,112
+openremote_client/schemas/value_descriptor_object.py,sha256=_e3wnU3ExrWP0pfX3hSjp7oJA-mPWl35L3RhGy3-INc,466
+openremote_client/schemas/value_format.py,sha256=mdJcQIAZsznaHL8spycvN41mNBtExO_eSsq7p71FQdQ,1507
+openremote_client-0.0.2.dist-info/licenses/LICENSE.txt,sha256=1JMYUKlIJ1LFLWL77iA39RtWVnW4DwCslK1fyRKpRzw,35124
+openremote_client-0.0.2.dist-info/METADATA,sha256=5ZbQZFskTzCI487uifjNWX2Cx0m9lKG527Y0jKKeOWA,793
+openremote_client-0.0.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+openremote_client-0.0.2.dist-info/top_level.txt,sha256=78HT_X7pXgbs0OVET22d6_bUFJDoKaIq_7uhhQRzdeQ,18
+openremote_client-0.0.2.dist-info/RECORD,,
