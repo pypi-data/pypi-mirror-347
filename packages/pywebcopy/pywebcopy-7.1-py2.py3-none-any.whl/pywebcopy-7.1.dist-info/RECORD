@@ -1,0 +1,16 @@
+pywebcopy/__init__.py,sha256=5z3DMwU6xi_le8SieuNniESN01mRpNEMV2ZPTURwIUk,6775
+pywebcopy/__main__.py,sha256=8X2Gndn15rzCrBlFUkEgIG9fMFfVwQsZSfe5KmNioOc,3271
+pywebcopy/__version__.py,sha256=ueI-5YsFAID-aBHi6pBK5Ts3Io3VcJQihWmypmhTFjw,357
+pywebcopy/configs.py,sha256=rw_lCPZ7UPETn7rJUwtp58FH-P7kI13rxFN4I537XZM,10182
+pywebcopy/core.py,sha256=Hqkw0SPWXNB31C3zXkQrawBmGeVrggT8eHmHokcrcmg,4079
+pywebcopy/elements.py,sha256=Vmep3hSL6axra1-oi4NbDSBcXxIWp2mkF7ENQtYd0VY,27705
+pywebcopy/helpers.py,sha256=LkCcphYKleC8aneZgWrOzq7rnm-gibE4pxrF9nEeVj8,13605
+pywebcopy/parsers.py,sha256=q5eUiAtQZVeL7_FALOeV7cSbFlELcQu0_GOyUeXs_pw,25689
+pywebcopy/schedulers.py,sha256=iCdC5E88JAk8ku154D9i283z-Y9WpoIbCma14PCS24k,14301
+pywebcopy/session.py,sha256=PgXcS7hPbBdr4C_xkPvRyTLKPDmlawtaVptayCvLD8c,7893
+pywebcopy/urls.py,sha256=VZzc70JWqOvxc7m8HKJvuMy6YDuKXWgzL__mMEOj8Lc,30113
+pywebcopy-7.1.dist-info/licenses/LICENSE,sha256=9kJZq9TskfOPC96JYPok7u90PV8r9NX5ed2Cr5Hh0Rg,562
+pywebcopy-7.1.dist-info/METADATA,sha256=diuHqPHhkAbgIdiF3Rg8HvUJDg_HwabFeBgfDupKqns,7372
+pywebcopy-7.1.dist-info/WHEEL,sha256=joeZ_q2kZqPjVkNy_YbjGrynLS6bxmBj74YkvIORXVI,109
+pywebcopy-7.1.dist-info/top_level.txt,sha256=r5dYNFuwIrCktRIrW4nSLZ2NOpY2DuDL-4c8S9hTLr0,10
+pywebcopy-7.1.dist-info/RECORD,,
