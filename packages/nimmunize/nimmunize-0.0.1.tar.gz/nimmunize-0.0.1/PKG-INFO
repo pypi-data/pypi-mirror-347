@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: nimmunize
+Version: 0.0.1
+Summary: Nigeria immunisation scheduling & survey analytics
+Author: Daniel T. Omole
+License-File: LICENSE
+Requires-Dist: pandas>=2
+Requires-Dist: click>=8
+Requires-Dist: python-dateutil
+Dynamic: license-file

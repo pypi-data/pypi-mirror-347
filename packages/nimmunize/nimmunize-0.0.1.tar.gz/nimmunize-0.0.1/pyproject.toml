@@ -1,0 +1,9 @@
+[project]
+name = "nimmunize"
+version = "0.0.1"
+description = "Nigeria immunisation scheduling & survey analytics"
+authors = [{name = "Daniel T. Omole"}]
+dependencies = ["pandas>=2", "click>=8", "python-dateutil"]
+
+[project.scripts]
+nimmunize = "nimmunize.cli:main"
