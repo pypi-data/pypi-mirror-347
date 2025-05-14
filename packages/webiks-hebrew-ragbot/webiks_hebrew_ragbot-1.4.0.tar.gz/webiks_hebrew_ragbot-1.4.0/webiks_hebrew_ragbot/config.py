@@ -1,0 +1,6 @@
+import os
+
+EMBEDDING_INDEX = os.getenv("ES_EMBEDDING_INDEX", "embedded_index")
+ES_EMBEDDING_INDEX_LENGTH = int(os.getenv("ES_EMBEDDING_INDEX_LENGTH", "1000"))
+EMBEDDING_MODEL_LOCATION = os.getenv("EMBEDDING_MODEL_LOCATION", "model")
+
