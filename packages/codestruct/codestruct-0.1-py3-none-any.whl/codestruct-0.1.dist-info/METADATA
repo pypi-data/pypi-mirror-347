@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: codestruct
+Version: 0.1
+Summary: AQA GCSE Computer Science Python Support Library
+Author: Your Name
+Author-email: you@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: summary
