@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/frozenchess/__init__.py
+src/frozenchess/__main__.py
+src/frozenchess.egg-info/PKG-INFO
+src/frozenchess.egg-info/SOURCES.txt
+src/frozenchess.egg-info/dependency_links.txt
+src/frozenchess.egg-info/top_level.txt
+src/frozenchess/core/__init__.py
+src/frozenchess/tests/__init__.py
+src/frozenchess/tests/test_1984.py
