@@ -1,0 +1,3 @@
+[console_scripts]
+bip=bipackage.cli._entry:main
+
