@@ -1,0 +1,10 @@
+setup.py
+WebhookHelper/__init__.py
+WebhookHelper/core.py
+WebhookHelper/discord_embed.py
+webhookhelper.egg-info/PKG-INFO
+webhookhelper.egg-info/SOURCES.txt
+webhookhelper.egg-info/dependency_links.txt
+webhookhelper.egg-info/not-zip-safe
+webhookhelper.egg-info/requires.txt
+webhookhelper.egg-info/top_level.txt

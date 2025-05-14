@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: webhookhelper
+Version: 1.0
+Summary: A simple webhook helper for Discord and Telegram
+Download-URL: https://github.com/NotOfficals/WebHookHelper/archive/refs/tags/1.0.zip
+Author: NotOfficial
+Author-email: root@notoff.pro
+License: Apache License. Version 2.0, see LICENSE file
+Keywords: webhook discord telegram
+Requires-Python: >=3.7
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: urllib3
