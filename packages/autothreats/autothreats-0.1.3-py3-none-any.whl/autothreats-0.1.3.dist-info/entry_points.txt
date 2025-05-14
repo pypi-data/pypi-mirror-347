@@ -1,0 +1,3 @@
+[console_scripts]
+threat-canvas = autothreats.scripts.threat_modeling_cli:main
+threat-modeling = autothreats.scripts.threat_modeling_cli:main
