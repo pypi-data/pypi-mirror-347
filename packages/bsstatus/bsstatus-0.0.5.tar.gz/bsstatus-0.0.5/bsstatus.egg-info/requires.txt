@@ -1,0 +1,11 @@
+cachetools
+icalendar
+platformdirs
+pydantic>2
+recurring-ical-events
+requests
+slack_sdk
+tzlocal>=4
+
+[dev]
+pytest
