@@ -1,0 +1,3 @@
+py4hw>=2025.4
+pyelftools
+itanium-demangler
