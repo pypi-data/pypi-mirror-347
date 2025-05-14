@@ -1,0 +1,14 @@
+govbr_auth/__init__.py,sha256=QSUoM2pmn9Ahzv8F0nwuUxDjtJv2_XWt1o1I4tqDOPU,381
+govbr_auth/controller.py,sha256=sKK3kuNBjWz2vZNXPMS36omfOV_pW6gyOdQ1H_upWKk,6265
+govbr_auth/utils.py,sha256=bP3d2nt1A2NUrlPzpYTBdKtdYktQ1d0VBeg52ECsIoE,477
+govbr_auth/__pycache__/__init__.cpython-313.pyc,sha256=MzGCzp6K_UgIu-vix_Bm2WadPREnyMcZUbOhRLHCxYI,618
+govbr_auth/core/__init__.py,sha256=8CYw8QtH3fJxEo-dygRXDC6uUQYKXh_vQvuLv4g7xTY,83
+govbr_auth/core/config.py,sha256=tTQ67AAeyVWnFyTfm5J3orp4JUr5em6jy_i5OU9F9DE,4184
+govbr_auth/core/govbr.py,sha256=cvip0Xxy13_opimF9a85IWWe92age57VZvRdUUt4FMc,5745
+govbr_auth/core/__pycache__/__init__.cpython-313.pyc,sha256=m5zh5_2Pa51s2DJyiBLqt4-HUYeRv_e0ahbvFCFWFrE,281
+govbr_auth/core/__pycache__/govbr.cpython-313.pyc,sha256=Qp4Obxx90_WfWEqndB1KmHs3vPSFrkauFYiDSKmL8UI,9588
+govbr_auth-0.1.3.dist-info/licenses/LICENSE,sha256=x0ZodqakPORUxGHKSMXm-Fm0rpwIAVn6EY7eYzniSZA,1063
+govbr_auth-0.1.3.dist-info/METADATA,sha256=29nnbxoZthHCAAmSyf-Lq09coa7poZ-_eZuWZIuLfrg,6640
+govbr_auth-0.1.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+govbr_auth-0.1.3.dist-info/top_level.txt,sha256=ZpRM4SxL8fAyjjUHEQcA2sOOY494MrR5Dk6SQkK_Cog,11
+govbr_auth-0.1.3.dist-info/RECORD,,
