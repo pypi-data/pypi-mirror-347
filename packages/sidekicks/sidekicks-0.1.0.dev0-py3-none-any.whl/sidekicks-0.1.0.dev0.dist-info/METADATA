@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: sidekicks
+Version: 0.1.0.dev0
+Summary: Reactive Python UI framework for desktop apps using Shoelace components and pywebview.
+Author-email: Israel Dryer <israel.dryer@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/israel-dryer/sidekicks
+Project-URL: Documentation, https://github.com/israel-dryer/sidekicks#readme
+Project-URL: Source, https://github.com/israel-dryer/sidekicks
+Project-URL: Tracker, https://github.com/israel-dryer/sidekicks/issues
+Keywords: python ui,pywebview,shoelace,desktop,reactive,component,framework
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: MacOS X
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# SideKicks
+
+A reactive Python UI framework using Shoelace and pywebview.
