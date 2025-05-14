@@ -1,0 +1,9 @@
+README.md
+setup.py
+vecx_llamaindex/__init__.py
+vecx_llamaindex/base.py
+vecx_llamaindex.egg-info/PKG-INFO
+vecx_llamaindex.egg-info/SOURCES.txt
+vecx_llamaindex.egg-info/dependency_links.txt
+vecx_llamaindex.egg-info/requires.txt
+vecx_llamaindex.egg-info/top_level.txt

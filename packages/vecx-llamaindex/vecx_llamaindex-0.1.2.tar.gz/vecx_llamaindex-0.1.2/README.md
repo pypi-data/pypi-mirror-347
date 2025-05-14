@@ -1,0 +1,120 @@
+# VectorX LlamaIndex Integration
+
+This package provides an integration between [VectorX](https://vectorxdb.ai) (an encrypted vector database) and [LlamaIndex](https://www.llamaindex.ai/), allowing you to use VectorX as a vector store backend for LlamaIndex.
+
+## Features
+
+- **Encrypted Vector Storage**: Use VectorX's client-side encryption for your LlamaIndex embeddings
+- **Multiple Distance Metrics**: Support for cosine, L2, and inner product distance metrics
+- **Metadata Filtering**: Filter search results based on metadata
+- **High Performance**: Optimized for speed and efficiency with encrypted data
+
+## Installation
+
+```bash
+pip install vecx-llamaindex
+```
+
+This will install both the `vecx-llamaindex` package and its dependencies (`vecx` and `llama-index`).
+
+## Quick Start
+
+```python
+import os
+from llama_index.core.schema import TextNode
+from llama_index.core.vector_stores.types import VectorStoreQuery
+from vecx_llamaindex import VectorXVectorStore
+
+# Configure your VectorX credentials
+api_token = os.environ.get("VECTORX_API_TOKEN")
+encryption_key = os.environ.get("VECTORX_ENCRYPTION_KEY")  # or generate a new one
+index_name = "my_llamaindex_vectors"
+dimension = 1536  # OpenAI ada-002 embedding dimension
+
+# Initialize the vector store
+vector_store = VectorXVectorStore.from_params(
+    api_token=api_token,
+    encryption_key=encryption_key,
+    index_name=index_name,
+    dimension=dimension,
+    space_type="cosine"
+)
+
+# Create a node with embedding
+node = TextNode(
+    text="This is a sample document",
+    id_="doc1",
+    embedding=[0.1, 0.2, 0.3, ...],  # Your embedding vector
+    metadata={
+        "doc_id": "doc1",
+        "source": "example",
+        "author": "VectorX"
+    }
+)
+
+# Add the node to the vector store
+vector_store.add([node])
+
+# Query the vector store
+query = VectorStoreQuery(
+    query_embedding=[0.2, 0.3, 0.4, ...],  # Your query vector
+    similarity_top_k=5
+)
+
+results = vector_store.query(query)
+
+# Process results
+for node, score in zip(results.nodes, results.similarities):
+    print(f"Node ID: {node.node_id}, Similarity: {score}")
+    print(f"Text: {node.text}")
+    print(f"Metadata: {node.metadata}")
+```
+
+## Using with LlamaIndex
+
+```python
+from llama_index.core import VectorStoreIndex, StorageContext
+from llama_index.embeddings.openai import OpenAIEmbedding
+
+# Initialize your nodes or documents
+nodes = [...]  # Your nodes with text but no embeddings yet
+
+# Setup embedding function
+embed_model = OpenAIEmbedding()  # Or any other embedding model
+
+# Initialize VectorX vector store
+vector_store = VectorXVectorStore.from_params(
+    api_token=api_token,
+    encryption_key=encryption_key,
+    index_name=index_name,
+    dimension=1536,  # Make sure this matches your embedding dimension
+)
+
+# Create storage context
+storage_context = StorageContext.from_defaults(vector_store=vector_store)
+
+# Create vector index
+index = VectorStoreIndex(
+    nodes, 
+    storage_context=storage_context,
+    embed_model=embed_model
+)
+
+# Query the index
+query_engine = index.as_query_engine()
+response = query_engine.query("Your query here")
+print(response)
+```
+
+## Configuration Options
+
+The `VectorXVectorStore` constructor accepts the following parameters:
+
+- `api_token`: Your VectorX API token
+- `encryption_key`: Your encryption key for the index
+- `index_name`: Name of the VectorX index
+- `dimension`: Vector dimension (required when creating a new index)
+- `space_type`: Distance metric, one of "cosine", "l2", or "ip" (default: "cosine")
+- `batch_size`: Number of vectors to insert in a single API call (default: 100)
+- `text_key`: Key to use for storing text in metadata (default: "text")
+- `remove_text_from_metadata`: Whether to remove text from metadata (default: False)
