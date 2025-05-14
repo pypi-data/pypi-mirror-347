@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pycheese"
+dynamic = ["version"]
+description = "A short description of your package"
+authors = [
+    { name="Krautlabs", email="dev@krautlabs.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "coverage>=7.8.0",
+    "hatch>=1.14.1",
+    "ipython>=9.2.0",
+    "numpy>=2.2.5",
+    "pillow>=11.2.1",
+    "pygments>=2.19.1",
+    "pytest>=8.3.5",
+    "requests>=2.32.3",
+]
+
+[tool.hatch.version]
+path = "src/pycheese/__init__.py"
+
+[project.urls]
+Homepage = "https://github.com/krautlabs/pycheese"
+
+[project.scripts]
+pycheese= "pycheese.render:main"
