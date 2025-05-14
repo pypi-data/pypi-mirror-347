@@ -1,0 +1,2 @@
+[console_scripts]
+any-to-md-cli = any_to_md_cli.cli:main
