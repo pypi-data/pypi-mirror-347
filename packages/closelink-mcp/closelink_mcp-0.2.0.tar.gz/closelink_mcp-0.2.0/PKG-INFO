@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: closelink-mcp
+Version: 0.2.0
+Summary: Closelink MCP Server
+Requires-Python: >=3.13
+Requires-Dist: fastmcp>=2.3.3
+Requires-Dist: python-dotenv>=1.1.0
