@@ -1,0 +1,2 @@
+[console_scripts]
+mycli = my_package.cli:app
