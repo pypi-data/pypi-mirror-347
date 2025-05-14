@@ -1,0 +1,2 @@
+[console_scripts]
+universal_mcp_exa = universal_mcp_exa:main
