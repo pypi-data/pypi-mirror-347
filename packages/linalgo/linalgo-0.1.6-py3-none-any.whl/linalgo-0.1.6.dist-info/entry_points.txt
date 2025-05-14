@@ -1,0 +1,2 @@
+[console_scripts]
+linalgo = linalgo.__main__:main
