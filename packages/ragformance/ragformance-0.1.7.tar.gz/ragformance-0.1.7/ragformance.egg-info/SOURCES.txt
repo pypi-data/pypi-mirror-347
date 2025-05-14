@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+ragformance/__init__.py
+ragformance.egg-info/PKG-INFO
+ragformance.egg-info/SOURCES.txt
+ragformance.egg-info/dependency_links.txt
+ragformance.egg-info/requires.txt
+ragformance.egg-info/top_level.txt
