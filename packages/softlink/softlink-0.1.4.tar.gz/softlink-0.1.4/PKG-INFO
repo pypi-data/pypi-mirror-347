@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: softlink
+Version: 0.1.4
+Summary: Unified Messaging Gateway is an all-in-one platform for sending and managing SMS, WhatsApp, and Email messages. It offers a single API and dashboard for seamless communication, making it easy to handle alerts, marketing, and customer support across multiple channels
+License: MIT
+Author: Softlink Innovations
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: python-dotenv (>=1.1.0,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Softlink
+
+A Python library for creating and managing soft links between files and directories.
+
+## Installation
+

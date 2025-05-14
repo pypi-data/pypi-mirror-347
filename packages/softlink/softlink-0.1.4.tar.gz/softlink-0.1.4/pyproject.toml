@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "softlink"
+
+version = "0.1.4"
+
+description = "Unified Messaging Gateway is an all-in-one platform for sending and managing SMS, WhatsApp, and Email messages. It offers a single API and dashboard for seamless communication, making it easy to handle alerts, marketing, and customer support across multiple channels"
+authors = ["Softlink Innovations"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "sms"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+python-dotenv = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
