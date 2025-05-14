@@ -1,0 +1,2 @@
+[console_scripts]
+barbican = camelot.barbican.barbican:main
