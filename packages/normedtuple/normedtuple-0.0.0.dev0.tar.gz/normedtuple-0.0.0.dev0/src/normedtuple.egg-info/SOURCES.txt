@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/normedtuple/__init__.py
+src/normedtuple/__main__.py
+src/normedtuple.egg-info/PKG-INFO
+src/normedtuple.egg-info/SOURCES.txt
+src/normedtuple.egg-info/dependency_links.txt
+src/normedtuple.egg-info/top_level.txt
+src/normedtuple/core/__init__.py
+src/normedtuple/tests/__init__.py
+src/normedtuple/tests/test_1984.py
