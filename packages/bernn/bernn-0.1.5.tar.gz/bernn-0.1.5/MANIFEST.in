@@ -1,0 +1,23 @@
+include VERSION
+include LICENCE
+include README.md
+include requirements.txt
+include pyproject.toml
+include pytest.ini
+
+recursive-exclude logs *
+recursive-exclude *.log
+recursive-exclude *.tmp
+recursive-exclude *.data
+recursive-exclude *.jpg
+recursive-exclude *.jpeg
+recursive-exclude *.gif
+recursive-exclude *.ai
+recursive-exclude *.pdf
+recursive-exclude *.svg
+recursive-exclude *.eps
+prune data
+prune notebooks
+prune logs
+prune tests
+prune figures
