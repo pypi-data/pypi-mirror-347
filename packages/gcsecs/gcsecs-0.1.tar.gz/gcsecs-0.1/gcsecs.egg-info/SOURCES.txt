@@ -1,0 +1,5 @@
+setup.py
+gcsecs.egg-info/PKG-INFO
+gcsecs.egg-info/SOURCES.txt
+gcsecs.egg-info/dependency_links.txt
+gcsecs.egg-info/top_level.txt
