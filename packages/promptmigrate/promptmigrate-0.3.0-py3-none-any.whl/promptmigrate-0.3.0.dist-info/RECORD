@@ -1,0 +1,9 @@
+promptmigrate/__init__.py,sha256=tCg2fHRsRDTZU7p8KRKI1mI4IB9Te63NdZUiAXeeX0E,1218
+promptmigrate/cli.py,sha256=iruUlxs6jh4RjsO6DZH8Z2KQ9D5-4V02XJLmrvnA1oE,2175
+promptmigrate/manager.py,sha256=SPWb1-pa1e9L-fphpOVBaUn58dU7wtqcMgCYSuxjIqk,10453
+promptmigrate-0.3.0.dist-info/licenses/LICENSE,sha256=ecQyXrchGn-h5_bHG60Kr0-f9uIVm3QSszQyfc6bccA,1075
+promptmigrate-0.3.0.dist-info/METADATA,sha256=QrbWNe4Dzkjo1FeUpPpj6_5473GKiHrHnFRY_5LvxwY,10569
+promptmigrate-0.3.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+promptmigrate-0.3.0.dist-info/entry_points.txt,sha256=-i21HWdDqxxm1x7LntSXgQCGmOl7v_i78QYma-hn2vQ,56
+promptmigrate-0.3.0.dist-info/top_level.txt,sha256=Fxt4S2wYkfmD8tjG7uE8cCn4W670szz_pBUCZNHkAKM,14
+promptmigrate-0.3.0.dist-info/RECORD,,
