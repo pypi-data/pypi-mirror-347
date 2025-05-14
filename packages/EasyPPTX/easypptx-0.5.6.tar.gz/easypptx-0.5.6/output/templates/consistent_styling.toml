@@ -1,0 +1,59 @@
+bg_color = [
+    245,
+    245,
+    245,
+]
+
+[title]
+text = "Default Title"
+align = "left"
+vertical = "middle"
+color = [
+    50,
+    62,
+    79,
+]
+
+[title.position]
+x = "10%"
+y = "10%"
+width = "80%"
+height = "15%"
+
+[title.font]
+name = "Arial"
+size = 32
+bold = true
+
+[title.padding]
+top = "2%"
+left = "5%"
+
+[content_area]
+align = "left"
+
+[content_area.position]
+x = "10%"
+y = "30%"
+width = "80%"
+height = "60%"
+
+[footer]
+text = "Created with EasyPPTX"
+align = "right"
+color = [
+    100,
+    100,
+    100,
+]
+
+[footer.position]
+x = "5%"
+y = "90%"
+width = "90%"
+height = "5%"
+
+[footer.font]
+name = "Arial"
+size = 12
+bold = false

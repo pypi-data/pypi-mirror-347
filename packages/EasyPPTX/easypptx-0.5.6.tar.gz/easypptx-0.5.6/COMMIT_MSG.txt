@@ -1,0 +1,11 @@
+fix: add **kwargs to all content-related methods
+
+- Modified all content-related methods in Slide and Grid classes to accept additional parameters
+- Fixed TypeError when methods receive unexpected parameters like 'padding'
+- Added **kwargs parameter to ensure API flexibility and backward compatibility
+- Updated documentation for all affected methods
+- Bumped version to 0.5.6
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>

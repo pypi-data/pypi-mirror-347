@@ -1,0 +1,57 @@
+bg_color = "white"
+
+[title]
+text = "Product Overview"
+align = "left"
+vertical = "middle"
+color = "darkblue"
+
+[title.position]
+x = "5%"
+y = "5%"
+width = "90%"
+height = "8%"
+
+[title.font]
+name = "Meiryo"
+size = 32
+bold = true
+
+[image_area.position]
+x = "5%"
+y = "15%"
+width = "45%"
+height = "60%"
+
+[image_style]
+border = true
+border_color = "darkblue"
+border_width = 2
+shadow = true
+maintain_aspect_ratio = true
+center = true
+
+[content_area.position]
+x = "55%"
+y = "15%"
+width = "40%"
+height = "60%"
+
+[bar.position]
+x = "5%"
+y = "80%"
+width = "90%"
+height = "1%"
+
+[bar.gradient]
+start_color = [
+    0,
+    112,
+    192,
+]
+end_color = [
+    0,
+    176,
+    80,
+]
+angle = 0
