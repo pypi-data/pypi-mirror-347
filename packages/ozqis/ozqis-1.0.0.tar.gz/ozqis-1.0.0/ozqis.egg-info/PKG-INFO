@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ozqis
+Version: 1.0.0
+Summary: A metric for quantum machine learning.
+Home-page: https://github.com/emirkaanozdemr/OzQIS
+Author: Emir Kaan Özdemir
+Author-email: emirkaanbulut08@gmail.com
+License: CC-BY 4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pennylane
+
+Please visit https://github.com/emirkaanozdemr/OzQIS.

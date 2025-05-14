@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ozqis/__init__.py
+ozqis/calculate.py
+ozqis/quantum_relative_entropy.py
+ozqis.egg-info/PKG-INFO
+ozqis.egg-info/SOURCES.txt
+ozqis.egg-info/dependency_links.txt
+ozqis.egg-info/requires.txt
+ozqis.egg-info/top_level.txt
