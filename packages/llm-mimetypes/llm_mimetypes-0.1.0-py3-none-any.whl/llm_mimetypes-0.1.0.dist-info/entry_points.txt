@@ -1,0 +1,2 @@
+[console_scripts]
+llm-mimetypes = llm_mimetypes:main

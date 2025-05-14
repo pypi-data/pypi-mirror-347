@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: llm-mimetypes
+Version: 0.1.0
+Summary: LLM MIME types
+Author-email: TerminalMan <84923604+SecretiveShell@users.noreply.github.com>
+Requires-Python: >=3.10
+Requires-Dist: aiosqlite>=0.21.0
