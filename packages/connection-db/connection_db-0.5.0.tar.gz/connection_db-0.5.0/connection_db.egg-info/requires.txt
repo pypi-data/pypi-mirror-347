@@ -1,0 +1,4 @@
+sqlalchemy>=1.4.0
+pymssql>=2.2.0
+mysql-connector-python
+psutil>=7.0.0
