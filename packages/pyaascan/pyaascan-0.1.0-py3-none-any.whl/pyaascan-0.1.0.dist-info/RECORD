@@ -1,0 +1,10 @@
+pyaascan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyaascan/bio_utils.py,sha256=bodXEFLdXAdj3UOI-LNyVZji3oensuxddcALzfdp-ro,1050
+pyaascan/cli.py,sha256=PWevEMcrnvqSIA0q7BMrOEHb8U-AvQ_8TxZtzD8S_F4,2601
+pyaascan/codon_utils.py,sha256=Yq0i07hVwAPBvIEC5ga541KNlN1YtJekKYSjVQXrHOA,2594
+pyaascan/primer_design.py,sha256=pp5qNikmBqwhUQgCw5SLS8l8kBV-89wmX0oVYaBWMNs,3768
+pyaascan/primer_format.py,sha256=QVlFG6OLFlRcOR-6fbod5ALN7jXcRF--sQTXLNpLWfs,1723
+pyaascan-0.1.0.dist-info/METADATA,sha256=97A7uABq7lDH9-NG2s9PEI80aIY8BLekSmSv9st25sY,4151
+pyaascan-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyaascan-0.1.0.dist-info/entry_points.txt,sha256=v994wZq5vRNnxejb9uyl-IrfPBqsWZEGb47DctTxEQ4,43
+pyaascan-0.1.0.dist-info/RECORD,,
