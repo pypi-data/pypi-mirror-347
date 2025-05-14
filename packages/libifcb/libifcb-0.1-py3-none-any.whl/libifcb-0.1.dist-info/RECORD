@@ -1,0 +1,8 @@
+libifcb/__init__.py,sha256=FxESeGfdlhAaKyVo0PfkpU6iXP3nD5lSmOj4Lrksh2U,40
+libifcb/native_interface.py,sha256=BDTAmR3ufWX0lIJIu0e0eHeQqos2yUTkyX9sM-6moE8,8363
+libifcb/utils.py,sha256=yHXSqkT8VhSnZk1tBdBGqki053psRW1YFsh1OIRxACg,2383
+libifcb-0.1.dist-info/licenses/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+libifcb-0.1.dist-info/METADATA,sha256=gEKPB2KsNm-ZSzFlebf7vNquL8IOigmFGd_-VWS0yQ8,1750
+libifcb-0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+libifcb-0.1.dist-info/top_level.txt,sha256=nqt8ysEXU383hNYRiZthZ7Z4KhicYcUGXUmRousXqeQ,8
+libifcb-0.1.dist-info/RECORD,,
