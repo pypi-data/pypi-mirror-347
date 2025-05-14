@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: agentutil
+Version: 0.1.2
+Summary: Basic classes and utils for developing agents
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: flake8>=7.2.0
