@@ -1,0 +1,13 @@
+pyrml/__init__.py,sha256=nTrL5JXRgFDgwW0hVBg0FPZx0E30fxoaGzhR4dRhq8Q,157
+pyrml/functions.py,sha256=Q6YABHbjWALz4oq6bs3la4qOCvBt5J9u5_OfCBfwk60,18125
+pyrml/grammar.lark,sha256=mX9hCboYKo9rlpZc6XsCjnW7gz2C5JMOBqk-4StC_fw,1036
+pyrml/pyrml_api.py,sha256=j1wj8FjZ16nr9b1DdD7bXhPUjd6EFevcsLifDAOPD7U,23476
+pyrml/pyrml_core.py,sha256=qiohpzelO9s2N9hMAA0Qvt5_L3712VAU1ktmbYYiukw,75537
+pyrml/pyrml_mapper.py,sha256=P6gn9CBbD4ThBkiiYzArMApgPWCUPxLJmkhRHZ7CvVg,14279
+pyrml/pyrml_rdflib.py,sha256=K1xkdf_uo7HtLQoNvxKqa_0nxGwswUZJGfVSNZu5zzg,1079
+pyrml/rml_vocab.py,sha256=IQf3wc8B0rifxPEIETwmIey6ivElATKF2VshGbDKe0Y,2273
+pyrml_lib-0.6.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyrml_lib-0.6.0.dist-info/METADATA,sha256=upEXLqM8k150Oh-PlOsF2U6-grRvYYozPXW7Am7iGe4,587
+pyrml_lib-0.6.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+pyrml_lib-0.6.0.dist-info/top_level.txt,sha256=CN0XIdupA9N8EVokdm4V5bJ41-qFcs8oaf90tbMKB3M,6
+pyrml_lib-0.6.0.dist-info/RECORD,,
