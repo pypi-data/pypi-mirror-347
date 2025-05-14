@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: alphabot-interface
+Version: 0.1.0
+Summary: Interface for the Alphabot sensors and camera
+Author-email: Sadra <s.s.moosavi.lar@student.tue.nl>
+Project-URL: Homepage, https://git.phys.tue.nl/robots/2025-aies-htrbt
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
