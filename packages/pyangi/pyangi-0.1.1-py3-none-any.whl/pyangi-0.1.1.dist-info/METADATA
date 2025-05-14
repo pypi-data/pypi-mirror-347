@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: pyangi
+Version: 0.1.1
+Summary: My short description for my project.
+Home-page: https://github.com/fhayits/pyangi
+Author: FHS
+Author-email: fhayitmurods@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2 ==3.1.6
+Requires-Dist: WebOb ==1.8.9
+Requires-Dist: parse ==1.20.2
+Requires-Dist: requests ==2.32.3
+Requires-Dist: whitenoise ==6.9.0
+
+
+
+# pyangi
+
+# pyangi: python dasturchilari uchun kichik wsgi aplication
+
+![Purpose](https://img.shields.io/badge/purpose-learning-green)
+[![PyPI](https://img.shields.io/pypi/v/pyangi)](https://pypi.org/project/pyangi/)
+
+
+
+pyangi amaliyot uchun qilingan gunicorn bilan run qilinadi 
+
+## installation
+```shell
+   pip install pyangi
+```
+
+## How to use it
+Basic usage
+```python
+from pyangi.app import Pyangi
+
+app = Pyangi()
+
+
+@app.route("/home")
+def home(request, response):
+    response.text = "hello from home page"
+
+
+
+@app.route("/about")
+def about(request, response):
+    response.text = "hello from about page"
+
+@app.route("/home/{name}")
+def greetings(request, response, name):
+    response.text = f"hello my friend {name}"
+
+@app.route("/books")
+class Books:
+    def get(self, request, response):
+        response.text = "this method get"
+
+    def post(self, request, response):
+        response.text = "Endpoint to create books"
+
+```
+
+
+
+>>>>>>> 5c5c8e2 (initial commit)
