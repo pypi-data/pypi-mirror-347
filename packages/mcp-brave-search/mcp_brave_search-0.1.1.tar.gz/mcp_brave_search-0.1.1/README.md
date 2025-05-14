@@ -1,0 +1,81 @@
+MCP Brave Search Server
+An MCP (Model Context Protocol) server that integrates with the Brave Search API to provide web and local search capabilities for Large Language Models (LLMs).
+Features
+
+brave_web_search: Performs general web searches for news, articles, and online content.
+brave_local_search: Searches for local businesses and places, with fallback to web search if no local results are found.
+Rate limiting to respect Brave API constraints.
+Asynchronous HTTP requests using httpx.
+
+Installation
+pip install mcp-brave-search
+
+Requirements
+
+Python 3.9 or higher
+A Brave Search API key (set as BRAVE_API_KEY environment variable)
+
+Setup
+
+Obtain a Brave Search API key from Brave Search API.
+Set the API key in a .env file or as an environment variable:export BRAVE_API_KEY="your-api-key"
+
+
+Install the package:pip install mcp-brave-search
+
+
+
+Usage
+Run the server:
+mcp-brave-search
+
+To integrate with an MCP client like Claude Desktop, add the following to claude_desktop_config.json:
+{
+  "mcpServers": {
+    "brave_search": {
+      "command": "uvx",
+      "args": ["mcp-brave-search"]
+    }
+  }
+}
+
+If you’re not using uvx, adjust the command to use python or the path to your Python executable:
+json
+
+{
+  "mcpServers": {
+    "brave_search": {
+      "command": "python",
+      "args": ["-m", "brave_search.server"]
+    }
+  }
+}
+
+Tools
+
+brave_web_search: Search the web with pagination support.
+Inputs: query (string), count (1-20, default 10), offset (0-9, default 0)
+Example: brave_web_search(query="python tutorials", count=5)
+
+
+brave_local_search: Search for local businesses or places.
+Inputs: query (string), count (1-20, default 5)
+Example: brave_local_search(query="pizza near Central Park")
+
+
+
+Development
+To contribute or modify the server:
+
+Clone the repository:git clone https://github.com/your-repo/mcp-brave-search.git
+
+
+Install dependencies:pip install -r requirements.txt
+
+
+Run the server locally:python -m brave_search.server
+
+
+
+License
+MIT License
