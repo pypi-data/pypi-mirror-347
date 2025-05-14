@@ -1,0 +1,2 @@
+[console_scripts]
+swapnil-mcp-web-extractor = web_extractor.__main__:main
