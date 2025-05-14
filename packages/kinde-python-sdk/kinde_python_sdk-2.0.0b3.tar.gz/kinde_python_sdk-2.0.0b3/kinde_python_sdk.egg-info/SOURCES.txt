@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+kinde_fastapi/__init__.py
+kinde_flask/__init__.py
+kinde_python_sdk.egg-info/PKG-INFO
+kinde_python_sdk.egg-info/SOURCES.txt
+kinde_python_sdk.egg-info/dependency_links.txt
+kinde_python_sdk.egg-info/requires.txt
+kinde_python_sdk.egg-info/top_level.txt
+kinde_sdk/__init__.py
