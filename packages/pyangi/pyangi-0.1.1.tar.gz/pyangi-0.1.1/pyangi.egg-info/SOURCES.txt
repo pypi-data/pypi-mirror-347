@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pyangi.egg-info/PKG-INFO
+pyangi.egg-info/SOURCES.txt
+pyangi.egg-info/dependency_links.txt
+pyangi.egg-info/requires.txt
+pyangi.egg-info/top_level.txt
