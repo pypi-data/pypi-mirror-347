@@ -1,0 +1,8 @@
+fastkmeans/__init__.py,sha256=wdSM-ig64WXThY0P7AVKSnyAt7trUuSVffIvbzhez7Y,79
+fastkmeans/kmeans.py,sha256=Z7GEP3oWQx9NCg0poDzTvBrz3T4K8YWhKR8AKFjMEcY,14135
+fastkmeans/triton_kernels.py,sha256=LYErKjjvwA4lGAoawFs_KM5vDuCyhUDfPRBiTsrVXdU,4155
+fastkmeans-0.5.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastkmeans-0.5.0.dist-info/METADATA,sha256=afRBC3fHKnNETs172OirwzY6lcANthwH2fYhchQ5F8I,8043
+fastkmeans-0.5.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+fastkmeans-0.5.0.dist-info/top_level.txt,sha256=B3Zd2-kEAH_hN0hFUWgo5lO-TH7ppVol_WQ5ZT1H0js,11
+fastkmeans-0.5.0.dist-info/RECORD,,
