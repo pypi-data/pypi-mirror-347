@@ -1,0 +1,16 @@
+site_name: ClimateTimer Doc
+site_description: "ClimateTimer documentation"
+site_author: Guillaume Dion
+repo_url: https://github.com/cameraink/climatetimer
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+- mkdocstrings
