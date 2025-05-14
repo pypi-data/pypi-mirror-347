@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+bunch/__init__.py
+bunch/python3_compat.py
+bunch/test.py
+zato_ext_bunch.egg-info/PKG-INFO
+zato_ext_bunch.egg-info/SOURCES.txt
+zato_ext_bunch.egg-info/dependency_links.txt
+zato_ext_bunch.egg-info/top_level.txt
