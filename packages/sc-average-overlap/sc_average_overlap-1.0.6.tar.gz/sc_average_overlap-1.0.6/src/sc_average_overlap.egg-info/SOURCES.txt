@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/sc_average_overlap/__init__.py
+src/sc_average_overlap/sc_average_overlap.py
+src/sc_average_overlap.egg-info/PKG-INFO
+src/sc_average_overlap.egg-info/SOURCES.txt
+src/sc_average_overlap.egg-info/dependency_links.txt
+src/sc_average_overlap.egg-info/requires.txt
+src/sc_average_overlap.egg-info/top_level.txt
