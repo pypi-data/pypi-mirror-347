@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sqlet/__init__.py
+sqlet.egg-info/PKG-INFO
+sqlet.egg-info/SOURCES.txt
+sqlet.egg-info/dependency_links.txt
+sqlet.egg-info/requires.txt
+sqlet.egg-info/top_level.txt
