@@ -1,0 +1,2 @@
+[console_scripts]
+hunyuan-image-mcp-standard = yaunqi_plugin_mcp:main
