@@ -1,0 +1,13 @@
+asflow/__init__.py,sha256=z2Z0SjvTRb8dI20qzX-Lu0BpEwQMnUg6PiVy8RGc4cQ,38
+asflow/compressor.py,sha256=f_32H-JeDCE6iAqdaATcULL30D9oxu6yWKqesE2KMXo,1102
+asflow/flow.py,sha256=bE45lwb-dEI48nD7P9WZ7MNRxUGPyG9zbyBtjrTMuWs,3479
+asflow/retry.py,sha256=LA1DldHr5FsnJHvELiwil_SlHgcac0D3dOXFppTcIlk,1475
+asflow/serializer.py,sha256=DMjmvoss4D1E60ABYNwckVDOU_02JAvTvUtcrs4RufE,1010
+asflow/task.py,sha256=nNO8Rysh48gD6i6qwjADfjsB1x6kgJWmnKmc0xHABL4,8471
+asflow/test_flow.py,sha256=5gTc4HCS28Tv6jtkf_0KLkEIPWFEEelW8FqgycMg0_w,684
+asflow/test_task_async.py,sha256=d5b9wRW4RAQ4Ivzxn9uRmTSCWVuouNWCh3nMgiplaWM,1905
+asflow/test_task_sync.py,sha256=OFjnC07cf5_Sc2HlIIAOubql-jaaTfeQ9Lq-0rA7H54,2530
+asflow-0.0.1.dist-info/METADATA,sha256=HIMlX2WFKZYcMQ_INBgcSIbz3_o8zVrWq5ivTupE57E,2732
+asflow-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+asflow-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+asflow-0.0.1.dist-info/RECORD,,
