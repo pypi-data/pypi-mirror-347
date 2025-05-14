@@ -1,0 +1,2 @@
+[console_scripts]
+frogbox = frogbox.cli:cli
