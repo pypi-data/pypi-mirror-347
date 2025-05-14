@@ -1,0 +1,16 @@
+MeetingAssistant/__init__.py,sha256=lltHE7PSGqYEJqXJNY4wd8yKR6mZZPbZWd-lByI33QU,45
+MeetingAssistant/app.py,sha256=JJkype7uerV49HWkFUGHn6i4pX7JUDNZ-ksD-obJaBY,4419
+MeetingAssistant/assistantbot.py,sha256=JN2m-3kKwtIEFaSdGEqno6MaA-4bpj5RgeloHh9XHVw,5999
+MeetingAssistant/embed.py,sha256=NyHibpLqfph1QPAvveybgzKIgpmoi7AJ7kfDFt9_loo,287
+MeetingAssistant/gui_launcher.py,sha256=odwFGO64cJNGEULkbdmtlZKRfPfIh51pFnU3JZL7SoU,4930
+MeetingAssistant/query_parser.py,sha256=jQZ2n3e61U522quK9dRK3D9u5zs20XPBrigc0e4aHKA,1105
+MeetingAssistant/record.py,sha256=ctDi8TCKpruHEL_-GhbZaJMrvVr4GXu6S5hTnScD4WQ,1495
+MeetingAssistant/scheduler.py,sha256=x6qj6NMz-oxlUOBkLLnWcIK5daP0f2UvPEINY866YdU,537
+MeetingAssistant/search.py,sha256=N7cBU_yeORo2ezubo1w3gVqzXDElU-_QWdXuVAI_jAk,2995
+MeetingAssistant/summarize.py,sha256=V6XTY1E7DNuIZ2F7OVjwZEdGIDQ46-kFniDn4StwGzE,1537
+MeetingAssistant/transcribe.py,sha256=0LivYYuxGv8aGSxsi5ddPZgthiTmRdgcgYK6EOFOlFc,699
+MeetingAssistant/webhook_listener.py,sha256=90J1x20dib_igbOb083jM2wgOpnWDLXGonW62Hx4S1Y,686
+MeetingAssistant-0.1.1.dist-info/METADATA,sha256=bXXuOWV7UQzk1HuuPaHao7venRrYNI915VIahYwtI6Y,10890
+MeetingAssistant-0.1.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+MeetingAssistant-0.1.1.dist-info/top_level.txt,sha256=gxotv_6aL2QmilCaOyWZ8WGdErU-tN2yEp1IifzycPQ,17
+MeetingAssistant-0.1.1.dist-info/RECORD,,
