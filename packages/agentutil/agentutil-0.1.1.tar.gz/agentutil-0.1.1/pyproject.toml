@@ -1,0 +1,9 @@
+[project]
+name = "agentutil"
+version = "0.1.1"
+description = "Basic classes and utils for developing agents"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flake8>=7.2.0",
+]
