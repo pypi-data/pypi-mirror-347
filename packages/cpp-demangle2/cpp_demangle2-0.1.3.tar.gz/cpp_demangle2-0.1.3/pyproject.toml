@@ -1,0 +1,16 @@
+[tool.cibuildwheel]
+# skip testing in the cibuildwheel phase, will install the wheels later
+# and verify
+test-command = ""
+skip = ["pp*", "*musl*",  "*-manylinux_i686", "*win32"]
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "setuptools_rust",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.cibuildwheel.linux]
+before-all = "ci/install_rust.sh"
