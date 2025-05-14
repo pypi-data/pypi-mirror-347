@@ -1,0 +1,50 @@
+[project]
+name = "Landsifier"
+version = "2.0.5"
+authors = [
+  {name="Manan Kapoor", email='manank1997@gmail.com'},
+  {name="Kushanav Bhuyan", email="kushanav.bhuyan@phd.unipd.it"},
+  {name="Kamal Rana", email="kamalrana520@gmail.com"}
+]
+description = "A library for predicting the classes of landslides based on their topography"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.8,<3.11"
+license = { file = "LICENSE" }
+dependencies = [
+  "pillow",
+  "cloudpickle",
+  "gdal",
+  "giotto-tda",
+  "ipython",
+  "joblib",
+  "numpy",
+  "matplotlib",
+  "scipy",
+  "shapely",
+  "geopandas",
+  "utm",
+  "scikit-learn",
+  "pyproj",
+  "elevation",
+  "pandas",
+  "tqdm",
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3.8",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Home" = "https://github.com/manank1997/Landsifier-V2.0.0/"
+"Repository" = "https://github.com/manank1997/Landsifier-V2.0.0/"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+include-package-data = true
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

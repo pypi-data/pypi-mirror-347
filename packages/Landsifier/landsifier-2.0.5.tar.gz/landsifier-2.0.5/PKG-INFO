@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: Landsifier
+Version: 2.0.5
+Summary: A library for predicting the classes of landslides based on their topography
+Author-email: Manan Kapoor <manank1997@gmail.com>, Kushanav Bhuyan <kushanav.bhuyan@phd.unipd.it>, Kamal Rana <kamalrana520@gmail.com>
+Project-URL: Home, https://github.com/manank1997/Landsifier-V2.0.0/
+Project-URL: Repository, https://github.com/manank1997/Landsifier-V2.0.0/
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.11,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pillow
+Requires-Dist: cloudpickle
+Requires-Dist: gdal
+Requires-Dist: giotto-tda
+Requires-Dist: ipython
+Requires-Dist: joblib
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: shapely
+Requires-Dist: geopandas
+Requires-Dist: utm
+Requires-Dist: scikit-learn
+Requires-Dist: pyproj
+Requires-Dist: elevation
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Dynamic: license-file
+
+# Landsifier
+
+Landsifier is a Python library for landslide detection and analysis using data preparation, machine learning, prediction, and visualization modules.

@@ -1,0 +1,17 @@
+pillow
+cloudpickle
+gdal
+giotto-tda
+ipython
+joblib
+numpy
+matplotlib
+scipy
+shapely
+geopandas
+utm
+scikit-learn
+pyproj
+elevation
+pandas
+tqdm
