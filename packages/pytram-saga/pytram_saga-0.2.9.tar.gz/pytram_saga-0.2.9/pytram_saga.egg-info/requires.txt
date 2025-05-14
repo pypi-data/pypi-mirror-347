@@ -1,0 +1,4 @@
+aio-pika>=9.5.5
+aiosqlite>=0.21.0
+pyfaulttolerance==0.1.3
+sqlmodel>=0.0.24
