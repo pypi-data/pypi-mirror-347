@@ -1,0 +1,1 @@
+Commit ef2b403.                    Build and Run scripts for executing the Certora Prover on Solidity smart contracts.
