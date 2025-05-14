@@ -1,0 +1,19 @@
+from typing import Union
+from maleo_identity.models.transfers.results.general.user_system_role import MaleoIdentityUserSystemRoleGeneralResultsTransfers
+
+class MaleoIdentityUserSystemRoleClientResultsTypes:
+    GetMultiple = Union[
+        MaleoIdentityUserSystemRoleGeneralResultsTransfers.Fail,
+        MaleoIdentityUserSystemRoleGeneralResultsTransfers.NoData,
+        MaleoIdentityUserSystemRoleGeneralResultsTransfers.MultipleData
+    ]
+
+    GetSingle = Union[
+        MaleoIdentityUserSystemRoleGeneralResultsTransfers.Fail,
+        MaleoIdentityUserSystemRoleGeneralResultsTransfers.SingleData
+    ]
+
+    Create = Union[
+        MaleoIdentityUserSystemRoleGeneralResultsTransfers.Fail,
+        MaleoIdentityUserSystemRoleGeneralResultsTransfers.SingleData
+    ]
