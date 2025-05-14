@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlalchemy_helper_tool"
+version = "0.1.0"
+description = "Package to work with mysql database from python"
+readme = "README.md"
+authors = [
+    { name = "Anabel Reyes", email = "anakings95@gmail.com" }
+]
+maintainers = [
+    { name = "Anabel Reyes", email = "anakings95@gmail.com" }  
+]
+license = {file = "LICENSE.txt"}
+keywords = [
+    "Database"
+]
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "License :: OSI Approved :: BSD License",
+    "Intended Audience :: Developers",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: MacOS :: MacOS X",
+]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/anakings/sqlalchemy_helper_tool"
+Documentation = "https://github.com/anakings/sqlalchemy_helper_tool/README.md"
