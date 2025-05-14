@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: dbrw
+Version: 0.1.14
+Summary: DataBase Reader and Writer utilities
+Home-page: https://github.com/xtruan/dbrw
+Author: Struan Clark
+Author-email: dbrw@to.scrk.net
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: psycopg2
+Provides-Extra: psycopg2-binary
+License-File: LICENSE
+
+# dbrw
+
+Postgres DataBase Reader and Writer utilities.
+
+## Installation
+
+```bash
+pip install dbrw[psycopg2]
+```
+
+or
+
+```bash
+pip install dbrw[psycopg2-binary]
+```
+
+## Basic Usage
+
+
+```bash
+export DBRW_PGHOST=localhost
+export DBRW_PGPORT=5432
+export DBRW_PGDBNAME=postgres
+export DBRW_PGUSER=postgres
+export DBRW_PGPASSWORD=postgres
+export DBRW_PGPOOLSIZE=10
+```
+
+```python
+from dbrw import DbSession, DbUtilities
+
+session: DbSession = DbSession()
+db: DbUtilities = session.get_db()
+
+db.execute("SELECT * FROM mytable;")
+```

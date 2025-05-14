@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/dbrw/__init__.py
+src/dbrw/db_session.py
+src/dbrw/db_table_reader.py
+src/dbrw/db_table_writer.py
+src/dbrw/db_utilities.py
+src/dbrw.egg-info/PKG-INFO
+src/dbrw.egg-info/SOURCES.txt
+src/dbrw.egg-info/dependency_links.txt
+src/dbrw.egg-info/requires.txt
+src/dbrw.egg-info/top_level.txt
