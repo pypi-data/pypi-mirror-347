@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.2.2
+-----
+
+* Added new path from env variable dependency (#43)
