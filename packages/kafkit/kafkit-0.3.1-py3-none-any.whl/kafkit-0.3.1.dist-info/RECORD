@@ -1,0 +1,16 @@
+kafkit/__init__.py,sha256=P_Chv__uaDISnsT8-fbJzsw2nQh35v1OrkOIu9jNrPA,519
+kafkit/httputils.py,sha256=por5hliaXfmJYL7reiGAO-lIHEpOrial3wKMOLoRwpg,1730
+kafkit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kafkit/ssl.py,sha256=sTueb-swTw_b824GUuRa6EzlumwXhlXwZWMIjcrjius,1117
+kafkit/registry/__init__.py,sha256=8sVFgQz-FWoE9pQTbz3dVceCraiwOZIqOfcmTvV6Tqk,554
+kafkit/registry/aiohttp.py,sha256=typRsdV0eRkV4i4_htn841abJhIQCPr_sehqC6e4CNE,1180
+kafkit/registry/errors.py,sha256=xvAyVNnuBuzb9tRcKNIZdTx3Y7XIiCH9yobpKHh7CJc,1684
+kafkit/registry/httpx.py,sha256=yLDUnta2bFljLiQibDfMcKEXywm9xqVxgESrBxx5khM,986
+kafkit/registry/manager.py,sha256=NHhDhfnoW5jvRZiDWCM6v9i9wgZp0ulQvODFPN40cgs,10623
+kafkit/registry/sansio.py,sha256=isWhuV7sspMe5LG0HEuYlNAkSHkY_z3ZzMSShMEIJF8,30169
+kafkit/registry/serializer.py,sha256=U6mGWRBUAlmtHAyxkapwC7k984Q0lKT00r6GYz_KiAQ,12142
+kafkit-0.3.1.dist-info/licenses/LICENSE,sha256=dd_JXFtAkZ24GAmc0PZD5y89zWa2sCIfc6gXA46KG4M,1128
+kafkit-0.3.1.dist-info/METADATA,sha256=d0XRLEKm78S7q31mvSd-bZ6USkmJulh4LoPHGSWRCxw,2782
+kafkit-0.3.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+kafkit-0.3.1.dist-info/top_level.txt,sha256=gZYxgW-HE3gyw-v9c55nIb3XxKArup-3VCvbL0wqmMg,7
+kafkit-0.3.1.dist-info/RECORD,,
