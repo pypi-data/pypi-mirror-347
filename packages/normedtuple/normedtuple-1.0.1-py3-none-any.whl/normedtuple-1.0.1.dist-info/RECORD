@@ -1,0 +1,10 @@
+normedtuple/__init__.py,sha256=pBivn9tocSO4G1W5r0tGjL18MNAhnIqRMPQgtYWgpCg,63
+normedtuple/core/__init__.py,sha256=V9JmpvutyufnoTu4s_IlDB41_UO0qRk_B03iCTYA3yA,759
+normedtuple/tests/__init__.py,sha256=QVuxknAbSKHdMDGszNKhJt_FtfSTjvigG7vs7D5uO1g,299
+normedtuple/tests/test_0.py,sha256=Mn6J8WSj_X3nu3sktvPsTDh5X5GBA-lWUMuE-m-o1G8,1305
+normedtuple/tests/test_qual.py,sha256=sRoIcUurMz1VxnZVUaDTfzY7jR750R3icdAd_EMg7Z0,1579
+normedtuple-1.0.1.dist-info/licenses/LICENSE.txt,sha256=fOh9FHccUt9OcJPBaVJ482GX4yrl_FxCUk9YRZ53JOI,1074
+normedtuple-1.0.1.dist-info/METADATA,sha256=lTWsuRfm_a39kZM21BPdfWT-m-g1kfU489zCIvLJPkk,2309
+normedtuple-1.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+normedtuple-1.0.1.dist-info/top_level.txt,sha256=i2huH9tO8buO3ohItcw_0B8g2aVQhOzWZ2HrrF8CzSw,12
+normedtuple-1.0.1.dist-info/RECORD,,
