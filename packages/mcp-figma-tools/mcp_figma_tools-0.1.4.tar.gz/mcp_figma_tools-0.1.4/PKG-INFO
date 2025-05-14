@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: mcp-figma-tools
+Version: 0.1.4
+Summary: MCP server for interacting with the Figma API to fetch file data, screen info, node details, and image URLs
+Author-email: manoj48 <manojwork385@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastmcp>=1.2.0
+Requires-Dist: httpx>=0.27.0
+Requires-Dist: python-dotenv>=1.0.0
+Dynamic: license-file
+
+mcp-figma-tools
+A Python MCP server for interacting with the Figma API. Provides tools to fetch Figma file data, screen information, node details, and image URLs.
+Installation
+Install the package via pip:
+pip install mcp-figma-tools
+
+Setup
+
+Create a .env file in your project directory with your Figma API token:
+
+FIGMA_API_TOKEN=your_figma_api_token
+
+
+Alternatively, set the FIGMA_API_TOKEN environment variable manually.
+
+Usage
+Run the MCP server:
+mcp-figma-tools
+
+The server provides the following tools:
+
+get_figma_file_json: Fetches the complete JSON of a Figma file.
+get_figma_screens_info: Extracts top-level frames (screens) and their image URLs.
+get_figma_node_details_json: Fetches JSON for specific nodes.
+get_figma_node_image_url: Fetches the image URL for a specific node.
+
+Configuration
+To use the server in a Claude Desktop configuration, add:
+{
+  "mcpServers": {
+    "figma_tools": {
+      "command": "uvx",
+      "args": [
+        "mcp-figma-tools"
+      ]
+    }
+  }
+}
+
+Requirements
+
+Python >= 3.9
+Figma Personal Access Token (set via FIGMA_API_TOKEN)
+
+License
+MIT License
