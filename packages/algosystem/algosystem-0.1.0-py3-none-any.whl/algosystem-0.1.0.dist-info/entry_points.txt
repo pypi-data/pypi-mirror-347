@@ -1,0 +1,4 @@
+[console_scripts]
+algodash=algosystem.dashboard.dashboard_cli:cli
+algosystem=algosystem.cli.commands:cli
+
