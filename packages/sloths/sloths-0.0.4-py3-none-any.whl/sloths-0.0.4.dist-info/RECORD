@@ -1,0 +1,11 @@
+sloths/__init__.py,sha256=g6EyRnvxuTfe7d67glLx3FJcFnZmCdGkff2yryWOoQw,150
+sloths/_stream.py,sha256=Om3fBbIIkbMhgKxjrJI4Tq1JnNwb1JN5-go1CahIHso,24764
+sloths/_utils.py,sha256=7H0hgtJK7BzUR_uO5pCXxOnXZKiQC7t1V54vhI4I654,1536
+sloths/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sloths/ext/__init__.py,sha256=BHXnngUfRphu2EcRnf8N8ZLIKtJL5-Z5HJa1iA9cuUg,79
+sloths/ext/asyncio.py,sha256=BI6ARYNDm8NdIj_ZnaLq3vVr6ZYRzPz8Iehvj75N_0M,20494
+sloths/ext/concurrent.py,sha256=C5luPg6KYZvQm-yVi1N890lD2WyD1GSMaORbo_-RtI0,9001
+sloths-0.0.4.dist-info/METADATA,sha256=KTx-YwZSQgfaREjsVD4Z7q1MPJIPebtqFw6uFc652Bs,2836
+sloths-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sloths-0.0.4.dist-info/licenses/LICENSE,sha256=kz1oYaTS4KqF9y3O1wdM_TfA-vGmFlem1W30lI5L-nQ,1071
+sloths-0.0.4.dist-info/RECORD,,
