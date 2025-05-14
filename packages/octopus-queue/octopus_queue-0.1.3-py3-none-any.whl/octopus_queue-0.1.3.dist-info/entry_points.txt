@@ -1,0 +1,2 @@
+[console_scripts]
+oqu = app.cli.main:app
