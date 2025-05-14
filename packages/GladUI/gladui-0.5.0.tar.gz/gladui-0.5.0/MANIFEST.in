@@ -1,0 +1,5 @@
+include lib/windows/*.dll
+include include/SDL2/*.h
+include assets/GladG/*.h
+include LICENSE
+include README.md
