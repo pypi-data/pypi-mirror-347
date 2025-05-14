@@ -1,0 +1,14 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+tests/test_base.py
+wagtail_oidc_provider/__init__.py
+wagtail_oidc_provider/apps.py
+wagtail_oidc_provider/wagtail_hooks.py
+wagtail_oidc_provider.egg-info/PKG-INFO
+wagtail_oidc_provider.egg-info/SOURCES.txt
+wagtail_oidc_provider.egg-info/dependency_links.txt
+wagtail_oidc_provider.egg-info/requires.txt
+wagtail_oidc_provider.egg-info/top_level.txt
+wagtail_oidc_provider/templates/wagtailadmin/wagtail_oidc_provider/panels/kid_panel.html

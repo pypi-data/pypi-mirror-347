@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: wagtail-oidc-provider
+Version: 0.1.0
+Summary: Bridging django-oidc-provider to wagtail admin CMS
+Author-email: WebU dev team <contact@webu.coop>
+Project-URL: Homepage, https://github.com/webu/wagtail-oidc-provider
+Project-URL: Issues, https://github.com/webu/wagtail-oidc-provider/issues
+Keywords: django,wagtail,oidc,sso
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: django>=2.2
+Requires-Dist: wagtail
+Requires-Dist: django-oidc-provider
+Dynamic: license-file
+
+# wagtail-oidc-provider
+
+Pairs with [django-oidc-provider](https://github.com/juanifioren/django-oidc-provider/), with wagtail support.
+
+## Install
+
+```
+pip install wagtail-oidc-provider
+```
+
+Add `wagtail_oidc_provider` to your `INSTALLED_APP`:
+
+```py
+INSTALLED_APP = [
+    ...
+    "oidc_provider",
+    "wagtail_oidc_provider",
+    ...
+]
+```
+
+and configuration snippet will popup in the admin navbar of wagtail!
