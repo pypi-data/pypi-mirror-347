@@ -1,0 +1,37 @@
+{
+  "tokenizer": "wowool/danish@3.2.0.tkz",
+  "abbreviations": "wowool/danish@3.2.0.abbrev",
+  "apostrophe": "wowool/danish@3.2.0.apostrophe",
+  "measure": "wowool/danish@3.2.0.measure",
+  "hmm": "wowool/danish@3.2.0.hmm",
+  "postagger": "wowool/danish@3.2.0.postagger",
+  "morph_chain": [
+    {
+      "file": "wowool/danish@3.2.0.morph",
+      "lookup": "plain",
+      "transform": "none"
+    },
+    {
+      "file": "wowool/danish-compound@3.2.0.morph",
+      "lookup": "compound_v3",
+      "transform": "tolower"
+    },
+    {
+      "file": "wowool/danish-endings@3.2.0.morph",
+      "lookup": "endings"
+    },
+    {
+      "file": "wowool/danish-numbers-std@3.2.0.morph",
+      "lookup": "compound_numbers"
+    }
+  ],
+  "property_chain": {
+    "abbrev": [
+      {
+        "file": "wowool/danish-abbreviation@3.2.0.morph",
+        "lookup": "plain"
+      }
+    ]
+  },
+  "short_description": "A language module that enriches words with root forms, part of speech and properties for Danish"
+}
