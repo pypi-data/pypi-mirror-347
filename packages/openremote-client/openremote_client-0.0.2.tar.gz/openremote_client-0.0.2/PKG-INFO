@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: openremote-client
+Version: 0.0.2
+Summary: Small client to connect to the OpenRemote Manager REST API
+Author-email: SpiderFrog <germanspiderfrog@gmail.com>
+License-Expression: GPL-3.0-or-later
+Project-URL: Homepage, https://github.com/Spider-Frog/openremote_client
+Project-URL: Issues, https://github.com/Spider-Frog/openremote_client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: httpx
+Requires-Dist: pydantic
+Dynamic: license-file
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
