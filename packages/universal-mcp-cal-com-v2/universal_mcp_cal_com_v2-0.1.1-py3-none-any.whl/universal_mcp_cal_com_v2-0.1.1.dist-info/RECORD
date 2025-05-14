@@ -1,0 +1,9 @@
+universal_mcp_cal_com_v2/README.md,sha256=G4nghGYCcG0PV1kaYJ1gtobxGTljYyZhEpC2FxcdyTQ,24560
+universal_mcp_cal_com_v2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universal_mcp_cal_com_v2/app.py,sha256=A_GqEkruLYKpYr6P4W7MzUuar-Ge8od47ujynM1xxd8,179856
+universal_mcp_cal_com_v2/mcp.py,sha256=it90f-e7kW60T76YzNg1FdDctN1kFuknm9a5YNmqCts,491
+universal_mcp_cal_com_v2-0.1.1.dist-info/METADATA,sha256=eYowkKwyc2kDNmyyOZpeW2URB1OXjZTaofcpZ_MwAC4,3454
+universal_mcp_cal_com_v2-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+universal_mcp_cal_com_v2-0.1.1.dist-info/entry_points.txt,sha256=7VVEBSHwCij7VDkSyDw7DUJlf2UeGFMm4rWjGYU91Qc,75
+universal_mcp_cal_com_v2-0.1.1.dist-info/licenses/LICENSE,sha256=NweDZVPslBAZFzlgByF158b85GR0f5_tLQgq1NS48To,1063
+universal_mcp_cal_com_v2-0.1.1.dist-info/RECORD,,
