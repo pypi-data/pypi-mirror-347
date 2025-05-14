@@ -1,0 +1,10 @@
+SpaMI/__init__.py,sha256=EWVwfbmRZ7deONgoFUiL4kI9FwVreb7-DMqPNd1EJVI,240
+SpaMI/main.py,sha256=Uuvb2oaIjzHtTlVwtBe-hpdgzoRK26eXkqKPT2Gz6_M,4522
+SpaMI/model.py,sha256=pFDkJsglG1KEfbmlHiyioRkqnXtVFeeM1bvzLTJ-6w4,8311
+SpaMI/preprocess.py,sha256=PAgL4T7FBEYIfLUP_EQkm2hlEeYbun_oHEDsWeOyp8s,9592
+SpaMI/utils.py,sha256=VphRS8C0A--kIxuZB00MIWFbRf0RhoTsK3emoVCCbwY,903
+spami-1.0.0.dist-info/licenses/LICENSE,sha256=WwQGHcQgSV1j-NNAZZD_r7f0Xi44cpha3xTHjbYwCpM,1092
+spami-1.0.0.dist-info/METADATA,sha256=AqdxcGtjpn14pPaqPC-zsXI8hUn4KL1yLq_1vBUsetk,3104
+spami-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+spami-1.0.0.dist-info/top_level.txt,sha256=6bPvy7y9eQZg-OPldNFZvF00i_XVHwuHme6dWC_YT9c,6
+spami-1.0.0.dist-info/RECORD,,
