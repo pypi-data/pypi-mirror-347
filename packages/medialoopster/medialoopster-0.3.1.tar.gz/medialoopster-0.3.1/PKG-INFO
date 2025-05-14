@@ -1,0 +1,131 @@
+Metadata-Version: 2.4
+Name: medialoopster
+Version: 0.3.1
+Summary: medialoopster API wrapper for Python
+Author-email: Stéphane Ludwig <stephane.ludwig@swr.de>
+License: MIT
+Project-URL: homepage, https://gitlab.com/medialoopster/medialoopster-python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests<3
+Requires-Dist: pydantic>2
+
+# medialoopster
+
+**medialoopster API wrapper for Python**
+
+_medialoopster_ is a wrapper library for the [HTTP API](https://docs.medialoopster.com/api) of the
+[medialoopster](https://www.medialoopster.com/) Media Asset Management System.
+
+## Installation
+
+```bash
+pip install medialoopster
+```
+
+## Features
+
+- Connect to medialoopster API with authentication
+- Retrieve and manage productions
+- Get, create, update, and delete assets (video, audio, image, project)
+- Search for assets by metadata
+- Archive and restore assets
+- Manage asset approval status
+- Handle shots and sequences for video assets
+
+## Usage Examples
+
+### Basic Connection
+
+```python
+from medialoopster import Medialoopster
+
+# Initialize the client
+client = Medialoopster(
+    url="https://medialoopster.example.com/api/",
+    user="username",
+    password="password",
+    verify=True  # Set to False to disable SSL verification
+)
+
+# Check if the API is reachable
+if client.ping():
+    print("Connected to medialoopster API!")
+else:
+    print("Failed to connect to medialoopster API")
+```
+
+### Working with Productions
+
+```python
+# Get all productions
+productions = client.productions()
+for production in productions:
+    print(f"Production: {production.name} (ID: {production.id})")
+
+# Get a specific production by ID
+production = client.production(production_id=123)
+
+# Get a specific production by name
+production = client.production(production_name="My Production")
+```
+
+### Working with Assets
+
+```python
+# Get video assets for a production
+assets = client.get_videoassets(production_id=123)
+for asset in assets:
+    print(f"Asset: {asset.get('name')} (ID: {asset.get('id')})")
+
+# Get a specific asset
+asset = client.get_asset(asset_id=456)
+
+# Import a new asset
+asset_id = client.asset_import(
+    production="My Production",
+    asset_type="video",
+    name="My Video",
+    path_file="/path/to/file.mp4",
+    meta_field_store={"key": "value"}
+)
+
+# Approve an asset
+client.approve_asset(asset_id=456)
+
+# Delete an asset
+client.delete_asset(asset_id=456)
+```
+
+### Error Handling
+
+```python
+from medialoopster import Medialoopster
+from medialoopster.exceptions import (
+    MedialoopsterError,
+    MedialoopsterConnectionError,
+    MedialoopsterAuthenticationError,
+    MedialoopsterNotFoundError
+)
+
+client = Medialoopster(url="https://medialoopster.example.com/api/")
+
+try:
+    asset = client.get_asset(asset_id=999999)
+except MedialoopsterNotFoundError:
+    print("Asset not found")
+except MedialoopsterConnectionError:
+    print("Connection error")
+except MedialoopsterError as e:
+    print(f"An error occurred: {e}")
+```
+
+## Documentation
+
+For more detailed documentation, please refer to the docstrings in the code or visit the [medialoopster API documentation](https://docs.medialoopster.com/api).
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
