@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "select-git-author"
+version = "0.2.1"
+description = "Interactively select the author for the next git commit"
+authors = ["Markus Grotz <markus.grotz@kit.edu>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+click-prompt = "^0.6.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+commit = 'select_git_author.cli:cli'
