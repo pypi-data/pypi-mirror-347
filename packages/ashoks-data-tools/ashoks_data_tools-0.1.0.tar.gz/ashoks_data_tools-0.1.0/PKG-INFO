@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: ashoks_data_tools
+Version: 0.1.0
+Summary: Tools for data processing and analysis
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/ashoks_data_tools
+Project-URL: Bug Tracker, https://github.com/yourusername/ashoks_data_tools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: numpy>=1.18.0
+Requires-Dist: matplotlib>=3.0.0
+Dynamic: license-file
+Dynamic: requires-python
+
+
+# Data Tools
+
+A Python package for data processing and analysis.
+
+## Features
+
+- Data cleaning utilities
+- Data transformation tools
+- Visualization helpers
+
+## Installation
+
+```
+pip install data-tools
+```
+
+## Usage
+
+```python
+from ashoks_data_tools import DataCleaner, transform_data
+
+# Clean your data
+cleaner = DataCleaner(your_dataframe)
+clean_data = cleaner.handle_missing_values(strategy='mean')
+
+# Transform your data
+normalized_data = transform_data(clean_data, transformation_type='normalize')
+```
+
+## License
+
+MIT

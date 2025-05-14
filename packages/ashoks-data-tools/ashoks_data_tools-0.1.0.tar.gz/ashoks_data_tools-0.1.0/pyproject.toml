@@ -1,0 +1,29 @@
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ashoks_data_tools"
+version = "0.1.0"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+description = "Tools for data processing and analysis"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas>=1.0.0",
+    "numpy>=1.18.0",
+    "matplotlib>=3.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/ashoks_data_tools"
+"Bug Tracker" = "https://github.com/yourusername/ashoks_data_tools/issues"
