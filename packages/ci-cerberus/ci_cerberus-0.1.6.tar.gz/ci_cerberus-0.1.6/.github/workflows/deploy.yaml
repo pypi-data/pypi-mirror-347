@@ -1,0 +1,11 @@
+name: test deploy workflow
+on:
+  - push
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy Step (safe)
+        id: deploy-step
+        uses: gavinroderick/deploy-step
