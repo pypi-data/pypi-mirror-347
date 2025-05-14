@@ -1,0 +1,77 @@
+Metadata-Version: 2.4
+Name: pycodar
+Version: 0.1.0
+Summary: Code Architecture System - A simple tool for auditing and understanding your codebase
+Home-page: https://github.com/QuentinWach/pycodar
+Author: Quentin Wach
+Author-email: quentin.wach@gmail.com
+Project-URL: Bug Tracker, https://github.com/QuentinWach/pycodar/issues
+Project-URL: Documentation, https://github.com/QuentinWach/pycodar#readme
+Keywords: code-analysis,architecture,metrics,codebase,development-tools
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rich>=10.0.0
+Requires-Dist: typer>=0.9.0
+Requires-Dist: pathspec>=0.11.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# PyCodar: A Radar for Your Code
+**A simple tool for auditing and understanding your codebase.**
+
+## Requirements
+- Python 3.6 or higher
+- pip (Python package installer)
+
+## Installation
+
+### Quick Install
+The easiest way to install PyCodar is using pip:
+```bash
+pip install pycodar
+```
+
+After installation, you should be able to use the `pycodar` command from anywhere in your terminal.
+
+### Development Install
+If you want to contribute to PyCodar or run it from source:
+```bash
+# Clone the repository
+git clone https://github.com/QuentinWach/pycodar.git
+cd pycodar
+
+# Install in development mode
+pip install -e .
+```
+
+## Usage
+After installation, you can use PyCodar from the command line:
+```bash
+pycodar stats [directory]
+```
+
+Below, you can see the result for PyCodar when we use `pycodar stats`. Note that PyCodar ingores files and directories specified in `.gitignore` and `.codarignore` (where you can optionally ignore gitignore).
+
+```
