@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+datemath-stubs/METADATA.toml
+datemath-stubs/__init__.pyi
+datemath-stubs/helpers.pyi
+datemath-stubs/py.typed
+types_python_datemath.egg-info/PKG-INFO
+types_python_datemath.egg-info/SOURCES.txt
+types_python_datemath.egg-info/dependency_links.txt
+types_python_datemath.egg-info/requires.txt
+types_python_datemath.egg-info/top_level.txt
