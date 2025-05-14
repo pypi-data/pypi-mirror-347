@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+hstock_mcp.egg-info/PKG-INFO
+hstock_mcp.egg-info/SOURCES.txt
+hstock_mcp.egg-info/dependency_links.txt
+hstock_mcp.egg-info/entry_points.txt
+hstock_mcp.egg-info/requires.txt
+hstock_mcp.egg-info/top_level.txt
+mcp_server_lib/__init__.py
+mcp_server_lib/akshare_provider.py
+mcp_server_lib/app.py
+mcp_server_lib/cli.py
+mcp_server_lib/yahoo_finance_provider.py

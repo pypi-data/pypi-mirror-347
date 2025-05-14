@@ -1,0 +1,2 @@
+[console_scripts]
+hstock-mcp = mcp_server_lib.cli:main
