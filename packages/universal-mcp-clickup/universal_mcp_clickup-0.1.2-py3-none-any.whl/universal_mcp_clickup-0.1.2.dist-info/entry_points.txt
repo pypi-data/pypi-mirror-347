@@ -1,0 +1,2 @@
+[console_scripts]
+universal_mcp_clickup = universal_mcp_clickup:main
