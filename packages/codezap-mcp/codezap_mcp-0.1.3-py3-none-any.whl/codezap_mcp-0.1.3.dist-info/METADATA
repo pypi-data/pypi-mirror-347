@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: codezap-mcp
+Version: 0.1.3
+Summary: ⚡️ The MCP Server designed to guide Vibe Coder's development.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.8.1
+Requires-Dist: requests>=2.32.3
+
+# CodeZap MCP Server
+
+⚡️ The MCP Server designed to guide Vibe Coder's development.
+
+## Overview
+
+CodeZap acts as your project's CTO, enabling you to make technology choices and architectural designs like a seasoned engineer from the start. It helps you develop production-ready products through vibe coding.
+
+## Features
+
+Provides the following docs for your project:
+
+1. **Project Requirements**
+   - Clarify product requirements through simple questions
+   - Communicate clear development goals to the LLM
+
+2. **Tech Stack**
+   - Choose the appropriate tech stack for your project
+   - Smooth Vibe Coding experience
+
+3. **Implementation Plan**
+   - Let LLM initialize your project
+   - Focus on Vibe Coding without leaving your IDE
+
+4. **AI IDE Rules**
+   - Efficient AI IDE rules (compliant with official best practices)
+   - Enhance consistency in code generation
+
+4. **Development Tips & Flow**
+   - Guide the direction of your product development
+   - Help you master the development process
+
+## Support
+
+For support and more information, visit [CodeZap's website](https://www.codezap.co/).
+
+---
+
+Copyright © 2025 - All rights reserved
