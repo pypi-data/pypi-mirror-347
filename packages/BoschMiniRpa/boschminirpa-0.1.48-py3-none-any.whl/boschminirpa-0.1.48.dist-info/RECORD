@@ -1,0 +1,13 @@
+BoschMiniRpa/__init__.py,sha256=fLlEGT7Moe7puRA6gYXLg4u3GqHkpw2xlbrevkCu6kc,33
+BoschMiniRpa/mini_rpa_core.py,sha256=o2nzDItJQfqvhY3VfBfpGULJBKfIJPEATRDcfHoN0oE,22391
+BoschMiniRpa/mini_rpa_database_functions.py,sha256=_kmhmQ1G80ciiAq_x-DiftTQlWk0t6KC8AoKdjDskiQ,3922
+BoschMiniRpa/mini_rpa_functions.py,sha256=wWW6bKysxMaNAGOMLqxb2CCA7GoNLlfU89Cniyk58jE,57817
+BoschMiniRpa/mini_rpa_hrs_customized_functions.py,sha256=K_0S2V06zBRLM4YUhsX1SUbCqqHqZbGF2KTPt5Nogz8,17392
+BoschMiniRpa/mini_rpa_manager.py,sha256=Fo5yBfJG18ACgLAdoaW6afhMm0e5MQjVWmE9UBQ65Rg,37890
+BoschMiniRpa/mini_rpa_sap_automation.py,sha256=xY5hiCSoHQJuFJLcehp8kYaQCrzCTLiNE0kyb8QDdsE,33760
+BoschMiniRpa/start_rpa.py,sha256=-ybwvNu7kCxcMsdalp7JWxkghw3_0oXSXA3eupoV5oc,8838
+boschminirpa-0.1.48.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+boschminirpa-0.1.48.dist-info/METADATA,sha256=KR_lrjvoiDEXLrRJPmdwp8ALjrHP-gCLwTyWhsjHVS0,899
+boschminirpa-0.1.48.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+boschminirpa-0.1.48.dist-info/top_level.txt,sha256=raBMYzUkVIVr_eTr569cEFNzshfD0-wfWTK6THZBwNw,13
+boschminirpa-0.1.48.dist-info/RECORD,,
