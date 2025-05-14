@@ -1,0 +1,42 @@
+Metadata-Version: 2.3
+Name: algosystem
+Version: 0.1.1
+Summary: A batteries-included pythonic library for AlgoGators members
+Author: AlgoGators Team
+Author-email: team@algogators.org
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=8.0.0)
+Requires-Dist: flask (>=3.1.0,<4.0.0)
+Requires-Dist: markdown (>=3.3.4)
+Requires-Dist: matplotlib (>=3.4.0)
+Requires-Dist: numpy (>=1.20.0)
+Requires-Dist: pandas (>=1.3.0)
+Requires-Dist: pyarrow (>=19.0.1,<20.0.0)
+Requires-Dist: pyqtgraph (>=0.13.7,<0.14.0)
+Requires-Dist: pytz (>=2021.1)
+Requires-Dist: pyyaml (>=5.4.0)
+Requires-Dist: quantstats (>=0.0.64,<0.0.65)
+Requires-Dist: requests (>=2.25.0)
+Requires-Dist: rich (>=14.0.0,<15.0.0)
+Requires-Dist: scipy (>=1.7.0)
+Requires-Dist: seaborn (>=0.11.0)
+Requires-Dist: sqlalchemy (>=1.4.0)
+Requires-Dist: weasyprint (>=53.0)
+Project-URL: Homepage, https://github.com/algogators/algosystem
+Description-Content-Type: text/markdown
+
+
+# README.md
+# AlgoSystem
+
+A 'batteries-included' pythonic library for AlgoGators members to streamline development workflow.
+
