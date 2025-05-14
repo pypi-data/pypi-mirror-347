@@ -1,0 +1,2 @@
+[console_scripts]
+universal_mcp_crustdata = universal_mcp_crustdata:main
