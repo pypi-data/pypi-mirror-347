@@ -1,0 +1,2 @@
+[console_scripts]
+vini = vini._cli_wrapper:main
