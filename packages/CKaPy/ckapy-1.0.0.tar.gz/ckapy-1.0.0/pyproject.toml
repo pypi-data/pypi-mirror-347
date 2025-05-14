@@ -1,0 +1,24 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CKaPy"
+version = "1.0.0"
+description = "A collection of tools from my Ph.D. in physics."
+readme = "README.md"
+authors = [{ name = "Connor Kapahi", email = "connorkapahi@gmail.com" }]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = ["numpy >= 1.0.0"]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/ckapahi/ckapy"
+Issues = "https://github.com/ckapahi/ckapy/issues"
