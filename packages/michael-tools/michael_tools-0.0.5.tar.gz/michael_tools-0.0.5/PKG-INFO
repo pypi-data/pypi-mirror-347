@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: michael_tools
+Version: 0.0.5
+Summary: This is my personal toolkit
+Author: Michael Smith
+Author-email: 1422749310@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+
+https://pypi.org/project/michael-tools/
+Personal toolkit
+
+file_operation
+- create_file
+- delete_file
+- read_file
+- get_unique_filepath
+- append_to_file
+
+json_operation
+- dict_to_str
+- str_to_dict
+- read_file_to_dict
+- write_dict_to_file
+
+time_operation
+- get_current_time
+- get_n_days_ago
+- get_current_time_str
+- get_current_date_str
+
+`0.0.5` current version
+
+Hope it helps you!
