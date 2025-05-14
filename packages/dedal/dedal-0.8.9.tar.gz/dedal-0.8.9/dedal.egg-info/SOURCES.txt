@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+dedal/__init__.py
+dedal/fetch_cached_sources.py
+dedal/specfile_dag_hash.py
+dedal/specfile_storage_path_build.py
+dedal/specfile_storage_path_source.py
+dedal/update_cached_buildresults.py
+dedal/update_cached_sources.py
+dedal.egg-info/PKG-INFO
+dedal.egg-info/SOURCES.txt
+dedal.egg-info/dependency_links.txt
+dedal.egg-info/entry_points.txt
+dedal.egg-info/requires.txt
+dedal.egg-info/top_level.txt
+dedal/logger/logging.conf
