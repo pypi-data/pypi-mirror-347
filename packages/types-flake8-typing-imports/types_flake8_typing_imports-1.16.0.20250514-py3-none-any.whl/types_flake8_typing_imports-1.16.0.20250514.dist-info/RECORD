@@ -1,0 +1,8 @@
+flake8_typing_imports-stubs/METADATA.toml,sha256=K7QekVTHYx-wXsLNH-tsBN7SEx9gEhHmakoIkznEmqU,157
+flake8_typing_imports-stubs/__init__.pyi,sha256=eYq-R_2dTH9KjS86uf3HvwBBTFg3CMIVNQ42ikBIugo,553
+flake8_typing_imports-stubs/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+types_flake8_typing_imports-1.16.0.20250514.dist-info/licenses/LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+types_flake8_typing_imports-1.16.0.20250514.dist-info/METADATA,sha256=xmnIjf_gxO_cyusp83HJ5IwVBqPgeF3Ekp7xXLku0OY,2157
+types_flake8_typing_imports-1.16.0.20250514.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+types_flake8_typing_imports-1.16.0.20250514.dist-info/top_level.txt,sha256=aXxAbfV1nEZVpsaQkaxrzXmrINYxvkhmAxGkvwIB-R0,28
+types_flake8_typing_imports-1.16.0.20250514.dist-info/RECORD,,
