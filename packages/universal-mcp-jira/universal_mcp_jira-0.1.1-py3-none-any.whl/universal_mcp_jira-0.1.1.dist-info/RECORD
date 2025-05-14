@@ -1,0 +1,9 @@
+universal_mcp_jira/README.md,sha256=JNgKKLkDKxeYtlc2dTts5R26wRZ-9HePWpOEOAXTTU8,90966
+universal_mcp_jira/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universal_mcp_jira/app.py,sha256=TUNQa1kgsHnQtEY9P-5CNhIWBA7THacHsx9xpu0IKN4,910682
+universal_mcp_jira/mcp.py,sha256=uU-FdAvnqCZZj0I8etCG9apzQaZQ_TN8MlJUWQ3elrE,488
+universal_mcp_jira-0.1.1.dist-info/METADATA,sha256=eYuTKITufPZmnRKNyysM7rW6beYbdHRRaiqpUXx-_Mw,3342
+universal_mcp_jira-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+universal_mcp_jira-0.1.1.dist-info/entry_points.txt,sha256=vV9XBHWGWmAeW7YFks-Xt64lR77LfT_nFoyTCg9SYcI,63
+universal_mcp_jira-0.1.1.dist-info/licenses/LICENSE,sha256=NweDZVPslBAZFzlgByF158b85GR0f5_tLQgq1NS48To,1063
+universal_mcp_jira-0.1.1.dist-info/RECORD,,
