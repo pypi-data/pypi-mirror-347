@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/ediel/__init__.py
+src/ediel/filename.py
+src/ediel/mig.py
+src/ediel/misc.py
+src/ediel/twowire.py
+src/ediel/uniformat.py
+src/ediel.egg-info/PKG-INFO
+src/ediel.egg-info/SOURCES.txt
+src/ediel.egg-info/dependency_links.txt
+src/ediel.egg-info/requires.txt
+src/ediel.egg-info/top_level.txt

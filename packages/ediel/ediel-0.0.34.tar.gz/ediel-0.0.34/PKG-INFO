@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: ediel
+Version: 0.0.34
+Summary: Parsers for Energie Data Files
+Author-email: Jan Pecinovsky <jan@energieid.be>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cached-property>=2.0.1
+Requires-Dist: pandas>=2.0.3
+Dynamic: license-file
+
+# ediel
+Python parser for EDIEL communications
