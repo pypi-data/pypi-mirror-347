@@ -1,0 +1,2 @@
+[console_scripts]
+universal_mcp_openai = universal_mcp_openai:main

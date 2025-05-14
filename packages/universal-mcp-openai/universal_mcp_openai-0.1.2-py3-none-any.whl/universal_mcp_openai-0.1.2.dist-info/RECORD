@@ -1,0 +1,9 @@
+universal_mcp_openai/README.md,sha256=X_-XwkoggEQzYUhldX1t6KMg5ESVdiG9njp5YR0vLNY,1621
+universal_mcp_openai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universal_mcp_openai/app.py,sha256=mqsUq7oVi2QjSRcScdpTdUhFnZMGtkD7ajkQvHxUU0U,36531
+universal_mcp_openai/mcp.py,sha256=biCghJAy5vKtDCpJ_WO6kapiUHG53_CGIMeixb0dpps,479
+universal_mcp_openai-0.1.2.dist-info/METADATA,sha256=V845vEQQGhYxstoKdHcV46wGBmCL40Eud4CsQ-g-t90,3400
+universal_mcp_openai-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+universal_mcp_openai-0.1.2.dist-info/entry_points.txt,sha256=wAEy-yXkwhdRmLelFzYZZuzwz_kEwu3ZKr1VhrTaSa0,67
+universal_mcp_openai-0.1.2.dist-info/licenses/LICENSE,sha256=NweDZVPslBAZFzlgByF158b85GR0f5_tLQgq1NS48To,1063
+universal_mcp_openai-0.1.2.dist-info/RECORD,,
