@@ -1,0 +1,3 @@
+[console_scripts]
+humanfuzz = humanfuzz.cli:cli
+humanfuzz_cli = humanfuzz.cli_main:main
