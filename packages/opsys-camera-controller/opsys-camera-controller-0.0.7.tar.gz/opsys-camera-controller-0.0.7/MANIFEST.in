@@ -1,0 +1,3 @@
+recursive-include opsys_camera_controller/ids *.pyd
+recursive-include opsys_camera_controller/ids *.dll
+global-include *.pyd
