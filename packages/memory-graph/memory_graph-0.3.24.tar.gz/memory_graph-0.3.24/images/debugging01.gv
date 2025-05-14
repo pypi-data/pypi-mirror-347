@@ -1,0 +1,29 @@
+digraph memory_graph {
+	node [shape=plaintext]
+	node137149782331968 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="lightcoral" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD><TD BORDER="1"> 1 </TD></TR>
+</TABLE>
+> xlabel=list]
+	node137149771988288 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="lightcoral" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD><TD BORDER="1"> 1 </TD></TR>
+</TABLE>
+> xlabel=list]
+	node137149782330176 [label=<
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="lightcoral" PORT="table">
+    <TR><TD BORDER="0"><font color="#505050">0</font></TD></TR>
+    <TR><TD BORDER="1" PORT="ref0"> </TD></TR>
+</TABLE>
+> xlabel=list]
+	node137149782330176:ref0 -> node137149771988288:table [style=solid]
+	node137149782646464 [label=<
+<TABLE BORDER="3" CELLBORDER="1" CELLSPACING="5" CELLPADDING="0" BGCOLOR="#60a5ff" PORT="table">
+    <TR><TD BORDER="1" STYLE="ROUNDED"> image </TD><TD BORDER="1" STYLE="ROUNDED"> squares </TD><TD BORDER="1" STYLE="ROUNDED"> squares_collector </TD><TD BORDER="1" STYLE="ROUNDED"> i </TD></TR>
+    <TR><TD BORDER="1"> 1 </TD><TD BORDER="1" PORT="ref0"> </TD><TD BORDER="1" PORT="ref1"> </TD><TD BORDER="1"> 1 </TD></TR>
+</TABLE>
+> xlabel=dict]
+	node137149782646464:ref0 -> node137149782331968:table [style=solid]
+	node137149782646464:ref1 -> node137149782330176:table [style=solid]
+subgraph { rank=same; node137149782331968 -> node137149782330176[weight=10, style=invis]; }
+}
