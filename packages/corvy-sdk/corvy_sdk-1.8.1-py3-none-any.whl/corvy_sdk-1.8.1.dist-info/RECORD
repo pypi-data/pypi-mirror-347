@@ -1,0 +1,10 @@
+corvy_sdk/__init__.py,sha256=2gEhbBGMkr1uY57TK9yQ05WSne8DePxXhyuFv41nWQM,192
+corvy_sdk/command_parsing.py,sha256=OohpN2W9HCb0Sf36cMfrwwlJSN6eMwXeqItoUgCFDLE,3798
+corvy_sdk/corvybot.py,sha256=u6vUxTdl-bDzwl9OPhBS3tJ-NCqZ4Yg96qrizdSj4cs,9796
+corvy_sdk/default_logger.py,sha256=2atdKUZI_dpWPKaC3ithDZY5jp-_UdMyo36mFhJ3p28,1197
+corvy_sdk/messages.py,sha256=7MQbP_Re3ZqvtHOs1UnA3K7REjq-swYobfG5NybId3s,326
+corvy_sdk/partials.py,sha256=Yrs_JeGqvkdqd9nGsS_INO_vWVS-_mWr6uibaMEyQt4,99
+corvy_sdk-1.8.1.dist-info/METADATA,sha256=TZx8sC6toSs45dXVnwb5fRWF2ISoC4o7WuvbBLTcjcc,1134
+corvy_sdk-1.8.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+corvy_sdk-1.8.1.dist-info/top_level.txt,sha256=IuyILCmh2jB_0_7VEwTdzFAnB30rj_5rh-IfblZ5PBw,10
+corvy_sdk-1.8.1.dist-info/RECORD,,
