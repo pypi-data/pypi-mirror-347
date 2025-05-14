@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+jsonplate/__init__.py
+jsonplate/errors.py
+jsonplate/jsonplate.py
+jsonplate/lexer.py
+jsonplate/parser.py
+jsonplate/templater.py
+jsonplate.egg-info/PKG-INFO
+jsonplate.egg-info/SOURCES.txt
+jsonplate.egg-info/dependency_links.txt
+jsonplate.egg-info/top_level.txt
