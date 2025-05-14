@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: semantic-embeddings
+Version: 0.1.0
+Summary: Package for creating rank-based semantic and contextual embeddings.
+Author-email: Thiago César Castilho Almeida <tc.almeida@unesp.br>, Lucas Pascotti Valem <lucaspascottivalem@gmail.com>, Daniel Carlos Guimarães Pedronette <pedronette@gmail.com>
+License: GPL-2.0
+Keywords: semantic,graph embedding,dimensionality reduction,ranking,unsupervised learning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Dynamic: license-file
+
+# semantic-embeddings
+
+Package for creating rank-based semantic and contextual embeddings via RaDE and GRaCE algorithms.
+
+## Features
+
+- **Rank-based Graph Embedding**  
+  No costly optimization—embeddings derive solely from top-K ranked similarity lists.
+- **High-Effectiveness Representatives**  
+  Selects “leader” nodes by rank-based measures to act as semantically meaningful dimensions.
+- **Interpretable Embeddings**  
+  Each vector dimension corresponds to similarity to a representative node.
+
+## Installation
+
+```bash
+pip install semantic-embeddings

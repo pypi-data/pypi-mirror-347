@@ -1,0 +1,12 @@
+semantic_embeddings-0.1.0.dist-info/licenses/LICENSE,sha256=kLZkpvvIKzhZXLs5YGJovvCy65t2sOngOCa-_iBBkLs,18045
+sembeddings/__init__.py,sha256=jnsyHEyBpqowoIaelmg-y1SeC2Bi5r--FsnsdCnx5oA,180
+sembeddings/grace.py,sha256=i7ultcSICmCRGaCK5-UQo4k7XkV93wEn64GZrh_hNdQ,7261
+sembeddings/rade.py,sha256=X_Fj6YNrB8-ZZY2-SdhJeFfRSJmWG3WJ9iruDT9Aptg,6277
+sembeddings/utils.py,sha256=4NmKrepgnC6-dJnzrlCHjjunBJpmpN17qL-jz8hOKLg,630
+sembeddings/measures/__init__.py,sha256=P05toSktADZKr7REFI3w7Kut9kiPATbLeEI0zJCTADQ,102
+sembeddings/measures/correlation.py,sha256=nVYFGnguR2f1CrBM4qrwfQEJBI1SlylUtEDkNv65CFM,2318
+sembeddings/measures/qpp.py,sha256=1wheq2MWkdfOf3HBPY_RWBHS4dZARegqdS9TIasyaKc,2015
+semantic_embeddings-0.1.0.dist-info/METADATA,sha256=0OKeEenawd-RWvQdwPBRZH-lA7w2z4OD3eVptpRgtxA,1435
+semantic_embeddings-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+semantic_embeddings-0.1.0.dist-info/top_level.txt,sha256=pd3UBNuRsF0IB4BJ8VLNQPS_xGAA5ICrdRLl68cjIIk,12
+semantic_embeddings-0.1.0.dist-info/RECORD,,
