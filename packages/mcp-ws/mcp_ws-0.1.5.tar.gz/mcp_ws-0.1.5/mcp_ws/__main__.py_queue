@@ -1,0 +1,133 @@
+import argparse
+import asyncio
+import sys
+import websockets
+import os
+import json
+from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
+
+# Helper function to read stdin and put lines into a queue
+def _read_stdin(queue, log_messages=None):
+    """Read from stdin in a separate thread and put lines into the queue."""
+    try:
+        for line in sys.stdin:
+            line = line.strip()
+            if line:  # Only queue non-empty lines
+                if log_messages:
+                    with open(log_messages, 'a') as f:
+                        f.write(f'> {line}\n')
+                queue.put_nowait(line)
+            
+            # Check if stdin is a TTY and was closed
+            if not sys.stdin.isatty() and not line:
+                break
+    except Exception as e:
+        print(f"Error reading from stdin: {e}", file=sys.stderr)
+    finally:
+        # Signal end of input with None
+        queue.put_nowait(None)
+
+async def connect_stdio_to_ws(url, headers=None, log_messages=None):
+    try:
+        headers_dict = {}
+        if headers:
+            try:
+                headers_dict = json.loads(headers)
+            except json.JSONDecodeError as e:
+                print(f"Error parsing headers JSON: {e}", file=sys.stderr)
+                sys.exit(1)
+        
+        # Create a queue for stdin lines
+        stdin_queue = asyncio.Queue()
+        
+        # Start stdin reader in a separate thread
+        loop = asyncio.get_running_loop()
+        executor = ThreadPoolExecutor(max_workers=1)
+        stdin_future = loop.run_in_executor(
+            executor, _read_stdin, stdin_queue, log_messages
+        )
+        
+        # In websockets 15.0+, we need to use 'additional_headers' instead of 'extra_headers'
+        async with websockets.connect(url, additional_headers=headers_dict) as ws:
+            
+            # Task to get lines from queue and send to WebSocket
+            async def send_stdin():
+                while True:
+                    # This will wait until a line is available, no sleep needed!
+                    line = await stdin_queue.get()
+                    
+                    # None signals EOF
+                    if line is None:
+                        break
+                    
+                    try:
+                        await ws.send(line)
+                        stdin_queue.task_done()
+                    except Exception as e:
+                        print(f"Error sending to WebSocket: {e}", file=sys.stderr)
+                        break
+
+            # Task to receive from WebSocket and print to stdout
+            async def receive_ws():
+                try:
+                    async for message in ws:
+                        if log_messages:
+                            with open(log_messages, 'a') as f:
+                                f.write(f'< {message}\n')
+                        print(message, flush=True)
+                except Exception as e:
+                    print(f"Error receiving from WebSocket: {e}", file=sys.stderr)
+                    # Make sure to signal the sender to stop if the connection breaks
+                    stdin_queue.put_nowait(None)
+
+            # Create tasks for sending and receiving
+            sender = asyncio.create_task(send_stdin())
+            receiver = asyncio.create_task(receive_ws())
+            
+            # Wait for any task to complete
+            done, pending = await asyncio.wait(
+                [sender, receiver, stdin_future],
+                return_when=asyncio.FIRST_COMPLETED
+            )
+            
+            # Clean up remaining tasks
+            for task in pending:
+                if hasattr(task, 'cancel'):  # Only asyncio.Tasks can be cancelled
+                    task.cancel()
+            
+            # Wait for remaining tasks to clean up
+            if pending:
+                await asyncio.wait(pending, timeout=2)
+    except Exception as e:
+        print(f"WebSocket connection error: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Connect local stdio to a remote WebSocket server"
+    )
+    parser.add_argument("url", help="WebSocket server URL (e.g., ws://example.com)")
+    parser.add_argument(
+        "--headers", 
+        "-H", 
+        help='Additional HTTP headers as JSON string (e.g., \'{"Authorization": "Bearer token"}\')'
+    )
+    parser.add_argument(
+        "--log-messages",
+        "-L",
+        help="Write messages into a logfile for debugging purposes."
+    )
+    args = parser.parse_args()
+
+    if args.log_messages:
+        with open(args.log_messages, 'a') as f:
+            f.write(f'Server started at {datetime.now()}\n')
+
+    # Run the async WebSocket connection
+    asyncio.run(connect_stdio_to_ws(args.url, args.headers, args.log_messages))
+
+
+if __name__ == "__main__":
+    main()
