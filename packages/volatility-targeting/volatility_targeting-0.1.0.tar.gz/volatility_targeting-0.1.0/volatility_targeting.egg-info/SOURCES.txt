@@ -1,0 +1,9 @@
+README.md
+setup.py
+volatility_targeting/__init__.py
+volatility_targeting/core.py
+volatility_targeting.egg-info/PKG-INFO
+volatility_targeting.egg-info/SOURCES.txt
+volatility_targeting.egg-info/dependency_links.txt
+volatility_targeting.egg-info/requires.txt
+volatility_targeting.egg-info/top_level.txt
