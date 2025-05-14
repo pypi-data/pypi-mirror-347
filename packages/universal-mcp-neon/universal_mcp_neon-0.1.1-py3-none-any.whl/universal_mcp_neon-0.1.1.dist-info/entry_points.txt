@@ -1,0 +1,2 @@
+[console_scripts]
+universal_mcp_neon = universal_mcp_neon:main

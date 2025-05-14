@@ -1,0 +1,9 @@
+universal_mcp_neon/README.md,sha256=O2JPvjJirRi8GNcLGAk-p0qa_KfV8ClTHvXk_LbT_dA,7132
+universal_mcp_neon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universal_mcp_neon/app.py,sha256=pGP4uNysbvP1MQ2wNFwwH-K-3vebO4PSxdVx1iOnUk4,84636
+universal_mcp_neon/mcp.py,sha256=mDYeGhdFMZic9XXm-ajQxXqDUNGMqe9IcPWEv1Pudcg,476
+universal_mcp_neon-0.1.1.dist-info/METADATA,sha256=Z54XNMUo-TYAqA5_T2Rdam4BobnxVhLx_EVQ-17oZQ0,3342
+universal_mcp_neon-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+universal_mcp_neon-0.1.1.dist-info/entry_points.txt,sha256=dSTmpPx06wffdueEzIvdHQi-d31tOIGJpsPH1oFpYeQ,63
+universal_mcp_neon-0.1.1.dist-info/licenses/LICENSE,sha256=NweDZVPslBAZFzlgByF158b85GR0f5_tLQgq1NS48To,1063
+universal_mcp_neon-0.1.1.dist-info/RECORD,,
