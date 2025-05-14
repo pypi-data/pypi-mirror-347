@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pysup"
+version = "0.1.19"
+description = ""
+authors = ["arian <arian24b@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+httpx = "^0.28.1"
+python-decouple = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+respect-gitignore = true
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
