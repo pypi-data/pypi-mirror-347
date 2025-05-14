@@ -1,0 +1,6 @@
+span.mdsci_color {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: bottom;
+    gap: 0.1rem;
+}

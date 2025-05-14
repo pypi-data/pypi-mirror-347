@@ -1,0 +1,40 @@
+[project]
+name = "mdsci"
+version = "0.0.2"
+authors = [
+    {name = "wklchris"},
+]
+description = "Extended Markdown syntax for scientific writing"
+
+readme = "ReadMe.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+license = "MIT"
+license-files = ["LICENSE"]
+
+dependencies = [
+    "pandocfilters >=1.5"
+]
+
+[project.urls]
+Homepage = "https://github.com/wklchris/mdsci"
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+mdsci = "mdsci.cli:main"
+mdsci-filter = "mdsci.main_filter:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mdsci = ["styles/*.css"]
