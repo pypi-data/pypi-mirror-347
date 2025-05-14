@@ -1,0 +1,123 @@
+# MCP行情服务器 (uv本地安装包) - 安装与使用指南
+
+## 1. 概述
+
+本项目提供了一个基于Flask的A股行情数据服务器，旨在通过MCP (模型上下文协议) 提供服务。您可以将此服务器打包并通过`uv`在本地环境中安装和运行。
+
+主要功能包括：
+
+*   获取A股指定标的（指数、个股、ETF等）的历史行情数据（日/周/月频）。
+*   获取上海证券交易所最新的股票数据总貌。
+*   提供深圳证券交易所行业成交数据的接口（目前为占位符，具体功能待进一步实现）。
+
+## 2. 先决条件
+
+*   **Python 3.11 或更高版本**
+*   **uv**: 一个快速的Python包安装器和解析器。如果尚未安装，请参照其官方文档安装 (通常 `pip install uv`)。
+
+## 3. 安装步骤
+
+### Using uv
+
+1. Install uv if you haven't already:
+   ```bash
+   pip install uv
+   ```
+
+2. Install the package using uv:
+   ```bash
+   uv pip install hstock-mcp
+   ```
+
+## 4. 运行服务器
+
+安装完成后，推荐使用以下命令通过Python模块执行方式来启动服务器。这种方式可以确保在不同环境下都能准确找到入口点。
+
+```bash
+python -m mcp_server_lib.cli --host <your_desired_host> --port <your_desired_port>
+```
+
+例如，要在本地 `127.0.0.1` 的 `8888` 端口启动服务器：
+
+```bash
+python -m mcp_server_lib.cli --host 127.0.0.1 --port 8888
+```
+
+服务器启动后，您会看到类似以下的输出：
+
+```
+Starting MCP Server on http://127.0.0.1:8888
+ * Serving Flask app 'mcp_server_lib.app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+Press CTRL+C to quit
+```
+
+**命令行参数说明:**
+
+*   `--host <ip_address>`: 服务器监听的主机地址 (默认为 `127.0.0.1`)。使用 `0.0.0.0` 可以让服务器从网络中的其他计算机访问。
+*   `--port <port_number>`: 服务器监听的端口号 (默认为 `5000`)。
+*   `--debug`: 启用Flask的调试模式 (默认为关闭)。
+
+**关于 `mcp-server` 命令:**
+
+虽然 `pyproject.toml` 中定义了 `mcp-server` 命令行脚本，但根据 `uv` 的安装方式和您的环境PATH配置，此命令可能不会被直接添加到系统的PATH中。因此，**强烈建议使用 `python -m mcp_server_lib.cli` 的方式来启动服务器**，以确保跨环境的兼容性和可靠性。
+
+## 5. API接口简述
+
+服务器启动后，可以通过HTTP GET请求访问以下端点：
+
+*   `/mcp/marketdata/history`：获取A股历史行情数据。
+    *   参数: `symbol`, `frequency`, `start_date` (可选), `end_date` (可选)
+    *   示例: `curl "http://127.0.0.1:8888/mcp/marketdata/history?symbol=000001.SZ&frequency=daily&start_date=2024-04-01&end_date=2024-04-30"`
+
+*   `/mcp/marketdata/sse/overview`：获取上海证券交易所股票数据总貌。
+    *   示例: `curl "http://127.0.0.1:8888/mcp/marketdata/sse/overview"`
+    *   注意：此接口的部分数据字段可能因上游数据源问题返回空值。
+
+*   `/mcp/marketdata/szse/industry_transactions`：获取深圳证券交易所行业成交数据 (当前为占位符，返回501错误)。
+    *   参数: `symbol`, `date`
+    *   示例: `curl "http://127.0.0.1:8888/mcp/marketdata/szse/industry_transactions?symbol=000001&date=20231231"`
+
+详细的API设计文档 (`api_design_*.md`) 之前已提供，可供参考。
+
+## 6. 项目文件结构 (uv包源文件)
+
+```
+mcp_server_uv_pkg/
+├── mcp_server_lib/           # 主要的Python包代码
+│   ├── __init__.py
+│   ├── app.py                # Flask应用定义和API路由
+│   ├── akshare_provider.py   # AKShare数据源接口实现
+│   ├── yahoo_finance_provider.py # Yahoo Finance数据源接口实现
+│   └── cli.py                # 命令行入口脚本
+├── pyproject.toml            # uv 和 setuptools 构建配置文件
+├── requirements.txt          # 依赖列表 (主要供参考，uv使用pyproject.toml)
+└── README.md                 # (本文件) 安装与使用指南
+```
+
+## 7. 故障排除与已知问题
+
+*   **`mcp-server` 命令未找到**: 如上所述，请使用 `python -m mcp_server_lib.cli` 启动。
+*   **上交所数据总貌字段为空**: 部分数据字段可能返回`null`，这可能源于AKShare上游数据的问题。
+*   **深交所行业成交数据未实现**: 此功能当前返回501错误，待后续找到合适的数据源后实现。
+
+如果您在安装或使用过程中遇到任何问题，请检查Python环境、uv安装以及依赖项是否正确安装。
+
+## 8. 在 Claude Desktop 中使用
+
+### In Claude Desktop
+
+1. Open Claude Desktop.
+2. Navigate to the project directory.
+3. Run the server:
+   ```bash
+   python -m hstock-mcp
+   ```
+
+## 9. License
+
+MIT
+
