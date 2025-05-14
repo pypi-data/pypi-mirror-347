@@ -1,0 +1,10 @@
+README.md
+setup.py
+frony_document_processor/chunker.py
+frony_document_processor/embedder.py
+frony_document_processor/parser.py
+frony_document_processor.egg-info/PKG-INFO
+frony_document_processor.egg-info/SOURCES.txt
+frony_document_processor.egg-info/dependency_links.txt
+frony_document_processor.egg-info/requires.txt
+frony_document_processor.egg-info/top_level.txt
