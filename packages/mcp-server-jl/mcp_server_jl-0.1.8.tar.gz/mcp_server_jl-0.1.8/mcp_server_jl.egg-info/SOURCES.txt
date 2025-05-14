@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+mcp_server_jl/__init__.py
+mcp_server_jl/cli.py
+mcp_server_jl.egg-info/PKG-INFO
+mcp_server_jl.egg-info/SOURCES.txt
+mcp_server_jl.egg-info/dependency_links.txt
+mcp_server_jl.egg-info/entry_points.txt
+mcp_server_jl.egg-info/requires.txt
+mcp_server_jl.egg-info/top_level.txt
