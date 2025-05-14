@@ -1,0 +1,9 @@
+datasette_chronicle/__init__.py,sha256=-23AUu5_Sd1s8636832myL3JRJB9Q-85g5M48SoYSy8,8264
+datasette_chronicle/templates/disable-chronicle.html,sha256=Y99RgiuoLAc8Ud1wDt5nTpqTlm-ixlUI0BLcr7LQL5k,610
+datasette_chronicle/templates/enable-chronicle.html,sha256=kZw4vat8H1B-XwbAcvkxh3Wy4ZrdQdtkvrVop2xldAg,632
+datasette_chronicle-0.3.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasette_chronicle-0.3.dist-info/METADATA,sha256=aUYF_7rDvG9gIRjCBEBMkKl70AqA0OgfFWQZ4RNBj0A,2631
+datasette_chronicle-0.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+datasette_chronicle-0.3.dist-info/entry_points.txt,sha256=eiYdqKdpfFFKHs-zw915CrbHZguIWQeQYUajOYkco_4,44
+datasette_chronicle-0.3.dist-info/top_level.txt,sha256=5MwPQN8tOER9vJJmcf53qhhE-Q6gfqkJBZgwU42_uqI,20
+datasette_chronicle-0.3.dist-info/RECORD,,
