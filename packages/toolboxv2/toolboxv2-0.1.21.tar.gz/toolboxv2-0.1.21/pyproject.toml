@@ -1,0 +1,147 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toolboxv2"
+version = "0.1.21"
+description = "Add your description here"
+readme = "README.md"
+# Aktiviert dynamisch das Einlesen von optional-dependencies
+dynamic = ["optional-dependencies"]
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.11.13",
+    "cachetools>=5.5.2",
+    "cryptography>=44.0.1",
+    "fastapi>=0.115.9",
+    "fuzzywuzzy>=0.18.0",
+    "ipython>=8.32.0",
+    "networkx>=3.4.2",
+    "numpy>=2.2.3",
+    "packaging>=24.2",
+    "pyjwt>=2.10.1",
+    "python-dotenv>=1.0.1",
+    "pyyaml>=6.0.2",
+    "qrcode>=8.0",
+    "radon>=6.0.1",
+    "redis>=5.2.1",
+    "reedsolo>=1.7.0",
+    "requests>=2.32.3",
+    "scikit-learn>=1.6.1",
+    "toml>=0.10.2",
+    "tqdm>=4.67.1",
+    "transformers>=4.49.0",
+    "watchfiles>=1.0.4",
+    "webauthn>=2.5.1",
+    "schedule>=1.2.2",
+    "websockets>=15.0.1",
+    "mailjet-rest>=1.3.4",
+    "psutil>=7.0.0",
+]
+
+[project.scripts]
+tb = "toolboxv2.__main__:main_runner"
+
+[tool.uv]
+package = true
+dev-dependencies = [
+    "pytest>=8.3.5",
+    "webauthn",
+    "mailjet_rest",
+    "redis",
+    "watchfiles",
+    "SQLAlchemy",
+    "Faker",
+    "playwright",
+    "radon",
+    "setuptools",
+    "mkdocs-material>=9.6.13",
+    "mkdocs>=1.6.1",
+    "mkdocstrings[python]>=0.29.1",
+    "mkdocstrings-python-legacy>=0.2.6",
+    "mkdocs-git-revision-date-plugin>=0.3.2",
+    "mkdocs-jupyter>=0.25.1",
+    "ipykernel>=6.29.5",
+    "ruff>=0.11.9",
+    "bandit>=1.8.3",
+    "safety>=3.2.4",
+]
+
+[tool.uv.workspace]
+members = ["toolboxv2/mods/isaa"]
+
+[tool.setuptools.dynamic]
+# Definiert für die Extra-Gruppe "isaa" die Quelldatei
+optional-dependencies = { isaa = { file = ["toolboxv2/mods/isaa/requirements.txt"] } }
+
+[tool.uv.sources]
+isaa = { workspace = true }
+
+
+[tool.ruff]
+line-length = 90
+target-version = "py311"
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+    "python_env",
+]
+
+# Konfiguration für den Linter
+[tool.ruff.lint]
+# Wählen Sie einen Basissatz an Regeln und fügen Sie die 'S' Regeln für Sicherheit hinzu.
+# E = pycodestyle errors
+# W = pycodestyle warnings
+# F = Pyflakes
+# I = isort (Import-Sortierung)
+# S = flake8-bandit (Sicherheitsregeln)
+# UP = pyupgrade (Syntax-Modernisierung)
+# B = flake8-bugbear (mögliche Bugs oder Designprobleme)
+# Weitere nützliche Sets: A (flake8-builtins), C4 (flake8-comprehensions), SIM (flake8-simplify)
+select = [
+    # "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # Pyflakes
+    "I",  # isort
+    "S",  # flake8-bandit (Sicherheit)
+    "UP", # pyupgrade
+    "B",  # flake8-bugbear
+    # "A",  # flake8-builtins (Achtung, kann sehr detailreich sein)
+    # "C4", # flake8-comprehensions
+    "SIM",# flake8-simplify
+]
+ignore = ["E501", "S101", "S603","S607", "S104", "E701", "E702"]
+
+# Optional: Regeln, die automatisch korrigiert werden können (wenn --fix verwendet wird)
+# Ruff hat gute Standardwerte, aber Sie können es hier anpassen.
+# fixable = ["ALL"] # Vorsicht bei "ALL", besonders bei 'S' Regeln
+# unfixable = []
+
+# Optional: Spezifische Konfigurationen für flake8-bandit
+# [tool.ruff.lint.flake8-bandit]
+# requests-timeout = 10 # Für S113 (requests without timeout), Standard ist 5
