@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+readme.md
+randomcoords/__init__.py
+randomcoords/core.py
+randomcoords/types.py
+randomcoords.egg-info/PKG-INFO
+randomcoords.egg-info/SOURCES.txt
+randomcoords.egg-info/dependency_links.txt
+randomcoords.egg-info/requires.txt
+randomcoords.egg-info/top_level.txt
+tests/test_core.py
