@@ -1,0 +1,4 @@
+[console_scripts]
+ai-check-api-keys = ai_circus.tools.check_api_keys:main
+ai-commit = ai_circus.tools.generate_commits_messages:run_main
+ai-hello-world = ai_circus.tools.hello_world:main
