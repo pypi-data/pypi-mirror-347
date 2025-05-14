@@ -1,0 +1,2 @@
+[console_scripts]
+dirac-wallet = dirac_wallet.cli.commands:cli
