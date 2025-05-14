@@ -1,0 +1,15 @@
+e2xgrader_cell_registry/__init__.py,sha256=htsvVTMzTQpG3mf1iTkO-A2Q5rJDrHNDaHF75qp0SGw,605
+e2xgrader_cell_registry/_version.py,sha256=bmBd_foIQloU6frIys6K4xT2pB6YmN5Tm-9uFZETMrI,173
+e2xgrader_cell_registry-0.0.1a2.data/data/share/jupyter/labextensions/@e2xgrader/cell-registry/package.json,sha256=1fxxTNP6fyD2dNSpWP68idBL5B5M5EylcmPLgPgde2s,6082
+e2xgrader_cell_registry-0.0.1a2.data/data/share/jupyter/labextensions/@e2xgrader/cell-registry/schemas/@e2xgrader/cell-registry/cell-factory.json,sha256=fhP1YGLHemZwnqIwvFXpBnLD-bUlGE1_36IUPX6iPEg,365
+e2xgrader_cell_registry-0.0.1a2.data/data/share/jupyter/labextensions/@e2xgrader/cell-registry/schemas/@e2xgrader/cell-registry/package.json.orig,sha256=wa3n2-J4ToN-tuOfltGiwsk48xEcDPipsERhSgZqtGQ,6858
+e2xgrader_cell_registry-0.0.1a2.data/data/share/jupyter/labextensions/@e2xgrader/cell-registry/static/357.5e897a840fe092a4b7f7.js,sha256=Xol6hA_gkqS390P9zjicbjAcXLpV-ksU_MK1zWUQLyE,8019
+e2xgrader_cell_registry-0.0.1a2.data/data/share/jupyter/labextensions/@e2xgrader/cell-registry/static/728.770c73a857688d981455.js,sha256=dwxzqFdojZgUVeLAWinF9PmrmmqUiPEMGYsXXDue14U,4019
+e2xgrader_cell_registry-0.0.1a2.data/data/share/jupyter/labextensions/@e2xgrader/cell-registry/static/remoteEntry.a6d2672a064179e0e00a.js,sha256=ptJnKgZBeeDgCvKQKIcj4b9Eyhtx-5PtTNo3ucSio4k,7549
+e2xgrader_cell_registry-0.0.1a2.data/data/share/jupyter/labextensions/@e2xgrader/cell-registry/static/style.js,sha256=DU8f0PniiSm5pLY_8pAU_kMO3k8aNWPPhOolXsBzjFE,167
+e2xgrader_cell_registry-0.0.1a2.data/data/share/jupyter/labextensions/@e2xgrader/cell-registry/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+e2xgrader_cell_registry-0.0.1a2.data/data/share/jupyter/labextensions/@e2xgrader/cell-registry/install.json,sha256=K5yKVzY92n9apkBINWiY5zwHEmg6q-G1qvJOKPZ5Kjw,207
+e2xgrader_cell_registry-0.0.1a2.dist-info/METADATA,sha256=_cSLqy-pkqQOOzfGBFBtClpluEtpzEnHxumKTy71aWQ,6062
+e2xgrader_cell_registry-0.0.1a2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+e2xgrader_cell_registry-0.0.1a2.dist-info/licenses/LICENSE,sha256=wfkEB5AUebQRojZ7xd0tIH5KFrAgkFn3oX-b24V95SM,1519
+e2xgrader_cell_registry-0.0.1a2.dist-info/RECORD,,
