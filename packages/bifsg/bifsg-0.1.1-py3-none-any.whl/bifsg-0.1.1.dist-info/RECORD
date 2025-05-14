@@ -1,0 +1,16 @@
+bifsg/__init__.py,sha256=xbNaYNuVmT7i6ZgLI1rpj1G-EKlmaH3YVJJ0TVtafVA,23
+bifsg/core.py,sha256=9yHzlC8O_7rywbXdYQYdqYgfRzb63-gx8lCPZHPQ5kw,10412
+bifsg/data_prep.py,sha256=5R2HVGu0us26SxIsVAh4npPgv1vsd2MZ3is7uPmrF4E,3805
+bifsg/data/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bifsg/data/Names_2010Census.xlsx,sha256=QOBhhCNi0YjwN2SPR0A533tiMlh_EcLzjcQQEWSfxmc,11503644
+bifsg/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bifsg/data/firstnames.xlsx,sha256=l7PJ1WZZYRiaZz_nK9p-fq1LccqoIHiUyg_Mks-vAZA,259395
+bifsg/data/firstnames_updated.parquet,sha256=QAkiFWvr9bTtt3z8W0NSSesB9QIkMHHpVfC6kYiYdG4,210534
+bifsg/data/nat_population.yaml,sha256=TsJjyWCdnu2W15dOYOFGiKlPlG5kh3Sfzaeoq-WVyek,287
+bifsg/data/surnames_updated.parquet,sha256=I8AH4URxkRxKGZp5G1ox19GnPl26WkrXJGZjjK92iHs,11822435
+bifsg-0.1.1.dist-info/licenses/LICENSE,sha256=ToewcyW1wysl4nb5eVY8gcMQfcsJ-HxCrSDeXppuaRs,1086
+bifsg-0.1.1.dist-info/METADATA,sha256=61JdU52GX7TAFneo-jyZll7sR83DlQvAun23GRHtGTc,2215
+bifsg-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+bifsg-0.1.1.dist-info/entry_points.txt,sha256=yLIgDTfs_4keuF9dEtOpgIbjAUBCKFFGijwcHdWwwPE,60
+bifsg-0.1.1.dist-info/top_level.txt,sha256=VsTF9g9XuCWYeh1zkxzZdMrVk9QFufg5QXGuafeFDDo,6
+bifsg-0.1.1.dist-info/RECORD,,
