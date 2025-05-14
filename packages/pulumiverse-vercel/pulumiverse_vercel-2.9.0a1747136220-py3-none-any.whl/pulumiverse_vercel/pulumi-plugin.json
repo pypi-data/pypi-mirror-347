@@ -1,0 +1,6 @@
+{
+  "resource": true,
+  "name": "vercel",
+  "version": "2.9.0-alpha.1747136220",
+  "server": "github://api.github.com/pulumiverse"
+}
