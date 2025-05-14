@@ -1,0 +1,2 @@
+[console_scripts]
+mt-nl2shell = nl2shell.main:main

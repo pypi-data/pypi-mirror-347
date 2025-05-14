@@ -1,0 +1,10 @@
+README.md
+setup.py
+mt_nl2shell.egg-info/PKG-INFO
+mt_nl2shell.egg-info/SOURCES.txt
+mt_nl2shell.egg-info/dependency_links.txt
+mt_nl2shell.egg-info/entry_points.txt
+mt_nl2shell.egg-info/requires.txt
+mt_nl2shell.egg-info/top_level.txt
+nl2shell/__init__.py
+nl2shell/main.py
