@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+BetterFileHandling.egg-info/PKG-INFO
+BetterFileHandling.egg-info/SOURCES.txt
+BetterFileHandling.egg-info/dependency_links.txt
+BetterFileHandling.egg-info/top_level.txt
+better-file-handling/__init__.py
+better-file-handling/file_management.py
+better-file-handling/reading.py
+better-file-handling/security.py
+better-file-handling/writing.py
