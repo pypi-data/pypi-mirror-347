@@ -1,0 +1,2 @@
+[console_scripts]
+gcfpy = gcfpy.app.main_window:main

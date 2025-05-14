@@ -1,0 +1,26 @@
+{
+  "constants": {
+    "pi": 3.141592653589793,
+    "e1": 2.718281828459045,
+    "placnk": 6.62607015e-34,
+    "c0": 299792458,
+    "kB": 1.380649e-23,
+    "eV": 1.602176634e-19
+  },
+  "function_map": {
+    "abs": "np.abs",
+    "sin": "np.sin",
+    "cos": "np.cos",
+    "tan": "np.tan",
+    "exp": "np.exp",
+    "log": "np.log",
+    "sqrt": "np.sqrt",
+    "arcsin": "np.arcsin",
+    "arccos": "np.arccos",
+    "arctan": "np.arctan",
+    "sinh": "np.sinh",
+    "cosh": "np.cosh",
+    "log10": "np.log10",
+    "ln": "np.log"
+  }
+}

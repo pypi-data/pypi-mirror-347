@@ -1,0 +1,22 @@
+{
+  "window": {
+    "width": 1000,
+    "height": 830
+  },
+  "fit_tab": {
+    "dock_formula_width": 200,
+    "dock_formula_height": 467,
+    "formula_text_height": 100,
+    "dock_plot_width": 800,
+    "dock_plot_height": 550,
+    "results_min_width": 400,
+    "results_min_height": 100,
+    "results_max_height": 150,
+    "xy_table_min_width": 300,
+    "xy_table_min_height": 200
+  },
+  "fit_control": {
+    "max_width": 400,
+    "max_height": 140
+  }
+}
