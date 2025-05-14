@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: geosurveymath
+Version: 0.0.1
+Summary: A package for least square calaculations in satellite position and photogrammatry and other geomatics related fields
+Author-email: Samuel Sarfo <ssarfo255@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/legendary-sms/geosurveymath
+Keywords: geosurveymath
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: geosurveymath[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+Dynamic: license-file
+
+# geosurveymath
+
+
+[![image](https://img.shields.io/pypi/v/geosurveymath.svg)](https://pypi.python.org/pypi/geosurveymath)
+[![image](https://img.shields.io/conda/vn/conda-forge/geosurveymath.svg)](https://anaconda.org/conda-forge/geosurveymath)
+
+
+**A package for least square calaculations in satellite position and photogrammatry and other geomatics related fields**
+
+
+-   Free software: MIT License
+-   Documentation: https://legendary-sms.github.io/geosurveymath
+    
+
+## Features
+
+-   TODO
