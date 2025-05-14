@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Axalense
+Version: 0.1.84
+Summary: Axamine AI VLM Framework for vision-language tasks using Groq API and models
+Author: Henilsinh Raj
+Author-email: henilsinhrajraj@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: groq
+Requires-Dist: Pillow
+
+# Axalense
+
+AI-powered image moderation using Groq.
+
+## Installation
+
+```bash
+pip install Axalense
+
+## Usage 
+``` bash 
+from Axalense import axavision
+
+if __name__ == "__main__":
+    result = axavision.analyze_image("sample_image.jpg","prompt","API")
+    print(result)
