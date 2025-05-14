@@ -1,0 +1,22 @@
+[project]
+name = "llm-fragments-zohoticket"
+version = "0.1"
+description = "LLM Fragment Loader for pulling ticket conversations from Zoho Desk"
+readme = "README.md"
+authors = [{name = "dents-shape"}]
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = [
+    "llm>=0.24"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/dents-shape/llm-fragments-zohoticket"
+Issues = "https://github.com/dents-shape/llm-fragments-zohoticket/issues"
+
+[project.entry-points.llm]
+fragments_zohoticket = "llm_fragments_zohoticket"
