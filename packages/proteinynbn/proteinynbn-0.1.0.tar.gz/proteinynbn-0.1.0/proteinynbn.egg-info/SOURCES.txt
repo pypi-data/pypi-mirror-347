@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+proteinynbn/__init__.py
+proteinynbn/seqs.py
+proteinynbn.egg-info/PKG-INFO
+proteinynbn.egg-info/SOURCES.txt
+proteinynbn.egg-info/dependency_links.txt
+proteinynbn.egg-info/top_level.txt
+test/__init__.py
