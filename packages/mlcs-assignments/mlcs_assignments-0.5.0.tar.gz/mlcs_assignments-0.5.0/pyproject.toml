@@ -1,0 +1,79 @@
+[tool.poetry]
+name = "mlcs-assignments"
+version = "0.5.0"
+description = ""
+authors = [
+    "Zurab Mujirishvili <zurab.mujirishvili@fau.de>",
+    "Julius Neuffer",
+    "Shuli Zhou",
+    "Fazal Feroz Kadri",
+    "Johannes Bellman",
+    "Lars Ullrich",
+]
+readme = "README.md"
+packages = [
+    { include = "helpers", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11.0,<3.13.0"
+notebook = "^7.3.2"
+numpy = "^2.1.0"
+plotly = "^6.0.0"
+scipy = "^1.15.1"
+sympy = "^1.13.1"
+pandas = "^2.2.3"
+msgspec = "^0.19.0"
+torch = "^2.6.0"
+torchinfo = "^1.8.0"
+joblib = "^1.4.2"
+dash = "^3.0.4"
+dash-bootstrap-components = "^2.0.2"
+tqdm = "^4.67.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.9"
+pyright = "^1.1.393"
+jinja2 = "^3.1.5"
+git-filter-repo = "^2.47.0"
+cairosvg = "^2.7.1"
+pillow = "^11.1.0"
+beautifulsoup4 = "^4.13.0"
+lxml = "^5.3.0"
+line-profiler = "^4.2.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+hypothesis = "^6.125.1"
+
+[tool.poetry.group.doc.dependencies]
+mkdocs = "^1.6.1"
+mkdocstrings = {extras = ["python"], version = "0.29.1"}
+mkdocs-material = "^9.6.1"
+black = "^25.1.0"
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
+lint.ignore = [
+    "E741",  # ambiguous variable name
+]
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = [
+    "E731",  # do not assign a lambda expression, use a def
+    "E402",  # module level import not at top of file
+    "F811",  # redefinition of unused variable
+    "F401",  # module imported but unused
+    "F841",  # local variable is assigned to but never used
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["helpers", "tests"]
+
+[tool.pyright]
+extraPaths = ["tests"]
+verboseOutput = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
