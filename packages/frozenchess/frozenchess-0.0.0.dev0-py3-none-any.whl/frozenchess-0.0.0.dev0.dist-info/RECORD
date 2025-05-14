@@ -1,0 +1,10 @@
+frozenchess/__init__.py,sha256=32T8bZhf6telgqCAJt3ejDKaouCf99iN4J72aNdnDeI,102
+frozenchess/__main__.py,sha256=lshKmwuaVjHE5rxNt3wEuJrGjLHWYJUymVawN2XNs5s,68
+frozenchess/core/__init__.py,sha256=Tr3CwIPY695IbF4DrKHrDes1AKd_iJgddUP46jxKHSw,163
+frozenchess/tests/__init__.py,sha256=ZClL-6Cr5AL_UigTX9K3LDI33vB2QpivxWHI9zDk_c0,299
+frozenchess/tests/test_1984.py,sha256=GPfy8FPaGbj-w9uGHkJYSjmlSReVAXwiHS8JydJaERw,187
+frozenchess-0.0.0.dev0.dist-info/licenses/LICENSE.txt,sha256=fOh9FHccUt9OcJPBaVJ482GX4yrl_FxCUk9YRZ53JOI,1074
+frozenchess-0.0.0.dev0.dist-info/METADATA,sha256=9L1Ind3vES5ohKRNumjoRbrpUNzxKm44Wv3Yd2x3ITA,2702
+frozenchess-0.0.0.dev0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+frozenchess-0.0.0.dev0.dist-info/top_level.txt,sha256=Nvpd0G04tYwkDnYZ1T9SvWLmaRc4rqEirvDQZjEkB2Y,12
+frozenchess-0.0.0.dev0.dist-info/RECORD,,
