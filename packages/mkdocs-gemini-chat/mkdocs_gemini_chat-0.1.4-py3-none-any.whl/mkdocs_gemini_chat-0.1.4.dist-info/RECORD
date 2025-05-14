@@ -1,0 +1,10 @@
+mkdocs_gemini_chat/README.md,sha256=mzSBNsUuXj_9adcGuARlm5OwPBlFsmqiBTwJFQW_CnQ,7502
+mkdocs_gemini_chat/__init__.py,sha256=wj9HYTRcd9E1SBapyBYez71WjZABCPYkIOxwLJ79P6I,13047
+mkdocs_gemini_chat/api.py,sha256=bhdU7o-9iAxBUuie4mH_QJESd4igT99hSTz-Dz82GiM,5212
+mkdocs_gemini_chat/server.py,sha256=fDfMdnDo9lrQaBFsegeGvj02MAOWUobXch4dZ8k1Goc,3669
+mkdocs_gemini_chat-0.1.4.dist-info/licenses/LICENSE,sha256=ZWHKkJYy3HYUviSULRVqU7rzn8WMROIW0AT-VT6AoQ8,1095
+mkdocs_gemini_chat-0.1.4.dist-info/METADATA,sha256=3DU65qSSlMy8rGM_cCCyzHK0XX64fwkQ6wBMl0jXrt4,4967
+mkdocs_gemini_chat-0.1.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+mkdocs_gemini_chat-0.1.4.dist-info/entry_points.txt,sha256=zJ9LZpBaDu9II6VZCnhAljQZE1jfuL-CeEGWryxdQww,67
+mkdocs_gemini_chat-0.1.4.dist-info/top_level.txt,sha256=KUqUYW-WdIuOZAkikEHgrRQO_t_69vT-4quozLPDEDY,19
+mkdocs_gemini_chat-0.1.4.dist-info/RECORD,,
