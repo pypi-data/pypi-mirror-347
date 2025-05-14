@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "any-to-md-cli"
+version = "0.1.1"
+authors = [
+  { name="anywaifu", email="anywaifu@protonmail.com" },
+]
+description = "A CLI tool to convert various file formats to Markdown using AI"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Utilities",
+    "Environment :: Console",
+]
+dependencies = [
+    "click>=8.0",
+    "litellm>=1.69",
+]
+
+[project.scripts]
+any-to-md-cli = "any_to_md_cli.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-mock>=3.0",
+]
