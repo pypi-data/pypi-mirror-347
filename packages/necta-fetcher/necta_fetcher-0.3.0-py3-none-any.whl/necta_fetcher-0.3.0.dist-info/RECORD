@@ -1,0 +1,7 @@
+necta_fetcher/__init__.py,sha256=LEkY-9BxL3agrcGecLNLDWMp-kq8V80CI0vij7DrE78,467
+necta_fetcher/client.py,sha256=dO8VApS50pybwS5BLLfbpKNP-26G35xRTgCiNrbMVH0,10373
+necta_fetcher/exceptions.py,sha256=kqpBpbJpFKV2vW2SQKn-sBwgi4bxFExR6YXAspqhqNI,908
+necta_fetcher-0.3.0.dist-info/METADATA,sha256=J73eNB0fY_aPk9ypZz5hZjWA54GwfcPw-nfEzSdYA2s,5358
+necta_fetcher-0.3.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+necta_fetcher-0.3.0.dist-info/top_level.txt,sha256=OkIn0U_DaJjQ6EJHy6wOIBHQlFebhq88Y2EyoIK4bKI,14
+necta_fetcher-0.3.0.dist-info/RECORD,,
