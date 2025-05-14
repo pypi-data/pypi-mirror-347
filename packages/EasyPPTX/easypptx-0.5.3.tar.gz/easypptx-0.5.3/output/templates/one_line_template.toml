@@ -1,0 +1,195 @@
+bg_color = [
+    255,
+    255,
+    255,
+]
+
+[defaults.global]
+x = "5%"
+y = "5%"
+width = "90%"
+height = "10%"
+font_name = "Arial"
+font_size = 16
+font_bold = false
+font_italic = false
+align = "left"
+vertical = "top"
+color = [
+    50,
+    50,
+    50,
+]
+padding = 5.0
+title_padding = "5%"
+subtitle_padding = "5%"
+content_padding = "5%"
+rows = 2
+cols = 2
+title_height = "12%"
+subtitle_height = "8%"
+title_font_size = 32
+subtitle_font_size = 22
+title_align = "center"
+subtitle_align = "center"
+content_y_padding = "22%"
+maintain_aspect_ratio = true
+border = false
+shadow = false
+fill_color = [
+    230,
+    230,
+    240,
+]
+line_color = [
+    200,
+    200,
+    210,
+]
+line_width = 1.0
+first_row_header = true
+banded_rows = true
+chart_type = "column"
+has_legend = true
+legend_position = "bottom"
+has_title = true
+has_data_labels = false
+gridlines = true
+
+
+# -----------------------------------------------------
+# COMMENTED SECTIONS - UNCOMMENT AND MODIFY AS NEEDED
+# -----------------------------------------------------
+
+# Reference PowerPoint file (optional)
+# reference_pptx = "path/to/your/reference.pptx"
+
+# Method-specific defaults for grid slides
+# [defaults.grid_slide]
+# rows = 2
+# cols = 2
+# title_height = "12%"
+# subtitle_height = "8%"
+# title_font_size = 32
+# subtitle_font_size = 22
+# title_align = "center"
+# subtitle_align = "center"
+# padding = 8.0
+# content_y_padding = "22%"  # Allow space for title + subtitle
+
+# Method-specific defaults for grid objects and cells
+# [defaults.grid]
+# rows = 2
+# cols = 2
+# padding = 8.0
+# x = "5%"
+# y = "15%"  # Allow space for title
+# width = "90%"
+# height = "80%"
+
+# Method-specific defaults for text elements
+# [defaults.text]
+# font_size = 16
+# font_name = "Arial"
+# align = "left"
+# vertical = "top"
+# color = [40, 40, 45]  # Dark gray
+
+# Method-specific defaults for image elements
+# [defaults.image]
+# x = "10%"
+# y = "10%"
+# width = "80%"
+# height = "70%"
+# maintain_aspect_ratio = true
+# border = false
+# shadow = false
+
+# Method-specific defaults for shape elements
+# [defaults.shape]
+# fill_color = [230, 230, 240]
+# line_color = [200, 200, 210]
+# line_width = 1.0
+# shadow = false
+
+# Method-specific defaults for table elements
+# [defaults.table]
+# font_size = 14
+# border = true
+# first_row_header = true
+# banded_rows = true
+
+# [defaults.table.header_style]
+# bg_color = [30, 50, 100]
+# text_color = [255, 255, 255]
+# font_bold = true
+
+# [defaults.table.row_style]
+# bg_color = [240, 240, 245]
+# text_color = [40, 40, 45]
+
+# Method-specific defaults for chart elements
+# [defaults.chart]
+# chart_type = "column"
+# has_legend = true
+# legend_position = "bottom"
+# has_title = true
+# title_font_size = 14
+# has_data_labels = false
+# gridlines = true
+
+# Title element configuration (optional theme element)
+# [title]
+# align = "center"
+# vertical = "middle"
+# color = [30, 50, 100]  # Dark blue
+
+# [title.position]
+# x = "5%"
+# y = "5%"
+# width = "90%"
+# height = "12%"
+
+# [title.font]
+# name = "Arial"
+# size = 32
+# bold = true
+
+# [title.padding]
+# top = "2%"
+# left = "5%"
+
+# Subtitle element configuration (optional theme element)
+# [subtitle]
+# align = "center"
+# vertical = "middle"
+# color = [60, 80, 120]  # Medium blue
+
+# [subtitle.position]
+# x = "5%"
+# y = "18%"
+# width = "90%"
+# height = "8%"
+
+# [subtitle.font]
+# name = "Arial"
+# size = 22
+# bold = false
+
+# Footer element configuration (optional theme element)
+# [footer]
+# align = "right"
+# vertical = "middle"
+# color = [100, 100, 120]  # Gray
+
+# [footer.position]
+# x = "5%"
+# y = "90%"
+# width = "90%"
+# height = "5%"
+
+# [footer.font]
+# name = "Arial"
+# size = 12
+# bold = false
+
