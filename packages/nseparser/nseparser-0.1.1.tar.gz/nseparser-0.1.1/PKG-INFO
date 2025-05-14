@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: nseparser
+Version: 0.1.1
+Summary: A package for parsing nse website
+Author-email: Unknown <unknown@example.com>
+License-Expression: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: chameli
+Requires-Dist: ohlcutils
