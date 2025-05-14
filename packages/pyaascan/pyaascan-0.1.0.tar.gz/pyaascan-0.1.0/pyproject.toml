@@ -1,0 +1,17 @@
+[project]
+name = "pyaascan"
+version = "0.1.0"
+description = "A python implementation of AAscan"
+readme = "README.md"
+authors = [
+    { name = "deepthought", email = "deepthough@postech.ac.kr" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+pyaascan = "pyaascan:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
