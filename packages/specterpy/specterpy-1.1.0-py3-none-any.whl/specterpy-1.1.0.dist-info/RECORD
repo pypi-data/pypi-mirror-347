@@ -1,0 +1,25 @@
+pyspecter/CommonObservables.py,sha256=9RD9Di15jVPxW3XA_DGXAuE6fBv78nwlyPf67iOfQmc,13623
+pyspecter/Observables.py,sha256=8ZJwys7PxGJQAg2MLzobpaecC6D36nbd-CJY9ItNtw8,28461
+pyspecter/SPECTER.py,sha256=xNhHVTooatlt5xTSss4yKQPD8LirXxu10iv3xwgAFhA,16152
+pyspecter/SpectralEMD_Helper.py,sha256=Movz-iv88kfCp63DOAX9nEhwH2wI2HJuXST9QjAJR50,19675
+pyspecter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspecter/_version.py,sha256=UNO7UaKPam6Zugzw6NMt_RQBnRzrv9GVeKUjWt-tl6I,511
+pyspecter/cpp/find_pairs,sha256=_AzeLM15TN6cBeDaNsgVHi1eYU0vICpuWDPI4u_fp5c,41864
+pyspecter/cpp/find_pairs.c,sha256=jDoOLdio6oGEPzNIOVlBC7Z_TY1jvhCr6eDBSu9DEUk,247184
+pyspecter/cpp/find_pairs.h,sha256=o5OlzZjWcdiyumB3YmzcDloTFn0-gdh3shAn9bWplt0,1300
+pyspecter/cpp/find_pairs.pyx,sha256=TZ0Z8kJAEE4kFfu34v2okHQxItDdeRpUMFbIiAGbJuY,305
+pyspecter/cpp/setup.py,sha256=8Zi4zJJyRBqKiaVAjwVsOQgjNThq7iZJmMAACYAzUK0,349
+pyspecter/cython/find_indices_cython.c,sha256=hcF8s-CZD9u4RCZ3b7xffrXsusS3ui6pGsVzp9pS0Xs,376165
+pyspecter/cython/find_indices_cython.pyx,sha256=9XMiVw81-OVMaHFrRe-XB0dBZnGyLRWpF95ZYXzahGg,511
+pyspecter/cython/find_pairs,sha256=sGbKBH9XsSWZSLlQoDxVLU6PNZcfNhOBpHwNgnhGVs0,16144
+pyspecter/cython/find_pairs.c,sha256=UbZfmMoYi3brYQ-0kZgQUXYxcUkCeZH_H2a42CigFEo,1496
+pyspecter/cython/setup.py,sha256=-_Dpp2xeZgbGkWyxgy06HfKh4A1rTRzHu40ozoxUZXE,184
+pyspecter/cython/test copy.ipynb,sha256=YuiOaS8j6Td0ibaWDW6BJVh3maK_0uCPZ3ryzi3IGqk,753712
+pyspecter/cython/test.ipynb,sha256=-DcQ4kGcyIwRx6vxg7FrR89k3pGKgxONtMVK_HQFkgA,318800
+pyspecter/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspecter/utils/data_utils.py,sha256=4kYSz32OUajCxcEkoyZ2PQ_S0wcnkerkRQpFOPm3XxA,6155
+pyspecter/utils/plot_utils.py,sha256=Uzu2dqGucjbXSOTwis1Cwr2NeAMSQigRJ2CWvoh9t2c,3999
+specterpy-1.1.0.dist-info/METADATA,sha256=TYcDkUf1y_ZJpEvChy16llgzBvORatsJaS4il7wNIAw,4047
+specterpy-1.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+specterpy-1.1.0.dist-info/licenses/LICENSE,sha256=puH8n9VNLR6E_ENNLWbpJo2KB2Oy7VGbrZCR4W7IfTo,1069
+specterpy-1.1.0.dist-info/RECORD,,
