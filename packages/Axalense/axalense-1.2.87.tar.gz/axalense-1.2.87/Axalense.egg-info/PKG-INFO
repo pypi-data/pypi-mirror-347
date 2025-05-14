@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Axalense
+Version: 1.2.87
+Summary: Axalense is a framework developed at Axamine ai for image analysis and various other Vision langauge task its  tool built with Groq technology. It enables developers to easily analyze and moderate images using intelligent visual recognition and natural language prompts.
+Author: Henilsinh Raj
+Author-email: henilsinhrajraj@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: groq
+Requires-Dist: Pillow
+
+# Axalense
+
+**Axalense** is a framework developed at Axamine ai for image analysis and various other Vision langauge task its  tool built with **Groq** technology. It enables developers to easily analyze and moderate images using intelligent visual recognition and natural language prompts.
+
+> Ideal for content moderation, compliance, and automated visual understanding workflows.
+
+---
+
+## ✨ Features
+
+- 🔍 **AI-Powered Moderation** using Groq
+- ⚡ Fast and lightweight
+- 🖼️ Simple image analysis with custom prompts
+- 📦 Easy integration in Python apps and moderation pipelines
+
+---
+
+## 📦 Installation
+
+```bash
+pip install Axalense
+
+from Axalense import axavision
+
+if __name__ == "__main__":
+    result = axavision.analyze_image("image-path", "Prompt", "YOUR_API_KEY")
+    print(result)
+

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+Axalense/__init__.py
+Axalense/axavision.py
+Axalense/config.py
+Axalense.egg-info/PKG-INFO
+Axalense.egg-info/SOURCES.txt
+Axalense.egg-info/dependency_links.txt
+Axalense.egg-info/requires.txt
+Axalense.egg-info/top_level.txt
