@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: cpp-demangle2
+Version: 0.1.3
+Summary: A package for demangling C++ linker symbols
+Home-page: http://github.com/untetherai/py-cpp-demangle/
+Author: Untether AI
+Author-email: software@untether.ai
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: summary
+
+py-cpp-demangle: Demangles C++ linker symbols
+============================================================
+
+.. image:: https://github.com/benfred/py-cpp-demangle/workflows/Build/badge.svg?branch=master
+    :target: https://github.com/benfred/py-cpp-demangle/actions?query=branch%3Amaster
+
+A package for demangling C++ linker symbol strings
+
+This package provides python bindings for the rust crate
+`cpp_demangle <http://github.com/gimli-rs/cpp_demangle>`_ by building
+a native Python extension using `PyO3 <https://github.com/pyO3/pyO3>`_.
+
+This is mainly an experiment in creating python extensions in Rust.
+`A blog post about this is here.
+<https://www.benfrederickson.com/writing-python-extensions-in-rust-using-pyo3/>`_
+
+Usage
+-------------------
+
+To install
+
+.. code-block:: python
+
+    pip install cpp-demangle
+
+
+Building from source requires the nightly version of the rust compiler.
+
+This module exposes a single function that transforms C++ linker symbols to a human readable
+representation.
+
+.. code-block:: python
+
+    from cpp_demangle import demangle
+
+    print(demangle('_ZN7mangled3fooEd'))
+    # prints 'mangled::foo(double)'
+
+Released under the MIT License
