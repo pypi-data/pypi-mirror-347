@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+mypptpkg/__init__.py
+mypptpkg.egg-info/PKG-INFO
+mypptpkg.egg-info/SOURCES.txt
+mypptpkg.egg-info/dependency_links.txt
+mypptpkg.egg-info/top_level.txt

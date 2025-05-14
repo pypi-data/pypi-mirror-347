@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: mypptpkg
+Version: 0.0.1
+Summary: A demo package that runs a function on import
+Author-email: Your Name <you@example.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# mypptpkg
+
+This package prints a message and runs a function automatically when imported.
+
+## Usage
+
+```python
+import mypptpkg
+
