@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+sbfi_knime_ultils.egg-info/PKG-INFO
+sbfi_knime_ultils.egg-info/SOURCES.txt
+sbfi_knime_ultils.egg-info/dependency_links.txt
+sbfi_knime_ultils.egg-info/requires.txt
+sbfi_knime_ultils.egg-info/top_level.txt
