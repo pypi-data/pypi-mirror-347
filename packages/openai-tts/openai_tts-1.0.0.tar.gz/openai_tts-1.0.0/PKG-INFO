@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: openai_tts
+Version: 1.0.0
+Summary: A powerful and easy-to-use Python library for generating natural-sounding speech using OpenAI text-to-speech capabilities.
+Author: Sujal Rajpoot
+Author-email: sujalrajpoot70@gmail.com
+License-File: LICENSE
