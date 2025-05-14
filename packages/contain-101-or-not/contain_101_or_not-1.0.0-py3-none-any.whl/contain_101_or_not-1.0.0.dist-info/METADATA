@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: contain_101_or_not
+Version: 1.0.0
+Summary: A simple DFA string acceptance checker
+Author: Your Name
+Author-email: Mohamed khaled <mokhaled732003@gmail.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: requires-python
