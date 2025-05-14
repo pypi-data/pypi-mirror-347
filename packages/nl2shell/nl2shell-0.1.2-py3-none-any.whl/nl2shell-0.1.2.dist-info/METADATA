@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: nl2shell
+Version: 0.1.2
+Summary: 将自然语言转换为shell命令的工具
+Home-page: https://github.com/yourusername/nl2shell
+Author: zhangwei330
+Author-email: zhangwei330@meituan.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+Requires-Dist: pyyaml
+Requires-Dist: rich
+Requires-Dist: psutil
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+pip install build twine
+
+# 2. 构建分发包
+python -m build
+
+# 3. 上传到 PyPI（如果是第一次，需要先在 PyPI 注册账号）
+twine upload dist/*
+
+使用方法
+首次使用前，创建配置文件 ~/.nl2shell.yaml
+api_key: "your-api-key"
+base_url: "your-api-base-url"
+model: "gpt-4-turbo"
+
+使用命令：
+nl2shell "你的自然语言描述"
