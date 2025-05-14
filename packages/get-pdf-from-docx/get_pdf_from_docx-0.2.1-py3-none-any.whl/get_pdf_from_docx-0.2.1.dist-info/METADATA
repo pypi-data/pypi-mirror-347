@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: get-pdf-from-docx
+Version: 0.2.1
+Summary: 
+Author: 6vi7ms
+Author-email: 6vi7ms@gmail.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pypdf (>=5.5.0,<6.0.0)
+Requires-Dist: pywin32 (>=310,<311)
+Description-Content-Type: text/markdown
+
+สำหรับรวมไฟล์ docx เป็น pdf โดยเอาหน้าที่มีตรวจมาด้วย

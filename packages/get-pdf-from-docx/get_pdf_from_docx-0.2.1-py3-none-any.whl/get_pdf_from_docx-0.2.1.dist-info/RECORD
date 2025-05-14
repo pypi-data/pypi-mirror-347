@@ -1,0 +1,8 @@
+get_pdf_from_docx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+get_pdf_from_docx/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+get_pdf_from_docx/helpers/wordtools.py,sha256=RdNatjnvQFJvP4NP7dsr5FbPYNEhuv6hnmCyagtIU5k,1648
+get_pdf_from_docx/main.py,sha256=zCEbrYXQQOaeaPRUce7m3sgUfrPW8AYyf5fazYmhtTo,1134
+get_pdf_from_docx-0.2.1.dist-info/entry_points.txt,sha256=kQ3M_HfUrRLG3Dz-uPN9CN4XuN0XNzQXFtM7_WQz388,65
+get_pdf_from_docx-0.2.1.dist-info/METADATA,sha256=_g5ub6deHlwMTv3ERm50fDQyFTcRMXYtGbIHjYNkaM0,695
+get_pdf_from_docx-0.2.1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+get_pdf_from_docx-0.2.1.dist-info/RECORD,,
