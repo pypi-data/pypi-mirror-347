@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ezpydub"
+version = "0.1.0"
+description = "A simplified interface for pydub audio manipulation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [
+    {name = "TheNeoDev", email = "neoforevershog@gmail.com"}
+]
+dependencies = [
+    "pydub>=0.25.1",
+    "ffmpeg-python>=0.2.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TheNeodev/ezpydub"
+"Repository" = "https://github.com/TheNeodev/ezpydub"
