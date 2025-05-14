@@ -1,0 +1,107 @@
+# MkDocs Gemini Chat Plugin
+
+A Material for MkDocs plugin that adds a Gemini-powered chat window to your documentation pages.
+
+## Features
+
+- Interactive chat window powered by Google's Gemini 2.5 Pro
+- Chat history and context support
+- Multiple language support
+- Version-specific documentation support
+- File path specification
+- Copy/download functionality
+- Customizable UI position
+
+## Installation
+
+```bash
+pip install mkdocs-gemini-chat
+```
+
+## Configuration
+
+1. First, obtain a Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey).
+
+2. Add your API key to your environment:
+   ```bash
+   # In your .env file or export in your shell
+   export GEMINI_API_KEY=your_api_key_here
+   ```
+
+3. Add the plugin to your `mkdocs.yml`:
+   ```yaml
+   plugins:
+     - gemini-chat:
+         # Optional: Configure UI position
+         position: bottom-right  # Options: bottom-right, bottom-left, top-right, top-left
+         # Optional: Set default language
+         default_language: en
+         # Optional: Set documentation version
+         version: latest
+   ```
+
+## Usage
+
+Once configured, the chat window will appear on your documentation pages. Users can:
+
+- Ask questions about the documentation
+- Specify file paths for context
+- Change language settings
+- Access version-specific information
+- Copy or download chat responses
+
+## Requirements
+
+- Python 3.8 or higher
+- A valid Gemini API key
+- MkDocs 1.0.0 or higher
+
+## Development
+
+To contribute or run tests:
+
+```bash
+# Clone the repository
+git clone https://github.com/nolanblevins/mkdocs-gemini-chat.git
+cd mkdocs-gemini-chat
+
+# Install development dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest tests/
+```
+
+## License
+
+MIT License - see LICENSE file for details.
+
+## Original Requirements
+
+<details>
+<summary>Click to expand</summary>
+
+Requirements:
+As a user, I can use a chat window to ask questions about the documentation on the Material for MkDocs project.
+UX Features:
+- The chat window should be able to use the chat history.
+- The chat window should be able to use the chat context.
+- The chat windows should use Gemini 2.5 Pro as the LLM.
+- The chat window should allow follow up questions.
+- The chat window should allow the user to specify the file path to the documentation.
+- The chat window should allow the user to specify the language of the documentation.
+- The chat window should allow the user to specify the version of the documentation.
+- The chat window should allow the user to copy the output to the clipboard.
+- The chat window should allow the user to download the output as a file. 
+
+Implementation:
+- The implementation should be done as a Material for MkDocs plugin.
+- The plugin should be able to be added to the documentation site by adding it to the `mkdocs.yml` file.
+- The plugin should allow the user to specify where the UI box should be placed in the documentation site.
+
+</details>
+
+## References
+
+- [DeepWiki](https://deepwiki.com)
+- [DeepSeek Chat](https://www.deepseek.com/chat/)

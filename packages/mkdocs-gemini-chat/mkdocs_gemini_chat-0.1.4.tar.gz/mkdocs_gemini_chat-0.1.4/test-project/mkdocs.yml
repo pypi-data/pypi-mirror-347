@@ -1,0 +1,11 @@
+site_name: Test Documentation
+theme:
+  name: material
+
+plugins:
+  - gemini-chat:
+      api_key: !ENV GEMINI_API_KEY
+      ui_position: bottom-right
+      default_language: en
+      default_version: latest
+      chat_history_length: 10 
