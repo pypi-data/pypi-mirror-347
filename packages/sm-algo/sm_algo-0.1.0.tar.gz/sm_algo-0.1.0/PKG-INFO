@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: sm_algo
+Version: 0.1.0
+Summary: Small pacakge with various algorithms
+Author-email: Aleksandr <Aleksandr7839@yandex.ru>
+Project-URL: Homepage, https://github.com/a1eksandrTarasov/SmartAlgo.git
+Project-URL: Bug Tracker, https://github.com/a1eksandrTarasov/SmartAlgo.git/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.2.5
