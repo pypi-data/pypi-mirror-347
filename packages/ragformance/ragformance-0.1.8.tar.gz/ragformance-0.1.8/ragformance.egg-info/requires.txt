@@ -1,0 +1,5 @@
+forcolate
+sentence-transformers
+tqdm
+pytrec_eval
+plotly
