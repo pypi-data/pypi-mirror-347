@@ -1,0 +1,10 @@
+safe_converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safe_converter/converters.py,sha256=XadJKXfaN5ipm5VHTta_3Mkn9xeSyuiAduA4Xuyzp_Q,634
+safe_converter/parser.py,sha256=npplTNrIIs_rZVBY9C_FGdApV0krjQS3Nhe40yzbYSY,4572
+safe_converter-0.2.1.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_parser.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safe_converter-0.2.1.dist-info/METADATA,sha256=KCmKGU_pctYEm7u4-WyHA1agqXj96MpU31TF1zcY0kQ,640
+safe_converter-0.2.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+safe_converter-0.2.1.dist-info/top_level.txt,sha256=LLuG4TX9S45A3RBd2nIpGYfHz303YLNmFcyEhmvUXIU,21
+safe_converter-0.2.1.dist-info/RECORD,,
