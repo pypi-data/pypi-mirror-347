@@ -1,0 +1,8 @@
+ai_data_sdk/__init__.py,sha256=kQ-EQVU59wmfDWYRRLJP0WgGFc1EpfkD-HQtZ8v6-7w,442
+ai_data_sdk/client.py,sha256=xCoAJTcxVGpPJkiylHd_OLAxaSs9dZgIjUxiSUagyqQ,9976
+ai_data_sdk/errors.py,sha256=ZglWGvE9dwzw3pD32T0j71WMhHX98h7LDhVOwoEzwDc,756
+ai_data_sdk/examples.py,sha256=WrRO5GVjzC5l9rtBjbbaUW8yqiL4QeBhdMwEgIhWi_Q,3141
+ai_data_sdk_zeebee-0.1.3.dist-info/METADATA,sha256=78NI9bAqiAdsh5ro6CuYlyWg-tAl7dtL4r-rA2CihyQ,4658
+ai_data_sdk_zeebee-0.1.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+ai_data_sdk_zeebee-0.1.3.dist-info/top_level.txt,sha256=3wKZ3wGpodWfRY5lFVy86VeQswisuRdujqH9jtL6naM,12
+ai_data_sdk_zeebee-0.1.3.dist-info/RECORD,,
