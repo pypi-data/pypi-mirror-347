@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: my-mcp-casper
+Version: 0.0.5
+Summary: My MCP Server
+Author-email: My <support@example.com>
+Keywords: mcp,text-to-speech,speech-to-text,voice-cloning
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: setuptools>=45
+
+# My MCP Server 
+For test
