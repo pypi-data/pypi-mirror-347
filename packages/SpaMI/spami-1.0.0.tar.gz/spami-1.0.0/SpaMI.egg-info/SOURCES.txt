@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+SpaMI/__init__.py
+SpaMI/main.py
+SpaMI/model.py
+SpaMI/preprocess.py
+SpaMI/utils.py
+SpaMI.egg-info/PKG-INFO
+SpaMI.egg-info/SOURCES.txt
+SpaMI.egg-info/dependency_links.txt
+SpaMI.egg-info/requires.txt
+SpaMI.egg-info/top_level.txt
