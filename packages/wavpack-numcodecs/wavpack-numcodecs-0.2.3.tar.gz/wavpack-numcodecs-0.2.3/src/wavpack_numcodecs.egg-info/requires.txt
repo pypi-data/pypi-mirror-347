@@ -1,0 +1,12 @@
+numpy
+numcodecs
+packaging
+
+[test]
+pytest
+zarr<3.0.0
+Cython
+
+[test_no_cython]
+pytest
+zarr<3.0.0
