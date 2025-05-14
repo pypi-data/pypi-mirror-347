@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+PlaydionSteam.Py.egg-info/PKG-INFO
+PlaydionSteam.Py.egg-info/SOURCES.txt
+PlaydionSteam.Py.egg-info/dependency_links.txt
+PlaydionSteam.Py.egg-info/requires.txt
+PlaydionSteam.Py.egg-info/top_level.txt
+steampy/IPlayerService.py
+steampy/ISteamNews.py
+steampy/ISteamUser.py
+steampy/ISteamUserStats.py
+steampy/__init__.py
