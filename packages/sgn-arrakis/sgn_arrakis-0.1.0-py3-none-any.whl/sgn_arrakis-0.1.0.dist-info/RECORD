@@ -1,0 +1,12 @@
+sgn_arrakis/__init__.py,sha256=J5mmuXHxBCLr-Iajne8L6r52R-kQ8hod00T5CFR2u10,246
+sgn_arrakis/__main__.py,sha256=mZdESFkulW54ptMpnK5M3ToK34NkhgVe2IkiFzN5sc4,3059
+sgn_arrakis/_version.py,sha256=-LyU5F1uZDjn6Q8_Z6-_FJt_8RE4Kq9zcKdg1abSSps,511
+sgn_arrakis/sink.py,sha256=9CxhULerPmDyO-P0Y5t7zmUumh6TISsOyeeArk7P0VA,3963
+sgn_arrakis/source.py,sha256=cBVqmC3Z6MCIuQYSPPg2ZMZn-MPcIIKMMvxPWmExSoI,1475
+sgn_arrakis/tests/test_data.py,sha256=9-OTa0FKcL1r5LTaWtkM6_ohuR_lBwAkbTJkJThk-y8,740
+sgn_arrakis/tests/test_source.py,sha256=28kcVCUXAxRQSIS8CkjwcLgx4oUEtqIu04E8G2PPxss,144
+sgn_arrakis-0.1.0.dist-info/METADATA,sha256=rxUvluVcnV06pgSUOnb8z3SSOdoKbMwHLLMvrkiHa8A,2346
+sgn_arrakis-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sgn_arrakis-0.1.0.dist-info/entry_points.txt,sha256=2B4bFME4T5qXTwHi-_aiOYJi5OIdui5_AcVTOb1er0Q,58
+sgn_arrakis-0.1.0.dist-info/licenses/LICENSE,sha256=j6ndOqjJBz6CZK2xxyfnTG5LV3UzPkmgOTOSZ8mXgqU,9236
+sgn_arrakis-0.1.0.dist-info/RECORD,,
