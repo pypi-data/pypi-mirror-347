@@ -1,0 +1,14 @@
+otdf_python/__init__.py,sha256=qvBHuXLdq6kTGqCq2ntWEpLNXd_PYt6pp9wvStFNVQ4,27
+otdf_python/_gotdf_python.cpython-311-darwin.h,sha256=lSWluNnkHfek2ySIDYanPHeVgwqTy8Tuqo_-OIW9W50,12830
+otdf_python/_gotdf_python.cpython-311-darwin.so,sha256=DIgGrjcJFwWQaFVGe0Fdr2WXVqeaJ23uYjrM9EMQTEU,17930818
+otdf_python/build.py,sha256=e5Vn2LPQWVXsLkpoFthNLHW30Nnp3XcPek0tWITOXUM,16396
+otdf_python/go.py,sha256=kdc4Dr394hD6XliOyBdKkHr2IfCx4u1ogm1PXF3YzSQ,49476
+otdf_python/gotdf_python.c,sha256=-nWup_nq5LidH2HHXPMVs__vUxC-1yukDy9hI5MiLHA,113241
+otdf_python/gotdf_python.go,sha256=jRZKGw_ItwELPSLF7obiqmpWRgCbNYd44zMKWge6EgU,41501
+otdf_python/gotdf_python.py,sha256=7U715ACPjcrGRUpDzcsjdAxQSVkrMJhq1b1x2LXfphk,11716
+otdf_python/gotdf_python_go.h,sha256=lSWluNnkHfek2ySIDYanPHeVgwqTy8Tuqo_-OIW9W50,12830
+otdf_python-0.2.14.dist-info/licenses/LICENSE,sha256=51wzGxR-Rns8XaiGmDLq2OqPN3qWMpoQKV-fERpVzyM,1063
+otdf_python-0.2.14.dist-info/METADATA,sha256=DNt8pbESgbYr405L0R7W6LLdxm3qf4QXDk_qCIFrCUw,5799
+otdf_python-0.2.14.dist-info/WHEEL,sha256=uqRn0u_bspNBbMvgG1xy6HKxppPaF_H12O6n2TEAE9k,109
+otdf_python-0.2.14.dist-info/top_level.txt,sha256=A2vK95iTIxdu4pm8kDZlvHorBKCvSN5dvlMdFbIVXrA,12
+otdf_python-0.2.14.dist-info/RECORD,,
