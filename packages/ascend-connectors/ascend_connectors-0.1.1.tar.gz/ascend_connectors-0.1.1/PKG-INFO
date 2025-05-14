@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: ascend-connectors
+Version: 0.1.1
+Summary: Ascend Python Connector plugins
+Author-email: Ascend developers <hello@ascend.io>
+Requires-Python: >=3.10
+Provides-Extra: salesforce
+Requires-Dist: simple-salesforce>=1.12.6; extra == 'salesforce'
+Description-Content-Type: text/markdown
+
+# Ascend Connectors
+
+Welcome to the open source Ascend Connectors! The purpose of this directory is to provide a simple, easy-to-use Python package for connecting Ascend to a variety of data sources.
+
