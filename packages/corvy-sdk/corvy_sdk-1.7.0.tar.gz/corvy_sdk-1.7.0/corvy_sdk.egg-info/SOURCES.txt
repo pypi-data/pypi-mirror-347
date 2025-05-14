@@ -1,0 +1,8 @@
+PYPI_README.md
+pyproject.toml
+setup.py
+corvy_sdk.egg-info/PKG-INFO
+corvy_sdk.egg-info/SOURCES.txt
+corvy_sdk.egg-info/dependency_links.txt
+corvy_sdk.egg-info/requires.txt
+corvy_sdk.egg-info/top_level.txt
