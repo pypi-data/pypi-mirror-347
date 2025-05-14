@@ -1,0 +1,9 @@
+[lint-utils]
+exclude = []
+lint.ignore = []
+
+[lint-utils.exclude-base-classes]
+USL001 = []
+
+[lint-utils.exclude-classes]
+USL001 = []
