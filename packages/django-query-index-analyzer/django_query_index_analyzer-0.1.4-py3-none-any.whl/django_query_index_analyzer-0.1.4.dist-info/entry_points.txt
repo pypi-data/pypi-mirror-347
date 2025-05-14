@@ -1,0 +1,2 @@
+[console_scripts]
+django-query-analyzer = cli:run

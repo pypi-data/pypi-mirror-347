@@ -1,0 +1,8 @@
+django_query_analyzer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_query_analyzer/parser.py,sha256=ZkxPg57BVWxQUZiRE4yRHNRpKHHScjpPajLbs2OcepM,6890
+django_query_analyzer/reporter.py,sha256=PCMh3U5W6_CNzYwEB5-ZX-gV5IcQzq3LcYYC0ScwtxI,2650
+django_query_index_analyzer-0.1.4.dist-info/METADATA,sha256=fhZusaFKmooC0IK07BtRyQgsJidA46KvKsp3RdiWHyA,1717
+django_query_index_analyzer-0.1.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+django_query_index_analyzer-0.1.4.dist-info/entry_points.txt,sha256=PXqpqk_C00DjSY0Giai9Gwzjk4TgPb0lgZDn_LtlCHA,50
+django_query_index_analyzer-0.1.4.dist-info/top_level.txt,sha256=BE_HdSbneyoXdmY_5pKWrE8q-1rn0Ihmkbgaac6Ldb4,22
+django_query_index_analyzer-0.1.4.dist-info/RECORD,,
