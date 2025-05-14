@@ -1,0 +1,13 @@
+README.md
+setup.py
+AI_PROJECT_JLK/__init__.py
+AI_PROJECT_JLK.egg-info/PKG-INFO
+AI_PROJECT_JLK.egg-info/SOURCES.txt
+AI_PROJECT_JLK.egg-info/dependency_links.txt
+AI_PROJECT_JLK.egg-info/top_level.txt
+AI_PROJECT_JLK/my_pics2/Balrog 2 copy.png
+AI_PROJECT_JLK/my_pics2/Death Star profile pic.jpg
+AI_PROJECT_JLK/my_pics2/The Ring copy 3.png
+AI_PROJECT_JLK/my_pics2/fullsizeoutput_3(1).jpeg
+AI_PROJECT_JLK/my_pics2/fullsizeoutput_e.jpeg
+AI_PROJECT_JLK/my_pics2/fullsizeoutput_f.jpeg
