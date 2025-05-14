@@ -1,0 +1,14 @@
+pyfcg/__init__.py,sha256=MCU0j4WmkfglrW-Eg99tZb7QqJuLT9s8Co8GzYswK-U,378
+pyfcg/agent.py,sha256=5kjvrXk4TwjI51wm4pq9VWwVlfWX4V3dsqnVL9H7A3Q,3027
+pyfcg/cxn.py,sha256=hQp99emaUR-G9KNfaXFrvimzWS0aHbW6Whqk1VSB0MI,1849
+pyfcg/fcg_go_bridge.py,sha256=vcQIDpD3Qt3Gg7U4Crln2Aid9VpHn0fLx19_LzeNKBg,4753
+pyfcg/grammar.py,sha256=sQ_eXrh-_5wJn78Xa5jNhrLQ47nwukJzcS6D_oP7rNY,9488
+pyfcg/propbank.py,sha256=K_cgxTo6lj5H22kSvi3vTVPD_ZJuEt1C_eA8FN7fFbs,2676
+pyfcg/resources.py,sha256=MMgxsumix5Req0FfSdAsEaE4sKRkjpqzr9WfIP2zjl0,1215
+pyfcg/routes.py,sha256=6d1IVXN0IXd6SmwA-92QW1m6WSxXIFgSUSjDUYmFEmk,7339
+pyfcg/utils.py,sha256=PLX7Kth6BPpPcrZs8xZy2eIOl5MAddk2mhLhfm6Qi_4,4725
+pyfcg/test/testje.txt,sha256=yLmjwg2gWZHkv4C4ovU6kcv42-ucfR919RZr8tF_gbQ,18
+pyfcg-0.1b3.dist-info/METADATA,sha256=UOGzJ62w63amB7TyWmO9GuBFPsNFvPDbZldXIWXnYXg,1873
+pyfcg-0.1b3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pyfcg-0.1b3.dist-info/top_level.txt,sha256=q5b7u6nj-YPU5OZyprKKKfFOfWcTJTEhmTCSwgk5f2o,6
+pyfcg-0.1b3.dist-info/RECORD,,
