@@ -1,0 +1,2 @@
+[console_scripts]
+shodanx = shodanx.shodanx:cli
