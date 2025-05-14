@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: BLSSLIB
+Version: 0.1.3
+Summary: A Python library for encoding and decoding Build logic save data.
+Author: Back
+License: GPL-3.0-or-later
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
