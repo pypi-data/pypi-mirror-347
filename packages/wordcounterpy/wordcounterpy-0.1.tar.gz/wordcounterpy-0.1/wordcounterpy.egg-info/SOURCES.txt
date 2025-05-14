@@ -1,0 +1,7 @@
+setup.py
+wordcounter/__init__.py
+wordcounter/wordcounter.py
+wordcounterpy.egg-info/PKG-INFO
+wordcounterpy.egg-info/SOURCES.txt
+wordcounterpy.egg-info/dependency_links.txt
+wordcounterpy.egg-info/top_level.txt
