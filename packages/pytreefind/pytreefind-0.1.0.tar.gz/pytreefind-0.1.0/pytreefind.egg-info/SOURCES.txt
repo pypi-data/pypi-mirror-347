@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+pytreefind/__init__.py
+pytreefind/tree.py
+pytreefind.egg-info/PKG-INFO
+pytreefind.egg-info/SOURCES.txt
+pytreefind.egg-info/dependency_links.txt
+pytreefind.egg-info/entry_points.txt
+pytreefind.egg-info/top_level.txt
+tests/test_tree.py
