@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+opendataformat/__init__.py
+opendataformat/docu_odf.py
+opendataformat/read_odf.py
+opendataformat/write_odf.py
+opendataformat.egg-info/PKG-INFO
+opendataformat.egg-info/SOURCES.txt
+opendataformat.egg-info/dependency_links.txt
+opendataformat.egg-info/requires.txt
+opendataformat.egg-info/top_level.txt
+opendataformat/data/example_dataset.odf.zip
+opendataformat/data/example_dataset_v1_0_0.zip
+opendataformat/data/example_dataset_v1_1_0.odf.zip

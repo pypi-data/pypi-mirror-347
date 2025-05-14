@@ -1,0 +1,3 @@
+recursive-include opendataformat/data *
+include README.md
+include LICENSE
