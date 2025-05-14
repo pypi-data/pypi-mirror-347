@@ -1,0 +1,46 @@
+{% import 'utils.jinja' as utils %}
+
+CREATE TABLE {{ study_prefix }}__q_ref_target_valid_{{ src|lower }}_{{ dest|lower }} AS (
+
+{% if field == 'context.encounter' and not schema['context']['encounter'] %}
+    SELECT id FROM {{ src }} WHERE 1=0  -- return an empty table
+{% else %}
+
+WITH
+reduced_src AS (
+    SELECT
+        id,
+        {{ utils.extract_status(src) }} AS status,
+{%- if is_array %}
+        t.row.reference AS target
+    FROM {{ src }},
+        UNNEST({{ field }}) AS t (row)
+{%- else %}
+        {{ field }}.reference AS target
+    FROM {{ src }}
+{%- endif %}
+),
+
+grouped_bad_refs AS (
+    SELECT
+        src.id,
+        ARBITRARY(src.status) AS status,
+        ARRAY_AGG(src.target) AS target
+    FROM reduced_src AS src
+    LEFT JOIN {{ dest }} AS dest
+    ON SUBSTRING(src.target, LENGTH('{{ dest }}/') + 1) = dest.id
+    WHERE
+        REGEXP_LIKE(src.target, '^{{ dest }}/')
+        AND dest.id IS NULL
+    GROUP BY src.id
+)
+
+SELECT
+    src.id,
+    status,
+    {{ utils.array_to_string('target') }} AS target
+FROM grouped_bad_refs AS src
+
+{% endif %} -- closing initial "return empty table" check
+
+);
