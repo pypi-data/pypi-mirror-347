@@ -1,0 +1,16 @@
+cardiac_geometries/__init__.py,sha256=2W_ywAeLjyRk5MqSPAodHa4UN2lOnW1h8tmGLQ3gaJ0,150
+cardiac_geometries/cli.py,sha256=SBg2qFC1jgLoWUK5eke6grNyrYOklwi2QwLUgFW7VJs,21947
+cardiac_geometries/geometry.py,sha256=Qdbd2npBe3QrwknV4XWts9HprElGufasX0IhZWEDCx0,7051
+cardiac_geometries/gui.py,sha256=9WYR850wLrqsUrVUC37E2SaO0OWA_oagSe-YNrsxz3k,8376
+cardiac_geometries/mesh.py,sha256=jLHTujz_38SQ5loN94nuN6pMG8IVPmlCdwOJhzuMxy4,30922
+cardiac_geometries/utils.py,sha256=nJE-gyV7NIAmgl5JGlG5Vl7XsIcYS8Y20bVjYcd4R6c,21964
+cardiac_geometries/fibers/__init__.py,sha256=WpRrn9Iakl-3m8IGtFkqP0LXGjw5EZHZ8Eg9JCnCdrg,137
+cardiac_geometries/fibers/lv_ellipsoid.py,sha256=LZNhxzTsn-h88xXGP5bNfnWKhdvBROUjWjt8yrQFW48,6010
+cardiac_geometries/fibers/slab.py,sha256=TYQhckJ8mwXz_08Cx3QsPQMtemkaxZ955SnSMrDfBPE,3898
+cardiac_geometries/fibers/utils.py,sha256=pCoXkaUbidLGPY0Ty8uWCU1siDkHcv2qP8rZtdxMf0k,3475
+cardiac_geometriesx-0.4.8.dist-info/licenses/LICENSE,sha256=lo5K2rJPZOSv6luutGHbzzi3IpXNaB9E2UWq60qvNx0,1111
+cardiac_geometriesx-0.4.8.dist-info/METADATA,sha256=pw7N1Amzyn_xrXkt1o3I1ftA_fwIhazcpm7xy3mKNWA,4320
+cardiac_geometriesx-0.4.8.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+cardiac_geometriesx-0.4.8.dist-info/entry_points.txt,sha256=xOBnlc6W-H9oCDYLNz3kpki26OmpfYSoFSrmi_4V-Ec,52
+cardiac_geometriesx-0.4.8.dist-info/top_level.txt,sha256=J0gQxkWR2my5Vf7Qt8buDY8ZOjYdVfIweVunCGXWKNE,19
+cardiac_geometriesx-0.4.8.dist-info/RECORD,,
