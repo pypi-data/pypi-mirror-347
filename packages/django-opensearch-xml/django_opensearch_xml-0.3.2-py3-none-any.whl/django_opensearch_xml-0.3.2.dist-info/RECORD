@@ -1,0 +1,14 @@
+opensearch_xml/__about__.py,sha256=7kNyKmPaVF6KLO6ieXzjJPFIRdb9ZlP9ACoO8j6f1A8,76
+opensearch_xml/__init__.py,sha256=i38abE_ql3wpSFi5-j5NdHvCJn_r54fJAAV11Cx5tJ0,127
+opensearch_xml/apps.py,sha256=PIIrgTU6XhucqZHie_fAzsA4hY-DdZbjtBVbeMq5YAE,643
+opensearch_xml/conf.py,sha256=s_Pre06fNDmwzqy8xJhhV-zmgHHqQC8z0sCr4ye70qQ,818
+opensearch_xml/urls.py,sha256=qSMgthw48827XqpHMk7YL8Xjmo4eGMxbSDLswiTTvOw,417
+opensearch_xml/views.py,sha256=ixIMDe8pruP2IoULUnI3H5Grj-F1J0uSSjanMzm_dcQ,2149
+opensearch_xml/templates/opensearch_xml/opensearch.xml,sha256=JJ-VTo0w5zMeT6oZGI1klvSdmLa0KCiPYuupQOVdUOM,1296
+opensearch_xml/templates/opensearch_xml/tags/opensearch_xml_meta.html,sha256=45JuzIYo_yoOC9Mg77lDidBAspqcHunxp_tsKl2GWnU,293
+opensearch_xml/templatetags/__init__.py,sha256=iLwcreOK1pOAxHCkPjNISGtV0WxL-du1hXm7tnEAd_k,126
+opensearch_xml/templatetags/opensearch_xml_tags.py,sha256=Prf1xIg6A4y9DdRJQMdNigOZqtCoVcS6NNqxshcVsLM,915
+django_opensearch_xml-0.3.2.dist-info/METADATA,sha256=qSXnd6wC3ZNuSKhGDlgN-lMriXBO_SkJa_-ODJanMIg,3528
+django_opensearch_xml-0.3.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+django_opensearch_xml-0.3.2.dist-info/licenses/LICENSE,sha256=K9ZcuFOO0iaUmyWfECAWSinkQ8CmvK4jWVVbaca9DTY,1334
+django_opensearch_xml-0.3.2.dist-info/RECORD,,

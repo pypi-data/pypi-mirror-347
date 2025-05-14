@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>{% load i18n static cache %}
+{% if debug %}<!-- src/opensearch_xml/templates/opensearch_xml/opensearch.xml -->{% endif %}{% spaceless %}
+    <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+        {% block contact %}{% if CONTACT_EMAIL %}
+            <Contact>{{ CONTACT_EMAIL }}</Contact>{% endif %}{% endblock contact %}
+        {% block short-name %}{% if SHORT_NAME %}
+            <ShortName>{% trans SHORT_NAME %}</ShortName>{% endif %}{% endblock short-name %}
+        {% block description %}{% if DESCRIPTION %}
+            <Description>{% trans DESCRIPTION %}</Description>{% endif %}{% endblock description %}
+        {% block image %}{% if FAVICON_WIDTH and FAVICON_HEIGHT and FAVICON_TYPE and FAVICON_FILE %}
+            <Image width="{{ FAVICON_WIDTH }}" height="{{ FAVICON_HEIGHT }}"
+                   type="{{ FAVICON_TYPE }}">{{ FAVICON_FILE }}</Image>{% endif %}{% endblock image %}
+        {% block url %}{% if URL %}
+            <Url type="text/html" template="{{ URL }}"></Url>{% endif %}{% endblock url %}
+        {% block input-encoding %}{% if INPUT_ENCODING %}
+            <InputEncoding>{{ INPUT_ENCODING }}</InputEncoding>{% endif %}{% endblock input-encoding %}
+    </OpenSearchDescription>
+{% endspaceless %}
