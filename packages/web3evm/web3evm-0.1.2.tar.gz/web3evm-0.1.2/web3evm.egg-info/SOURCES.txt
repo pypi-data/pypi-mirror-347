@@ -1,0 +1,8 @@
+README.md
+setup.py
+web3evm/__init__.py
+web3evm/web3evm.py
+web3evm.egg-info/PKG-INFO
+web3evm.egg-info/SOURCES.txt
+web3evm.egg-info/dependency_links.txt
+web3evm.egg-info/top_level.txt
