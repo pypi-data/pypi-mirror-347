@@ -1,0 +1,17 @@
+showinfm/__about__.py,sha256=BRe31q1jQOIWPAefoxtuGtXrj1yHjFu35SxgHVQ9Cto,109
+showinfm/__init__.py,sha256=qZYcqhaakVPUQVO50WrDYo-TH4cbhdHGKEInDBrkYzY,388
+showinfm/argumentsparse.py,sha256=ZQFYdR15T8ZrIzj7TToJJWR2Pn-kilJmUqYCjn9Zsh0,1876
+showinfm/constants.py,sha256=RFukvY7u-a2DbP3psEAPyHTagGK0kUZ2-8EohTYlbIA,707
+showinfm/filemanager.py,sha256=Hs5HUil9KDPSpiTYw62wUE-8JxAtM1Z66vAIHnY4_ww,17002
+showinfm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+showinfm/showinfm.py,sha256=qv8x4_QM7_n3k0fTtOM7kCBPgo7tseTVaGJN46PeImY,8048
+showinfm/system/__init__.py,sha256=YWQeFacrGiyNor-N5GjnYls_HG4iaksPCe_IYlhet5I,747
+showinfm/system/linux.py,sha256=xViV8O_kd_nNODKyNuLTWkHB_pUjQbZ2OUmmS67sgQM,24608
+showinfm/system/tools.py,sha256=GPHhYmqX18RLl0D6LLH2P_fTE3V8055hECi3dpM52Fw,3561
+showinfm/system/urivalidate.py,sha256=otTU6XXfBrrEOeNFb06ldKQAdBlBbpYCoUqjGXN-TkY,17476
+showinfm/system/windows.py,sha256=QcIIE7PpeXq92ig5AhjfZGh5GiDc_Wd67twAefESGmg,3249
+je_showinfilemanager-1.1.6a4.dist-info/METADATA,sha256=RHsB1Qw7Kl-dBmpTp4WgcXrn1wrleyKmgQE2dWE7R94,23933
+je_showinfilemanager-1.1.6a4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+je_showinfilemanager-1.1.6a4.dist-info/entry_points.txt,sha256=PUGWqoWEpJ4xmEuf9qmUwPppeHfIZW1W2U5Pe-Ncewg,64
+je_showinfilemanager-1.1.6a4.dist-info/licenses/LICENSE,sha256=2-q5YJEp7Bf2sJ4cDC5ruIGMOogp_stc8rfAYOLYw-A,1068
+je_showinfilemanager-1.1.6a4.dist-info/RECORD,,
