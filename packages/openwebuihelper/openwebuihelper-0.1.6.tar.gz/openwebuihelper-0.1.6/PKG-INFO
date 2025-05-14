@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: openwebuihelper
+Version: 0.1.6
+Summary: open web ui extended functionality
+Author-email: heifade <heifade@126.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/heifade/openwebuihelper
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+
+## 安装依赖
+```sh
+pip install twine build
+```
+
+## 打包
+```sh
+python -m build
+```
+
+
+https://pypi.org/account/register/
+## 上传
+```sh
+twine upload dist/*
+```
+
