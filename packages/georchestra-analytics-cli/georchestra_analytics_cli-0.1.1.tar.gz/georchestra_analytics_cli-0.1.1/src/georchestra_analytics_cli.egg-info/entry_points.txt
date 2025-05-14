@@ -1,0 +1,2 @@
+[console_scripts]
+analytics-cli = georchestra_analytics_cli.__main__:cli
