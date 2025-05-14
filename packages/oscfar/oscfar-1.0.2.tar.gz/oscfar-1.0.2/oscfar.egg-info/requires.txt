@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+pandas
+itertools
+scikit-learn
+multiprocessing
