@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: maleo-token
+Version: 0.0.5
+Summary: MaleoToken package
+Author-email: Agra Bima Yuda <agra@nexmedis.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: maleo_foundation>=0.2.1
