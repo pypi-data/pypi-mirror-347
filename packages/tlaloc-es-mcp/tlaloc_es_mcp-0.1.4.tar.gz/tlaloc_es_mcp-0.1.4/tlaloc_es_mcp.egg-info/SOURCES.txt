@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+tlaloc_es_mcp.egg-info/PKG-INFO
+tlaloc_es_mcp.egg-info/SOURCES.txt
+tlaloc_es_mcp.egg-info/dependency_links.txt
+tlaloc_es_mcp.egg-info/entry_points.txt
+tlaloc_es_mcp.egg-info/requires.txt
+tlaloc_es_mcp.egg-info/top_level.txt
+tlalocesmcp/__main__.py
+tlalocesmcp/file_handler.py
