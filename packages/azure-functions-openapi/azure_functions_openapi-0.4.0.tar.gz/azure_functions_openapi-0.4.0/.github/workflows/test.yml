@@ -1,0 +1,48 @@
+name: Test and Coverage
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Create virtualenv and install dev dependencies
+        run: |
+          make install PYTHON=python
+
+      - name: Show workspace contents (debug)
+        run: ls -R
+
+      - name: Run tests with coverage (Makefile)
+        run: |
+          . .venv/bin/activate
+          make coverage
+
+      - name: Verify coverage output
+        run: ls -lh coverage.xml
+
+      - name: Upload coverage to Codecov
+        if: matrix.python-version == '3.9'
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage.xml
+          verbose: true
+          fail_ci_if_error: true
+        env:
+          CODECOV_RETRIES: 3

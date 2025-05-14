@@ -1,0 +1,76 @@
+[project]
+name = "azure-functions-openapi"
+description = "OpenAPI (Swagger) integration for Python-based Azure Functions"
+authors = [{ name = "Yeongseon Choe", email = "yeongseon.choe@gmail.com" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+dynamic = ["version"]
+
+dependencies = [
+    "azure-functions",
+    "PyYAML",
+    "pydantic>=1.10,<3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "bandit",
+    "black",
+    "git-changelog",
+    "hatch",
+    "mypy",
+    "pre-commit",
+    "pytest",
+    "ruff",
+    "types-PyYAML",
+    "pytest-cov"
+]
+docs = [
+    "mkdocs",
+    "mkdocs-material"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/azure_functions_openapi/__init__.py"
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+exclude = "examples/"
+
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+exclude = ["tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]  # E: pycodestyle, F: pyflakes, I: isort
+
+[tool.ruff.lint.isort]
+known-first-party = ["azure_functions_openapi"]
+force-sort-within-sections = true
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=src/azure_functions_openapi --cov-report=xml -ra -q"
+testpaths = ["tests"]
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
