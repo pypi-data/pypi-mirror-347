@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sidekicks"
+version = "0.1.0.dev0"
+description = "Reactive Python UI framework for desktop apps using Shoelace components and pywebview."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Israel Dryer", email = "israel.dryer@gmail.com" }
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Environment :: Win32 (MS Windows)",
+  "Environment :: MacOS X",
+  "Environment :: X11 Applications :: GTK",
+  "Topic :: Software Development :: User Interfaces"
+]
+keywords = ["python ui", "pywebview", "shoelace", "desktop", "reactive", "component", "framework"]
+
+[project.urls]
+Homepage = "https://github.com/israel-dryer/sidekicks"
+Documentation = "https://github.com/israel-dryer/sidekicks#readme"
+Source = "https://github.com/israel-dryer/sidekicks"
+Tracker = "https://github.com/israel-dryer/sidekicks/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
