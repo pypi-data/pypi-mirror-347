@@ -1,0 +1,1 @@
+georchestra_analytics_cli
