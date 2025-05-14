@@ -1,0 +1,5 @@
+
+[test]
+pytest
+sqlite-utils>=4.0a0
+cogapp
