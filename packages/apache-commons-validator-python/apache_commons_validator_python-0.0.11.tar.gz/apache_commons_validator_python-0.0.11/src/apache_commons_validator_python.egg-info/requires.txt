@@ -1,0 +1,10 @@
+babel==2.11.0
+pycountry
+dateparser
+pytest>=7.0.0
+black
+pylint
+pytest-mock
+coverage
+sphinx
+sphinx_rtd_theme
