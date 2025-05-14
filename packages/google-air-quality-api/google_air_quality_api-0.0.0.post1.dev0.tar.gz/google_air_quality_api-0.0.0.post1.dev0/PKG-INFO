@@ -1,0 +1,37 @@
+Metadata-Version: 2.3
+Name: google_air_quality_api
+Version: 0.0.0.post1.dev0
+Summary: Python module to talk to Husqvarna Automower.
+License: MIT
+Keywords: air,quality,api,async,client,google
+Author: Thomas Peter Protzner
+Author-email: thomas.protzner@gmail.com
+Requires-Python: >=3.11
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiohttp (>=3.9.3,<4.0.0)
+Requires-Dist: mashumaro (>=3.12,<4.0.0)
+Project-URL: Documentation, https://github.com/Thomas55555/python-google-air-quality-api
+Project-URL: Homepage, https://github.com/Thomas55555/python-google-air-quality-api
+Project-URL: Issues, https://github.com/Thomas55555/aioautomower/issues
+Project-URL: Repository, https://github.com/Thomas55555/python-google-air-quality-api
+Description-Content-Type: text/markdown
+
+A python client library for the Google Air Quality API.
+
+The Google Google Air API allows to get air qulaity information.
+See [Google Air Quality APIs](https://developers.google.com/maps/documentation/air-quality/overview)
+for more details on how to integrate Google Air Quality with your application.
+
+## Background
+
+This is a thin wrapper around the API used for a very lightweight abstraction. The
+primary use case is for Home Assistant though can be used for other usages.
+
