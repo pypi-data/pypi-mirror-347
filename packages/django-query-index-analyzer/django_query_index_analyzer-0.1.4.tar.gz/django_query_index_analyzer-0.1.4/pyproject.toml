@@ -1,0 +1,21 @@
+[project]
+name = "django-query-index-analyzer"
+version = "0.1.4"
+description = "CLI tool to analyze Django ORM filter, exclude, and annotate usage on a specific model."
+authors = [{ name = "Marcos Eliziario", email = "opensource@msantos.dev" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = ["pathspec"]
+
+[project.scripts]
+django-query-analyzer = "cli:run"
+
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

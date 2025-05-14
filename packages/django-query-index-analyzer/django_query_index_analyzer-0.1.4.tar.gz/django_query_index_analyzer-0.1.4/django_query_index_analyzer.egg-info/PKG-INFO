@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: django-query-index-analyzer
+Version: 0.1.4
+Summary: CLI tool to analyze Django ORM filter, exclude, and annotate usage on a specific model.
+Author-email: Marcos Eliziario <opensource@msantos.dev>
+License-Expression: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pathspec
+
+# README.md
+
+# record-query-analysis
+
+**record-query-analysis** is a command-line tool for analyzing Django ORM usage of `.filter()`, `.exclude()`, and `.annotate()` on a specific model across a Python codebase.
+
+## 🔍 Features
+- Detects chained querysets on a target model (e.g., `Record.objects.filter(...).annotate(...)`)
+- Extracts used fields in `filter`, `exclude`, and `annotate`
+- Aggregates and counts unique field combinations
+- Outputs results in **table**, **JSON**, or **CSV** formats
+
+## 🚀 Installation
+```bash
+pip install -e .  # or build via uv, poetry, etc.
+```
+
+## 🧪 Usage
+```bash
+record-query-analysis path/to/your/codebase --model=Record --output-format=table
+```
+
+### Options:
+- `--model`: Django model name (default: `Record`)
+- `--output-format`: `table` (default), `json`, or `csv`
+- `--csv-file`: custom file path for CSV output
+
+## 📦 Example Output
+```text
+Filter/Exclude Fields                  | Annotate Fields           | Frequency | Locations
+-----------------------------------------------------------------------------------------------
+is_active, location_id                | client                    |        12 |
+                                                                ↳ app/views/reports.py:45
+```
+
+## 📄 License
+MIT License

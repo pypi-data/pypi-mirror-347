@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+django_query_analyzer/__init__.py
+django_query_analyzer/parser.py
+django_query_analyzer/reporter.py
+django_query_index_analyzer.egg-info/PKG-INFO
+django_query_index_analyzer.egg-info/SOURCES.txt
+django_query_index_analyzer.egg-info/dependency_links.txt
+django_query_index_analyzer.egg-info/entry_points.txt
+django_query_index_analyzer.egg-info/requires.txt
+django_query_index_analyzer.egg-info/top_level.txt
+tests/test_parser.py
