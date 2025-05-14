@@ -1,0 +1,9 @@
+universal_mcp_spotify/README.md,sha256=KUpm-F0BvBf4nvaDltPU6ktAIJK4BEPSGNU8BvknC1M,9353
+universal_mcp_spotify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universal_mcp_spotify/app.py,sha256=x8QxvW9gjKtxjM58ECta1MN-_0lwPUGpnmW443a2OM0,105444
+universal_mcp_spotify/mcp.py,sha256=Lt4Pquu37GsmgFs6NR-80CnOUMhde3XP-TEaRswamZo,488
+universal_mcp_spotify-0.1.1.dist-info/METADATA,sha256=Dt0po237eJiZa6ENll71vJdV0MMNLcbd92AI5ap9_7c,3384
+universal_mcp_spotify-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+universal_mcp_spotify-0.1.1.dist-info/entry_points.txt,sha256=LMsY0xYzJPS1-5x8NpuV6sb_iVCDB-UXZxOD6vjK-dU,69
+universal_mcp_spotify-0.1.1.dist-info/licenses/LICENSE,sha256=NweDZVPslBAZFzlgByF158b85GR0f5_tLQgq1NS48To,1063
+universal_mcp_spotify-0.1.1.dist-info/RECORD,,
