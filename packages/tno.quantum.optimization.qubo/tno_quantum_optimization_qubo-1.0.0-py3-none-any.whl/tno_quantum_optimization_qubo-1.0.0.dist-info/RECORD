@@ -1,0 +1,9 @@
+tno/quantum/optimization/qubo/__init__.py,sha256=Uv1tmuWvyf6E0Lr8wDT2K3v5ae8wOL6-yJcuL02RARY,2514
+tno/quantum/optimization/qubo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tno/quantum/optimization/qubo/test/__init__.py,sha256=9nnkT1UG39RPqFs1Ly6AnOoGR52tDEatNBoe6AGPOZU,71
+tno/quantum/optimization/qubo/test/test_qubo.py,sha256=g7Bm4Rkigro6RG_4mkWDRjAU88HEd_XCaAyCR7FEXfU,111
+tno_quantum_optimization_qubo-1.0.0.dist-info/licenses/LICENSE,sha256=h9jI_4SV6Wb1uJx6c81vVQNoMyuPpnGh8aBD373_v_g,11396
+tno_quantum_optimization_qubo-1.0.0.dist-info/METADATA,sha256=EWlYRy79Fj-6AF7GO1ZEBc4ikp88Y-yXkv0_EwKyXPE,4079
+tno_quantum_optimization_qubo-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+tno_quantum_optimization_qubo-1.0.0.dist-info/top_level.txt,sha256=7cHKx5j6ibiq14EYKPAhHk_NqB8u-nPUjh5R4TDqpHo,4
+tno_quantum_optimization_qubo-1.0.0.dist-info/RECORD,,
