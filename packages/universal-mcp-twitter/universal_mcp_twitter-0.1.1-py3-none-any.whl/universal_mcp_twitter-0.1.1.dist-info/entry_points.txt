@@ -1,0 +1,2 @@
+[console_scripts]
+universal_mcp_twitter = universal_mcp_twitter:main
