@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: genomekit
+Version: 7.1.0
+Summary: GenomeKit is a Python library for fast and easy access to genomic resources such as sequence, data tracks, and annotations.
+Home-page: https://github.com/deepgenomics/GenomeKit/v7.1.0
+Author: Deep Genomics
+Author-email: info@deepgenomics.com
+License: Apache License 2.0
+Project-URL: Documentation, https://deepgenomics.github.io/GenomeKit
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9, <4
+License-File: COPYRIGHT.txt
+License-File: LICENSE
+Requires-Dist: appdirs>=1.4.0
+Requires-Dist: numpy<2.0dev0
+Requires-Dist: google-cloud-storage>=2.10.0
+Requires-Dist: boto3
+Requires-Dist: tqdm
+Requires-Dist: setuptools
+Requires-Dist: importlib-metadata
+Requires-Dist: typing-extensions
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
