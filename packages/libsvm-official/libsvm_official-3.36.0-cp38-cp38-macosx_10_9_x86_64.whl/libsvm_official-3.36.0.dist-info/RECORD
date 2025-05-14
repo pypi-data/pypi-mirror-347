@@ -1,0 +1,11 @@
+libsvm/commonutil.py,sha256=arzxSXDvayC7A3ye26jQ5bFGdn3D1UfZ-AO8xTgzAjY,6547
+libsvm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libsvm/clib.cpython-38-darwin.so,sha256=5J3TDyOtWR6Kay0vEi8oNtpfwGputmD2xjbkKWROU0k,135392
+libsvm/svmutil.py,sha256=5ywulzubE0_deUgeeRGJtDDZgjrzZaLVen4sqihl6EY,10685
+libsvm/svm.py,sha256=2HiihTXQK-pyDQRObk43fHeiPZfYlg3JoKlwvYKsohY,17204
+libsvm/.dylibs/libgomp.1.dylib,sha256=NSpFYmg5SlVV-1pedVyINtMkqJzr1dUVWW6dTcy4HhQ,461760
+libsvm_official-3.36.0.dist-info/RECORD,,
+libsvm_official-3.36.0.dist-info/LICENSE,sha256=lY_Ue-XluU2r62iwd_virbvUnAFf4uRT_hGv60pzx-U,1497
+libsvm_official-3.36.0.dist-info/WHEEL,sha256=pXLpj1wTvqlD6RVUEKOuGQGeFX0NOPyDrsC-9xVDmYU,109
+libsvm_official-3.36.0.dist-info/top_level.txt,sha256=qleZAga5JwQJ0R6Hpu6gS1zOiXc0JkW42oN42NrCrYw,7
+libsvm_official-3.36.0.dist-info/METADATA,sha256=_01vz7A7Y0BkszZ9c0S59jDIHWBvu6LVLeTC7r0tKfg,17641
