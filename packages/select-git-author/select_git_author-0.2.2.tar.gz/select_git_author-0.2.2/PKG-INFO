@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: select-git-author
+Version: 0.2.2
+Summary: Interactively select the author for the next git commit
+License: MIT
+Author: Markus Grotz
+Author-email: grotz@uw.edu
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click-prompt (>=0.6.2,<0.7.0)
