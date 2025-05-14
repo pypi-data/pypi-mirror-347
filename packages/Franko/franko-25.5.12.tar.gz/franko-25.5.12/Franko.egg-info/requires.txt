@@ -1,0 +1,6 @@
+setuptools>=61.0
+wheel
+pydantic
+
+[dev_deps ]
+pytest
