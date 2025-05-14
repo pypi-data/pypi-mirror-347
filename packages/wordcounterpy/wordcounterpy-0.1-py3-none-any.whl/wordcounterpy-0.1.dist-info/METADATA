@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: wordcounterpy
+Version: 0.1
+Summary: A very simple word counting library
+Author: elaheh121
+Author-email: shelahe065@gmail.com
+Keywords: text,word count,simple
+Classifier: Programming Language :: Python :: 3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: keywords
+Dynamic: summary
