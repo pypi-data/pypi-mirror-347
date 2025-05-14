@@ -1,0 +1,31 @@
+[project]
+name = "multi-dimpy"
+version = "0.2.1"
+description = "NumPy-wrapper for dimensioned arrays."
+authors = [
+    {name = "Nathan Schill", email = "nateschill@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy (>=2.2.5,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [
+    { include = "dimpy", from = "src" }
+]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.8"
+pytest = "^8.3.5"
+pytest-cov = "^6.1.1"
+pre-commit = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+data_file = ".garbage/.coverage"
