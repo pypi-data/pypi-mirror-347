@@ -1,0 +1,6 @@
+defaults:
+  - visual_encoder: clip-vit-base-patch16
+  - language_model: phi-4-mini-instruct
+  - connector: mlp-2-gelu
+
+name: small-vlm
