@@ -1,0 +1,1 @@
+DEPRECATED. Replace with ideas learned from qnc_cms._typed_router (ideally, we'll package that up for reuse)

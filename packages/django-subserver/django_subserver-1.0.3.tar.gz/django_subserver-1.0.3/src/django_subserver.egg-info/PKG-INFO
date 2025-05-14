@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: django_subserver
+Version: 1.0.3
+Author: Alex Fischer
+Author-email: alex@quadrant.net
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django<6,>=3.0
+Dynamic: license-file
+
+DEPRECATED. Replace with ideas learned from qnc_cms._typed_router (ideally, we'll package that up for reuse)
