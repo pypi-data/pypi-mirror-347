@@ -1,0 +1,3 @@
+[console_scripts]
+mdsci = mdsci.cli:main
+mdsci-filter = mdsci.main_filter:main
