@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: spotify-recommendation-mcp
+Version: 0.2.0
+Summary: MCP server that extracts content from spotify and cyanite for LLMs
+Author-email: supun wijemanna <supun.wijemanna58@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: pydantic>=2.6.1
+Requires-Dist: requests>=2.31.0
+Requires-Dist: spotipy>=2.25.1
+Dynamic: license-file

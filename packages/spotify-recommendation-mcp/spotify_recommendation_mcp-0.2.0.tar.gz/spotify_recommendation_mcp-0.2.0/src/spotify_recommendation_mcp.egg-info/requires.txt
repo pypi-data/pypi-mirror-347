@@ -1,0 +1,4 @@
+mcp[cli]>=1.6.0
+pydantic>=2.6.1
+requests>=2.31.0
+spotipy>=2.25.1
