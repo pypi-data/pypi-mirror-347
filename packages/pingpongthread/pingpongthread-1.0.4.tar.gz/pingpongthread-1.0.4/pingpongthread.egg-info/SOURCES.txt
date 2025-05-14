@@ -1,0 +1,7 @@
+README.md
+setup.py
+pingpongthread.egg-info/PKG-INFO
+pingpongthread.egg-info/SOURCES.txt
+pingpongthread.egg-info/dependency_links.txt
+pingpongthread.egg-info/requires.txt
+pingpongthread.egg-info/top_level.txt
