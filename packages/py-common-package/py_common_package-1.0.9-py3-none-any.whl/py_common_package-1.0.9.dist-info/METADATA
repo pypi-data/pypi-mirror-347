@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: py_common_package
+Version: 1.0.9
+Summary: python test common function or case_step
+Author: wl11
+Author-email: wl_926454@163.com
+Requires-Python: >=3.6
+
