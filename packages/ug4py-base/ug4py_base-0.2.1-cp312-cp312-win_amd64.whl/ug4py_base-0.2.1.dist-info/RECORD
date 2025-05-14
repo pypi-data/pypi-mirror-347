@@ -1,0 +1,9 @@
+lib/ug4_s.lib,sha256=RN3wkiwClAbx-BfL7kCh46puCRL2Yswpg7x1UCTZLA8,360591768
+ug4py/pyconvectiondiffusion.cp312-win_amd64.pyd,sha256=wnCw8HI8xCJ6YROZdcYJ4usxkFUzistpfKvj2VkkYIU,2911744
+ug4py/pylimex.cp312-win_amd64.pyd,sha256=3TSd_YzysCz7BZI3A1qQ4LPwzDp9LSbCfeGGYlc67u0,2899968
+ug4py/pyugcore.cp312-win_amd64.pyd,sha256=0HJl1mIbuTioxuD2v7PGNU-63nI04HWvMqJUysfg8mQ,12052992
+ug4py/pyutil.cp312-win_amd64.pyd,sha256=H9Wtly4gYmz2zGR4lwSDvYpkrzLshoasGbNEK3pIV3c,1774592
+ug4py_base-0.2.1.dist-info/METADATA,sha256=2xM7dapFfZCg2MC1GK3Nwarq6v_XEBGwel8hbpRojvM,1293
+ug4py_base-0.2.1.dist-info/WHEEL,sha256=k3AOLK754NVb09U5k7PdROOgoHUP1Q4mZk2PKi14SoM,106
+ug4py_base-0.2.1.dist-info/licenses/LICENSE,sha256=4W_AZ3paFOk9Tf2efYRUETQsdIe_kD5yQC-1ZtJLilM,1116
+ug4py_base-0.2.1.dist-info/RECORD,,
