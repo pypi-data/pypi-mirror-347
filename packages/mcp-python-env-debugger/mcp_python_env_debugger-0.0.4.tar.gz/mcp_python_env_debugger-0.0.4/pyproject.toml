@@ -1,0 +1,13 @@
+[project]
+name = "mcp-python-env-debugger"
+version = "0.0.4"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.1"
+dependencies = [
+    "mcp[cli]>=1.8.1",
+]
+
+[project.scripts]
+mcp-python-env-debugger = "mcp_python_env_debugger:run"
+
