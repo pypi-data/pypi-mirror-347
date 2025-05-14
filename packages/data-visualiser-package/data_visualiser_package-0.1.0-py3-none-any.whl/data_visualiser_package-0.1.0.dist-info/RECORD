@@ -1,0 +1,8 @@
+data_visualiser_package/__init__.py,sha256=T1CoedsuYqnuk2XDHUAOdza90JWoiJsQG4Cj3sB1UQc,374
+data_visualiser_package/data_visualiser.py,sha256=3yBLInKSc0BPIIZvCA6h1ybtG5IO6Ezm7V4aH71RLRg,22981
+data_visualiser_package/export_latex_tables.py,sha256=cN9H_cey6NFvc1S9LOQWmK8qu-w0YenFvmO85riW0pk,2715
+data_visualiser_package/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_visualiser_package-0.1.0.dist-info/METADATA,sha256=YIqDWOmIqxr3OMxCiVqKf_hgXJlStYFolSf6Q8tj-gY,6459
+data_visualiser_package-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+data_visualiser_package-0.1.0.dist-info/licenses/LICENSE,sha256=IU2SLcxqnhJpreQXofrrzughr5gqNgcOoxb7CF585AY,1071
+data_visualiser_package-0.1.0.dist-info/RECORD,,
