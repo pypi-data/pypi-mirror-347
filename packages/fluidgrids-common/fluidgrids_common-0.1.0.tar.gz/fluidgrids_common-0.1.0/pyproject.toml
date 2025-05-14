@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fluidgrids-common"
+version = "0.1.0"
+description = "Common utilities for Fluidgrids backend nodes"
+readme = "README.md"
+authors = [
+    {name = "Fluidgrids Team", email = "info@algoshred.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.95.0",
+    "uvicorn>=0.22.0",
+    "nats-py>=2.2.0",
+    "opentelemetry-api>=1.18.0",
+    "opentelemetry-sdk>=1.18.0",
+    "opentelemetry-instrumentation-fastapi>=0.38b0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/algoshred/fluidgrids-common"
+"Bug Tracker" = "https://github.com/algoshred/fluidgrids-common/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"] 
