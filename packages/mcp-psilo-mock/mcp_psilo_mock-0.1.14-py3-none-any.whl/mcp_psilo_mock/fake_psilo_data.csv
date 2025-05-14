@@ -1,0 +1,101 @@
+PDB_ids,Dates,Project,Title
+Q2XH,06/14/00,PDB,Crystal structure of protein MLV bound to ligand CZA
+AMEI,06/03/10,PDB,Crystal structure of protein GMF bound to ligand ZAB
+63JN,12/31/22,PDB,Crystal structure of protein WKL bound to ligand BXY
+NYYU,09/08/17,PDB,Crystal structure of protein RAP bound to ligand BAB
+S81F,02/19/21,PDB,Crystal structure of protein GBV bound to ligand XCC
+Z5EZ,09/05/01,PDB,Crystal structure of protein VUY bound to ligand ZBC
+S2SH,07/20/14,PDB,Crystal structure of protein KRG bound to ligand BXA
+H9K0,04/16/98,PDB,Crystal structure of protein PDV bound to ligand YXB
+8CYP,11/02/14,PDB,Crystal structure of protein TBP bound to ligand CXZ
+O0W0,07/23/20,PDB,Crystal structure of protein HIL bound to ligand ZZB
+Q7KT,12/16/97,PDB,Crystal structure of protein WHL bound to ligand ZBB
+JR1A,08/06/00,PDB,Crystal structure of protein NAN bound to ligand XBZ
+43M8,10/06/14,PDB,Crystal structure of protein VPX bound to ligand ACA
+2ADO,04/08/19,PDB,Crystal structure of protein EQS bound to ligand CCA
+PKRG,03/31/15,PDB,Crystal structure of protein CWC bound to ligand CBX
+KFL0,09/08/12,PDB,Crystal structure of protein BJZ bound to ligand BCZ
+X7XA,10/21/14,PDB,Crystal structure of protein KUU bound to ligand ZCY
+0B1H,06/10/08,PDB,Crystal structure of protein GZE bound to ligand ZXX
+TRX0,12/26/13,PDB,Crystal structure of protein EBJ bound to ligand BBX
+76XL,02/07/14,PDB,Crystal structure of protein RWO bound to ligand BCC
+WQ94,06/30/10,PDB,Crystal structure of protein AAC bound to ligand YAX
+DSLE,08/27/21,PDB,Crystal structure of protein DEF bound to ligand XAB
+KWXN,04/10/21,PDB,Crystal structure of protein BHH bound to ligand ZYA
+DE4O,03/06/16,PDB,Crystal structure of protein JNJ bound to ligand BXA
+49DM,10/26/13,PDB,Crystal structure of protein XSY bound to ligand ZBX
+DA0I,09/27/10,AlphaFold,AlphaFold prediction of hypothetical protein NCG
+DI85,01/23/20,AlphaFold,AlphaFold prediction of hypothetical protein FLK
+MK7R,11/24/19,AlphaFold,AlphaFold prediction of hypothetical protein PPQ
+5QL5,08/31/04,AlphaFold,AlphaFold prediction of hypothetical protein AQG
+JOK5,04/30/09,AlphaFold,AlphaFold prediction of hypothetical protein CKF
+URJW,11/09/15,AlphaFold,AlphaFold prediction of hypothetical protein CKT
+OEA8,07/24/05,AlphaFold,AlphaFold prediction of hypothetical protein IMC
+10I3,12/19/08,AlphaFold,AlphaFold prediction of hypothetical protein RCQ
+R92Q,10/31/18,AlphaFold,AlphaFold prediction of hypothetical protein AFU
+KR3P,12/12/06,AlphaFold,AlphaFold prediction of hypothetical protein ZNE
+8F1Y,04/29/10,AlphaFold,AlphaFold prediction of hypothetical protein ZVJ
+IJVO,04/26/99,AlphaFold,AlphaFold prediction of hypothetical protein NXA
+HEQO,06/26/03,AlphaFold,AlphaFold prediction of hypothetical protein QQJ
+R50D,10/10/01,AlphaFold,AlphaFold prediction of hypothetical protein FAI
+BYX9,01/01/03,AlphaFold,AlphaFold prediction of hypothetical protein CUG
+GCFE,08/27/15,AlphaFold,AlphaFold prediction of hypothetical protein VIE
+S4D7,07/31/96,AlphaFold,AlphaFold prediction of hypothetical protein TRV
+9Y98,11/17/12,AlphaFold,AlphaFold prediction of hypothetical protein DLD
+33FJ,07/30/15,AlphaFold,AlphaFold prediction of hypothetical protein PDX
+4OQX,03/13/97,AlphaFold,AlphaFold prediction of hypothetical protein WYH
+G2C9,06/04/15,AlphaFold,AlphaFold prediction of hypothetical protein UDA
+Z5K7,04/14/23,AlphaFold,AlphaFold prediction of hypothetical protein IJW
+PMWN,11/19/12,AlphaFold,AlphaFold prediction of hypothetical protein ZGW
+3VPE,11/30/17,AlphaFold,AlphaFold prediction of hypothetical protein OUA
+KDLM,09/20/13,AlphaFold,AlphaFold prediction of hypothetical protein HYW
+RG03,05/29/21,CryoEM,CryoEM density of viral capsid JYC
+1AD6,08/04/13,CryoEM,CryoEM density of viral capsid FWD
+R80I,06/09/01,CryoEM,CryoEM density of viral capsid FIK
+XFDF,11/01/10,CryoEM,CryoEM density of viral capsid PVK
+JFAJ,10/20/02,CryoEM,CryoEM density of viral capsid JSL
+HKXU,11/06/14,CryoEM,CryoEM density of viral capsid MKG
+27PY,04/14/09,CryoEM,CryoEM density of viral capsid VOS
+UEWK,03/19/17,CryoEM,CryoEM density of viral capsid AHP
+DIO0,02/21/12,CryoEM,CryoEM density of viral capsid TBQ
+P3DB,12/24/23,CryoEM,CryoEM density of viral capsid JRH
+KJXJ,11/02/23,CryoEM,CryoEM density of viral capsid WTT
+HFO1,10/14/09,CryoEM,CryoEM density of viral capsid OEH
+EDPS,06/27/13,CryoEM,CryoEM density of viral capsid VCV
+XPB5,08/16/11,CryoEM,CryoEM density of viral capsid EXN
+BH20,04/29/06,CryoEM,CryoEM density of viral capsid QPW
+ASCB,04/04/00,CryoEM,CryoEM density of viral capsid SYZ
+OIUB,09/30/02,CryoEM,CryoEM density of viral capsid QDN
+WUNB,08/08/07,CryoEM,CryoEM density of viral capsid ASO
+6FHG,03/22/08,CryoEM,CryoEM density of viral capsid NAF
+B4G2,01/10/21,CryoEM,CryoEM density of viral capsid AWO
+LP3D,02/14/23,CryoEM,CryoEM density of viral capsid CLQ
+QKGK,06/09/14,CryoEM,CryoEM density of viral capsid DEU
+AF7Q,07/22/99,CryoEM,CryoEM density of viral capsid HWO
+OUIX,11/01/10,CryoEM,CryoEM density of viral capsid LWK
+SHEV,05/19/00,CryoEM,CryoEM density of viral capsid EZN
+SOZQ,10/08/14,NMR,NMR solution structure of VOU with compound XCC
+9ANT,05/03/10,NMR,NMR solution structure of STV with compound ZXX
+QBJ8,11/18/22,NMR,NMR solution structure of DXM with compound XCZ
+5BBT,01/04/05,NMR,NMR solution structure of SMG with compound XBB
+EBK4,09/15/04,NMR,NMR solution structure of FBV with compound XZC
+LWTS,05/15/02,NMR,NMR solution structure of JGF with compound ABC
+KHMS,07/25/09,NMR,NMR solution structure of QRT with compound XZC
+38P7,09/29/95,NMR,NMR solution structure of GAK with compound AXX
+55WN,12/06/23,NMR,NMR solution structure of MBE with compound YCB
+1GII,10/15/17,NMR,NMR solution structure of PNM with compound XZA
+OE5A,04/07/11,NMR,NMR solution structure of LRP with compound YBY
+SNTN,07/17/23,NMR,NMR solution structure of BVD with compound CYZ
+J2W3,06/20/17,NMR,NMR solution structure of IGV with compound YYY
+LUAY,10/11/02,NMR,NMR solution structure of UZV with compound XYA
+NZKP,01/13/08,NMR,NMR solution structure of NUL with compound YZZ
+COIB,09/07/00,NMR,NMR solution structure of KVN with compound ZZA
+B9I1,09/29/99,NMR,NMR solution structure of QFU with compound BZB
+ZCTM,01/10/23,NMR,NMR solution structure of XUT with compound YAA
+QL5D,06/14/22,NMR,NMR solution structure of DMR with compound ZZZ
+UQMQ,03/04/02,NMR,NMR solution structure of GMX with compound YCY
+EZHL,08/01/12,NMR,NMR solution structure of DRW with compound CCY
+0B9S,11/02/09,NMR,NMR solution structure of IDP with compound ZAZ
+HJ1Q,08/14/11,NMR,NMR solution structure of XPU with compound ZBY
+13HY,09/11/14,NMR,NMR solution structure of DBT with compound ACY
+I3JE,01/04/22,NMR,NMR solution structure of HVA with compound BZC
