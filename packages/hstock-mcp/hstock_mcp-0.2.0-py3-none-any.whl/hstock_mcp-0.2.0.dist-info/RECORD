@@ -1,0 +1,10 @@
+mcp_server_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcp_server_lib/akshare_provider.py,sha256=PbaLBXD9dQIUBa98Vr3c92yCOpyeUUhQ3uTJIF1YtV0,8799
+mcp_server_lib/app.py,sha256=HQTo-jP2SC3YGWLQQIHntcxp2AiwNTPg7js9o1XVZ00,2515
+mcp_server_lib/cli.py,sha256=29G5wHNUDvWrtvsvz24713nDV0INb8R9CqNSaCmcwhE,736
+mcp_server_lib/yahoo_finance_provider.py,sha256=G1NeJ1UvvYF6J1lR-obMw-VDEvfQKkc9itRGfnhTSik,8216
+hstock_mcp-0.2.0.dist-info/METADATA,sha256=NLrx0OH6fK4LEw9Ebu65_g1FqiS0jM4xgBLHam2hYHA,5663
+hstock_mcp-0.2.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+hstock_mcp-0.2.0.dist-info/entry_points.txt,sha256=FimEAUeMR7-ufeLS1c0wUw-uqhwaSOV6ozceynXdCYQ,55
+hstock_mcp-0.2.0.dist-info/top_level.txt,sha256=KUU-Zpkrx14PxOdvhud3wkPSOA1H0uhCEjkiOXH7azE,15
+hstock_mcp-0.2.0.dist-info/RECORD,,
