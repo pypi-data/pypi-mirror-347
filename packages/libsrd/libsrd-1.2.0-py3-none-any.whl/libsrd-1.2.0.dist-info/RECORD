@@ -1,0 +1,13 @@
+libsrd/__init__.py,sha256=jPS2NBSnLtB025DLUhr80eVBlhSPSaBcPMty4RGzCCU,1148
+libsrd/__version__.py,sha256=sGqTb8nlYYqKY5HXSvYc8pd2ZT3YOowVUi-nVAAOFJE,253
+libsrd/htmlbuilder.py,sha256=pDpS2ZUDY02gStREA56NaEr7eot8Q6m5hbHuBREw4tQ,5201
+libsrd/markhtml.py,sha256=BDl3FaXtIMZDQVRuzaOZksdnS4aJPIE3YMQAA0T2S-M,9162
+libsrd/merge_pdf.py,sha256=PrApGwBJKnmvjx4AwZWTRD_7GHoEI5yS9YiWpqCC_DY,1332
+libsrd/pdf_resizer.py,sha256=b1Bm9Ev0kXx2qGmFmS8MFbx2Ai-QRnRbt1rSHRDanOc,2285
+libsrd/table.py,sha256=l7AO8J2c0o56cVFDU3juQDQychzLu3unUi6HOGp07Zo,3262
+libsrd-1.2.0.dist-info/licenses/LICENSE,sha256=NBxZwHpNDRhuxaBAiD24OZeeXuUblifADeX7nFlsFSc,1087
+libsrd-1.2.0.dist-info/METADATA,sha256=e3VK3ojpceeWEMsFbHmoadBDoAOs5DgblwwR6iytgDg,1208
+libsrd-1.2.0.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+libsrd-1.2.0.dist-info/entry_points.txt,sha256=rOVYbrlh-2NadvU6haVXYFPE8EmhTMo_HpE1Tg1fCFI,204
+libsrd-1.2.0.dist-info/top_level.txt,sha256=_lq8RR_L8uZdNdxreg6N03efng9SnySUVKQdF1FGLM0,7
+libsrd-1.2.0.dist-info/RECORD,,
