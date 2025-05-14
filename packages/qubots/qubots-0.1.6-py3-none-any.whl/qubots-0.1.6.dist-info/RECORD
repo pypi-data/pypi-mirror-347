@@ -1,0 +1,13 @@
+qubots/__init__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+qubots/auto_optimizer.py,sha256=s_y3IYjHYJeELJXDH-S8JBZsDTRDtAixVB0FZDNVF4o,2416
+qubots/auto_problem.py,sha256=oWE6pL9T8ARX1nLJ1Q0NJsX8NVgtD8vaObP45I5hBjQ,2416
+qubots/base_optimizer.py,sha256=vxp_AT8uX0fUJuOyoAaNtR9B0NO9btRXBPV8_WeEDWI,636
+qubots/base_problem.py,sha256=WqivIRd7eYhDcQLrq3Gzl_8sysdgbxxopvUP3f6O8xw,826
+qubots/formulations/__init__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+qubots/formulations/ising_tsp_problem.py,sha256=j0HXHfC9mg9xCtd46Pijjkp-nCSM3E5YRyHYFUSsdeo,1428
+qubots/formulations/qubo_tsp_problem.py,sha256=s77fMWo4Gca9DO1-Pq-gPZztQqTWqw3oL0OOMeHbjzs,2982
+qubots-0.1.6.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+qubots-0.1.6.dist-info/METADATA,sha256=B8CaxiF1o4u4y5B4iDai-4e9nz0KkVN8nqK2ISDG2TQ,19668
+qubots-0.1.6.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+qubots-0.1.6.dist-info/top_level.txt,sha256=ArEL5M_rA39TsMjGl2RGF3YGbkGH6ObF-CLbv5qsNvk,7
+qubots-0.1.6.dist-info/RECORD,,
