@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tihan_sdv
+Version: 0.1.2
+Summary: SDV in python
+Author: Arindam Chakraborty
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: matplotlib
+Requires-Dist: numpy
