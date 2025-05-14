@@ -1,0 +1,6 @@
+setup.py
+CellForge.egg-info/PKG-INFO
+CellForge.egg-info/SOURCES.txt
+CellForge.egg-info/dependency_links.txt
+CellForge.egg-info/requires.txt
+CellForge.egg-info/top_level.txt
