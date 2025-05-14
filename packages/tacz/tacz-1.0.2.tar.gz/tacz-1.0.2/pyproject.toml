@@ -1,0 +1,37 @@
+[project]
+name = "tacz"
+version = "1.0.2"
+description = "Local command assistant using Ollama"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.10.6",
+    "pyperclip>=1.9.0",
+    "python-dotenv>=1.0.1",
+    "questionary>=2.1.0",
+    "rich>=13.9.4",
+    "requests>=2.31.0",
+    "sentence-transformers>=2.7.0",
+    "torch>=2.2.0,<3.0",
+    "numpy>=1.26,<2.0"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+tacz = "tacz.main:app"
+
+[project.urls]
+Repository = "https://github.com/duriantaco/tacz"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
