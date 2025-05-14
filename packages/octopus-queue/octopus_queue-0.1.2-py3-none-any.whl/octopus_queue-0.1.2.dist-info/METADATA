@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: octopus-queue
+Version: 0.1.2
+Summary: Octopus Task Queue
+Requires-Python: >=3.11
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: celery>=5.5.2
+Requires-Dist: octopus-cloud-storage-hub>=0.1.2
+Requires-Dist: octopus-downloader>=0.1.10
+Requires-Dist: octopus-videomaster>=0.1.3
+Requires-Dist: psutil>=7.0.0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: redis>=6.0.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: rich==13.7.1
+Requires-Dist: twine>=6.1.0
+Requires-Dist: typer>=0.15.3
