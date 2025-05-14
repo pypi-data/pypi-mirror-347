@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycodar"
+version = "0.1.5"
+description = "A simple tool for auditing and understanding your codebase"
+readme = "README.md"
+authors = [
+    {name = "Quentin Wach", email = "quentin.wach@gmail.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+    "Intended Audience :: Developers"
+]
+requires-python = ">=3.6"
+dependencies = [
+    "rich>=10.0.0",
+    "typer>=0.9.0",
+    "pathspec>=0.11.0"
+]
+keywords = ["code-analysis", "architecture", "metrics", "codebase", "development-tools"]
+
+[project.urls]
+Homepage = "https://github.com/QuentinWach/pycodar"
+Documentation = "https://github.com/QuentinWach/pycodar#readme"
+Bug-Tracker = "https://github.com/QuentinWach/pycodar/issues"
+
+[project.scripts]
+pycodar = "pycodar.cli:main" 

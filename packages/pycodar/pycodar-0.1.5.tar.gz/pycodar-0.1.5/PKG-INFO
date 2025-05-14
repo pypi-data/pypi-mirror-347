@@ -1,0 +1,102 @@
+Metadata-Version: 2.4
+Name: pycodar
+Version: 0.1.5
+Summary: A simple tool for auditing and understanding your codebase
+Home-page: https://github.com/QuentinWach/pycodar
+Author: Quentin Wach
+Author-email: Quentin Wach <quentin.wach@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/QuentinWach/pycodar
+Project-URL: Documentation, https://github.com/QuentinWach/pycodar#readme
+Project-URL: Bug-Tracker, https://github.com/QuentinWach/pycodar/issues
+Keywords: code-analysis,architecture,metrics,codebase,development-tools
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rich>=10.0.0
+Requires-Dist: typer>=0.9.0
+Requires-Dist: pathspec>=0.11.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# PyCodar: A Radar for Your Code
+**A simple tool for auditing and understanding your codebase.**
+
+```bash
+pip install pycodar
+```
+
+You can then call
+```bash
+pycodar stats
+```
+in your terminal to get statistics of your directory printed out like:
+
+```bash
+📊 Basic Metrics
+╭─────────────────────┬───────────╮
+│  Total Size         │  49.84KB  │
+│  Total Files        │  6        │
+│  Total Directories  │  2        │
+│  Total Lines        │  620      │
+│  Code Lines         │  429      │
+│  Comment Lines      │  16       │
+│  Empty Lines        │  90       │
+│  Functions          │  18       │
+│  Classes            │  1        │
+╰─────────────────────┴───────────╯
+
+🌳 File Structure
+📁 Root
+├── 📄 README.md
+├── 📄 pyproject.toml
+├── 📄 setup.py
+└── 📁 pycodar
+    ├── 📄 __init__.py
+    ├── 📄 analyze.py
+    │   ├── 🔸 count_functions_and_classes
+    │   ├── 🔸 get_file_size_kb
+    │   ├── 🔸 count_lines
+    │   ├── 🔸 analyze_directory
+    │   └── 🔸 generate_report
+    └── 📄 cli.py
+        ├── 🔷 TestClass
+        │   ├── 🔹 __init__
+        │   └── 🔹 test_method
+        ├── 🔸 extract_code_structure
+        ├── 🔸 create_structure_tree
+        ├── 🔸 parse_ignore_file
+        ├── 🔸 should_ignore
+        ├── 🔸 get_ignore_patterns
+        ├── 🔸 format_size
+        ├── 🔸 count_code_metrics
+        ├── 🔸 create_metrics_table
+        ├── 🔸 create_file_table
+        ├── 🔸 print_stats
+        └── 🔸 main
+
+📁 File Distribution
+╭───────────┬──────────────────┬────────┬────────────┬─────────┬─────────┬───────────╮
+│  Path     │  File            │  Code  │  Comments  │  Empty  │  Total  │     Size  │
+├───────────┼──────────────────┼────────┼────────────┼─────────┼─────────┼───────────┤
+│  Root     │  pyproject.toml  │     0  │         0  │      0  │     43  │   1.37KB  │
+│  Root     │  README.md       │     0  │         0  │      0  │      6  │   0.13KB  │
+│  Root     │  setup.py        │    45  │         0  │      1  │     46  │   1.72KB  │
+│  pycodar  │  __init__.py     │     7  │         1  │      3  │     11  │   0.22KB  │
+│  pycodar  │  cli.py          │   260  │        10  │     60  │    330  │  12.15KB  │
+│  pycodar  │  analyze.py      │   117  │         5  │     26  │    148  │   4.91KB  │
+╰───────────┴──────────────────┴────────┴────────────┴─────────┴─────────┴───────────╯
+```
