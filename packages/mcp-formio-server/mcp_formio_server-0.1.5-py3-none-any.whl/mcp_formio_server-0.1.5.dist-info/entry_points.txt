@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-formio-server = mcp_formio_server.main:main

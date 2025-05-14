@@ -1,0 +1,15 @@
+mcp_formio_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcp_formio_server/config.py,sha256=DpQuSoMcUXgXqWve6GYgJ3lc17aWAnfuoq0-vR1KR8c,739
+mcp_formio_server/exceptions.py,sha256=wc-Hx3qG209WCck06XqKnLT_cIUnpHRgUoBk3TkmZqI,112
+mcp_formio_server/main.py,sha256=cOdkT30G5i2KuRHHAbpSPbPk9cmJYY2wEcwZWipC0J4,13614
+mcp_formio_server/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcp_formio_server/api/authentication.py,sha256=F2ebdgwBejqVGsdv-cS2yGlK2GetuWuhK0s7Oer9Up4,2213
+mcp_formio_server/api/common.py,sha256=zW088hPUW6QFrdGq1WwexjNWFLhTW91Mlqem93jfDWE,1202
+mcp_formio_server/api/form.py,sha256=moCQrPpu9r9k-Xz8WjkP-5vBoKu-RpxrjpgunIsAQdg,1465
+mcp_formio_server/api/role.py,sha256=r7B5buy5II8hzRjrbbPfFRva96Cmlkh1VzaAdraafbk,1996
+mcp_formio_server/api/submission.py,sha256=uBzOl9wCdPd6D-maJBJSG5U4swejKSnSWJsZHj55_lk,3637
+mcp_formio_server-0.1.5.dist-info/METADATA,sha256=untLeQUWksNK7PA4Lj4TJbB8sprQywCT96AFbwmlk6I,3373
+mcp_formio_server-0.1.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_formio_server-0.1.5.dist-info/entry_points.txt,sha256=ZlOikYTg2x-MHtlnWFmaZNPR2qO8IM9ezha92yr5Z00,66
+mcp_formio_server-0.1.5.dist-info/licenses/LICENSE,sha256=09egB-6HdUH6ccp9V7vJfCy4I9CU4V6oHl9h-T7p6uY,1534
+mcp_formio_server-0.1.5.dist-info/RECORD,,
