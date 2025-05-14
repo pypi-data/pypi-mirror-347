@@ -1,0 +1,8 @@
+golf_auth/__init__.py,sha256=FoEfsnAsd-14sYM2hb-nySqPKwVeB8K_flSs19x_N2A,554
+golf_auth/crypto.py,sha256=WCFg0KutAxBwDcUiNIYuWdhZ5Bdx1-9Hgw3J53iu-HI,5239
+golf_auth/provider.py,sha256=xivvGvKMPcv8lYGCs1KN27aA4J0dJgKc9W78GjWEYis,3577
+golf_auth/sdk.py,sha256=pgk2SNB2zU38ZC54N8Bco8WSL_uAaevL9-5AEg7AIWA,20642
+golf_auth-0.1.0.dist-info/METADATA,sha256=pavjF-kvkesGHSaXLlEywxXqW7x2hnp0-9Df6WydDtY,23147
+golf_auth-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+golf_auth-0.1.0.dist-info/top_level.txt,sha256=_-wzB9pw4nI8aiwItuoAi5uaOCW5Bsd6cnd95LFo7ek,10
+golf_auth-0.1.0.dist-info/RECORD,,
