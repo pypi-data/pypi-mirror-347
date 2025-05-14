@@ -1,0 +1,10 @@
+chat.py,sha256=gBDU7QDFt6YpC1mDWuB605dB4cEWmhq7KsSic39lJN4,6505
+chat_interface.py,sha256=LGKCa2HmYRQskC8cpmcyBvAE72K10ZSNHK_HOb9Y8hU,1746
+configure.py,sha256=1CY6MiQVVjz5jLo2P-TXraBJHdLe5ploumja3f8MlXc,1405
+list_models.py,sha256=ETpcpQ0ts2qIF94FGPjl4R5JwUp8iOkPpKS2llmxhlc,1883
+token_streamer.py,sha256=77aLlzMJ97ypZEtLVezhb_ySDO7XzJXesSi-7-_NbGE,5290
+openrouter_cli-0.1.0.dist-info/licenses/LICENSE,sha256=kqQGWhny22uptcpcp5YAxmkeWlPL7nNqvdcoyISGwk4,1071
+openrouter_cli-0.1.0.dist-info/METADATA,sha256=ft6YF4-poYLniEjog8eIh4AJhglxp6wLmAkZFwAr2iw,4767
+openrouter_cli-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+openrouter_cli-0.1.0.dist-info/top_level.txt,sha256=s0wcn-ntc4JkGv1VaVHD26Zi1OaJsQeM-10uhFt4whc,57
+openrouter_cli-0.1.0.dist-info/RECORD,,
