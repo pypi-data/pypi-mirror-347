@@ -1,0 +1,12 @@
+nostr_agent_tools-0.3.4.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+nostr_agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nostr_agents/nostr_agent_server.py,sha256=v7F13CJJTiI9pLpYPx-Tomy21MoGo2e3kYlk3lbuDnk,5255
+nostr_agents/nostr_client.py,sha256=dukg_AkQp5Vzoyu397x2S9eux15fHMp8l_BljArT_pQ,8358
+nostr_agents/nostr_mcp_client.py,sha256=3tD2oc84rvjFyZdotU41Oxur2rQzlgAXWzORd6LVHDA,3298
+nostr_agents/nostr_mcp_server.py,sha256=8VwsD37xO197W7jWmdRRrFM_A1yIcmSnFi79dXsVXNM,7618
+nostr_agents/nwc.py,sha256=Ozl9L_OCnT4VKCySmLkivLI8UEgznvfeAzqRiiqbRpA,12543
+nostr_agents/nwc_client.py,sha256=FlGyKhnJw2GeHeOWOayncdXF3WUsYtBYS824E2z3IgE,2365
+nostr_agent_tools-0.3.4.dist-info/METADATA,sha256=UuDlaznqsX-UzpnEB85GpyOHoQNZRy2dU7fkJ3HTlyg,761
+nostr_agent_tools-0.3.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+nostr_agent_tools-0.3.4.dist-info/top_level.txt,sha256=kKlgxobMmjyXUoX7Hd84_NN9ls1tRYMMe6I6fNZileM,13
+nostr_agent_tools-0.3.4.dist-info/RECORD,,
