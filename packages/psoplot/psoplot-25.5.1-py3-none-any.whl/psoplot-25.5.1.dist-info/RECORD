@@ -1,0 +1,15 @@
+psoplot/__about__.py,sha256=62LipvSpuqc0skKkMzVtIBZo5kOKmMcKmYO9TvmYv1w,62
+psoplot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psoplot/__utils__.py,sha256=oHtJCWqFTJct171yByqU5NwnWctNdmqtP7F-wR3dmI4,54
+psoplot/_subplot.py,sha256=v3iIDJqIOP-r5tvciiZ6JUAg8b7BlBmOIU6_h29dg5Q,1300
+psoplot/aanda_plot.py,sha256=2Nqi5aWQPPhL0ulL7iEu0M913ovCFsGlKcT-0dcvWGM,3356
+psoplot/aanda_publication.mplstyle,sha256=eRC3-iaNz5PijWPEbkqT5T0OIY0D9gwKLeR1r1ZMx5I,1133
+psoplot/aas_plot.py,sha256=WjIziTIyyxSG374cK5nPMPOphZ2a6d48eHs7vMSg3xY,3366
+psoplot/aas_publication.mplstyle,sha256=Flqewyi7ie1oD72pQ4bJOIuv_pjKgIyHH0i85onGDDM,1246
+psoplot/gridplot.py,sha256=DTS4NIwctQvC__UL56ulV9UnKeMegcAHNSiQ6CN0hXk,16016
+psoplot/cli/make_movie.py,sha256=dkVCDxPv_vzzxPX2LTTVy6vTY4OXIP3Nm4Sji2REY4o,478
+psoplot-25.5.1.dist-info/METADATA,sha256=BnegCs-QbXq_-984d3NdCz5ooS-Dk2ZMU6-PE-ppaPY,1870
+psoplot-25.5.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+psoplot-25.5.1.dist-info/entry_points.txt,sha256=UV7jPyzhjmTSgCbPXfMucGNCdQ2Id0tj_CYwtN9shlI,58
+psoplot-25.5.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+psoplot-25.5.1.dist-info/RECORD,,
