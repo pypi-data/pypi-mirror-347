@@ -1,0 +1,14 @@
+pyporcc/__init__.py,sha256=-UJx7GAZ8b3Tnt7MSpE7fpP4iD2qjV6rc0yXEArnshU,1813
+pyporcc/click_converter.py,sha256=Fn7Tovc8C72tFtt9kieHph_hAe1LI6Mgsl0mLdJKdO8,10662
+pyporcc/click_detector.py,sha256=InHriFD8dkbTxpjtJ3BywAV1egmC4jhDBeWzv7ovO_Q,30740
+pyporcc/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyporcc/data/standard_click.wav,sha256=5RPBsZDVJLr3VjivzBvckBReVltOV9qjRMmJYBLpXf4,4162
+pyporcc/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyporcc/models/log_models.ini,sha256=iF4aY0DqRQu-Y1gul0RCeD1YiQCxN3Xhmra5R9DAiSY,292
+pyporcc/porcc.py,sha256=U3fl2YtJho0sXf8TfZoFylx-aLJCLF5Xzp6sEzLvqLQ,18902
+pyporcc/porpoise_classifier.py,sha256=SyTnBDN8McDxIRqLEoOPTtqe6SBHKKpwJ39QhiB1MLk,13944
+pyporcc/utils.py,sha256=G7hoDTYwv_bW2htO6EfX9ph4z7oiw03PQaMcuD97tjA,1663
+pyporcc-0.3.4.dist-info/LICENSE,sha256=-Oe_WdK38tOPaYhoOAK3kxLVUF5gRuyRUM8-gTAvIrY,1090
+pyporcc-0.3.4.dist-info/METADATA,sha256=Sr4exBzrxI-7p55VWvay71kAc9K88xl3AO47vNrjOmM,3698
+pyporcc-0.3.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pyporcc-0.3.4.dist-info/RECORD,,
