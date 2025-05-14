@@ -1,0 +1,2 @@
+[console_scripts]
+llama-stack-evals = llama_stack_evals.cli.main:cli
