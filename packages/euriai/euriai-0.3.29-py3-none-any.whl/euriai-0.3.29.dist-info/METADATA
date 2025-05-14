@@ -1,0 +1,135 @@
+Metadata-Version: 2.4
+Name: euriai
+Version: 0.3.29
+Summary: Python client for EURI LLM API (euron.one) with CLI, LangChain, and LlamaIndex integration
+Author: euron.one
+Author-email: sudhanshu@euron.one
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: langchain-core
+Requires-Dist: llama-index>=0.10.0
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# euriai 🧠 
+
+**EURI AI Python Client** – A simple wrapper and CLI tool for the [Euron LLM API](https://euron.one/euri/api). Supports completions, streaming responses, embeddings, CLI interaction, and an interactive guided wizard!
+
+---
+
+## 🔧 Installation 
+
+```bash
+pip install euriai
+```
+
+## 🚀 Python Usage
+
+### Text Generation
+
+```python
+from euriai import EuriaiClient
+
+client = EuriaiClient(
+    api_key="your_api_key_here",
+    model="gpt-4.1-nano"  # You can also try: "gemini-2.0-flash-001", "llama-4-maverick", etc.
+)
+
+response = client.generate_completion(
+    prompt="Write a short poem about artificial intelligence.",
+    temperature=0.7,
+    max_tokens=300
+)
+
+print(response)
+```
+
+### Embeddings
+
+```python
+from euriai.embedding import EuriaiEmbeddingClient
+
+client = EuriaiEmbeddingClient(api_key="your_key")
+embedding = client.embed("Hello world")
+print(embedding[:5])  # Print first 5 dimensions of the embedding vector
+```
+
+## 💻 Command-Line Interface (CLI) Usage
+
+Run prompts directly from the terminal:
+
+```bash
+euriai --api_key YOUR_API_KEY --prompt "Tell me a joke"
+```
+
+Enable streaming output (if supported by the model):
+
+```bash
+euriai --api_key YOUR_API_KEY --prompt "Stream a fun fact" --stream
+```
+
+List all supported model IDs with recommended use-cases and temperature/token advice:
+
+```bash
+euriai --models
+```
+
+## 🤖 LangChain Integration
+
+### Text Generation
+
+Use Euriai with LangChain directly:
+
+```python
+from euriai import EuriaiLangChainLLM
+
+llm = EuriaiLangChainLLM(
+    api_key="your_api_key",
+    model="gpt-4.1-nano", 
+    temperature=0.7,
+    max_tokens=300
+)
+
+print(llm.invoke("Write a poem about time travel."))
+```
+
+### Embeddings
+
+Use Euriai embeddings with LangChain:
+
+```python
+from euriai.langchain_embed import EuriaiEmbeddings
+
+embedding_model = EuriaiEmbeddings(api_key="your_key")
+print(embedding_model.embed_query("What's AI?")[:5])  # Print first 5 dimensions
+```
+
+## 📘 Documentation
+
+For full documentation, visit our [official docs site](https://euron.one/euri/api).
+
+## 🔑 Getting an API Key
+
+Sign up for an API key at [Euron AI Platform](https://euron.one/euri/api).
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
