@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/auxfuncs.py
+src/core.py
+src/custom_widgets.py
+src/ipyformkit.egg-info/PKG-INFO
+src/ipyformkit.egg-info/SOURCES.txt
+src/ipyformkit.egg-info/dependency_links.txt
+src/ipyformkit.egg-info/requires.txt
+src/ipyformkit.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+[project]
+name = "ipyformkit"
+version = "0.1.0"
+description = "Easy form creation with ipywidgets in Jupyter"
+authors = [{ name="Richard Hoppe", email="richard.m.hoppe@gmail.com" }]
+license = { file="LICENSE" }
+readme = "README.md"
+requires-python = ">= 3.8"
+dependencies = [
+    "ipywidgets>=8.0.0",
+    "traitlets",
+    "IPython>=7.0.0"
+]
+keywords = ["widgets", "ipywidgets", "form", "Jupyter"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
