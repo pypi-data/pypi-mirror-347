@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/screenValidator/__init__.py
+src/screenValidator/version.py
+src/screenValidator.egg-info/PKG-INFO
+src/screenValidator.egg-info/SOURCES.txt
+src/screenValidator.egg-info/dependency_links.txt
+src/screenValidator.egg-info/requires.txt
+src/screenValidator.egg-info/top_level.txt
