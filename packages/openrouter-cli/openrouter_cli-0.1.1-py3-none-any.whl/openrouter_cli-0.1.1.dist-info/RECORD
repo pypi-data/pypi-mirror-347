@@ -1,0 +1,12 @@
+chat.py,sha256=GAl45wSyWl93_iraL97edDJ6CdM0O7qMTGeXxWZcmbI,6489
+chat_interface.py,sha256=LGKCa2HmYRQskC8cpmcyBvAE72K10ZSNHK_HOb9Y8hU,1746
+configure.py,sha256=1CY6MiQVVjz5jLo2P-TXraBJHdLe5ploumja3f8MlXc,1405
+list_models.py,sha256=KEjjgBig3Ec7Gx5_M57GpAcDhRX_jVLVGTqJeiVMs7c,1879
+main.py,sha256=2RGVVmPCkALMu0gIQ9aI7V2dQ0eTs_qj7inO-dIhmRI,3624
+token_streamer.py,sha256=ChdJtXopfvLQfVCzRdTgMyxTKUHtkKSOwSOAO4P5AIw,5278
+openrouter_cli-0.1.1.dist-info/licenses/LICENSE,sha256=kqQGWhny22uptcpcp5YAxmkeWlPL7nNqvdcoyISGwk4,1071
+openrouter_cli-0.1.1.dist-info/METADATA,sha256=WsiwDOGntjYAGzhkt3yoM9on1tUqY76xE_j5qCGmmlE,4767
+openrouter_cli-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+openrouter_cli-0.1.1.dist-info/entry_points.txt,sha256=9D7t3Gw_sIel9CPZAIATyB0Z3CZF5BTGUVROKajSoPQ,45
+openrouter_cli-0.1.1.dist-info/top_level.txt,sha256=yc-jt20AQ8NpLcChjXBhhctFO9F35T25eTVcdrtAl5U,62
+openrouter_cli-0.1.1.dist-info/RECORD,,
