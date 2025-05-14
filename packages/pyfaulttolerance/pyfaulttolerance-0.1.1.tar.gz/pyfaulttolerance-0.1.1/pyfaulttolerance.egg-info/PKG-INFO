@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: pyfaulttolerance
+Version: 0.1.1
+Summary: Microframework de tolerância a falhas inspirado no SmallRye Fault Tolerance
+Author: Fabio Gomes Rocha
+License: MIT
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: coverage>=7.8.0
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: pytest-asyncio>=0.26.0
+
+# PyFaultTolerance
+
+[![codecov](https://codecov.io/gh/gomesrocha/pyfaulttolerance/graph/badge.svg?token=2BTCB8BN3V)](https://codecov.io/gh/gomesrocha/pyfaulttolerance)
+
+
+Microframework Python de tolerância a falhas inspirado no SmallRye Fault Tolerance
