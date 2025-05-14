@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+split_nth.egg-info/PKG-INFO
+split_nth.egg-info/SOURCES.txt
+split_nth.egg-info/dependency_links.txt
+split_nth.egg-info/top_level.txt
+splitnth/__init__.py
+splitnth/splitter.py
