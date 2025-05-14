@@ -1,0 +1,127 @@
+2025-05-13 19:30:56,348 - __main__ - INFO - Starting LinkedIn server...
+2025-05-13 19:42:20,819 - __main__ - INFO - Starting LinkedIn server...
+2025-05-13 19:42:22,939 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 19:42:24,901 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-13 19:42:24,916 - __main__ - INFO - Starting LinkedIn authentication flow...
+2025-05-13 19:42:24,916 - linkedin_mcp.callback_server - INFO - Starting callback server on port 3000
+2025-05-13 19:42:24,938 - linkedin_mcp.callback_server - INFO - Callback server started on port 3000
+2025-05-13 19:42:24,939 - __main__ - INFO - Opening browser to: https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77ywc227zjrfnq&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&state=AITfUMKlmgTJGfulCgvlm2qSBJ5eQG5NE3nweBsQnm4&scope=openid+profile+email+w_member_social
+2025-05-13 19:42:25,170 - __main__ - INFO - Waiting for authentication callback...
+2025-05-13 19:42:25,170 - linkedin_mcp.callback_server - INFO - Waiting for authentication callback...
+2025-05-13 19:42:25,896 - linkedin_mcp.callback_server - INFO - Received auth code and state from LinkedIn
+2025-05-13 19:42:25,896 - linkedin_mcp.callback_server - INFO - "GET /callback?code=AQRZGoXK9n2nCbasRH3JQ86xcfVRKIUEqNYJ4XQgkrkW1KjzL9hJIfmut40_yLGHTuTTPB_KlBr0pOoyHSjjLuRPMKP03s59apvF6R5YakSwE-ayWTcmGjouvh9yBYQOkjwtUy-2Zvy7nzTt66rBz9EhqwiFW7TemuP2b99lv66oiEcCxYGl4Wxl60Idl6s2KJ7mWwdWZMD_Az59wXQ&state=AITfUMKlmgTJGfulCgvlm2qSBJ5eQG5NE3nweBsQnm4 HTTP/1.1" 200 -
+2025-05-13 19:42:25,897 - linkedin_mcp.callback_server - INFO - Authentication received, setting event
+2025-05-13 19:42:27,138 - linkedin_mcp.callback_server - ERROR - Missing code or state in callback parameters
+2025-05-13 19:42:27,138 - linkedin_mcp.callback_server - INFO - "GET /favicon.ico HTTP/1.1" 400 -
+2025-05-13 19:42:27,139 - linkedin_mcp.callback_server - INFO - Authentication received, setting event
+2025-05-13 19:43:24,903 - linkedin_mcp.callback_server - INFO - Authentication callback received
+2025-05-13 19:43:24,903 - linkedin_mcp.callback_server - INFO - Stopping callback server
+2025-05-13 19:43:25,295 - linkedin_mcp.callback_server - INFO - Callback server stopped
+2025-05-13 19:43:25,295 - __main__ - INFO - Exchanging authorization code for tokens
+2025-05-13 19:43:25,295 - linkedin_mcp.linkedin.auth - INFO - Exchanging authorization code for tokens
+2025-05-13 19:43:25,970 - linkedin_mcp.callback_server - INFO - Stopping callback server
+2025-05-13 19:43:25,970 - linkedin_mcp.callback_server - INFO - Callback server stopped
+2025-05-13 19:43:56,087 - __main__ - INFO - Starting LinkedIn server...
+2025-05-13 19:44:39,623 - __main__ - INFO - Starting LinkedIn server...
+2025-05-13 19:44:42,071 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 19:44:44,022 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-13 19:44:44,023 - __main__ - INFO - Starting LinkedIn authentication flow...
+2025-05-13 19:44:44,023 - linkedin_mcp.callback_server - INFO - Starting callback server on port 3000
+2025-05-13 19:44:44,045 - linkedin_mcp.callback_server - INFO - Callback server started on port 3000
+2025-05-13 19:44:44,046 - __main__ - INFO - Opening browser to: https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77ywc227zjrfnq&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&state=98MEHnHQbnz7C99lgm-t9FCMHyIT05cSSX0bgnPGFaY&scope=openid+profile+email+w_member_social
+2025-05-13 19:44:44,244 - __main__ - INFO - Waiting for authentication callback...
+2025-05-13 19:44:44,245 - linkedin_mcp.callback_server - INFO - Waiting for authentication callback...
+2025-05-13 19:44:44,988 - linkedin_mcp.callback_server - INFO -  Received path: /callback?code=AQRwCIDVu_0KgqCaWKrzyKyRn_WZ_-LrgOvbRlVrRp3wbS8aqDiQK0195CIuzD45XY3VCeoyeJr0x3t9l2VC5M3nMHq6FFiwK4U1mhhjcKBFqwDjzErFY0ZyWQOgy6oD-otmMXGJUeEpcMtP0PT9JsalZ772xwK3q8f7o6ooTVBRM2ChUZgk0bqaXOLI9K8ZvNUowVLC1az_tYNlp2I&state=98MEHnHQbnz7C99lgm-t9FCMHyIT05cSSX0bgnPGFaY
+2025-05-13 19:44:44,988 - linkedin_mcp.callback_server - INFO - Received auth code and state from LinkedIn
+2025-05-13 19:44:44,988 - linkedin_mcp.callback_server - INFO - "GET /callback?code=AQRwCIDVu_0KgqCaWKrzyKyRn_WZ_-LrgOvbRlVrRp3wbS8aqDiQK0195CIuzD45XY3VCeoyeJr0x3t9l2VC5M3nMHq6FFiwK4U1mhhjcKBFqwDjzErFY0ZyWQOgy6oD-otmMXGJUeEpcMtP0PT9JsalZ772xwK3q8f7o6ooTVBRM2ChUZgk0bqaXOLI9K8ZvNUowVLC1az_tYNlp2I&state=98MEHnHQbnz7C99lgm-t9FCMHyIT05cSSX0bgnPGFaY HTTP/1.1" 200 -
+2025-05-13 19:44:44,990 - linkedin_mcp.callback_server - INFO - Authentication received, setting event
+2025-05-13 19:44:46,075 - linkedin_mcp.callback_server - INFO -  Received path: /favicon.ico
+2025-05-13 19:44:46,077 - linkedin_mcp.callback_server - ERROR - Missing code or state in callback parameters
+2025-05-13 19:44:46,077 - linkedin_mcp.callback_server - INFO - "GET /favicon.ico HTTP/1.1" 400 -
+2025-05-13 19:44:46,077 - linkedin_mcp.callback_server - INFO - Authentication received, setting event
+2025-05-13 19:45:44,021 - linkedin_mcp.callback_server - INFO - Authentication callback received
+2025-05-13 19:45:44,021 - linkedin_mcp.callback_server - INFO - Stopping callback server
+2025-05-13 19:45:44,305 - linkedin_mcp.callback_server - INFO - Callback server stopped
+2025-05-13 19:45:44,305 - __main__ - INFO - Exchanging authorization code for tokens
+2025-05-13 19:45:44,305 - linkedin_mcp.linkedin.auth - INFO - Exchanging authorization code for tokens
+2025-05-13 19:45:44,885 - linkedin_mcp.callback_server - INFO - Stopping callback server
+2025-05-13 19:45:44,886 - linkedin_mcp.callback_server - INFO - Callback server stopped
+2025-05-13 19:51:43,035 - __main__ - INFO - Starting LinkedIn server...
+2025-05-13 19:51:51,422 - __main__ - INFO - Starting LinkedIn server...
+2025-05-13 19:51:53,305 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 19:51:55,689 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-13 19:51:55,691 - __main__ - INFO - Starting LinkedIn authentication flow...
+2025-05-13 19:51:55,691 - linkedin_mcp.callback_server - INFO - Starting callback server on port 3000
+2025-05-13 19:51:55,711 - linkedin_mcp.callback_server - INFO - Callback server started on port 3000
+2025-05-13 19:51:55,712 - __main__ - INFO - Opening browser to: https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77ywc227zjrfnq&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&state=Lnf4B3JvmV4tFPDvzDLd3o2y_QelT6UqBAiDaiwMTuQ&scope=openid+profile+email+w_member_social
+2025-05-13 19:51:55,935 - __main__ - INFO - Waiting for authentication callback...
+2025-05-13 19:51:55,935 - linkedin_mcp.callback_server - INFO - Waiting for authentication callback...
+2025-05-13 19:52:10,957 - linkedin_mcp.callback_server - INFO - Received auth code and state from LinkedIn
+2025-05-13 19:52:10,957 - linkedin_mcp.callback_server - INFO - "GET /callback?code=AQRLB2MW1Wb4OJltXazQIj04lle2IAqwJtOuZGp26rICZvPmVgQPzrfVMCwHAtr6LGaTkxDegl0cYVj2pY5RJNNVBzzMREK0fBmtEqqTMuAQ__Ghsb-4zXQDpA3i1iYpe-Z_IloW2-41lhCkcTvTXgBSS-gEsNaNNYTOIUaOBPrG27j4vyjzGtxXmBFxeeIYfDgpjR236o4_iR56CR0&state=Lnf4B3JvmV4tFPDvzDLd3o2y_QelT6UqBAiDaiwMTuQ HTTP/1.1" 200 -
+2025-05-13 19:52:10,958 - linkedin_mcp.callback_server - INFO - Authentication received, setting event
+2025-05-13 19:52:10,959 - linkedin_mcp.callback_server - INFO - Authentication callback received
+2025-05-13 19:52:10,959 - linkedin_mcp.callback_server - INFO - Stopping callback server
+2025-05-13 19:52:11,218 - linkedin_mcp.callback_server - INFO - Callback server stopped
+2025-05-13 19:52:11,218 - __main__ - INFO - Exchanging authorization code for tokens
+2025-05-13 19:52:11,218 - linkedin_mcp.linkedin.auth - INFO - Exchanging authorization code for tokens
+2025-05-13 19:52:12,310 - linkedin_mcp.linkedin.auth - INFO - Tokens parsed and stored in memory
+2025-05-13 19:52:12,311 - __main__ - INFO - Getting user info & saving tokens...
+2025-05-13 19:52:12,311 - linkedin_mcp.linkedin.auth - INFO - Getting user info from LinkedIn
+2025-05-13 19:52:13,198 - linkedin_mcp.linkedin.auth - INFO - User info retrieved for user: fk2DrrC9fM
+2025-05-13 19:52:13,201 - linkedin_mcp.linkedin.auth - INFO - Tokens saved successfully for user: fk2DrrC9fM
+2025-05-13 19:52:13,201 - __main__ - INFO - Tokens saved successfully
+2025-05-13 19:52:13,201 - __main__ - INFO - Successfully authenticated with LinkedIn as Filipp Trigub!
+2025-05-13 19:52:13,201 - linkedin_mcp.callback_server - INFO - Stopping callback server
+2025-05-13 19:52:13,201 - linkedin_mcp.callback_server - INFO - Callback server stopped
+2025-05-13 19:52:13,202 - mcp.server.lowlevel.server - INFO - Warning: RuntimeWarning: coroutine 'ServerSession.send_log_message' was never awaited
+2025-05-13 23:06:58,637 - __main__ - INFO - Starting LinkedIn server...
+2025-05-13 23:07:24,515 - __main__ - INFO - Starting LinkedIn server...
+2025-05-13 23:07:28,026 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:28,038 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:28,059 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:07:29,679 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:07:49,240 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:50,321 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:50,671 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:07:52,123 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:07:52,145 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:52,162 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:52,172 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:07:52,379 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:52,405 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:52,426 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:07:52,497 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:07:52,778 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:52,961 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:53,339 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:07:53,466 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:07:53,512 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:53,582 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:53,605 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:07:53,739 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:07:53,797 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:53,818 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:53,892 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:07:53,991 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:07:55,193 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:07:55,202 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:55,222 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:55,271 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:07:56,087 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:07:57,235 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:57,264 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-13 23:07:57,313 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:07:57,636 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:17:58,087 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:27:58,086 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:27:59,100 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:37:58,088 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:37:58,103 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-13 23:47:58,084 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-13 23:47:59,084 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-14 02:51:16,154 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-14 02:51:16,176 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-14 08:57:04,485 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-14 08:57:04,627 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-14 08:57:22,540 - __main__ - INFO - Starting LinkedIn server...
+2025-05-14 08:58:21,838 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
