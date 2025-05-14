@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: mcp-figma-tools
+Version: 0.1.0
+Summary: MCP server for interacting with the Figma API, providing tools to fetch file data, screen info, node details, and image URLs
+Author-email: manoj48 <manojwork385@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mcp>=1.8.1
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: python-dotenv>=1.1.0
+Provides-Extra: test
+Requires-Dist: pytest>=7.0.0; extra == "test"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "test"
+Dynamic: license-file

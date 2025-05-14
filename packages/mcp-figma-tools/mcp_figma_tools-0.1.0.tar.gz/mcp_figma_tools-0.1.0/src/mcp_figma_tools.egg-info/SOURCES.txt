@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/mcp_figma_tools/__init__.py
+src/mcp_figma_tools/server.py
+src/mcp_figma_tools.egg-info/PKG-INFO
+src/mcp_figma_tools.egg-info/SOURCES.txt
+src/mcp_figma_tools.egg-info/dependency_links.txt
+src/mcp_figma_tools.egg-info/entry_points.txt
+src/mcp_figma_tools.egg-info/requires.txt
+src/mcp_figma_tools.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/test_server.py
