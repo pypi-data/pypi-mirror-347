@@ -1,0 +1,10 @@
+libsvm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libsvm/clib.cp310-win_amd64.pyd,sha256=Zm6RG0LIOkdzMQwkML_YV3xTwl1sL6fiaKvUzeAHfVI,71680
+libsvm/commonutil.py,sha256=mXfQ9Z0Sj2VDf4UecuoWg5b4xL1YJM52hV7gjDUH8HQ,6736
+libsvm/svm.py,sha256=038zr9xnuh2m__Hn2rxYklH9czvtPlEExG4c-K4go_E,17669
+libsvm/svmutil.py,sha256=xO8e69rg9QQI-M1l-nE9SNqpY9hHqa4-IzYjRsIYhbQ,10948
+libsvm_official-3.36.0.dist-info/LICENSE,sha256=4XWdZEByFeh5C7E9oBv4orXYXEA7i-DsxE1sNyqOURQ,1528
+libsvm_official-3.36.0.dist-info/METADATA,sha256=_01vz7A7Y0BkszZ9c0S59jDIHWBvu6LVLeTC7r0tKfg,17641
+libsvm_official-3.36.0.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+libsvm_official-3.36.0.dist-info/top_level.txt,sha256=qleZAga5JwQJ0R6Hpu6gS1zOiXc0JkW42oN42NrCrYw,7
+libsvm_official-3.36.0.dist-info/RECORD,,
