@@ -1,0 +1,16 @@
+prune data
+prune notebooks
+prune logs
+prune tests
+prune figures
+global-exclude *.log
+global-exclude *.tmp
+global-exclude *.data
+global-exclude *.jpg
+global-exclude *.jpeg
+global-exclude *.png
+global-exclude *.gif
+global-exclude *.ai
+global-exclude *.pdf
+global-exclude *.svg
+global-exclude *.eps 
