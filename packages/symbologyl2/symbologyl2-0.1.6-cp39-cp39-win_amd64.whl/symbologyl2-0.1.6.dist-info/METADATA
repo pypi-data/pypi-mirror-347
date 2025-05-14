@@ -1,0 +1,77 @@
+Metadata-Version: 2.4
+Name: symbologyl2
+Version: 0.1.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Summary: A python wrapper for symbologyl2 (https://github.com/onechronos/symbologyl2)
+Author-email: OneChronos Engineering <engineering@onechronos.com>
+License: MIT
+Requires-Python: >=3.10, <4.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/onechronos/symbologyl2-py
+Project-URL: Documentation, https://symbologyl2-py.readthedocs.io/en/latest/index.html
+Project-URL: Source, https://github.com/onechronos/symbologyl2-py
+Project-URL: homepage, https://github.com/onechronos/symbologyl2-py
+Project-URL: repository, https://github.com/onechronos/symbologyl2-py
+Project-URL: documentation, https://symbologyl2-py.readthedocs.io/en/latest/index.html
+
+[![Build](https://github.com/onechronos/symbologyl2-py/actions/workflows/build.yml/badge.svg)](https://github.com/onechronos/symbologyl2-py/actions/workflows/build.yml)
+[![Coverage Status](https://coveralls.io/repos/github/onechronos/symbologyl2-py/badge.svg)](https://coveralls.io/github/onechronos/symbologyl2-py)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+
+
+[![PyPI](https://img.shields.io/pypi/v/symbologyl2)](https://pypi.org/project/symbologyl2/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/symbologyl2)](https://pypi.org/project/symbologyl2/)
+[![PyPI - Format](https://img.shields.io/pypi/format/symbologyl2)](https://pypi.org/project/symbologyl2/)
+[![PyPI - License](https://img.shields.io/pypi/l/symbologyl2)](https://pypi.org/project/symbologyl2/)
+[![Documentation Status](https://readthedocs.org/projects/symbologyl2-py/badge/?version=latest)](https://symbologyl2-py.readthedocs.io/en/latest/?badge=latest)
+
+# Symbology Normalization (symbologyl2-py)
+
+## Introduction
+
+Utility functions for parsing, normalizing, and translating between various capital market symbology types. This
+library is a thin wrapper over the [symbologyl2](https://github.com/onechronos/symbologyl2) library, written in rust.
+
+## Current Support
+
+- [x] US equities
+  - [x] CMS Concatenated/Suffix
+  - [x] Nasdaq Integrated
+  - [x] CQS (NYSE/CTA plan)
+
+## Development
+
+```
+uv sync && uv sync --dev
+source .venv/bin/activate
+maturin develop
+```
+
+### Version Bumps
+
+Given how [maturin](https://pyo3.rs/v0.17.3/index.html) operates, it's necessary to bump release versions in both
+`pyproject.toml` and `Cargo.toml`.
+
+```
+pyproject.toml
+
+[project]
+version = "x.y.z"
+```
+
+```
+Cargo.toml
+
+[package]
+version = "x.y.z"
+```
+
