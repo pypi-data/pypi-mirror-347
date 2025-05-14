@@ -1,0 +1,9 @@
+nseparser/__init__.py,sha256=zkkMvIH7jsB1aVhEwAIZz5kvBDRoRJJWh6cnsdrMJ3o,4443
+nseparser/company_info.py,sha256=ols1BDqd7NLEqXEuK-CHIJOBYagBgkqi5FaK6lSU6Vo,20166
+nseparser/config.py,sha256=jmYRmYrDdBFyp-sI7w80rgb0voPAfwbQyB_WY3bRbKk,2756
+nseparser/eod_prices.py,sha256=T2hwFx_WRslT3Kc6l1sO7NJJGpQcD-eWF3tmOuEfdU4,43652
+nseparser/testing.py,sha256=JPOVO5g_U6ciqBMiXw3hqo53liRvP-yVp8otji0e9to,1543
+nseparser-0.1.1.dist-info/METADATA,sha256=2GE-zr2Vmp5p57iIXVWSNb2AWb9SGJNIuT1YO47pmrk,252
+nseparser-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+nseparser-0.1.1.dist-info/top_level.txt,sha256=ADxS-Z9xbGc0cPjSX0vpyh7i5VW4Yl7DHvKMDTos5Yo,10
+nseparser-0.1.1.dist-info/RECORD,,
