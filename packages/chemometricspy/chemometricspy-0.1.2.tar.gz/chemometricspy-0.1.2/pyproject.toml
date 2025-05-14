@@ -1,0 +1,23 @@
+[project]
+name = "chemometricspy"
+version = "0.1.2"
+description = "*ChemometricsPy: A scientific Python library for chemometric modeling*."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  {name = "Leonardo Guimarães", email = "leo.sguimaraes4@gmail.com"}
+]
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/leosguimaraes/chemometricspy"
+"Source" = "https://github.com/leosguimaraes/chemometricspy"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

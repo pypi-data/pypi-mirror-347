@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+chemometricspy/__init__.py
+chemometricspy.egg-info/PKG-INFO
+chemometricspy.egg-info/SOURCES.txt
+chemometricspy.egg-info/dependency_links.txt
+chemometricspy.egg-info/requires.txt
+chemometricspy.egg-info/top_level.txt
+chemometricspy/doe/__init__.py
+chemometricspy/doe/bbd.py
+chemometricspy/doe/ccd.py
+chemometricspy/doe/efeitos.py
+chemometricspy/doe/factorial.py
+chemometricspy/doe/fractional_factorial.py
+chemometricspy/doe/regression.py
