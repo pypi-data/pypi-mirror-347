@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+suio.py
+suio.egg-info/PKG-INFO
+suio.egg-info/SOURCES.txt
+suio.egg-info/dependency_links.txt
+suio.egg-info/requires.txt
+suio.egg-info/top_level.txt

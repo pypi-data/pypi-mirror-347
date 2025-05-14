@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: suio
+Version: 0.1.0
+Summary: Python I/O module for seismic dataset with Seismic Un*x format
+Home-page: https://github.com/seismin91
+Author: Dr. Sumin Kim
+Author-email: seisminic@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
