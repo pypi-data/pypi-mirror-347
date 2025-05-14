@@ -1,0 +1,7 @@
+limbo/__init__.py,sha256=7TUkVRd6mcXX__TuiXXzeP1tx4-qCFzFZc_5onJqruQ,499
+limbo/_limbo.cpython-311-darwin.so,sha256=rxqmsg_vB8CjSBLj3JHkX_4RHCE5VskEJXqjp_Ku7HA,4234960
+limbo/_limbo.pyi,sha256=015YrFb7BEka855xIjuJjFMLILq5BGSAs475f1IxUGQ,5272
+limbo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylimbo-0.0.20rc2.dist-info/METADATA,sha256=foXHu2XiA84K9YcRq7xUhxQ-o-5RgVh7uchPYMYhSy8,1584
+pylimbo-0.0.20rc2.dist-info/WHEEL,sha256=Y4n8ms-v4OvK-BpmnZXknjIhCBsU76uUXLJTTnLdQHA,106
+pylimbo-0.0.20rc2.dist-info/RECORD,,
