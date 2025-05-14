@@ -1,0 +1,6 @@
+{% if debug %}<!-- src/opensearch_xml/templates/opensearch_xml/tags/opensearch_meta.html -->{% endif %}
+{% load i18n %}
+{% if DESCRIPTION %}
+  <link rel="search" type="application/opensearchdescription+xml" title="{{ DESCRIPTION }}"
+        href="{% url "opensearch_xml:xml" %}"/>
+{% endif %}

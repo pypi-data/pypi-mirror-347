@@ -1,0 +1,154 @@
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-opensearch-xml"
+description = "Handle opensearch.xml"
+requires-python = ">=3.9"
+authors = [
+    { name = "François GUÉRIN", email = "frague59@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Plugins",
+    "Environment :: Web Environment",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Framework :: Django :: 5.2",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Topic :: Utilities",
+]
+keywords = [
+    "django",
+    "opensearch",
+    "opensearch.xml",
+]
+dependencies = [
+    "django-appconf>=1.0.6",
+    "Django>=3.2,<6.0",
+]
+version = "0.3.2"
+readme = "README.md"
+license = "MIT"
+
+[project.urls]
+Homepage = "https://gitlab.com/frague59/django-opensearch-xml"
+
+[dependency-groups]
+tests = [
+    "pytest",
+    "pytest-django",
+]
+docs = [
+    "sphinx>=8.2.3",
+    "sphinx-rtd-theme==3.0.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/opensearch_xml",
+]
+
+[tool.flake8]
+max-line-length = 120
+ignore = [
+    "F405",
+    "W503",
+    "RST299",
+    "RST303",
+    "RST304",
+    "RST306",
+    "A003",
+]
+exclude = [
+    ".git/",
+    "__pycache__",
+    "**/migrations/*",
+    "**/tests/*",
+    "**/assets/*",
+    "tmp/",
+]
+max-cognitive-complexity = 15
+count = true
+
+[tool.djlint]
+indent = 2
+profile = "django"
+max_line_length = 120
+ignore = "H031,H006,H017"
+
+[tool.djlint.js]
+indent_size = 2
+
+[tool.djlint.css]
+indent_size = 2
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+target-version = "py311"
+exclude = [
+    ".git/",
+    "__pycache__",
+    "tmp/",
+]
+
+[tool.ruff.lint]
+fixable = [
+    "ALL",
+]
+select = [
+    "E",
+    "F",
+    "W",
+    "B",
+    "SIM",
+    "I",
+    "UP",
+    "N",
+    "D",
+    "A",
+    "DJ",
+    "LOG",
+    "T20",
+    "S",
+]
+ignore = [
+    "D212",
+    "D203",
+]
+preview = true
+
+[tool.ruff.lint.pycodestyle]
+max-doc-length = 120
+max-line-length = 120
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+DJANGO_SETTINGS_MODULE = "tests.settings"

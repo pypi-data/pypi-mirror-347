@@ -1,0 +1,131 @@
+Metadata-Version: 2.4
+Name: django-opensearch-xml
+Version: 0.3.2
+Summary: Handle opensearch.xml
+Project-URL: Homepage, https://gitlab.com/frague59/django-opensearch-xml
+Author-email: François GUÉRIN <frague59@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: django,opensearch,opensearch.xml
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Framework :: Django :: 5.2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Requires-Dist: django-appconf>=1.0.6
+Requires-Dist: django<6.0,>=3.2
+Description-Content-Type: text/markdown
+
+# OpenSearch application for django
+
+This application provide a way to integrate the [OpenSearch](https://developer.mozilla.org/en-US/docs/Web/OpenSearch)
+XML file to a django application.
+
+[[_TOC_]]
+
+## Installation
+
+Install the package `pip install django-opensearch-xml`
+
+## Configuration
+
++ Add "opensearch_xml" to settings.INSTALLED_APPS.
+  ```python
+  INSTALLED_APPS = [
+    ...,
+    "opensearch_xml",
+    ...
+  ]
+  ```
++ Add "opensearch_xml" to URLS
+  ```python
+  from django.urls import path, include
+
+
+  urlpatterns = [
+    ...,
+    path("opensearch/", include("opensearch_xml.urls")),
+    ...
+  ]
+  ```
+
+## Settings
+
+Add OPENSEARCH_XML_\<params\> to the application settings
+
+<dl>
+    <dt>OPENSEARCH_XML_CONTACT_EMAIL = ""</dt>
+    <dd>Email address of the maintainer the application</dd>
+</dl>
+<dl>
+    <dt>OPENSEARCH_XML_SHORT_NAME = ""</dt>
+    <dd>Brief human-readable name of the search engine</dd>
+</dl>
+<dl>
+    <dt>OPENSEARCH_XML_DESCRIPTION = ""</dt>
+    <dd>Human-readable description of the search engine and its contents</dd>
+</dl>
+<dl>
+    <dt>OPENSEARCH_XML_FAVICON_WIDTH = 16</dt>
+    <dd>Width of the favicon</dd>
+</dl>
+<dl>
+    <dt>OPENSEARCH_XML_FAVICON_HEIGHT = 16</dt>
+    <dd>Height of the favicon</dd>
+</dl>
+<dl>
+    <dt>OPENSEARCH_XML_FAVICON_TYPE = "image/x-icon"</dt>
+    <dd>Type of the icon</dd>
+</dl>
+<dl>
+    <dt>OPENSEARCH_XML_FAVICON_FILE</dt>
+    <dd>File on the favicon, relative to the path referenced in STATIC_PATH</dd>
+</dl>
+<dl>
+    <dt>OPENSEARCH_XML_SEARCH_URL = "search"</dt>
+    <dd>Django URL name of the search. This URL will be passed to the `reverse()` function</dd>
+</dl>
+<dl>
+    <dt>OPENSEARCH_XML_SEARCH_QUERYSTRING = "q="</dt>
+    <dd>Querystring used to prepend the search parameters</dd>
+</dl>
+<dl>
+    <dt>OPENSEARCH_XML_INPUT_ENCODING = "UTF-8"</dt>
+    <dd>Encoding for the querystring</dd>
+</dl>
+
+## Usage
+
+Add the template tag `{% opensearch_xml_meta %}` into the page `<head>`.
+
+```html
+{% load opensearch_xml_tags %}
+<html lang="en">
+<head>
+    <title>My title</title>
+    ...
+    {% opensearch_xml_meta %}
+</head>
+<body>
+...
+</body>
+</html>
+```
