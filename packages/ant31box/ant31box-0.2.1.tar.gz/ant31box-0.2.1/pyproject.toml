@@ -1,0 +1,84 @@
+[project]
+
+name = "ant31box"
+version = "0.2.1"
+description = ""
+readme = "README.md"
+dynamic = ["dependencies"]
+authors = [{email="2t.antoine@gmail.com", name="ant31"}]
+packages = [{ include = "ant31box" }]
+
+[tool.poetry.scripts]
+ant31box = 'ant31box.main:main'
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+
+asyncio = "^3"
+pydantic = "*"
+click = "*"
+pyyaml = "*"
+
+paramiko = "*"
+sentry-sdk = {extras = ["fastapi"], version = "*", optional = true}
+# temporalloop = {path = "../temporalrunner", develop = true}
+aiohttp = {extras = ["speedups"], version = "*"}
+aiohttp_requests = "*"
+fastapi = {version = "*", extras = ["all"], optional = true}
+typing-extensions = "*"
+
+aiohttp-prometheus-exporter = "*"
+starlette-exporter = {version="*", optional = true}
+pydantic-settings = "*"
+
+aiofiles = "*"
+aioshutil = "*"
+python-multipart = "*"
+cachetools = "*"
+boto3 = {version = "*", optional = true}
+
+[tool.poetry.group.dev.dependencies]
+aioresponses = "*"
+pyreadline = "*"
+pylint-pydantic = "*"
+requests = "*"
+black = "*"
+ipython = "*"
+pylint = "*"
+pyre-check = "*"
+types-requests = "*"
+isort = "*"
+pytest = "<8"
+coverage = "*"
+pytest-cov = "*"
+bumpversion = "*"
+pytest-ordering = "*"
+pytest-asyncio = "*"
+pyright = "*"
+pytest-aioresponses = "*"
+types-cachetools = "*"
+moto = "*"
+ruff = "^0.9.10"
+
+[tool.poetry.extras]
+s3 = ["boto3"]
+fastapi = ["starlette-exporter", "fastapi"]
+sentry = ["sentry"]
+
+[tool.black]
+line-length = 120
+target-version = ['py312']
+include = '\.pyi?$'
+
+[tool.isort]
+atomic = true
+profile = "black"
+line_length = 120
+skip_gitignore = true
+
+[tool.pytest]
+testpaths = "tests/"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
