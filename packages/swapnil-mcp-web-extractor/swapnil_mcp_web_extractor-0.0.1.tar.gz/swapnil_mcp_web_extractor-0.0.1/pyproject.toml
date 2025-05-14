@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swapnil-mcp-web-extractor"
+version = "0.0.1"
+description = "MCP server that extracts content from web pages for LLMs"
+readme = "README.md"
+authors = [
+    {name = "swapnil dagade", email = "swapnildagade@gmail.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcp>=1.2.0",
+    "requests",
+    "beautifulsoup4",
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+swapnil-mcp-web-extractor = "web_extractor.server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}

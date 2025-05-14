@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/swapnil_mcp_web_extractor.egg-info/PKG-INFO
+src/swapnil_mcp_web_extractor.egg-info/SOURCES.txt
+src/swapnil_mcp_web_extractor.egg-info/dependency_links.txt
+src/swapnil_mcp_web_extractor.egg-info/entry_points.txt
+src/swapnil_mcp_web_extractor.egg-info/requires.txt
+src/swapnil_mcp_web_extractor.egg-info/top_level.txt
+src/web_extractor/__inti__.py
+src/web_extractor/server.py
