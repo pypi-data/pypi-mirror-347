@@ -1,0 +1,24 @@
+[project]
+name = "tlaloc-es-mcp"
+version = "0.1.2"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["click>=8.2.0", "mcp[cli]>=1.8.1", "poethepoet>=0.34.0"]
+
+[dependency-groups]
+dev = [
+    "commitizen>=4.7.0",
+    "pre-commit>=4.2.0",
+    "pytest>=8.3.5",
+    "ruff>=0.11.9",
+]
+
+[tool.poe.tasks]
+git_hooks_install = "pre-commit install"
+git_hooks_update = "pre-commit autoupdate"
+git_hooks_run = "pre-commit run --all-files"
+
+
+[project.scripts]
+tlalocesmcp = "src.__main__:main"
