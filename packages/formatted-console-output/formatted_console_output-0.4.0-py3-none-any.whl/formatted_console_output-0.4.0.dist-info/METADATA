@@ -1,0 +1,233 @@
+Metadata-Version: 2.1
+Name: formatted_console_output
+Version: 0.4.0
+Summary: A package for formatted console output using ANSI escape codes - colors and formatting.
+Author: Wesley Marmon
+Author-email: wcmarmon@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This library allows you to set the foreground and background colors and style of your Console output. The script uses ANSI Escape Codes for colors and allows you to create custom colors that are also passed as ANSI Escape Codes. The script also uses the ANSI Escape Codes for styles bold, underline, and both combined. Coders can either put together a multi-formatted message or simply set the format for a single print() message.
+
+This library also exposes some functionality that allows you to print WARNING, ERROR, and INFO messages or to print an Exception's stacktrace as an ERROR. This helps when you're using other 3rd-party libraries that are very verbose, and you cannot turn off their output. Meanwhile you're crossing your eyes trying to find Exception messages like 'was that an Exception? It was kinda shaped like an exception message...' Now we can make your Exception red!
+
+### OS COMPATIBILITY
+
+Though Linux and Mac are pretty much always compatible... This library seamlessly takes into account Windows machines that are not necessarily configured to support ANSI escape codes. When your script runs, the library attempts to enable this feature for this session. If you're already compatible, we go formatted. If we can make you compatible for this session, we go formatted. If all fails, then we go back to printing with default behavior.
+
+### HOW TO REFERENCE
+
+1. install the library
+
+```batch
+    pip install formatted-console-output
+```
+
+2. At the top of your script add the following import statements as needed:
+
+```python
+    import formatted_console_output as fmt
+    from formatted_console_output import output_formatted_message as print, output_many_format_message as printf
+    from formatted_console_output import output_error_message as msg, log_exception_stacktrace as err
+```
+
+### CODE COMPATIBILITY & OVERLOADING/ALIASING
+
+I have found it easiest mentally to alias each method as shown in the includes above. You do not have to alias the method imports this way but that makes it more natural for you to code against and allows you to leverage everything else about the print() method. The script passes on all extra keyword arguments that are normally used in a print() call, so go wild.
+
+Using the alias 'print' does NOT interfere with any other scripts. Any code referencing this library's output method as 'print' that then tries to use the print() method normally would still get the expected behavior.
+
+### HOW TO USE IN CODE
+
+#### Methods Exposed in this Library
+
+- output_formatted_message() - Replaces print. Takes a message and a print() method's kwargs along with your added format and colors
+- output_many_format_message() - Prints an array of FormattedPhrase objects. Also takes a print() method's kwargs
+- output_error_message() - Prints a message as ERROR, WANRING, or INFO. Also takes a print() method's kwargs
+- log_exception_stacktrace() - Prints an Exception including the stacktrace as ERROR. Also takes a print() method's kwargs
+
+#### Keyword Arguments for This Library (kwargs)
+
+The added keyword arguments are:
+
+- fg_color (default is ForegroundColor.NONE)
+- bg_color (default is BackgroundColor.NONE)
+- format (default is TextFormat.NONE)
+
+##### Enumerators & Classes
+
+The enumerators/classes that define these colors/formats are:
+
+- ForegroundColor [BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, NONE]
+- BackgroundColor [BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, NONE]
+- TextFormat [BOLD, UNDERLINE, BOLD_AND_UNDERLINE, NONE]
+- ErrorType [INFO, WARNING, ERROR]
+- CustomColor - any RGB as a text color
+  - Parameters in constructor: int:r, int:g, int:b, bool:is_fg
+  - Can be passed as an argument in place of BackgroundColor or ForegroundColor
+- FormattedPhrase() - an individually formatted piece of text that can be joined to others
+  - Parameters in constructor: str:string_phrase, enum:bg_color, enum:fg_color, enum:format
+  - Methods/Functions:
+    - get_output() - returns the string_phrase with all escape codes embedded
+
+NOTE: parameters bg_color and fg_color in any method can take either an Enumerator value (BackgroundColor, ForeGroundColor) or a CustomColor object.
+
+### CODE EXAMPLES
+
+#### Example 1: Format one line of text
+
+In the following example we're printing a message to console with one format for the entire line: blue text on a yellow background in bold style. I also threw in some standard keyword arguments (sep and end) to show that can be included:
+
+```python
+    import formatted_console_output as fmt
+    from formatted_console_output import output_formatted_message as print
+
+    print(
+        f"Archiving files and reporting against them in '{dir_path}'",
+        fg_color=fmt.ForegroundColor.BLUE,
+        bg_color=fmt.BackgroundColor.YELLOW,
+        format=fmt.TextFormat.BOLD,
+        sep="  -  ",
+        end="\n\n",
+    )
+```
+
+#### Example 2: Use a CustomColor
+
+In this example, we're passing a CustomColor which is a brown color for bg_color. So this will print yellow on brown:
+
+```python
+    import formatted_console_output as fmt
+    from formatted_console_output import output_formatted_message as print
+
+    print(
+        "The quick brown foo jumped over the lazy bar",
+        fg_color=fmt.ForegroundColor.YELLOW,
+        bg_color=fmt.CustomColor(r=156, g=101, b=0, is_fg=False),
+    )
+```
+
+#### Example 3: Multiple formats in a single message using FormattedPhrase
+
+In this example we're formatting each phrase differently and putting it together using an array of FormattedPhrase objects (any left out parameter in any FormattedPhrase object is considered to be set to NONE):
+
+```python
+    import formatted_console_output as fmt
+    from formatted_console_output import  output_many_format_message as printf
+
+    #create an array of FormattedPhrase objects to pass to printf()
+    message = [
+        fmt.FormattedPhrase(
+            "The ",
+            bg_color=fmt.BackgroundColor.BLACK,
+            fg_color=fmt.ForegroundColor.YELLOW,
+            format=fmt.TextFormat.UNDERLINE,
+        ),
+        fmt.FormattedPhrase(
+            "quick brown foo ",
+            bg_color=fmt.BackgroundColor.RED,
+            fg_color=fmt.ForegroundColor.YELLOW,
+            format=fmt.TextFormat.BOLD,
+        ),
+        fmt.FormattedPhrase(
+            "jumped over the ",
+            fg_color=fmt.ForegroundColor.YELLOW,
+        ),
+        fmt.FormattedPhrase(
+            "lazy ",
+            bg_color=fmt.BackgroundColor.BLUE,
+            fg_color=fmt.ForegroundColor.YELLOW,
+        ),
+        fmt.FormattedPhrase(
+            "bar",
+            bg_color=fmt.BackgroundColor.BLUE,
+            fg_color=fmt.ForegroundColor.YELLOW,
+            format=fmt.TextFormat.BOLD_AND_UNDERLINE,
+        ),
+    ]
+    printf(message)
+```
+
+#### Example 4: Combining multiple messages over time
+
+In this example, we're not printing until later. First we're gathering formatted output by pulling a FormattedPhrase object's get_output() method into a variable. In essence, a coder could put together an entire formatted paragragh in memory over the course of the program's execution before printing at the end by doing something like this:
+
+```python
+    import formatted_console_output as fmt
+    from formatted_console_output import output_formatted_message as print
+
+    message = ""
+    #some code
+    message += fmt.FormattedPhrase(
+        "The ",
+        bg_color=fmt.BackgroundColor.BLACK,
+        fg_color=fmt.ForegroundColor.YELLOW,
+        format=fmt.TextFormat.UNDERLINE,
+    )
+    #some more code
+    message += fmt.FormattedPhrase(
+        "quick brown foo ",
+        bg_color=fmt.BackgroundColor.RED,
+        fg_color=fmt.ForegroundColor.YELLOW,
+        format=fmt.TextFormat.BOLD,
+    )
+    #some more code
+    message += fmt.FormattedPhrase(
+        "jumped over the ",
+        bg_color=fmt.BackgroundColor.BLACK,
+        fg_color=fmt.ForegroundColor.YELLOW,
+    )
+    #some more code
+    message += fmt.FormattedPhrase(
+        "lazy ",
+        bg_color=fmt.BackgroundColor.BLUE,
+        fg_color=fmt.ForegroundColor.YELLOW,
+        format=fmt.TextFormat.BOLD,
+    )
+    #some more code
+    message += fmt.FormattedPhrase(
+        "bar",
+        bg_color=fmt.BackgroundColor.BLUE,
+        fg_color=fmt.ForegroundColor.YELLOW,
+        format=fmt.TextFormat.BOLD_AND_UNDERLINE,
+    )
+    print(message)
+```
+
+#### Example 5: Printing an Exception with its Stacktrace
+
+With log_exception_stacktrace() exposed in this library, you can intercept an Exception in a catch block (Except statement) and even get the full stacktrace back by doing something like this:
+
+```python
+    from formatted_console_output import log_exception_stacktrace as err
+
+    def func(a, b):
+        raise Exception("This is a generic exception for testing purposes.")
+
+    def main():
+        try:
+            a = None
+            b = 1
+            func(a, b)
+        except Exception as e:
+            err(e)
+
+    main()
+```
+
+#### Example 6: Printing INFO, WANRING, and ERROR messages
+
+With output_error_message() exposed, you can print messages as red (ERROR), yellow (WARNING), or cyan (INFO) by doing this:
+
+```python
+    import formatted_console_output as fmt
+    from formatted_console_output import output_error_message as msg
+
+    msg("This is an Informational Message.", error_type=fmt.ErrorType.INFO)
+    msg("This is a Warning Message.", error_type=fmt.ErrorType.WARNING)
+    msg("This is an Error Message.", error_type=fmt.ErrorType.ERROR)
+```
