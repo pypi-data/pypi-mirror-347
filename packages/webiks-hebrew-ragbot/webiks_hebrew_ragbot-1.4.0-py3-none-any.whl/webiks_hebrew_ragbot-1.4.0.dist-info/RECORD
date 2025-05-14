@@ -1,0 +1,10 @@
+webiks_hebrew_ragbot/__init__.py,sha256=UdTzMwCMzH9H3YdCrHmURkh91hO8gD6pwzK-th3VPkM,25
+webiks_hebrew_ragbot/config.py,sha256=MmNHppUOecHAJISWBYjbk_T1PVADBTfvCaIWTvLDTvI,240
+webiks_hebrew_ragbot/document.py,sha256=WnmqE5WyXe6TRG7mcHzhloXXRI1n5uwfJtyuITdAWM4,3059
+webiks_hebrew_ragbot/elastic_model.py,sha256=tpU66EJ8KKgElsAXwiCuI4o52qzuXc-PwRQB67B39zE,6649
+webiks_hebrew_ragbot/engine.py,sha256=WmCTuMGef7S4hs5m7X3E3yASVhCKbkYulG3hxq9YrwU,6679
+webiks_hebrew_ragbot/llm_client.py,sha256=USAcpVrvbvg9BBfz21IA593YzkjvKQpUWB5UBkxy1Lk,356
+webiks_hebrew_ragbot-1.4.0.dist-info/METADATA,sha256=ZkIt0qQY7LLyE4UR7QVOmLX0MDXLFzW4NZHAxZVolGo,2013
+webiks_hebrew_ragbot-1.4.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+webiks_hebrew_ragbot-1.4.0.dist-info/top_level.txt,sha256=OeB-Y-_c_Tt19Ff_92IT2aSj-Ou86sAqSefLhEhvuoY,21
+webiks_hebrew_ragbot-1.4.0.dist-info/RECORD,,
