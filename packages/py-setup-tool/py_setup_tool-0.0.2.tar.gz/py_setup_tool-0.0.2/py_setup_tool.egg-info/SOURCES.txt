@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+py_setup_tool/__init__.py
+py_setup_tool/example.py
+py_setup_tool.egg-info/PKG-INFO
+py_setup_tool.egg-info/SOURCES.txt
+py_setup_tool.egg-info/dependency_links.txt
+py_setup_tool.egg-info/top_level.txt
