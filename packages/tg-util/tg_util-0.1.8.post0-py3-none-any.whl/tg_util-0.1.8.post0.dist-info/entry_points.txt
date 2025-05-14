@@ -1,0 +1,2 @@
+[console_scripts]
+tg-dl = tg_util.downloader:__main__
