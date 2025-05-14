@@ -1,0 +1,15 @@
+gr1336_toolbox/__init__.py,sha256=KG8LqiWcqrXkTxR0x-JnychZqFu6TchYLrn7CYpvht8,282
+gr1336_toolbox/files.py,sha256=yOt8iE1oHOWfi90uVCnSsQykoMd6t4zgpCEHQdCJkQg,9411
+gr1336_toolbox/misc.py,sha256=D-F-YXXPOzyqL_M527WXPliOncNz8qVCNDvmHmwp0wE,8414
+gr1336_toolbox/pathtools.py,sha256=AEwJW8kD-ncozm0wbAZwF4kyrbFqskCpdZYnDCQ-BUY,4328
+gr1336_toolbox/phonemizer.py,sha256=505z0vKr9Y9R32Zindnph28RqPvU0zbPkJ2oF83GgQM,2581
+gr1336_toolbox/text.py,sha256=P4891Yk1KkvhHIy1VhnElVIAXH5JCWfIZwAxWeIsPgQ,29790
+gr1336_toolbox/types.py,sha256=nnu7gxdgIHHQ_EGuP7NLudXlFpceA3YBiokv6cCZ_a8,14199
+gr1336_toolbox/backbones/misc/json_call_tools.py,sha256=ouo6TfPeZ3-j2ypdnC6I-3-dBEaS8StS7D0Fm-vGXKk,5574
+gr1336_toolbox/backbones/texts/txt_requoter.py,sha256=wEYghxNn_N7ggGTktgZJodbGdbr61-WRsqxJdH4f34o,3199
+gr1336_toolbox/backbones/texts/txt_splitter.py,sha256=N2i3VY0dJFd148ZWgZGAeL5avrJFfOUW5noPC03WR2w,2845
+gr1336_toolbox-0.7.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gr1336_toolbox-0.7.2.dist-info/METADATA,sha256=H3z-281o7H_w8xri2yV_3PTISGmp7EenaWUaJacTINM,1665
+gr1336_toolbox-0.7.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+gr1336_toolbox-0.7.2.dist-info/top_level.txt,sha256=3wqw_J5z3p1QYtR-KiaxUeUWe-3Lvj-mwgILWMnvA68,15
+gr1336_toolbox-0.7.2.dist-info/RECORD,,
