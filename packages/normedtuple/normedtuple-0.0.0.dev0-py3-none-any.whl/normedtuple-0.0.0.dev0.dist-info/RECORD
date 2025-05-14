@@ -1,0 +1,10 @@
+normedtuple/__init__.py,sha256=CAcj3JQ680xQkAEP3zOdwa3VLiX_uz8e-pmelJapIN8,102
+normedtuple/__main__.py,sha256=BpkW5kCAVcq1CY_T6nb6Tp-Rkvb8wneyJSbCPUv_jTM,68
+normedtuple/core/__init__.py,sha256=Tr3CwIPY695IbF4DrKHrDes1AKd_iJgddUP46jxKHSw,163
+normedtuple/tests/__init__.py,sha256=QVuxknAbSKHdMDGszNKhJt_FtfSTjvigG7vs7D5uO1g,299
+normedtuple/tests/test_1984.py,sha256=GPfy8FPaGbj-w9uGHkJYSjmlSReVAXwiHS8JydJaERw,187
+normedtuple-0.0.0.dev0.dist-info/licenses/LICENSE.txt,sha256=fOh9FHccUt9OcJPBaVJ482GX4yrl_FxCUk9YRZ53JOI,1074
+normedtuple-0.0.0.dev0.dist-info/METADATA,sha256=D6un5Mn5Yme6JtPjxqoqO7TFKIRxOEORAz29lC7Tuy0,2702
+normedtuple-0.0.0.dev0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+normedtuple-0.0.0.dev0.dist-info/top_level.txt,sha256=i2huH9tO8buO3ohItcw_0B8g2aVQhOzWZ2HrrF8CzSw,12
+normedtuple-0.0.0.dev0.dist-info/RECORD,,
