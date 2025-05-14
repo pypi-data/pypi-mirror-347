@@ -1,0 +1,8 @@
+README.md
+setup.py
+djdsum/__init__.py
+djdsum/main.py
+djdsum.egg-info/PKG-INFO
+djdsum.egg-info/SOURCES.txt
+djdsum.egg-info/dependency_links.txt
+djdsum.egg-info/top_level.txt
