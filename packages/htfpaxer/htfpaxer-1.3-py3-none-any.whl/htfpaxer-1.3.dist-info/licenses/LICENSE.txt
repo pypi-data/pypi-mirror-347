@@ -1,0 +1,17 @@
+Copyright (c) HaxoTF
+Last Change: 13/5/2025
+
+All rights reserved -- for now.
+I am deep into code and don't have the time to write up all legal mumbo jumbo for current moment.
+I will do it later.
+
+Current permissions:
+- You CAN install it into your system and use it as-is.
+- You CAN show the original version to some dudes "Hey! look at this shit I found!"
+- For personal non-commercial purposes: do what the hell you want.
+- Any other rights are reserved, ez? or just ask me.
+
+it can be installed via pip using this command:
+pip install htfpaxer
+
+or just yoink this shit from github and install it locally, whatever..
