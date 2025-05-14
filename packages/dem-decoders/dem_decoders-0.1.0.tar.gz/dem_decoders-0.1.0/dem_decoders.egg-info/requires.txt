@@ -1,0 +1,12 @@
+numpy
+stim
+scipy
+ldpc
+tqdm
+
+[dev]
+pip-tools
+pytest
+scalene
+black
+pytest-black
