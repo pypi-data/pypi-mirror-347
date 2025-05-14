@@ -1,0 +1,2 @@
+[console_scripts]
+basictest = strata.just_testing:main
