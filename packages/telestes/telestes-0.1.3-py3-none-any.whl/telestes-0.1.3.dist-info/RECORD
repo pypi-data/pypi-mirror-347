@@ -1,0 +1,12 @@
+telestes/__init__.py,sha256=ZPajXvpQEoRXFniSWseZV4J0jBB4lQvwTbuop5Gov-Q,59
+telestes/networks/__init__.py,sha256=BZlE8yScOTpRpO_21sE_yKPOtuus61o8XiDUaxbPaNQ,99
+telestes/networks/architectures/linear.py,sha256=zBhtV6YZOS8neiRA6ixV7a0P_0y5JeHEd31s4-kst9k,782
+telestes/networks/architectures/transformer.py,sha256=00A_P2mXwojcqWYLe28dwsbNtUwmT2LCe6Yx3TzjJkU,4639
+telestes/networks/policy.py,sha256=4VxEAsz0MUmaoqRSFFdY3kEOKUM3SFAGrbM5dxiAXWg,2398
+telestes/networks/value.py,sha256=AjS4mfSK3SwiliKn5f0LsUk3loweddDualJbGKfadzI,2152
+telestes/ppo/__init__.py,sha256=UJoX-_XmFHGdaps4zM8hKNpdgiEdkGfn4pUFI-gdrtU,34
+telestes/ppo/agent.py,sha256=c3KzYCfh0G995bSrB62Mri4jk2qC9gZERbhtr7Bb3dU,11436
+telestes-0.1.3.dist-info/LICENSE,sha256=d4gCVe-p0Gb9wwxtZlgkGZzWaHnrP3y38tEW9naZCV4,5582
+telestes-0.1.3.dist-info/METADATA,sha256=Bqmfzgnp_yAzrWPee8gFX22kPO_gmH88ietUvQ4xwA4,529
+telestes-0.1.3.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+telestes-0.1.3.dist-info/RECORD,,
