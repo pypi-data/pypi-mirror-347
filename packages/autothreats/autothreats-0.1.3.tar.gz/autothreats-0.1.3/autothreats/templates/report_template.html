@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ report_title }}</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js" integrity="sha384-jaMBV1LiGVEK5Ap7+8dkrRwRG3QeYGBQXCrQk+W1YQT0jEYz5LJsO9YmjLgEZxr" crossorigin="anonymous" onerror="handleMermaidError()"></script>
+    <script>
+        // Error handling for Mermaid loading
+        function handleMermaidError() {
+            console.error('Failed to load Mermaid library');
+            document.querySelectorAll('.mermaid').forEach(function(el) {
+                el.innerHTML = '<div class="alert alert-warning">Diagram rendering failed: Could not load Mermaid library</div>';
+                
+                // Add a fallback image placeholder
+                const fallbackDiv = document.createElement('div');
+                fallbackDiv.className = 'diagram-fallback';
+                fallbackDiv.innerHTML = '<p>Diagram rendering requires JavaScript. Please enable JavaScript or use a compatible browser.</p>' +
+                                       '<p>Alternatively, you can view a text-based representation of the diagram below:</p>' +
+                                       '<pre class="diagram-code">' + el.textContent.trim() + '</pre>';
+                el.parentNode.appendChild(fallbackDiv);
+            });
+        }
+    </script>
+    <noscript>
+        <style>
+            .mermaid { display: none; }
+            .diagram-fallback { display: block !important; }
+        </style>
+    </noscript>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --success-color: #198754;
+            --danger-color: #dc3545;
+            --warning-color: #ffc107;
+            --info-color: #0dcaf0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .header h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: var(--secondary-color);
+            font-size: 1.2em;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .card-header {
+            font-weight: bold;
+        }
+        
+        .severity-critical {
+            background-color: #CC0000;
+            color: white;
+        }
+        
+        .severity-high {
+            background-color: #FF0000;
+            color: white;
+        }
+        
+        .severity-medium {
+            background-color: #FFA500;
+            color: white;
+        }
+        
+        .severity-low {
+            background-color: #FFFF00;
+            color: black;
+        }
+        
+        .severity-info {
+            background-color: #00BFFF;
+            color: white;
+        }
+        
+        .mermaid {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+            min-height: 100px; /* Ensure minimum height for empty diagrams */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Style for SVG elements inside mermaid */
+        .mermaid svg {
+            max-width: 100%;
+            height: auto !important;
+        }
+        
+        /* Style for empty diagram message */
+        .mermaid .empty-diagram-message {
+            color: #666;
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .diagram-fallback {
+            display: none;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px dashed #ccc;
+            color: #666;
+        }
+        
+        .diagram-code {
+            max-height: 200px;
+            overflow: auto;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        
+        .diagram-container {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .diagram-legend {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            font-size: 0.9em;
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .legend-item {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+        
+        .legend-color {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            border-radius: 2px;
+            vertical-align: middle;
+        }
+        
+        .diagram-controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+        
+        .diagram-control-btn {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 3px 8px;
+            margin-left: 5px;
+            cursor: pointer;
+            font-size: 0.8em;
+            color: #666;
+        }
+        
+        .diagram-control-btn:hover {
+            background-color: #e9ecef;
+        }
+        
+        .diagram-title {
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 15px;
+            margin: 10px;
+            min-width: 150px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .stat-label {
+            color: var(--secondary-color);
+        }
+        
+        .table-responsive {
+            margin: 20px 0;
+        }
+        
+        .code-block {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: var(--secondary-color);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .stats-container {
+                flex-direction: column;
+            }
+            
+            .stat-box {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ report_title }}</h1>
+            <p>Generated on {{ generation_date }}</p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Executive Summary</h2>
+            <p>{{ executive_summary }}</p>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-number">{{ total_threats }}</div>
+                    <div class="stat-label">Total Threats</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">{{ critical_threats }}</div>
+                    <div class="stat-label">Critical</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">{{ high_threats }}</div>
+                    <div class="stat-label">High</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">{{ medium_threats }}</div>
+                    <div class="stat-label">Medium</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">{{ low_threats }}</div>
+                    <div class="stat-label">Low</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">System Overview</h2>
+            <p>{{ system_description }}</p>
+            
+            <div class="diagram-container">
+                <h3 class="diagram-title">Component Diagram</h3>
+                <div class="diagram-controls">
+                    <button class="diagram-control-btn" onclick="downloadDiagram(this.parentNode.parentNode.querySelector('.mermaid'), 'component-diagram.svg')">Download SVG</button>
+                    <button class="diagram-control-btn" onclick="zoomDiagram(this.parentNode.parentNode.querySelector('.mermaid'))">Zoom</button>
+                </div>
+                <div class="mermaid">
+{{ component_diagram }}
+                </div>
+                <div class="diagram-legend">
+                    <div class="legend-item"><span class="legend-color" style="background-color: #f8f9fa;"></span> Component</div>
+                    <div class="legend-item"><span class="legend-color" style="background-color: #FF0000; opacity: 0.3;"></span> Component with threats</div>
+                    <div class="legend-item"><span class="legend-color" style="border: 2px dashed #666;"></span> Connection</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Threat Analysis</h2>
+            
+            <div class="diagram-container">
+                <h3 class="diagram-title">Threat Flow Diagram</h3>
+                <div class="diagram-controls">
+                    <button class="diagram-control-btn" onclick="downloadDiagram(this.parentNode.parentNode.querySelector('.mermaid'), 'threat-flow-diagram.svg')">Download SVG</button>
+                    <button class="diagram-control-btn" onclick="zoomDiagram(this.parentNode.parentNode.querySelector('.mermaid'))">Zoom</button>
+                </div>
+                <div class="mermaid">
+{{ threat_flow_diagram }}
+                </div>
+                <div class="diagram-legend">
+                    <div class="legend-item"><span class="legend-color" style="background-color: #CC0000;"></span> Critical</div>
+                    <div class="legend-item"><span class="legend-color" style="background-color: #FF0000;"></span> High</div>
+                    <div class="legend-item"><span class="legend-color" style="background-color: #FFA500;"></span> Medium</div>
+                    <div class="legend-item"><span class="legend-color" style="background-color: #FFFF00;"></span> Low</div>
+                    <div class="legend-item"><span class="legend-color" style="background-color: #00BFFF;"></span> Info</div>
+                </div>
+            </div>
+            
+            <div class="diagram-container">
+                <h3 class="diagram-title">Attack Tree</h3>
+                <div class="diagram-controls">
+                    <button class="diagram-control-btn" onclick="downloadDiagram(this.parentNode.parentNode.querySelector('.mermaid'), 'attack-tree-diagram.svg')">Download SVG</button>
+                    <button class="diagram-control-btn" onclick="zoomDiagram(this.parentNode.parentNode.querySelector('.mermaid'))">Zoom</button>
+                </div>
+                <div class="mermaid">
+{{ attack_tree_diagram }}
+                </div>
+                <div class="diagram-legend">
+                    <div class="legend-item"><span class="legend-color" style="background-color: #CC0000;"></span> Critical Threat</div>
+                    <div class="legend-item"><span class="legend-color" style="background-color: #FF0000;"></span> High Threat</div>
+                    <div class="legend-item"><span class="legend-color" style="background-color: #FFA500;"></span> Medium Threat</div>
+                    <div class="legend-item"><span class="legend-color" style="background-color: #90EE90;"></span> Mitigation</div>
+                </div>
+            </div>
+            
+            <div class="diagram-container">
+                <h3 class="diagram-title">Risk Matrix</h3>
+                <div class="diagram-controls">
+                    <button class="diagram-control-btn" onclick="downloadDiagram(this.parentNode.parentNode.querySelector('.mermaid'), 'risk-matrix-diagram.svg')">Download SVG</button>
+                    <button class="diagram-control-btn" onclick="zoomDiagram(this.parentNode.parentNode.querySelector('.mermaid'))">Zoom</button>
+                </div>
+                <div class="mermaid">
+{{ risk_matrix_diagram }}
+                </div>
+                <div class="diagram-legend">
+                    <div class="legend-item"><span class="legend-color" style="background-color: #ff6666;"></span> High Risk (Q1)</div>
+                    <div class="legend-item"><span class="legend-color" style="background-color: #ffcc66;"></span> Medium Risk (Q2/Q4)</div>
+                    <div class="legend-item"><span class="legend-color" style="background-color: #99cc66;"></span> Low Risk (Q3)</div>
+                    <div class="legend-item"><span class="legend-color" style="border: 1px dashed #666;"></span> Threat Point</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Detailed Threats</h2>
+            
+            {% for threat in threats %}
+            <div class="card mb-4">
+                <div class="card-header severity-{{ threat.severity|lower }}">
+                    {{ threat.name }} ({{ threat.severity|upper }})
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Description</h5>
+                    <p class="card-text">{{ threat.description }}</p>
+                    
+                    <h5 class="card-title">Impact</h5>
+                    <p class="card-text">{{ threat.impact_description }}</p>
+                    
+                    {% if threat.affected_components %}
+                    <h5 class="card-title">Affected Components</h5>
+                    <ul>
+                        {% for component in threat.affected_components %}
+                        <li>{{ component }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    
+                    {% if threat.code_snippets %}
+                    <h5 class="card-title">Vulnerable Code</h5>
+                    {% for snippet in threat.code_snippets %}
+                    <div class="code-block">
+                        <p><strong>{{ snippet.file_path }}</strong></p>
+                        <pre>{{ snippet.code }}</pre>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                    
+                    <h5 class="card-title">Mitigations</h5>
+                    <ul>
+                        {% for mitigation in threat.mitigations %}
+                        <li>
+                            <strong>{{ mitigation.name }}</strong>: {{ mitigation.description }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Recommendations</h2>
+            <ol>
+                {% for recommendation in recommendations %}
+                <li>
+                    <strong>{{ recommendation.title }}</strong>: {{ recommendation.description }}
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+        
+        {% if commit_history_analysis and commit_history_analysis.has_commit_history %}
+        <div class="section">
+            <h2 class="section-title">Commit History Analysis</h2>
+            <p>{{ commit_history_analysis.security_commit_summary }}</p>
+            
+            {% if commit_history_analysis.security_commits %}
+            <h3>Security-Related Commits</h3>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Author</th>
+                            <th>Subject</th>
+                            <th>Security Type</th>
+                            <th>Severity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for commit in commit_history_analysis.security_commits %}
+                        <tr>
+                            <td>{{ commit.date }}</td>
+                            <td>{{ commit.author }}</td>
+                            <td>{{ commit.subject }}</td>
+                            <td>{{ commit.security_type|capitalize }}</td>
+                            <td>{{ commit.severity|capitalize }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+        
+        <div class="footer">
+            <p>Generated by Threat Canvas v{{ version }}</p>
+            <p>© {{ current_year }} Threat Canvas Team</p>
+        </div>
+    </div>
+    
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+        
+        // Function to download diagram as SVG
+        function downloadDiagram(element, filename) {
+            try {
+                // Get the SVG element
+                const svg = element.querySelector('svg');
+                if (!svg) {
+                    console.error('No SVG found in the diagram');
+                    return;
+                }
+                
+                // Create a clone of the SVG to avoid modifying the displayed one
+                const svgClone = svg.cloneNode(true);
+                
+                // Add CSS styles inline to the SVG
+                const styles = document.createElement('style');
+                styles.textContent = Array.from(document.styleSheets)
+                    .filter(sheet => !sheet.href || sheet.href.startsWith(window.location.origin))
+                    .map(sheet => {
+                        try {
+                            return Array.from(sheet.cssRules)
+                                .filter(rule => rule.selectorText && rule.selectorText.includes('.mermaid'))
+                                .map(rule => rule.cssText)
+                                .join('\n');
+                        } catch (e) {
+                            console.warn('Error accessing CSS rules', e);
+                            return '';
+                        }
+                    })
+                    .join('\n');
+                
+                svgClone.insertBefore(styles, svgClone.firstChild);
+                
+                // Convert SVG to a data URL
+                const svgData = new XMLSerializer().serializeToString(svgClone);
+                const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+                const svgUrl = URL.createObjectURL(svgBlob);
+                
+                // Create download link
+                const downloadLink = document.createElement('a');
+                downloadLink.href = svgUrl;
+                downloadLink.download = filename;
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+                
+                // Clean up
+                URL.revokeObjectURL(svgUrl);
+            } catch (error) {
+                console.error('Error downloading diagram:', error);
+                alert('Failed to download diagram: ' + error.message);
+            }
+        }
+        
+        // Function to zoom diagram in a modal
+        function zoomDiagram(element) {
+            try {
+                // Create modal container
+                const modal = document.createElement('div');
+                modal.style.position = 'fixed';
+                modal.style.top = '0';
+                modal.style.left = '0';
+                modal.style.width = '100%';
+                modal.style.height = '100%';
+                modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+                modal.style.zIndex = '1000';
+                modal.style.display = 'flex';
+                modal.style.justifyContent = 'center';
+                modal.style.alignItems = 'center';
+                modal.style.padding = '20px';
+                modal.style.boxSizing = 'border-box';
+                modal.style.overflow = 'auto';
+                
+                // Create close button
+                const closeBtn = document.createElement('button');
+                closeBtn.textContent = '×';
+                closeBtn.style.position = 'absolute';
+                closeBtn.style.top = '10px';
+                closeBtn.style.right = '20px';
+                closeBtn.style.fontSize = '30px';
+                closeBtn.style.color = 'white';
+                closeBtn.style.background = 'none';
+                closeBtn.style.border = 'none';
+                closeBtn.style.cursor = 'pointer';
+                closeBtn.onclick = function() {
+                    document.body.removeChild(modal);
+                };
+                
+                // Create content container
+                const content = document.createElement('div');
+                content.style.backgroundColor = 'white';
+                content.style.padding = '20px';
+                content.style.borderRadius = '5px';
+                content.style.maxWidth = '90%';
+                content.style.maxHeight = '90%';
+                content.style.overflow = 'auto';
+                
+                // Clone the diagram
+                const diagramClone = element.cloneNode(true);
+                diagramClone.style.transform = 'scale(1.5)';
+                diagramClone.style.transformOrigin = 'top left';
+                diagramClone.style.margin = '20px';
+                
+                // Add to modal
+                content.appendChild(diagramClone);
+                modal.appendChild(closeBtn);
+                modal.appendChild(content);
+                document.body.appendChild(modal);
+                
+                // Close on escape key
+                document.addEventListener('keydown', function escHandler(e) {
+                    if (e.key === 'Escape') {
+                        document.body.removeChild(modal);
+                        document.removeEventListener('keydown', escHandler);
+                    }
+                });
+                
+                // Close on click outside content
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        document.body.removeChild(modal);
+                    }
+                });
+            } catch (error) {
+                console.error('Error zooming diagram:', error);
+                alert('Failed to zoom diagram: ' + error.message);
+            }
+        }
+        
+        // Render diagrams
+        document.addEventListener('DOMContentLoaded', function() {
+            // Force re-initialization of all diagrams
+            document.querySelectorAll('.mermaid').forEach(function(element) {
+                // Add a unique ID to each diagram container
+                if (!element.id) {
+                    element.id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
+                }
+                
+                // Get the diagram definition
+                const graphDefinition = element.textContent.trim();
+                
+                // Clear the element
+                element.innerHTML = '';
+                
+                // Render the diagram
+                try {
+                    mermaid.render(element.id, graphDefinition, function(svgCode) {
+                        element.innerHTML = svgCode;
+                    });
+                } catch (error) {
+                    console.error('Error rendering diagram:', error);
+                    element.innerHTML = '<div class="alert alert-danger">Error rendering diagram</div>';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
