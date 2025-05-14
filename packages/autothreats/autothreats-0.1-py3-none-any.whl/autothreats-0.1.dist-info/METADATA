@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: autothreats
+Version: 0.1
+Summary: Autonomous Threat Modeling System
+Home-page: https://github.com/threatcanvas/threat-canvas
+Author: Threat Canvas Team
+Author-email: Threat Canvas Team <b1oo@shrewdsecurity.io>
+License: MIT License
+Project-URL: Documentation, https://threatcanvas.io/docs
+Project-URL: Bug Tracker, https://github.com/threatcanvas/threat-canvas/issues
+Project-URL: Source Code, https://github.com/threatcanvas/threat-canvas
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: win32
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: asyncio>=3.4.3
+Requires-Dist: openai>=0.27.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: uuid>=1.30
+Requires-Dist: jinja2>=3.0.0
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: visualization
+Requires-Dist: matplotlib>=3.5.0; extra == "visualization"
+Requires-Dist: seaborn>=0.11.0; extra == "visualization"
+Requires-Dist: plotly>=5.0.0; extra == "visualization"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=3.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: isort>=5.10.0; extra == "dev"
+Requires-Dist: mypy>=0.9.0; extra == "dev"
+Requires-Dist: flake8>=4.0.0; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx>=4.0.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints>=1.12.0; extra == "docs"
+Provides-Extra: all
+Requires-Dist: matplotlib>=3.5.0; extra == "all"
+Requires-Dist: seaborn>=0.11.0; extra == "all"
+Requires-Dist: plotly>=5.0.0; extra == "all"
+Requires-Dist: pytest>=7.0.0; extra == "all"
+Requires-Dist: pytest-cov>=3.0.0; extra == "all"
+Requires-Dist: black>=22.0.0; extra == "all"
+Requires-Dist: isort>=5.10.0; extra == "all"
+Requires-Dist: mypy>=0.9.0; extra == "all"
+Requires-Dist: flake8>=4.0.0; extra == "all"
+Requires-Dist: sphinx>=4.0.0; extra == "all"
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == "all"
+Requires-Dist: sphinx-autodoc-typehints>=1.12.0; extra == "all"
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# Autothreats
+
+Autonomous Threat Modeling System
+
+## Features
+
+- Automated threat detection
+- Security analysis
+- Vulnerability assessment
+- Threat modeling
