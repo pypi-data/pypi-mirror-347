@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: python-fm-dapi-weaver
+Version: 0.1.dev27
+Summary: A Python wrapper for seamless communication with FileMaker dababases.
+Home-page: https://github.com/mindfiredigital/python-fm-dapi-weaver
+Author: Mindfire Digital LLP
+Author-email: swathim@mindfiresolutions.com
+Keywords: filemaker data-api python api database client fastapi storage
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: requests
+Requires-Dist: python-multipart
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+A Python library for integrating FileMaker databases with the FileMaker Data API.
