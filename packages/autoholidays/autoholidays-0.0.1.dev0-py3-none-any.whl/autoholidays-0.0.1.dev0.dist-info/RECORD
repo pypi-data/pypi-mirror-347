@@ -1,0 +1,15 @@
+autoholidays/__init__.py,sha256=G25puMXablTBSX2N-A3RAqAt2bU-k_rDpT5YxS2Y9LA,1230
+autoholidays/_config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoholidays/_libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoholidays/_testing/__init__.py,sha256=2TCPhrwLzGpK7i1GYQWWC2hUGL19Ic29U7KtE7KJS4c,561
+autoholidays/_testing/run_tests.py,sha256=9rfQ57U3O0ownAQkBnIA_Aduji88foQogs7KdOhF8tE,27
+autoholidays/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoholidays/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoholidays/errors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoholidays/errors/errors.py,sha256=BX7_trv3r7jyGpW2rEQF0VJI4eYb9-zDhED0RMMgG_8,87
+autoholidays/errors/warnings.py,sha256=zB9whzB1Z07d19hCvOOMbUMgYIx2e7vs6ROPxu2cXHQ,89
+autoholidays-0.0.1.dev0.dist-info/LICENSE,sha256=tLRa2XbxSmIyi7x_MeHRONWcsuUYhhfPMC-n7z9T4wc,1095
+autoholidays-0.0.1.dev0.dist-info/METADATA,sha256=kwnn_CIdAimpJDUAEHIfnORA1zgos26C0z9RFJECpAM,709
+autoholidays-0.0.1.dev0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+autoholidays-0.0.1.dev0.dist-info/top_level.txt,sha256=qheNsxBDlg5du_qKZBfj2qV3nrR00H5wcRcEZ4gRlWY,13
+autoholidays-0.0.1.dev0.dist-info/RECORD,,

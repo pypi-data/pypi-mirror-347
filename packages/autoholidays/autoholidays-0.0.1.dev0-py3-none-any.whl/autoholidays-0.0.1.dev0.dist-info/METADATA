@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: autoholidays
+Version: 0.0.1.dev0
+Summary: Create an Optimal Holiday Planner
+Author: Debmalya Pramanik
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align = "center">
+
+# Auto-Holidays Planner
+
+</div>
+
+<div align = "justify">
+
+Let the algorithms decide the best optimal days to take holiday breaks from the hustle and bustle of the professional life. The
+package can be used to find the best possible solution for a single or a group of people considering entitled leave days and
+weekly off which is fully customizable to an enduser's needs.
+
+</div>
