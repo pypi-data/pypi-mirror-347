@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+server.py
+mcp_github_owners.egg-info/PKG-INFO
+mcp_github_owners.egg-info/SOURCES.txt
+mcp_github_owners.egg-info/dependency_links.txt
+mcp_github_owners.egg-info/entry_points.txt
+mcp_github_owners.egg-info/requires.txt
+mcp_github_owners.egg-info/top_level.txt

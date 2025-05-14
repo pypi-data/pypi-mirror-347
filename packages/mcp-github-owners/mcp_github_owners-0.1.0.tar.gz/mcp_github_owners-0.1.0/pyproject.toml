@@ -1,0 +1,23 @@
+[project]
+name = "mcp-github-owners"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "codeowners>=0.8.0",
+    "mcp[cli]>=1.8.1",
+    "python-decouple>=3.8",
+    "requests>=2.32.3",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.9",
+]
+
+[project.scripts]
+mcp-github-owners = "server:main"
+
+[tool.uv]
+package = true
