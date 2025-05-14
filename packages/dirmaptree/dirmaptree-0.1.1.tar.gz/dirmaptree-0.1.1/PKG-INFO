@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: dirmaptree
+Version: 0.1.1
+Summary: A clean directory tree generator with customizable exclusions and comments
+License: MIT
+Author: Shahzer Baig
+Author-email: shahzer.baig@gmail.com
+Requires-Python: >=3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# DirMapTree
+
+A Python package for generating clean, customizable directory trees with:
+- Built-in exclusion of common directories (node_modules, .git, etc.)
+- Optional comments for important paths
+- Hidden file visibility control
+- Depth limiting
+
+## Installation
+```bash
+pip install dirmaptree
+
+
+## Usage
+dirmaptree [path] [-d DEPTH] [-H] [-c]
