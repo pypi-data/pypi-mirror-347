@@ -1,0 +1,12 @@
+README.md
+setup.py
+pycodar/__init__.py
+pycodar/analyze.py
+pycodar/cli.py
+pycodar.egg-info/PKG-INFO
+pycodar.egg-info/SOURCES.txt
+pycodar.egg-info/dependency_links.txt
+pycodar.egg-info/entry_points.txt
+pycodar.egg-info/not-zip-safe
+pycodar.egg-info/requires.txt
+pycodar.egg-info/top_level.txt
