@@ -1,0 +1,2 @@
+[console_scripts]
+spotify-recommendation-mcp = spotify_recommendation_mcp.server:main

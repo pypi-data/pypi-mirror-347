@@ -1,0 +1,33 @@
+# pyproject.toml 
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spotify-recommendation-mcp"
+version = "0.1.0"
+description = "MCP server that extracts content from spotify and cyanite for LLMs"
+readme = "README.md"
+authors = [
+    {name = "supun wijemanna", email = "supun.wijemanna58@gmail.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "pydantic>=2.6.1",
+    "requests>=2.31.0",
+    "spotipy>=2.25.1",
+]
+
+[project.scripts]
+spotify-recommendation-mcp = "spotify_recommendation_mcp.server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
