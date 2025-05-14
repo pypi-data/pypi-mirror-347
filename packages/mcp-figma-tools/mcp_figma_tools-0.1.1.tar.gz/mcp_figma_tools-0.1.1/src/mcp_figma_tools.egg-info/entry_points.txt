@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-figma-tools = mcp_figma_tools.server:main

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-figma-tools"
+version = "0.1.1"
+description = "MCP server for interacting with the Figma API, providing tools to fetch file data, screen info, node details, and image URLs"
+readme = "README.md"
+authors = [
+    {name = "manoj48", email = "manojwork385@gmail.com"}
+]
+license = {text = "Accellor"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcp>=1.8.1",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.1.0",
+]
+requires-python = ">=3.12"
+
+[project.scripts]
+mcp-figma-tools = "mcp_figma_tools.server:main"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
