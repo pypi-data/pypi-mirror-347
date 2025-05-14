@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/promptmigrate/__init__.py
+src/promptmigrate/cli.py
+src/promptmigrate/manager.py
+src/promptmigrate.egg-info/PKG-INFO
+src/promptmigrate.egg-info/SOURCES.txt
+src/promptmigrate.egg-info/dependency_links.txt
+src/promptmigrate.egg-info/entry_points.txt
+src/promptmigrate.egg-info/requires.txt
+src/promptmigrate.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_dynamic_values.py
+tests/test_installation.py
+tests/test_manager.py
