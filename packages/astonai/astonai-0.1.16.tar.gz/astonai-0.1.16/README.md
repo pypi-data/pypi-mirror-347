@@ -1,0 +1,479 @@
+# Aston AI - Code Intelligence
+
+Aston is a code intelligence system for parsing, analyzing, and finding test coverage gaps in your code.
+
+## Installation
+
+```bash
+# Install from PyPI
+pip install astonai
+
+# Or install from source
+git clone https://github.com/your-org/aston.git
+cd aston
+pip install -e .
+```
+
+## Development
+
+When developing for Aston AI, the package structure is kept simple with automatic subdirectory discovery:
+
+```toml
+# pyproject.toml
+[tool.setuptools]
+packages = ["testindex"]  # All subdirectories are automatically included
+```
+
+This approach makes it easier to maintain the package structure as new modules are added without needing to update the package configuration.
+
+## Quick Start
+
+```bash
+# Install dependencies
+pip install pytest pytest-cov  # if not already installed
+
+# Initialize your repo
+aston init
+
+# Run tests with coverage
+pytest --cov --cov-report=xml
+
+# Find testing gaps
+aston coverage
+```
+
+## Core Commands
+
+```bash
+# Initialize repository
+aston init [--offline]
+
+# Run tests with coverage
+aston test 
+
+# Detect gaps (with options)
+aston coverage --threshold 80 --json results.json --exit-on-gap
+```
+
+## Advanced Usage
+
+### Coverage Analysis
+
+```bash
+# Find gaps with 80% threshold
+aston coverage --threshold 80
+
+# Save results to JSON
+aston coverage --json gaps.json
+
+# Exit with code 1 if gaps exist (for CI)
+aston coverage --exit-on-gap
+
+# Specify a coverage file
+aston coverage --coverage-file path/to/coverage.xml
+```
+
+### Debug Mode
+
+```bash
+# Enable debug logging
+DEBUG=1 aston coverage
+```
+
+## Environment Variables
+
+```
+NEO4J_URI=bolt://localhost:7687  # Optional Neo4j connection
+NEO4J_USER=neo4j                 # Optional Neo4j username
+NEO4J_PASS=password              # Optional Neo4j password
+```
+
+## Repository-Centric Design
+
+Aston uses a repository-centric approach:
+- All operations are relative to the repository root
+- Data is stored in `.testindex` directory at the repository root
+- Path resolution is normalized for consistent matching
+- Works with both offline and Neo4j storage
+
+## Legacy Support
+
+If you've been using TestIndex, you can still use the legacy scripts:
+
+```bash
+./scripts/testindex.sh init
+./scripts/testindex.sh coverage
+```
+
+These will automatically use the `aston` command if available.
+
+## Benchmarks
+
+Run the benchmarks to evaluate the system performance:
+
+```bash
+# Run all benchmarks
+./run_benchmarks.sh
+
+# Run a specific benchmark
+export BENCH_REPO=bench_repo
+python benchmarks/ingest_throughput.py
+
+# Run coverage benchmark
+python benchmarks/coverage_benchmark.py --threshold 50
+```
+
+The Knowledge v1 benchmark system measures the performance of key components with well-defined KPI targets:
+
+1. **Schema F1 Score**: Measures extraction accuracy (precision ≥ 0.95, recall ≥ 0.90)
+2. **Query Latency**: Measures P95 latency for queries (target < 80ms)
+3. **Ingest Throughput**: Measures code processing speed (target ≥ 200,000 LOC/min)
+4. **Incremental Latency**: Measures watcher processing speed for incremental updates (P95 < 30s)
+5. **Vector Cost**: Measures the cost efficiency of vector storage (target ≤ $15 per million vectors)
+6. **Coverage Detection**: Measures the performance and accuracy of test coverage gap detection
+
+### Running Benchmarks
+
+```bash
+# Simplified benchmark runner (recommended)
+./run_benchmarks.sh         # Run all benchmarks (full mode)
+./run_benchmarks.sh --smoke # Run only schema F1 and query latency (smoke mode)
+
+# Legacy benchmark runners
+python run_benchmarks_with_setup.py
+python run_benchmarks_with_setup.py --skip-clone
+
+# Run specific benchmark
+python run_schema_f1_benchmark.py
+python run_query_latency_benchmark.py
+python run_incremental_latency_benchmark.py
+python run_vector_cost_benchmark.py
+python benchmarks/coverage_benchmark.py
+```
+
+The `run_benchmarks.sh` script is the recommended way to run benchmarks as it:
+- Sets up all necessary environment variables
+- Automatically uses the mock watcher for incremental latency benchmark
+- Supports both full and smoke test modes (matching CI behavior)
+- Creates consistent output in the artifacts directory
+- Does not scan the entire repository during incremental tests
+
+### Testing with Multiple Repositories
+
+You can test with different repositories by:
+
+1. Setting the `BENCH_REPO` environment variable:
+   ```bash
+   export BENCH_REPO=/path/to/your/repo
+   python run_benchmarks_with_setup.py
+   ```
+
+2. Using the Knowledge pod test infrastructure:
+   ```bash
+   python test_knowledge_pod.py --test_type benchmarks --chunks_dir /path/to/processed/chunks
+   ```
+
+3. Creating your own gold standard:
+   ```bash
+   # Generate a new gold standard for schema F1 testing
+   python scripts/make_gold_sample.py --repo /path/to/your/repo
+   ```
+
+### Benchmark Results
+
+Latest benchmark results from CI:
+
+| Benchmark | Target | Actual | Status |
+|-----------|--------|--------|--------|
+| Schema F1 | ≥ 0.95 (precision), ≥ 0.90 (recall) | 1.0 (precision), 1.0 (recall) | ✅ PASSED |
+| Query Latency | < 80ms (P95) | 58.6ms (P95) | ✅ PASSED |
+| Ingest Throughput | ≥ 200,000 LOC/min | 1,511,033 LOC/min | ✅ PASSED |
+| Incremental Latency | < 30s (P95) | 5.0s (P95) | ✅ PASSED |
+| Vector Cost | ≤ $15/M vectors | $15.00/M vectors | ✅ PASSED |
+| Coverage Detection | < 1s | 0.61s | ✅ PASSED |
+
+### Benchmark Repository Details
+
+The benchmarks use a specific Django repository commit that is FROZEN for Knowledge v1:
+- **Repository**: https://github.com/django/django.git
+- **Tag**: 4.2.11
+- **SHA**: 61a986f53d805e4d359ab61af60a2dcd55befe25
+- **Patch**: patches/django_1k.diff (adds 1,000 lines of code for benchmark)
+
+When recreating the benchmark environment, ensure that the repository is set to this exact commit and that the patch applies cleanly.
+
+## CI Pipeline
+
+The CI pipeline runs benchmarks on pull requests and commits to main:
+
+1. **PR Smoke Tests** (`pr_smoke.yml`): 
+   - Triggered on pull requests to main
+   - Runs only schema F1 and query latency benchmarks (faster)
+   - Sets `CI_SMOKE=1` environment variable
+   - Equivalent to running `./run_benchmarks.sh --smoke` locally
+
+2. **Full KPI Tests** (`full_kpi.yml`):
+   - Triggered on pushes to main branch and nightly at midnight UTC
+   - Runs all benchmarks including coverage detection
+   - Equivalent to running `./run_benchmarks.sh` locally
+
+3. **Benchmark Constants Check**: 
+   - Verifies that benchmark constants haven't been modified without tag update
+
+All benchmark results are saved in the `artifacts/` directory for analysis.
+
+## Requirements
+
+- Python 3.9+
+- Neo4j database (set credentials via environment variables, optional for offline mode)
+- Git (for cloning benchmark repositories)
+- SQLite (for vector storage benchmarking)
+
+### Environment Variables
+
+```
+NEO4J_URI=bolt://localhost:7687
+NEO4J_USER=neo4j
+NEO4J_PASS=your_password
+BENCH_REPO=/path/to/repo  # Optional, will use Django repo or mini-repo if not set
+KINE_BENCHMARK_REPO=/path/to/repo  # Used for incremental latency benchmark
+KINE_WATCHER_SOCKET=/tmp/vsearch-watcher.sock  # Socket path for watcher communication
+KINE_TEST_OUTPUT_DIR=/path/to/output  # Directory to save benchmark results
+VECTOR_STORE_PATH=/path/to/vectors.sqlite  # Path to the vector store
+MOCK_PROCESSING_TIME=2  # Processing time for mock watcher in seconds
+```
+
+## Knowledge Contract Package
+
+We provide a Knowledge Contract package that can be used by other tools to integrate with the Knowledge v1 system:
+
+### Installation
+
+```bash
+# Install from GitHub release
+pip install https://github.com/thusai/testindex-graph/releases/download/v0.1.0/testindex_knowledge_contract-0.1.0-py3-none-any.whl
+```
+
+For usage instructions, see the [Knowledge Contract README](testindex_knowledge_contract/README.md).
+
+Basic Usage
+```bash
+# Import schema constants
+from testindex_knowledge_contract.schema import (
+    IMPL_LABEL, GAP_LABEL, PROP_ID, PROP_PATH, PROP_START, PROP_END, PROP_COVER
+)
+
+# Import Neo4j client
+from testindex_knowledge_contract.neo4j_client import Neo4jClient
+
+# Import benchmark constants
+from testindex_knowledge_contract.bench_constants import DJANGO_SHA, PATCH_FILE
+```
+
+Neo4j Client Usage
+```bash
+# Connect using environment variables (NEO4J_URI, NEO4J_USER, NEO4J_PASS)
+client = Neo4jClient()
+
+# Or connect with specific credentials
+client = Neo4jClient(
+    uri="bolt://localhost:7687",
+    username="neo4j",
+    password="password"
+)
+
+# Use with context manager for automatic connection management
+with Neo4jClient() as client:
+    # Run a query
+    results = client.run_query(
+        "MATCH (n:Implementation) WHERE n.coverage < $threshold RETURN n.id, n.path",
+        {"threshold": 50}
+    )
+    
+    # Process results
+    for record in results:
+        print(f"Low coverage: {record['n.id']} at {record['n.path']}")
+```
+
+Coverage Map 360 Integration Example
+```bash
+from testindex_knowledge_contract.schema import (
+    IMPL_LABEL, GAP_LABEL, PROP_ID, PROP_PATH, PROP_START, PROP_END, PROP_COVER
+)
+from testindex_knowledge_contract.neo4j_client import Neo4jClient
+
+# Set up environment variables before running:
+# export NEO4J_URI=bolt://localhost:7687
+# export NEO4J_USER=neo4j
+# export NEO4J_PASS=password
+
+# Create client
+client = Neo4jClient()
+
+# Query uncovered implementation functions
+query = f"""
+MATCH (n:{IMPL_LABEL})
+WHERE n.{PROP_COVER} < 10
+RETURN n.{PROP_ID} as id, n.{PROP_PATH} as path, 
+       n.{PROP_START} as start_line, n.{PROP_END} as end_line
+"""
+
+results = client.run_query(query)
+
+# Process results - identify coverage gaps
+gaps = []
+for record in results:
+    gap = {
+        "impl_id": record["id"],
+        "path": record["path"],
+        "start_line": record["start_line"],
+        "end_line": record["end_line"],
+        "coverage": 0  # Assuming these are 0% covered
+    }
+    gaps.append(gap)
+
+# Create coverage gap nodes in Neo4j
+for i, gap in enumerate(gaps):
+    # Create a unique ID for the gap
+    gap_id = f"GAP_{gap['impl_id']}_{i}"
+    
+    # Create a gap node in Neo4j
+    query = f"""
+    CREATE (g:{GAP_LABEL} {{
+        {PROP_ID}: $id,
+        {PROP_PATH}: $path,
+        {PROP_START}: $start_line,
+        {PROP_END}: $end_line,
+        {PROP_COVER}: $coverage
+    }})
+    RETURN g.{PROP_ID}
+    """
+    
+    result = client.run_query(query, {
+        "id": gap_id,
+        "path": gap["path"],
+        "start_line": gap["start_line"], 
+        "end_line": gap["end_line"],
+        "coverage": gap["coverage"]
+    })
+    
+    print(f"Created gap node: {gap_id}")
+```
+
+Using Gold Schema for Testing
+```bash
+import json
+import importlib.resources
+from testindex_knowledge_contract import test_data
+
+# Access the gold schema data
+gold_schema_path = importlib.resources.files(test_data).joinpath('gold_schema.json')
+with open(gold_schema_path, 'r') as f:
+    gold_schema = json.load(f)
+
+# Validate against your implementation
+def validate_against_gold(gold_schema, your_implementation_results):
+    gold_nodes = {node["id"]: node for node in gold_schema["nodes"]}
+    gold_edges = [(edge["src"], edge["type"], edge["dst"]) for edge in gold_schema["edges"]]
+    
+    # Check if your implementation's results match the gold standard
+    # Example validation logic:
+    implementation_nodes = {node["id"]: node for node in your_implementation_results["nodes"]}
+    implementation_edges = [(edge["src"], edge["type"], edge["dst"]) 
+                          for edge in your_implementation_results["edges"]]
+    
+    # Compute precision and recall
+    node_matches = set(gold_nodes.keys()) & set(implementation_nodes.keys())
+    edge_matches = set(gold_edges) & set(implementation_edges)
+    
+    node_precision = len(node_matches) / len(implementation_nodes) if implementation_nodes else 0
+    node_recall = len(node_matches) / len(gold_nodes) if gold_nodes else 0
+    
+    edge_precision = len(edge_matches) / len(implementation_edges) if implementation_edges else 0
+    edge_recall = len(edge_matches) / len(gold_edges) if gold_edges else 0
+    
+    return {
+        "node_precision": node_precision,
+        "node_recall": node_recall,
+        "edge_precision": edge_precision,
+        "edge_recall": edge_recall
+    }
+```
+
+Benchmark Integration
+```bash
+from testindex_knowledge_contract.bench_constants import (
+    DJANGO_URL, DJANGO_TAG, DJANGO_SHA, PATCH_FILE
+)
+
+# Clone the benchmark repository at the exact SHA
+import subprocess
+import os
+
+def setup_benchmark_repo():
+    repo_path = "benchmark_repo"
+    if not os.path.exists(repo_path):
+        # Clone the repository
+        subprocess.run([
+            "git", "clone", DJANGO_URL, repo_path
+        ])
+        
+        # Check out the exact SHA
+        subprocess.run([
+            "git", "-C", repo_path, "checkout", DJANGO_SHA
+        ])
+        
+        # Apply the benchmark patch if it exists
+        if os.path.exists(PATCH_FILE):
+            subprocess.run([
+                "git", "-C", repo_path, "apply", f"../{PATCH_FILE}"
+            ])
+    
+    return repo_path
+
+# Use the benchmark repository
+repo_path = setup_benchmark_repo()
+print(f"Benchmark repository set up at {repo_path}")
+```
+
+## Coverage Workflow
+
+To check for test coverage gaps:
+
+```bash
+# Step 1: Initialize repository
+testindex init
+
+# Step 2: Run tests with coverage
+testindex test
+# OR use your existing test runner
+pytest --cov --cov-report=xml
+
+# Step 3: Check coverage gaps
+testindex coverage
+# Or with options
+testindex coverage --exit-on-gap --threshold 80 --json gaps.json
+```
+
+The `testindex coverage` command will:
+
+1. Find coverage.xml in the repository
+2. Match coverage data to implementation nodes in the knowledge graph
+3. Detect gaps where coverage is below threshold
+4. Display results as a table or JSON file
+
+## Path Resolution
+
+TestIndex uses a robust path resolution system that handles various path formats and ensures consistent path handling throughout the application. The system:
+
+1. Normalizes paths (case-insensitive, separator normalization)
+2. Supports multiple matching strategies (direct, normalized, suffix, basename)
+3. Logs detailed path resolution information for debugging
+4. Handles both absolute and relative paths
+
+If you encounter path-related issues, you can enable debug logging to see detailed path resolution information:
+
+```bash
+DEBUG=1 testindex coverage
+```
+
