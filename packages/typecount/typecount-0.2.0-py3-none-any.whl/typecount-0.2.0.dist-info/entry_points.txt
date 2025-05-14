@@ -1,0 +1,2 @@
+[console_scripts]
+typecount = typecount.app:main
