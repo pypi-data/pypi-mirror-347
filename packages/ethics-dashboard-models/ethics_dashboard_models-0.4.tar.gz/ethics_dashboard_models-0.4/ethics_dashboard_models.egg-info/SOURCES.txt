@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+ethics_dashboard_models.egg-info/PKG-INFO
+ethics_dashboard_models.egg-info/SOURCES.txt
+ethics_dashboard_models.egg-info/dependency_links.txt
+ethics_dashboard_models.egg-info/requires.txt
+ethics_dashboard_models.egg-info/top_level.txt
