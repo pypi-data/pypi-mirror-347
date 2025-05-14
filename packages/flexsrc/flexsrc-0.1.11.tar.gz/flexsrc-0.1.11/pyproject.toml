@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=62", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flexsrc"
+version = "0.1.11"
+description = "FlexSrc is a unified dict creation tool for Python."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "BSD-2-Clause" }
+authors = [{ name = "tkms", email = "tkmnet@users.noreply.github.com" }]
+dependencies = ["pyyaml", "xxhash", "cfcf>=0.1.0", "requests", "pandas"]
+
+[project.urls]
+"Homepage" = "https://github.com/tkmnet/flexsrc"
