@@ -1,0 +1,15 @@
+pydebugger/__init__.py,sha256=qTtsCL1ygQkfyVqa2BcerebMNjcIKahNYKO3PAp1pxs,169
+pydebugger/__main__.py,sha256=6dPQchC10ns9set9T-uZtgs7IiARwYULwJrL-BUJBuQ,56
+pydebugger/__version__.py,sha256=6aVIITqidYM19sEoOFReY__QgiSgN-x6SmgAcj2ydgA,16
+pydebugger/debug.ini,sha256=ezlr4yB9wjll1bXOBa7n4kDuz6uOEx4DnKWejfQVzA0,378
+pydebugger/debug.py,sha256=AuTMlG2Tft6YVrIk5CPmMCF-GOh3hRc0xG5fZDKmDrc,57014
+pydebugger/test.py,sha256=tuphbgPteQ4_n1XK9j-PeiFrPsHuoA5iwhdLkST3MrI,223
+pydebugger-0.79.data/data/LICENSE.md,sha256=KZki9q1ZFUnI7kJXsaYVNRrON8RlNzjhjIBKp9Fx1Sg,1819
+pydebugger-0.79.data/data/README.md,sha256=OxUXPz2tA9VvzYbqM3Ygx1tuZaUqCPUryps1lbGE6NU,1873
+pydebugger-0.79.data/data/__version__.py,sha256=6aVIITqidYM19sEoOFReY__QgiSgN-x6SmgAcj2ydgA,16
+pydebugger-0.79.dist-info/LICENSE.md,sha256=KZki9q1ZFUnI7kJXsaYVNRrON8RlNzjhjIBKp9Fx1Sg,1819
+pydebugger-0.79.dist-info/METADATA,sha256=sER4wkl0_j3aCE8eyAgYwjAxF9tkaN7hJ9zZruvXLqI,2912
+pydebugger-0.79.dist-info/WHEEL,sha256=UvcQYKBHoFqaQd6LKyqHw9fxEolWLQnlzP0h_LgJAfI,91
+pydebugger-0.79.dist-info/entry_points.txt,sha256=i7OPeYH3MnuwaRYTAPPyF2dUe1ZIG_2yKlRGG7rfTLY,54
+pydebugger-0.79.dist-info/top_level.txt,sha256=DPCNg98GSuKXIjxDUYo3wiXw4lvMMm_S4q5wo5NITAk,11
+pydebugger-0.79.dist-info/RECORD,,
