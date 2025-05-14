@@ -1,0 +1,14 @@
+euriai/__init__.py,sha256=iCrFMfjSnipe5BmOdLdkCCk0dO_BZldCWD79mY67KpE,270
+euriai/cli.py,sha256=hF1wiiL2QQSfWf8WlLQyNVDBd4YkbiwmMSoPxVbyPTM,3290
+euriai/client.py,sha256=USiqdMULgAiky7nkrJKF3FyKcOS2DtDmUdbeBSnyLYk,4076
+euriai/embedding.py,sha256=z-LLKU68tCrPi9QMs1tlKwyr7WJcjceCTkNQIFMG6vA,1276
+euriai/langchain_embed.py,sha256=OXWWxiKJ4g24TFgnWPOCZvhK7G8xtSf0ppQ2zwHkIPM,584
+euriai/langchain_llm.py,sha256=D5YvYwV7q9X2_vdoaQiPs7tNiUmjkGz-9Q-7M61hhkg,986
+euriai/llamaindex/__init__.py,sha256=42qGiyW2J46rQz5TBZPO32qdgtmaY7lQXitL2L-prRU,27
+euriai/llamaindex/euri_chat.py,sha256=Uw0rg-nriuZHUSdaO39qu0ub_M4ExEVK5Xyh83g8sYU,2953
+euriai/llamaindex/euri_embed.py,sha256=RO62uzT9rStp9_Ow2cYa_ZrGabkPFX89ZL3Mgb13X08,1063
+euriai-0.3.18.dist-info/METADATA,sha256=kyswojEKnlyTn2CARTjzE3jg_ppTPdtbu7vgm20FCCw,3257
+euriai-0.3.18.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+euriai-0.3.18.dist-info/entry_points.txt,sha256=9OkET8KIGcsjQn8UlnpPKRT75s2KW34jq1__1SXtpMA,43
+euriai-0.3.18.dist-info/top_level.txt,sha256=TG1htJ8cuD62MXn-NJ7DVF21QHY16w6M_QgfF_Er_EQ,7
+euriai-0.3.18.dist-info/RECORD,,
