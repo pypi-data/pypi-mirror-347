@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: OntoLearner
+Version: 1.0.0
+Summary: OntoLearner: A Modular Python Library for Ontology Learning with LLMs.
+License: MIT
+Author: Hamed Babaei Giglou
+Author-email: hamedbabaeigiglou@gmail.com
+Requires-Python: >=3.10,<3.13.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dspy (==2.6.14)
+Requires-Dist: huggingface-hub (>=0.30.0)
+Requires-Dist: matplotlib (==3.10.0)
+Requires-Dist: networkx (==3.2.1)
+Requires-Dist: numpy (==2.2.4)
+Requires-Dist: pandas (==2.2.3)
+Requires-Dist: pathlib (==1.0.1)
+Requires-Dist: pydantic (==2.11.3)
+Requires-Dist: python-dotenv (==1.1.0)
+Requires-Dist: rdflib (==7.1.1)
+Requires-Dist: scikit-learn (==1.6.1)
+Requires-Dist: seaborn (==0.13.2)
+Requires-Dist: sentence-transformers (==4.1.0)
+Requires-Dist: torch (==2.7.0)
+Requires-Dist: tqdm (==4.67.1)
+Requires-Dist: transformers (==4.51.3)
+Project-URL: Homepage, https://ontolearner.readthedocs.io/
+Project-URL: Repository, https://github.com/sciknoworg/OntoLearner/
+Description-Content-Type: text/markdown
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/sciknoworg/OntoLearner/main/images/logo.png" alt="OntoLearner Logo"/>
+</div>
+
+<h3 align="center">OntoLearner: A Modular Python Library for Ontology Learning with LLMs</h3>
+
+<div align="center">
+
+[![PyPI version](https://badge.fury.io/py/OntoLearner.svg)](https://badge.fury.io/py/OntoLearner)
+[![PyPI Downloads](https://static.pepy.tech/badge/ontolearner)](https://pepy.tech/projects/ontolearner)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![Documentation Status](https://app.readthedocs.org/projects/ontolearner/badge/)](https://ontolearner.readthedocs.io/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](MAINTANANCE.md)
+</div>
+
+## 🤝 Contribution
+
+Please review our contribution guidelines in [CONTRIBUTING.md](CONTRIBUTING.md) before getting started.
+
