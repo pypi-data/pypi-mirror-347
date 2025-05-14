@@ -1,0 +1,2 @@
+[console_scripts]
+wxpay_mcp_python = wxpay_mcp.server:run_server
