@@ -1,0 +1,2 @@
+[console_scripts]
+universal_mcp_dialpad = universal_mcp_dialpad:main

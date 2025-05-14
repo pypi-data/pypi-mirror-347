@@ -1,0 +1,9 @@
+universal_mcp_dialpad/README.md,sha256=sC0_2PbCGsojtkL8ruW0KADclaupRfZN0hk_LvILhxc,26199
+universal_mcp_dialpad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universal_mcp_dialpad/app.py,sha256=tidEswVq7IzcEc6ymp8NF5HsWz5-lmKJHo7Xs0NtnqU,218734
+universal_mcp_dialpad/mcp.py,sha256=dI_atVPJsDrhIogCarIaigy_tXw4TlqumKcIMrzx3vg,475
+universal_mcp_dialpad-0.1.1.dist-info/METADATA,sha256=ZbnoAvnyYAeUJ_Oa9YiDG1RXlIYLis6I9tR4u8-_mfA,3384
+universal_mcp_dialpad-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+universal_mcp_dialpad-0.1.1.dist-info/entry_points.txt,sha256=dMIMbcty-VQgTzbaoUnye5z7pRgu0Dkz5Bj18rlqqAs,69
+universal_mcp_dialpad-0.1.1.dist-info/licenses/LICENSE,sha256=NweDZVPslBAZFzlgByF158b85GR0f5_tLQgq1NS48To,1063
+universal_mcp_dialpad-0.1.1.dist-info/RECORD,,
