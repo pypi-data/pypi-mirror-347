@@ -1,0 +1,6 @@
+ipython
+nibabel
+numpy
+scipy
+matplotlib
+sip
