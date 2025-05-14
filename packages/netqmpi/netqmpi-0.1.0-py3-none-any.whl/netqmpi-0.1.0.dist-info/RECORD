@@ -1,0 +1,11 @@
+netqmpi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+netqmpi/runtime/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+netqmpi/runtime/cli.py,sha256=qlsHsF08Cc_Mi7w9-c6ZlSQtzb2P-wWlu0IFFI8GCCA,3571
+netqmpi/sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+netqmpi/sdk/communicator.py,sha256=JbHXR4pyb5ZkpM_3YVyzLkg1CnMc2CYDWSWCmi6J8ic,5018
+netqmpi/sdk/external.py,sha256=5Kn88Br0IY29-rnl3fdfP253iDtUnGInFxkfrv6K6KU,2767
+netqmpi-0.1.0.dist-info/METADATA,sha256=-mO75Cqw27XZD83HVqDmm1Z5wW1YTMLnIHiL_m0Zst4,552
+netqmpi-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+netqmpi-0.1.0.dist-info/entry_points.txt,sha256=_xXYUm6R5MTJEqM7wDnc7sM5SReCuqwgkIlBnysLCuI,53
+netqmpi-0.1.0.dist-info/top_level.txt,sha256=BgyuR8kZJRa2zfQA2X8YsBQjE_tKs4AHPbSonDWtaZI,8
+netqmpi-0.1.0.dist-info/RECORD,,

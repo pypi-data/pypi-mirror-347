@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: netqmpi
+Version: 0.1.0
+Summary: A high-level abstraction layer similar to MPI for distributed quantum programming over NetQASM.
+Home-page: https://github.com/NetQIR/net-qmpi
+Author: F. Javier Cardama
+Author-email: javier.cardama@usc.es
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
