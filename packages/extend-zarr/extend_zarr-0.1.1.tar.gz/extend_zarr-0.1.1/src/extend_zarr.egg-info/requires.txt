@@ -1,0 +1,4 @@
+dask<2026
+numpy<3
+xarray<2026
+zarr<4

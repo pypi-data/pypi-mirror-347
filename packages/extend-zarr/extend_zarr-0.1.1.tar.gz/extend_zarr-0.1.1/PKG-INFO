@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: extend-zarr
+Version: 0.1.1
+Author-email: Taka <takahisa.amano@eodc.eu>
+Requires-Python: <3.13,>=3.11
+Requires-Dist: dask<2026
+Requires-Dist: numpy<3
+Requires-Dist: xarray<2026
+Requires-Dist: zarr<4
