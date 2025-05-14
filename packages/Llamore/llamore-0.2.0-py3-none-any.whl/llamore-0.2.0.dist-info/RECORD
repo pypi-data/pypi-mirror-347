@@ -1,0 +1,10 @@
+llamore/__init__.py,sha256=QGqPLImXiA9BoZ9nhYvQhgZRGJ0lQzgWRaPuosDQvxE,411
+llamore/extractors.py,sha256=M1uSvM_y6QCjV-N0VZalk4puj4aW_d70HG_g3pp5WiU,9324
+llamore/metrics.py,sha256=JJ3y1LYqxoB0AcJe1NnekHCs2KkRvYfHnpsQRhcL_AQ,20320
+llamore/parser.py,sha256=yqn-c9vkvEMTEgdwutBN0GP-k4mgwTmdbeUO3HysXlM,19211
+llamore/prompter.py,sha256=gvlwLu2bh_qdTxz8NA_EeTkA2RDmq07weR-Q6fwAGX4,9242
+llamore/reference.py,sha256=30E4pUQmA7nL8S0_stIEpkJBgYwB0UsQsfIjt4JO8R0,12556
+llamore-0.2.0.dist-info/METADATA,sha256=IBvSatGlUFy7z6QUZyLfYCQOHOLfj7GK4aIaX3aDZ7Y,10703
+llamore-0.2.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+llamore-0.2.0.dist-info/top_level.txt,sha256=SkEup34CHjdwZXIJaLDi7qN6vQ38xgfmgFmr4rBMv38,8
+llamore-0.2.0.dist-info/RECORD,,
