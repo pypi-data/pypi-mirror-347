@@ -1,0 +1,2 @@
+[console_scripts]
+jitsi-plus = jitsi_plus_plugin.cli:main
