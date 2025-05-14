@@ -1,0 +1,11 @@
+ecotracker/__init__.py,sha256=24LQH8bPn2IGlgTJSzG5_eafgI22Emxcs6pI57EuS4I,154
+ecotracker/data.py,sha256=OHpD8vRAnS6gf5T5xLc30kzeFpvL-2VbdKXA9RO3LTU,1327
+ecotracker/meter.py,sha256=nawkVPVzEtn677WvQRurcXzRkOTymDBhn5J60Ct9IwM,7351
+ecotracker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecotracker-0.1.8.dist-info/licenses/LICENSE,sha256=Tg3H19JFCsdijOYZK6YxtDYbjh02hfEuevFenTQxjvU,1062
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_meter.py,sha256=3uauycefiN4vJ_trG71dPqKpl_kdu9NC9r7aaKcMpJk,7301
+ecotracker-0.1.8.dist-info/METADATA,sha256=mgOKx5mGgaURdLXXfq8RZnGlEsAwsrVOqg7UMBBKk6I,2667
+ecotracker-0.1.8.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+ecotracker-0.1.8.dist-info/top_level.txt,sha256=BCP9sgd9lwvSgRWT5sI8Vdhjqcyh-KGswh2nDWH49G4,17
+ecotracker-0.1.8.dist-info/RECORD,,
