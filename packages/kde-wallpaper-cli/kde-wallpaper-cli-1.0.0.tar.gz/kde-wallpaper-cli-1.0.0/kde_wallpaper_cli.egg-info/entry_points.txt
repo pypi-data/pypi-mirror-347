@@ -1,0 +1,2 @@
+[console_scripts]
+kde-wallpaper = kde_wallpaper_cli.main:main

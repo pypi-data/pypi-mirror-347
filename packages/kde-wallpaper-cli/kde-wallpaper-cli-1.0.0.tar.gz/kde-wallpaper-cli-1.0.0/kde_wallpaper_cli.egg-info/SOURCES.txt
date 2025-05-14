@@ -1,0 +1,9 @@
+README.md
+setup.py
+kde_wallpaper_cli/__init__.py
+kde_wallpaper_cli/main.py
+kde_wallpaper_cli.egg-info/PKG-INFO
+kde_wallpaper_cli.egg-info/SOURCES.txt
+kde_wallpaper_cli.egg-info/dependency_links.txt
+kde_wallpaper_cli.egg-info/entry_points.txt
+kde_wallpaper_cli.egg-info/top_level.txt
