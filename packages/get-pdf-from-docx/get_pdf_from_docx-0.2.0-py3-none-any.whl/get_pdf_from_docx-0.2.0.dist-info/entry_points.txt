@@ -1,0 +1,3 @@
+[console_scripts]
+get-pdf-from-docx=get_pdf_from_docx.main:main
+
