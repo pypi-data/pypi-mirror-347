@@ -1,0 +1,14 @@
+[project]
+name = "typer-package"
+version = "0.1.0"
+description = "An example typer package"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "typer>=0.15.3",
+]
+scripts = { mycli = "my_package.cli:app" }
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
