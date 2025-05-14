@@ -1,0 +1,2 @@
+[console_scripts]
+universal_mcp_figma = universal_mcp_figma:main
