@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: minaki-shield
+Version: 0.1.0
+Summary: Modular Linux intrusion detection CLI by MinakiLabs
+Author: Andrew Polykandriotis
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click
+Requires-Dist: psutil
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
