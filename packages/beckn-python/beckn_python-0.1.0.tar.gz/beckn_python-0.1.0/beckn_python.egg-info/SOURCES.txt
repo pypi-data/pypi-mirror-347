@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+beckn_python.egg-info/PKG-INFO
+beckn_python.egg-info/SOURCES.txt
+beckn_python.egg-info/dependency_links.txt
+beckn_python.egg-info/requires.txt
+beckn_python.egg-info/top_level.txt
