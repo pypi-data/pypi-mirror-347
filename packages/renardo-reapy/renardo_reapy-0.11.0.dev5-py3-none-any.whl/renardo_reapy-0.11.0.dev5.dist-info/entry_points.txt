@@ -1,0 +1,2 @@
+[console_scripts]
+check-uv = renardo_reapy.tools.uv_installer:main
