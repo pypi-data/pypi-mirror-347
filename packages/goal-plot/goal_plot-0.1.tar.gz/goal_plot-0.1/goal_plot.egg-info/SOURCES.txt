@@ -1,0 +1,8 @@
+setup.py
+goal_plot/__init__.py
+goal_plot/draw.py
+goal_plot.egg-info/PKG-INFO
+goal_plot.egg-info/SOURCES.txt
+goal_plot.egg-info/dependency_links.txt
+goal_plot.egg-info/requires.txt
+goal_plot.egg-info/top_level.txt
