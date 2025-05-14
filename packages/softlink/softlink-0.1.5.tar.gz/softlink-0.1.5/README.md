@@ -1,0 +1,196 @@
+# Softlink SMS SDK
+
+A Python SDK for Softlink's SMS Gateway - a reliable and efficient platform for sending SMS messages in Kenya and beyond. This SDK provides a simple interface to integrate Softlink's SMS services into your Python applications.
+
+## Overview
+
+Softlink SMS Gateway is a leading provider of SMS services in Kenya, offering:
+- High delivery rates
+- Real-time delivery reports
+- Competitive pricing
+- 24/7 support
+- Reliable infrastructure
+
+## Features
+
+- Send individual and bulk SMS messages
+- Flexible configuration options
+- Comprehensive error handling
+- Type hints for better IDE support
+- Simple and intuitive API
+- Real-time delivery status
+- Support for all Kenyan mobile networks
+
+## Installation
+
+```bash
+pip install softlink
+```
+
+## Configuration
+
+You can configure the SMS client in two ways:
+
+### 1. Using Environment Variables
+
+Set the following environment variable:
+
+```bash
+export SOFTLINK_SMS_API_KEY='your_consumer_key'
+```
+
+### 2. Using Direct Configuration
+
+```python
+from softlink import SMSConfig
+
+# Using consumer key
+config = SMSConfig(
+    consumer_key='your_consumer_key'
+)
+
+# Or use default configuration from environment
+config = SMSConfig()
+```
+
+## Usage
+
+### Basic Usage
+
+```python
+from softlink import SMSClient
+
+# Using environment variables
+client = SMSClient()
+
+# Send SMS
+results = client.send_sms({
+    "message": "Jambo Kenya",
+    "recipients": ["+254713164545"]
+})
+```
+
+### With Custom Configuration
+
+```python
+from softlink import SMSClient, SMSConfig
+
+# Using consumer key
+config = SMSConfig(
+    consumer_key='your_consumer_key'
+)
+
+client = SMSClient(config)
+```
+
+## Error Handling
+
+The library provides a comprehensive set of exceptions for better error handling:
+
+```python
+from softlink import (
+    SMSClient,
+    SoftlinkException,
+    APIError,
+    APIConnectionError,
+    AuthenticationError,
+    InvalidRequestError,
+    RateLimitError,
+    SMSError,
+    SMSDeliveryError,
+    SMSValidationError,
+    SMSQuotaError
+)
+
+try:
+    client = SMSClient()
+    results = client.send_sms({
+        "message": "Jambo Kenya",
+        "recipients": ["+254713164545"]
+    })
+except AuthenticationError as e:
+    print(f"Authentication failed: {e}")
+except SMSValidationError as e:
+    print(f"Invalid input: {e}")
+except SMSDeliveryError as e:
+    print(f"Message delivery failed: {e}")
+except SMSQuotaError as e:
+    print(f"Quota exceeded: {e}")
+except RateLimitError as e:
+    print(f"Rate limit exceeded: {e}")
+except APIConnectionError as e:
+    print(f"Network error: {e}")
+except APIError as e:
+    print(f"API error: {e}")
+except SoftlinkException as e:
+    print(f"General error: {e}")
+```
+
+### Available Exceptions
+
+- `SoftlinkException`: Base exception class for all SDK exceptions
+- `APIError`: Raised when the API returns an error response
+- `APIConnectionError`: Raised when network communication fails
+- `AuthenticationError`: Raised when authentication fails
+- `InvalidRequestError`: Raised when invalid parameters are passed
+- `RateLimitError`: Raised when too many requests are made
+- `SMSError`: Base exception for SMS-specific errors
+- `SMSDeliveryError`: Raised when SMS delivery fails
+- `SMSValidationError`: Raised when SMS validation fails
+- `SMSQuotaError`: Raised when SMS quota is exceeded
+
+## API Reference
+
+### SMSClient
+
+#### `__init__(config: Optional[SMSConfig] = None)`
+
+Initialize the SMS client with configuration.
+
+#### `send_sms(payload: dict) -> dict`
+
+Send SMS messages to recipients.
+
+**Parameters:**
+- `payload` (dict): Dictionary containing:
+  - `message` (str): The message content
+  - `recipients` (List[str]): List of recipient phone numbers in E.164 format (e.g., +254713164545)
+
+**Returns:**
+- `dict`: Response from the API containing message status and details
+
+### SMSConfig
+
+Configuration class for managing API credentials.
+
+**Parameters:**
+- `consumer_key` (Optional[str]): Consumer key for authentication. If not provided, will try to load from environment variable SOFTLINK_SMS_API_KEY
+
+## Best Practices
+
+1. **Phone Number Format**
+   - Always use E.164 format (e.g., +254713164545)
+   - Include country code
+   - Remove any spaces or special characters
+
+2. **Message Content**
+   - Keep messages concise
+   - Avoid special characters
+   - Test messages before bulk sending
+
+3. **Error Handling**
+   - Always implement proper error handling
+   - Log errors for debugging
+   - Implement retry logic for failed messages
+   - Handle rate limits appropriately
+
+## Support
+
+For support, please contact:
+- Email: softwareproviders69@gmail.com
+- Phone: +254 713 164 545
+- Website: https://softlinksms.co.ke
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
