@@ -1,0 +1,11 @@
+propoptics-0.1.1.dist-info/METADATA,sha256=YmZ7sp1B_uoR6WhIkqFu2gB9Mue5dhXA27cXqvUAriU,3483
+propoptics-0.1.1.dist-info/WHEEL,sha256=3MGD1k1QYYcnDsS7IDyTOFpW6q0g8z0kKkHBjaWIOhY,105
+propoptics-0.1.1.dist-info/entry_points.txt,sha256=ehM_3Jrj_0vqyDKWOqoJb2CyGSLckprL8NcKZvDotpo,53
+propoptics-0.1.1.dist-info/licenses/LICENSE,sha256=yWJPaKcqTFfEe4YXhZU3USR6dDursXdf_3oJCtRLT7o,1058
+propoptics/_propoptics.py,sha256=kXt2q2RsqrVDXa_739U6_LAQ0Pm_8jcIduLAGQAg0og,19671
+propoptics/interface.py,sha256=H3C8b-oGEwfltaoWyjQBnl-NnQMoc9wGDBOFfVvTM5M,1550
+propoptics/__init__.py,sha256=J45oAdJD2Md1c9scIB1xeWW68jemCIgfep7A8YqQdiE,377
+propoptics/math.py,sha256=eBvKoMSEd69NtpHsAaSkAorHjs-ZOZjP3ICsZz9IASU,1289
+propoptics/__main__.py,sha256=HjTqNLNcixWpjwBglRk30tRsjg8v44PDYQEPvboVWLQ,8199
+propoptics/_lib_propoptics.abi3.so,sha256=0fc9ATJbJrA3TwyLA5xjHn8dEu7TeF6K1HsrJp_zQtk,1776580
+propoptics-0.1.1.dist-info/RECORD,,
