@@ -1,0 +1,8 @@
+# recursive-include shanti/data *.xlsx
+# include LICENSE
+global-exclude *.pyc __pycache__/
+prune tests
+prune .github
+prune LICENSE
+prune install_debug.py
+prune .gitignore
