@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: ethics_dashboard_models
+Version: 0.3
+Author: Cody Jorgenson
+License: MIT
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: flask_sqlalchemy
+Requires-Dist: flask_marshmallow
+Dynamic: author
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
