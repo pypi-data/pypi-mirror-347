@@ -1,0 +1,61 @@
+create or replace procedure PLUGIN.CREATE_EXTERNAL_ACCESS_INTEGRATION(
+      EAI_NAME varchar,
+      SECRET_NAMES ARRAY,
+      NETWORK_RULE_NAMES ARRAY)
+   returns object
+   language javascript
+   COMMENT = $$
+   This procedure is deprecated, as the user must create the OAuth secrets themselves in order to be able to bind them correctly.
+   $$
+   execute as owner
+as
+$$
+try{
+   if (SECRET_NAMES === null || SECRET_NAMES === undefined || SECRET_NAMES.length==0){
+      throw new Error('Secret names parameter must contain at least one secret');
+   }
+   if (NETWORK_RULE_NAMES === null || NETWORK_RULE_NAMES === undefined || NETWORK_RULE_NAMES.length==0){
+      throw new Error('Network rule names parameter must contain at least one secret');
+   }
+   var appsResults = snowflake.createStatement( {
+        sqlText: `select 
+                    APPLICATION_NAME,
+                    EXTERNAL_ACCESS_INTEGRATIONS
+                from DATA.OMNATA_REGISTRATION`,
+        binds:[]
+   } ).execute();
+   if (!appsResults.next())  {
+      throw new Error('Plugin must be registered to a sync engine instance before calling this procedure');
+   }
+   const applicationName = appsResults.getColumnValue(1);
+
+   var bindings = [EAI_NAME];
+   const secretNamesClauses = SECRET_NAMES.map((s)=>{return `'${s}'`}).join(',');
+   const networkRuleNamesClauses = NETWORK_RULE_NAMES.map((n)=>{return `'${n}'`}).join(',');
+   snowflake.createStatement( {
+      sqlText: `CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION IDENTIFIER(?)
+                           ALLOWED_NETWORK_RULES = (${networkRuleNamesClauses})
+                           ALLOWED_AUTHENTICATION_SECRETS = (${secretNamesClauses})
+                           ENABLED = true`,
+      binds:bindings
+   } ).execute();
+   snowflake.createStatement( {
+      sqlText: `GRANT USAGE ON INTEGRATION IDENTIFIER(?) TO APPLICATION IDENTIFIER(?)`,
+      binds:[EAI_NAME, applicationName]
+   } ).execute();
+    return {
+        "success": true,
+        "data": null
+    }
+}
+catch(e){
+   return {
+      "success": false,
+      "error": `CREATE_EXTERNAL_ACCESS_INTEGRATION: ${String(e)}`
+   }
+}
+$$
+;
+
+grant usage on procedure PLUGIN.CREATE_EXTERNAL_ACCESS_INTEGRATION(VARCHAR,ARRAY,ARRAY)
+to application role OMNATA_MANAGEMENT;
