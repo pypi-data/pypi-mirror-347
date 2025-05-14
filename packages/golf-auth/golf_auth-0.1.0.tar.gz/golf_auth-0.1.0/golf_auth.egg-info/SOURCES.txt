@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+golf_auth/__init__.py
+golf_auth/crypto.py
+golf_auth/provider.py
+golf_auth/sdk.py
+golf_auth.egg-info/PKG-INFO
+golf_auth.egg-info/SOURCES.txt
+golf_auth.egg-info/dependency_links.txt
+golf_auth.egg-info/requires.txt
+golf_auth.egg-info/top_level.txt
