@@ -1,0 +1,83 @@
+from typing import Optional, Union, Any, Generic, TypeVar
+
+import httpx
+from httpx import Response
+from httpx._types import QueryParamTypes, HeaderTypes, CookieTypes, AuthTypes, TimeoutTypes, RequestExtensions, \
+    RequestContent, RequestData, RequestFiles
+from httpx._client import UseClientDefault, USE_CLIENT_DEFAULT
+
+from openremote.url_builder import UrlBuilder
+from openremote.authenticator import Authenticator
+
+
+T = TypeVar('T')
+
+
+class HttpClient:
+    def __init__(self, url_builder: UrlBuilder, authenticator: Authenticator):
+        self.__url_builder = url_builder
+        self.__authenticator = authenticator
+
+    async def get(
+            self,
+            path: str,
+            params: Optional[QueryParamTypes] = None,
+            headers: Optional[HeaderTypes] = None,
+            cookies: Optional[CookieTypes] = None,
+            auth: Union[AuthTypes, UseClientDefault, None] = USE_CLIENT_DEFAULT,
+            follow_redirects: Union[bool, UseClientDefault] = USE_CLIENT_DEFAULT,
+            timeout: Union[TimeoutTypes, UseClientDefault] = USE_CLIENT_DEFAULT,
+            extensions: Optional[RequestExtensions] = None,
+    ) -> Response:
+        if headers is None:
+            headers = {}
+
+        headers['Authorization'] = f'Bearer {await self.__authenticator.get_token()}'
+
+        async with httpx.AsyncClient() as client:
+            return await client.get(
+                url=self.__url_builder.build(path),
+                params=params,
+                headers=headers,
+                cookies=cookies,
+                auth=auth,
+                follow_redirects=follow_redirects,
+                timeout=timeout,
+                extensions=extensions,
+            )
+
+    async def post(
+            self,
+            path: str,
+            content: Optional[RequestContent] = None,
+            data: Optional[RequestData] = None,
+            files: Optional[RequestFiles] = None,
+            json: Optional[Any] = None,
+            params: Optional[QueryParamTypes] = None,
+            headers: Optional[HeaderTypes] = None,
+            cookies: Optional[CookieTypes] = None,
+            auth: Union[AuthTypes, UseClientDefault] = USE_CLIENT_DEFAULT,
+            follow_redirects: Union[bool, UseClientDefault] = USE_CLIENT_DEFAULT,
+            timeout: Union[TimeoutTypes, UseClientDefault] = USE_CLIENT_DEFAULT,
+            extensions: Optional[RequestExtensions] = None,
+    ) -> Response:
+        if headers is None:
+            headers = {}
+
+        headers['Authorization'] = f'Bearer {await self.__authenticator.get_token()}'
+
+        async with httpx.AsyncClient() as client:
+            return await client.post(
+                url=self.__url_builder.build(path),
+                content=content,
+                data=data,
+                files=files,
+                json=json,
+                params=params,
+                headers=headers,
+                cookies=cookies,
+                auth=auth,
+                follow_redirects=follow_redirects,
+                timeout=timeout,
+                extensions=extensions,
+            )
