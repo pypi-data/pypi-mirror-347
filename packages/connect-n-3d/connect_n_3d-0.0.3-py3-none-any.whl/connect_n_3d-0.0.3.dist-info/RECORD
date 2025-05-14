@@ -1,0 +1,9 @@
+connect_n_3d/__init__.py,sha256=m69NYR15TMc_FeMMUraf3-x7S3afDdArXGCzYusqF5k,228
+connect_n_3d/agents.py,sha256=s8GhnGu3-rldaPLsKzuqAjg0BZvQBP8Ihj6hsVFLHjU,2350
+connect_n_3d/board.py,sha256=z1bjap1sssbNrUA7VD8XosTtHf5yciJSKztEyHi8rwA,7849
+connect_n_3d/env.py,sha256=if_1CgXFBPE6SJ0NCRcZqkNQXYcVVYcpvBHhr17npT4,4642
+connect_n_3d-0.0.3.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+connect_n_3d-0.0.3.dist-info/METADATA,sha256=SyU5bRRpx3ZVUzG89Hp55dLRCR7FnRzL0M2k9ryd_iU,668
+connect_n_3d-0.0.3.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+connect_n_3d-0.0.3.dist-info/top_level.txt,sha256=pWtSm9rqE-qV8Kxbe8f8Bt9B3kJUzyKIOCx9y0Odi_4,13
+connect_n_3d-0.0.3.dist-info/RECORD,,
