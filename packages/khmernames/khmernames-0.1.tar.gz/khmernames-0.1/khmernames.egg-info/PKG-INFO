@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: khmernames
+Version: 0.1
+Summary: Khmer Name Generator with full/first/last names and export options
+Author: Sammy KH
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
