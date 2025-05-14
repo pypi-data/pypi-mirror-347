@@ -1,0 +1,6 @@
+README.md
+setup.py
+nua_sdk.egg-info/PKG-INFO
+nua_sdk.egg-info/SOURCES.txt
+nua_sdk.egg-info/dependency_links.txt
+nua_sdk.egg-info/top_level.txt
