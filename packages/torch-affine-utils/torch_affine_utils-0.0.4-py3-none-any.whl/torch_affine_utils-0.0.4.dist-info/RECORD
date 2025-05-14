@@ -1,0 +1,9 @@
+torch_affine_utils/__init__.py,sha256=6-V7ViOzXpOA7MHZUeSHHRCU8Lk4K6Wqu5tbt7ghbZE,422
+torch_affine_utils/py.typed,sha256=esB4cHc6c07uVkGtqf8at7ttEnprwRxwk8obY8Qumq4,187
+torch_affine_utils/transforms_2d.py,sha256=fvRCeRMUheVoTQFIs4WIT3E3xK7mDHyG4B7q1-4Qvdk,5336
+torch_affine_utils/transforms_3d.py,sha256=7tD1SCRNGCpSZkuVo7O3lwMgp2iFXqusOBBJZdQjM5I,9684
+torch_affine_utils/utils.py,sha256=C718FJqwX3k5ByxoUud6P2WkpNMbomWhWD5xrCCSDIg,467
+torch_affine_utils-0.0.4.dist-info/METADATA,sha256=mmuw6EgprqzOmDgQLmq__C0cPlsjt6RUweTeuf9Znik,5906
+torch_affine_utils-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+torch_affine_utils-0.0.4.dist-info/licenses/LICENSE,sha256=Kbo_h3sPum8rDAhMerH9fl4hzFn-QUCekJf05zk2epY,1499
+torch_affine_utils-0.0.4.dist-info/RECORD,,
