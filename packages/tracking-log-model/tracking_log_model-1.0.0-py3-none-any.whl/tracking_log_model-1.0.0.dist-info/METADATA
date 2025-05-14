@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: tracking_log_model
+Version: 1.0.0
+Summary: This module allows you to log parameters, metrics, and artifacts to MLflow using the Tracking Log Model SDK.
+Author: Saurav Kumar
+Author-email: Saurav.Kumar@cognizant.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.lic
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
