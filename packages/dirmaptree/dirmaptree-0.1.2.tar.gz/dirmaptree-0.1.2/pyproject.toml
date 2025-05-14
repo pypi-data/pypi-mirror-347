@@ -1,0 +1,22 @@
+[project]
+name = "dirmaptree"
+version = "0.1.2"
+description = "A clean directory tree generator with customizable exclusions and comments"
+license = "MIT"  # Recommended to include a license
+authors = [
+    {name = "Shahzer Baig",email = "shahzer.baig@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "dirmaptree", from = "src"}]
+
+[tool.poetry.scripts]
+dirmaptree = "dirmaptree.map:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

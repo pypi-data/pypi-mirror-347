@@ -1,0 +1,96 @@
+# DirMapTree 🌳
+
+A Python package for generating clean, customizable directory tree visualizations with:
+- Built-in exclusion of common directories (`node_modules`, `.git`, etc.)
+- Optional comments for important paths
+- Hidden file visibility control
+- Depth limiting
+- Permission error handling
+
+## Installation
+
+```bash
+pip install dirmaptree
+Basic Usage
+bash
+dirmaptree [path] [-d DEPTH] [-H] [-c]
+```
+### Examples
+
+1. Basic directory tree
+```dirmaptree ./my-project```
+Output:
+
+```my-project/
+├── src/
+│   ├── app/
+│   ├── components/
+│   └── utils/
+├── public/
+│   └── assets/
+├── pyproject.toml
+└── README.md
+```
+2. With depth limit (2 levels)
+
+```dirmaptree ./my-project -d 2```
+3. Show hidden files
+
+```dirmaptree ./my-project -H```
+4. With comments
+
+```dirmaptree ./my-project -c```
+Output:
+```
+my-project/
+├── src/app/                  # App Router (Next.js 13+)
+├── src/components/           # Reusable UI components
+├── public/assets/images/     # Product images
+└── README.md
+```
+### Advanced Features
+
+###### Custom Exclusions
+Create a custom configuration file .dirmaptree in your project root:
+
+```
+exclude_dirs:
+  - venv
+  - dist
+exclude_files:
+  - *.log
+  - *.tmp
+comments:
+  src/app: "App Router (Next.js 13+)"
+  tests: "Test cases"
+  
+ ```
+### Programmatic Usage
+
+```
+from dirmaptree import DirectoryTree
+
+tree = DirectoryTree(
+    exclude_dirs=['__pycache__', 'temp'],
+    show_hidden=False
+)
+print(tree.generate('./my-project', max_depth=3))
+```
+### Command Line Options
+|Option|	Description|
+|------|---------------|
+|[path] |	Root directory (default: current directory)|
+| -d DEPTH, --depth | DEPTH	Maximum depth to display |
+| -H, --hidden |	Show hidden files and directories |
+| -c, --comments |	Show directory comments |
+| --version	| Show version and exit |
+
+### Configuration
+
+##### DirMapTree automatically looks for these configuration files:
+
+1. .dirmaptree (YAML format) in current directory
+
+2. .dirmaptree in home directory
+
+3. Package defaults
