@@ -1,0 +1,2 @@
+[console_scripts]
+hunyuan-plugin-mcp-bingsearch = yaunqi_plugin_mcp:main
