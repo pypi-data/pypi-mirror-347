@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+The_Task_Planner.egg-info/PKG-INFO
+The_Task_Planner.egg-info/SOURCES.txt
+The_Task_Planner.egg-info/dependency_links.txt
+The_Task_Planner.egg-info/top_level.txt
