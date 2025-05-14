@@ -1,0 +1,32 @@
+[project]
+name = "sendrella"
+version = "0.1.1"
+description = "Official Python SDK for the Sendrella API – email validation, bounce checking, and disposable detection."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Salman Khan", email = "salman@sendrella.com" }
+]
+keywords = ["email", "validation", "sdk", "bounce", "api", "sendrella"]
+requires-python = ">=3.7"
+
+dependencies = [
+  "requests>=2.31.0"
+]
+
+[project.urls]
+Homepage = "https://sendrella.com"
+Repository = "https://github.com/Salman0x01/sendrella-python-sdk"
+Documentation = "https://swagger.sendrella.com"
+
+[tool.poetry]
+packages = [
+  { include = "sendrella" }
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

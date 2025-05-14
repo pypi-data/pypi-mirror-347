@@ -1,0 +1,4 @@
+[tool.poetry]
+name = "sendrella"
+version = "0.1.0"
+description = "Sendrella Python SDK"

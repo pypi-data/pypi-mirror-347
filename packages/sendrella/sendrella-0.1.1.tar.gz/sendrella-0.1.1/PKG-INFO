@@ -1,0 +1,233 @@
+Metadata-Version: 2.3
+Name: sendrella
+Version: 0.1.1
+Summary: Official Python SDK for the Sendrella API – email validation, bounce checking, and disposable detection.
+License: MIT
+Keywords: email,validation,sdk,bounce,api,sendrella
+Author: Salman Khan
+Author-email: salman@sendrella.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.31.0)
+Project-URL: Documentation, https://swagger.sendrella.com
+Project-URL: Homepage, https://sendrella.com
+Project-URL: Repository, https://github.com/Salman0x01/sendrella-python-sdk
+Description-Content-Type: text/markdown
+
+# Sendrella Python SDK
+
+The official Python SDK for [Sendrella](https://sendrella.com) — a modern infrastructure for secure and intelligent email communication.
+
+Effortlessly integrate the Sendrella API into your Python apps for:
+
+- ✉️ Email bounce checks  
+- 🛡️ Disposable (temporary) email detection  
+- 📊 Credit tracking  
+- 🔐 API key validation  
+
+---
+
+## 📦 Installation
+
+### 🔗 Install via PyPI (recommended):
+
+```bash
+pip install sendrella
+```
+
+### 🧪 Development (local or GitHub):
+
+```bash
+pip install git+https://github.com/Salman0x01/sendrella-python-sdk.git
+```
+
+Or clone and install locally:
+
+```bash
+git clone https://github.com/Salman0x01/sendrella-python-sdk.git
+cd sendrella-python-sdk
+pip install .
+```
+
+---
+
+## 🚀 Quick Start
+
+```python
+from sendrella import SendrellaClient
+
+client = SendrellaClient(api_key="your_api_key_here")
+
+result = client.bounce.check("hello@example.com")
+print(result["status"])
+```
+
+---
+
+## 🔑 Authentication
+
+Every API call requires a valid Sendrella API key.
+
+### 🔐 Get your key:
+1. Log in to [Sendrella Dashboard](https://sendrella.com/dashboard)
+2. Copy your API key
+3. Use it like this:
+
+```python
+from sendrella import SendrellaClient
+
+client = SendrellaClient(api_key="your_api_key_here")
+```
+
+---
+
+## 🧠 Usage Examples
+
+### 📬 Check Email Bounce
+
+```python
+result = client.bounce.check("hello@example.com")
+print(result["status"])          # valid / warn / risky / invalid / error
+print(result["bounce_score"])    # Score between 0–100
+print(result["confidence_indicators"])
+```
+
+---
+
+### 📑 Retrieve Bounce Logs
+
+```python
+logs = client.bounce.logs(page=1, status="risky")
+for log in logs["logs"]:
+    print(log["email"], "-", log["status"], "(", log["bounce_score"], ")")
+```
+
+---
+
+### 🛡️ Check Disposable Email
+
+```python
+result = client.temp_mail.check("user@mailinator.com")
+if result.get("is_disposable"):
+    print("❌ Disposable email detected")
+else:
+    print("✅ Clean email")
+```
+
+---
+
+### 📂 View Temp Mail Logs
+
+```python
+logs = client.temp_mail.logs(page=1)
+for log in logs["logs"]:
+    print(log["email"], "-", log["status"], "via", log["detection_method"])
+```
+
+---
+
+### 💳 Fetch Credits
+
+```python
+credits = client.utils.credits()
+print("Available:", credits["available_credits"])
+print("Used:", credits["all_time_used"])
+print("Total:", credits["all_time_credits"])
+```
+
+---
+
+### 🔐 Validate API Key
+
+```python
+info = client.utils.validate_key()
+if info.get("success"):
+    print("Authenticated as:", info.get("name"))
+else:
+    print("Invalid or expired API key")
+```
+
+---
+
+## 🧪 Running Tests
+
+```bash
+# Run all tests
+pytest -v tests/
+
+# Or run one
+pytest -v tests/test_bounce.py
+```
+
+Make sure to set your API key:
+
+```bash
+set SENDRELLA_API_KEY=your_api_key_here   # Windows
+export SENDRELLA_API_KEY=your_api_key_here  # Linux/macOS
+```
+
+---
+
+## 📚 Supported Endpoints
+
+| Feature           | Method                        | Path                     |
+|------------------|-------------------------------|--------------------------|
+| Bounce Check     | `client.bounce.check()`       | `/bounce/check`          |
+| Bounce Logs      | `client.bounce.logs()`        | `/bounce/logs`           |
+| Disposable Check | `client.temp_mail.check()`    | `/tempmail/check`        |
+| Temp Logs        | `client.temp_mail.logs()`     | `/tempmail/logs`         |
+| Get Credits      | `client.utils.credits()`      | `/utils/credits`         |
+| Validate API Key | `client.utils.validate_key()` | `/token/validate`        |
+
+---
+
+## 🛠️ Error Handling
+
+All errors are wrapped in custom exceptions:
+
+- `SendrellaError` (base)
+- `AuthenticationError`
+- `BadRequestError`
+- `ServerError`
+- `TimeoutError`
+- `NotFoundError`
+
+Example:
+
+```python
+from sendrella.exceptions import AuthenticationError
+
+try:
+    result = client.bounce.check("email@example.com")
+except AuthenticationError:
+    print("Invalid API key or permission denied.")
+```
+
+---
+
+## 📄 License
+
+MIT License © 2025 Salman Khan
+
+---
+
+## ❤️ Contributing
+
+PRs welcome! Please submit bug fixes, improvements, or new endpoints with test coverage.
+
+---
+
+## 🔗 Useful Links
+
+- [Official Website](https://sendrella.com)
+- [API Docs](https://swagger.sendrella.com)
+- [Support](https://sendrella.com/contact)
+
