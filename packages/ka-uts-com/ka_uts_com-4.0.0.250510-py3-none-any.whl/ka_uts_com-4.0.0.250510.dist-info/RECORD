@@ -1,0 +1,14 @@
+ka_uts_com/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ka_uts_com/__version__.py,sha256=cDeKJoJXH0P7QinCjk6rgnqE1iSbzwkcXPtGuFPor-g,365
+ka_uts_com/app.py,sha256=XrMhqQI9YHzw1XmC8zGgCJwrwxzkHtHDEQIo9gP07DI,1151
+ka_uts_com/cfg.py,sha256=RNWxOz3XtP0HgH0z1e6tAQA_L0alEh82_EOPOoyv3R4,768
+ka_uts_com/com.py,sha256=DdL9754luzZqmHq_r6YKG4gxSSsxOGoVMohF5jaJZ8Q,1943
+ka_uts_com/exit.py,sha256=RIpFKwEGeBCBBPPQXIcLsrYeNY2dTF8BDlESe6UhdMo,791
+ka_uts_com/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ka_uts_com/timer.py,sha256=qVKanfNBnsU3B6C-Y5mjHWnS056GiYlRmFwEnX6BAU0,2546
+ka_uts_com/decorators/dec.py,sha256=8oKf3yvJSEakjr0HuQKcc3F0qgRmDskxr6hnQaw4r_I,841
+ka_uts_com-4.0.0.250510.dist-info/licenses/LICENSE.txt,sha256=BiT3QGI_2iRbdvgS3HDig57lnXJVk60Pj4xM9eeCczI,814
+ka_uts_com-4.0.0.250510.dist-info/METADATA,sha256=Z8KlB7LZ_ali-3r6BaJtudD4nKansscm0MISiGBl4k8,32001
+ka_uts_com-4.0.0.250510.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+ka_uts_com-4.0.0.250510.dist-info/top_level.txt,sha256=cWCIrm1g6Jn-FbCQuB3wBrrNH1YwqVlc6mE0jV6vg74,21
+ka_uts_com-4.0.0.250510.dist-info/RECORD,,
