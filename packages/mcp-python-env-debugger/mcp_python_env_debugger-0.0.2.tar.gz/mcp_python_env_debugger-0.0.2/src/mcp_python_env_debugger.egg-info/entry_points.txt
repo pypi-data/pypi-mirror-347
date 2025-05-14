@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-python-env-debugger = main:run

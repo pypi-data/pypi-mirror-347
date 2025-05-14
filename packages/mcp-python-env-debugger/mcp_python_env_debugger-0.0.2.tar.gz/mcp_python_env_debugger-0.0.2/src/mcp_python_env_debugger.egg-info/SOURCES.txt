@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/mcp-python-env-debugger/__init__.py
+src/mcp_python_env_debugger.egg-info/PKG-INFO
+src/mcp_python_env_debugger.egg-info/SOURCES.txt
+src/mcp_python_env_debugger.egg-info/dependency_links.txt
+src/mcp_python_env_debugger.egg-info/entry_points.txt
+src/mcp_python_env_debugger.egg-info/requires.txt
+src/mcp_python_env_debugger.egg-info/top_level.txt
