@@ -1,0 +1,12 @@
+numpy
+openpyxl>=3.1.2
+matplotlib
+scipy
+pandas
+tno.quantum.optimization.qubo[dwave]~=1.0
+tqdm
+
+[tests]
+pytest>=8.1.1
+pytest-cov>=4.1.0
+tomlkit
