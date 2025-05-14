@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: data-primer
+Version: 0.0.2
+Summary: 像'底漆'一样为数据做准备
+Author-email: "Wang.Y" <294961525@qq.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/WY-74/DataPrimer
+Project-URL: Issues, https://github.com/WY-74/DataPrimer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# DataPrimer
+
+像"底漆"一样为数据做准备
