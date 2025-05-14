@@ -1,0 +1,294 @@
+# stratafm
+
+A flexible and extensible File Manager API for interacting with various storage backends.
+
+## What is stratafm?
+
+stratafm provides a unified API for file operations across different storage systems. It allows applications to:
+
+- Perform file operations (create, read, update, delete) across multiple storage backends
+- Easily switch between backends without changing application code
+- Extend the system with custom storage backends
+- Transfer files between different storage systems
+
+Currently supported storage backends:
+
+- Local filesystem
+- Amazon S3
+- Custom backends (can be easily added)
+
+## Installation
+
+Using pip:
+
+```bash
+pip install stratafm
+```
+
+For development:
+
+```bash
+git clone https://github.com/yourusername/stratafm.git
+cd stratafm
+pip install -e .
+```
+
+## How to use it
+
+### Basic Usage
+
+```python
+import asyncio
+from strata.file_manager import FileManager, BackendType
+
+# Create and configure a FileManager with multiple backends
+config = [
+    {
+        "type": "local",
+        "name": "local_files",
+        "base_folder": "/path/to/local/files",
+        "default": True  # Set as default backend
+    },
+    {
+        "type": "s3",
+        "name": "s3_storage",
+        "bucket_name": "my-bucket",
+    }
+]
+
+async def main():
+    # Initialize the file manager
+    file_manager = FileManager.from_config(config)
+
+    # List files using the default backend
+    files = await file_manager.list("documents")
+    for file in files:
+        print(f"{file.name} - {'Directory' if file.type == 'directory' else 'File'}")
+
+    # View a file's content
+    content = await file_manager.view("documents/report.txt")
+    print(f"Content: {content.content.decode()}")
+
+    # Create a new file in the S3 backend
+    new_file = await file_manager.create_file(
+        "uploads/new_file.txt",
+        b"Hello, World!",
+        backend="s3_storage"
+    )
+    print(f"Created: {new_file.path}")
+
+    # Copy files between backends
+    copied_file = await file_manager.copy(
+        "documents/important.docx",
+        "backup/important.docx",
+        src_backend="local_files",
+        dst_backend="s3_storage"
+    )
+    print(f"Copied to: {copied_file.path}")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+### Working with Directories
+
+```python
+async def directory_operations():
+    file_manager = FileManager.from_config({
+        "type": "local",
+        "base_folder": "/tmp/stratafm_test"
+    })
+
+    # Create a directory
+    dir = await file_manager.create_directory("test_folder")
+
+    # List with recursion (depth=2)
+    files = await file_manager.list("/", depth=2)
+
+    # Delete a directory and all its contents
+    await file_manager.delete("old_folder", recursive=True)
+
+asyncio.run(directory_operations())
+```
+
+## Creating Custom Backends
+
+stratafm is designed to be extended with custom backends. To create a new backend:
+
+1. Create a class that inherits from `StorageBackend`
+2. Implement all required abstract methods
+3. Register your backend with the `FileManager`
+
+### Step 1: Create a custom backend class
+
+```python
+from strata.backends.storage_backend import StorageBackend
+from strata.entities import File, Content, FileType
+from strata.exceptions import BackendException
+from typing import List
+from datetime import datetime
+
+class AzureStorageBackend(StorageBackend):
+    def __init__(self, config: dict):
+        # Initialize with your configuration
+        self.account_name = config.get("account_name")
+        self.account_key = config.get("account_key")
+        self.container = config.get("container")
+
+        # Initialize Azure client
+        # ...
+
+    async def list(self, path: str, depth: int = 1) -> List[File]:
+        # Implement listing files from Azure Blob Storage
+        # ...
+
+    async def view(self, path: str) -> Content:
+        # Implement file content retrieval
+        # ...
+
+    async def create_file(self, path: str, content: bytes) -> File:
+        # Implement file creation
+        # ...
+
+    async def create_directory(self, path: str) -> File:
+        # Implement directory creation
+        # ...
+
+    async def delete(self, path: str, recursive: bool = False) -> None:
+        # Implement deletion
+        # ...
+
+    async def move(self, src_path: str, dst_path: str) -> File:
+        # Implement moving files
+        # ...
+
+    async def copy(self, src_path: str, dst_path: str) -> File:
+        # Implement copying files
+        # ...
+```
+
+### Step 2: Register your backend
+
+There are two ways to register a custom backend:
+
+#### Option 1: Register the backend class type
+
+```python
+from strata.file_manager import FileManager
+from my_package.azure_backend import AzureStorageBackend
+
+# Register the backend class
+FileManager.register_backend_class("azure", AzureStorageBackend)
+
+# Create a file manager with your custom backend
+config = {
+    "type": "azure",
+    "name": "azure_storage",
+    "account_name": "mystorageaccount",
+    "account_key": "my-secret-key",
+    "container": "my-container"
+}
+
+file_manager = FileManager.from_config(config)
+```
+
+#### Option 2: Register a backend instance directly
+
+```python
+from strata.file_manager import FileManager
+from my_package.azure_backend import AzureStorageBackend
+
+# Create the file manager
+file_manager = FileManager()
+
+# Create and register a backend instance
+azure_config = {
+    "account_name": "mystorageaccount",
+    "account_key": "my-secret-key",
+    "container": "my-container"
+}
+azure_backend = AzureStorageBackend(azure_config)
+file_manager.register_backend("azure_storage", azure_backend, set_as_default=True)
+```
+
+### Using Your Custom Backend
+
+After registration, you can use your custom backend just like the built-in ones:
+
+```python
+async def use_custom_backend():
+    # Using a registered backend class
+    config = [
+        {
+            "type": "azure",
+            "name": "azure_main",
+            "account_name": "myaccount",
+            "account_key": "mykey",
+            "container": "documents"
+        },
+        {
+            "type": "local",
+            "name": "local_backup",
+            "base_folder": "/backup"
+        }
+    ]
+
+    file_manager = FileManager.from_config(config)
+
+    # List files in Azure
+    azure_files = await file_manager.list("/reports", backend="azure_main")
+
+    # Copy from Azure to local backup
+    await file_manager.copy(
+        "quarterly_report.pdf",
+        "q2_2023/quarterly_report.pdf",
+        src_backend="azure_main",
+        dst_backend="local_backup"
+    )
+```
+
+## Advanced Usage
+
+### Error Handling
+
+All backend operations can raise a `BackendException`. It's recommended to handle these exceptions appropriately:
+
+```python
+try:
+    await file_manager.view("nonexistent_file.txt")
+except BackendException as e:
+    print(f"Error accessing file: {e}")
+```
+
+### Working with Multiple Backends
+
+The `FileManager` class makes it easy to work with multiple backends:
+
+```python
+# Configure multiple backends
+file_manager = FileManager.from_config([
+    {"type": "local", "name": "temp", "base_folder": "/tmp"},
+    {"type": "local", "name": "home", "base_folder": "/home/user/files", "default": True},
+    {"type": "s3", "name": "backup", "bucket_name": "backup-bucket"}
+])
+
+# Use specific backends
+home_files = await file_manager.list("/documents", backend="home")
+s3_files = await file_manager.list("/", backend="backup")
+
+# Transfer between backends
+await file_manager.move(
+    "important.pdf",
+    "archived/important.pdf",
+    src_backend="home",
+    dst_backend="backup"
+)
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
