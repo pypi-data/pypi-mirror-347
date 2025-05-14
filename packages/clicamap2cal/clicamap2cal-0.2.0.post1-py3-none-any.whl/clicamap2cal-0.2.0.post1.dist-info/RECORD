@@ -1,0 +1,12 @@
+clicamap2cal/__init__.py,sha256=88ev7Vm6xv6EDtvDyYkJ2djUgB3zxQppNITygXHFaq4,156
+clicamap2cal/cli.py,sha256=ur0IrtEkLYUTqMVNZWc9b8fKEOH1ptuv3e5XgyDXGvo,3277
+clicamap2cal/clicamap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clicamap2cal/clicamap/client.py,sha256=t9pUJXHv7gwOn8nGfw7YKFGoa4vjA9vamA_dTmRvAiU,7527
+clicamap2cal/logging.py,sha256=J4nYdnuMtsyGP0-6bgPmG4s26A4cJMMiOJLkTrXf4UU,607
+clicamap2cal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clicamap2cal/settings.py,sha256=jPGB-XPM_Dx1Erpkm77bNHB2IeB3OMMlLp4thnbJUdA,1346
+clicamap2cal-0.2.0.post1.dist-info/LICENSE,sha256=AU4GLn1rO55oa7jLZCR51syLt3XY7hhZCLZpuNqvXy8,21396
+clicamap2cal-0.2.0.post1.dist-info/METADATA,sha256=4b5ao585pUtKZ47QRz1jFvukKdJ-xSS9AyD2sBUevqA,1885
+clicamap2cal-0.2.0.post1.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+clicamap2cal-0.2.0.post1.dist-info/entry_points.txt,sha256=4CmCFAlRSdRQvKHfKrR-vc-JazwBUsW9_CUfSPCme9U,54
+clicamap2cal-0.2.0.post1.dist-info/RECORD,,
