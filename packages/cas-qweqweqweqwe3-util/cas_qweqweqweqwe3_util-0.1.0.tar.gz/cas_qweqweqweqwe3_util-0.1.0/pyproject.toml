@@ -1,0 +1,23 @@
+[project]
+name = "cas-qweqweqweqwe3-util"
+version = "0.1.0"
+description = "Package for DO utilities"
+authors = [
+    {name = "cwhuang",email = "cwhuang@hkma.gov.hk"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "do_util", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
+wily = "^1.25.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
