@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: typecount
+Version: 0.2.0
+Summary: A simple typing counter application
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pynput>=1.7.7
+Dynamic: license-file
+
+# Typing counter
+
+![](./data/typecount.png)
+
+
+Typing count for calculation how many type for days
+
+## How to run
+
+1. Clone repo
+2. `uv sysc`
+3. `uv run ./src/app.py`

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/typecount/__init__.py
+src/typecount/app.py
+src/typecount.egg-info/PKG-INFO
+src/typecount.egg-info/SOURCES.txt
+src/typecount.egg-info/dependency_links.txt
+src/typecount.egg-info/entry_points.txt
+src/typecount.egg-info/requires.txt
+src/typecount.egg-info/top_level.txt
+tests/test_app.py
