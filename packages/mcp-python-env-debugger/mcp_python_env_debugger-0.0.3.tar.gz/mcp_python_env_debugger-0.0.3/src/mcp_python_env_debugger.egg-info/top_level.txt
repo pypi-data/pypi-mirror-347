@@ -1,0 +1,2 @@
+mcp-python-env-debugger
+mcp_python_env_debugger
