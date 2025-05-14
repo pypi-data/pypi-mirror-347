@@ -1,0 +1,127 @@
+# Propoptics
+
+`propoptics` is a small Python package aimed at providing tools to generate pulse train based on measured noise power spectral densities (PSDs), as done in \[1\]. This functionality is available both via the Python interface and via a command-line interface (CLI). Moreover, it provides a limited number of analysis tools (Python API only):
+
+- Tooling for spectral filtering and integration, allowing users to quickly convert a series of optical spectra into a sequence of values (energy or timing delay).
+- A wrapper around `scipy.signal.welch` to make power spectral density estimations easier.
+
+Supported diagnostics are:
+
+| Time series data | Frequency data           |
+| ---------------- | ------------------------ |
+| energy           | relative intensity noise |
+| timing delay           | timing jitter, directly related to phase noise |
+
+
+# Installation
+
+## With `uv`
+
+The easiest way to use the CLI is to use `uv`. For people unfamiliar, Python can be confusing or finicky with its different version, virtual environments, etc. `uv` is a Python package manager that takes care of everything. Even if you have never installed python on your computer, you can start using `propoptics` with these simple steps.
+- install `uv`([instructions here](https://github.com/astral-sh/uv?tab=readme-ov-file#installation))
+- install `propoptics` by running
+```sh
+uv tool install propoptics
+```
+
+You may need to close and re-open your terminal after the first step so that the new `uv` program is detected.
+
+You can also run `propoptics` directly without installing it first by running
+```sh
+uv tool run propoptics
+uvx propoptics # short hand version, same functionality
+```
+
+## From PyPI
+
+The minimum supported Python version is 3.11.
+
+If you manage your project with `uv`, simply add `propoptics` with
+```sh
+uv add propoptics
+```
+
+Of course, it is available from `pip` as well:
+```sh
+pip install propoptics
+```
+
+You can also install from source, in which case you must install the development dependencies and have a [Rust](https://www.rust-lang.org/tools/install) compiler installed. `rustc 1.86.0` is the only version tested.
+
+# CLI quick start
+
+Check that the installation was successful by running
+```sh
+propoptics --version
+```
+
+At the moment, there are two commands. You can learn about them with
+```sh
+propoptics check --help
+propoptics time-series --help
+```
+
+## `propoptics check`
+
+You can check that `propoptics` is loading your measurement file correctly with
+```
+propoptics check path/to/measurement.csv
+```
+
+This command will open the file and show a plot of the data. Please check that it matches what you expect.
+
+## `propoptics time-series`
+
+Generate a time series with the `time-series` command:
+
+Load a PSD file in dBc/Hz scale, create a noise signal with 512 points, plot the result and output the data to stdout
+```sh
+propoptics time-series path/to/measurement.csv --nt 512 --plot --scale dBc
+```
+
+Load a PSD file in linear scale (Hz^-1), create a noise signal with 1024 points and output the result to a CSV file
+```sh
+propoptics time-series path/to/measurement.csv --nt 1024 -o signal.csv
+```
+
+Load a PSD file in dBm scale, where the DC average (measured separately) is 3V and the input impedance of the digital signal analyzer is 50 Ohm (the default). By providing the average optical power and the wavelength, create a noise signal with 256 points where the shot-noise limit has been subtracted and output the result to a Matlab file.
+```sh
+propoptics time-series path/to/measurement.csv --nt 256 --scale dBm --ref 3 --power 1 --wavelength 800e-9 -o signal.mat
+```
+
+Get help with all parameters with `propoptics --help`. In particular, pay attention to the `--scale` parameter. At this stage, only Numpy binary files (`.npy`) and ASCII test files (`.csv`, `.tsv`, `.dat`, ...) are supported.
+
+# Python API quick start
+
+Generate a pulse train:
+
+```python
+import propoptics
+import numpy as np
+
+freq, rin_psd = np.load("path/to/measurement")
+rin_obj = propoptics.NoiseMeasurement(freq, rin_psd)
+t, signal = rin_obj.time_series(nt=32, rng=123456789)
+```
+
+Check the examples in the `examples` folder.
+
+# Welch method
+[Welch's method](https://en.wikipedia.org/wiki/Welch%27s_method) is at the heart of this module. It is used when running the `propoptics.NoiseMeasurement.from_time_series` to analyze the output of `propoptics.energy_signal` or `propoptics.jitter_signal`. Please look the `full_workflow.py` example for more info.
+
+The total number of points must account for 50% overlap when using the Welch method
+
+Each · corresponds to one pulse:
+```
+ time -->
+ 0             nt/2              nt
+ ┃·······┃·······┃·······┃·······┃
+ ┆   ┃·······┃·······┃·······┃
+ ┆   ┆               ┆       ┆
+ ┆   ┆              >┆       ┆< = nperseg
+>┆   ┆< = nperseg // 2
+```
+
+# Reference
+
+\[1\] CAMENZIND, Sandro L., SIERRO, Benoît, WILLENBERG, Benjamin, et al. Ultra-low noise spectral broadening of two combs in a single ANDi fiber. APL Photonics, 2025, vol. 10, no 3.
