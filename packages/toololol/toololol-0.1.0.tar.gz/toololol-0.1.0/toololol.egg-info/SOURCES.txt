@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+toololol/__init__.py
+toololol/function.py
+toololol/function_examples.py
+toololol/log.py
+toololol/run.py
+toololol/types.py
+toololol.egg-info/PKG-INFO
+toololol.egg-info/SOURCES.txt
+toololol.egg-info/dependency_links.txt
+toololol.egg-info/requires.txt
+toololol.egg-info/top_level.txt
