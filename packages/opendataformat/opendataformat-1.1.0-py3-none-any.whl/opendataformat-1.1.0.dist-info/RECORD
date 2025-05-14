@@ -1,0 +1,12 @@
+opendataformat/__init__.py,sha256=vrXhBZK8QPko85C1dNi6TlkgZ1EVBjHsnwM3ruMWQEo,124
+opendataformat/docu_odf.py,sha256=hk_FZUFoZFC1xN8jPEAd5HzJjfoG6QZrSWSY85QjnAI,9957
+opendataformat/read_odf.py,sha256=nLxjAijLcieXpM8oa5RxtH9987Wcm0HcGvvRmvXqcys,16665
+opendataformat/write_odf.py,sha256=6ZpXOgNzERXrRYk8bCr-KPN5_j3GMkZfFpne-fKYifM,12489
+opendataformat/data/example_dataset.odf.zip,sha256=GYG1fCWz2PAaTAFZCLa6C18PfEwFip74aEqh0L9TwJ8,2581
+opendataformat/data/example_dataset_v1_0_0.zip,sha256=viXdYhnCIzwfcvlSWLt1Pq8pUav2na2Z2tx5LH7Ldww,2210
+opendataformat/data/example_dataset_v1_1_0.odf.zip,sha256=GYG1fCWz2PAaTAFZCLa6C18PfEwFip74aEqh0L9TwJ8,2581
+opendataformat-1.1.0.dist-info/licenses/LICENSE,sha256=n0hXQm5oow34_GGhRtDLLJYNH-1_lPomXEhcFheP004,52
+opendataformat-1.1.0.dist-info/METADATA,sha256=iKkV_YWixaRzWhy0i7XiUZxApVt3IvriJwj3PABuYLs,3781
+opendataformat-1.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+opendataformat-1.1.0.dist-info/top_level.txt,sha256=pQWu3ycC4x0KLKmQMmn9PN09HYi45x4fqBWVd6BEPKY,15
+opendataformat-1.1.0.dist-info/RECORD,,
