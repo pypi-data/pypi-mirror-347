@@ -1,0 +1,54 @@
+table.floods-html-{{ class_name }} tr.date-row th {
+    border-width: 1px 4px 1px 1px;
+    border-style: solid;
+    text-align: center;
+    border-color: #dddddd;
+}
+
+table.floods-html-{{ class_name }} tr th:first-child {
+    border-width: 1px 4px 1px 4px;
+    border-style: solid;
+    text-align: center;
+    border-color: #dddddd;
+}
+
+table.floods-html-{{ class_name }} th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+table.floods-html-{{ class_name }} th.heavy-r-border {
+    border-width: 1px 4px 1px 1px;
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+table.floods-html-{{ class_name }} tr td:first-child {
+    border-width: 1px 4px 1px 4px;
+    border-style: solid;
+    text-align: center;
+    border-color: #dddddd;
+}
+
+table.floods-html-{{ class_name }} td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+table.floods-html-{{ class_name }} td.heavy-r-border {
+    border-width: 1px 4px 1px 1px;
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+table.floods-html-{{ class_name }} td:empty {
+    border-width: 0px;
+}
+
+{% for icolour, colour in colours.items() %}
+table.floods-html-{{ class_name }} td.highlight-class-{{ icolour }} {
+    background-color: {{ colour }};
+}
+{% endfor %}
