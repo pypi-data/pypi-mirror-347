@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: bridgestyle
+Version: 0.1.2
+Summary: A Python library to convert between different map style formats
+Home-page: https://github.com/GeoCat/bridge-style
+Author: GeoCat BV
+Author-email: volaya@geocat.net
+License: MIT
+Keywords: GeoCat,Bridge,style,symbology,styling,mapping,SLD,cartography,Mapfile,CIM,GeoStyler,Mapbox,QGIS,GeoServer,Esri
+License-File: LICENSE.md
