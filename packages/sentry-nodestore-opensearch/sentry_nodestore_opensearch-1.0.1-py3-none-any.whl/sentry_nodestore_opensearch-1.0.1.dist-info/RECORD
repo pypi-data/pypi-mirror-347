@@ -1,0 +1,7 @@
+sentry_nodestore_opensearch/__init__.py,sha256=n4N474u_eYyHA097hQF-4mO-5td_cUaVOv8tZSLG_4w,70
+sentry_nodestore_opensearch/backend.py,sha256=fw2D12TBzcrEXLeb9l58Ph4-IrMuUBlIco7f6fJpmqQ,7781
+sentry_nodestore_opensearch-1.0.1.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+sentry_nodestore_opensearch-1.0.1.dist-info/METADATA,sha256=CasLG8IC5X0JmcNn6w56V79alxdFcNmlmQfrz8bgqvU,6285
+sentry_nodestore_opensearch-1.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+sentry_nodestore_opensearch-1.0.1.dist-info/top_level.txt,sha256=6_vG-GQi7P3ooKlOpNGM-6tVPDio20OKuG-ziU5VcFI,28
+sentry_nodestore_opensearch-1.0.1.dist-info/RECORD,,
