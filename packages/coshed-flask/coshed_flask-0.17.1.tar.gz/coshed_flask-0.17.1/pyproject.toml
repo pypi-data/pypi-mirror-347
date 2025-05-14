@@ -1,0 +1,36 @@
+[tool.ruff]
+exclude = [
+  "__pycache__",
+  ".idea",
+  ".vscode",
+  "build",
+  "contrib",
+  "dist",
+  ".?venv3?",
+  "venv3?",
+]
+line-length = 79
+target-version = 'py39'
+
+[tool.poetry]
+name = "coshed-flask"
+version = "0.17.1"
+description = "flask helper for lazy developer(s)"
+authors = ["doubleO8 <wb008@hdm-stuttgart.de>"]
+license = "GPL-2.0-only"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<=3.12"
+Flask = "^3.0.2"
+Flask-Compress = "^1.14"
+Flask-Cors = "^4.0.0"
+Werkzeug = "^3.0.1"
+Flask-HTTPAuth = "^4.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ruff = "0.9.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

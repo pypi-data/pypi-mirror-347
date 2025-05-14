@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: coshed-flask
+Version: 0.17.1
+Summary: flask helper for lazy developer(s)
+License: GPL-2.0-only
+Author: doubleO8
+Author-email: wb008@hdm-stuttgart.de
+Requires-Python: >=3.8,<=3.12
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Flask (>=3.0.2,<4.0.0)
+Requires-Dist: Flask-Compress (>=1.14,<2.0)
+Requires-Dist: Flask-Cors (>=4.0.0,<5.0.0)
+Requires-Dist: Flask-HTTPAuth (>=4.8.0,<5.0.0)
+Requires-Dist: Werkzeug (>=3.0.1,<4.0.0)
