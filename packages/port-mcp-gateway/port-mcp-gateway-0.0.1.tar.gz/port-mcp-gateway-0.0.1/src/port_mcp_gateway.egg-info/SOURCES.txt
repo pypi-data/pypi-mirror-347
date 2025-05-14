@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+version.txt
+docs/PyPI-README.md
+src/__init__.py
+src/mcp.py
+src/port_mcp_gateway.egg-info/PKG-INFO
+src/port_mcp_gateway.egg-info/SOURCES.txt
+src/port_mcp_gateway.egg-info/dependency_links.txt
+src/port_mcp_gateway.egg-info/entry_points.txt
+src/port_mcp_gateway.egg-info/requires.txt
+src/port_mcp_gateway.egg-info/top_level.txt

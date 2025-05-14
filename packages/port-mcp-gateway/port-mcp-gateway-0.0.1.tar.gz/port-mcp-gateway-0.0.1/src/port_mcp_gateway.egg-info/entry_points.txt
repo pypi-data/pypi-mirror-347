@@ -1,0 +1,2 @@
+[console_scripts]
+port-mcp-gateway = mcp.__main__:main
