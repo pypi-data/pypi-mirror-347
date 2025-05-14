@@ -1,0 +1,74 @@
+[project]
+name = "dbupgrade"
+version = "2025.5.0"
+description = "Database Migration Tool"
+license = "MIT"
+readme = "README.md"
+authors = [{ name = "Sebastian Rittau", email = "srittau@rittau.biz" }]
+requires-python = ">=3.10"
+dependencies = ["sqlalchemy >= 1.4, <3", "sqlparse >= 0.3.0"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Database",
+    "Topic :: Software Development",
+]
+
+[project.urls]
+homepage = "https://github.com/srittau/dbupgrade"
+repository = "https://github.com/srittau/dbupgrade"
+"GitHub" = "https://github.com/srittau/dbupgrade"
+"Bug Tracker" = "https://github.com/srittau/dbupgrade/issues"
+"Changes" = "https://github.com/srittau/dbupgrade/blob/main/CHANGELOG.md"
+
+[project.scripts]
+dbupgrade = 'dbupgrade.main:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+include = ["CHANGELOG.md"]
+packages = [{ include = "dbupgrade" }]
+
+[tool.poetry.group.dev.dependencies]
+mypy = "~1.15.0"
+pytest = "*"
+pytest-mock = "^3.14.0"
+ruff = "^0.11.7"
+
+[tool.pytest.ini_options]
+python_files = ["test_*/*.py"]
+
+[tool.mypy]
+disallow_any_decorated = true
+disallow_any_generics = true
+disallow_any_unimported = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+extra_checks = true
+ignore_missing_imports = true      # TODO: due to sqlparse
+no_implicit_reexport = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
+show_error_codes = true
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I"]
+# E501: line too long (handled by ruff formatter)
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
