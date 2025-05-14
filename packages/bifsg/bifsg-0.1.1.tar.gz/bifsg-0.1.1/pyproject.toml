@@ -1,0 +1,30 @@
+[project]
+name             = "bifsg"
+version          = "0.1.1"
+description      = "Bayesian Improved First-Firstname Surname Geocoding"
+readme           = "README.md"
+license          = { text = "MIT" }
+authors          = [
+  { name = "Ningxin Huang", email = "huangningxin@gmail.com" }
+]
+requires-python  = ">=3.7"
+dependencies     = [
+  "requests>=2.0",
+  "PyYAML",
+  "pandas>=1.0",
+  "numpy",
+  "pyarrow",
+  "openpyxl"
+]
+
+# expose the data-prep CLI
+[project.scripts]
+bifsg-prepare-data = "bifsg.data_prep:main"
+
+[build-system]
+requires    = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# include everything under bifsg/data/
+include-package-data = true
