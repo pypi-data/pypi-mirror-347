@@ -1,0 +1,2 @@
+[console_scripts]
+mcp_MiaoControl_v2 = main:main
