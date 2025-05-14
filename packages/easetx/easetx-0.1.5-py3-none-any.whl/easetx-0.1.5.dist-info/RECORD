@@ -1,0 +1,13 @@
+easetx/__init__.py,sha256=lkrevfYSqdcSrzpAzs1QdadAfMKAk-V0arT-I5_mOw8,1028
+easetx/feature_extractor.py,sha256=AOB2IoI_dZAdVd8W1R7X0zCWlnG4WBWRN0NJbfZ4vgE,14285
+easetx/predictor_extractor.py,sha256=lpipBL9aYrGufPxVfUr2AD6wOIUHPujpWYV18DtfRMw,2828
+easetx/scorer.py,sha256=cNMaGO_XboHeBt0UTU645Xaxd7ZtsxAOU44MZb21TLc,3391
+easetx/text_comparison.py,sha256=xZEPJtq5eyjcU5GZUWg952s3ABQLSuAspCuoMjsQew0,7778
+easetx/text_set.py,sha256=rbTKB1Fv3NCeb_QziW1S4iY6Wzj7iSDygPu4F4eW52U,2373
+easetx/util_functions.py,sha256=aPR8bfJn9wWe7QtYKWrtXgrKiazwPFcSY9qoljODP4Y,9117
+easetx-0.1.5.data/scripts/download_nltk_data.py,sha256=IFUv7C8bKU4h_rDPYizh2NUB6ROBfsdnmK8zePiejPs,1683
+easetx-0.1.5.dist-info/licenses/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+easetx-0.1.5.dist-info/METADATA,sha256=QGHAJoeqb5K1Pxxvh7At4mZZ0KXkWsRVah3FZ2CYbDE,5204
+easetx-0.1.5.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+easetx-0.1.5.dist-info/top_level.txt,sha256=i68q6XkzPSqyp7WQtKCx_ac1Mj_aBcOLsIn47B46B7I,7
+easetx-0.1.5.dist-info/RECORD,,
