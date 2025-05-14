@@ -1,0 +1,11 @@
+propoptics-0.1.1.dist-info/METADATA,sha256=wnPwaVEX9bZUrRLLfz11C6c9naGakdlcyksVfO3NjEs,3554
+propoptics-0.1.1.dist-info/WHEEL,sha256=4qYHF3r3_wk9215EqUuzc4CZ76XfRcqOTn7Cv3gIg80,95
+propoptics-0.1.1.dist-info/entry_points.txt,sha256=ehM_3Jrj_0vqyDKWOqoJb2CyGSLckprL8NcKZvDotpo,53
+propoptics-0.1.1.dist-info/licenses/LICENSE,sha256=uPQpDAHFalwOz6M3PaEXr-Oye-o5sNN0g0ITU7V_G-0,1065
+propoptics/interface.py,sha256=74Z4FMi_aMSmQF12K_5RwU65ImCAamfulTAc3LIfazE,1616
+propoptics/math.py,sha256=f0QKiBvOQUQfxtEMhY89a-q-IEcAW_AxstOWufjVP0g,1335
+propoptics/_propoptics.py,sha256=bfMMlON7bGS2DgHuKNS6btNHLM9yWqnPP1PPMcmw9iI,20253
+propoptics/__init__.py,sha256=yVwHZJq8kqwpM_m7x5YzSidScR_e0zcpzx8GQwpzhpA,383
+propoptics/__main__.py,sha256=EKlStghO3St4QuOP-e_yTTZ0-2QH-AXmZtXC6uTn5JY,8472
+propoptics/_lib_propoptics.pyd,sha256=T3w-VBFi7GmFE0ceC6aTW2qZF4Agli0DErM21ngMGyM,1400832
+propoptics-0.1.1.dist-info/RECORD,,
