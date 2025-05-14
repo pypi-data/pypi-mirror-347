@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+semantic_embeddings.egg-info/PKG-INFO
+semantic_embeddings.egg-info/SOURCES.txt
+semantic_embeddings.egg-info/dependency_links.txt
+semantic_embeddings.egg-info/requires.txt
+semantic_embeddings.egg-info/top_level.txt
+sembeddings/__init__.py
+sembeddings/grace.py
+sembeddings/rade.py
+sembeddings/utils.py
+sembeddings/measures/__init__.py
+sembeddings/measures/correlation.py
+sembeddings/measures/qpp.py
