@@ -1,0 +1,14 @@
+tartex/__about__.py,sha256=3nSZvOIgT4lrsSuj8nSl9bhTG9ehxgXbqhxstdMNEuc,152
+tartex/__init__.py,sha256=ismgNykciwtBEXYIfMII1ElIvHQvMWtsw-u1qcBwmdI,107
+tartex/_completion.py,sha256=b2hujd38RH2gOc19WUoi7T7fAURqfKEtbGy4YKuvBEA,2376
+tartex/_latex.py,sha256=cHci6VPJN3QHqDSg4AApXUt-NRyUKeyakXlXG-qeTt0,3575
+tartex/_parse_args.py,sha256=oCupw2LGNS1Q9o7VWSb5xIoHRA-zdWG2qMoLvQsjAG8,10650
+tartex/tartex.py,sha256=BsRYbzbePmXDqH0ltA0Z6C0Vvd2ePx5t2bTlGdhqP90,19297
+tartex/data/tartex-completion.bash,sha256=rhhEowzidCLhyQpt94O1RifbukrXyGpTIih92A2lHrA,1010
+tartex/data/tartex-completion.fish,sha256=aIcVmBAPfvAXulDWl7-mHngnOBs2z-p9YGPRMkNdtsw,1867
+tartex/data/tartex-completion.zsh,sha256=-kX481JK5-ojamPuM5aWbHaEm_TOs2GLYZeqDW6I-zQ,3455
+tartex-0.6.0.dist-info/METADATA,sha256=wDXaQj8PsgBa3_NCHKlLLB-CoqImqkGHKGcvowo1V7M,6056
+tartex-0.6.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+tartex-0.6.0.dist-info/entry_points.txt,sha256=P5YFvRyLqCeRNPh6HEnEMcnEyRBnBq7KtdS9D0rkm_A,50
+tartex-0.6.0.dist-info/licenses/LICENSE.txt,sha256=1g1ZK-D_M2oueJ5o158U5EnxUbMJAzP9PXDFQNWxR6k,1099
+tartex-0.6.0.dist-info/RECORD,,
