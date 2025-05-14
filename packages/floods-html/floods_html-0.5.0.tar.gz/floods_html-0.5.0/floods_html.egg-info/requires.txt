@@ -1,0 +1,15 @@
+pydantic>=2
+pydantic-extra-types
+jinja2
+
+[dev]
+pytest
+html5lib
+ruff
+pre-commit
+jupyter
+
+[test]
+pytest
+html5lib
+ipython
