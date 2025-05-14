@@ -1,0 +1,9 @@
+ocrd_fork_pycocotools-2.0.8.dist-info/RECORD,,
+ocrd_fork_pycocotools-2.0.8.dist-info/WHEEL,sha256=sX3dGC8McXSVZQ9RExNRzHfkNrWjW0CEaKUiucd6VyU,114
+ocrd_fork_pycocotools-2.0.8.dist-info/top_level.txt,sha256=kySwJ77O9VF1E0aiCb621tEfHF9AUYDMhf2L7FYJnVM,12
+ocrd_fork_pycocotools-2.0.8.dist-info/METADATA,sha256=oUTKubkQUBHf8FgPqeri-ZJnxkjBzZfqlqbwEpWIGWQ,1342
+pycocotools/coco.py,sha256=B_KWZSg-64TeuUDn8oyqvAhj9SEInhB1FlubMmk6PxY,18968
+pycocotools/mask.py,sha256=TUeI-ZWXHJfFVI8L0ZlB9uwfqvXQ1_tuxIklb_hyxhc,4591
+pycocotools/_mask.cpython-312-darwin.so,sha256=Ax2UMVdL5_CILso0BsmM74-Y7nYfb-T-hZDbI-6hgr4,379152
+pycocotools/__init__.py,sha256=0C6R_hJbgubl8GQriX90OQlFBtBvMncbQNABcN646uE,21
+pycocotools/cocoeval.py,sha256=npe9abf3debmFd10Ypg7b0zKXPYIfUd7xtb4kVgIPhc,24326
