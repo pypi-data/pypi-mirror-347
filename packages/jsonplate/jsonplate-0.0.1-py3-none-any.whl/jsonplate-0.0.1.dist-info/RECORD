@@ -1,0 +1,11 @@
+jsonplate/__init__.py,sha256=rCMqWTtxSU9rNDH_GTPOmW9cfse4uUyiGE9xcRiq2y8,162
+jsonplate/errors.py,sha256=E0IdSq52rp8z2G5H5GH_OB1sEZ26uxYEE3GS_R-1IbY,171
+jsonplate/jsonplate.py,sha256=t69ziPBIWGdzu6KO9H6KPqHPeqMjmrVxxvGbfDQ91Yo,750
+jsonplate/lexer.py,sha256=VtuQdkb0jdH0w9LIhgBt-rBSUs7xpl_RoSUaMA2q4xM,3845
+jsonplate/parser.py,sha256=qf96nDOOzSWNdWY39kuBXBynFupElBCBY6WrDfXNazg,4896
+jsonplate/templater.py,sha256=mXVkWIrsR93vG5oNPn53IoRYqRT7JZWRCCV9VxlhNCo,2198
+jsonplate-0.0.1.dist-info/licenses/LICENSE,sha256=m01KuMS1AaMHD2c7rf0H9Dfqd1Q8XIvL4SkqGvOxOOE,913
+jsonplate-0.0.1.dist-info/METADATA,sha256=WRvBuOCLih_6z819Ziq06_wr934C6jTcfQ6ifhkQvIY,3112
+jsonplate-0.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+jsonplate-0.0.1.dist-info/top_level.txt,sha256=kep23OXbV7OmObnUQgLFgwhciqD6y5in1bwdfdRsYpQ,10
+jsonplate-0.0.1.dist-info/RECORD,,

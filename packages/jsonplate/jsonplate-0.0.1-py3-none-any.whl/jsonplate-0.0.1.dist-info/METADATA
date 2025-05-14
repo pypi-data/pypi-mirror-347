@@ -1,0 +1,112 @@
+Metadata-Version: 2.4
+Name: jsonplate
+Version: 0.0.1
+Summary: A Python package to parse JSON and JSON templates
+Author-email: Francisco Rodrigues <francisco.rodrigues0908@gmail.com>
+License: MIT No Attribution
+        
+        Copyright 2025 Francisco Rodrigues
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this
+        software and associated documentation files (the "Software"), to deal in the Software
+        without restriction, including without limitation the rights to use, copy, modify,
+        merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+        INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+        PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+        HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+        OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+        SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# jsonplate
+
+**jsonplate** is a lightweight, standards-compliant JSON templating engine for Python. It enables dynamic generation of JSON by allowing parameter substitution in values, keys, and strings.
+
+
+## 🔧 Features
+
+- ✅ **Spec-compliant JSON parser**
+- 🧩 **Parameter substitution** in:
+  - Object **keys**
+  - Object or array **values**
+  - String literals via `{{variable}}` syntax
+- 🧱 **Reusable templates** via `load_template`
+- 🔍 **Variable introspection** via `variable_names`
+- 🚫 **No logic blocks, loops, or control flow**
+
+
+## 📦 Installation
+
+Install via [PyPI](https://pypi.org/project/jsonplate/):
+
+```bash
+pip install jsonplate
+```
+
+## 🚀 Usage
+### Simple Usage
+
+```python
+import jsonplate
+
+template = '''
+{
+    "{{greeting_key}}": "Hello, {{name}}!",
+    "values": [1, 2, 3, param_value],
+    "config": {
+        "enabled": true,
+        param_key: 123
+    }
+}
+'''
+
+result = jsonplate.parse(
+    template,
+    greeting_key="message",
+    name="Alice",
+    param_value=42,
+    param_key="threshold"
+)
+
+print(result)
+```
+
+**Output:**
+
+```json
+{
+    "message": "Hello, Alice!",
+    "values": [1, 2, 3, 42],
+    "config": {
+        "enabled": true,
+        "threshold": 123
+    }
+}
+```
+
+### Reusable Templates
+You can parse once and render multiple times with different parameters:
+
+```python
+template = jsonplate.load_template('{"user": "{{name}}"}')
+
+template(name="Alice")  # {"user": "Alice"}
+template(name="Bob")    # {"user": "Bob"}
+```
+
+
+## ⚠️ Errors
+All parsing and templating errors inherit from the base `jsonplate.errors.JSONError` class.
+
+You may specifically catch:
+
+* `JSONTemplaterError`: raised when template substitution fails
+
+* `JSONParserError`: raised when a syntax violation is encountered
+
+* `JSONLexerError`: raised when tokenization fails
