@@ -1,0 +1,3 @@
+[console_scripts]
+quantum=qbquantum.__main__:main
+
