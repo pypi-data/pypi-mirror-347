@@ -1,0 +1,15 @@
+pypam/__init__.py,sha256=gMOsQPTBlMYoZ6ewjZUniO3MQUQsYV9Z2Afb1Pn6QDY,187
+pypam/_event.py,sha256=fb58MeX9uEw96s1qgV52xkKvCVNZ9ZJpTlJMmkCXO4Y,3713
+pypam/acoustic_file.py,sha256=seLTKQh7PYmxFF8Lovlwt4P1QUlvhUvGT8asm8yHwsE,44305
+pypam/acoustic_indices.py,sha256=HiSwQDgxk0hxmrYGg67v3B-JSS6Ite1_bmSnfboJuVg,7440
+pypam/acoustic_survey.py,sha256=4FejVK_uxxNAGRyYODCmRTyXsDD4icmgCV-2gErVNFw,24687
+pypam/dataset.py,sha256=SblLHC-eFSeaVz-2p_09ZiEkqf31TA4qI96G99pUUtY,13382
+pypam/detection.py,sha256=23zsjHPW0T9_xBrcinH9ng2SXQxzSd2xxpZ9dpL_17Y,3242
+pypam/plots.py,sha256=TV0aBfkUuOdhckbdaGXN5TYJrZVwqx8X2KZ_Fq6BUtQ,30255
+pypam/signal.py,sha256=Naiq3Fs4Qz9cV2FO_kV2oGMdbup8lkvWIQgMya0LsIQ,41896
+pypam/units.py,sha256=OLfomzE2ElAAh6NCMqqPeiaNai5KldLaLHtkoYIKGmU,1673
+pypam/utils.py,sha256=zhE9cG9KOUPKrvXJ-VE1V8lBZTAZuL93bR0uuh2w9WU,37412
+lifewatch_pypam-0.4.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+lifewatch_pypam-0.4.0.dist-info/METADATA,sha256=qBpIwprkAsIQgrwYcPlyW1IB1DMx-RNObCsDdIP8Dk0,6925
+lifewatch_pypam-0.4.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+lifewatch_pypam-0.4.0.dist-info/RECORD,,
