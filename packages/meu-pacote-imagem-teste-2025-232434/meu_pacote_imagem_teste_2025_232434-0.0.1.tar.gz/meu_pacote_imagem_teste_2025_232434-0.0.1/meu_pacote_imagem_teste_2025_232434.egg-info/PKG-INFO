@@ -1,0 +1,54 @@
+Metadata-Version: 2.4
+Name: meu-pacote-imagem-teste-2025-232434
+Version: 0.0.1
+Summary: Um pacote simples para processar imagens com Python
+Home-page: https://github.com/vixnzin/image-processing-package
+Author: Vicenzo
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image>=0.16.1
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# meu-pacote-imagem-teste-2025-232434
+
+DescriÃ§Ã£o.
+O pacote meu-pacote-imagem Ã© utilizado para:
+    Processamento:
+        - Ajuste de histograma
+        - Similaridade estrutural
+        - Redimensionar imagem
+    UtilitÃ¡rios:
+        - Ler imagem
+        - Salvar imagem
+        - Plotar imagem
+        - Plotar resultado
+        - Plotar histograma
+
+## InstalaÃ§Ã£o
+
+Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/)  para instalar o meu-pacote-imagem
+
+```bash
+pip install image_processing
+```
+
+## Uso
+
+```python
+from package_name.module1_name import file1_name
+file1_name.my_function()
+```
+
+## Autor
+Vicenzo Cirilo
+
+## LicenÃ§a
+[MIT](https://choosealicense.com/licenses/mit/)
