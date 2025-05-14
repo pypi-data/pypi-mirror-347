@@ -1,0 +1,12 @@
+fastsyftbox/__init__.py,sha256=QNUih3ixBNZ5z-2EGH2-vL5XluCLKzC9UxKjqsrnHR8,29
+fastsyftbox/cli.py,sha256=NHZIMOsKwLDMTyLgeZt16BUKopabgEu39uK2GI5hrM8,1723
+fastsyftbox/syftbox.py,sha256=FXGJLqWOzlYWQ4lEkuml2abKJ67bQUbds5eTZvhvOJ0,1427
+fastsyftbox/app_template/app.py,sha256=-rQ6RIclU9KB4JIKL495T0Y5U29YY5H5FTxndlBhBPw,262
+fastsyftbox/app_template/main.py,sha256=i_oxZSPKSBxXOZkr49rEmRl8NQJu92XRr349CsmaVdg,191
+fastsyftbox/app_template/requirements.txt,sha256=gONkdn8VoCCUVWJbeNBXZvD4IH79HV2aphQOWtgyRSI,11
+fastsyftbox/app_template/run.sh,sha256=l_zR-2RQJvLLDF2kgUc2ijbZ0LkmO4gG-uelHGi1tD8,251
+fastsyftbox-0.1.0.dist-info/METADATA,sha256=OyzNIofYudVwo68ps5G0w4qOEgiUCy_pB1C9lzFPU1w,364
+fastsyftbox-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fastsyftbox-0.1.0.dist-info/entry_points.txt,sha256=NZixB1KW8rWYVm8wjYOZ6nHAgHhTfdnPf5HFtlbLpBc,53
+fastsyftbox-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastsyftbox-0.1.0.dist-info/RECORD,,
