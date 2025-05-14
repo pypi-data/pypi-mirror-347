@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: caishen-sdk-python
+Version: 0.1.3
+Summary: The Caishen SDK gives every agent or user access to unlimited multi-chain crypto wallets
+Home-page: https://github.com/CaishenTech/caishen_sdk_python/
+Author: CaishenTech
+Author-email: hello@caishen.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: langchain-core
+Requires-Dist: openai
+Requires-Dist: pydantic (<3.0,>=1.10)
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+
+UNKNOWN
+
