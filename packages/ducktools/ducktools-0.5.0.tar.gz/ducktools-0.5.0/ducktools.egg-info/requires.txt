@@ -1,0 +1,7 @@
+ducktools-classbuilder
+ducktools-env
+ducktools-jsonkit
+ducktools-lazyimporter
+ducktools-pythonfinder
+ducktools-pytui
+ducktools-scriptmetadata
