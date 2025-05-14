@@ -1,0 +1,9 @@
+wagtail_oidc_provider/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+wagtail_oidc_provider/apps.py,sha256=WZRR17iA81LlCl2db96yL7KuLAZlmmTJpO5FPwk7TCw,208
+wagtail_oidc_provider/wagtail_hooks.py,sha256=KKB7NIIuXmnDeetu6_DCVsmaztUSBS6seD_66cH3pCQ,4158
+wagtail_oidc_provider/templates/wagtailadmin/wagtail_oidc_provider/panels/kid_panel.html,sha256=jQ3VWwEMz8Rr0SN-jp_hWskJdXYN9s-sTuAWAyBAJgg,24
+wagtail_oidc_provider-0.1.0.dist-info/licenses/LICENCE,sha256=56UTBx31jVhpbYapLi5W1BK7rIv74T6X872xXTsLKUc,1061
+wagtail_oidc_provider-0.1.0.dist-info/METADATA,sha256=1MtXVClvQ937ZD_eZUw6x6yqpcjzam1fwcYenXjdM0k,1134
+wagtail_oidc_provider-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+wagtail_oidc_provider-0.1.0.dist-info/top_level.txt,sha256=Jfj67lQ7mdY9aldK9eiakgW17Y3wHQOvPXXz4z4P4i0,22
+wagtail_oidc_provider-0.1.0.dist-info/RECORD,,
