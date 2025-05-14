@@ -1,0 +1,88 @@
+# Grid Defaults Template
+# This template defines default values for grid slides and their elements
+
+# Background color as a tuple (R, G, B) format
+bg_color = [245, 245, 250]  # Light blue-gray background
+
+# Reference PowerPoint file (optional)
+reference_pptx = "src/easypptx/reference_16x9.pptx"
+
+# Title element configuration
+[title]
+text = "Default Title"
+position = { x = "5%", y = "5%", width = "90%", height = "12%" }
+font = { name = "Arial", size = 32, bold = true }
+align = "left"  # Left alignment for all titles
+vertical = "middle"
+color = [30, 50, 100]  # Dark blue color
+padding = { top = "2%", left = "5%" }  # Title padding
+
+# Subtitle element configuration
+[subtitle]
+text = "Default Subtitle"
+position = { x = "5%", y = "18%", width = "90%", height = "8%" }
+font = { name = "Arial", size = 22, bold = false }
+align = "left"  # Left alignment for subtitles
+vertical = "middle"
+color = [60, 80, 120]  # Medium blue color
+
+# Footer element configuration
+[footer]
+text = "Created with EasyPPTX"
+position = { x = "5%", y = "90%", width = "90%", height = "5%" }
+font = { name = "Arial", size = 12, bold = false }
+align = "right"
+vertical = "middle"
+color = [100, 100, 120]  # Gray color for footer
+
+# Default method arguments
+[defaults]
+# Default arguments for grid slides
+[defaults.grid_slide]
+x = "5%"
+y = "5%"
+width = "90%"
+height = "85%"
+padding = 8.0
+title_height = "12%"
+subtitle_height = "8%"
+title_font_size = 32
+subtitle_font_size = 22
+title_align = "left"
+subtitle_align = "left"
+title_padding = "5%"
+title_x_padding = "5%"
+title_y_padding = "5%"
+content_padding = "5%"
+content_y_padding = "28%"  # Allow space for title + subtitle
+title_font_bold = true
+subtitle_font_bold = false
+title_vertical = "middle"
+subtitle_vertical = "middle"
+
+# Default arguments for text elements
+[defaults.text]
+font_name = "Arial"
+font_size = 16
+font_bold = false
+align = "left"
+vertical = "top"
+color = [40, 40, 45]  # Dark gray for regular text
+
+# Default arguments for image elements
+[defaults.image]
+maintain_aspect_ratio = true
+border = false
+shadow = false
+
+# Default arguments for shape elements
+[defaults.shape]
+fill_color = [230, 230, 240]
+line_color = [200, 200, 210]
+
+# Default arguments for table elements
+[defaults.table]
+header_style = { bg_color = [30, 50, 100], text_color = [255, 255, 255], font_bold = true }
+row_style = { bg_color = [240, 240, 245], text_color = [40, 40, 45] }
+font_size = 14
+border = true
