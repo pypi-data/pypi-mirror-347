@@ -1,0 +1,9 @@
+universal_mcp_google_drive/README.md,sha256=1AjvagTXNtjvLayTGW_3nrJ1ZDkWlujFqDpq0xVqHCk,4241
+universal_mcp_google_drive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+universal_mcp_google_drive/app.py,sha256=TgbRbLGVlesKsUIUqJOAma0v1g548KJK__qsz4tVQWo,255620
+universal_mcp_google_drive/mcp.py,sha256=D87P7Ga-jqKkcwyjo2J6vXWc8q5tYIDyJABf9Aido2A,506
+universal_mcp_google_drive-0.1.1.dist-info/METADATA,sha256=H-gmr4ivmb5Nzf6YQ2jsKILlhpHsj2C6o1b_PsUzzH4,3454
+universal_mcp_google_drive-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+universal_mcp_google_drive-0.1.1.dist-info/entry_points.txt,sha256=ktBTHLmiDj9F6CTI3O7wEyWasYhWdO7Z4FOJWM45SiY,79
+universal_mcp_google_drive-0.1.1.dist-info/licenses/LICENSE,sha256=NweDZVPslBAZFzlgByF158b85GR0f5_tLQgq1NS48To,1063
+universal_mcp_google_drive-0.1.1.dist-info/RECORD,,
