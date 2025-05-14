@@ -1,0 +1,40 @@
+name: Unittest
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "src/**"
+      - "test/**"
+  pull_request:
+    branches: [ main ]
+    paths:
+      - "src/**"
+      - "test/**"
+  workflow_dispatch:
+
+
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    environment: test_secrets  # <-- This line is required
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -e .
+
+      - name: Run test
+        env:
+          OPENMETER_API_KEY: ${{ vars.OPENMETER_API_KEY }}
+        timeout-minutes: 20
+        run: |
+          echo "Length of key: ${#OPENMETER_API_KEY}"
+          python3 test/run_suite.py
