@@ -1,0 +1,10 @@
+build>=0.7.0
+setuptools>=42
+packaging
+requests
+prometheus_client
+configargparse
+
+[test]
+setuptools>=60
+zest.releaser[recommended]
