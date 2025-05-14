@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: nexuslab-data-core
+Version: 0.0.1a1
+Summary: Nexus Lab Data helps data engineers to automatize their daily tasks.
+Author: Nexus Lab
+License: Apache
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+Requires-Dist: typing_extensions==4.13.2
+Requires-Dist: pyyaml==6.0.2
+Requires-Dist: click<9.0,>=8.1.7
+Requires-Dist: strenum==0.4.10
+Requires-Dist: pandas<3.0,>=2.1.3
+Requires-Dist: jinja2<4.0,>=3.1.3
+Requires-Dist: isodate<0.7,>=0.6.1
+Requires-Dist: pandas-stubs>=2.1.1.230928
+Requires-Dist: networkx<3.5,>=3.4.1
+Requires-Dist: networkx-stubs==0.0.1
+Requires-Dist: types-PyYAML>=6.0.12.20240917
+Requires-Dist: types-requests>=2.32.0.20241016
+Requires-Dist: types-python-dateutil>=2.9.0.20241206
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+# Nexus Lab - Data - Core Library
+## Python data engineering tool enabling standard behavior 
+
+This library provides standard structure for modeling data structure and handle.
+
+### Main Features
+  - Data Structure Cataloging
+  - Data Structure Templating
+  - Data Structure adaptation
+
+### Installation
+You can install with pip
+```python
+pip install --upgrade ...
+```
+
+### Dependencies
+- To be filled
+
+### Project status
+On going development
+
+
+### Local build
+
+```bash
+cd core
+rm -rf build dist *.egg-info
+python setup.py sdist bdist_wheel
+cd ..
+```
+
