@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+chess_analyzer/__init__.py
+chess_analyzer/server.py
+chess_game_review.egg-info/PKG-INFO
+chess_game_review.egg-info/SOURCES.txt
+chess_game_review.egg-info/dependency_links.txt
+chess_game_review.egg-info/entry_points.txt
+chess_game_review.egg-info/requires.txt
+chess_game_review.egg-info/top_level.txt

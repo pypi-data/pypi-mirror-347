@@ -1,0 +1,2 @@
+[console_scripts]
+chess-analyzer-server = chess_analyzer.server:main_cli
