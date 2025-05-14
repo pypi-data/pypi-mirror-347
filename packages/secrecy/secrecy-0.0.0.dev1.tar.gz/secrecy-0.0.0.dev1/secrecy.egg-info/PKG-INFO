@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: secrecy
+Version: 0.0.0.dev1
+Summary: Add your description here
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.2.0
+Requires-Dist: cryptography>=44.0.3
+Requires-Dist: python-dotenv>=1.1.0

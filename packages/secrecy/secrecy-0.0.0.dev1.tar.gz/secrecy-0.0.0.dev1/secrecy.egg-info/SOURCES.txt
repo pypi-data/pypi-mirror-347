@@ -1,0 +1,9 @@
+README.md
+cryptex.py
+pyproject.toml
+secrecy.egg-info/PKG-INFO
+secrecy.egg-info/SOURCES.txt
+secrecy.egg-info/dependency_links.txt
+secrecy.egg-info/entry_points.txt
+secrecy.egg-info/requires.txt
+secrecy.egg-info/top_level.txt
