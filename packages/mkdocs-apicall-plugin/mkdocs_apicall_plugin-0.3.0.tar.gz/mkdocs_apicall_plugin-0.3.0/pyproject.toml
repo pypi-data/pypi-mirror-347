@@ -1,0 +1,31 @@
+[project]
+name = "mkdocs-apicall-plugin"
+version = "0.3.0"
+description = "Auto-generate code samples to make API calls"
+authors = [
+    { name = "Alban Siffer", email = "31479857+asiffer@users.noreply.github.com" },
+]
+license = { text = "Apache-2.0" }
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "mkdocs>=1.4.2",
+    "mkdocs-material>=9.1.4",
+    "black>=24.3.0",
+    "Pygments>=2.14.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.2.2",
+    "coverage>=7.2.2",
+    "mkdocs-markdownextradata-plugin>=0.2.5",
+    "pre-commit>=3.7.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.entry-points."mkdocs.plugins"]
+apicall = "mkdocs_apicall_plugin.main:APICallPlugin"
