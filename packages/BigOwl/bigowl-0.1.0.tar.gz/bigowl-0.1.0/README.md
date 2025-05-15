@@ -1,0 +1,138 @@
+# BigOwl - Intelligent Time and Space Complexity Analyzer 🦉
+
+BigOwl is a Python library designed to analyze the time and space complexity of Python code. It provides tools to help developers understand the efficiency of their algorithms and data structures and suggests potential optimizations.
+
+![Version](https://img.shields.io/badge/version-0.1.0-blue)
+![Python](https://img.shields.io/badge/python-3.6+-green)
+![License](https://img.shields.io/badge/license-MIT-orange)
+
+## Features
+
+- **Time Complexity Analysis**: Analyze loops and recursive functions to estimate time complexity (O(n), O(n²), O(log n), etc.)
+- **Space Complexity Analysis**: Track memory allocation and analyze data structures to estimate space complexity
+- **Optimization Suggestions**: Get practical advice on how to improve your code's efficiency
+- **Code Parsing**: Utilize Python's `ast` and `tokenize` modules for robust code analysis
+- **Easy Integration**: Simple API for integrating with existing Python projects
+
+## Installation
+
+### Option 1: Install from PyPI (Recommended)
+
+```bash
+pip install BigOwl
+```
+
+### Option 2: Install from Source
+
+```bash
+git clone https://github.com/CrazAr374/BigOwl.git
+cd BigOwl
+pip install -e .
+```
+
+### Requirements
+
+- Python 3.6+
+- asttokens
+- networkx
+
+## Usage
+
+## Usage
+
+### Basic Example
+
+```python
+from bigowl import analyze
+
+code_str = """
+def example_function(n):
+    for i in range(n):
+        print(i)
+"""
+result = analyze(code_str)
+print(result)
+```
+
+Output:
+```python
+{
+    'Time Complexity': 'O(n)',
+    'Space Complexity': 'O(n)',
+    'Suggestions': []
+}
+```
+
+### Advanced Example: Nested Loops
+
+```python
+from bigowl import analyze
+
+code_str = """
+def find_pairs(arr):
+    pairs = []
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            pairs.append((arr[i], arr[j]))
+    return pairs
+"""
+
+result = analyze(code_str)
+print(result)
+```
+
+Output:
+```python
+{
+    'Time Complexity': 'O(n^2)',
+    'Space Complexity': 'O(n)',
+    'Suggestions': [
+        'Nested loops detected – consider optimizing using hashing or sets.',
+        'Using range(len(x)) - consider using enumerate() for cleaner and potentially more efficient code.'
+    ]
+}
+```
+
+### Advanced Example: Recursive Functions
+
+```python
+from bigowl import analyze
+
+code_str = """
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+"""
+
+result = analyze(code_str)
+print(result)
+```
+
+Output:
+```python
+{
+    'Time Complexity': 'O(2^n)',
+    'Space Complexity': 'O(n)',
+    'Suggestions': [
+        'Consider using memoization for recursive functions to avoid redundant calculations.'
+    ]
+}
+```
+
+## How It Works
+
+BigOwl analyzes your Python code in several steps:
+
+1. **AST Parsing**: Converts your code into an Abstract Syntax Tree
+2. **Pattern Recognition**: Identifies loops, recursions, and data structures
+3. **Complexity Analysis**: Uses rule-based analysis to determine Big O complexity
+4. **Optimization Suggestions**: Identifies patterns that could be optimized
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
