@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: rapid-kit
+Version: 0.1.4
+Summary: Real-time Audio-visual Platform for IoT Devices
+Home-page: https://tange.ai/
+Author: TANGE.AI
+Author-email: fengjun.dev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RAPID Kit
+
+Real-time Audio-visual Platform for IoT Devices.
+> 为物联网视觉设备提供一个高效的跨平台音视频解决方案。
+
+Go to [TIVS](https://tange-ai.feishu.cn/wiki/YGniwMYTSiM22lkLEWmcA8LbnGe) for more details.
+
+# 更新日志
+
+## 0.1.4
+2025-05-09
+* [新增] 首个发布版本
+
+## 0.1.3
+2025-04-03
+* [新增] 首个发布版本
+
