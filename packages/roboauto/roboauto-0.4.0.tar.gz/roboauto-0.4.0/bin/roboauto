@@ -1,0 +1,511 @@
+#!/usr/bin/env python3
+
+"""roboauto"""
+
+import sys
+import re
+import signal
+
+from roboauto.logger import print_out, print_err
+from roboauto.utils import \
+    global_setup, global_shutdown, state_set_command_type, \
+    list_configs, update_roboauto_options, invoice_amount_calculate_arg, \
+    print_config_directory, print_data_directory
+from roboauto.robot import \
+    robot_import, robot_print_token, robot_print_coordinator, \
+    waiting_queue_print, robot_change_dir_from_argv, robot_generate_argv, \
+    robot_claim_reward_argv, robot_update_stealth_invoice_option_argv
+from roboauto.order_local import order_info_dir, order_summary, robot_print_dir_argv
+from roboauto.order import \
+    create_order, cancel_order, recreate_order, list_order_fields, \
+    list_currencies, list_payment_methods, order_change_next_expire
+from roboauto.order_action import \
+    order_buyer_update_invoice_argv, order_seller_bond_escrow_argv, \
+    order_pause_toggle_argv, order_collaborative_cancel_argv, order_take_argv, \
+    order_send_confirm_argv, order_undo_confirm_argv, order_start_dispute_argv, \
+    order_rate_coordinator_argv, order_buyer_update_address_argv, \
+    order_submit_statement_argv
+from roboauto.chat import robot_send_chat_message_argv
+from roboauto.info import \
+    robosats_info, robot_info_argv, order_info_argv, robot_chat, \
+    list_historical, list_limits, list_price, list_ticks
+from roboauto.book import list_offers_per_hour_argv, list_offers_argv
+from roboauto.keep_online import keep_online
+
+
+VERSION = "0.4.0"
+
+INFO = """\
+roboauto [--config-dir config-dir] [--data-dir data-dir] action [options]
+
+print-config-directory
+print-data-directory
+list-configs
+list-currencies
+list-payment-methods [--fiat, --swap]
+list-order-fields
+invoice-amount-calculate [--budget-ppm=number] full-amount
+import-robot --{coordinator-name} [--pending, --paused, --inactive] [robot-name] [token]
+print-token robot-name
+print-coordinator robot-name
+list-active|list-pending|list-inactive|list-paused [--coordinator|--data]
+list-waiting-queue
+set-active robot-name
+set-pending|set-inactive|set-paused robot-name|--all
+order-info-dir --active|--pending|--paused|--inactive
+order-info-dir --dir directory
+order-summary --active|--pending|--paused|--inactive
+robosats-info --{coordinator-name}
+generate-robot --{coordinator-name} [--active, --pending, --inactive]
+robot-info robot-name
+robot-info --stdin|--stdin-base91 --{coordinator-name}|coordinator-url
+claim-reward robot-name [invoice]
+stealth-option robot-name true|false
+order-info [--local|--search] [--full] robot-name [order-id]
+chat-print [--local] robot-name
+message-send robot-name
+list-historical --{coordinator-name}
+list-limits --{coordinator-name}
+list-price --{coordinator-name}
+list-ticks --{coordinator-name} [start-date] [end-date]
+list-hours [--relative]
+list-offers [--until-success|--local] --{coordinators}|--all [--sell|--buy] [currency] [search]
+create-order [--no-bond|--no-node] [--no-active] robot-name [--from-robot robot-name] key=value...
+cancel-order robot-name
+recreate-order [--no-bond|--no-node] [--no-cancel] robot-name [--from-robot robot-name] key=value...
+change-order-expire [--print, --remove] robot-name [--from-robot robot-name] key=value...
+take-order [--fully|--no-node] robot-name order-id [take-amount]
+pause-toggle robot-name
+escrow-pay [--no-node] robot-name
+invoice-send robot-name [--budget-ppm=number] [invoice]
+address-send robot-name address sat-per-vb
+collaborative-cancel robot-name [--no-save-chat]
+confirm-send robot-name [--no-save-chat]
+confirm-undo robot-name
+dispute-start robot-name [--no-save-chat]
+statement-submit robot-name [statement | --file file-statement]
+rate-coordinator robot-name rating
+keep-online [--verbosity=number] [--no-sleep] [--no-initial-info]
+"""
+
+INFO_VERBOSE = """\
+roboauto [--config-dir config-dir] [--data-dir data-dir] action [options]
+
+-h|--help
+    print this help message
+--verbose-help
+    print long help message
+-v|--version
+    print roboauto version
+
+config-dir and data-dir can be the same directory
+
+print-config-directory
+    get the config directory
+
+print-data-directory
+    get the data directory
+
+list-configs
+    list configs
+
+list-currencies
+    list all currencies
+
+list-payment-methods [--fiat, --swap]
+    list all payment methods
+
+list-order-fields
+    list order fields for create-order and recreate-order
+
+invoice-amount-calculate [--budget-ppm=number] full-amount
+    calculate the amount of the invoice considering the budget-ppm
+    to be used with invoice-send without lightning node
+    budget-ppm can be specified otherwise default is used
+
+import-robot --{coordinator-name} [--pending, --paused, --inactive] [robot-name] [token]
+    import a robot, robot-name and token are required
+    if not passed as arguments roboauto will ask for them
+    by default the new robot is put in the active folder
+    so it will be considered when running keep-online
+    --inactive imports the robot in the inactive directory
+    --paused imports the robot in the paused directory
+
+print-token robot-name
+    print robot token
+
+print-coordinator robot-name
+    print robot coordinator and url
+
+list-active|list-pending|list-inactive|list-paused [--coordinator|--data]
+    list active|pending|inactive|paused robots one per line
+    if --coordinator is specified also print the coordinator name or every robot
+    if --data is specified print the coordinator name and the desription of the order
+
+list-waiting-queue
+    list waiting queue
+
+set-active robot-name
+    set a pending|inactive|paused robot active
+
+set-pending|set-inactive|set-paused robot-name|--all
+    set an active robot active|pending|inactive|paused
+    if --all, set all robot
+
+order-info-dir --active|--pending|--paused|--inactive
+order-info-dir --dir directory
+    print local info about all orders of a robot directory
+
+order-summary --active|--pending|--paused|--inactive
+    print local summary about all orders of a robot directory
+
+robosats-info --{coordinator-name}
+    get info about robosats
+
+generate-robot --{coordinator-name} [--active, --pending, --inactive]
+    generate a robot on coordinator by default in paused dir
+
+robot-info robot-name
+robot-info --stdin|--stdin-base91 --{coordinator-name}|coordinator-url
+    get info about a robot
+    if instead of robot-name --stdin or --stdin-base91 is passed
+    token is taken from stdin and coordinator is also required
+
+claim-reward robot-name [invoice]
+    claim reward for robot name
+    if invoice is specified use it instead of generating it
+    if lightning node is not set invoice will have to be provided
+
+stealth-option robot-name true|false
+    set stealth invoice option for robot-name
+
+order-info [--local|--search] [--full] robot-name [order-id]
+    get info about the order of a robot
+    if --full print all data
+    if --local print the order saved on disk
+    if --search make the robot request to get the last order-id
+    without getting it from disk
+    order-id can be specified for old orders
+
+chat-print [--local] robot-name
+    print messages of robot-name
+    if --local print from local, after having previously run without --local
+
+message-send robot-name [message]
+    send message from robot-name
+    if message starts with # do not encrypt it
+
+list-historical --{coordinator-name}
+    get historical exchange activity
+    lists each day's total contracts and
+    their volume in btc since inception
+
+list-limits --{coordinator-name}
+    get a list of order limits for every currency pair available
+
+list-price --{coordinator-name}
+    get the last market price for each currency
+
+list-ticks --{coordinator-name} [start-date] [end-date]
+    get all market ticks
+    returns a list of all the market ticks since inception
+    date formatted as DD-MM-YYYY
+
+list-hours [--relative]
+    list orders per hours of the day
+    if --relative is passed list orders per hours relative from current time
+
+list-offers [--until-success|--local] --{coordinators}|--all [--sell|--buy] [currency] [search]
+    list all [buy|sell] offers in the order book
+    multiple coordinators can be specified or --all
+    search is the string to be searched in the payment method
+    if --until-success retry coordinator book requests in case it fails,
+    otherwise offers from that book will not be shown
+    if --local get book responses from disk
+
+create-order [--no-bond|--no-node] [--no-active] robot-name [--from-robot robot-name] key=value...
+    create a new order
+    if --no-bond create order but do not bond
+    if --no-active do not set the robot to the active directory
+    if key=value... are not provided they will be asked
+    list of keys can be get with roboauto list-order-fields
+    payment_method can be provided multiple times
+    if public_duration, escrow_duration and bond_size are not specified,
+    default values from config.ini will be used
+    if --from-robot robot-name is provided, start from robot-name order-data
+    if --no-node print the invoice instead of paying it with the
+    lightning node
+
+cancel-order robot-name
+    cancel robot order just if order is public or paused
+
+recreate-order [--no-bond|--no-node] [--no-cancel] robot-name [--from-robot robot-name] key=value...
+    recreate robot order just if order is public or paused
+    if --no-bond create order but do not bond
+    if --no-cancel do not cancel the order, recreate is from
+    last saved order
+    the list of key=value... and --from-robot are the same as for create-order
+    and will overwrite the old order
+    payment_method can be provided multiple times
+    if --no-node print the invoice instead of paying it with the
+    lightning node
+
+change-order-expire [--print, --remove] robot-name [--from-robot robot-name] key=value...
+    change an order next time it is recreated after if has expired
+    while running keep-online
+    the list of key=value... and --from-robot are the same as for create-order
+    if --print prints the current changes if present
+    if --remove removes the current changes if present and prints it
+
+take-order [--fully|--no-node] robot-name order-id [take-amount]
+    make sure the order-id is of the same coordinator as your robot
+    if the order has a range specify take-amount
+    if --fully, also pay the escrow/send the invoice
+    if --no-node print the invoice instead of paying it with the
+    lightning node
+
+pause-toggle robot-name
+    toggle pause order in robosats
+
+escrow-pay [--no-node] robot-name
+    pay the escrow of a sell order
+    if --no-node print the invoice instead of paying it with the
+    lightning node
+
+invoice-send robot-name [--budget-ppm=number] [invoice]
+    send invoice of a buy order
+    budget-ppm can be specified otherwise default is used
+    if invoice is specified use it instead of generating it
+    if lightning node is not set invoice will have to be provided
+
+address-send robot-name address sat-per-vb
+    send the address for on chain payout, specifying sat per vbyte
+
+collaborative-cancel robot-name [--no-save-chat]
+    ask for a collaborative cancel or if the peer already asked for
+    it accept a collaborative cancel
+    can only be sent when waiting only for buyer invoice or
+    sending fiat in the chat
+    by default chat is saved before the action
+    --no-save-chat will not save the chat
+
+confirm-send robot-name [--no-save-chat]
+    send confirmation of payment send if buyer or
+    confirm payment arrived if seller
+    by default chat is saved before the action
+    --no-save-chat will not save the chat
+
+confirm-undo robot-name
+    undo confirmation of payment sent if buyer
+
+dispute-start robot-name [--no-save-chat]
+    start a dispute
+    by default chat is saved before the action
+    --no-save-chat will not save the chat
+
+statement-submit robot-name [statement | --file file-statement]
+    submit the dispute statement
+
+rate-coordinator robot-name rating
+    rate a coordinator for a successful order
+
+keep-online [--verbosity=number] [--no-sleep] [--no-initial-info]
+    keep the offers of the robots in the active directory online
+    if message-notification program is present, send a message when
+    something other than expirations happens to an offer
+    pending robots are moved to the pending directory
+    when the order is complete it is moved to the inactive directory
+    --verbosity can be 1 or 2
+    if --no-sleep never sleep between robot requests
+    useful when running with many robots
+    if --no-initial-info do not print current active and pending
+    robots at the start
+"""
+
+
+def main(argv):
+    """main function"""
+
+    signal.signal(signal.SIGPIPE, signal.SIG_DFL)
+
+    if len(argv) < 1:
+        print_err("insert parameters")
+        return False
+
+    config_dir = None
+    data_dir = None
+    while len(argv) > 0:
+        option = argv[0]
+        if option in ("-h", "--help"):
+            print_out(INFO, end="")
+            return True
+        elif option == "--verbose-help":
+            print_out(INFO_VERBOSE, end="")
+            return True
+        elif option in ("-v", "--version"):
+            print_out(VERSION)
+            return True
+        elif option == "--config-dir":
+            argv = argv[1:]
+            if len(argv) < 1:
+                print_err("insert config-dir")
+                return False
+            config_dir = argv[0]
+            argv = argv[1:]
+        elif option == "--data-dir":
+            argv = argv[1:]
+            if len(argv) < 1:
+                print_err("insert data-dir")
+                return False
+            data_dir = argv[0]
+            argv = argv[1:]
+        elif re.match('^-', option) is not None:
+            print_err("option " + option + " not recognized")
+            return False
+        else:
+            break
+
+    if len(argv) < 1:
+        print_err("insert action")
+        return False
+    action = argv[0]
+    argv = argv[1:]
+
+    if global_setup(config_dir=config_dir, data_dir=data_dir) is False:
+        return False
+
+    return_status = None
+
+    try:
+        if update_roboauto_options() is False:
+            print_err("reading the config file")
+            return False
+
+        if action == "print-config-directory":
+            return_status = print_config_directory()
+        elif action == "print-data-directory":
+            return_status = print_data_directory()
+        elif action == "list-configs":
+            return_status = list_configs()
+        elif action == "list-currencies":
+            return_status = list_currencies()
+        elif action == "list-payment-methods":
+            return_status = list_payment_methods(argv)
+        elif action == "list-order-fields":
+            return_status = list_order_fields()
+        elif action == "invoice-amount-calculate":
+            return_status = invoice_amount_calculate_arg(argv)
+        elif action == "import-robot":
+            return_status = robot_import(argv)
+        elif action == "print-token":
+            return_status = robot_print_token(argv)
+        elif action == "print-coordinator":
+            return_status = robot_print_coordinator(argv)
+        elif action == "list-active":
+            return_status = robot_print_dir_argv("active", argv)
+        elif action == "list-pending":
+            return_status = robot_print_dir_argv("pending", argv)
+        elif action == "list-inactive":
+            return_status = robot_print_dir_argv("inactive", argv)
+        elif action == "list-paused":
+            return_status = robot_print_dir_argv("paused", argv)
+        elif action == "list-waiting-queue":
+            return_status = waiting_queue_print()
+        elif action == "set-active":
+            return_status = robot_change_dir_from_argv("active", argv)
+        elif action == "set-pending":
+            return_status = robot_change_dir_from_argv("pending", argv)
+        elif action == "set-inactive":
+            return_status = robot_change_dir_from_argv("inactive", argv)
+        elif action == "set-paused":
+            return_status = robot_change_dir_from_argv("paused", argv)
+        elif action == "order-info-dir":
+            return_status = order_info_dir(argv)
+        elif action == "order-summary":
+            return_status = order_summary(argv)
+
+        state_set_command_type("action")
+
+        if action == "robosats-info":
+            return_status = robosats_info(argv)
+        elif action == "generate-robot":
+            return_status = robot_generate_argv(argv)
+        elif action == "robot-info":
+            return_status = robot_info_argv(argv)
+        elif action == "claim-reward":
+            return_status = robot_claim_reward_argv(argv)
+        elif action == "stealth-option":
+            return_status = robot_update_stealth_invoice_option_argv(argv)
+        elif action == "order-info":
+            return_status = order_info_argv(argv)
+        elif action == "chat-print":
+            return_status = robot_chat(argv)
+        elif action == "message-send":
+            return_status = robot_send_chat_message_argv(argv)
+        elif action == "list-historical":
+            return_status = list_historical(argv)
+        elif action == "list-limits":
+            return_status = list_limits(argv)
+        elif action == "list-price":
+            return_status = list_price(argv)
+        elif action == "list-ticks":
+            return_status = list_ticks(argv)
+        elif action == "list-hours":
+            return_status = list_offers_per_hour_argv(argv)
+        elif action == "list-offers":
+            return_status = list_offers_argv(argv)
+        elif action == "create-order":
+            return_status = create_order(argv)
+        elif action == "cancel-order":
+            return_status = cancel_order(argv)
+        elif action == "recreate-order":
+            return_status = recreate_order(argv)
+        elif action == "change-order-expire":
+            return_status = order_change_next_expire(argv)
+        elif action == "take-order":
+            return_status = order_take_argv(argv)
+        elif action == "pause-toggle":
+            return_status = order_pause_toggle_argv(argv)
+        elif action == "escrow-pay":
+            return_status = order_seller_bond_escrow_argv(argv)
+        elif action == "invoice-send":
+            return_status = order_buyer_update_invoice_argv(argv)
+        elif action == "address-send":
+            return_status = order_buyer_update_address_argv(argv)
+        elif action == "collaborative-cancel":
+            return_status = order_collaborative_cancel_argv(argv)
+        elif action == "confirm-send":
+            return_status = order_send_confirm_argv(argv)
+        elif action == "confirm-undo":
+            return_status = order_undo_confirm_argv(argv)
+        elif action == "dispute-start":
+            return_status = order_start_dispute_argv(argv)
+        elif action == "statement-submit":
+            return_status = order_submit_statement_argv(argv)
+        elif action == "rate-coordinator":
+            return_status = order_rate_coordinator_argv(argv)
+
+        state_set_command_type("keep-online")
+
+        if action == "keep-online":
+            return_status = keep_online(argv)
+
+        state_set_command_type("info")
+
+        if return_status is None:
+            print_err("action " + action + " not recognized")
+            return False
+    except KeyboardInterrupt:
+        print_out("\n", end="", date=False)
+        return_status = False
+    finally:
+        global_shutdown()
+
+    return return_status
+
+
+if __name__ == "__main__":
+    if main(sys.argv[1:]) is True:
+        sys.exit(0)
+    else:
+        sys.exit(1)
