@@ -1,0 +1,10 @@
+formal_languages/__init__.py,sha256=CRWFgv_FlRcIc7lF-TfrQ-xfhSeIXKzEBry1XjFIgBI,339
+formal_languages/grammar.py,sha256=mfIs-CbsSuSVoFHe7ZV-fpBvORTnuxxH1kZ0tWjppEE,2712
+formal_languages/minimizer.py,sha256=NNUz1EA22IH0Ku8Jnbc6YrvvYf5yu8R8-SAxJL9gRlI,2628
+formal_languages/turing.py,sha256=FhMBlVqVMjbyzuSVHJDJuuAdhT12WX2tOAmcuz5IZrI,1806
+formal_languages/utils.py,sha256=6f-KOmPkkvXMe2-psYL5ktInvku3-sDbP3lOvAzCG6k,1659
+formal_languages_tools_asemahmed-0.1.0.dist-info/licenses/LICENSE,sha256=_VUb7dp4-S6mG-S2WugRPv34NoHD61kwkDV3eTpw394,1104
+formal_languages_tools_asemahmed-0.1.0.dist-info/METADATA,sha256=SLxDBBAMLWhKLWVga3U_4Kw6kcr6FV1Ky7VMj0kYGtg,287
+formal_languages_tools_asemahmed-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+formal_languages_tools_asemahmed-0.1.0.dist-info/top_level.txt,sha256=SctFLeriL0dzGthwBvmzstpBr9_FLulBMPYj7R0QPLM,17
+formal_languages_tools_asemahmed-0.1.0.dist-info/RECORD,,
