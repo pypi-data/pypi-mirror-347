@@ -1,0 +1,2 @@
+[console_scripts]
+tlalocesmcp = tlalocesmcp.__main__:main
