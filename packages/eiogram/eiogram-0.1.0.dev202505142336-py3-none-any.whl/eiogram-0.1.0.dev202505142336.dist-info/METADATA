@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: eiogram
+Version: 0.1.0.dev202505142336
+Summary: A Python library for
+Author-email: Erfan <erfjab@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/erfjab/eiogram
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.8.0
+Dynamic: license-file
+
+# eiogram
