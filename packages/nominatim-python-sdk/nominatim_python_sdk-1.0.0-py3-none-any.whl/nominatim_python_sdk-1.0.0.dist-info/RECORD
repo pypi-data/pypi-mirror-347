@@ -1,0 +1,12 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nominatim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nominatim/api.py,sha256=vDIukewuFA0Sbr9gpQ-J2reZ9zZGYNN-IewDTUSnv6A,518
+nominatim/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nominatim/apis/reverse_geocoding.py,sha256=4ETcUc-pf5Au8CgYF_J1eMNQ89IHEK6ufaHk6NVj108,1127
+nominatim/dtos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nominatim/dtos/geocoder.py,sha256=KPJ3fC5-ttSuCqDzX48g7X7-d9Wlv6fP-wpTM-VW8vE,633
+nominatim_python_sdk-1.0.0.dist-info/licenses/LICENSE,sha256=YZjQnFjzXGFa0D3iCQkNDwGBNuTGJREkRmItGX1B3YM,122
+nominatim_python_sdk-1.0.0.dist-info/METADATA,sha256=Nods5GNQ3OdQuooU4jDrQtS-FubyAr21LYWUN79c77w,778
+nominatim_python_sdk-1.0.0.dist-info/WHEEL,sha256=QZxptf4Y1BKFRCEDxD4h2V0mBFQOVFLFEpvxHmIs52A,91
+nominatim_python_sdk-1.0.0.dist-info/top_level.txt,sha256=KXeJY3PZnmKagbLoFGuLaSh3VwFnXJxZmtwWdxcJGXk,19
+nominatim_python_sdk-1.0.0.dist-info/RECORD,,
