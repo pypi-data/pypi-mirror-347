@@ -1,0 +1,38 @@
+#!python
+
+import argparse
+import sys
+from snp2str.process import process_files
+
+def main():
+    parser = argparse.ArgumentParser(description='Convert SNP genotype data to STRUCTURE format')
+    parser.add_argument('ped_path', type=str, help='Path to the .ped file')
+    parser.add_argument('pop_path', type=str, nargs='?', default=None, 
+                        help='Path to the population file (optional)')
+    parser.add_argument('map_path', type=str, nargs='?', default=None,
+                        help='Path to the .map file (optional)')
+    parser.add_argument('--output', '-o', type=str, default='output.txt',
+                        help='Path for the output file (default: output.txt)')
+    parser.add_argument('--skip-output-header', action='store_false', dest='add_header',
+                        help='Skip header in output file')
+    parser.add_argument('--skip-input-header', action='store_true',
+                        help='Skip first line in input PED file')
+    
+    args = parser.parse_args()
+    
+    try:
+        process_files(
+            ped_path=args.ped_path,
+            pop_path=args.pop_path,
+            map_path=args.map_path,
+            add_header=args.add_header,
+            output_path=args.output,
+            skip_input_header=args.skip_input_header
+        )
+        return 0
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        return 1
+
+if __name__ == '__main__':
+    sys.exit(main())
