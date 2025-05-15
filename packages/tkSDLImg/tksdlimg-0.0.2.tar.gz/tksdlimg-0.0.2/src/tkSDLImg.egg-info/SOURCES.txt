@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/tkSDLImg.py
+src/tkSDLImg.egg-info/PKG-INFO
+src/tkSDLImg.egg-info/SOURCES.txt
+src/tkSDLImg.egg-info/dependency_links.txt
+src/tkSDLImg.egg-info/requires.txt
+src/tkSDLImg.egg-info/top_level.txt
+tests/test_tkSDLImg.py
