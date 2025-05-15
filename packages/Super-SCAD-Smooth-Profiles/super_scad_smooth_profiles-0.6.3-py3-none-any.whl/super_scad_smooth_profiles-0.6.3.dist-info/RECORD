@@ -1,0 +1,12 @@
+super_scad_smooth_profiles/Chamfer.py,sha256=G_-vKc7PNjEQahIu7uRcGur5sUHN8OYA3D6l3R5DH0A,10661
+super_scad_smooth_profiles/ExteriorChamferWidget.py,sha256=mw_Hm6uVtZVKeeVkretuvbi_lNC4j1fKmz8B3EfOIm4,6292
+super_scad_smooth_profiles/ExteriorFilletWidget.py,sha256=9XGbDUkEimmLnkYIu1hw8DnsU0jutruofjSBRTDtq34,7317
+super_scad_smooth_profiles/Fillet.py,sha256=8UkL9v12GorhA9IlW_Hz5_vOQgvWBh_us8bWy7TyF3c,13812
+super_scad_smooth_profiles/InteriorChamferWidget.py,sha256=Mz-oX3vElC1JdNqhgTScvIooROkObysI7eQFnx0-4lI,5023
+super_scad_smooth_profiles/InteriorFilletWidget.py,sha256=RwEzns89HMVCwFi-pxLobGfInXXZTu-AtGU-7dFEzck,4771
+super_scad_smooth_profiles/Lollipop.py,sha256=4IzAh6evvEibpMsyTjcx3zJHLe26NNchb5AXZq11BH4,2078
+super_scad_smooth_profiles/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+super_scad_smooth_profiles-0.6.3.dist-info/LICENSE,sha256=eWt4nn_NG2xiCWkQTVlUU9wL8saCAq8F7OJT6CrBS-g,1066
+super_scad_smooth_profiles-0.6.3.dist-info/METADATA,sha256=NFEFcvNJVh00zBEYG49Auvr88QTUX1ylT99RY3nsH5o,2169
+super_scad_smooth_profiles-0.6.3.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+super_scad_smooth_profiles-0.6.3.dist-info/RECORD,,
