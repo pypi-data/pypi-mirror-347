@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+qnstr_optimizer/__init__.py
+qnstr_optimizer/core.py
+qnstr_optimizer/optimizer.py
+qnstr_optimizer.egg-info/PKG-INFO
+qnstr_optimizer.egg-info/SOURCES.txt
+qnstr_optimizer.egg-info/dependency_links.txt
+qnstr_optimizer.egg-info/requires.txt
+qnstr_optimizer.egg-info/top_level.txt
+tests/test_qnstr.py
