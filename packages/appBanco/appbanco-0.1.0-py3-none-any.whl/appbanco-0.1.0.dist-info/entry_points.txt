@@ -1,0 +1,2 @@
+[console_scripts]
+appBanco = appBanco.main:main
