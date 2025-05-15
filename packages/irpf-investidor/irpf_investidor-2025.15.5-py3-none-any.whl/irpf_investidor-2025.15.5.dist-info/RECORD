@@ -1,0 +1,13 @@
+irpf_investidor/__init__.py,sha256=3mqatXxGoGfllZy3kvWqL0M7WnVz0phtxDYUHXHCZ8s,23
+irpf_investidor/__main__.py,sha256=RhDlWB_dyHemio5HleqGRIgMC3aVbA53EWHaY-XpKk8,1430
+irpf_investidor/b3.py,sha256=IGI0-VmzeH41ktsx9zSPAfhs62-a0VOw60s1iYCh1c8,26416
+irpf_investidor/formatting.py,sha256=oBryUdnq0oi1N6bou4r56L8GYH1-RY4UUOXVwXCR8xA,1187
+irpf_investidor/prompt.py,sha256=1WLMAgEhyHBbQjfx18I3QAih5QOwu2g7dlFmMVDVi1c,1003
+irpf_investidor/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irpf_investidor/report_reader.py,sha256=1mhYvPWqmgpFtyB1SJLgPF7X5lJOyQqbAjcwDVSCA_0,9201
+irpf_investidor/responses.py,sha256=VY9WB86NOiHt3TDWIekGVR8kUtvCEPIto9zX4SuPGpA,1478
+irpf_investidor-2025.15.5.dist-info/LICENSE,sha256=L_b-t8WLWMH0g1CQ-Ou4If16YIwC6LdfhMmqaqn76uw,1056
+irpf_investidor-2025.15.5.dist-info/METADATA,sha256=BXUY4y5zpLaR0V4vyG-1UKEyb8oPPOQA3KiK29tmtaY,5568
+irpf_investidor-2025.15.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+irpf_investidor-2025.15.5.dist-info/entry_points.txt,sha256=uBkwNivJLhlW_RG3Q9ZayOS57po9ndFA7XcofY0eXdQ,65
+irpf_investidor-2025.15.5.dist-info/RECORD,,
