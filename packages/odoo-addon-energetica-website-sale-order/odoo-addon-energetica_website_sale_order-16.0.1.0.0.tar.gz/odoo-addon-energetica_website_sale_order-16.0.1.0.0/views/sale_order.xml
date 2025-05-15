@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>    
+    <record id="view_order_form" model="ir.ui.view">
+        <field name="name">sale.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <page name="other_information" position="after">
+                <page string="Contract Info" name="contract_info">
+                    <group>
+                        <group string="Service Info" name="service_info">
+                            <field name="service_address"/>
+                            <field name="service_state_id"/>
+                            <field name="service_city"/>
+                            <field name="service_zip_code"/>
+                        </group>
+                        <group string="Invoice Info" name="invoice_info">
+                            <field name="invoice_address"/>
+                            <field name="invoice_state_id"/>
+                            <field name="invoice_city"/>
+                            <field name="invoice_zip_code"/>
+                        </group>
+                        <group string="Service point data" name="service_point_data">
+                            <field name="is_home"/>
+                            <field name="cnae"/>
+                            <field name="cadastral_reference"/>
+                            <field name="statement" />
+                        </group>
+                        <group string="Power info" name="power_info">
+                            <field name="current_power"/>
+                        </group>
+                        <group string="Tariff info" name="tariff_info">
+                            <field name="tariff"/>
+                        </group>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+</odoo>

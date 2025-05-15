@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+SPDX-FileCopyrightText: 2017 Open Architects Consulting SPRL
+SPDX-FileCopyrightText: 2018 Coop IT Easy SC
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+<odoo>
+
+    <record id="menu_contract" model="website.menu">
+        <field name="name">Contract Application</field>
+        <field name="url">/contract-application</field>
+        <field name="parent_id" ref="website.main_menu" />
+        <field name="sequence" type="int">65</field>
+    </record>
+
+    <template id="service_address_template" name="service_address_template">
+        <h4>Service Address</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3 field-service_address" name="service_address_container">
+                    <label for="service_address" class="form-label">Address</label>
+                    <input
+                        t-attf-class="form-control form-control-sm{{ error and 'service_address' in error and ' is-invalid' or '' }}"
+                        type="text"
+                        name="service_address"
+                        id="service_address"
+                        required="true"
+                        t-att-value="service_address"
+                    />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3 field-service_state" name="service_state_container">
+                    <label for="service_state_id" class="form-label">Province</label>
+                    <select
+                        t-attf-class="form-select form-select-sm{{ error and 'service_state_id' in error and ' is-invalid' or '' }}"
+                        id="service_state_id"
+                        name="service_state_id"
+                        required="true"
+                    >
+                        <option value=""/>
+                        <t t-foreach="service_states or []" t-as="service_state">
+                            <option t-att-value="service_state.id">
+                                <t t-out="service_state.name" />
+                            </option>
+                        </t>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3 field-service_city" name="service_city_container">
+                    <label for="service_city" class="form-label">City</label>
+                    <input
+                        t-attf-class="form-control form-control-sm{{ error and 'service_city' in error and ' is-invalid' or '' }}"
+                        id="service_city"
+                        type="text"
+                        name="service_city"
+                        required="true"
+                        t-att-value="service_city"
+                    />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3 field-service_zip_code" name="service_zip_code_container">
+                    <label for="service_zip_code" class="form-label">Zip / Postal Code</label>
+                    <input
+                        t-attf-class="form-control form-control-sm{{ error and 'service_zip_code' in error and ' is-invalid' or '' }}"
+                        id="service_zip_code"
+                        type="text"
+                        name="service_zip_code"
+                        required="true"
+                        t-att-value="service_zip_code"
+                    />
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="invoice_address_template" name="invoice_address_template">
+        <h4>Invoice Address</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3 field-invoice_address" name="invoice_address_container">
+                    <label for="invoice_address" class="form-label">Address</label>
+                    <input
+                        t-attf-class="form-control form-control-sm{{ error and 'invoice_address' in error and ' is-invalid' or '' }}"
+                        type="text"
+                        name="invoice_address"
+                        id="invoice_address"
+                        required="true"
+                        t-att-value="invoice_address"
+                    />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3 field-invoice_state" name="invoice_state_container">
+                    <label for="invoice_state_id" class="form-label">Province</label>
+                    <select
+                        t-attf-class="form-select form-select-sm{{ error and 'invoice_state_id' in error and ' is-invalid' or '' }}"
+                        id="invoice_state_id"
+                        name="invoice_state_id"
+                        required="true"
+                    >
+                        <option value=""/>
+                        <t t-foreach="invoice_states or []" t-as="invoice_state">
+                            <option t-att-value="invoice_state.id">
+                                <t t-out="invoice_state.name" />
+                            </option>
+                        </t>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3 field-invoice_city" name="invoice_city_container">
+                    <label for="invoice_city" class="form-label">City</label>
+                    <input
+                        t-attf-class="form-control form-control-sm{{ error and 'invoice_city' in error and ' is-invalid' or '' }}"
+                        id="invoice_city"
+                        type="text"
+                        name="invoice_city"
+                        required="true"
+                        t-att-value="invoice_city"
+                    />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3 field-invoice_zip_code" name="invoice_zip_code_container">
+                    <label for="invoice_zip_code" class="form-label">Zip / Postal Code</label>
+                    <input
+                        t-attf-class="form-control form-control-sm{{ error and 'invoice_zip_code' in error and ' is-invalid' or '' }}"
+                        id="invoice_zip_code"
+                        type="text"
+                        name="invoice_zip_code"
+                        required="true"
+                        t-att-value="invoice_zip_code"
+                    />
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="service_point_template" name="service_point_template">
+        <h4>Service point data</h4>
+        <div class="row">
+            <div class="mb-3" name="is_home_container">
+                <label>
+                    <input
+                        type="checkbox"
+                        t-att-value="is_home"
+                        checked="checked"
+                        name="is_home"
+                    />
+                    Is it a home?
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3 field-cnae" name="cnae_container">
+                    <label for="cnae" class="form-label">CNAE</label>
+                    <input
+                        t-attf-class="form-control form-control-sm{{ error and 'cnae' in error and ' is-invalid' or '' }}"
+                        id="cnae"
+                        type="text"
+                        name="cnae"
+                        required="true"
+                        t-att-value="cnae"
+                    />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3 field-cadastral_reference" name="cadastral_reference_container">
+                    <label for="cadastral_reference" class="form-label">Cadastral Reference</label>
+                    <input
+                        t-attf-class="form-control form-control-sm{{ error and 'cadastral_reference' in error and ' is-invalid' or '' }}"
+                        id="cadastral_reference"
+                        type="text"
+                        name="cadastral_reference"
+                        required="true"
+                        t-att-value="cadastral_reference"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 field-file" name="latest_invoice_container">
+                <label for="latest_invoice" class="form-label">Latest Invoice</label>
+                <div class="col-md-7 col-sm-8">
+                    <input
+                        type="file"
+                        t-attf-class="form-control form-control-sm{{ error and 'latest_invoice' in error and ' is-invalid' or '' }}"
+                        name="latest_invoice"
+                        t-att-value="latest_invoice"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3" name="statement_container">
+                <label>
+                    <input
+                        type="checkbox"
+                        t-att-value="statement"
+                        checked="checked"
+                        name="statement"
+                    />
+                    Titularity statement
+                </label>
+            </div>
+        </div>
+    </template>
+
+    <template id="power_template" name="power_template">
+        <h4>Power</h4>
+        <div class="row">
+            <div class="mb-3 field-current_power" name="current_power_container">
+                <label for="current_power" class="form-label">Current Power</label>
+                <input
+                    t-attf-class="form-control form-control-sm{{ error and 'current_power' in error and ' is-invalid' or '' }}"
+                    id="current_power"
+                    type="text"
+                    name="current_power"
+                    required="true"
+                    t-att-value="current_power"
+                />
+            </div>
+        </div>
+    </template>
+
+    <template id="tariff_template" name="tariff_template">
+        <h4>Tariff</h4>
+        <div class="row">
+            <div class="mb-3 field-tariff" name="tariff_container">
+                <span>
+                    Explain tariffs
+                </span>
+                <select class="form-select" name="tariff" id="tariff">
+                    <option value="periodic">Periodic Tariff</option>
+                    <option value="indexed">Indexed Tariff</option>
+                </select>
+            </div>
+        </div>
+    </template>
+
+    <template id="error_message_template" name="error_message_template">
+        <p style="color:red;">
+            <t t-out="error_msg" />
+        </p>
+    </template>
+
+    <template id="csrf_template" name="csrf_template">
+        <div name="csrf_token_container">
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+        </div>
+    </template>
+
+    <template id="main_form_template" name="main_form_template">
+        <div id="wrap" class="o_portal_wrap">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xs-12 col-sm-10  col-md-8 col-lg-6">
+                        <h1 class="mt-4 text-center" t-out="title" />
+                            <form
+                                action="/contract-application-created"
+                                method="post"
+                                class="form-horizontal mt32"
+                                enctype="multipart/form-data"
+                            >
+                                <t t-call="energetica_website_sale_order.service_address_template" />
+                                <t t-call="energetica_website_sale_order.invoice_address_template" />
+                                <t t-call="energetica_website_sale_order.service_point_template" />
+                                <t t-call="energetica_website_sale_order.power_template" />
+                                <t t-call="energetica_website_sale_order.tariff_template" />
+                                <t t-call="energetica_website_sale_order.error_message_template" />
+                                <t t-call="energetica_website_sale_order.csrf_template" />
+                            <t t-out="0" />
+                            <div class="mt-3 mb-3 text-center">
+                                <button class="btn btn-primary">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="contract_template" name="contract_template">
+        <t name="Contract" t-name="contract">
+            <t t-call="website.layout">
+                <t t-call="energetica_website_sale_order.main_form_template">
+                    <t t-set="title">Contract Application</t>
+                </t>
+                <input t-if='website.plausible_shared_key' type='hidden' class='js_plausible_push' data-event-name='Lead Generation' data-event-params='{"CTA": "Contact Us"}' />
+            </t>
+        </t>
+    </template>
+
+    <template
+        id="energetica_thanks"
+        name="Thanks (Energetica)"
+        inherit_id="website.contactus_thanks_ir_ui_view"
+        primary="True"
+        priority="100"
+    >
+        <xpath expr="/t[@t-name='website.contactus_thanks']" position="attributes">
+            <attribute name="name">Thanks (Energetica)</attribute>
+        </xpath>
+        <xpath
+            expr="//div[@id='wrap']/section/div/div/div[1]/h5/span[2]"
+            position="replace"
+        >
+            <span>Your contract application has been <b>successfully</b> registered.</span>
+        </xpath>
+    </template>
+
+</odoo>
