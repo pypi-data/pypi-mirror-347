@@ -1,0 +1,6 @@
+README.md
+setup.py
+bytedance_newton.egg-info/PKG-INFO
+bytedance_newton.egg-info/SOURCES.txt
+bytedance_newton.egg-info/dependency_links.txt
+bytedance_newton.egg-info/top_level.txt
