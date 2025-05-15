@@ -1,0 +1,30 @@
+[project]
+name = "str2td"
+dynamic = ["version"]
+description = "Easily convert from short, human readable, and easy to input strings to timedeltas and datetimes"
+readme = "README.md"
+authors = [
+    { name = "anamoyee" }
+]
+requires-python = ">=3.12"
+dependencies = [
+	"lark>=1.2.2",
+]
+
+[project.urls]
+"Documentation" = "https://xkcd.com/730/" # :trollface:
+"Source (GitHub)" = "https://github.com/anamoyee/str2td"
+
+[tool.uv]
+dev-dependencies = [
+	"rich>=14.0.0",
+	"pytest>=8.3.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/str2td/_version.py"
+pattern = '__version__(?:: str)? *= *\"(?P<version>[^\"]+)\"'
