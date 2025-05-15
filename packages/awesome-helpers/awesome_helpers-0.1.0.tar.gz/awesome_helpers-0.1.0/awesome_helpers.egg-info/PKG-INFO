@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: awesome_helpers
+Version: 0.1.0
+Summary: A simple hello world package.
+Author-email: Sheetala <spsoni.se@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+Dynamic: requires-python
+
+# mypackage
+
+A sample Python package.
+
+## Usage
+
+```python
+from mypackage import hello
+print(hello("Sheetala"))
