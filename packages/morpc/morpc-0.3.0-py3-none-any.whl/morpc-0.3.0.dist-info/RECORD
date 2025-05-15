@@ -1,0 +1,17 @@
+morpc/__init__.py,sha256=tFAcNOQNup5wx0yF9FLsAESOTYiQ5_fOD8Atl8B7-Xo,142
+morpc/morpc.py,sha256=_Ow_Z9nJpY4KbPdPpJS3ANCd_HBIT7pnKhExsGIcjes,112953
+morpc/census/__init__.py,sha256=wlbRsv0Q-cpJ5sQ3Jyu96OieyjT_TQdhHSI4JS2um4Q,21
+morpc/census/census.py,sha256=Xr9Dp7as1vp65muMCRr2SJ_eShYQGK8HogaPFEfu8Gw,19995
+morpc/color/__init__.py,sha256=qvF9CJDX2mXT2fYuTDe0glX8jPiSeR0c398wkZX_LY8,20
+morpc/color/color.py,sha256=xA-0_cbawx138v10sX5QOk0NKHcq93WDrh7GPvtjc0w,14542
+morpc/color/morpc_colors.json,sha256=rionEVmbZr-SG4tmFN0hg-2WNpBIadhXhE2Nr7p0WL4,23416
+morpc/color/.ipynb_checkpoints/color-checkpoint.py,sha256=xA-0_cbawx138v10sX5QOk0NKHcq93WDrh7GPvtjc0w,14542
+morpc/color/.ipynb_checkpoints/morpc_colors-checkpoint.json,sha256=rionEVmbZr-SG4tmFN0hg-2WNpBIadhXhE2Nr7p0WL4,23416
+morpc/frictionless/__init__.py,sha256=ai7P9Rv_jEeOS86gMEfa844heFrztVDPj_aiQ2Fxr_M,27
+morpc/frictionless/frictionless.py,sha256=mQ7O60Vp3BdLF8VoHdyJprqaHy_8Ut0FCkPLcfed7hw,33706
+morpc/plot/__init__.py,sha256=JFWKgK02XPfhaFFu614YwW2vQBPxiLh3_Xhbva6NAOU,19
+morpc/plot/plot.py,sha256=CAGIU1Q3DGH6Tx-vX_YLqMNbzUebVNqWY59xAg3aSMU,6781
+morpc-0.3.0.dist-info/METADATA,sha256=IQNTUHSuaLx7bTS2-gMW_cy-W9CkduUgXLYGVFL1_dM,514
+morpc-0.3.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+morpc-0.3.0.dist-info/top_level.txt,sha256=dZFtZYPrKA29ZBo8HHnqNJPxxfVKohbKLmWOxDskKj8,6
+morpc-0.3.0.dist-info/RECORD,,
