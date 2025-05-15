@@ -1,0 +1,4 @@
+include README.md
+include prival/config.yaml
+recursive-include prival/detectors *.py
+recursive-include prival/utils *.py
