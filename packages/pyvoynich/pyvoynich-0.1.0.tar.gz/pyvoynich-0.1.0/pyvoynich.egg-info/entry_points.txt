@@ -1,0 +1,2 @@
+[console_scripts]
+pyvoynich = scripts.example_bitrans:main

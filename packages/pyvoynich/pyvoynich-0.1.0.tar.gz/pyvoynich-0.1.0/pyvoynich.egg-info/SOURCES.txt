@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyvoynich/__init__.py
+pyvoynich/bitrans.py
+pyvoynich/data.py
+pyvoynich.egg-info/PKG-INFO
+pyvoynich.egg-info/SOURCES.txt
+pyvoynich.egg-info/dependency_links.txt
+pyvoynich.egg-info/entry_points.txt
+pyvoynich.egg-info/top_level.txt
