@@ -1,0 +1,10 @@
+passcode_link_mailer-0.1.5.dist-info/licenses/LICENSE,sha256=z4GiS-tpAERde5D0iU-ITs6urUTa9fHRIaO8zfNjQuo,1089
+simple_mailer/__init__.py,sha256=4ywmXIURafioTn__i_8I6iXYt2h6ITZ636IBZO6MW84,542
+simple_mailer/passcode_link_mailer.py,sha256=1VspDh6XXm62Hlonj7srE7B65r9p8l90BsJ_UA2hYes,13693
+simple_mailer/templates/minimal_template.html,sha256=QKBHeHV_uZlOzyxq3l3mlS8s9YwuLGEOIFuw2IkN_EY,3953
+simple_mailer/templates/modern_template.html,sha256=C3Mr72CGBN4KuE1FjhnAo3bY_ItVN4767oBb7z8D36o,5108
+simple_mailer/templates/standard_template.html,sha256=b9MyuaUgZD07pLbAKrAa5O5M0ILZZDSwACce9okVePM,7041
+passcode_link_mailer-0.1.5.dist-info/METADATA,sha256=WqVIWFQVosqdl8k0i_QJDLdFbkf8eahUgg2Q2fpto5s,18302
+passcode_link_mailer-0.1.5.dist-info/WHEEL,sha256=QZxptf4Y1BKFRCEDxD4h2V0mBFQOVFLFEpvxHmIs52A,91
+passcode_link_mailer-0.1.5.dist-info/top_level.txt,sha256=ELKbXKnCGQ2NhEKW4LeXeHXLaDDEGK69M30YA9wdP6U,14
+passcode_link_mailer-0.1.5.dist-info/RECORD,,
