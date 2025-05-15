@@ -1,0 +1,17 @@
+cfg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfg/cfg_parsing.py,sha256=9smDQO388YRGOuTlkDqC0Zf23jNphA3avc17AY1HLCc,2757
+cfg/main.py,sha256=U1nrFzFOr-IOjd2WWTQw9NHEn-_6610phnp8xd2nQIQ,585
+nfa_to_dfa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nfa_to_dfa/dfa_parsing.py,sha256=uS0b_PEwzBEWdTF5f8LMn-yVQBjA-IRiYpPlwEHRHqo,5293
+nfa_to_dfa/main.py,sha256=rdge9jAh_l1cqNqW4uBVpCyhWPrGrnuiWv8UiBa5_W0,763
+nfa_to_dfa/nfa_parsing.py,sha256=l2ArpmkUx2D4TIQA4WZXGa3UHH50vkiRzrgRhdY-qX0,2342
+turing_machine/__init__.py,sha256=5YYi1T9yqdMKIfdA13FZltExTpkXTa9o37KqI1Qw13I,97
+turing_machine/main.py,sha256=rGwPzyfBudWR_1qG6_Su0e6Qy39YKFl82o3qPrdf5H8,641
+turing_machine/transition.py,sha256=3tSy453wfKbbmL0qZ5HWq7pEq49pOVsDz6EfhXOohWg,316
+turing_machine/turing.py,sha256=5Dyvn9aMika8w8ScCeXiWQklgPyIuq748niP5jUPu2s,3894
+utils/__init__.py,sha256=n9EXjP_-JVtc4v9FIoi88NtGPRm3Bu1OCq3hLuCfQDg,24
+utils/utils.py,sha256=Pba9KJkwrOQD6WyFAu9m8PKMX_f2Y1zlMSMtEHB2D-c,3358
+turingMachinePract-0.1.dist-info/METADATA,sha256=CapPGtNqe9hkTS77W01lXUIJjEhhndCr_fNRSTL1Mho,65
+turingMachinePract-0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+turingMachinePract-0.1.dist-info/top_level.txt,sha256=ZFLrlFJjE4xv6b2_APIHTsuaP_0l_xIOjsS2p91zMCc,36
+turingMachinePract-0.1.dist-info/RECORD,,
