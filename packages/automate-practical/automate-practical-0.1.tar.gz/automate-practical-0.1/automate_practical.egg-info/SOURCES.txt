@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+Tests/NFATests.py
+Tests/TurningMachineTests.py
+automate-practical/FiniteAutomate.py
+automate-practical/TuringMachine.py
+automate-practical/__init__.py
+automate_practical.egg-info/PKG-INFO
+automate_practical.egg-info/SOURCES.txt
+automate_practical.egg-info/dependency_links.txt
+automate_practical.egg-info/top_level.txt
