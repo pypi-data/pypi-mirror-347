@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cself_tools"
+description = "极低频视电阻率数据处理工具"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {file = "LICENSE"}
+authors = [
+    {name = "WANG Qinglin", email = "chd_wql@qq.com"},
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/chdwql/cself_tools"
+"Bug Tracker" = "https://github.com/chdwql/cself_tools/issues" 
