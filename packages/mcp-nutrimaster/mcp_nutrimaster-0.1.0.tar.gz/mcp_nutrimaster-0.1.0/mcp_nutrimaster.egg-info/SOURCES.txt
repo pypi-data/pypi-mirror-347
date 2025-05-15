@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+mcp_nutrimaster.egg-info/PKG-INFO
+mcp_nutrimaster.egg-info/SOURCES.txt
+mcp_nutrimaster.egg-info/dependency_links.txt
+mcp_nutrimaster.egg-info/requires.txt
+mcp_nutrimaster.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+[project]
+name = "mcp-nutrimaster"
+version = "0.1.0"
+description = "智膳源道 MCP Server，是国内首家支持MCP 协议的营养膳食平台。"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "requests",
+    "setuptools>=80.4.0",
+    "twine>=6.1.0",
+    "wheel>=0.45.1",
+]
