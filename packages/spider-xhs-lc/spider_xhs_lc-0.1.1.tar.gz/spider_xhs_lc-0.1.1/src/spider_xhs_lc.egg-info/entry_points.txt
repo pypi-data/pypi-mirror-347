@@ -1,0 +1,2 @@
+[console_scripts]
+xhs-spider = spider_xhs_lc:main

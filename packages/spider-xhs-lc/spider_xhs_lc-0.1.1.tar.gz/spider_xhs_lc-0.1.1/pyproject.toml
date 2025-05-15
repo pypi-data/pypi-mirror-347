@@ -1,0 +1,14 @@
+[project]
+name = "spider_xhs_lc"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.8.0",
+]
+
+[project.scripts]
+xhs-spider = "spider_xhs_lc:main"
+
