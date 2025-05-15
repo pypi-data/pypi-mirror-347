@@ -1,0 +1,154 @@
+Metadata-Version: 2.4
+Name: sm_algo
+Version: 0.1.1
+Summary: Small pacakge with various algorithms
+Author-email: Aleksandr <Aleksandr7839@yandex.ru>
+Project-URL: Homepage, https://github.com/a1eksandrTarasov/SmartAlgo.git
+Project-URL: Bug Tracker, https://github.com/a1eksandrTarasov/SmartAlgo.git/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.2.5
+Requires-Dist: scipy>=1.15.3
+
+# SmartAlgo: A Lightweight Machine Learning Library
+
+`SmartAlgo` is a Python package providing essential machine learning algorithms implemented from scratch. Designed for simplicity and educational purposes, it includes linear regression, k-means clustering, and ridge logistic regression. Built with minimal dependencies (numpy and scipy), it's perfect for learning the fundamentals of ML algorithms.
+
+## Installation
+
+Install the package via pip:
+
+```bash
+pip install sm_algo
+```
+
+Dependencies:  
+- numpy  
+- scipy  
+
+## Algorithms
+
+### 1. Linear Regression with Gradient Descent
+**Class:** `LinearRegression`  
+A linear regression model trained using gradient descent.
+
+**Parameters:**
+- `learning_rate` (float, default=0.01): Step size for gradient descent.
+- `epochs` (int, default=1000): Number of training iterations.
+
+**Methods:**
+- `fit(X, y)`: Trains the model on data `X` and targets `y`.
+- `predict(X)`: Returns predicted values for input `X`.
+
+**Example:**
+```python
+from sm_algo.linreg import LinearRegression
+from sklearn.datasets import load_diabetes
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+
+# Load data
+data = load_diabetes()
+X, y = data.data, data.target
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Normalize data
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# Train model
+model = LinearRegression(learning_rate=0.1, epochs=1000)
+model.fit(X_train, y_train)
+
+# Predict and evaluate
+y_pred = model.predict(X_test)
+print(f"MSE: {mean_squared_error(y_test, y_pred):.2f}")
+print(f"R²: {r2_score(y_test, y_pred):.2f}")
+```
+
+### 2. K-Means Clustering
+**Class:** `KMeans`  
+K-Means clustering with k-means++ centroid initialization.
+
+**Parameters:**
+- `n_clusters` (int, default=8): Number of clusters.
+- `max_iter` (int, default=300): Maximum iterations per run.
+- `tol` (float, default=1e-4): Tolerance to declare convergence.
+- `random_state` (int, optional): Seed for random centroid initialization.
+
+**Methods:**
+- `fit(X)`: Computes clustering on `X`.
+- `predict(X)`: Predicts cluster indices for new data.
+
+**Example:**
+```python
+from sm_algo.kmeans import KMeans
+from sklearn.datasets import load_iris
+import matplotlib.pyplot as plt
+
+# Load data
+iris = load_iris()
+X = iris.data
+
+# Cluster data
+kmeans = KMeans(n_clusters=3)
+kmeans.fit(X)
+labels = kmeans.labels_
+
+# Visualize clusters (first two features)
+plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='viridis')
+plt.scatter(kmeans.centroids[:, 0], kmeans.centroids[:, 1], marker='X', s=200, c='red')
+plt.xlabel('Sepal Length')
+plt.ylabel('Sepal Width')
+plt.show()
+```
+
+### 3. Ridge Logistic Regression
+**Class:** `LogisticRegressionRidge`  
+Logistic regression with L2 regularization, trained via gradient descent.
+
+**Parameters:**
+- `learning_rate` (float, default=0.01): Gradient descent step size.
+- `lambda_` (float, default=0.1): L2 regularization strength.
+- `epochs` (int, default=1000): Training iterations.
+- `fit_intercept` (bool, default=True): Whether to add a bias term.
+- `verbose` (bool, default=False): Print training loss every 100 epochs.
+
+**Methods:**
+- `fit(X, y)`: Trains the model.
+- `predict_proba(X)`: Returns class probabilities.
+- `predict(X, threshold=0.5)`: Returns class labels.
+
+**Example:**
+```python
+from sm_algo.logisticreg import LogisticRegressionRidge
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+
+# Generate synthetic data
+X, y = make_classification(n_samples=1000, n_features=2, n_classes=2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Train model
+model = LogisticRegressionRidge(learning_rate=0.001, lambda_=0.1, epochs=1000)
+model.fit(X_train, y_train)
+
+# Predict
+y_pred = model.predict(X_test)
+print(f"Accuracy: {accuracy_score(y_test, y_pred):.2f}")
+
+# Optional: Plot decision boundary (requires helper functions)
+def plot_decision_boundary(model, X, y):
+    # Implementation from test example
+    pass
+
+plot_decision_boundary(model, X_test, y_test)
+```
+
+## Contributing
+
+Contributions are welcome! Please submit issues or pull requests on the GitHub repository.
