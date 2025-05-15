@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: khmernames
+Version: 0.7
+Summary: Pro version: Generate unlimited Khmer names without duplicates
+Home-page: https://github.com/sammykh/khmernames
+Author: Dev by Sammy KH
+Author-email: sammytoolsvplus@gmail.com
+License: MIT
+Keywords: khmer names generator unlimited no-duplicate
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# Khmer Names Pro 🇰🇭
+
+Generate unlimited Khmer names with duplicate filtering and clean output.
+
+## Installation
+
+```bash
+pip install khmernames
+```
+
+## Usage
+
+```python
+from khmernames import generate_unlimited_names
+
+names = generate_unlimited_names(1000)
+
+with open("names.txt", "w", encoding="utf-8") as f:
+    for name in names:
+        f.write(name + "\n")
+```
