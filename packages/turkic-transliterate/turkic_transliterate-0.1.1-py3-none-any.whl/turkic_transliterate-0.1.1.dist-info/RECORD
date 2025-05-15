@@ -1,0 +1,17 @@
+turkic_translit/__init__.py,sha256=zHobiPhr_MTgmMU0OLHtiev3uUSPS6VfHVwxwb7UzkI,1139
+turkic_translit/cli.py,sha256=aq6Ut9kQrJ-QrxN8zN_A03qf4w5ueUJagWVRKrBeH_w,5107
+turkic_translit/core.py,sha256=uYDV2NRwIkJxRf0Pc70g5EHIELk9FI6tXZ9HqeQaUBc,1248
+turkic_translit/logging_config.py,sha256=Y-EBEmxu2L5tO3hsKd5HYQJn0DUfYpJZCsfBRUIfaA4,1766
+turkic_translit/patches.py,sha256=VfzE4ej6oV0UQkICC5NVOSoi9wgkCoui-6q7z5zHyZg,2938
+turkic_translit/sanity.py,sha256=xcrNmI-OeViO9xiYK5mPL_aDgQulay4a47oBGYY5ikM,919
+turkic_translit/rules/ar_lat.rules,sha256=tyDXxPOVuL_WCGQ7XxoG9uNCcLCZaaatRhCEAQHl5Eg,479
+turkic_translit/rules/kk_ipa.rules,sha256=xoSDqgE9S8utpX4WInc3YhJLWeIIWTWkeXeFVoRhkkQ,1881
+turkic_translit/rules/kk_lat2023.rules,sha256=lyydfxs6o0DCO7T7ATmoakeX2c_3Nwoc1Cfp19dYZpU,1152
+turkic_translit/rules/ky_ipa.rules,sha256=EWMiw4qC7rQkwJl_6zOFYqrRpaIVIvOc4GUggrdpbaY,1510
+turkic_translit/rules/ky_lat2023.rules,sha256=-Ir8Pi49ormaC_M6RC3un7K1PT5EGGWq2QgeEYqpiD0,977
+turkic_transliterate-0.1.1.dist-info/licenses/LICENSE,sha256=97Ly1EdSyIwWqRgOYI_gQw80pwYbJppc2CJI9QS6GDo,1070
+turkic_transliterate-0.1.1.dist-info/METADATA,sha256=Lju6_pg5-UZ4RfuOmKudhTxZpNN8jAgVy9PrCoYk4_E,4088
+turkic_transliterate-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+turkic_transliterate-0.1.1.dist-info/entry_points.txt,sha256=jqS9clAoCpHs-6hK_lew0EU0rdm2a9h8cXJ2yyNrKVo,61
+turkic_transliterate-0.1.1.dist-info/top_level.txt,sha256=OOszWUImcz4Xw8ardWR4RnqrRUMaT30gpmPIFAOfrH0,16
+turkic_transliterate-0.1.1.dist-info/RECORD,,
