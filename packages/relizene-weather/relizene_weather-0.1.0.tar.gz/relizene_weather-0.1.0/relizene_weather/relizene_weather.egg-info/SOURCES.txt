@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+relizene_weather/relizene_weather.egg-info/PKG-INFO
+relizene_weather/relizene_weather.egg-info/SOURCES.txt
+relizene_weather/relizene_weather.egg-info/dependency_links.txt
+relizene_weather/relizene_weather.egg-info/requires.txt
+relizene_weather/relizene_weather.egg-info/top_level.txt
+relizene_weather/settings/__init__.py
+relizene_weather/settings/settings.py
+relizene_weather/settings/validator.py
