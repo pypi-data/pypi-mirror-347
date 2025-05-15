@@ -1,0 +1,2 @@
+[console_scripts]
+fluidgrids = fluidgrids_cli.cli:main
