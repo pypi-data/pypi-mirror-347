@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: eazyml-genai
+Version: 0.2.30
+Summary: eazyml genai
+Home-page: https://eazyml.com/
+Author: EazyML
+Author-email: admin@eazyml.com
+Project-URL: Documentation, https://docs.eazyml.com/
+Project-URL: Homepage, https://eazyml.com/
+Project-URL: Contact Us, https://eazyml.com/trust-in-ai
+Project-URL: eazyml-automl, https://pypi.org/project/eazyml-automl/
+Project-URL: eazyml-counterfactual, https://pypi.org/project/eazyml-counterfactual/
+Project-URL: eazyml-xai, https://pypi.org/project/eazyml-xai/
+Project-URL: eazyml-xai-image, https://pypi.org/project/eazyml-xai-image/
+Project-URL: eazyml-insight, https://pypi.org/project/eazyml-insight/
+Project-URL: eazyml-data-quality, https://pypi.org/project/eazyml-data-quality/
+Keywords: pattern-discovery,rule-mining,data-insights,insight-generation,augmented-intelligence,data-analysis,rule-discovery,data-patterns,machine-learning,data-science,ml-api,training-data-analysis,interpretable-ai
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Other/Proprietary License
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyMuPDF
+Requires-Dist: google-genai
+Requires-Dist: google-cloud-aiplatform
+Requires-Dist: openai
+Requires-Dist: anthropic
+Requires-Dist: pinecone
+Requires-Dist: qdrant-client
+Requires-Dist: pyarrow
+Requires-Dist: sentence-transformers==4.1.*
+Requires-Dist: nltk
+Requires-Dist: pandas==2.2.*
+Requires-Dist: numpy
+Requires-Dist: cryptography
+Requires-Dist: torchvision
+Requires-Dist: doclayout-yolo
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## Eazyml Augmented Intelligence
+EazyML Augmented Intelligence extract insights from Dataset with certain insights
+score which is calculated using coverage of that insights.
+
+### Features
+- Builds a predictive model based on the input training data, mode, and options. 
+    Supports classification and regression tasks.
+### APIs
+It provides following apis :
+
+1. scikit_feature_selection
+    ```python
+    ez_augi(mode='classification',
+            outcome='target',
+            train_file_path='train.csv')
