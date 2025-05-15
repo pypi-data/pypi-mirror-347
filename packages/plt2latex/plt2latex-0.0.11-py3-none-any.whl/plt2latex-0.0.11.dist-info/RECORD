@@ -1,0 +1,16 @@
+plt2latex/__init__.py,sha256=FI1LVaYiOGfVFpp3gAatDaIEF1O59kO3r7JrgSEjAos,373
+plt2latex/config.py,sha256=hhPmdqrUVg-HEOa-lzigVvVXUQd2kNxV2BJkajaoFMI,8998
+plt2latex/figure.py,sha256=qTcNilJ8rAmwn-G8vCsQZ2H7HyzcxeEPrxchhckfruA,953
+plt2latex/fontsizes.py,sha256=PoW_HVxWSUB6nyekO6q7j7lZyynajcsNcAgpgZcJTVc,553
+plt2latex/patcher.py,sha256=S5y-fH7bITsokbmRXpx2k-oY5zR1TaoudT1Wyaac1Lg,8520
+plt2latex/plt2latex.py,sha256=YZyw5M-74jWXqYAhZujNuaMMVMfmq-lRrxRTZrEXfDk,843
+plt2latex/rcparams.py,sha256=1pfWIKhZp2HKqIksxPqsa1vNVMk0eB6Vcb5GtxUqeFM,3912
+plt2latex/rcsetup.py,sha256=dhR-rR_pswg16RGUQTY9UBEet-p-edzDxFdReD_RuWU,3300
+plt2latex/renderer.py,sha256=Eb0iJv6RDVcUY-jQ1HWDs_aynGOhpI7oqWu8BmJ0q1k,218
+plt2latex/units.py,sha256=2qZ-unp7I1FkRBNaSItEUArjPqttJ6pRY231rRbl9fc,1019
+plt2latex/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plt2latex/tests/test_examples.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plt2latex-0.0.11.dist-info/METADATA,sha256=U1c5wvG6niXJLCEUTJp6ohbdQy91-EK29iCf2iWP5z8,762
+plt2latex-0.0.11.dist-info/WHEEL,sha256=QZxptf4Y1BKFRCEDxD4h2V0mBFQOVFLFEpvxHmIs52A,91
+plt2latex-0.0.11.dist-info/top_level.txt,sha256=0AQTyRtgU8ok6Xf7tS9Sx1uYXr2YIrYIgsCdg-s_RlI,10
+plt2latex-0.0.11.dist-info/RECORD,,
