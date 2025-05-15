@@ -1,0 +1,4 @@
+[console_scripts]
+ml-stack-install = scripts.install_ml_stack_curses:main
+ml-stack-repair = scripts.repair_ml_stack_wrapper:main
+ml-stack-verify = scripts.enhanced_verify_installation_wrapper:main
