@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: treasurykit
+Version: 1.1
+Summary: Tools for finance and treasury specialists
+Home-page: https://github.com/khorevkp/treasurykit
+Author: Konstantin Khorev
+Author-email: khorevkp@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# treasurykit
+
+
+========
+
+This library provides python tools for finance and treasury specialists.
+
+## Installation
+
+`pip install treasurykit`
+
