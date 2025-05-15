@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/kubernetes_readonly_mcp/__init__.py
+src/kubernetes_readonly_mcp/server.py
+src/kubernetes_readonly_mcp.egg-info/PKG-INFO
+src/kubernetes_readonly_mcp.egg-info/SOURCES.txt
+src/kubernetes_readonly_mcp.egg-info/dependency_links.txt
+src/kubernetes_readonly_mcp.egg-info/entry_points.txt
+src/kubernetes_readonly_mcp.egg-info/requires.txt
+src/kubernetes_readonly_mcp.egg-info/top_level.txt
+tests/test_server.py
