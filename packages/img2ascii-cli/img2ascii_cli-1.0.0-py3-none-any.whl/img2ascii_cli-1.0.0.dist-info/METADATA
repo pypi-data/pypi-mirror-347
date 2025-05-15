@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: img2ascii-cli
+Version: 1.0.0
+Summary: A CLI tool to convert images to ASCII art
+Home-page: https://github.com/your-username/img2ascii-cli
+Author: Your Name
+Author-email: your-email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+# img2ascii-cli
+
+A simple CLI tool to convert images into ASCII art.
+
+## Features
+- Supports PNG and JPEG
+- Outputs to terminal or .txt
+- Adjustable width
+
+## Usage
+
+```bash
+img2ascii image.jpg --width 120 --out output.txt
+```
+
+## Dependencies
+
+- Pillow
+
+```bash
+pip install Pillow
+```
