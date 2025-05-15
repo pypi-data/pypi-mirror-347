@@ -1,0 +1,3 @@
+recursive-include src/driveui/static/driveui *
+prune src/driveui/static/driveui/sass
+include README.md

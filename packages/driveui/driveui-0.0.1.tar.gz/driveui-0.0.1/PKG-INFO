@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: driveui
+Version: 0.0.1
+Summary: Modern dark automotive management design system by Dashkit
+Author-email: Dashkit <contact@dashkit.dev>
+License: MIT
+Project-URL: Homepage, https://dashkit.dev/driveui
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Flask
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
