@@ -1,0 +1,17 @@
+knowledge_graph/__init__.py,sha256=4L-gWqciS_V5L8qiWpYdvTIHMUHmKhjYyANrs4A6ruw,1781
+knowledge_graph/common_relations.py,sha256=q-0OTwRoCuRWvcBTVaTAT3K6MEJOkDonp-FqeHOfpFE,4609
+knowledge_graph/minigraph_builders.py,sha256=ZnjwSw4rIkYa8GwxteeGWUvz4_eFzOX_fTf9TAhFCu4,5069
+knowledge_graph/primitives.py,sha256=Tn2dBzsTiimAQtNOiwazB-O8_B5yd-gbOFl1TXvSzY4,3191
+knowledge_graph/querying.py,sha256=6ijcFH2C9Vw8LMzTdA18lVRW0X9DOU8QxgpQATxb4tU,16668
+knowledge_graph/querying_raw.py,sha256=eZbMEA2CcEGQ9_yBcvUozkCWAnBscqg8TWOQptzQ57c,9430
+knowledge_graph/querying_raw_test.py,sha256=cbT9D5cHhpzB0n4_Oy1mYkDGoTgQkgmmhGm7NN1Ppig,1200
+knowledge_graph/storage.py,sha256=84sTpSdTqBdMOu_wdSFMJsb2HINUeCo9gEKmPoJfv44,3254
+knowledge_graph/transform.py,sha256=n24kmx9Z3QD3zumgheTecfuOWJ5AplXiqBbW2SKTqMc,3051
+knowledge_graph/transform_test.py,sha256=23UzjfvLZqqwODBTGnDaHDpt1laA1eUwyirTjOV_kxM,5453
+knowledge_graph/triplet.py,sha256=pzbEC3TNVypvPzD10z23_kVbwydVOHeHWo1ZHVvyYgM,2066
+knowledge_graph/triplets_index.py,sha256=gYPXgwq6OJmx2ZALPT_NjUGvJJuP77z_KOLM2d29EEE,5743
+knowledge_graph-0.0.33.dist-info/licenses/LICENSE,sha256=ulny_Y26VdtjF4II68uEQZr2nuQMWjMYdYsy-DL_gBA,1063
+knowledge_graph-0.0.33.dist-info/METADATA,sha256=MWQYu6K5sjx6hBPKYWSu6NmvHQayTHw1zk_SqdxHpOU,2987
+knowledge_graph-0.0.33.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+knowledge_graph-0.0.33.dist-info/top_level.txt,sha256=LfTNdhhf-4218MpnAGnzMNCeMrklXiqBNm3GLBxwPz4,16
+knowledge_graph-0.0.33.dist-info/RECORD,,
