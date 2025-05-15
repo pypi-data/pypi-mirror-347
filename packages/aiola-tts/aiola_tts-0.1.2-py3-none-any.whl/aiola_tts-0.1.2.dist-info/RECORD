@@ -1,0 +1,7 @@
+aiola_tts/__init__.py,sha256=rkcCU4mHQtoao3nkTRAicaXHeUcM95p_l0Lc1vbPdg0,177
+aiola_tts/audio_converter.py,sha256=1LzA2Ld6hdQ07F8j0eZY5XT9azkhPiITCEgu5qFkI6A,3886
+aiola_tts/client.py,sha256=YHTzJkHHYynlJEeb0C1XAGK4Lq1WGlQp1hGF94MXro8,3559
+aiola_tts-0.1.2.dist-info/METADATA,sha256=4CmSHjShHZKfuCRhw3aPNX9G-ZCCJPACPT4x9Z1HUI0,3057
+aiola_tts-0.1.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+aiola_tts-0.1.2.dist-info/top_level.txt,sha256=bYNCeP-F363WLtIowd-fRmNI5UOq3Ag6OUgl90Lq1_8,10
+aiola_tts-0.1.2.dist-info/RECORD,,
