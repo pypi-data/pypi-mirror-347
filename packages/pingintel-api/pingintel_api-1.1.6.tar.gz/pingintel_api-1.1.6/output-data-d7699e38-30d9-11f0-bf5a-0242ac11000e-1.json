@@ -1,0 +1,39 @@
+{
+"id_001": {
+  "GG": {
+    "is_success": true,
+    "error_message": null,
+    "confidence": 70,
+    "status_code": 200,
+    "fetch_time": 0.061,
+    "is_cache_hit": true,
+    "street_number": "94",
+    "route": "Tallowood Dr",
+    "location_type": "ROOFTOP",
+    "latitude": 39.856306,
+    "longitude": -74.835392,
+    "formatted_address": "94 Tallowood Dr, Medford, NJ 08055, USA",
+    "address_line_1": "94 Tallowood Dr",
+    "address_line_2": null,
+    "city": "Medford",
+    "postal_code": "08055",
+    "county": "Burlington",
+    "state": "NJ",
+    "country": "US",
+    "precision": 100,
+    "state_name": "New Jersey",
+    "state_code": "NJ",
+    "country_subdivision_name": "New Jersey",
+    "country_subdivision_code": "NJ",
+    "place_id": "ChIJUVpKZSIxwYkRTaluUuCGJUQ"
+  },
+  "R_KR": {
+    "is_success": false,
+    "error_message": "datasource rejected authorization",
+    "confidence": null,
+    "status_code": 401,
+    "fetch_time": 0.004,
+    "is_cache_hit": null
+  }
+}
+}
