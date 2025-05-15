@@ -1,0 +1,104 @@
+Metadata-Version: 2.4
+Name: webtest-asgi
+Version: 2.0.0
+Summary: webtest-asgi provides integration of WebTest with ASGI applications
+Maintainer-email: Steven Loria <sloria1@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: System :: Shells
+License-File: LICENSE
+Requires-Dist: webtest
+Requires-Dist: starlette>=0.38.0
+Requires-Dist: httpx>=0.27.1
+Requires-Dist: python-multipart
+Requires-Dist: webtest-asgi[tests] ; extra == "dev"
+Requires-Dist: tox ; extra == "dev"
+Requires-Dist: pre-commit>=3.5,<5.0 ; extra == "dev"
+Requires-Dist: pytest ; extra == "tests"
+Project-URL: Issues, https://github.com/sloria/webtest-asgi/issues
+Project-URL: Source, https://github.com/sloria/webtest-asgi
+Provides-Extra: dev
+Provides-Extra: tests
+
+************
+webtest-asgi
+************
+
+.. image:: https://badgen.net/pypi/v/webtest-asgi
+  :alt: pypi badge
+  :target: https://pypi.org/project/webtest-asgi/
+
+.. image:: https://badgen.net/travis/sloria/webtest-asgi/master
+  :alt: travis-ci status
+  :target: https://travis-ci.org/sloria/webtest-asgi
+
+.. image:: https://badgen.net/badge/code%20style/black/000
+   :target: https://github.com/ambv/black
+   :alt: Code style: Black
+
+webtest-asgi provides integration of `WebTest <https://docs.pylonsproject.org/projects/webtest/>`_ with  `ASGI <https://asgi.readthedocs.io/>`_ applications.
+
+Disclaimer
+==========
+
+You should probably use Starlette's `TestClient <https://www.starlette.io/testclient/>`_ 
+instead of this package for testing ASGI applications. 
+This package was created to test `webargs-starlette <https://github.com/sloria/webargs-starlette>`_ using
+webargs' ``CommonTestCase``, which uses WebTest to test common
+functionality across multiple web frameworks.
+
+Installation
+============
+::
+
+    pip install webtest-asgi
+
+
+Usage
+=====
+
+You can use webtest-asgi with any ASGI application. Here is example usage with `Starlette <https://github.com/encode/starlette>`_.
+
+.. code-block:: python
+
+    from starlette.applications import Starlette
+    from starlette.responses import JSONResponse
+    from webtest_asgi import TestApp as WebTestApp
+
+    app = Starlette()
+
+
+    @app.route("/")
+    async def homepage(request):
+        return JSONResponse({"hello": "world"})
+
+
+    @pytest.fixture()
+    def testapp():
+        return WebTestApp(app)
+
+
+    def test_get_homepage(testapp):
+        assert testapp.get("/").json == {"hello": "world"}
+
+
+Project Links
+=============
+
+- PyPI: https://pypi.python.org/pypi/webtest-asgi
+- Issues: https://github.com/sloria/webtest-asgi/issues
+
+License
+=======
+
+MIT licensed. See the bundled `LICENSE <https://github.com/sloria/webtest-asgi/blob/master/LICENSE>`_ file for more details.
+
