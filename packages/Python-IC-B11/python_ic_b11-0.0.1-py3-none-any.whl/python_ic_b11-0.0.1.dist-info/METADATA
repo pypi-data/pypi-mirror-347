@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: Python-IC-B11
+Version: 0.0.1
+Summary: This is Our First Developed Pypi Package Python-IC-B11
+Author: IC Batch 11
+Author-email: ICB11@IC.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+### This is Our First Developed Pypi Package
+    - Feature 01- Add
+    - Feature 02- Sub
+    - Feature 03- Mul
+    - Feature 04- Div
