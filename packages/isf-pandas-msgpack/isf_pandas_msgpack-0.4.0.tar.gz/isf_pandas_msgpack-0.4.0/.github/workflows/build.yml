@@ -1,0 +1,39 @@
+name: Build
+description: 
+  Build wheels and source distributions for Python versions 3.8 to 3.13 on three major platforms (Linux-64, macOS-arm64, and Windows-64)
+  This is to test the possibility of building the package on reasonable operating systems, not to publish it.
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build for Python ${{ matrix.python_version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python_version: [38, 39, 310, 311, 312, 313]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up pixi environments
+        uses: prefix-dev/setup-pixi@v0.8.8
+        with:
+          pixi-version: v0.46.0
+          cache: true
+          auth-host: prefix.dev
+          auth-token: ${{ secrets.PREFIX_DEV_TOKEN }}
+          manifest-path: pyproject.toml
+
+      - name: Build wheel & sdist
+        run: |
+          pixi r -e build-python-${{ matrix.python_version }} build
+        shell: bash

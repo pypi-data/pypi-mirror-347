@@ -1,0 +1,148 @@
+name: Publish to PyPI
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-sdist:
+    name: Build sdist/
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up pixi
+        uses: prefix-dev/setup-pixi@v0.8.8
+        with:
+          pixi-version: v0.46.0
+          cache: true
+          auth-host: prefix.dev
+          auth-token: ${{ secrets.PREFIX_DEV_TOKEN }}
+          manifest-path: pyproject.toml
+
+      - name: Extract version from Git tag
+        id: get_version
+        run: |
+          VERSION=${{ github.event.release.tag_name }}
+          echo "VERSION=$VERSION"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Build sdist
+        env:
+          SETUPTOOLS_SCM_PRETEND_VERSION: ${{ env.VERSION }}
+        run: |
+          pixi r -e build build_sdist
+        shell: bash
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: gh-build-sdist
+          path: dist/*
+
+  build-windows-wheels:
+    name: Build wheels win64-py${{ matrix.python_version }}
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python_version: [38, 39, 310, 311, 312, 313]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up pixi
+        uses: prefix-dev/setup-pixi@v0.8.8
+        with:
+          pixi-version: v0.46.0
+          cache: true
+          auth-host: prefix.dev
+          auth-token: ${{ secrets.PREFIX_DEV_TOKEN }}
+          manifest-path: pyproject.toml
+
+      - name: Extract version from Git tag
+        id: get_version
+        run: |
+          VERSION=${{ github.event.release.tag_name }}
+          echo "VERSION=$VERSION"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Build wheel
+        env:
+          SETUPTOOLS_SCM_PRETEND_VERSION: ${{ env.VERSION }}
+        run: |
+          pixi r -e build-python-${{ matrix.python_version }} build_wheel
+        shell: bash
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: gh-build-windows-wheel-${{ matrix.python_version }}
+          path: dist/*
+
+  get-build-environment:
+    name: Get build environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up pixi environments
+        uses: prefix-dev/setup-pixi@v0.8.8
+        with:
+          pixi-version: v0.46.0
+          cache: true
+          auth-host: prefix.dev
+          auth-token: ${{ secrets.PREFIX_DEV_TOKEN }}
+          manifest-path: pyproject.toml
+
+      - name: Upload env artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: env
+          path: |
+            pyproject.toml
+            pixi.lock
+  
+  upload-to-pypi:
+    name: Upload to PyPI
+    needs: [build-sdist, build-windows-wheels, get-build-environment]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download build environment
+        uses: actions/download-artifact@v4
+        with:
+          name: env
+
+      - name: Set up pixi
+        uses: prefix-dev/setup-pixi@v0.8.8
+        with:
+          pixi-version: v0.46.0
+          cache: true
+          auth-host: prefix.dev
+          auth-token: ${{ secrets.PREFIX_DEV_TOKEN }}
+          manifest-path: pyproject.toml
+      
+      - name: Download build artifacts 
+        uses: actions/download-artifact@v4
+        with:
+          pattern: gh-build-*
+          path: build_artifacts/
+
+      - name: Consolidate build artifacts
+        run: |
+          mkdir -p dist
+          cp build_artifacts/gh-build-sdist/* dist/
+          cp build_artifacts/gh-build-windows-wheel-*/* dist/
+
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        run: |
+          pixi r -e build upload

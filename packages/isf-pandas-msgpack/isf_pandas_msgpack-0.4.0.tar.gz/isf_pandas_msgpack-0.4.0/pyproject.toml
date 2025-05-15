@@ -1,0 +1,159 @@
+[project]
+name = "isf-pandas-msgpack"
+description = "Pandas interface to msgpack - ISF patch"
+dynamic = ["version"]
+classifiers=[
+    'Development Status :: 4 - Beta',
+    'Environment :: Console',
+    'Intended Audience :: Science/Research',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Topic :: Scientific/Engineering',
+]
+license = { text = "BSD-3-Clause"}
+readme = "README.md"
+dependencies = [
+    "pandas>=1.1.0,<3",
+    ]
+requires-python = ">=3.8,<3.14"
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64", "linux-aarch64", "win-64"]
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=74.1", "Cython", "setuptools-scm>=8"]
+
+[tool.setuptools]
+license-files = ['LICENSE.md']
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["isf_pandas_msgpack*"]
+
+[tool.setuptools.package-data]
+"isf_pandas_msgpack" = ["*.h", "*.pxd", "*.pyx", "*.c", "*.cpp"]
+
+[tool.setuptools_scm]
+version_file = "src/isf_pandas_msgpack/_version.py"
+
+[tool.pixi.system-requirements]
+libc = "2.17"
+linux = "3.10.0"
+
+[tool.pixi.environments]
+build = ['build']
+test = ['test']
+build-test-pandas-v11 = { features = ['pandas-v11', "test", "build"]}
+build-test-pandas-v12 = { features = ['pandas-v12', "test", "build"]}
+build-test-pandas-v13 = { features = ['pandas-v13', "test", "build"]}
+build-test-pandas-v14 = { features = ['pandas-v14', "test", "build"]}
+build-test-pandas-v15 = { features = ['pandas-v15', "test", "build"]}
+build-test-pandas-v20 = { features = ['pandas-v20', "test", "build"]}
+build-test-pandas-v21 = { features = ['pandas-v21', "test", "build"]}
+build-test-pandas-v22 = { features = ["pandas-v22", "test", "build"]}
+build-python-38 =  { features = ['py38',  "build"]}
+build-python-39 =  { features = ['py39',  "build"]}
+build-python-310 = { features = ['py310', "build"]}
+build-python-311 = { features = ["py311", "build"]}
+build-python-312 = { features = ["py312", "build"]}
+build-python-313 = { features = ["py313", "build"]}
+# build-python-314 = { features = ["py314", "build"]}
+
+[tool.pixi.feature.build]
+#     platforms you can build it on
+# not platforms you can build it for
+platforms = ['linux-64', 'osx-arm64', 'osx-64', 'linux-aarch64', 'win-64']
+
+[tool.pixi.feature.build.dependencies]
+hatch = ">=1.13.0,<2"
+twine = ">=5.1.1,<7"
+setuptools_scm = ">=8.1.0,<9"
+cython = ">=3.0.11,<4"
+[tool.pixi.feature.build.pypi-dependencies]
+build = ">=1.2.2.post1,<2"
+
+[tool.pixi.feature.build.tasks]
+get_version = { cmd = [
+    "python", "-m", "setuptools_scm"
+    ], description = "Get the version of the package" }
+build_ext = { cmd = [
+    "python", "setup.py", "build_ext", "--inplace"
+    ], description = "Build the Cython extensions" }
+build = { cmd = [
+    "python", "-m", "build", "--sdist", "--wheel"
+    ], description = "Build the package" }
+build_sdist = { cmd = [
+    "python", "-m", "build", "--sdist"
+    ], description = "Build the package source distribution" }
+build_wheel = { cmd = [
+    "python", "-m", "build", "--wheel"
+    ], description = "Build the package wheel on the host machine" }
+audit_linux_wheels = { cmd = [
+    "auditwheel", "repair", "--plat", "manylinux2014_x86_64", "dist/*.whl", "-w", "dist"
+    ], description = "Repair the wheels for Linux" }
+upload = { cmd = [
+    "twine", "upload", "--skip-existing", "--repository", "pypi", "dist/*"
+    ], description = "Upload the package to PyPI" }
+test_upload = { cmd = [
+    "twine", "upload", "--skip-existing", "--repository", "testpypi", "dist/*"
+    ], description = "Upload the package to TestPyPI" }
+
+[tool.pixi.feature.test.dependencies]
+pytest = "*"
+zlib = ">=1.3.1,<2"
+blosc = ">=1.11.2,<2"
+packaging = ">=16.0,<26"
+
+[tool.pixi.feature.test.tasks]
+test = { cmd = [
+    "pytest", 
+    "-v",
+    ], description = "Run the tests" }
+
+[tool.pixi.feature.pandas-v11.dependencies]
+pandas = ">=1.1.0,<1.2"
+sqlalchemy = ">=1.0,<2"
+[tool.pixi.feature.pandas-v12.dependencies]
+pandas = ">=1.2.0,<1.3"
+sqlalchemy = ">=1.0,<2"
+[tool.pixi.feature.pandas-v13.dependencies]
+pandas = ">=1.3.0,<1.4"
+sqlalchemy = ">=1.0,<2"
+[tool.pixi.feature.pandas-v14.dependencies]
+pandas = ">=1.4.0,<1.5"
+sqlalchemy = ">=1.0,<2"
+[tool.pixi.feature.pandas-v15.dependencies]
+pandas = ">=1.5.0,<2"
+sqlalchemy = ">=1.0,<2"
+[tool.pixi.feature.pandas-v20.dependencies]
+pandas = ">=2.0,<2.1"
+sqlalchemy = ">=2.0.39,<3"
+[tool.pixi.feature.pandas-v21.dependencies]
+pandas = ">=2.1,<2.2"
+sqlalchemy = ">=2.0.39,<3"
+[tool.pixi.feature.pandas-v22.dependencies]
+pandas = ">=2.2,<2.3"
+sqlalchemy = ">=2.0.39,<3"
+
+[tool.pixi.feature.py38.dependencies]
+python = ">=3.8,<3.9"
+[tool.pixi.feature.py39.dependencies]
+python = ">=3.9,<3.10"
+[tool.pixi.feature.py310.dependencies]
+python = ">=3.10,<3.11"
+[tool.pixi.feature.py311.dependencies]
+python = ">=3.11,<3.12"
+[tool.pixi.feature.py312.dependencies]
+python = ">=3.12,<3.13"
+[tool.pixi.feature.py313.dependencies]
+python = ">=3.13,<3.14"
+# [tool.pixi.feature.py314.dependencies]
+# python = ">=3.14,<3.15"
