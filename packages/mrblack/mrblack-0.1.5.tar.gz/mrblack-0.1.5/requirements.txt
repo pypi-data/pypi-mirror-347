@@ -1,0 +1,12 @@
+beautifulsoup4
+python-docx
+mss
+pymupdf
+pandas
+pillow
+pydub
+pytesseract
+python_magic
+requests
+rich
+speechrecognition
