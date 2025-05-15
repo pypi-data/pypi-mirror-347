@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: tkSDLImg
+Version: 0.0.3
+Summary: Tk widget for showing an image using SDL.
+Author-email: Tarik Havighorst <code@blurks.de>
+Project-URL: Source, https://github.com/blurks/tkSDLImg
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: pysdl2
+Requires-Dist: pysdl2-dll
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: pycodestyle; extra == "dev"
+Requires-Dist: pydocstyle; extra == "dev"
+Requires-Dist: pyflakes; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Provides-Extra: pylsp
+Requires-Dist: python-lsp-server; extra == "pylsp"
+Requires-Dist: yapf; extra == "pylsp"
+Requires-Dist: rope; extra == "pylsp"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Dynamic: license-file
+
+# tkSDLImg
+
+Display an image inside your tkinter application using SDL for fast rendering.
+This also allows for frequent updates to allow video playbacks, animation, etc.
+
+## Installation
+
+```sh
+pip install tkSDLImg
+```
+
+## Usage
+
+A usage example can be found in the modules `_main` function.
