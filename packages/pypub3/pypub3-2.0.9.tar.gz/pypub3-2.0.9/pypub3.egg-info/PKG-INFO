@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: pypub3
+Version: 2.0.9
+Summary: A python3 library to generate custom epub books.
+Author-email: Andrew Scott <imgurbot12@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2025 Andrew C Scott
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+        
+Project-URL: Repository, https://github.com/imgurbot12/pypub.git
+Keywords: epub,ebook
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyxml3>=0.0.2
+Requires-Dist: Jinja2>=3.1.6
+Requires-Dist: pillow>=10.4.0
+Requires-Dist: filetype>=1.2.0
+
+pypub
+------
+
+Create epub's using Python. 
+Pypub is a Python library to create epub files quickly, 
+without having to worry about the intricacies of the epub specification.
+
+This package was originally forked and re-written based on WCember's Python 2 
+version, but due to a lack of response has been re-released as a new package 
+to support Python 3.
+
+The codebase has since gone through a few substantial rewrites and operates 
+as its own library moving forward.
+
+### Installation
+
+```
+pip install pypub3
+```
+
+### Quickstart
+
+```python
+import pypub
+
+my_first_epub = pypub.Epub('My First Epub')
+my_first_chapter = pypub.create_chapter_from_url('https://en.wikipedia.org/wiki/EPUB')
+my_first_epub.add_chapter(my_first_chapter)
+my_first_epub.create('./my-first-epub.epub')
+```
+
+# Features #
+* Pypub is **easy to install** and has minimal dependencies.
+* Pypub **abstracts the epub specification**. 
+  Create epubs without worrying about what an NCX is.
+* Pypub can **create epubs from websites, html files, strings**, 
+  or a combination of all three.
+* Pypub can **clean up poorly formatted and complicated html**, 
+  so it will show cleanly as a chapter in your book.
+* Pypub **creates epubs specifically so they can be converted into 
+  Amazon Kindle mobi or azw3 files**. Don't know which tags Amazon 
+  supports? Don't worry about it because pypub does. 
+* Pypub is **customizable**. Don't like the way pypub sanitizes html 
+  files for you ebook? Pypub can be configured with your own sanitation 
+  function.
+* Pypub is **licensed under the MIT license**. Do what you want with it.
