@@ -1,0 +1,9 @@
+fastapi==0.111.0
+uvicorn[standard]
+watchdog
+tiktoken
+jinja2
+
+[dev]
+pytest
+pytest-asyncio

@@ -1,0 +1,74 @@
+# ── Build backend ─────────────────────────────────────────────────────────────
+[build-system]
+requires      = ["setuptools>=68", "wheel"]   # pin high enough for PEP 621 support
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "fileprompt"
+version = "0.1.0"
+description = "Turn any local codebase into an LLM-ready prompt."
+readme = "README.md"
+requires-python = ">=3.11"
+
+
+dependencies = [
+  "fastapi==0.111.0",
+  "uvicorn[standard]",
+  "watchdog",
+  "tiktoken",
+  "jinja2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-asyncio",
+]
+
+[project.scripts]
+fileprompt = "fileprompt.cli:cli"   # `uvx fileprompt` or `fileprompt …`
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+# Grab everything in templates/
+"fileprompt" = ["templates/*.html"]
+
+[dependency-groups]
+dev = [
+    "build>=1.2.2.post1",
+    "ruff>=0.11.9",
+    "twine>=6.1.0",
+    "ty>=0.0.1a1",
+]
+
+[tool.ruff]
+extend-exclude = []
+line-length = 120
+output-format = "concise"
+
+[tool.ruff.lint]
+extend-ignore = [
+    "ASYNC109", "E501", "G004", "ISC001",  "PT011", "PT012", "RET504", "SIM114", "SIM117", "TRY003", "TRY400", "TRY401", "RUF012", "RUF100"
+]
+extend-select = [
+    "I", "E", "W", "UP", "ASYNC", "BLE", "A001", "A002",
+    "C4", "DTZ", "T10", "EM", "ISC", "ICN", "G", "PIE", "PT",
+    "Q", "SIM", "TID", "TCH", "PLC", "PLE", "TRY", "RUF"
+]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+[tool.ruff.lint.flake8-errmsg]
+max-string-length = 50
+
+[tool.pytest.ini_options]
+addopts = "-s --tb=native -v --durations=10"
+norecursedirs = ["build", "dist"]
+filterwarnings = [
+    "ignore:.*:DeprecationWarning:litellm.*",
+    "ignore:Support for class-based `config` is deprecated.*:DeprecationWarning:pydantic._internal._config",
+]

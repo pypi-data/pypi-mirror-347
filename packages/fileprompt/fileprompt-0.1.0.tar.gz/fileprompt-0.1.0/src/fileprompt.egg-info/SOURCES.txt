@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/fileprompt/__init__.py
+src/fileprompt/cli.py
+src/fileprompt/fs.py
+src/fileprompt/main.py
+src/fileprompt/models.py
+src/fileprompt/payload.py
+src/fileprompt/watcher.py
+src/fileprompt.egg-info/PKG-INFO
+src/fileprompt.egg-info/SOURCES.txt
+src/fileprompt.egg-info/dependency_links.txt
+src/fileprompt.egg-info/entry_points.txt
+src/fileprompt.egg-info/requires.txt
+src/fileprompt.egg-info/top_level.txt
+src/fileprompt/templates/index.html
+tests/test_api.py

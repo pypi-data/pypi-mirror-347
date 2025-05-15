@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Repo Prompt</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB4PSIxMCIgeT0iNTAiIGZpbGw9IndoaXRlIj5SUDwvdGV4dD48L3N2Zz4=">
+  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+</head>
+<body class="bg-gray-900 text-slate-100">
+  <div x-data="repoPrompt()" class="h-screen flex text-sm">
+    <!-- Sidebar -->
+    <aside class="w-72 border-r border-gray-700 overflow-y-auto" x-html="treeHtml"></aside>
+
+    <!-- Main -->
+    <main class="flex-1 flex flex-col">
+      <textarea x-model="instructions" class="flex-1 resize-none bg-gray-800 p-4 font-mono" placeholder="Write instructions for the model..."></textarea>
+      <div class="border-t border-gray-700 p-2 flex justify-between items-center">
+        <span x-text="selectedStats"></span>
+        <button @click="copy()" :disabled="!canCopy" :class="canCopy ? 'bg-blue-600' : 'bg-gray-600 opacity-50 pointer-events-none' " class="px-4 py-1 rounded">Copy</button>
+      </div>
+    </main>
+  </div>
+
+  <template x-if="toastText">
+    <div x-transition class="fixed bottom-4 right-4 bg-gray-800 border border-gray-700 px-4 py-2 rounded" x-text="toastText"></div>
+  </template>
+
+  <script>
+    function repoPrompt() {
+      return {
+        root: '.',
+        tree: {},
+        /**
+         * ⚙️  Use a Set for fast look‑ups but recreate it after every mutation so Alpine re‑reacts.
+         */
+        selected: new Set(),
+        instructions: '',
+        toastText: '',
+        suppressRefreshUntil: 0,  // when > Date.now() polling is paused
+
+        /* ───────────────────────── LIFECYCLE ───────────────────────── */
+        init() {
+          console.debug('[repoPrompt] init');
+          // ❶ Register global toggle listener once
+          window.addEventListener('toggle', (e) => {
+            console.debug('[repoPrompt] toggle event received', e.detail);
+            this._togglePath(e.detail.path);
+          });
+
+          this.refresh();
+          // poll every 300 ms
+          setInterval(() => this.refresh(), 300);
+        },
+
+        /* ───────────────────────── POLLING ───────────────────────── */
+        async refresh() {
+          if (Date.now() < this.suppressRefreshUntil) return;
+          console.debug('[repoPrompt] polling refresh…');
+
+          const res = await fetch(`/api/tree?root=${encodeURIComponent(this.root)}`);
+          if (!res.ok) return;
+          const newTree = await res.json();
+
+          // Only swap the tree if it *actually* changed to avoid unnecessary DOM churn.
+          if (JSON.stringify(this.tree) !== JSON.stringify(newTree)) {
+            console.debug('[repoPrompt] tree updated');
+            this.tree = newTree;
+            this.$nextTick(() => this._syncSelectionsWithTree());
+          }
+        },
+
+        /* ───────────────────────── SELECTION HANDLING ───────────────────────── */
+        _togglePath(path) {
+          const node = this._find(path, this.tree);
+          if (!node) return;
+
+          const shouldSelect = !this.selected.has(path);
+
+          // apply to this node
+          const update = p => shouldSelect ? this.selected.add(p) : this.selected.delete(p);
+          update(path);
+
+          // apply to every descendant if it’s a directory
+          if (node.is_dir) {
+            const walk = n => {
+              (n.children || []).forEach(child => {
+                update(child.path);
+                if (child.is_dir) walk(child);
+              });
+            };
+            walk(node);
+          }
+
+          // recreate Set so Alpine notices
+          this.selected = new Set(this.selected);
+          this.suppressRefreshUntil = Date.now() + 500;
+        },
+
+        _find(target, node) {
+          if (!node) return null;
+          if (node.path === target) return node;
+          for (const c of node.children || []) {
+            const hit = this._find(target, c);
+            if (hit) return hit;
+          }
+          return null;
+        },
+
+        _syncSelectionsWithTree() {
+          const valid = new Set();
+          const walk = node => {
+            if (!node) return;
+            valid.add(node.path);              //  ← add every path, dir *and* file
+            (node.children || []).forEach(walk);
+          };
+          walk(this.tree);
+
+          let mutated = false;
+          for (const p of Array.from(this.selected)) {
+            if (!valid.has(p)) {
+              this.selected.delete(p);
+              mutated = true;
+            }
+          }
+          if (mutated) this.selected = new Set(this.selected);  // trigger reactivity
+        },
+
+
+        /* ───────────────────────── COMPUTED ───────────────────────── */
+        get canCopy() {
+          return this.selected.size > 0 && this.instructions.trim().length;
+        },
+
+        get selectedStats() {
+          return `${this.selected.size} file${this.selected.size === 1 ? '' : 's'}`;
+        },
+
+        get treeHtml() {
+          if (!this.tree || !this.tree.children) return '<p class="p-4">Loading…</p>';
+
+          const renderNode = (node, depth = 0) => {
+            const indent = '&nbsp;'.repeat(depth * 4);
+            const isChecked = this.selected.has(node.path) ? 'checked' : '';
+
+            // single row for either kind of node
+            const row = `
+              <label class="pl-${depth * 4} flex items-center space-x-1 py-0.5 cursor-pointer">
+                ${indent}
+                <input type="checkbox" ${isChecked}
+                  onchange="window.dispatchEvent(new CustomEvent('toggle', { detail: { path: '${node.path}' } }))">
+                <span ${node.is_dir ? 'class="font-bold"' : ''}>${node.name}${node.is_dir ? '/' : ''}</span>
+              </label>
+            `;
+
+            if (node.is_dir) {
+              const kids = node.children.map(c => renderNode(c, depth + 1)).join('');
+              return row + kids;
+            }
+            return row;
+          };
+
+          return renderNode(this.tree, 0);
+        },
+
+        /* ───────────────────────── ACTIONS ───────────────────────── */
+        async copy() {
+          await this.refresh();  // make sure we’re fully up‑to‑date
+
+          const res = await fetch('/api/copy', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              root: this.root,
+              selected: Array.from(this.selected),
+              instructions: this.instructions
+            })
+          });
+
+          if (!res.ok) {
+            alert('Copy failed');
+            return;
+          }
+
+          const { payload } = await res.json();
+          await navigator.clipboard.writeText(payload);
+          this.showToast('Copied!');
+        },
+
+        showToast(text) {
+          this.toastText = text;
+          setTimeout(() => (this.toastText = ''), 2000);
+        }
+      };
+    }
+  </script>
+</body>
+</html>

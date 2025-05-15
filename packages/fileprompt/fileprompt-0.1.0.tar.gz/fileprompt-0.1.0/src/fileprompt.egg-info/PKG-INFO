@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: fileprompt
+Version: 0.1.0
+Summary: Turn any local codebase into an LLM-ready prompt.
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi==0.111.0
+Requires-Dist: uvicorn[standard]
+Requires-Dist: watchdog
+Requires-Dist: tiktoken
+Requires-Dist: jinja2
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+
+# Repo Prompt Prototype
+
+## Quick start
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Then open http://127.0.0.1:8000
+
+## About
+
+This is a fast‑iterating prototype that lets users browse a local project, select files, add instructions and copy a prompt formatted for LLM consumption.
+
+See `app/` for backend implementation and `templates/index.html` for the minimal HTMX/Alpine UI.
