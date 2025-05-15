@@ -1,0 +1,1 @@
+from testing_pack.testing_script import hello
