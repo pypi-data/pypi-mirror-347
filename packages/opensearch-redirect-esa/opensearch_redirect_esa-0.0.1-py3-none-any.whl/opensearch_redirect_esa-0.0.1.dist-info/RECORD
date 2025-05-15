@@ -1,0 +1,11 @@
+opensearch_redirect_esa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opensearch_redirect_esa/asgi.py,sha256=vDqroppr0UxSt8Ie48yiLB_0Hyu_1M3P5cac2utZm50,397
+opensearch_redirect_esa/settings.py,sha256=5ZQyE7bdtznTy7BkQLA_UUeKl-Y0Vn8sNgBYGfAgzX4,3256
+opensearch_redirect_esa/templates/base.html,sha256=xw9Qvea34QhCFKZUaJg7ZBgw-vsnUjLiZhNYl9aveX4,15586
+opensearch_redirect_esa/templates/base0.html,sha256=lf_7DZgT6GvK9__aVoUTJhMvCwUdFW7CrHaqW0S5kGI,126
+opensearch_redirect_esa/urls.py,sha256=zKS3xDabLdZCNIch1F3uCiWrdMg46zTOdi9C9eEcgoQ,946
+opensearch_redirect_esa/views.py,sha256=FH__gXwCm7xvcn4aXrbkgVly7nJSldRhZejKM0c3EhA,2695
+opensearch_redirect_esa/wsgi.py,sha256=O0UqAumgibs0Mx33GyKEGkzN6kJQe04b9gBZR_r7QUc,397
+opensearch_redirect_esa-0.0.1.dist-info/METADATA,sha256=Ymi73sQTh4xse-YP6PPODy5KUtW18XjuM23iSUXOSnU,517
+opensearch_redirect_esa-0.0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+opensearch_redirect_esa-0.0.1.dist-info/RECORD,,
