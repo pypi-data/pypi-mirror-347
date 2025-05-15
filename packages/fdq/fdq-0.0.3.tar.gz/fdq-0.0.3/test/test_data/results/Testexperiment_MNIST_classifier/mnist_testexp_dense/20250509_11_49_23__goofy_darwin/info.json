@@ -1,0 +1,21 @@
+{
+    "Cuda V.": "12.6",
+    "Python V.": "3.12.10 (main, Apr  9 2025, 04:03:51) [Clang 20.1.0 ]",
+    "System": "x1",
+    "Torch V.": "2.7.0+cu126",
+    "User": "marc",
+    "dirty-files": [
+        ".gitignore",
+        "pyproject.toml",
+        "src/fdq/experiment.py",
+        "src/fdq/run_experiment.py",
+        "src/fdq/testing.py"
+    ],
+    "end_datetime": "20250509_11_50_15",
+    "fdq-git": "54e79c53275a02049e703b096cf488a397e772f4",
+    "git-is-dirty": true,
+    "job_continuation": false,
+    "last_update": "20250509_11_50_25",
+    "start_datetime": "20250509_11_49_23",
+    "total_runtime": "days: 0, hours: 0, minutes: 1"
+}

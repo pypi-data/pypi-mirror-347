@@ -1,0 +1,6 @@
+{
+    "model": {
+        "simpleNet": "/home/marc/dev/fonduecaquelon/test/test_data/results/Testexperiment_MNIST_classifier/mnist_testexp_dense/20250509_17_15_40__happy_jackson/last_simpleNet_e1.fdqm"
+    },
+    "weights": null
+}

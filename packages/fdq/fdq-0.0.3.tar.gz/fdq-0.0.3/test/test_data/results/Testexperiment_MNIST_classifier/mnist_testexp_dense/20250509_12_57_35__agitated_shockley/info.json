@@ -1,0 +1,20 @@
+{
+    "Cuda V.": "12.6",
+    "Python V.": "3.12.10 (main, Apr  9 2025, 04:03:51) [Clang 20.1.0 ]",
+    "System": "x1",
+    "Torch V.": "2.7.0+cu126",
+    "User": "marc",
+    "dirty-files": [
+        "src/fdq/experiment.py",
+        "src/fdq/run_experiment.py",
+        "src/fdq/testing.py",
+        "test/test_experiment/test_classifier.py"
+    ],
+    "end_datetime": "20250509_12_57_50",
+    "fdq-git": "f44299888b678ccba00df37acad406b3753df4c4",
+    "git-is-dirty": true,
+    "job_continuation": false,
+    "last_update": "20250509_12_58_00",
+    "start_datetime": "20250509_12_57_35",
+    "total_runtime": "days: 0, hours: 0, minutes: 0"
+}

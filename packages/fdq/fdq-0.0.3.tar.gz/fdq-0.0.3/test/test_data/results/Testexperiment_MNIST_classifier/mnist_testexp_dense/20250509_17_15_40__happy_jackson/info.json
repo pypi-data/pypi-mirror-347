@@ -1,0 +1,21 @@
+{
+    "Cuda V.": "12.6",
+    "Python V.": "3.12.10 (main, Apr  9 2025, 04:03:51) [Clang 20.1.0 ]",
+    "System": "x1",
+    "Torch V.": "2.7.0+cu126",
+    "User": "marc",
+    "dirty-files": [
+        "experiment_templates/mnist/mnist_class_dense.json",
+        "experiment_templates/segment_pets/segment_pets.json",
+        "src/fdq/experiment.py",
+        "src/networks/simpleNet.py",
+        "test/test_experiment/mnist_testexp_dense.json"
+    ],
+    "end_datetime": "20250509_17_15_56",
+    "fdq-git": "a22bfb537369d4efe20bd6683d127367dcf7ac84",
+    "git-is-dirty": true,
+    "job_continuation": false,
+    "last_update": "20250509_17_16_06",
+    "start_datetime": "20250509_17_15_40",
+    "total_runtime": "days: 0, hours: 0, minutes: 0"
+}
