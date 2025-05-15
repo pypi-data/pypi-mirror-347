@@ -1,0 +1,21 @@
+EVENT_PACKAGE/Daily_flow_base_data.txt,sha256=zdKmQNi1T64AVnZeMMSfsKyiobO1XpXR8fYXJxZp7T0,209
+EVENT_PACKAGE/Daily_flow_event_data.txt,sha256=hIEvs22fwxzoAsTPn6PIYV8ZenZ812TOvbc54HELmN4,68
+EVENT_PACKAGE/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EVENT_PACKAGE/chat_gpt_event_link_python.py,sha256=HLqX1kvoRvCEWq_ZSbJog3F1UxiJ-RH7vO_kAnnhmiI,68776
+EVENT_PACKAGE/cli.py,sha256=lVVnjnZL3wJyDby3gpv0Wubr_pmBrPvuF58E3XOPRWI,50
+EVENT_PACKAGE/daily_event.py,sha256=SVB1nDizmSriGWepqdPU_1E_S_g_vJW8kr04NUJnZR0,35756
+EVENT_PACKAGE/data.csv,sha256=aOZu6_eEyZa8UjrtVzTn8PR9UEPWimAblgbVITsKh1U,9310
+EVENT_PACKAGE/grok event creation.py,sha256=tLDL7seBODWiGXe4XhRDWCgtlRoBT8bRx4Ao9288cdk,50357
+EVENT_PACKAGE/hourly_event.py,sha256=od3iRW6diUwIVdaLpQa4rABKbQcdv8kmhAbNZAKs_-g,35635
+EVENT_PACKAGE/hourly_flow_base_data.txt,sha256=r3G-jGZld-tKWyc3jhV24uozfrr2QNk34nFmpJ9nDOk,2800
+EVENT_PACKAGE/hourly_flow_event_data.txt,sha256=IlTJC5q7-qiZqtUduW4WP8VLlclr-6XT6Nv9OTVDJ00,1683
+EVENT_PACKAGE/reading a csv file.py,sha256=Uojo-V3fez8k8jnTSqJkLI9cNz-WhvMY6nUKMI0Fkx0,343
+EVENT_PACKAGE/streamlit test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EVENT_PACKAGE/test1.csv,sha256=fivirklz0AkX76f6LqCwQKz-Q6FgukGkDa0vXOpbhv8,2289
+EVENT_PACKAGE/test2.csv,sha256=RBI-4NoHBNrRqLJdzMgnOOAYJM_VM4noMvZMGe4mMsY,16403
+EVENT_PACKAGE/try_except vs try_finally.py,sha256=o4Av8N2zTh44kHopQRnbWHYpDP4U7UKtsKUjy1Jl6n8,201
+event_package-0.1.9.dist-info/METADATA,sha256=aMvIer2g5ZNCy3DqD5pVwFVMN7VG_0cAQJ-mUqJ1oYY,5192
+event_package-0.1.9.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+event_package-0.1.9.dist-info/entry_points.txt,sha256=Wdz8yHa_tLa1r90nE1OEsnovPAgLgfPvaFT7C0vBtEY,58
+event_package-0.1.9.dist-info/top_level.txt,sha256=aRlN1E88Mm7IYKMpG9R4xcgjUDZc7FuhhNBKXdakS_w,14
+event_package-0.1.9.dist-info/RECORD,,
