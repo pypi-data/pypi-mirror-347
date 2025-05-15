@@ -1,0 +1,13 @@
+object_clerk/__init__.py,sha256=n9MPEQEVX9nIMPIucs9ipbbyFJKEByHXpJNyLpTUHbY,81
+object_clerk/clerk.py,sha256=-GSfIyU7rLEqmeEu9vv0PPwzPQcKydyIY36sFR5EWfU,23676
+object_clerk/config.py,sha256=18JmeW9E_3D0QlpkN6HzzG54FtWLdcXFsUt0LZaTB5E,2101
+object_clerk/exceptions.py,sha256=4Kvq0ZbS2vc245-JKYDObsnkUVoqrO-zjb5eI5zwsdE,949
+object_clerk/utils.py,sha256=hC8BtffmoCQVS-ZFVDIhMg_2huOKhkmIz3AyY8KzM88,2675
+object_clerk/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+object_clerk/tests/example_object,sha256=RfVMlRKI44QetlYDgXocLvgOQAApr4MT1EEWs7PFMM8,51
+object_clerk/tests/test_object_clerk.py,sha256=2jsq--ubrjcWDsegLI92dpx8-4n_yKTeNcywDJyyJ54,19585
+object_clerk-0.1.2.dist-info/LICENSE,sha256=j-uAp6MkZGfqsurCR4Xasnt80qdqG91HtP1oFRLhHxU,1050
+object_clerk-0.1.2.dist-info/METADATA,sha256=FEpK0wHWgLEAf6_JZqh-mWa3wXJAaKjCUcn8NQ8VfP0,8253
+object_clerk-0.1.2.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+object_clerk-0.1.2.dist-info/top_level.txt,sha256=e0AsFJCE8dHHD8wenMxtV8Tw7QRBpMdwGF5Koebdpmk,13
+object_clerk-0.1.2.dist-info/RECORD,,
