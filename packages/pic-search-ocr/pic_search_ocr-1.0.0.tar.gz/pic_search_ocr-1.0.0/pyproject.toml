@@ -1,0 +1,27 @@
+[project]
+name = "pic-search-ocr"
+version = "1.0.0"
+description = "Search the text of images in your folder with Tesseract OCR."
+readme = "README.md"
+authors = [
+    { name = "Ryan Stolliker" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "pytesseract>=0.3.13",
+]
+license = { text = "MIT"}
+
+[project.scripts]
+pic-search = "pic_search:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+Repository = "https://github.com/ryan-w-s/pic-search"
+Homepage = "https://github.com/ryan-w-s/pic-search"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pic_search"]
