@@ -1,0 +1,17 @@
+plt2latex/__init__.py,sha256=SYdpLM-SKzpMgPRQMH_648FZ6Ap1Zdo6GwTpYvI8m_k,332
+plt2latex/config.py,sha256=S9Yat1L8T-ZpHvXMlGqppzC2kqr9OmhNpwHY8XXTPAc,8980
+plt2latex/figure.py,sha256=qTcNilJ8rAmwn-G8vCsQZ2H7HyzcxeEPrxchhckfruA,953
+plt2latex/fontsizes.py,sha256=PoW_HVxWSUB6nyekO6q7j7lZyynajcsNcAgpgZcJTVc,553
+plt2latex/patcher.py,sha256=UWiyO0cQru_9Zlc1pu60RXeY0xcJKKJ_JFeOps0aY_w,8511
+plt2latex/plt2latex.py,sha256=YZyw5M-74jWXqYAhZujNuaMMVMfmq-lRrxRTZrEXfDk,843
+plt2latex/plt2latex_pgf.py,sha256=dgzN-wKoIs0X8SN2SXuPtv3wD-cqQ65NvQ9VmrIEa_I,45984
+plt2latex/rcparams.py,sha256=1pfWIKhZp2HKqIksxPqsa1vNVMk0eB6Vcb5GtxUqeFM,3912
+plt2latex/rcsetup.py,sha256=bcyjORO8nYOYTBfN8mkH29pF9jy9B0s4t06dKemmcRg,3291
+plt2latex/renderer.py,sha256=Eb0iJv6RDVcUY-jQ1HWDs_aynGOhpI7oqWu8BmJ0q1k,218
+plt2latex/units.py,sha256=2qZ-unp7I1FkRBNaSItEUArjPqttJ6pRY231rRbl9fc,1019
+plt2latex/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plt2latex/tests/test_examples.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plt2latex-0.0.12.dist-info/METADATA,sha256=CqU79kU8M6aEbnuJ3xOs_a3QZ1LpI7wQcpwv9wVfC_M,762
+plt2latex-0.0.12.dist-info/WHEEL,sha256=QZxptf4Y1BKFRCEDxD4h2V0mBFQOVFLFEpvxHmIs52A,91
+plt2latex-0.0.12.dist-info/top_level.txt,sha256=0AQTyRtgU8ok6Xf7tS9Sx1uYXr2YIrYIgsCdg-s_RlI,10
+plt2latex-0.0.12.dist-info/RECORD,,
