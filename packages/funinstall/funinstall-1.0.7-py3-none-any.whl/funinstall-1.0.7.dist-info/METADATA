@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: funinstall
+Version: 1.0.7
+Summary: funinstall
+Author-email: 牛哥 <niuliangtao@qq.com>, farfarfun <farfarfun@qq.com>
+Maintainer-email: 牛哥 <niuliangtao@qq.com>, farfarfun <farfarfun@qq.com>
+Project-URL: Organization, https://github.com/farfarfun
+Project-URL: Repository, https://github.com/farfarfun/funinstall
+Project-URL: Releases, https://github.com/farfarfun/funinstall/releases
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: funbuild>=1.6.3
+Requires-Dist: funsecret>=1.4.56
+Requires-Dist: funutil>=1.0.50
+
+# funinstall
