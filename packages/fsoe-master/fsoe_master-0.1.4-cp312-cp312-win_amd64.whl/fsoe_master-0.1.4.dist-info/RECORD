@@ -1,0 +1,8 @@
+fsoe_master/__init__.py,sha256=wQL21SKqJmZ-NSboyC8tgIR3EmyN1XDjwrN7CAHZpGQ,23
+fsoe_master/fsoe_master.cp312-win_amd64.pyd,sha256=eS04idgA7S3kuM0d364cEXQwPX9JEDRCFeNOa1PLlrc,761344
+virtual_slave/fsoe_slave.cp312-win_amd64.pyd,sha256=z0tUf5XVL-WEjCkPiABknyRZupkWgcfwJwXXE2pIzRI,130560
+fsoe_master-0.1.4.dist-info/LICENSE.md,sha256=GVXZA2Vg2tLR50NoX31zRqP8D5m-qgPxHSQx1kfL4YU,17630
+fsoe_master-0.1.4.dist-info/METADATA,sha256=qnVDHarNBushb5hMunYoxPFad0nUtgQXswyJhQSe8FE,247
+fsoe_master-0.1.4.dist-info/WHEEL,sha256=p2ZSKEh8afWXttZ398mr8-70gvkpUp1ipxCIV_GFr38,101
+fsoe_master-0.1.4.dist-info/top_level.txt,sha256=KRxVYfjHR9W4dAp6_jIkYxjRC9o7KjRFfR5SPv-BueE,12
+fsoe_master-0.1.4.dist-info/RECORD,,
