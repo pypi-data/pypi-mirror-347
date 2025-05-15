@@ -1,0 +1,16 @@
+str2td/__init__.py,sha256=AxefYin3ODRxcDn0voEDzpwSvHtQkIBjRTtqRGfRzI0,147
+str2td/_version.py,sha256=b8Tfyn46wV92NWm_uziWVxCW3zTxPV8EyFKcI9HhXcA,23
+str2td/error.py,sha256=wqJFH-bdJMiQJId7DmZfQmOL8dcTtwvxYmihMwdg9bo,177
+str2td/generate.py,sha256=2RCSfk8vZPh_8dahNxIV2uIP-E-V_pyPojqv-oc6pc0,1316
+str2td/grammar.lark,sha256=OXeCsfVc3IhrCdZ8BGh0P8AFoS9ZeNlPWsh8gaCJPIQ,1347
+str2td/parser_.py,sha256=P8I8yUDAYjw_aaKta8eQWg1ZQ3jzgYQe06wPWMhBztA,224
+str2td/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+str2td/str2td_.py,sha256=k9_BQS44vYjKtDYCjAIoFsUEBGoimjerPr0wvP52H10,339
+str2td/transformer.py,sha256=Cu-wrWx1zfV7kum9eHEhyuaeluGnr2CV_hP593gxo-k,6185
+str2td/segments/__init__.py,sha256=qXkYRrIrKJrt7KU4iHfisZm5qaR_-A5z0dl74f2Vfe0,38
+str2td/segments/date.py,sha256=pSNq3-M26il6-LufZ_jLw8kl_B5_nB8lqF7Bz6DYvI0,1213
+str2td/segments/robostr.py,sha256=R_nzPv4QtWsUuLZ4dKT1U0jgaZmATLgq9jC9nyRldi8,2590
+str2td/segments/weekday.py,sha256=gD736EHYMEKmZ345f0svOgIFf_e7HFvtFuBTFjbVGiw,976
+str2td-0.0.4.dist-info/METADATA,sha256=70vAr0jIkbX0ISWYTJt4do1IEILDcZzokhJPUSyH2_E,1946
+str2td-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+str2td-0.0.4.dist-info/RECORD,,

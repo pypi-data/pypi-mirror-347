@@ -1,0 +1,25 @@
+start: segment ("!" segment)*
+
+?segment: robostr_segment | date_segment | time_segment | weekday_segment
+
+robostr_pair: SIGNED_NUMBER WORD
+robostr_segment: robostr_pair+
+
+date_segment: DIGITS "-" ( (DIGITS | MONTH_WORDS) ( "-" ( DIGITS )? )? )?
+time_segment: DIGITS ":" ( DIGITS ( ":" ( DIGITS )? )? )?
+weekday_segment: WEEKDAY
+
+//@WEEKDAY
+WEEKDAY: "poniedziałek"|"poniedzialek"|"wednesday"|"niedziela"|"thursday"|"saturday"|"czwartek"|"tuesday"|"wtorek"|"sunday"|"sobota"|"piątek"|"piatek"|"monday"|"friday"|"środa"|"sroda"|"śro"|"wto"|"wed"|"tue"|"thu"|"sun"|"sro"|"sob"|"sat"|"pon"|"pią"|"pia"|"nie"|"mon"|"fri"|"czw"|"śr"|"wt"|"we"|"tu"|"th"|"su"|"sr"|"so"|"sa"|"pt"|"po"|"pn"|"pi"|"ni"|"nd"|"mo"|"fr"|"cz"
+//@MONTH_WORDS
+MONTH_WORDS: "październik"|"pazdziernik"|"september"|"wrzesień"|"wrzesien"|"sierpień"|"sierpien"|"november"|"listopad"|"kwiecień"|"kwiecien"|"grudzień"|"grudzien"|"february"|"december"|"czerwiec"|"styczeń"|"styczen"|"october"|"january"|"marzec"|"lipiec"|"august"|"march"|"april"|"luty"|"june"|"july"|"wrz"|"sty"|"sie"|"sep"|"paź"|"paz"|"oct"|"nov"|"may"|"mar"|"maj"|"lut"|"lis"|"lip"|"kwi"|"jun"|"jul"|"jan"|"gru"|"feb"|"dec"|"cze"|"aug"|"apr"
+
+DIGITS: DIGIT+
+
+%import common.NUMBER
+%import common.SIGNED_NUMBER
+%import common.WORD
+%import common.DIGIT
+%import common.WS
+
+%ignore WS
