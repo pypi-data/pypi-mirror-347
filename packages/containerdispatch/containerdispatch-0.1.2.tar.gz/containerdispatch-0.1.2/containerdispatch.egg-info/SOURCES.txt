@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+containerdispatch/__init__.py
+containerdispatch/find_impl.py
+containerdispatch/main.py
+containerdispatch/mro.py
+containerdispatch/utils.py
+containerdispatch.egg-info/PKG-INFO
+containerdispatch.egg-info/SOURCES.txt
+containerdispatch.egg-info/dependency_links.txt
+containerdispatch.egg-info/top_level.txt
+tests/test_functools.py
