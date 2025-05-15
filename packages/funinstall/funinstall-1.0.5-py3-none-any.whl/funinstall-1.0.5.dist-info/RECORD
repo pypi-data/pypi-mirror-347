@@ -1,0 +1,12 @@
+funinstall/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funinstall/command.py,sha256=5v_Th1Bld_KoJlQxxEePr_Xey8wfQNxomdwIko1gd2s,141
+funinstall/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funinstall/install/__init__.py,sha256=TttN4P6Z8Ln44h8uCgiMCAS-5IYbEuklKVvdPd1Veqg,98
+funinstall/install/base.py,sha256=RqGaqQD_tl6b8o6FS6wLxQam5mol7YIuN9lZf13JPpM,42
+funinstall/install/go.py,sha256=R9yGdBn6m-YdjcIx1kLlypdhKHmxQrcBhWzQv3rB51A,741
+funinstall/install/new_api.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funinstall-1.0.5.dist-info/METADATA,sha256=SKD4K397sI0_ePGA47SWTTQExCM6dHEEGfH8JGasYSo,587
+funinstall-1.0.5.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+funinstall-1.0.5.dist-info/entry_points.txt,sha256=nYFPrR156mQECvxGODwNyS9BCqUegKqtaT1mXJgK6lk,61
+funinstall-1.0.5.dist-info/top_level.txt,sha256=0rY2MzlJu1isOE8L2RpoWveNZlBkiMr5S5Ds7Sw7nkw,11
+funinstall-1.0.5.dist-info/RECORD,,
