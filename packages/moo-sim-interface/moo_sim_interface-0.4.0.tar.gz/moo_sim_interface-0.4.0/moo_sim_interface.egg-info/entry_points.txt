@@ -1,0 +1,2 @@
+[console_scripts]
+run_sim = moo_sim_interface.simulator_api:main

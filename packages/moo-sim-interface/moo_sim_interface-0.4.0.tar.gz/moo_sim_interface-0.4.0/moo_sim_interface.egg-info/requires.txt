@@ -1,0 +1,7 @@
+fmpy
+dask[bag]
+numpy
+PyYAML
+plotly
+matplotlib
+requests
