@@ -1,0 +1,10 @@
+gaxkey-0.2.18.dist-info/WHEEL,sha256=ECE8MRbwfg6TGi4LblE8JDdYCQ1z4rjD2e0Tx1t1iio,156
+gaxkey-0.2.18.dist-info/entry_points.txt,sha256=M-_jY_BVTVQ-qqNcX4YHeoZlxPOkka0PCfgp3xsuSVo,91
+gaxkey-0.2.18.dist-info/METADATA,sha256=PZO912w8pfd4PEzyYvjsfxF1xjo-mrEWlqAFujvsMnI,771
+gaxkey-0.2.18.dist-info/RECORD,,
+gaxkey/_core.cpython-310-x86_64-linux-gnu.so,sha256=9ReirsXg53sIuWRl_uDa7VEVZ5zf6TMMbIj13nPNaOk,8254128
+gaxkey/__init__.py,sha256=bWRlBK-WtcLesBOdnzkvNm9w2SuXY7tld5zfGr1Tx_Y,401
+gaxkey/TUTORIAL.md,sha256=iP1RZAh1qSwR36Lv0t8MEbedxQEZIaC99KFOlg95ixE,6522
+gaxkey/server_main.py,sha256=viSLm9SCkA9SpdCTrHX1pZ7z-v0lwE8r8DXrc8aEZNA,2458
+gaxkey/client_main.py,sha256=b0aPrePhSX6r8sXHxuW-Id8YOS-67tQInFUDLqznfsE,2869
+gaxkey/__init__.pyi,sha256=qewL3ZgE1S_U2OuB3mNc6_Wo3SzD4n3nSB5Y_V9pfRc,582
