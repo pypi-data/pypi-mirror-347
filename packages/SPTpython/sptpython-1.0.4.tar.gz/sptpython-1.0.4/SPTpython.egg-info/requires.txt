@@ -1,0 +1,17 @@
+numpy==1.20.0
+pandas==1.0.5
+pims==0.5
+tifffile==2022.5.4
+matplotlib==3.7.5
+dominate==2.9.1
+scipy==1.5.2
+trackpy==0.4.2
+psutil==5.7.2
+Pillow==9.1.1
+opencv-python
+Cython==3.0.11
+pyperclip==1.8.2
+scikit-image==0.19.2
+pywin32
+dpath
+platformdirs
