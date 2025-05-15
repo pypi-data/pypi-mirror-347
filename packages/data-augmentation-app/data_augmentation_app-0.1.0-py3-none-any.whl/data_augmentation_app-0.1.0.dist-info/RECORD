@@ -1,0 +1,10 @@
+data_augmentation_app/__init__.py,sha256=GGlGgZpDdAi3fCeFF4lllDtexym6BvLyTkWXjYwKXzs,510
+data_augmentation_app/augmentation_core.py,sha256=FqcaFAzpiZCwBhhhIS6ap8xOumYy-OJLTV1vT7Fp_Mc,4172
+data_augmentation_app/cli.py,sha256=VfnUNiBRNjofIX1uMIjtDXErBU067u_bLHTKcykHWQg,6104
+data_augmentation_app/data_augmentation_main.py,sha256=-bYfEwrrjzH1aD0VbWsGDUiPtH4C2DBZEGzZIhWqVwY,15939
+data_augmentation_app/layers_personalizadas.py,sha256=v-mpQmdpym8z8Xmy871_b6jwezEn4NQ4wdDT2uFePL8,9704
+data_augmentation_app-0.1.0.dist-info/METADATA,sha256=y3oshoqmEaD772L7hVL5rPHqICcz0Qf0AhzdqA8wWc8,3512
+data_augmentation_app-0.1.0.dist-info/WHEEL,sha256=QZxptf4Y1BKFRCEDxD4h2V0mBFQOVFLFEpvxHmIs52A,91
+data_augmentation_app-0.1.0.dist-info/entry_points.txt,sha256=wdQyAQRcOmZ6y0-evr95b1m49-W4EZlpBXBZh1ORQ2s,88
+data_augmentation_app-0.1.0.dist-info/top_level.txt,sha256=eaPuwzmQEgSJtF520JF5wUXr654wLoubvNPgzUnoBsQ,22
+data_augmentation_app-0.1.0.dist-info/RECORD,,
