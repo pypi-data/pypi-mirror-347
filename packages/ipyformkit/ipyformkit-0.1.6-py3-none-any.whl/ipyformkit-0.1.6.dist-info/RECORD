@@ -1,0 +1,11 @@
+ipyformkit/__init__.py,sha256=x5O7UYfgXTaKT2OJrg93byKOatXxjCFq2L0xpA1nUwo,159
+ipyformkit/auxfuncs.py,sha256=CvtC5U31rbLaguj6pAYrBs0h8pll3NsD3PU_3a8Ea7g,1351
+ipyformkit/core.py,sha256=i2_JWFnVGuAEgFr1rFGhl1e-dgJB6YSfj_wUHMupjdk,10759
+ipyformkit/custom_widgets.py,sha256=-OiZ2cC7SvWIyW0wl3DLOgJBLK3ntBRFle7Ff9eyj5c,6274
+ipyformkit/assets/custom_widgets.css,sha256=O1Z7orMBzPNFqtqoTM2Yb5pn1UCIyxxMtmZmvXcBeoc,1060
+ipyformkit/assets/ipyformkit.css,sha256=j4rjniRwmurjice44t37ma2ih-6wN12Iej2P1qBNVjE,4624
+ipyformkit-0.1.6.dist-info/licenses/LICENSE,sha256=Ym2ZMFNqqfRh25pscz_yi__bvwHUqzpkLRGloX8qfdY,1064
+ipyformkit-0.1.6.dist-info/METADATA,sha256=hAeShS5-m8z9lHwwFyznpDy1k2TO9gEA4Wzd8Vmup9g,5161
+ipyformkit-0.1.6.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+ipyformkit-0.1.6.dist-info/top_level.txt,sha256=fuce0jPGCXqglpLfVqSu_4YOp8PAVTvEiNKlZ79g564,11
+ipyformkit-0.1.6.dist-info/RECORD,,
