@@ -1,0 +1,22 @@
+[CDF-21844] 🪦Examples pakage (#1564)
+
+# Description
+
+Please describe the change you have made.
+
+## Changelog
+
+- [x] Patch
+- [ ] Minor
+- [ ] Skip
+
+## cdf
+
+No changes.
+
+
+## templates
+
+### Removed
+
+- Example package from templates
