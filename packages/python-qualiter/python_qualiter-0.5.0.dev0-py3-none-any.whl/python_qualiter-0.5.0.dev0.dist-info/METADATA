@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: python_qualiter
+Version: 0.5.0.dev0
+Summary: A modern Click-based CLI tool for running multiple linting tools on Python files with a clean visual output.
+Author: Radovan Bacovic
+Author-email: radovan.bacovic@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
