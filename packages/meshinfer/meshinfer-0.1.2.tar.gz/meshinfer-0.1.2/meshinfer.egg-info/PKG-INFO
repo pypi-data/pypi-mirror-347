@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: meshinfer
+Version: 0.1.2
+Summary: MeshInfer: Efficient Kernels Library for LLMs Serving on Mesh-arch Hardware
+Home-page: https://github.com/MeshInfra/MeshInfer
+Author: Congjie He
+Author-email: congjiehe95@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# MeshInfer
+MeshInfer: Efficient Kernels Library for LLMs Serving on Mesh-arch Hardware
+
+
