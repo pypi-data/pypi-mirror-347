@@ -1,0 +1,9 @@
+mcp_server_milvus/__init__.py,sha256=QuXnVCH_WU32S0g29nGKalTqUnlG5CIKmuKP4N_6taE,185
+mcp_server_milvus/blogpost.md,sha256=GwGlzSnWyotasaYjd_fxQ4dP_n9pMSitvVikNTqOmVc,1600
+mcp_server_milvus/example.env,sha256=ILqUAROPfUqmamYuuvlmX17XWoLZmgEx19uL5RQjyv4,42
+mcp_server_milvus/main.py,sha256=mOcntnePdIwAn6khMEq5oo40vKXI7sT63TlcI5dlObM,81
+mcp_server_milvus/server.py,sha256=TFfknguU13TS6eytXw0uGM7jwPKzDpDSnmnpPVLZmiU,23926
+mcp_server_milvus-0.1.1.dev3.dist-info/METADATA,sha256=cxQDRMxEh19mFRGjKL3vNsyXuBnC3G6Tytze8aa4U9g,9575
+mcp_server_milvus-0.1.1.dev3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_server_milvus-0.1.1.dev3.dist-info/entry_points.txt,sha256=CTWFXmRDi7gsTpH2OFIjynPY9puQkuX3LtUp6BWkAIg,61
+mcp_server_milvus-0.1.1.dev3.dist-info/RECORD,,
