@@ -1,0 +1,12 @@
+setup.py
+pdf_extractor/__init__.py
+pdf_extractor/_prompt.py
+pdf_extractor/extractor.py
+pdf_extractor/parser.py
+pdf_extractor/token_fetcher.py
+pdf_extractor/uploader.py
+pdf_json_extractor.egg-info/PKG-INFO
+pdf_json_extractor.egg-info/SOURCES.txt
+pdf_json_extractor.egg-info/dependency_links.txt
+pdf_json_extractor.egg-info/requires.txt
+pdf_json_extractor.egg-info/top_level.txt
