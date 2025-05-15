@@ -1,0 +1,8 @@
+fastapi>=0.115.12
+llmada>=0.1.9
+numpy>=2.2.5
+querypipz>=0.1.5
+requests>=2.32.3
+sse-starlette>=2.3.4
+toml>=0.10.2
+uvicorn>=0.34.2
