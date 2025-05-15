@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: python_nano_bench
+Version: 0.1.0
+Summary: Control all Build Systems
+Author-email: FloydZ <floyd.zweydinger+github@rub.de>
+Project-URL: Repository, https://github.com/FloydZ/python_nano_bench
+Keywords: benchmark
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest
+Requires-Dist: pylint
+Requires-Dist: Opcodes
+Dynamic: license-file
+
+Installation
+============
+
+Automatic:
+----------
+```bash
+pip install https://github.com/FloydZ/python_nano_bench
+```
+
+Manual:
+------
+```
+git clone --recursive https://github.com/FloydZ/python_nano_bench
+cd python_nano_bench
+./build.sh
+```
+
+The `./build.sh` command generates the needed executables.
+In the case of `nixos` you can simply run `nix-shell`
+
+Usage:
+======
+ 
+TODO
