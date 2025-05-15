@@ -1,0 +1,16 @@
+biopython
+blosum
+fair-esm
+lmdb
+matplotlib
+mdanalysis
+numpy<2.0,>=1.25
+pandas
+pdb-tools
+requests
+scikit-learn
+seaborn
+sequence-models
+torch_geometric
+torch-scatter
+tqdm
