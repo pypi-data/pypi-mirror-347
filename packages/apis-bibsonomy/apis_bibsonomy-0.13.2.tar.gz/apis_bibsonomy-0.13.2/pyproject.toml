@@ -1,0 +1,41 @@
+[project]
+name = "apis-bibsonomy"
+version = "0.13.2"
+description = "Bibsonomy/Zotero plugin for managing refernces in APIS framework"
+readme = "README.md"
+authors = [{ name = "Matthias Schlögl", email = "m.schloegl@gmail.com"}]
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+   "Django>=3.0",
+   "jmespath>=0.10.0",
+   "djangorestframework>=3.15.1",
+   "requests>=2.32.3",
+   "django-crispy-forms>=2.1",
+   "django-autocomplete-light>=3.11.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff==0.11.2",
+    "djlint==1.36.4",
+    "deptry==0.23"
+]
+
+[tool.ruff]
+lint.ignore = ["E501", "F403"]
+
+[tool.deptry.package_module_name_map]
+djangorestframework = "rest_framework"
+django-autocomplete-light = ["dal", "dal_select2"]
+django-crispy-forms = "crispy_forms"
+
+[tool.deptry.per_rule_ignores]
+DEP001 = ["apis_core"]
+
+[tool.djlint]
+ignore = "H031"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
