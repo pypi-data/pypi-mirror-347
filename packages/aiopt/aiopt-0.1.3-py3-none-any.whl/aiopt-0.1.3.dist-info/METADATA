@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: aiopt
+Version: 0.1.3
+Summary: aioproxytest is a simple asynchronous lib for testing proxy servers
+Author: HoJLter
+Author-email: hojlter.work@gmail.com
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiohttp (>=3.11.18,<4.0.0)
+Description-Content-Type: text/markdown
+
+<h1 align="center">
+    AIOproxytest
+</h1>
+
+<h3 align="center">
+    aiopt is a simple asynchronous lib for testing proxy servers
+</h3>
+
+<div align="center">
+    <img src=".github/aiopt.png" align="center">
+</div>
+
+---
+
+
+
+
+
