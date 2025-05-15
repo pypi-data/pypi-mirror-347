@@ -1,0 +1,8 @@
+sbapi_connect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sbapi_connect/connect.py,sha256=0NwQaH_y4vN_1fQ3Q-AcP0Hmsgn7WdWhMRG3hVYh528,3136
+sbapi_connect/base/apibase.py,sha256=3UAWz1PGYop3TBUwtlXiHr23F0iKHqpj20uJwuyMs5w,521
+sbapi_connect/errors/apierrors.py,sha256=D2mNcFPVi9mkUJR61EZVZ-HFz3-u7Zv14Yi6vG-qKXE,119
+sbapi_connect-0.0.26.dist-info/METADATA,sha256=iCLWTeHFfuFldVP61MkKywBG7B-Uc-RaIqhFEypfcj0,421
+sbapi_connect-0.0.26.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+sbapi_connect-0.0.26.dist-info/top_level.txt,sha256=xttiS8L0syE3J8lmw8PS2GVohseQoe5rHB1CXjrnOPc,14
+sbapi_connect-0.0.26.dist-info/RECORD,,
