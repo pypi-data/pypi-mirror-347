@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: PyRocketSim
+Version: 0.3.1
+Summary: Simulator dynamic flight rocket
+Author: Vladimir
+License: MIT
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+﻿# PyRocketSim
+
+High-performance rocket trajectory simulation with Python bindings via pybind11.
+
+
+### PyPI installation
+
+```bash
+pip install PyRocketSim
+```
+
+### **Requires Linux**:
+
+- C++17 compiler
+- CMake ≥ 3.18
+- Python ≥ 3.7
+
+### **Requires Windows**:
+
+- Visual Studio C++
+
+### License
+MIT - See LICENSE for details
