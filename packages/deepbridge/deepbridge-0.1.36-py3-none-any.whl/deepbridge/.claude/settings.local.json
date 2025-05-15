@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(mkdir:*)",
+      "Bash(awk:*)",
+      "Bash(ls:*)",
+      "Bash(python:*)",
+      "Bash(PYTHONPATH=/home/guhaase/projetos/DeepBridge python -c \"import sys; print(sys.path); try: from deepbridge.validation.wrappers.robustness_suite import RobustnessSuite; print('RobustnessSuite successfully imported') except Exception as e: print(f'Error: {e}')\")",
+      "Bash(mv:*)",
+      "Bash(git commit:*)",
+      "Bash(chmod:*)",
+      "Bash(git add:*)",
+      "Bash(PYTHONPATH=/home/guhaase/projetos/DeepBridge python -c \"import sys; sys.path.append('/home/guhaase/projetos/DeepBridge'); from deepbridge.core.experiment.report.renderers.robustness_renderer import RobustnessRenderer; print('Robustness renderer module imported successfully')\")",
+      "Bash(flake8:*)",
+      "Bash(cp:*)",
+      "Bash(touch:*)",
+      "Bash(sed:*)",
+      "Bash(for file in /home/guhaase/projetos/DeepBridge/deepbridge/templates/report_types/uncertainty/partials/*.html)",
+      "Bash(do)",
+      "Bash(ln:*)",
+      "Bash(done)",
+      "Bash(for file in *.html)",
+      "Bash(do sed -i 's/<\\\\!--/<!--/g' $file)",
+      "Bash(sudo mkdir:*)",
+      "Bash(rm:*)",
+      "Bash(cat:*)",
+      "Bash(poetry build)"
+    ],
+    "deny": []
+  }
+}
