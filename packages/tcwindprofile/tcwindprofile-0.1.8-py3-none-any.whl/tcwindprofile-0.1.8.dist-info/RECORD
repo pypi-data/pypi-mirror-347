@@ -1,0 +1,10 @@
+tcwindprofile/Rmax_predictfromR34kt.py,sha256=KjdJhzGrg1TizkCn1PUNCkXNa653IbkqtIhMPvLnYY4,3407
+tcwindprofile/__init__.py,sha256=HuFYE1jTpS9ebtIM22119oXwb5sSDTWEqcI1kvTniJw,27
+tcwindprofile/tc_outer_radius_estimate.py,sha256=s3rQYsB5jh8a67Tt_IEkEwxEgPczdMeexIZ1kV3FMj4,1701
+tcwindprofile/tc_outer_windprofile.py,sha256=KYFtd0JWUD0wA4O93ZNaTUWrG-srOz8E65XT3s6KwbI,2765
+tcwindprofile/windprofile.py,sha256=Tg6FkIPfhasMFPX8mIksRku-7llPFCxeodxSGBcU-2o,10838
+tcwindprofile-0.1.8.dist-info/licenses/LICENSE,sha256=ACaMcLX_wbk7yCbYXMyNO-UnTMe130qnDMxdPD07nJ4,1067
+tcwindprofile-0.1.8.dist-info/METADATA,sha256=nFSuxb0VTzqcGHOeuhWT0CkYls-fv0L3Z9QNnZBhF-M,2226
+tcwindprofile-0.1.8.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+tcwindprofile-0.1.8.dist-info/top_level.txt,sha256=i8j0z7Dj_Z7qZ9XMMLYyNwf1bx01B6dTcawojX_AcMM,14
+tcwindprofile-0.1.8.dist-info/RECORD,,
