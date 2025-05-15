@@ -1,0 +1,10 @@
+matplotlib
+numpy
+psutil
+python-sat
+pyvista>=0.44.2
+rustworkx>=0.16.0
+scipy
+
+[dev]
+ruff~=0.11.7

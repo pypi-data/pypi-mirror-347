@@ -1,0 +1,90 @@
+Metadata-Version: 2.4
+Name: qCodePlot3D
+Version: 0.1.0
+Summary: Create 3D visualizations of 3D quantum color codes.
+Author-email: Lars Esser <mail@lars-esser.de>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/larsesser/qcodeplot3d
+Project-URL: Issues, https://github.com/larsesser/qcodeplot3d/issues
+Keywords: color code,3D,visualization,2D
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Quantum Computing
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: python-sat
+Requires-Dist: pyvista>=0.44.2
+Requires-Dist: rustworkx>=0.16.0
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: ruff~=0.11.7; extra == "dev"
+Dynamic: license-file
+
+# qCodePlot3D
+
+qCodePlot3D provides 3D visualizations of 2D and 3D quantum color codes, making it easy to inspect the code and visualize syndromes of error configurations.
+
+## Available Quantum Codes
+
+The following quantum codes are currently implemented:
+- 2D square color code
+- 2D triangular color code
+- 3D cubic color code
+- 3D tetrahedral color code
+
+The package provides an interface to extend it to further quantum codes.
+Contributions of such implementations to the package are appreciated.
+
+
+## Usage
+
+The package comes with a minimal GUI to construct and plot the predefined quantum codes.
+Start the GUI by calling
+```
+python3 -m qcodeplot3d
+```
+After `Build`ing a available code with a given distance, you can hit `Plot Primary Graph` to show it.
+If you press `Build Dual Graph` in addition, you can also plot the dual graph or both graphs at once.
+
+Alternatively, the package can be used to script the creation of figures.
+A small example snipped might look as following:
+
+```
+import pathlib
+from qcodeplot3d.cc_3d import TetrahedronPlotter, tetrahedron_3d_dual_graph
+
+THIS_DIR = pathlib.Path(__file__).parent
+
+distance = 5
+dual_graph = tetrahedron_3d_dual_graph(distance)
+plotter = TetrahedronPlotter(dual_graph, distance=distance)
+# describes the position of the camera in the 3D visualization
+CPOS = [(333.44920594948127, -92.62132121918515, 221.35429214703458),
+        (-1.365808884682137, 1.7594735760392801, -12.072404824078472),
+        (0.5292985009453346, 0.7030498941163704, -0.4749357254197479)]
+plotter.plot_primary_mesh(
+    camera_position=CPOS,
+    filename= THIS_DIR / "tetrahedron-d=5-1-primary"
+)
+dual_graph_mesh = plotter.construct_dual_mesh(
+    dual_graph,
+    use_edges_colors=True,
+    highlighted_edges=dual_graph.edges(),
+    highlighted_nodes=dual_graph.nodes()
+)
+plotter.plot_debug_primary_mesh(
+    dual_graph_mesh,
+    camera_position=CPOS,
+    transparent_faces=True,
+    filename= THIS_DIR / "tetrahedron-d=5-2-both"
+)
+```

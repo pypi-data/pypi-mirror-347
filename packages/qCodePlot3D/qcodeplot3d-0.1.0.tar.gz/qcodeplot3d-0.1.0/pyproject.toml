@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qCodePlot3D"
+version = "0.1.0"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "psutil",
+    "python-sat",
+    "pyvista >= 0.44.2",
+    "rustworkx >= 0.16.0",
+    "scipy",
+]
+authors = [
+  { name="Lars Esser", email="mail@lars-esser.de" },
+]
+description = "Create 3D visualizations of 3D quantum color codes."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Graphics :: 3D Rendering",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Quantum Computing",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Typing :: Typed",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+keywords = ["color code", "3D", "visualization", "2D"]
+
+[project.urls]
+Homepage = "https://github.com/larsesser/qcodeplot3d"
+Issues = "https://github.com/larsesser/qcodeplot3d/issues"
+
+[project.optional-dependencies]
+dev = [
+    "ruff~=0.11.7"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.ruff]
+target-version = "py39"
+line-length = 120
+output-format = "concise"
+
+[tool.ruff.lint]
+select = [
+    "F",  # pyflakes
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "I",  # isort
+    "UP",  # pyupgrade
+    "YTT",  # flake8-2020
+    "A",  # flake8-builtins
+    "COM",  # flake8-commas
+    "PLE",  # pylint errrors.
+    "PLW",  # pylint warnings.
+    "PLC",  # pylint conventions.
+    "RUF100",
+]
+ignore = [
+    "COM812",
+]
