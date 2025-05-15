@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+RA3BattleNetData/BattleNetData.py
+RA3BattleNetData/__init__.py
+RA3BattleNetData.egg-info/PKG-INFO
+RA3BattleNetData.egg-info/SOURCES.txt
+RA3BattleNetData.egg-info/dependency_links.txt
+RA3BattleNetData.egg-info/requires.txt
+RA3BattleNetData.egg-info/top_level.txt
