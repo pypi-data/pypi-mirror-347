@@ -1,0 +1,16 @@
+[build-system]
+requires = ["maturin>=1.5"]
+build-backend = "maturin"
+
+[project]
+name = "skylos"
+version = "0.0.1"
+requires-python = ">=3.8"
+dependencies = ["inquirer>=3.0.0"]
+
+[project.scripts]
+skylos = "skylos.cli:main"
+
+[tool.maturin]
+module-name = "skylos._core"
+python-source = "."
