@@ -1,0 +1,4 @@
+[console_scripts]
+envchain-delete-namespace=envchain_python.cli_delete_namespace:main
+envchain-set-require-passphrase=envchain_python.cli_set_require_passphrase_attr:main
+

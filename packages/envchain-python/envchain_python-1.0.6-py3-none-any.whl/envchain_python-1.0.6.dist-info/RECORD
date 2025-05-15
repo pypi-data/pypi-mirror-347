@@ -1,0 +1,8 @@
+envchain_python/__init__.py,sha256=q6xs12RPGBxuK2dEAS-8yXQkIAylZ1YCoK3ImjZ7ukU,22210
+envchain_python/cli_delete_namespace.py,sha256=kIhdIINZvtk0-wxi8iZrNn0mr5_WgmEtfoOoDI1C50s,1336
+envchain_python/cli_set_require_passphrase_attr.py,sha256=efz4MQuJ8TLSXrM-zRUTup3fbu4lN8kCgakMUR9YlYs,2718
+envchain_python/config.py,sha256=rAYUVynty3USi01ldloOd7W8MhV1pbAOiBwHqKFYqeU,60
+envchain_python-1.0.6.dist-info/METADATA,sha256=eDxw2sK9jrns5y4fRPOG9askCw-oSjmmbaLbraKX_hY,704
+envchain_python-1.0.6.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+envchain_python-1.0.6.dist-info/entry_points.txt,sha256=u-glglOobiD7ZvK6SmPoCe3_bIF8vrItneRiwLFd0Sg,172
+envchain_python-1.0.6.dist-info/RECORD,,
