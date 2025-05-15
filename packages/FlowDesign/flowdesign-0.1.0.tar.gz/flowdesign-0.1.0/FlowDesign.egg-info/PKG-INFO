@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: FlowDesign
+Version: 0.1.0
+Summary: # Design flow for LLM
+Requires-Dist: torch>=1.9.0
+Requires-Dist: torchvision>=0.10.0
+Requires-Dist: langchain>=0.3.7
+Requires-Dist: langchain-chroma>=0.1.4
+Requires-Dist: langchain-community>=0.3.7
+Requires-Dist: langchain-core>=0.3.18
+Requires-Dist: langchain-experimental>=0.3.2
+Requires-Dist: langchain-google-genai>=2.0.1
+Requires-Dist: langchain-ollama>=0.2.3
+Requires-Dist: langchain-google-vertexai>=2.0.3
+Requires-Dist: langchain-huggingface>=0.1.0
+Requires-Dist: langchain-openai>=0.2.2
+Requires-Dist: langchain-text-splitters>=0.3.0
+Requires-Dist: langchainhub>=0.1.21
+Requires-Dist: duckduckgo-search>=7.5.1
+Requires-Dist: litellm==1.67.2
+Dynamic: requires-dist
+Dynamic: summary
