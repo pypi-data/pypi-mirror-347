@@ -1,0 +1,16 @@
+oxbow-0.4.0rc1.dist-info/METADATA,sha256=Iol8DJBfCukYwqhrwM4xNucu4jaJ6JJ5inf9rEB-IFw,2747
+oxbow-0.4.0rc1.dist-info/WHEEL,sha256=RtNpNXWRnn60xI0V1NHxcvAPMxeIKejBtKmeuEttyag,104
+oxbow/__init__.py,sha256=p2EdaLc0UVf_V9HScA6GArt87opMutYzQAbCcadDSnk,1457
+oxbow/_core/alignment.py,sha256=BmQaEp2QLCxbqb2Gme0w8Yj8JlEaiCu5Ut9NgPcVYgY,8885
+oxbow/_core/base.py,sha256=WvsVD9QuZOV7ezjbL0XUfWkBJc8sLTtYgYqdKjyER4A,5481
+oxbow/_core/feature.py,sha256=j8osuHV3UD8tjvqPchfKQrFZOl38xuBpIW4HO6tMDRM,16616
+oxbow/_core/sequence.py,sha256=8r08P2vH7m0E0lBLasoml6KB2jOU46VJ69KIlB_2oqk,7900
+oxbow/_core/variant.py,sha256=naeo-x9uW595ZRGrPe40aVfWriC4qF-HyjOnLiZ6nWg,11262
+oxbow/_filetypes.py,sha256=x4yTWCrrwojiq-tNp6HLln47Kr7aA8JSZCnva-IuM54,581
+oxbow/_pyarrow.py,sha256=uee1pds8yek56vhTZ45A-pOXY5HIEWRMfpAqxJjjsEo,25007
+oxbow/arrow.py,sha256=aKDz6QWGp5OqIn0yQbprVBgqKBuRPik9kgeMO4L4tyk,298
+oxbow/core.py,sha256=L2uhRF25P1D6tWOOVpQCZMWF-Tefj0uZ92akU2WZqIY,1837
+oxbow/oxbow.abi3.so,sha256=0YYdo0CCn1JZENb-KLKI9ICNHm9luuO1eGgkChGMSnk,12448328
+oxbow/oxbow.pyi,sha256=5E67uczct3Ni3Tb8c7TOxixSJ6T9sszVwyX243DufYU,13278
+oxbow/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxbow-0.4.0rc1.dist-info/RECORD,,
