@@ -1,0 +1,8 @@
+opengeode_inspector/__init__.py,sha256=-8eCQ-gCIRZ7ceja2wJEASqijyTB51XG92O3yRSaqrc,175
+opengeode_inspector/inspector.py,sha256=_gChzsMHaX1xDqkUUie-Hzc0THiq6ozhDaodDGwtLBU,1243
+opengeode_inspector/bin/OpenGeode-Inspector_inspector.dll,sha256=-Ipp0GMtjIqjkxA4uPnhQkQMFxW1zLMDgUo6gkLuzGo,579584
+opengeode_inspector/bin/opengeode_inspector_py_inspector.cp311-win_amd64.pyd,sha256=q9Zw0KKpuy9U54ttzWy_jC3Q-OfE9fLS0WGK7d_QcdY,823808
+opengeode_inspector-6.4.3.dist-info/METADATA,sha256=Eo7549ShBhPPU77Tmh21epTO1fYb9cqp0_Z74j6oegA,5215
+opengeode_inspector-6.4.3.dist-info/WHEEL,sha256=rn6HCEw1zyOxbkxuKqB4Cl_-inCfW0e2SJSqizO4K2o,101
+opengeode_inspector-6.4.3.dist-info/top_level.txt,sha256=HB6mBr33nBKSATXRcJ4Yof7xiFcQAnhw3pFzWTv8zso,20
+opengeode_inspector-6.4.3.dist-info/RECORD,,
