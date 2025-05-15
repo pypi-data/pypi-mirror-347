@@ -1,0 +1,581 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Haozhou Wang
+# This file is distributed under the same license as the EasyIDP package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EasyIDP \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-20 13:46+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../index.rst:59
+msgid "Getting started"
+msgstr "はじめに"
+
+#: ../../index.rst:66
+msgid "Backgrounds"
+msgstr "背景"
+
+#: ../../index.rst:57 ../../index.rst:75
+msgid "Examples"
+msgstr ""
+
+#: ../../index.rst:85
+msgid "Python API"
+msgstr ""
+
+#: ../../index.rst:104
+msgid "Development"
+msgstr "開発"
+
+#: ../../index.rst:8
+msgid "Welcome to EasyIDP's documentation!"
+msgstr "EasyIDPのドキュメントへようこそ!"
+
+#: ../../index.rst:-1
+msgid "header_v2.0.png"
+msgstr ""
+
+#: ../../index.rst:13
+msgid ""
+"EasyIDP (Easy Intermediate Data Processor) is a handy tool for dealing "
+"with region of interest (ROI) on the image reconstruction (Metashape & "
+"Pix4D) outputs, mainly in agriculture applications. It provides the "
+"following functions:"
+msgstr ""
+"EasyIDP (Easy Intermediate Data Processor) は、主に農業分野での画像再構成（Metashape & "
+"Pix4D）出力における関心領域（ROI）を処理するための便利なツールです。以下の機能を備えています。"
+
+#: ../../index.rst:15
+msgid "Backward Projection ROI to original images."
+msgstr "元画像への逆投影ROI。"
+
+#: ../../index.rst:16
+msgid "Clip ROI on GeoTiff Maps (DOM & DSM) and Point Cloud."
+msgstr "GeoTiffマップ(DOM & DSM)と点群にROIをクリップします。"
+
+#: ../../index.rst:17
+msgid "Save cropped results to corresponding files"
+msgstr "切り出した結果を対応するファイルに保存"
+
+#: ../../index.rst:-1
+msgid "PyPI - Python Version"
+msgstr ""
+
+#: ../../index.rst:-1
+msgid "GitHub"
+msgstr ""
+
+#: ../../index.rst:-1
+msgid "GitHub top language"
+msgstr ""
+
+#: ../../index.rst:-1
+msgid "GitHub Downloads"
+msgstr ""
+
+#: ../../index.rst:-1
+msgid "Pypi downloads"
+msgstr ""
+
+#: ../../index.rst:38
+msgid "other languages"
+msgstr "他言語"
+
+#: ../../index.rst:40
+msgid ""
+"This is a multi-language document, you can change document languages here"
+" or at the bottom left corner."
+msgstr "これは多言語の文書です、ここか左下で文書の言語を変更できます。"
+
+#: ../../index.rst:45
+msgid "`English <https://easyidp.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:46
+msgid "`中文 <https://easyidp.readthedocs.io/zh_CN/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:47
+msgid "`日本語(翻訳募集) <https://easyidp.readthedocs.io/ja/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:53
+msgid ""
+"In the EasyIDP, we use the (horizontal, vertical, dim) order as the "
+"coords order. When it applies to the GIS coordintes, is (longitude, "
+"latitude, altitude)"
+msgstr ""
+
+#: ../../index.rst:113
+msgid "Quick Start"
+msgstr ""
+
+#: ../../index.rst:116
+msgid "You can install the packages by PyPi:"
+msgstr ""
+
+#: ../../index.rst:125
+msgid ""
+"If you meet bugs in the pypi version, please consider using the latest "
+"source code. The tutorial can be found here: :ref:`using-from-source-"
+"code`."
+msgstr ""
+
+#: ../../index.rst:128
+msgid "And import the packages in your python code:"
+msgstr ""
+
+#: ../../index.rst:137
+msgid ""
+"Before doing the following example, please understand the basic pipeline "
+"for image 3D reconstruction by Pix4D or Metashape. And know how to export"
+" the DOM, DSM (\\*.tiff), and Point cloud (\\*.ply). Also require some "
+"basic knowledge about GIS shapefile format (\\*.shp)."
+msgstr ""
+
+#: ../../index.rst:142
+msgid "1. Read ROI"
+msgstr ""
+
+#: ../../index.rst:153
+msgid ""
+"The 2D roi can be used to crop the DOM, DSM, and point cloud ( `2. Crop "
+"by ROI`_ ). While the 3D roi can be used for Backward projection ( `4. "
+"Backward Projection`_ )"
+msgstr ""
+
+#: ../../index.rst:157
+msgid ""
+"It is highly recommended to ensure the shapefile and geotiff share the "
+"same coordinate reference systems (CRS), the built-in conversion "
+"algorithm in EasyIDP may suffer accuracy loss."
+msgstr ""
+
+#: ../../index.rst:159
+msgid ""
+"It is recommended to use Coordinate reference systems for \"UTM\" (WGS 84"
+" / UTM grid system), the unit for x and y are in meters and have been "
+"tested by EasyIDP developers."
+msgstr ""
+
+#: ../../index.rst:161
+msgid ""
+"The traditional (longitude, latitude) coordinates like ``epsg::4326`` "
+"also supported, but not recommended if you need calculate \"distences\" "
+"hence its unit is degree."
+msgstr ""
+
+#: ../../index.rst:163
+msgid ""
+"The local country commonly used coordinates like BJZ54 (北京54), CGCS2000 "
+"(2000国家大地坐标系), JDG2011 (日本測地系2011), and etc., have not been tested and "
+"hard to guarantee workable in EasyIDP. Please convert to UTM by GIS "
+"software if you meet any problem."
+msgstr ""
+
+#: ../../index.rst:165
+msgid ""
+"The acceptable ROI types are only polygons (grids are a special type of "
+"polygon), and the size of each polygon should be fittable into the raw "
+"images (around the 1/4 size of one raw image should be the best)."
+msgstr ""
+
+#: ../../index.rst
+msgid "ROI类型"
+msgstr ""
+
+#: ../../index.rst:170
+msgid ""
+"The fourth one may too large to be fitted into each raw image, recommend "
+"to make smaller polygons."
+msgstr ""
+
+#: ../../index.rst:173
+msgid "2. Crop by ROI"
+msgstr ""
+
+#: ../../index.rst:175
+msgid "Read the DOM and DSM Geotiff Maps"
+msgstr ""
+
+#: ../../index.rst:182
+msgid "Read point cloud data"
+msgstr ""
+
+#: ../../index.rst:189
+msgid "crop the region of interest from ROI:"
+msgstr ""
+
+#: ../../index.rst:197
+msgid "If you want to save these crops to given folder:"
+msgstr ""
+
+#: ../../index.rst:207
+msgid "3. Read Reconstruction projects"
+msgstr ""
+
+#: ../../index.rst:209
+msgid "You can add the reconstructed plot individually or by batch adding"
+msgstr ""
+
+#: ../../index.rst:216
+msgid ""
+"The Metashape projects naturally support using different chunks for "
+"different plots in one project file (\\*.psx), so the ``chunk_id`` is "
+"required to specify which plot are processing."
+msgstr ""
+
+#: ../../index.rst:224
+msgid ""
+"Though only the ``xxxx.psx`` is given here, the folder ``xxxx.files`` "
+"generated by Metashape is more important for EasyIDP. Please put them "
+"into the same directory."
+msgstr ""
+
+#: ../../index.rst:228
+msgid ""
+"Currently, the EasyIDP has not support parse the meta info that records "
+"the relative path to the raw image folder, so please manual specify the "
+"``raw_img_folder`` if you need the backward projection."
+msgstr ""
+
+#: ../../index.rst:240
+msgid ""
+"Though only the ``xxxx.p4d`` is given here, the folder ``xxxx`` generated"
+" by Pix4D is more important for EasyIDP. Please put them into the same "
+"directory and not recommend the change the inner folder structure"
+msgstr ""
+
+#: ../../index.rst:272
+msgid "4. Backward Projection"
+msgstr ""
+
+#: ../../index.rst:279
+msgid "Then check the results:"
+msgstr ""
+
+#: ../../index.rst:296
+msgid "Save backward projected images"
+msgstr ""
+
+#: ../../index.rst:313
+msgid "5. Forward Projection"
+msgstr ""
+
+#: ../../index.rst:315
+msgid ""
+"This function support bring results and image itself from corresponding "
+"raw images to geotiff."
+msgstr ""
+
+#: ../../index.rst:317
+msgid "The following features have not been supported."
+msgstr ""
+
+#: ../../index.rst:319
+msgid ""
+"Please using the following code to forward project from raw img to DOM "
+"(``raw forward dom`` -> ``raw4dom``):"
+msgstr ""
+
+#: ../../index.rst:321
+msgid "This feather has not supported yet."
+msgstr ""
+
+#: ../../index.rst:327
+msgid ""
+"This is a dict contains the image ndarray of each ROI as keys, which "
+"projecting the part of raw image onto DOM."
+msgstr ""
+
+#: ../../index.rst:335
+msgid ""
+"You can also do the forward projecting with detected results, the polygon"
+" are in the geo coordinate. Before doing that, please prepare the "
+"detected results (by detection or segmentation, polygons in raw image "
+"pixel coordinates)."
+msgstr ""
+
+#: ../../index.rst:342
+msgid "Then forward projecting by giving both to the function:"
+msgstr ""
+
+#: ../../index.rst:357
+msgid "Save single geotiff of one ROI:"
+msgstr ""
+
+#: ../../index.rst:364
+msgid "Batch save single geotiff of each ROI:"
+msgstr ""
+
+#: ../../index.rst:373
+msgid "References"
+msgstr ""
+
+#: ../../index.rst:376
+msgid "Publication"
+msgstr ""
+
+#: ../../index.rst:378
+msgid "Please cite this paper if this project helps you:"
+msgstr ""
+
+#: ../../index.rst:396
+msgid "Site packages"
+msgstr ""
+
+#: ../../index.rst:398
+msgid "We also thanks the benefits from the following open source projects:"
+msgstr ""
+
+#: ../../index.rst:400
+msgid "package main (**for users**)"
+msgstr ""
+
+#: ../../index.rst:402
+msgid "numpy: `https://numpy.org/ <https://numpy.org/>`_"
+msgstr ""
+
+#: ../../index.rst:403
+msgid "matplotlib: `https://matplotlib.org/ <https://matplotlib.org/>`_"
+msgstr ""
+
+#: ../../index.rst:404
+msgid ""
+"scikit-image: `https://github.com/scikit-image/scikit-image "
+"<https://github.com/scikit-image/scikit-image>`_"
+msgstr ""
+
+#: ../../index.rst:405
+msgid ""
+"pyproj: `https://github.com/pyproj4/pyproj "
+"<https://github.com/pyproj4/pyproj>`_"
+msgstr ""
+
+#: ../../index.rst:406
+msgid ""
+"tifffile: `https://github.com/cgohlke/tifffile "
+"<https://github.com/cgohlke/tifffile>`_"
+msgstr ""
+
+#: ../../index.rst:407
+msgid ""
+"imagecodecs: `https://github.com/cgohlke/imagecodecs "
+"<https://github.com/cgohlke/imagecodecs>`_"
+msgstr ""
+
+#: ../../index.rst:408
+msgid ""
+"shapely: `https://github.com/shapely/shapely "
+"<https://github.com/shapely/shapely>`_"
+msgstr ""
+
+#: ../../index.rst:409
+msgid ""
+"laspy/lasrs/lasio: `https://github.com/laspy/laspy "
+"<https://github.com/laspy/laspy>`_"
+msgstr ""
+
+#: ../../index.rst:410
+msgid ""
+"geojson: `https://github.com/jazzband/geojson "
+"<https://github.com/jazzband/geojson>`_"
+msgstr ""
+
+#: ../../index.rst:411
+msgid ""
+"plyfile: `https://github.com/dranjan/python-plyfile "
+"<https://github.com/dranjan/python-plyfile>`_"
+msgstr ""
+
+#: ../../index.rst:412
+msgid ""
+"pyshp: `https://github.com/GeospatialPython/pyshp "
+"<https://github.com/GeospatialPython/pyshp>`_"
+msgstr ""
+
+#: ../../index.rst:413
+msgid ""
+"tabulate: `https://github.com/astanin/python-tabulate "
+"<https://github.com/astanin/python-tabulate>`_"
+msgstr ""
+
+#: ../../index.rst:414
+msgid "tqdm: `https://github.com/tqdm/tqdm <https://github.com/tqdm/tqdm>`_"
+msgstr ""
+
+#: ../../index.rst:415
+msgid ""
+"gdown: `https://github.com/wkentaro/gdown "
+"<https://github.com/wkentaro/gdown>`_"
+msgstr ""
+
+#: ../../index.rst:417
+msgid "package documentation (**for developers**)"
+msgstr ""
+
+#: ../../index.rst:419
+msgid ""
+"sphinx: `https://github.com/sphinx-doc/sphinx <https://github.com/sphinx-"
+"doc/sphinx>`_"
+msgstr ""
+
+#: ../../index.rst:420
+msgid ""
+"nbsphinx: `https://github.com/spatialaudio/nbsphinx "
+"<https://github.com/spatialaudio/nbsphinx>`_"
+msgstr ""
+
+#: ../../index.rst:421
+msgid ""
+"sphinx-gallery: `https://github.com/sphinx-gallery/sphinx-gallery "
+"<https://github.com/sphinx-gallery/sphinx-gallery>`_"
+msgstr ""
+
+#: ../../index.rst:422
+msgid ""
+"sphinx-inline-tabs: `https://github.com/pradyunsg/sphinx-inline-tabs "
+"<https://github.com/pradyunsg/sphinx-inline-tabs>`_"
+msgstr ""
+
+#: ../../index.rst:423
+msgid ""
+"sphinx-intl: `https://github.com/sphinx-doc/sphinx-intl "
+"<https://github.com/sphinx-doc/sphinx-intl>`_"
+msgstr ""
+
+#: ../../index.rst:424
+msgid ""
+"sphinx-rtc-theme: `https://github.com/readthedocs/sphinx_rtd_theme "
+"<https://github.com/readthedocs/sphinx_rtd_theme>`_"
+msgstr ""
+
+#: ../../index.rst:425
+msgid ""
+"furo: `https://github.com/pradyunsg/furo "
+"<https://github.com/pradyunsg/furo>`_"
+msgstr ""
+
+#: ../../index.rst:427
+msgid "package testing and releasing (**for developers**)"
+msgstr ""
+
+#: ../../index.rst:429
+msgid ""
+"pytest: `https://github.com/pytest-dev/pytest <https://github.com/pytest-"
+"dev/pytest>`_"
+msgstr ""
+
+#: ../../index.rst:430
+msgid ""
+"packaging: `https://github.com/pypa/packaging "
+"<https://github.com/pypa/packaging>`_"
+msgstr ""
+
+#: ../../index.rst:431
+msgid "wheel: `https://github.com/pypa/wheel <https://github.com/pypa/wheel>`_"
+msgstr ""
+
+#: ../../index.rst:434
+msgid "Funding"
+msgstr ""
+
+#: ../../index.rst:436
+msgid "This project was partially funded by:"
+msgstr ""
+
+#: ../../index.rst:438
+msgid ""
+"the JST AIP Acceleration Research “Studies of CPS platform to raise big-"
+"data-driven AI agriculture”;"
+msgstr ""
+
+#: ../../index.rst:439
+msgid "the SICORP Program JPMJSC16H2;"
+msgstr ""
+
+#: ../../index.rst:440
+msgid "CREST Programs JPMJCR16O2 and JPMJCR16O1;"
+msgstr ""
+
+#: ../../index.rst:441
+msgid ""
+"the International Science & Technology Innovation Program of Chinese "
+"Academy of Agricultural Sciences (CAASTIP);"
+msgstr ""
+
+#: ../../index.rst:442
+msgid "the National Natural Science Foundation of China U19A2"
+msgstr ""
+
+#~ msgid "ROI types"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function support converting polygons "
+#~ "(or detected bbox results) from raw "
+#~ "images back to the DOM, as well"
+#~ " as replaceing corresponding region of "
+#~ "images by raw images."
+#~ msgstr ""
+
+#~ msgid "ROI种类"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then using the following code to "
+#~ "forward project from raw img to "
+#~ "DOM (raw forward dom -> raw4dom):"
+#~ msgstr ""
+
+#~ msgid "GitHub code size in bytes"
+#~ msgstr ""
+
+#~ msgid "Add one reconstructed plot"
+#~ msgstr ""
+
+#~ msgid "Batch pool for multi-plots"
+#~ msgstr ""
+
+#~ msgid "待处理"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Add the reconstruction projects to "
+#~ "processing pools (different flight time "
+#~ "for the same field):"
+#~ msgstr ""
+
+#~ msgid "Then you can specify each chunk by:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function support refineing the bad"
+#~ " quality DOM regions by corresponding "
+#~ "raw images, at the mean time, if"
+#~ " provided, converting the polygons on "
+#~ "raw images back to the DOM with"
+#~ " geo-coordinates."
+#~ msgstr ""
+
+#~ msgid "And save the image results to files:"
+#~ msgstr ""
+
+#~ msgid "Refine DOM by raw images:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pillow: `https://github.com/python-pillow/Pillow "
+#~ "<https://github.com/python-pillow/Pillow>`_"
+#~ msgstr ""
+

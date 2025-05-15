@@ -1,0 +1,528 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Haozhou Wang
+# This file is distributed under the same license as the EasyIDP package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EasyIDP \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-20 13:46+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../index.rst:59
+msgid "Getting started"
+msgstr "快速上手"
+
+#: ../../index.rst:66
+msgid "Backgrounds"
+msgstr "背景知识"
+
+#: ../../index.rst:57 ../../index.rst:75
+msgid "Examples"
+msgstr "举些栗子"
+
+#: ../../index.rst:85
+msgid "Python API"
+msgstr ""
+
+#: ../../index.rst:104
+msgid "Development"
+msgstr "项目开发"
+
+#: ../../index.rst:8
+msgid "Welcome to EasyIDP's documentation!"
+msgstr "欢迎查阅EasyIDP官方文档"
+
+#: ../../index.rst:-1
+msgid "header_v2.0.png"
+msgstr ""
+
+#: ../../index.rst:13
+msgid ""
+"EasyIDP (Easy Intermediate Data Processor) is a handy tool for dealing "
+"with region of interest (ROI) on the image reconstruction (Metashape & "
+"Pix4D) outputs, mainly in agriculture applications. It provides the "
+"following functions:"
+msgstr "EasyIDP(中间数据处理助手)是一个处理三维重建(Metashape和Pix4D)产品上兴趣区域(ROI)的软件包(主要是农业应用)，提供如下的功能："
+
+#: ../../index.rst:15
+msgid "Backward Projection ROI to original images."
+msgstr "把ROI逆投影回原始图片上"
+
+#: ../../index.rst:16
+msgid "Clip ROI on GeoTiff Maps (DOM & DSM) and Point Cloud."
+msgstr "在正射地图(DOM)、高程图(DSM)和点云上把ROI切出来"
+
+#: ../../index.rst:17
+msgid "Save cropped results to corresponding files"
+msgstr "把切块后的结果保存为对应文件格式"
+
+#: ../../index.rst:-1
+msgid "PyPI - Python Version"
+msgstr ""
+
+#: ../../index.rst:-1
+msgid "GitHub"
+msgstr ""
+
+#: ../../index.rst:-1
+msgid "GitHub top language"
+msgstr ""
+
+#: ../../index.rst:-1
+msgid "GitHub Downloads"
+msgstr ""
+
+#: ../../index.rst:-1
+msgid "Pypi downloads"
+msgstr ""
+
+#: ../../index.rst:38
+msgid "other languages"
+msgstr "其他语言"
+
+#: ../../index.rst:40
+msgid ""
+"This is a multi-language document, you can change document languages here"
+" or at the bottom left corner."
+msgstr "这是一个多语言文档，你可以通过这里或左下角切换语言"
+
+#: ../../index.rst:45
+msgid "`English <https://easyidp.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:46
+msgid "`中文 <https://easyidp.readthedocs.io/zh_CN/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:47
+msgid "`日本語(翻訳募集) <https://easyidp.readthedocs.io/ja/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:53
+msgid ""
+"In the EasyIDP, we use the (horizontal, vertical, dim) order as the "
+"coords order. When it applies to the GIS coordintes, is (longitude, "
+"latitude, altitude)"
+msgstr "EasyIDP中使用(水平轴, 垂直轴, 维度/深度)顺序作为坐标顺序。当坐标为地理信息坐标时，对应(经度，纬度，海拔/高度)。"
+
+#: ../../index.rst:113
+msgid "Quick Start"
+msgstr "快速开始"
+
+#: ../../index.rst:116
+msgid "You can install the packages by PyPi:"
+msgstr "可以通过PyPi来安装："
+
+#: ../../index.rst:125
+msgid ""
+"If you meet bugs in the pypi version, please consider using the latest "
+"source code. The tutorial can be found here: :ref:`using-from-source-"
+"code`."
+msgstr "如果你在pypi版本中遇到了Bug，请考虑使用最新版的源码。使用教程可以参考这个链接：:ref:`using-from-source-code`."
+
+#: ../../index.rst:128
+msgid "And import the packages in your python code:"
+msgstr "然后在你的python环境中导入包："
+
+#: ../../index.rst:137
+msgid ""
+"Before doing the following example, please understand the basic pipeline "
+"for image 3D reconstruction by Pix4D or Metashape. And know how to export"
+" the DOM, DSM (\\*.tiff), and Point cloud (\\*.ply). Also require some "
+"basic knowledge about GIS shapefile format (\\*.shp)."
+msgstr "在执行下面的示例代码前，请确保基本理解了Metashape或Pix4D的图像三维重建的工作流程，并且知道如何导出地图(DOM和DSM的tiff文件格式)和点云(ply文件格式)。并且知道一些基本的GIS矢量文件(shp)的格式与制作方法。"
+
+#: ../../index.rst:142
+msgid "1. Read ROI"
+msgstr "1. 读取ROI"
+
+#: ../../index.rst:153
+msgid ""
+"The 2D roi can be used to crop the DOM, DSM, and point cloud ( `2. Crop "
+"by ROI`_ ). While the 3D roi can be used for Backward projection ( `4. "
+"Backward Projection`_ )"
+msgstr "二维的ROI可以用来切正射地图、高程图和点云(参考 `2. 切ROI`_ )。三维点ROI可以用来逆投影回原始图片上(参考 `4. 逆投影`_ )。"
+
+#: ../../index.rst:157
+msgid ""
+"It is highly recommended to ensure the shapefile and geotiff share the "
+"same coordinate reference systems (CRS), the built-in conversion "
+"algorithm in EasyIDP may suffer accuracy loss."
+msgstr "强烈推荐保证shapefile文件和geotiff文件的地理坐标系(CRS)一致，EasyIDP内置的转换算法可能会有一定的精度损失。"
+
+#: ../../index.rst:159
+msgid ""
+"It is recommended to use Coordinate reference systems for \"UTM\" (WGS 84"
+" / UTM grid system), the unit for x and y are in meters and have been "
+"tested by EasyIDP developers."
+msgstr "推荐使用UTM地理坐标系(WGS 84 / UTM grid system)，该坐标系的XY轴单位是米，方便后续计算且经过开发者的验证。"
+
+#: ../../index.rst:161
+msgid ""
+"The traditional (longitude, latitude) coordinates like ``epsg::4326`` "
+"also supported, but not recommended if you need calculate \"distences\" "
+"hence its unit is degree."
+msgstr "也支持传统的经纬度坐标系，如EPSG4326。但是当你需要计算距离的场景下不推荐使用因为它的单位是度。"
+
+#: ../../index.rst:163
+msgid ""
+"The local country commonly used coordinates like BJZ54 (北京54), CGCS2000 "
+"(2000国家大地坐标系), JDG2011 (日本測地系2011), and etc., have not been tested and "
+"hard to guarantee workable in EasyIDP. Please convert to UTM by GIS "
+"software if you meet any problem."
+msgstr ""
+"特定国家内部的特殊坐标系，如北京54(BJZ54), 2000国家大地坐标系(CGCS2000), "
+"日本測地系2011(JDG2011)等，没有经过测试且难以保证可用性。如果遇到任何问题，建议使用GIS软件先转换成UTM坐标系。"
+
+#: ../../index.rst:165
+msgid ""
+"The acceptable ROI types are only polygons (grids are a special type of "
+"polygon), and the size of each polygon should be fittable into the raw "
+"images (around the 1/4 size of one raw image should be the best)."
+msgstr "可接受的ROI类型仅为多边形类型(网格是一种多边形的特殊形式)，并且每个多边形ROI的尺寸应该可以被完整的包含进单张原始照片(推荐最佳大小约为原始图片的1/4)"
+
+#: ../../index.rst
+msgid "ROI类型"
+msgstr ""
+
+#: ../../index.rst:170
+msgid ""
+"The fourth one may too large to be fitted into each raw image, recommend "
+"to make smaller polygons."
+msgstr "第四个可能太大了，没法被涵盖进单张照片里，推荐使用更小的多边形。"
+
+#: ../../index.rst:173
+msgid "2. Crop by ROI"
+msgstr "2. 切ROI"
+
+#: ../../index.rst:175
+msgid "Read the DOM and DSM Geotiff Maps"
+msgstr "读取正射地图和高程图文件"
+
+#: ../../index.rst:182
+msgid "Read point cloud data"
+msgstr "读取点云文件"
+
+#: ../../index.rst:189
+msgid "crop the region of interest from ROI:"
+msgstr "把兴趣区域(ROI)切出来："
+
+#: ../../index.rst:197
+msgid "If you want to save these crops to given folder:"
+msgstr "如果你想在切的时候，顺便保存切块的结果："
+
+#: ../../index.rst:207
+msgid "3. Read Reconstruction projects"
+msgstr "3. 读取重建项目"
+
+#: ../../index.rst:209
+msgid "You can add the reconstructed plot individually or by batch adding"
+msgstr "可以单独添加一块重建的样地或者使用批处理添加。"
+
+#: ../../index.rst:216
+msgid ""
+"The Metashape projects naturally support using different chunks for "
+"different plots in one project file (\\*.psx), so the ``chunk_id`` is "
+"required to specify which plot are processing."
+msgstr ""
+"Metashape项目本身支持使用不同的块(chunk)来实现在一个项目中(\\*.psx)创建不同的重建样地，所以需要使用 "
+"``chunk_id`` 来指定处理哪一个样地。"
+
+#: ../../index.rst:224
+msgid ""
+"Though only the ``xxxx.psx`` is given here, the folder ``xxxx.files`` "
+"generated by Metashape is more important for EasyIDP. Please put them "
+"into the same directory."
+msgstr ""
+"尽管这边只给了 ``xxxx.psx`` 项目文件参数，但其实Metashape自动生成的 ``xxxx.files`` "
+"同名文件夹更加重要。请把他们两个放在同一个路径下。"
+
+#: ../../index.rst:228
+msgid ""
+"Currently, the EasyIDP has not support parse the meta info that records "
+"the relative path to the raw image folder, so please manual specify the "
+"``raw_img_folder`` if you need the backward projection."
+msgstr ""
+"目前，EasyIDP尚不支持从元信息中获取原始图片的文件夹路径，所以如果需要进行逆投影，请手动指定 ``raw_img_folder`` "
+"原始图片文件夹的路径"
+
+#: ../../index.rst:240
+msgid ""
+"Though only the ``xxxx.p4d`` is given here, the folder ``xxxx`` generated"
+" by Pix4D is more important for EasyIDP. Please put them into the same "
+"directory and not recommend the change the inner folder structure"
+msgstr ""
+"尽管这边只给了  ``xxxx.p4d`` 项目文件参数，但其实Pix4D自动生成的  ``xxxx`` "
+"同名文件夹更重要。请把他们两个放在同一个路径下，并且不推荐调整该文件夹内部的文件。"
+
+#: ../../index.rst:272
+msgid "4. Backward Projection"
+msgstr "4. 逆投影"
+
+#: ../../index.rst:279
+msgid "Then check the results:"
+msgstr "然后检查运算结果："
+
+#: ../../index.rst:296
+msgid "Save backward projected images"
+msgstr "保存反投影的图片结果："
+
+#: ../../index.rst:313
+msgid "5. Forward Projection"
+msgstr "5. 正投影"
+
+#: ../../index.rst:315
+msgid ""
+"This function support bring results and image itself from corresponding "
+"raw images to geotiff."
+msgstr ""
+
+#: ../../index.rst:317
+#, fuzzy
+msgid "The following features have not been supported."
+msgstr "该特性尚未支持"
+
+#: ../../index.rst:319
+msgid ""
+"Please using the following code to forward project from raw img to DOM "
+"(``raw forward dom`` -> ``raw4dom``):"
+msgstr "请使用下面的代码来把原始图正投影到正射影像DOM上（ ``raw forward dom`` 缩减为 ``raw4dom`` ）"
+
+#: ../../index.rst:321
+msgid "This feather has not supported yet."
+msgstr "该特性尚未支持"
+
+#: ../../index.rst:327
+msgid ""
+"This is a dict contains the image ndarray of each ROI as keys, which "
+"projecting the part of raw image onto DOM."
+msgstr "这是一个包含使用每个ROI的编号作为键值的图片字典，把原始图上对应部位的图片投影到正射影像DOM上。"
+
+#: ../../index.rst:335
+msgid ""
+"You can also do the forward projecting with detected results, the polygon"
+" are in the geo coordinate. Before doing that, please prepare the "
+"detected results (by detection or segmentation, polygons in raw image "
+"pixel coordinates)."
+msgstr "也可以把原始图上检测到的结果正投影到正射影像上，多边形顶点会使用地理坐标。在做这件事之前，请先准备检测的结果（通过深度学习的检测或分割得到的，顶点为像素坐标）"
+
+#: ../../index.rst:342
+msgid "Then forward projecting by giving both to the function:"
+msgstr "然后使用下面的函数把两个都进行正投影："
+
+#: ../../index.rst:357
+msgid "Save single geotiff of one ROI:"
+msgstr "保存单个ROI为单个GeoTiff文件"
+
+#: ../../index.rst:364
+msgid "Batch save single geotiff of each ROI:"
+msgstr "批量保存每个ROI为单个GeoTiff文件"
+
+#: ../../index.rst:373
+msgid "References"
+msgstr "参考资料"
+
+#: ../../index.rst:376
+msgid "Publication"
+msgstr "发表论文"
+
+#: ../../index.rst:378
+msgid "Please cite this paper if this project helps you:"
+msgstr "如果您的研究受益于该项目，请引用我们的论文："
+
+#: ../../index.rst:396
+msgid "Site packages"
+msgstr "第三方库"
+
+#: ../../index.rst:398
+msgid "We also thanks the benefits from the following open source projects:"
+msgstr "我们也感谢下面所有开源工程对本项目的贡献："
+
+#: ../../index.rst:400
+msgid "package main (**for users**)"
+msgstr "核心库(**面向用户**)"
+
+#: ../../index.rst:402
+msgid "numpy: `https://numpy.org/ <https://numpy.org/>`_"
+msgstr ""
+
+#: ../../index.rst:403
+msgid "matplotlib: `https://matplotlib.org/ <https://matplotlib.org/>`_"
+msgstr ""
+
+#: ../../index.rst:404
+msgid ""
+"scikit-image: `https://github.com/scikit-image/scikit-image "
+"<https://github.com/scikit-image/scikit-image>`_"
+msgstr ""
+
+#: ../../index.rst:405
+msgid ""
+"pyproj: `https://github.com/pyproj4/pyproj "
+"<https://github.com/pyproj4/pyproj>`_"
+msgstr ""
+
+#: ../../index.rst:406
+msgid ""
+"tifffile: `https://github.com/cgohlke/tifffile "
+"<https://github.com/cgohlke/tifffile>`_"
+msgstr ""
+
+#: ../../index.rst:407
+msgid ""
+"imagecodecs: `https://github.com/cgohlke/imagecodecs "
+"<https://github.com/cgohlke/imagecodecs>`_"
+msgstr ""
+
+#: ../../index.rst:408
+msgid ""
+"shapely: `https://github.com/shapely/shapely "
+"<https://github.com/shapely/shapely>`_"
+msgstr ""
+
+#: ../../index.rst:409
+msgid ""
+"laspy/lasrs/lasio: `https://github.com/laspy/laspy "
+"<https://github.com/laspy/laspy>`_"
+msgstr ""
+
+#: ../../index.rst:410
+msgid ""
+"geojson: `https://github.com/jazzband/geojson "
+"<https://github.com/jazzband/geojson>`_"
+msgstr ""
+
+#: ../../index.rst:411
+msgid ""
+"plyfile: `https://github.com/dranjan/python-plyfile "
+"<https://github.com/dranjan/python-plyfile>`_"
+msgstr ""
+
+#: ../../index.rst:412
+msgid ""
+"pyshp: `https://github.com/GeospatialPython/pyshp "
+"<https://github.com/GeospatialPython/pyshp>`_"
+msgstr ""
+
+#: ../../index.rst:413
+msgid ""
+"tabulate: `https://github.com/astanin/python-tabulate "
+"<https://github.com/astanin/python-tabulate>`_"
+msgstr ""
+
+#: ../../index.rst:414
+msgid "tqdm: `https://github.com/tqdm/tqdm <https://github.com/tqdm/tqdm>`_"
+msgstr ""
+
+#: ../../index.rst:415
+msgid ""
+"gdown: `https://github.com/wkentaro/gdown "
+"<https://github.com/wkentaro/gdown>`_"
+msgstr ""
+
+#: ../../index.rst:417
+msgid "package documentation (**for developers**)"
+msgstr "文档工具(**面向开发者**)"
+
+#: ../../index.rst:419
+msgid ""
+"sphinx: `https://github.com/sphinx-doc/sphinx <https://github.com/sphinx-"
+"doc/sphinx>`_"
+msgstr ""
+
+#: ../../index.rst:420
+msgid ""
+"nbsphinx: `https://github.com/spatialaudio/nbsphinx "
+"<https://github.com/spatialaudio/nbsphinx>`_"
+msgstr ""
+
+#: ../../index.rst:421
+msgid ""
+"sphinx-gallery: `https://github.com/sphinx-gallery/sphinx-gallery "
+"<https://github.com/sphinx-gallery/sphinx-gallery>`_"
+msgstr ""
+
+#: ../../index.rst:422
+msgid ""
+"sphinx-inline-tabs: `https://github.com/pradyunsg/sphinx-inline-tabs "
+"<https://github.com/pradyunsg/sphinx-inline-tabs>`_"
+msgstr ""
+
+#: ../../index.rst:423
+msgid ""
+"sphinx-intl: `https://github.com/sphinx-doc/sphinx-intl "
+"<https://github.com/sphinx-doc/sphinx-intl>`_"
+msgstr ""
+
+#: ../../index.rst:424
+msgid ""
+"sphinx-rtc-theme: `https://github.com/readthedocs/sphinx_rtd_theme "
+"<https://github.com/readthedocs/sphinx_rtd_theme>`_"
+msgstr ""
+
+#: ../../index.rst:425
+msgid ""
+"furo: `https://github.com/pradyunsg/furo "
+"<https://github.com/pradyunsg/furo>`_"
+msgstr ""
+
+#: ../../index.rst:427
+msgid "package testing and releasing (**for developers**)"
+msgstr "测试与发布工具(**面向开发者**)"
+
+#: ../../index.rst:429
+msgid ""
+"pytest: `https://github.com/pytest-dev/pytest <https://github.com/pytest-"
+"dev/pytest>`_"
+msgstr ""
+
+#: ../../index.rst:430
+msgid ""
+"packaging: `https://github.com/pypa/packaging "
+"<https://github.com/pypa/packaging>`_"
+msgstr ""
+
+#: ../../index.rst:431
+msgid "wheel: `https://github.com/pypa/wheel <https://github.com/pypa/wheel>`_"
+msgstr ""
+
+#: ../../index.rst:434
+msgid "Funding"
+msgstr "资金来源"
+
+#: ../../index.rst:436
+msgid "This project was partially funded by:"
+msgstr "该项目的部分资金来自于："
+
+#: ../../index.rst:438
+msgid ""
+"the JST AIP Acceleration Research “Studies of CPS platform to raise big-"
+"data-driven AI agriculture”;"
+msgstr ""
+
+#: ../../index.rst:439
+msgid "the SICORP Program JPMJSC16H2;"
+msgstr ""
+
+#: ../../index.rst:440
+msgid "CREST Programs JPMJCR16O2 and JPMJCR16O1;"
+msgstr ""
+
+#: ../../index.rst:441
+msgid ""
+"the International Science & Technology Innovation Program of Chinese "
+"Academy of Agricultural Sciences (CAASTIP);"
+msgstr ""
+
+#: ../../index.rst:442
+msgid "the National Natural Science Foundation of China U19A2"
+msgstr "国家自然科学基金U19A2061"
