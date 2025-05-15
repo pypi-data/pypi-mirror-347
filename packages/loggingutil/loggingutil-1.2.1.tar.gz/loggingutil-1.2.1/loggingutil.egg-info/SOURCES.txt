@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+loggingutil/__init__.py
+loggingutil/adapter.py
+loggingutil.egg-info/PKG-INFO
+loggingutil.egg-info/SOURCES.txt
+loggingutil.egg-info/dependency_links.txt
+loggingutil.egg-info/top_level.txt
