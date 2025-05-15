@@ -1,0 +1,38 @@
+name: Publish to PyPI
+
+on:
+  push:
+    tags:
+      - "v*.*.*"  # Trigger on version tags (e.g., v1.6.0)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # Required for OIDC
+      contents: read   # Required to checkout code
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install build dependencies
+        run: pip install build
+
+      - name: Build the package
+        run: python -m build
+
+      - name: Publish to PyPI (OIDC or Token Fallback)
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          # Try OIDC first (recommended)
+          trusted-publisher: true
+          # Fallback to API token if OIDC fails
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
+          skip-existing: true  # Skip if version already exists
+
