@@ -1,0 +1,9 @@
+sp2p/__init__.py,sha256=-hLeWLemwMFXtDeSNIhvSHMDD3SoO2Z9D3TbspbMStg,67
+sp2p/client.py,sha256=tKmsQtSMEwAcWOiywOn1HYqVgfGVVM3WLLAXMcmQQGo,1085
+sp2p/client2.py,sha256=tMMfG3luJ9Iht1jco2gJtjoyyvwHNfYfy4WrSNOImsc,1115
+sp2p/library.py,sha256=HoE8Vr-yfD-eXxBRj3YsKetGH3bAtdD646_qb0D95Iw,4647
+sp2p/server.py,sha256=ISlz9z2ljBTFzRrLWn5saMUDpub3Ds_pKdf6xACtMW4,123
+sp2ppy-1.0.0.dist-info/METADATA,sha256=vt_2orekA1b8EKU_NUdvvj2oCHLU7AfxIeLckgTk8Hc,1917
+sp2ppy-1.0.0.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+sp2ppy-1.0.0.dist-info/top_level.txt,sha256=gxKAK_AxFF7xc3oxvYfnhaImhP5SHMT-JQy5VhBwe90,5
+sp2ppy-1.0.0.dist-info/RECORD,,
