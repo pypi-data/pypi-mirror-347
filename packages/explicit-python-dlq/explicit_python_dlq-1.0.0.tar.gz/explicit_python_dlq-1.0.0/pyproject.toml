@@ -1,0 +1,132 @@
+[build-system]
+requires = [
+    "packaging>=24,<25",
+    "wheel>=0.45,<0.46",
+    "setuptools>=77,<78",
+    "setuptools-git-versioning>=2,<3",
+]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version"]
+
+name = "explicit-python-dlq"
+
+authors = [
+  {name = "АО \"БАРС Груп\"", email = "education_dev@bars-open.ru"}
+]
+
+readme = "README.md"
+
+description = "Набор компонентов реализующих DQL для систем на базе explicit"
+
+classifiers=[
+    "Intended Audience :: Developers",
+    "Environment :: Web Environment",
+    "Natural Language :: Russian",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+requires-python = ">=3.9"
+
+dependencies = [
+  "explicit-python>=2.2.1,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "freezegun"
+]
+django = [
+    "explicit-python-django>=1.0.2,<2.0"
+]
+rest = [
+    "djangorestframework>=3.13.0",
+    "django_filter>=23.3",
+]
+
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[tool.isort]
+multi_line_output=3
+force_grid_wrap=1
+include_trailing_comma = true
+line_length = 120
+combine_as_imports = true
+lines_after_imports = 2
+extra_standard_library = ["dataclasses"]
+known_project = ["explicit", "testapp"]
+sections = ["FUTURE","STDLIB","THIRDPARTY","FIRSTPARTY","PROJECT","LOCALFOLDER"]
+
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+indent-width = 4
+
+
+[tool.ruff.lint]
+select = ["F", "E", "D", "W", "S", "N",]
+ignore = [
+    # Missing docstring in public module
+    "D100",
+    # Missing docstring in public package
+    "D104",
+    # Missing docstring in __init__
+    "D107",
+    # use of assert detected (useless with pytest)
+    "S101",
+]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".idea",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+    "py-libs/**",
+]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+docstring-code-format = true
+
+[tool.ruff.lint.per-file-ignores]
+"*/tests/*" = ["D"]
+"*/migrations/*" = ["D"]
+
+[tool.mypy]
+plugins = ["pydantic.mypy"]
+no_site_packages = true
+ignore_missing_imports = true
+exclude = "migrations/"
