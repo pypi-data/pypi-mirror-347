@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+AutomataPractical/FiniteAutomate.py
+AutomataPractical/TuringMachine.py
+AutomataPractical/__init__.py
+AutomatePractical.egg-info/PKG-INFO
+AutomatePractical.egg-info/SOURCES.txt
+AutomatePractical.egg-info/dependency_links.txt
+AutomatePractical.egg-info/top_level.txt
+Tests/NFATests.py
+Tests/TuringMachineTests.py

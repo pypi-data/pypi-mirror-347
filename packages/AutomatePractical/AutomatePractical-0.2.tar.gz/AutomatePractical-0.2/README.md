@@ -1,0 +1,55 @@
+# Automate Practical Exam 
+
+
+- **Name**: Ammar Gamal  
+- **Section**: 4  
+
+---
+
+## Project Overview
+
+Solved Tasks:
+
+1. **Finite Automaton Simulator**
+2. **Turing Machine Simulator**
+3. **(Bonus) Published the package to PyPI**
+
+Each task has its own main script for user input also a unittesting to ensure correctness.
+
+---
+
+### Task 1: Finite Automaton Simulation
+
+- **Main Script**: `finiteautomate_main.py`
+- **Test File**: `Tests/NFATests.py`
+
+#### How to Run:
+```bash
+python finiteautomate_main.py
+```
+#### How to Run UnitTesting:
+```bash
+python -m unittest Tests/NFATests.py
+```
+### Task 2: Turing Machine Simulator
+
+- **Main Script**: `turingmachine_main.py`
+- **Test File**: `Tests/TuringMachineTests.py`
+
+#### How to Run:
+```bash
+python turingmachine_main.py
+```
+#### How to Run UnitTesting:
+```bash
+python -m unittest Tests/TuringMachineTests.py
+```
+### Bonus: Publish the Package
+- this project has been published to <a href="https://pypi.org/project/AutomatePractical/0.2/">PyPl</a>
+#### Install via pip:
+``` bash 
+pip pip install AutomatePractical==0.2
+```
+
+
+
