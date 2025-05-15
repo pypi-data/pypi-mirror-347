@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: mp4mdl
+Version: 0.1.6
+Summary: Un outil pour télécharger et gérer des vidéos MP4
+Home-page: https://git.maddoxserv.com/maddox/MP4MDL
+Author: Maddox
+Author-email: maddoxtes@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# MP4MDL - Video Downloader Library
+
+A Python library for downloading MP4 videos from various streaming websites. This library provides a simple and efficient way to download videos with progress tracking and error handling.
+
+## Features
+
+- Download videos from multiple supported websites
+- Progress tracking and status reporting
+- Customizable output paths and filenames
+- Error handling and logging support
+- Multi-threading support for batch downloads
+
+## Requirements
+
+- Python 3.6 or higher
+- FFMPEG (required for video processing)
+  - Windows: Download from [ffmpeg.org](https://ffmpeg.org/download.html)
+  - Linux: `sudo apt-get install ffmpeg`
+  - macOS: `brew install ffmpeg`
+
+## Installation
+
+```bash
+pip install mp4mdl
+```
+
+## Quick Start
+
+```python
+from mp4mdl import mp4mdl
+
+# Basic usage
+url = "https://video.sibnet.ru/shell.php?videoid=1234567"
+downloader = mp4mdl(
+    download_path="/path/to/temp",
+    final_path="/path/to/output/video.mp4",
+    url=url,
+    title="my_video"
+)
+status = downloader.download()
+print(f"Download status: {status}")
+```
+
+## Supported Websites
+
+- [video.sibnet.ru](https://video.sibnet.ru)
+- [vidmoly.to](https://vidmoly.to)
+- [oneupload.to](https://oneupload.to)
+- [sendvid.com](https://sendvid.com)
+
+## Documentation
+
+For detailed usage instructions and examples, please visit our [Wiki](https://git.maddoxserv.com/maddox/MP4MDL/wiki#mp4mdl-wiki).
+
+## License
+
+This project is free to use for any purpose, including commercial projects. You can:
+- Use it in your own projects
+- Modify it as needed
+- Share it with others
+- Use it commercially
+- Use it in private projects
+
+No attribution is required, but it's always appreciated! Feel free to use this library without any worries about licensing issues.
