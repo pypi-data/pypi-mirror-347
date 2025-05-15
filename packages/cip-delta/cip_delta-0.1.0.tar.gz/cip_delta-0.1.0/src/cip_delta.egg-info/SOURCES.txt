@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/cip/__init__.py
+src/cip/core.py
+src/cip_delta.egg-info/PKG-INFO
+src/cip_delta.egg-info/SOURCES.txt
+src/cip_delta.egg-info/dependency_links.txt
+src/cip_delta.egg-info/requires.txt
+src/cip_delta.egg-info/top_level.txt
