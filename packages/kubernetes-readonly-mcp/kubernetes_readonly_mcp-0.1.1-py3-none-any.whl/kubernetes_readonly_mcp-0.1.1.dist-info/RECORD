@@ -1,0 +1,8 @@
+kubernetes_readonly_mcp/__init__.py,sha256=vTxTcWgkouZydA281LNsC6XvGXrrqNX0CpQ_2ppA5yg,171
+kubernetes_readonly_mcp/server.py,sha256=ZOqE3MbMTzQB8LYnCjPGiQUGn5TQb7FLWCmf2NqYJoQ,23291
+kubernetes_readonly_mcp-0.1.1.dist-info/licenses/LICENSE,sha256=PJq5pX7MCJMXa-YU6c4fajGJJccQfWAQJ2N0cIeISj4,11341
+kubernetes_readonly_mcp-0.1.1.dist-info/METADATA,sha256=eWXnJA08fBm0-c6asJrXas5ji7TRZ2O5rRkF2YuBRMI,16620
+kubernetes_readonly_mcp-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+kubernetes_readonly_mcp-0.1.1.dist-info/entry_points.txt,sha256=9e2zm1C2Iv1s1ya-j0eBspmUE4-XpwJ68mCt8k0X6fM,80
+kubernetes_readonly_mcp-0.1.1.dist-info/top_level.txt,sha256=pshIpgtKktKnwXjZYSh4dD4OxFLBi6ytfJgqLcw6XoM,24
+kubernetes_readonly_mcp-0.1.1.dist-info/RECORD,,
