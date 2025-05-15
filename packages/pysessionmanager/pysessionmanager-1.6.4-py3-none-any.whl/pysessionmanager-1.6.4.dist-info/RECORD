@@ -1,0 +1,12 @@
+pysessionmanager/__init__.py,sha256=Zq30TLEIfJy8LZadWuLXtS75vwC6OD9D1O8b3LblHPQ,32
+pysessionmanager/codes.py,sha256=_5TOBNyDvQNKujPdWlkYBanUnSvQWRZm-5wlK-sNyWs,9922
+pysessionmanager/core.py,sha256=t4jaACoUDsjB-IJ0JKWV6Q-HHRn0D9t0QiKFMB2pMPI,23407
+pysessionmanager/presistence.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysessionmanager/security.py,sha256=rvAhtb0X9UnXB9ANlBEyzRvYqyt9iUF0I6ghqg7NLqw,1742
+pysessionmanager/test_test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysessionmanager/utils.py,sha256=WTILvhxKzjmXuTtBDDRft1J6dkzw0rbJeuF-wobSJQo,122
+pysessionmanager-1.6.4.dist-info/LICENSE,sha256=ygtEPYlUySDLFtI9RL5TI1Ce2B5hTe12njRHTkYm6BE,1091
+pysessionmanager-1.6.4.dist-info/METADATA,sha256=K9jms9sdb1tEA0saAR9YLNKxeLCWWAjOnxY9UY56Hc4,3982
+pysessionmanager-1.6.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pysessionmanager-1.6.4.dist-info/top_level.txt,sha256=JZv15Mp-e2oVt9dG98TB9stfLGzOpkdkBCm4B2mZmHQ,17
+pysessionmanager-1.6.4.dist-info/RECORD,,
