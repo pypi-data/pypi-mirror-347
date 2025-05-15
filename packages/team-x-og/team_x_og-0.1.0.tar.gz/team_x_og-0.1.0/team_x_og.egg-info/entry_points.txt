@@ -1,0 +1,2 @@
+[console_scripts]
+teamxbot = team_x_og.cli:cli
