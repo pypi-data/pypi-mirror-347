@@ -1,0 +1,9 @@
+meshinfer/__init__.py,sha256=r_cKr7sbAG8wXvZQ-5WkC2eXGKMDWp6Xe_hNXu43MT0,21
+meshinfer/ops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meshinfer/ops/meshgemm.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meshinfer/ops/meshgemv.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meshinfer-0.1.2.data/data/requirements.txt,sha256=loids1TBETdZ-jeZTU7MyjuUtvOgGc58dYBMg7REbyU,45
+meshinfer-0.1.2.dist-info/METADATA,sha256=xs0BXf46txowzKvQKPF5-QbS9MnMTbNZNGWz93hGpgQ,514
+meshinfer-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+meshinfer-0.1.2.dist-info/top_level.txt,sha256=WZQ0rFLwEa5bLrU19nmBL0uEpUNYMikapHl9GQqSRo4,10
+meshinfer-0.1.2.dist-info/RECORD,,
