@@ -1,0 +1,5 @@
+tensorrt_dispatch_cu11_libs==10.11.0.33
+tensorrt_dispatch_cu11_bindings==10.11.0.33
+
+[numpy]
+numpy
