@@ -1,0 +1,2 @@
+[console_scripts]
+ragflow = ragflow_client.cli:main
