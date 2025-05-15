@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: envm
+Version: 0.1.0
+Summary: Command to manage environments variables, the idea is because everyday I have to work with .env files with different projects and environments like dev, staging and local.
+Project-URL: Homepage, https://github.com/emmanueloctavi0/lenv
+Project-URL: Issues, https://github.com/emmanueloctavi0/lenv/issues
+Author-email: Emmanuel Octavio <emmanueloctaviomc@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Requires-Dist: click>=8.2.0
+Description-Content-Type: text/markdown
+
+
+CLI to manage environments variables, the idea is because everyday I have to work with .env files with different projects and environments like dev, staging and local.
+
+Examples:
+
+1. Save the current .env (environment) file in the database environments
+```bash
+$ lenv save users.dev
+```
+
+2. Use a file called .env in my current path:
+```bash
+$ lenv use users.dev
+```
+
+3. (WIP) The next command should "export" the environments in my current shell session:
+```bash
+lenv export users.dev
+```
+
+4. (WIP) Clean my current env space (--lenv flag is optional)
+```bash
+lenv clean --lenv users.prod
+```
