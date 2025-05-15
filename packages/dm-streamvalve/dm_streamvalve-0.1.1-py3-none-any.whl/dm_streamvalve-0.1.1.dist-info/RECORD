@@ -1,0 +1,8 @@
+dm_streamvalve/.gitignore,sha256=LNKqAilN0-7tYfp2Q7uV7oPmUZFoINZ7vrGanE6cuhU,37
+dm_streamvalve/__init__.py,sha256=fwawbOW21X_Bq30NkHms5BFtnCfXIRBq7F55K2v8WTg,229
+dm_streamvalve/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dm_streamvalve/streamvalve.py,sha256=hiwvg37qv2oBq8-kPI4UMghQzLLt1cR3WRRkqdQDtA8,11807
+dm_streamvalve-0.1.1.dist-info/METADATA,sha256=OmNASS9Pecsteqw3_R8jM19KmxbudBM3UlLULwqYy-A,10132
+dm_streamvalve-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dm_streamvalve-0.1.1.dist-info/licenses/LICENSE,sha256=97FooerY2qHHrfaR2GV4yuWegPfbgrL5t9tSsQ2JUHU,1073
+dm_streamvalve-0.1.1.dist-info/RECORD,,
