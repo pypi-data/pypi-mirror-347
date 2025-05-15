@@ -1,0 +1,8 @@
+spin_stepper/__init__.py,sha256=0wYSRm11KkcTNwe88s8ueXkiBAFAnVaijf22c7WyJ0c,309
+spin_stepper/spin_chain.py,sha256=WwAxU8vmG4AsoC-_PD-f6ws4sa4P-NWKbLAZgTVxpQA,2987
+spin_stepper/spin_device.py,sha256=qX12pI4dgTK8ALN0JDslbjN0rtB0JBW0kYjKe-eZBXc,33286
+spin_stepper-0.0.8.dist-info/licenses/LICENSE,sha256=SkaLaQXOzD60DTGFlzWjbTFJdnpUqentwyVgla_Pwbk,1088
+spin_stepper-0.0.8.dist-info/METADATA,sha256=mj6RupAlV52DpeAhvAmnzet_vhHKDK61Ez668ycZeDM,2145
+spin_stepper-0.0.8.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+spin_stepper-0.0.8.dist-info/top_level.txt,sha256=XWCCYInog5qPvVXtWuNjRCdBnan0ugS6zi_fYmZE72g,13
+spin_stepper-0.0.8.dist-info/RECORD,,
