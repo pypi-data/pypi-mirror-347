@@ -1,0 +1,8 @@
+jax_zero_contour/__init__.py,sha256=_whsIPbgtp183M4ej-s_wQ3X3AlHGoYxh_ZnFwg5Ffk,236
+jax_zero_contour/zero_contour_finder.py,sha256=7cLrDBAslNWKpE0OkCm2mRHYijjQ6fTdQqZ7BkS9W8c,11298
+jax_zero_contour/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jax_zero_contour/tests/test_contour_finder.py,sha256=gkSC-vmo_Cv3BnEY-RqC7c_tC5bAdAbIhJOyQh925eQ,2929
+jax_zero_contour-1.0.0.dist-info/licenses/LICENSE,sha256=cn8bDCgU8M6NAMQNBTtQEAXRwT5WFduENoL8RbXdaDY,1073
+jax_zero_contour-1.0.0.dist-info/WHEEL,sha256=Dyt6SBfaasWElUrURkknVFAZDHSTwxg3PaTza7RSbkY,100
+jax_zero_contour-1.0.0.dist-info/METADATA,sha256=kKhhNihnZUMipsiKETyg1kk6GoB3LxOtrtF2nsLYniM,1375
+jax_zero_contour-1.0.0.dist-info/RECORD,,
