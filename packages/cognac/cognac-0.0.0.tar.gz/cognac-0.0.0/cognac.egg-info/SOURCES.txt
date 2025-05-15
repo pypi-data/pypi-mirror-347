@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+cognac/__init__.py
+cognac.egg-info/PKG-INFO
+cognac.egg-info/SOURCES.txt
+cognac.egg-info/dependency_links.txt
+cognac.egg-info/requires.txt
+cognac.egg-info/top_level.txt

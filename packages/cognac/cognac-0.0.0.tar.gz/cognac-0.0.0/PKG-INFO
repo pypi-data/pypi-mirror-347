@@ -1,0 +1,71 @@
+Metadata-Version: 2.4
+Name: cognac
+Version: 0.0.0
+Summary: Cooperative Graph-based Networked Agent Challenges for Multi-Agent Reinforcement Learning.
+Author-email: Jules Sintes <jules.sintes@inria.fr>
+License-Expression: Apache-2.0
+Project-URL: Homepage, https://github.com/yojul/cognac#
+Project-URL: Issues, https://github.com/yojul/cognac/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: gymnasium>=1.0.0
+Requires-Dist: numpy>=2.1.3
+Requires-Dist: matplotlib>=3.0
+Requires-Dist: pettingzoo>=1.24
+Requires-Dist: networkx>=3.4
+Requires-Dist: imageio>=2.37
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Dynamic: license-file
+
+# 🥃 COGNAC: COoperative Graph-based Networked Agent Challenges
+
+[![LICENSE](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.txt)
+[![Documentation Status](https://readthedocs.org/projects/cognac-marl/badge/?version=latest)](https://cognac-marl.readthedocs.io/en/latest/)
+
+
+## 🚧 [Documentation](https://cognac-marl.readthedocs.io/en/latest/) is in progress.
+
+COGNAC is a Python-based benchmark suite offering **flexible**, **graph-structured**, **cooperative multi-agent** environments for MARL research. The package offers standardized minimal implementations of several well-known theoretical **graph-based MARL problems** taken from the literature, adapted for empirical benchmarking with modern RL tooling.
+
+🎯 Benchmark example available [here](https://github.com/yojul/cognac-benchmark-example)
+
+## Getting Started
+
+---
+
+## List of Environments
+
+---
+
+## Citing
+
+If you used this environment for your experiments or found it helpful, consider citing it:
+<pre>
+@article{sintes2025cognac,
+  title={COGNAC - Cooperative Graph-based Networked Agent Challenges for Multi-Agent Reinforcement Learning},
+  author={Sintes, Jules}, 
+  url={\url{https://github.com/yojul/cognac}},
+  publisher={Github},
+  year={2025},
+}
+</pre>
+
+---
+
+## License
+
+This project is licensed under the Apache-2.0 License. See [LICENSE.txt](LICENSE.txt) for details.
+
+---
+
+## Contact
+
+For questions or feedback, please open an issue or contact the maintainer:
+
+* **Repo Owner**: Jules Sintes, INRIA Paris, DIENS, École Normale Supérieure, PSL University.
+* **Email**: [jules.sintes@inria.fr](mailto:jules.sintes@inria.fr)
