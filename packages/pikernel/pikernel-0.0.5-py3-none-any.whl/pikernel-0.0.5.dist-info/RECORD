@@ -1,0 +1,8 @@
+pikernel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pikernel/dimension_1.py,sha256=0B6lZo2WFTcFQevwAcr-Uhx2LIOsAjVskFqE_9eR5t4,14553
+pikernel/dimension_2.py,sha256=wbc70-TFxfLIk84vV0-lJZsIV1r1dukBSMDMaNhMvI0,12412
+pikernel/utils.py,sha256=vsb-MHehHQaXeqSPpOUSuzTFhBZxEj7sa2oyhpkzsss,1256
+pikernel-0.0.5.dist-info/METADATA,sha256=obihnn71QYtiOG2rkoCBQLkpNpe7zPRV7YnOyc30BJY,1015
+pikernel-0.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pikernel-0.0.5.dist-info/licenses/LICENSE,sha256=3vLoFxRTHjzSIOb_ChIAr4temd4uYEHI-RcBREyF1UM,1072
+pikernel-0.0.5.dist-info/RECORD,,
