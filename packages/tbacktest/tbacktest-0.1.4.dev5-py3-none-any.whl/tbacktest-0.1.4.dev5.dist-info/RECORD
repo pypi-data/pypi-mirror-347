@@ -1,0 +1,8 @@
+tbacktest/BacktestBase.py,sha256=uFOPBefhlcNIbd1tl5-JHDq0LUEuLNzYmfpFIrve1DE,15454
+tbacktest/BacktestLongOnly.py,sha256=sVV28rj-sY0amcVWfoseOuKyE2Q5rrASlYcXVKEScJc,12464
+tbacktest/BacktestTargetWealth.py,sha256=2DtqUmzSe3Z1SLGU-pVCMtuxNlP-hfjZKKHM5xwGFas,9436
+tbacktest/__init__.py,sha256=bAgr83Akw4WhBusVgoaTL8xbXuZkt8GITDiHjsDAzVw,1140
+tbacktest-0.1.4.dev5.dist-info/METADATA,sha256=j-4_8ztlP-kdR6PbpsarhMLAPqU1SWKrHFSH2a0D2I4,1595
+tbacktest-0.1.4.dev5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tbacktest-0.1.4.dev5.dist-info/top_level.txt,sha256=RKfr4ZYzy98gEIiqXv40qr42pPHnGYiwG07uvq4cKYU,10
+tbacktest-0.1.4.dev5.dist-info/RECORD,,
