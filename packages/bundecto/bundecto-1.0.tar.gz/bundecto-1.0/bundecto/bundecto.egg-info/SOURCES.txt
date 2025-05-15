@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+bundecto/bundecto.egg-info/PKG-INFO
+bundecto/bundecto.egg-info/SOURCES.txt
+bundecto/bundecto.egg-info/dependency_links.txt
+bundecto/bundecto.egg-info/entry_points.txt
+bundecto/bundecto.egg-info/top_level.txt
