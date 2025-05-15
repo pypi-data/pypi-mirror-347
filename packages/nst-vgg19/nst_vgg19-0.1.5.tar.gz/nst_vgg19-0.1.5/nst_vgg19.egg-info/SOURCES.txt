@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+nst_vgg19.py
+setup.py
+models/decoder.pth
+models/vgg_normalized.pth
+nst_vgg19.egg-info/PKG-INFO
+nst_vgg19.egg-info/SOURCES.txt
+nst_vgg19.egg-info/dependency_links.txt
+nst_vgg19.egg-info/requires.txt
+nst_vgg19.egg-info/top_level.txt
