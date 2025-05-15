@@ -1,0 +1,2 @@
+[console_scripts]
+facetracker = facetracker.tracker:start_recognition
