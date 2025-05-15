@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: gcp_toolkit
+Version: 0.1.0
+Summary: Utilities for interacting with GCP Storage and Scheduler
+Author-email: Atoosa Nasiri <atoosa.nasiri@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-cloud-storage
+Requires-Dist: google-cloud-scheduler
+Requires-Dist: protobuf
+
+# gcp_toolkit
+
+This library provides simple utility functions for Google Cloud Storage and Cloud Scheduler.
+
+## Installation
+
+```bash
+pip install gcp_toolkit
+```
+
+## Usage
+
+```python
+from gcp_toolkit import upload_file, create_scheduler_job
+
+upload_file("my-bucket", "local.txt", "remote.txt")
+create_scheduler_job("my-project", "us-central1", "my-job", "my-topic")
+```
+
+## directory structure
+
+gcp_toolkit/
+├── gcp_toolkit/
+│   ├── __init__.py
+│   ├── storage.py
+│   └── scheduler.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_storage.py
+│   └── test_scheduler.py
+├── README.md
+├── pyproject.toml
+├── LICENSE
+└── .gitignore
