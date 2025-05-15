@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: mcp-nutrimaster
+Version: 0.1.0
+Summary: 智膳源道 MCP Server，是国内首家支持MCP 协议的营养膳食平台。
+Home-page: https://github.com/qq201128/mcp-nutrimaster
+Author: qq201128
+Author-email: 3229191254@qq.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: requests
+Requires-Dist: setuptools>=80.4.0
+Requires-Dist: twine>=6.1.0
+Requires-Dist: wheel>=0.45.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-python
+
+智膳源道 MCP Server，是国内首家支持MCP 协议的营养膳食平台。
