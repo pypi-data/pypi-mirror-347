@@ -1,0 +1,8 @@
+*.pyc
+*.egg-info
+*node_modules*
+*target
+*.env
+*.DS_Store
+sandbox/
+dist/
