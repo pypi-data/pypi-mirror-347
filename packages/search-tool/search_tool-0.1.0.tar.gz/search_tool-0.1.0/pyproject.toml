@@ -1,0 +1,26 @@
+[project]
+name = "search-tool"
+version = "0.1.0"
+description = "Tool for search"
+authors = [
+    {name = "Wensheng Wang",email = "wenshengwang@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "playwright (>=1.52.0,<2.0.0)"
+]
+
+[project.urls]
+Homepage = "https://github.com/wensheng/search-tool"
+Repository = "https://github.com/wensheng/search-tool.git"
+#Issues = "https://github.com/wensheng/search-tool/issues"
+#Changelog = "https://github.com/wensheng/search-tool/blob/master/CHANGELOG.md"
+
+[tool.poetry]
+packages = [{include = "search_tool", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
