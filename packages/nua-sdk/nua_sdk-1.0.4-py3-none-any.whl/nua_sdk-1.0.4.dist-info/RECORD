@@ -1,0 +1,7 @@
+nua_sdk/__init__.py,sha256=Ef4QvfClKRIAA8TEhcpAMXV28_mFDAvZZ2SliVGZe7A,94
+nua_sdk/authentication_agent/__init__.py,sha256=oSV7nRPtzZbwkYuXXAhtLnQpFWrTNvUKO1-DaEwDMsA,78
+nua_sdk/authentication_agent/main.py,sha256=-9GfkPkpaupwmv6nJPFjvva6_TDm8mZ5y9wTu-6pGsc,903
+nua_sdk-1.0.4.dist-info/METADATA,sha256=VZhtvvJPRmRNVojvO5xf-KZXlLflB-Ry-e_mrnOJ71w,672
+nua_sdk-1.0.4.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+nua_sdk-1.0.4.dist-info/top_level.txt,sha256=_Sva_vVN_I6Phru61qfziUPdLf-c9BF74CBIMutPNdw,8
+nua_sdk-1.0.4.dist-info/RECORD,,
