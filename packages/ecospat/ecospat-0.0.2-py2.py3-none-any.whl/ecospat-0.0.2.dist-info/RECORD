@@ -1,0 +1,14 @@
+ecospat/__init__.py,sha256=c6yGxxI2ygV-9lCBATsmOkPtttIGK-V6mWm6ZMF-054,266
+ecospat/common.py,sha256=Rw6d9qmZDu3dUGTyJto1Y97S7-QA-m2p-pbCNvMDrm4,184
+ecospat/ecospat.py,sha256=vq8E82fkRNPMB8fLZpGVhJVk7SQTMcBkmDEp0MOj0AQ,33548
+ecospat/foliummap.py,sha256=o4e870TMZg5vYwjwBCzV8Q-viiEuhyFL9Fg08CbPNx8,9809
+ecospat/mapping.py,sha256=tEDABP43oIgBhO1LkMB7CP2lyTjYD162PxxOIZ-ul1Q,15349
+ecospat/name_references.py,sha256=Fo6icZyWOuBEICSMPbW4Xt3QTCY1lAUyen8YbwlD2qM,25213
+ecospat/references_data.py,sha256=uSIM3KDOfKCsYL3nvKqYU_ASLJq3tgw8VH7ovYnVm7I,16389
+ecospat/stand_alone_functions.py,sha256=ofJv8NpUA5bToPunMTe1vOtURFJImj_w1xBhcb9pbNc,107947
+ecospat-0.0.2.dist-info/licenses/LICENSE,sha256=6drPDupiowQ6RghcE5fCA5qcWvfOo2uhQZbbXwoAHhY,1071
+ecospat-0.0.2.dist-info/METADATA,sha256=S0sxnhQCjuOBPE6BtW3iFrugx3wpkmgeJDhOKUvpeTI,4447
+ecospat-0.0.2.dist-info/WHEEL,sha256=joeZ_q2kZqPjVkNy_YbjGrynLS6bxmBj74YkvIORXVI,109
+ecospat-0.0.2.dist-info/entry_points.txt,sha256=gW-DTN9tEU646QZ8x4EqJnE_flLY3rYVus4Me8anEG4,45
+ecospat-0.0.2.dist-info/top_level.txt,sha256=iqg1vkO_QkL_8XVESZQUbVu0wrEPc7DeqEqgGbk6XfQ,8
+ecospat-0.0.2.dist-info/RECORD,,
