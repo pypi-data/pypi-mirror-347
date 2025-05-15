@@ -1,0 +1,8 @@
+logging_emr/__init__.py,sha256=rhi33GL-g4ed0rNZxDEuzM1wdI8voubWZEskP2TWRHE,137
+logging_emr/cloudwatch_logger.py,sha256=6USTMCvUBWtba2Mh2d_kRIRqiJibbKvl-A3gO0MmZw8,4551
+logging_emr/emr_utils.py,sha256=2jtO2NdPEXlI3PFCdoca5ynSMq4qoNMRts_5hP_9KJ8,4887
+logging_emr-0.1.6.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logging_emr-0.1.6.dist-info/METADATA,sha256=fi5ZiLM8TtVp2AQgoqD2VpjxuXg_TGsYBIYI8FJYvkg,694
+logging_emr-0.1.6.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+logging_emr-0.1.6.dist-info/top_level.txt,sha256=qvJuplLkJhjml47xu-1yPaN-sGJu1SlDsel3tSevHw8,12
+logging_emr-0.1.6.dist-info/RECORD,,
