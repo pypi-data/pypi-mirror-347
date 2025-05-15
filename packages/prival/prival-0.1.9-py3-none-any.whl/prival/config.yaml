@@ -1,0 +1,29 @@
+# config.yaml
+enabled_dimensions:
+  clarity:     # 表示启用清晰度检测
+    weight: 0.135
+  ambiguity:
+    weight: 0.08
+  step_guidance:
+    weight: 0.13
+  verbosity:
+    weight: 0.08
+  injection_risk:
+    weight: 0.095
+  context_completeness:
+    weight: 0.11
+  ethic_compliance:
+    weight: 0.08
+  structural_cleanness:
+    weight: 0.05
+  relevance:
+    weight: 0.09
+  feasibility:
+    weight: 0475
+  grammar_spelling:
+    weight: 0.05
+  length_appropriateness:
+    weight: 0.05
+  diversity:
+    weight: 0.045
+# politeness 未启用
