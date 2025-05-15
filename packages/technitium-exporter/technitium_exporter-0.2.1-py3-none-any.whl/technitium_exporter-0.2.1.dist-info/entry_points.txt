@@ -1,0 +1,2 @@
+[console_scripts]
+technitium-exporter = technitium_exporter.exporter:main
