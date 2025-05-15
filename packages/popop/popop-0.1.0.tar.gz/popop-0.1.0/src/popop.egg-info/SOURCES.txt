@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/popop/__init__.py
+src/popop/__main__.py
+src/popop.egg-info/PKG-INFO
+src/popop.egg-info/SOURCES.txt
+src/popop.egg-info/dependency_links.txt
+src/popop.egg-info/top_level.txt
