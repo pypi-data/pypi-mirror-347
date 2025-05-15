@@ -1,0 +1,1 @@
+kubernetes_readonly_mcp

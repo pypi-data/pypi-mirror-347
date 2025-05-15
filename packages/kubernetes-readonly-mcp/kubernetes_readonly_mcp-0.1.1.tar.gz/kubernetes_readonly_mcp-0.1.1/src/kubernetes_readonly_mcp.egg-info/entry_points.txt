@@ -1,0 +1,2 @@
+[console_scripts]
+kubernetes-readonly-mcp = kubernetes_readonly_mcp.server:main
