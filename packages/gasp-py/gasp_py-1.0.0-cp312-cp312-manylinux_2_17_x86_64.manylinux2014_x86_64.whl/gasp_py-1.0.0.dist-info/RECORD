@@ -1,0 +1,9 @@
+gasp_py-1.0.0.dist-info/METADATA,sha256=u3XdcoiJWOpd8qJ-KgFRcQE3-jHfIwUtkLFNwUBjAFE,9499
+gasp_py-1.0.0.dist-info/RECORD,,
+gasp_py-1.0.0.dist-info/WHEEL,sha256=acyjvT73vR7GuiwJbRRQ0ui8Tn5B0m6G0zjmMrjUBJk,147
+gasp_py-1.0.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gasp/deserializable.py,sha256=3C7KiG5sPI3dMMGGhdLl8Sx4MXwzT4qJ5SZ-kyOVJVo,1366
+gasp/template_helpers.py,sha256=akVcssX0sVpYNO3uIJYVhvv5-MuHCRudcGpGRfwPFHE,8778
+gasp/gasp.cpython-312-x86_64-linux-gnu.so,sha256=n6S13C4kcnjvwHvzGYlvxY3Hebfd1dpYH-xBw1P4ju8,656280
+gasp/jinja_helpers.py,sha256=2rntDwe9JR2_efgzG98si9UPDbbfzCM7JH0kvX1Plq4,3890
+gasp/__init__.py,sha256=GHCNwLTVCoNH6qy0IBHz8ei32pDw9zVu27RMSB1fS7M,751
