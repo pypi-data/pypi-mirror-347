@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/MeasureSuiteCommandLine/__init__.py
+src/MeasureSuiteCommandLine/helper.py
+src/MeasureSuiteCommandLine/ms.py
+src/MeasureSuiteCommandLine.egg-info/PKG-INFO
+src/MeasureSuiteCommandLine.egg-info/SOURCES.txt
+src/MeasureSuiteCommandLine.egg-info/dependency_links.txt
+src/MeasureSuiteCommandLine.egg-info/entry_points.txt
+src/MeasureSuiteCommandLine.egg-info/requires.txt
+src/MeasureSuiteCommandLine.egg-info/top_level.txt
+src/MeasureSuiteCommandLine/test/__init__.py
+src/MeasureSuiteCommandLine/test/test_ms.py
