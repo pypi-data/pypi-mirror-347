@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+notion=mkdocs_notion_plugin:NotionPlugin
+
