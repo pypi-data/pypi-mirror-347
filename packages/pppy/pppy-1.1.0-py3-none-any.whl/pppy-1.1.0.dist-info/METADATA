@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: pppy
+Version: 1.1.0
+Summary: Physical Parameterizations with PYthon
+Author-email: Sébastien Riette <sebastien.riette@meteo.fr>
+License: CECILL-C
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE-fr.txt
+License-File: LICENSE-en.txt
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Dynamic: license-file
+
+#Physical Parameterizations with PYthon
+---
+
+The ``pppy`` package aims at comparing physical parameterizations in an "off-line" way.
