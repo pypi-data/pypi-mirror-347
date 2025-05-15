@@ -1,0 +1,7 @@
+
+# pixi environments
+.pixi
+*.egg-info
+src/extend_zarr/_version.py
+/build
+/dist
