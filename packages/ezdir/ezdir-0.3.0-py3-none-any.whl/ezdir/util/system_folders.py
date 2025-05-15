@@ -1,0 +1,1 @@
+ignore_subfolders = ["build", ".mypy_cache", "venv"]

@@ -1,0 +1,14 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/example.py,sha256=BOW9ERbJwpJRosufoz18ReY_fINdeRVpGOcga6aTNeI,191
+ezdir/__init__.py,sha256=9HIbeqbuUsniVQDXBidMQ6IlJ7xVc6qeh_6eCcUEgcs,121
+ezdir/_version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+ezdir/changer.py,sha256=E2iTsLqRzto8zCMI-jrrpS3rnHSQv5DwoegfUvvs3Yw,3508
+ezdir/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezdir/util/system_folders.py,sha256=7cn2LKkzzk5mz03lThUVTc8U2rMVb8s7hfPUtVbRNnA,52
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_changer.py,sha256=5LCj-sxgpIGatqFUWCyZYRfdyTiJr26CCgt8__RYELw,410
+ezdir-0.3.0.dist-info/LICENSE,sha256=dyajdTnL8RvMsPE8lr1TdzG-SzsGDRFYu6If5bhlj9o,1070
+ezdir-0.3.0.dist-info/METADATA,sha256=u2UhO49PhmDUm7sfkkJ1bU8jPj4p7rb5BTbE0IGwmE8,2182
+ezdir-0.3.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ezdir-0.3.0.dist-info/top_level.txt,sha256=qAVxSis-yGH4iH30LJqtzPM3y9u7kRdc5t7ZMsd31Dc,20
+ezdir-0.3.0.dist-info/RECORD,,
