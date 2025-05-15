@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+awesome_helpers/__init__.py
+awesome_helpers/core.py
+awesome_helpers.egg-info/PKG-INFO
+awesome_helpers.egg-info/SOURCES.txt
+awesome_helpers.egg-info/dependency_links.txt
+awesome_helpers.egg-info/top_level.txt
+tests/test_core.py
