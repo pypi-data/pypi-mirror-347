@@ -1,0 +1,12 @@
+scum_programmer/main.py,sha256=G2Aj342LDPoulF3_K4_hdvBxVpWkSJk5n8T8g89IKd0,1449
+scum_programmer/programmer/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+scum_programmer/programmer/hdlc.py,sha256=0-xG99egKCgOiqCo61_VL6uDKNDTKj2x8afwa-ToxnI,4408
+scum_programmer/programmer/scum.py,sha256=DFWv5NwKDgnOeX4zoFOdqoQ1Ja5TA6X76GkuuwsA26k,4504
+scum_programmer/programmer/serial.py,sha256=NbSfK3xbBsSav9-89I6x69Av6ScTfafVINfvcGeRv-c,381
+scum_programmer/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scum_programmer/tests/test_main.py,sha256=9q0EAXL6hElpJMllR0OOyQVfblnZb9OtuZnj3qw5G_c,620
+scum_programmer-0.1.1.dist-info/METADATA,sha256=Str6e4EeHjgQ_QlZl-cXnh1dMKlXtaKrziaQHbg77DY,2543
+scum_programmer-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+scum_programmer-0.1.1.dist-info/entry_points.txt,sha256=7y7yn4koKAlS2fvjdlb6iYmCK5HYLe8cLosKp1qKNoc,62
+scum_programmer-0.1.1.dist-info/licenses/LICENSE.txt,sha256=8Tf7AClM2MpAAP40ulzaH85wAC1j3igf2vEXgh9-uh8,1476
+scum_programmer-0.1.1.dist-info/RECORD,,
