@@ -1,0 +1,13 @@
+landcalc/__init__.py,sha256=v1vO0mZKTu6X5tOcAqggn5aBWatf7DRAPWU4L0kSKYA,159
+landcalc/analysis.py,sha256=HE4qEG0schZB-tLHYmrpTXCItrmzfpHeF_XY7a0sG1M,2544
+landcalc/common.py,sha256=Rw6d9qmZDu3dUGTyJto1Y97S7-QA-m2p-pbCNvMDrm4,184
+landcalc/foliumap.py,sha256=WkY6spmh1oXoxCV568t3XPnoG6MvEXts5jb7Z1EKQKU,6264
+landcalc/landcalc.py,sha256=p414NUGydC3WBe4_Zi6qZ8vVvPGfP-pdwr4im8wxYWc,9772
+landcalc/registry.py,sha256=-iqKZW7MBtJFSU1SI1GYT964P2fK-K_p3blBWPVNKso,740
+landcalc/ui.py,sha256=4ZdX-QG3AwKWL41VU8drNWeGtsKm-3dE9DcmUAJzF98,8974
+landcalc-0.0.4.dist-info/licenses/LICENSE,sha256=lB2L3s_dgo1xFH_lDYqQt42tOV1uCrcEEZx4Chr4A30,1071
+landcalc-0.0.4.dist-info/METADATA,sha256=1UKQlm6os8jli_X2biZKIrNdMG6RC5OrEjfKJcIhCOk,1564
+landcalc-0.0.4.dist-info/WHEEL,sha256=RqF1ivPHYiK9XjZxLNRY-iX5gSRXQ2ZZMOJBp8G1Jos,109
+landcalc-0.0.4.dist-info/entry_points.txt,sha256=kaofm_6MctPBkuqUxdSsZazf-P7j8rqNygBB8Fe_pLA,47
+landcalc-0.0.4.dist-info/top_level.txt,sha256=H2kdnZLgLkFfHgrkPpYH1VAg_-GUc49taa3gwE8iZyM,9
+landcalc-0.0.4.dist-info/RECORD,,
