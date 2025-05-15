@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/excel-conversion/__init__.py
+src/excel-conversion/ec.py
+src/excel_conversion.egg-info/PKG-INFO
+src/excel_conversion.egg-info/SOURCES.txt
+src/excel_conversion.egg-info/dependency_links.txt
+src/excel_conversion.egg-info/requires.txt
+src/excel_conversion.egg-info/top_level.txt
