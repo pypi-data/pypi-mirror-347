@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+bin/snp2str
+snp2str/__init__.py
+snp2str/bases_coding.json
+snp2str/exceptions.py
+snp2str/process.py
+snp2str.egg-info/PKG-INFO
+snp2str.egg-info/SOURCES.txt
+snp2str.egg-info/dependency_links.txt
+snp2str.egg-info/not-zip-safe
+snp2str.egg-info/requires.txt
+snp2str.egg-info/top_level.txt
+snp2str/tests/__init__.py

@@ -1,0 +1,4 @@
+include README.md
+include requirements.txt
+include snp2str/bases_coding.json
+recursive-include snp2str/tests *
