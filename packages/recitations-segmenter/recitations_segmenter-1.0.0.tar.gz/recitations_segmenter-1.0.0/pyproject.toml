@@ -1,0 +1,83 @@
+# main docs of setup tools: https://setuptools.pypa.io/en/latest/userguide/quickstart.html
+# pypip tutoral: https://packaging.python.org/en/latest/tutorials/packaging-projects/
+# Video Tutorial: https://www.youtube.com/watch?v=v6tALyc4C10
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+license = "MIT"
+name = "recitations-segmenter"
+version = "1.0.0"
+authors = [
+  { name="Abdullah", email="abdullahamlyossef@gmail.com" },
+]
+description = "Split The Holy Quran Recitations based on وفق (pause)"
+readme = "README.md"
+dependencies = [
+  "torch>=2.6.0",
+  "numpy",
+  "torchaudio",
+  "transformers>=4.50.3",
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+
+# Optional dependencies
+[project.optional-dependencies]
+# NOTE: All depencet package runs on python 3.12
+# TODO: Add specific python version (3.12) for augment
+test = [
+  "pytest",
+]
+
+augment = [
+  "pypdl==1.4.4",
+  # "quran-transcript @ git+https://github.com/obadx/quran-transcript.git",
+  "filetype==1.2.0",
+  "mutagen==1.47.0",
+  "torch==2.6.0",
+  "numpy",
+  "torchaudio",
+  "pyyaml",
+  "librosa==0.10.2",
+  "standard-aifc",
+  "standard-sunau",
+  "submitit==1.5.2",
+  "transformers==4.50.3",
+  "pyaml",
+  "pydantic==2.11.3",
+  "datasets==3.3.2",
+  "huggingface_hub",
+  "audiomentations==0.40.0",
+  "pydub>=0.22.0,<1",
+  "pyroomacoustics>=0.7.4",
+  "pytest==8.3.5",
+]
+
+
+train = [
+  "datasets==3.3.2",
+  "huggingface_hub",
+  "pytest==8.3.5",
+  "scikit-learn",
+  "accelerate==1.6.0",
+  "tensorboard==2.19.0"
+]
+
+[project.scripts]
+recitations-segmenter = "recitations_segmenter.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/obadx/recitations-segmenter"
+Issues = "https://github.com/obadx/recitations-segmenter/issues"
+
+# # for addint data: https://setuptools.pypa.io/en/latest/userguide/datafiles.html#package-data
+[tool.setuptools.package-data]
+quran_transcript = ["data/*"]
