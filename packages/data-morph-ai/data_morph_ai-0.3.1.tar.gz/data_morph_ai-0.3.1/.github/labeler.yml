@@ -1,0 +1,63 @@
+bounds:
+- any:
+  - changed-files:
+    - any-glob-to-any-file: src/data_morph/bounds/**/*
+
+ci/cd:
+- any:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.coveragerc'
+      - '.github/**/*'
+      - '.pre-commit-config.yaml'
+      - setup.cfg
+
+cli:
+- any:
+  - changed-files:
+    - any-glob-to-any-file:
+      - src/data_morph/__main__.py
+      - src/data_morph/cli.py
+
+data:
+- any:
+  - changed-files:
+    - any-glob-to-any-file: src/data_morph/data/**/*
+
+documentation:
+- any:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/workflows/docs.yml'
+      - docs/**/*
+      - README.md
+
+morpher:
+- any:
+  - changed-files:
+    - any-glob-to-any-file: src/data_morph/morpher.py
+
+packaging:
+- any:
+  - changed-files:
+    - any-glob-to-any-file:
+      - CITATION.cff
+      - LICENSE
+      - pyproject.toml
+      - README.md
+      - src/data_morph/__init__.py
+
+plotting:
+- any:
+  - changed-files:
+    - any-glob-to-any-file: src/data_morph/plotting/**/*
+
+shapes:
+- any:
+  - changed-files:
+    - any-glob-to-any-file: src/data_morph/shapes/**/*
+
+testing:
+- any:
+  - changed-files:
+    - any-glob-to-any-file: tests/**/*

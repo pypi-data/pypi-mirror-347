@@ -1,0 +1,213 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+
+requires = [
+  "setuptools==76.1.0",
+  "setuptools-scm",
+]
+
+[project]
+name = "data-morph-ai"
+description = "Teaching tool on the importance of data visualization."
+readme = "README.md"
+keywords = [
+  "data animation",
+  "data visualization",
+  "summary statistics",
+]
+license = { file = "LICENSE" }
+maintainers = [
+  { name = "Stefanie Molin" },
+]
+authors = [
+  { name = "Stefanie Molin", email = "data-morph@stefaniemolin.com" },
+  { name = "Aaron Stevens", email = "bheklilr2@gmail.com" },
+  { name = "Justin Matejka", email = "Justin.Matejka@Autodesk.com" },
+]
+requires-python = ">=3.9"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Framework :: Matplotlib",
+  "Intended Audience :: Education",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Visualization",
+]
+dynamic = [
+  "version",
+]
+
+dependencies = [
+  "matplotlib>=3.7",
+  "numpy>=1.20",
+  "pandas>=1.2",
+  "rich>=13.9.4",
+]
+optional-dependencies.dev = [
+  "pre-commit",
+  "pytest",
+  "pytest-cov",
+  "pytest-mock",
+  "pytest-randomly",
+  "pytest-xdist",
+]
+optional-dependencies.docs = [
+  "pydata-sphinx-theme>=0.15.3",
+  "sphinx>=7.2.6",
+  "sphinx-argparse-cli>=1.16.0",
+  "sphinx-copybutton>=0.5.1",
+  "sphinx-design>=0.6.1",
+]
+urls."Bug Tracker" = "https://github.com/stefmolin/data-morph/issues"
+urls."Documentation" = "https://stefaniemolin.com/data-morph/stable/api.html"
+urls."Homepage" = "https://stefaniemolin.com/data-morph"
+urls."Source" = "https://github.com/stefmolin/data-morph"
+scripts.data-morph = "data_morph.cli:main"
+
+[tool.setuptools.packages.find]
+where = [
+  "src",
+]
+
+[tool.setuptools.package-data]
+"data_morph.data.starter_shapes" = [
+  "*",
+]
+"data_morph.plotting.config" = [
+  "*",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "data_morph.__version__" }
+
+[tool.ruff]
+line-length = 88
+format.indent-style = "space"
+format.quote-style = "single"
+format.docstring-code-format = true
+lint.select = [
+  "ANN",  # flake8-annotations
+  "B",    # flake8-bugbear
+  "C4",   # flake8-comprehensions
+  "E",    # pycodestyle error
+  "ERA",  # eradicate (commented out code)
+  "F",    # pyflakes
+  "FA",   # flake8-future-annotations
+  "I",    # isort
+  "ICN",  # flake8-import-conventions
+  "N",    # pep8-naming
+  "NPY",  # numpy
+  "PD",   # pandas-vet
+  "PERF", # perflint
+  "PT",   # flake8-pytest-style
+  "PTH",  # flake8-use-pathlib
+  "RET",  # flake8-return
+  "RSE",  # flake8-raise
+  "RUF",  # ruff-specific rules
+  "SIM",  # flake8-simplify
+  "TC",   # flake8-type-checking (performance improvements)
+  "TRY",  # tryceratops
+  "UP",   # pyupgrade
+  "W",    # pycodestyle warning
+]
+lint.ignore = [
+  "E501",   # line-too-long
+  "TRY003", # avoid specifying long messages outside the exception class (revisit later and consider making custom exceptions)
+]
+
+lint.extend-per-file-ignores."docs/*" = [
+  "ANN",
+  "ERA",
+] # docs build (allow commented code and don't require annotations)
+
+lint.extend-per-file-ignores."tests/*" = [ "ANN" ] # don't require annotations for tests
+lint.isort.known-first-party = [
+  "data_morph",
+]
+
+[tool.codespell]
+ignore-words-list = "recuse"
+ignore-regex = 'https://([\w/\.])+'
+
+[tool.pytest.ini_options]
+addopts = [
+  "-ra",
+  "-l",
+  "-v",
+  "-n=auto",                   # use as many workers as possible with pytest-xdist
+  "--tb=short",
+  "--import-mode=importlib",
+  "--strict-markers",
+  "--strict-config",
+  "--cov=data_morph",
+  "--cov=tests",
+  "--no-cov-on-fail",
+  "--cov-report=term-missing",
+]
+xfail_strict = true
+testpaths = [
+  "tests",
+]
+markers = [
+  "bounds: Run tests on bounds logic.",
+  "circles: Run tests on circular shapes.",
+  "cli: Run tests involving the CLI.",
+  "dataset: Run tests on Dataset logic.",
+  "input_validation: Run tests on input validation.",
+  "lines: Run tests on LineCollection and related shapes.",
+  "morpher: Run tests on the morphing process,",
+  "plotting: Run tests on plotting logic.",
+  "points: Run tests on PointCollection and related shapes.",
+  "polygons: Run tests on polygon shapes.",
+  "shapes: Run tests related to shapes.",
+]
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = false
+ignore-magic = false
+ignore-semiprivate = false
+ignore-private = false
+ignore-property-decorators = false
+ignore-module = false
+ignore-nested-functions = false
+ignore-nested-classes = true
+ignore-setters = false
+fail-under = 100
+exclude = [
+  "setup.py",
+  "docs",
+  "build",
+]
+verbose = 2
+quiet = false
+color = true
+omit-covered-files = false
+# TODO: revisit this later when I add badges to the README
+# generate-badge = "."
+# badge-format = "svg"
+
+[tool.numpydoc_validation]
+checks = [
+  "all",  # report on all checks
+  "ES01", # but don't require an extended summary
+  "EX01", # or examples
+  "SA01", # or a see also section
+  "SS06", # and don't require the summary to fit on one line
+]
+exclude = [ # don't report on checks for these
+  '\.__init__$',
+  '\.__repr__$',
+  '\.__str__$',
+]
+override_SS05 = [ # allow docstrings to start with these words
+  '^Process ',
+  '^Assess ',
+  '^Access ',
+]
