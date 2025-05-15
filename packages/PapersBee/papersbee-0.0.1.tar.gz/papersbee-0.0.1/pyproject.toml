@@ -1,0 +1,8 @@
+[tool.poetry]
+name = "PapersBee"
+version = "0.0.1"
+description = "A python package for daily papers digests"
+authors = ["Daniele Lucarelli <daniele.lucarelli@tum.de>", "Vladimir Shitov <vladimir.shitov@helmholtz-munich.de>"]
+repository = "https://github.com/theislab/papersbee"
+readme = "README.md"
+packages = [{ include = "PapersBee", from = "src" }]
