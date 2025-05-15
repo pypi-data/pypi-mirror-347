@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.9.6
+    hooks:
+      - id: ruff
+      - id: ruff-format
+
+  - repo: local
+    hooks:
+      - id: run-tests
+        name: Run Unit Tests
+        entry: python3 -m unittest -v
+        language: system
+        pass_filenames: false  # We don't pass filenames to unittest
