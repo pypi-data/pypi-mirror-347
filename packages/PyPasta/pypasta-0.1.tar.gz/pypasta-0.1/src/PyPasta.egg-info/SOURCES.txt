@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/PyPasta/__init__.py
+src/PyPasta/main.py
+src/PyPasta.egg-info/PKG-INFO
+src/PyPasta.egg-info/SOURCES.txt
+src/PyPasta.egg-info/dependency_links.txt
+src/PyPasta.egg-info/top_level.txt
