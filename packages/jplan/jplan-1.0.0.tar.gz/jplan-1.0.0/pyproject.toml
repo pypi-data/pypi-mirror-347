@@ -1,0 +1,62 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jplan"
+version = "1.0.0"
+description = "A command-line tool to schedule and execute Jupyter notebooks using cron"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["jupyter", "notebook", "cron", "scheduling", "papermill"]
+authors = [
+    { name = "apoplexi24", email = "shivanandanasharma@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "papermill>=2.4.0",
+    "jupyter>=1.0.0",
+]
+
+[project.scripts]
+jplan = "src.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/apoplexi24/jplan"
+Documentation = "https://github.com/apoplexi24/jplan#readme"
+Repository = "https://github.com/apoplexi24/jplan.git"
+Issues = "https://github.com/apoplexi24/jplan/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+line_length = 88 
