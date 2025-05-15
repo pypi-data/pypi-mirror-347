@@ -1,0 +1,14 @@
+dendromatics/__about__.py,sha256=3DFUA7Zp9Wl_DL1QdS0WPy1A8d5Jm8p7I7CIkdy2HzE,24
+dendromatics/__init__.py,sha256=HuHGHikTf5nBkF1klg5VKsPgGZ3d6qthup7F1HNK5m0,269
+dendromatics/draw.py,sha256=gjKZg9hFq-i5hbStRhMr466LmRIpTMZRK7a_Juqn7Ew,13509
+dendromatics/ground.py,sha256=-I_aa8Oayln96Dhh1irbUHh8Cn5i5gU_Nab-KlHBF9M,12354
+dendromatics/individualize.py,sha256=oQB5-tcardUMx13wRqBZh2S4qaEYM5ffd6-qMvE5Y9E,30987
+dendromatics/sections.py,sha256=3H0jNeJ5t-9IixANyaCtyfVeMYoX7OQbDuBITAmmWtY,35857
+dendromatics/stripe.py,sha256=nhg57wOqpT04YOgR-Qm9kWS38U1iXl64-LS687iMZew,9151
+dendromatics/primitives/__init__.py,sha256=xXsnE47ZpOhKolZCfIfmWU4XsEZhEYSjbtVuIqCTPRE,51
+dendromatics/primitives/clustering.py,sha256=Li1_bkXvaAbl-KaiBY1T47AHL2IcbSmT3SECOuhB_9E,323
+dendromatics/primitives/voxel.py,sha256=8hf3VRPSRgvhOS6URnqi83HO7NFp_BDIgCx_MXtcKak,7526
+dendromatics-0.6.0b1.dist-info/METADATA,sha256=1-SZkanggNXkG9L3W9q-6SwTm3DfakXdKJrPptFq3ek,8335
+dendromatics-0.6.0b1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dendromatics-0.6.0b1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dendromatics-0.6.0b1.dist-info/RECORD,,
