@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: two-pcepd
+Version: 0.1.2
+Summary: An implementation of the 2pCePd-Net model. pBPf Fusion block coming soon...
+Author: Supratim Ghosh, Sourav Pramanik, Anoop Kumar Tiwari, Kottakkaran Sooppy Nisar, Mahantapas Kundu, Mita Nasipuri
+Author-email: supratimghosh2772@gmail.com
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+
+Model Usage: from two_pcepd import model; network, optimizer = model.create_net(in_ch, out_ch, dim);
+
