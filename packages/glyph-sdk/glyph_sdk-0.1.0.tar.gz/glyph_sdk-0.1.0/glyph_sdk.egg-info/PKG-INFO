@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: glyph-sdk
+Version: 0.1.0
+Summary: Python SDK for Glyph Tokens on Radiant Blockchain
+Home-page: https://github.com/zerox-toml/glyph-sdk
+Author: AS
+Author-email: AS <passionkaizen96111@email.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/zerox-toml/glyph-sdk
+Project-URL: Repository, https://github.com/zerox-toml/glyph-sdk
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: base58
+Requires-Dist: ecdsa
+Requires-Dist: typing-extensions
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# Glyph SDK
+
+Python SDK for Glyph Tokens on Radiant Blockchain.
+
+## Installation
+
+```bash
+pip install glyph-sdk
+```
+
+## Features
+
+- Interact with Glyph Tokens on Radiant Blockchain
+- Built with Python 3.8+
+
+## License
+
+MIT 
