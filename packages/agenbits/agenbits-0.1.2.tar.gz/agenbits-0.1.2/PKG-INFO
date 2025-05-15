@@ -1,0 +1,198 @@
+Metadata-Version: 2.1
+Name: agenbits
+Version: 0.1.2
+Summary: A library to fetch, convert, and decode binary input data for ML models.
+Home-page: https://github.com/dunkdumb/agenbyte
+Author: Enos
+Author-email: enosuppada2005@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: soundfile
+Requires-Dist: opencv-python
+
+Here is the `README.md` with a complete set of examples for each supported file type and its usage, including a demo for all the supported files:
+
+---
+
+
+# agenbits
+
+**A Python library to fetch, convert, and decode binary input data for machine learning models.**
+
+agenbits simplifies the process of fetching data from URLs, converting it into a temporary binary file, and decoding it into usable formats such as images, audio, text, videos, and more for ML models.
+
+## Features
+
+- **Fetch data**: Fetch files from URLs (HTTP/HTTPS).
+- **Convert to binary**: Converts files from the URL into binary format and stores them temporarily.
+- **Decode files**: Supports decoding of various data formats, including Excel, CSV, JSON, images, audio, videos, and more.
+- **Automatic format detection**: Automatically detects the file type and handles it accordingly.
+
+## Installation
+
+To install **agenbits** from PyPI, run the following command:
+
+```bash
+pip install agenbits
+```
+
+## Usage
+
+agenbits provides multiple format-specific functions to fetch, convert, and decode files. Here's how you can use it:
+
+### Example 1: Fetch and Use Excel Data (CSV, XLSX)
+
+You can fetch and convert Excel or CSV files into usable data for machine learning models:
+
+```python
+from agenbits import Excel
+
+# Fetch Excel data from a URL
+data = Excel("https://people.sc.fsu.edu/~jburkardt/data/csv/airtravel.csv")
+print(data.head())  # Show first few rows (for pandas DataFrame)
+```
+
+### Example 2: Fetch and Display Image
+
+Fetch an image from a URL, convert it to binary format, and display it:
+
+```python
+from agenbits import ImageFile
+
+# Fetch and display image
+img = ImageFile(
+    "https://images.pexels.com/photos/17647410/pexels-photo-17647410/free-photo-of-airplanes-flying-at-an-air-show.jpeg")
+img.show()  # This will open the image using the default viewer
+```
+
+### Example 3: Fetch and Use Audio Data (WAV, FLAC)
+
+You can also fetch and decode audio files such as WAV or FLAC:
+
+```python
+from agenbits import Audio
+
+# Fetch and process audio data
+audio = Audio("https://example.com/audio.wav")
+audio.play()  # Play audio using an appropriate library like soundfile
+```
+
+### Example 4: Fetch and Use Video Data (MP4)
+
+Fetch and decode a video file (e.g., MP4) and play it or perform any video-related operation:
+
+```python
+from agenbits import Video
+
+# Fetch video data
+video = Video("https://www.example.com/video.mp4")
+video.play()  # Implement using appropriate video playing library, like OpenCV or ffmpeg
+```
+
+### Example 5: Fetch and Use Text Data (JSON, TXT, XML)
+
+You can fetch and decode text-based files such as JSON, TXT, or XML:
+
+```python
+from agenbits import Text
+
+# Fetch JSON data from URL
+json_data = Text("https://example.com/data.json")
+print(json_data)  # Print decoded JSON content
+```
+
+### Example 6: Fetch and Handle Binary Files
+
+For any other type of binary file (e.g., TensorFlow Record or PyTorch Model), agenbits can help fetch and convert those as well:
+
+```python
+from agenbits import Binary
+
+# Fetch and convert binary file
+binary_data = Binary("https://example.com/model.pt")
+# Handle this binary file as needed, e.g., load into PyTorch or TensorFlow
+```
+
+### Supported Formats
+
+agenbits supports a wide variety of formats, including:
+
+* **CSV (.csv)**: Comma-separated values files, typically used for tabular data.
+* **JSON (.json)**: JavaScript Object Notation, often used for APIs and data exchange.
+* **TXT (.txt)**: Plain text files.
+* **XLSX (Excel)**: Excel files, including `.xlsx` and `.xls`.
+* **JPEG (.jpg)**: JPEG image files.
+* **PNG (.png)**: Portable Network Graphics image files.
+* **MP4 (.mp4)**: Video files, typically for multimedia data.
+* **WAV (.wav)**: Uncompressed audio files, typically for audio data processing.
+* **FLAC (.flac)**: Lossless audio files.
+* **TSV (.tsv)**: Tab-separated values files, similar to CSV but using tabs for separation.
+* **XML (.xml)**: Extensible Markup Language files, used for storing and transporting data.
+* **Binary Files**: Any raw binary data, such as TensorFlow Records or other custom formats.
+* **Edge List (Graph)**: Data in the form of an edge list, often used for graph data structures.
+* **SGM (.sgm)**: Standard Generalized Markup files, typically for text data like articles or web pages.
+* **TensorFlow Record (.tfrecord)**: A binary storage format for TensorFlow data.
+* **PyTorch Model (.pt, .bin)**: Binary files containing PyTorch models.
+
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contributing
+
+If you want to contribute to agenbits, feel free to fork the repository and create a pull request. Please ensure that your code follows the existing style and includes tests for new features.
+
+---
+
+## Contact
+
+**Author**: Enos
+**Email**: [enosuppada2005@gmail.com](mailto:enosuppada2005@gmail.com)
+**GitHub**: [https://github.com/dunkdumb/agenbits](https://github.com/dunkdumb/agenbits)
+
+```
+
+---
+
+### Explanation of Updates:
+
+1. **General Introduction**: 
+   - Describes the main purpose of the library.
+   
+2. **Features**: 
+   - Lists key features, such as fetching data from URLs, converting to binary format, and automatically decoding files for machine learning models.
+   
+3. **Installation**: 
+   - Instructions to install the package from PyPI.
+
+4. **Usage Examples**: 
+   - Added various examples of using the library with different file types (Excel, CSV, Image, Audio, Video, Text, Binary, etc.).
+   - Each example demonstrates how you can pass a URL to the library and fetch/convert/decode the file into a usable format.
+
+5. **Supported Formats**: 
+   - An extended list of supported file formats, including details about each file type.
+
+6. **License**: 
+   - Information on the MIT license.
+
+7. **Contributing**: 
+   - Encourages others to contribute to the library, with instructions for forking and submitting pull requests.
+
+8. **Contact Information**: 
+   - Authorâ€™s contact information with GitHub and email.
+
+---
+
+This `README.md` file should now be comprehensive and well-structured for users to understand and use your library effectively. Let me know if you need further adjustments!
+```
