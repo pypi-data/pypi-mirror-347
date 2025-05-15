@@ -1,0 +1,7 @@
+gamspy_arm_perf/__init__.py,sha256=dIE8Gx2_2wa8occLuCGrZqXV3WPB_VjoGBU53XP5aDQ,210
+gamspy_arm_perf/libarmpl_lp64_mp.so,sha256=NFG8-Mqd0ZmT2VeYPauoMZwPddBHfzP3pELW2W9JpM8,148934560
+gamspy_arm_perf/version.py,sha256=jd38v4FVlAs9DlDEmFO40xjHEkWMu6ZALsWkyYxDm3I,22
+gamspy_arm_perf-49.6.0.dist-info/METADATA,sha256=10VMufupEnQqxEB8QRD9p9qQCnp0LDl8tkANFcWRDgE,60
+gamspy_arm_perf-49.6.0.dist-info/WHEEL,sha256=pWp0jNvvHO-UwBDas4pjO1C91RMbYZXErydPoplh9tE,116
+gamspy_arm_perf-49.6.0.dist-info/top_level.txt,sha256=FzGQYcS2TbzpVwKrP5FVWK75wY2SXdIY3o4Lx384SEA,16
+gamspy_arm_perf-49.6.0.dist-info/RECORD,,
