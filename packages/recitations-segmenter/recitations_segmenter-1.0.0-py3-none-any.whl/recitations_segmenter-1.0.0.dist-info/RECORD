@@ -1,0 +1,14 @@
+recitations_segmenter/__init__.py,sha256=D09Dz5DDwcHRBP4urp1_YMMLeTo7TbzhQ9HaicGKCIU,175
+recitations_segmenter/cli.py,sha256=A9ZJi--00jqCk6zS1-Qj3cm6i_4BVPQUz0qJ0hY-CLw,8332
+recitations_segmenter/segment.py,sha256=GJ3QOTG8O-zTBvykpH_873nBxBpsmGMYfHy9qovLUrU,23600
+recitations_segmenter/utils.py,sha256=dZSE5ItNOMhrG4DzVNLKHLSDM7QD2mDAvCqfvL3Mr8A,16255
+recitations_segmenter/train/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recitations_segmenter/train/augment.py,sha256=LiqB34Ko5QfeqKeB242jTf6uBvyshcqjcLeH7R44sWg,21888
+recitations_segmenter/train/process_data.py,sha256=f3rCAyilahWTI-8JtRs4o6Apm48E_ZRE7JI2sFR69-k,17607
+recitations_segmenter/train/vad_utils.py,sha256=jiJYYL92ClOig4Koodqul-Oiye8Wj5oZbohN2n47bE4,15530
+recitations_segmenter-1.0.0.dist-info/licenses/LICENSE,sha256=-XR4ASkks-vjVnODmqOI3LNlrKuSKyUvsGjvyA2siUY,1093
+recitations_segmenter-1.0.0.dist-info/METADATA,sha256=YBmCNa2SYTDZIqUuPcwHKXEWMxlu78Pt0mgOnCUOwH4,34447
+recitations_segmenter-1.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+recitations_segmenter-1.0.0.dist-info/entry_points.txt,sha256=dRv-JGKDAyA-mGiLuV3RGA200zOxIKdA1Np7DAdvl1Y,73
+recitations_segmenter-1.0.0.dist-info/top_level.txt,sha256=C2CeNlaFLlZXPaovYcYz_toYTvhD8mX_cPflMXZb15Q,22
+recitations_segmenter-1.0.0.dist-info/RECORD,,

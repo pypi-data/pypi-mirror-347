@@ -1,0 +1,2 @@
+[console_scripts]
+recitations-segmenter = recitations_segmenter.cli:main
