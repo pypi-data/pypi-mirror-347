@@ -1,0 +1,11 @@
+molviewspec/__init__.py,sha256=3zGgdYxtYGbZijMQhIWbhqVldflf5fyIZt4LGVOey40,339
+molviewspec/builder.py,sha256=ervoc1aylPBMchMYjk-ACbGRRaszwyVo_UObq39VFtA,66636
+molviewspec/molstar_widgets.py,sha256=QuRGNAmQfS101DbU-kZZ-ENxfl-X_3YSN5O9J_iuFuE,4542
+molviewspec/mvsx_converter.py,sha256=8M8BxxVGSSqIoLZyu_7dAaKoecwBmPml2ZqQ--AtXVQ,13487
+molviewspec/nodes.py,sha256=K-pzrV-yUoEM7F192DQ_UjeE5TSQpPL4lEGOXWHbaFA,37881
+molviewspec/utils.py,sha256=4Fg-2iccBp3pQQ5cP6laMgYwPRek1wWxRqtfjQrTuQg,2062
+molviewspec-1.5.0.dist-info/licenses/LICENSE.txt,sha256=d61i6cvuq5-45Te7Kp3cuMHM55L9rO589JJWaq97iTA,1097
+molviewspec-1.5.0.dist-info/METADATA,sha256=PylZXWVa1sn-sfw7zmJy_3ms5DeGziQ3MkFo270ODbA,10262
+molviewspec-1.5.0.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+molviewspec-1.5.0.dist-info/top_level.txt,sha256=cLpGScTWyYBtQno41ewJngeyB1QWHeYAxKd0tr7RAcg,12
+molviewspec-1.5.0.dist-info/RECORD,,
