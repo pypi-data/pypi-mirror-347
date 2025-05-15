@@ -1,0 +1,12 @@
+gamspy_baron/__init__.py,sha256=s5ri5KF9y6nDnptNj3XRXC-1cpdp_xWsWWxjDrckaL4,417
+gamspy_baron/baron.exe,sha256=0t52OFGCH7CDKWDCP37KVV8WS1br-_0XeUVTfflFqPw,21298688
+gamspy_baron/baronnavvy64.dll,sha256=F2Fp2fz4M5aATaJde3Tu4NzR9Sf4rU9kplM3mMuhO6s,385024
+gamspy_baron/gmsba_nt.cmd,sha256=-sp1sJzvUk-e6O52yROjEtHEWC_sK0Se870ev4XJq2I,92
+gamspy_baron/gmsba_nx.exe,sha256=dA5p_Sc7rkvubizl-ZhCqzK92_h2zrz65bvxjTbacQc,1352704
+gamspy_baron/optbaron.def,sha256=KLheXmOKHTgKTyo3k-kqPHXgdkUipDq5MbSWZBPla_U,17632
+gamspy_baron/pthreadvc2-tof.dll,sha256=KfJkC4hdhKlA4tMGJIJ9LH0OrAy8AR0WkCmT4gqmG3U,626688
+gamspy_baron/version.py,sha256=jd38v4FVlAs9DlDEmFO40xjHEkWMu6ZALsWkyYxDm3I,22
+gamspy_baron-49.6.0.dist-info/METADATA,sha256=NOtdueDTV2QqBuRuyrotsaDAdVeeB1LBRgRoEsCB65A,60
+gamspy_baron-49.6.0.dist-info/WHEEL,sha256=kdSXWsZJiqWjxVSlXcNgpojop4QfGIUj0RayER_5aBo,103
+gamspy_baron-49.6.0.dist-info/top_level.txt,sha256=ckcfbNRGnYCVz7WFrq-agTrqjVyrn7XrRxJzDC6rIzs,13
+gamspy_baron-49.6.0.dist-info/RECORD,,
