@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-wake-on-lan = mcp_wake_on_lan.server:main
