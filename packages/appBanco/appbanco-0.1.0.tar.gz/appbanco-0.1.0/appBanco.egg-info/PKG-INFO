@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: appBanco
+Version: 0.1.0
+Summary: Simulador simples de banco em Python
+Author: K-Campassi
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: summary
+
+# appBanco
+
+### Simulador simples de banco em python  (â€¢â—¡â€¢) /
+
+este projeto Ã© um sistema bancÃ¡rio bÃ¡sico com funcionalidades para criar usuÃ¡rios, abrir contas, realizar depÃ³sitos, saques e visualizar extratos.
+
+â˜… foi feito para fins didÃ¡ticos e prÃ¡tica de pacotes python. â˜…
+
+## InstalaÃ§Ã£o
+
+```bash
+pip install appBanco
+```
+âž³ apÃ³s instalar, rode 'appBanco' no terminal. 
+
+## Author
+K-Campassi
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
