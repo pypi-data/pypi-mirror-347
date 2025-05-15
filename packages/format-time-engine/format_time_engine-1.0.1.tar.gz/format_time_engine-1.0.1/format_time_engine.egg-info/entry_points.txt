@@ -1,0 +1,2 @@
+[console_scripts]
+format_time = time_engine.clock:main
