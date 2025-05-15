@@ -1,0 +1,10 @@
+clovers/__init__.py,sha256=b3tZwpURmEaJKbQu2MSlJ9MTi1lIBPLNYfngdcKoB1g,229
+clovers/clovers.py,sha256=E1W-YLPIMIqDV-JsKM1HQsgyL0qg_K7cBbgw_aSBqF8,7375
+clovers/config.py,sha256=fHPwY5uGx6Ayz4myLVrv0I8KQygxmkL-wZXRFfSv210,1078
+clovers/core.py,sha256=a43lPDiDzWKNFF5Ze0fzaKkd_-RqxB6MZ2PXiJzfPyA,15399
+clovers/logger.py,sha256=HfVthpu3a929ebnAAkuTyJeQMHwn5mRyM_2OKsdX_I8,57
+clovers/typing.py,sha256=_WRu4IvCaMt_UT7ASBr4KfeTWWig5KKyN16jzszqppA,205
+clovers-0.4.dist-info/LICENSE,sha256=v2QDhv3Xo1gkhRe1DXym6RZe_E3gSOKFi3FkKbVCVWw,1086
+clovers-0.4.dist-info/METADATA,sha256=dUFAaVRHDZJRl4vLpx0mtNHOYCTkYIVGmCVnmGb-oUY,1676
+clovers-0.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+clovers-0.4.dist-info/RECORD,,
