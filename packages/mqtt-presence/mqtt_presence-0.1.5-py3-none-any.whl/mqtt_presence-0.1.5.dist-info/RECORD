@@ -1,0 +1,17 @@
+mqtt_presence/__init__.py,sha256=9uOcFd09fVJvRh9DBiMBL1ymvB8FUMpZPvW9dAfcp_0,245
+mqtt_presence/app_config.py,sha256=iZNGD2AMXYelqqWujMjOzbYsp2qj0W0wuIguQk3WLrs,501
+mqtt_presence/app_data.py,sha256=AQwsZUyh-1WioBtn9HVQs1DfFq4v8y_jenHeTpUoj1o,1024
+mqtt_presence/config_handler.py,sha256=deINc0H9yDj-Khp500RxOXOxit8u_mQ7supo7uuFiuA,6573
+mqtt_presence/console_ui.py,sha256=iHvJP4NRbp8WFdADd9vkfLT2F_KRAPU1kua98g8ZGUM,1437
+mqtt_presence/main.py,sha256=rOQ0aNqkgHK_LlzFaRTxN8vqj81OgLgbhAdqN0yX4DI,2126
+mqtt_presence/mqtt_client.py,sha256=TXsmtaoWOcRMqctWzu6_vqUfcNWjtK8-9jYTxEclPOM,8163
+mqtt_presence/mqtt_presence_app.py,sha256=jiibBUAsc1h-qzm7CDEKKZt8RBrUrEm1ykjYu8LhiZo,2803
+mqtt_presence/utils.py,sha256=60G80YzoZJXNF0q6LfL60ngyE8rbZgeF54Q-AEBMkWo,3237
+mqtt_presence/web_ui.py,sha256=mKPXORceDRvWE2MoLiO3n8QkwJQjcjut7rYhWHioGT8,4301
+mqtt_presence/templates/index.html,sha256=e2t-bz6h3lb5aftla04BmeD1Kw6v9POFRBXQgV2DgdY,7971
+mqtt_presence-0.1.5.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+mqtt_presence-0.1.5.dist-info/METADATA,sha256=WQoR9pXQ2NxMYOqLBjSGp8b4Ivl-LTsbeBNtRFMpZBs,5714
+mqtt_presence-0.1.5.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+mqtt_presence-0.1.5.dist-info/entry_points.txt,sha256=lqrEaR3lchRndFCAeKVsuH3Wj_t208aGJkIbTXel1EM,58
+mqtt_presence-0.1.5.dist-info/top_level.txt,sha256=2OqjLWr0yvfRL71CEl1AX_YkIgShXE-sDtjQo8rgn5g,14
+mqtt_presence-0.1.5.dist-info/RECORD,,
