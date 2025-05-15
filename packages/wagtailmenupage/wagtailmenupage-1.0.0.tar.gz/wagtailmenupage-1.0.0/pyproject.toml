@@ -1,0 +1,39 @@
+[build-system]
+requires      = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+    { name = "Jack Whitworth", email = "jack@jackwhitworth.com" }
+]
+classifiers = [
+    "Framework :: Django",
+    "Framework :: Wagtail",
+    "Framework :: Wagtail :: 6",
+    "Framework :: Wagtail :: 7",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    "Topic :: Internet :: WWW/HTTP :: Site Management",
+]
+dependencies = [
+    "wagtail>=5.0,<8.0",
+]
+description = "Python class for interacting with Project Zomboid servers using RCON "
+keywords = [
+    'wagtail',
+    'menu',
+    'page',
+    'pages',
+]
+license = { file = "LICENSE" }
+name = "wagtailmenupage"
+readme = "README.md"
+requires-python = ">=3.9"
+version = "1.0.0"
+
+[project.urls]
+Source = "https://github.com/jmwhitworth/wagtailmenupage"
+Changelog = "https://github.com/jmwhitworth/wagtailmenupage/changelog.md"
