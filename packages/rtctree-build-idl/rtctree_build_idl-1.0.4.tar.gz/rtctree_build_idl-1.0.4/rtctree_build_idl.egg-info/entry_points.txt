@@ -1,0 +1,3 @@
+[distutils.commands]
+build_idl = custom.build:BuildIDL
+install_idl = custom.build:InstallIDL
