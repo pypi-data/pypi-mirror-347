@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+img2ascii/__init__.py
+img2ascii/main.py
+img2ascii_cli.egg-info/PKG-INFO
+img2ascii_cli.egg-info/SOURCES.txt
+img2ascii_cli.egg-info/dependency_links.txt
+img2ascii_cli.egg-info/entry_points.txt
+img2ascii_cli.egg-info/requires.txt
+img2ascii_cli.egg-info/top_level.txt
