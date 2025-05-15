@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: graph-krippendorrf
+Version: 0.1.0
+Summary: A Python package for computing krippendorrfs alpha for graph (modified from https://github.com/grrrr/krippendorff-alpha/blob/master/krippendorff_alpha.py)
+Home-page: https://github.com/grrrr/krippendorff-alpha/blob/master/krippendorff_alpha.py
+Author: Junbo Huang
+Author-email: junbo.huang@uni-hamburg.de
+License: Apache 2 License
+License-File: LICENSE
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
