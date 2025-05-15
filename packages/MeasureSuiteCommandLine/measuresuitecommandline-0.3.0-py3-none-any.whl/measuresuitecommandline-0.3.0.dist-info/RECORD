@@ -1,0 +1,11 @@
+MeasureSuiteCommandLine/__init__.py,sha256=94rz8bBQkh8elRliLyNhjN_zp0wSC6YuQhemwB2mBbY,46
+MeasureSuiteCommandLine/helper.py,sha256=ENmTJF00i5VmC-1UIbj6Qy5Ocxh3CdjOr96wx-qErzk,5729
+MeasureSuiteCommandLine/ms.py,sha256=jpd6hEGfB3GQktryDSe7HsGSvHoEc7DymaExbSfB-fU,6953
+MeasureSuiteCommandLine/test/__init__.py,sha256=HSNqtbHYLsGWvdBPlx-Tx8VDDLPuSB3dpftyyqEV74M,43
+MeasureSuiteCommandLine/test/test_ms.py,sha256=eexcpj-TYBySNivQmVfIUW0wCjYJwHIeOpdtRhQX5Gk,2157
+measuresuitecommandline-0.3.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+measuresuitecommandline-0.3.0.dist-info/METADATA,sha256=i-MQmcgxCvlFlbJgDxH_JcONNK5WXgj3l90fLsQ58mI,2285
+measuresuitecommandline-0.3.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+measuresuitecommandline-0.3.0.dist-info/entry_points.txt,sha256=xPp6vFitqG85D-kOcIEWjIZmvD2l53YiMbrwjZFpjZw,39
+measuresuitecommandline-0.3.0.dist-info/top_level.txt,sha256=CXdQtKB7_K-blMMYJGwYBMYGldmEVibPN4mFspYstFM,24
+measuresuitecommandline-0.3.0.dist-info/RECORD,,
