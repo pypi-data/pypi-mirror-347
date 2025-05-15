@@ -1,0 +1,27 @@
+[project]
+name = "logictools"
+version = "0.1.8"
+description = "A simple utility package for string and math functions"
+authors = [{ name = "RANGDAL PAVANSAI", email = "psai49779@gmail.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.25.0",
+    "numpy>=1.21.0"
+]  # Required array (empty if no direct dependencies)
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=6.1.1"
+]
+
+# Minimal Poetry-specific configuration
+[tool.poetry.scripts]  # Only include if you need entry points
+# Example:
+# mycli = "logictools.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
