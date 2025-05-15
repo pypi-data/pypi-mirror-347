@@ -1,0 +1,54 @@
+# Copyright 2025 AgentUnion Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+from dataclasses import dataclass
+from typing import Literal, Optional, Union
+from agentcp.open_ai_message import OpenAIMessage
+
+@dataclass
+class AgentSelectItemBlock:
+    type: Literal["text", "image", "video", "audio"]
+    id:str
+    content:str
+
+@dataclass
+class AgentFormInputItemBlock:
+    type: Literal["text", "image", "video", "audio"]
+    id:str
+    description:str
+    
+@dataclass
+class AgentFormBlock:
+    description: str
+    params: Optional[list[AgentSelectItemBlock,AgentFormInputItemBlock]] = None
+    select_type: Literal["single_select", "multiple_select", "time","input"] = "single_select"
+    
+@dataclass
+class AssistantMessageBlock:
+    type: Literal["llm","content", "search",
+                  "reasoning_content", "error", 'file', 
+                  'image','tool_call','text/event-stream',"video","audio","form"]
+    status: Literal["success", "loading", "cancel", "error", "reading", "optimizing"]
+    timestamp: int    
+    content: Optional[Union[str,OpenAIMessage,list[AgentFormBlock]]] = None
+    type_format: str = ""
+    
+
+
+    
+@dataclass
+class AgentInstructionBlock:
+    cmd: str
+    params: Optional[dict] = None
+    description: Optional[str] = None
+    model: str = ""
