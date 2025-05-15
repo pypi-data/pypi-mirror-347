@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: dolomite-sfe
+Version: 0.0.1
+Summary: ArtifactDB representation for SFE.
+Home-page: https://github.com/artifactdb/dolomite-sfe
+Author: Jayaram Kancherla
+Author-email: jayaram.kancherla@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/artifactdb/dolomite-sfe
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE.txt
+Requires-Dist: importlib-metadata; python_version < "3.8"
+Requires-Dist: spatialfeatureexperiment>=0.0.3
+Requires-Dist: libpysal
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: dolomite_base
+Requires-Dist: dolomite_spatial>=0.1.1
+Requires-Dist: pyarrow
+Requires-Dist: geopandas
+Requires-Dist: rasterio
+Requires-Dist: aicsimageio
+Provides-Extra: testing
+Requires-Dist: setuptools; extra == "testing"
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Dynamic: license-file
+
+[![PyPI-Server](https://img.shields.io/pypi/v/dolomite-sfe.svg)](https://pypi.org/project/dolomite-sfe/)
+![Unit tests](https://github.com/ArtifactDB/dolomite-sfe/actions/workflows/pypi-test.yml/badge.svg)
+
+# Save and write `SpatialFeatureExperiment`'s in Python
+
+## Introduction
+
+The **dolomite-sfe** package is the Python counterpart to the [**alabaster.sfe**](https://github.com/pachterlab/alabaster.sfe) R package,
+providing methods for saving/reading `SpatialFeatureExperiment` objects within the [**dolomite** framework](https://github.com/ArtifactDB/dolomite-base).
+
+## Install
+
+To get started, install the package from [PyPI](https://pypi.org/project/dolomite-sfe/)
+
+```bash
+pip install dolomite-sfe
+```
+
+<!-- biocsetup-notes -->
+
+## Note
+
+This project has been set up using [BiocSetup](https://github.com/biocpy/biocsetup)
+and [PyScaffold](https://pyscaffold.org/).
