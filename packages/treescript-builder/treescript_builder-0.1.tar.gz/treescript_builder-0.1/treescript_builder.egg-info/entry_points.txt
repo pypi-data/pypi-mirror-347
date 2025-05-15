@@ -1,0 +1,3 @@
+[console_scripts]
+ftb = tree.__main__:main
+treescript-builder = tree.__main__:main
