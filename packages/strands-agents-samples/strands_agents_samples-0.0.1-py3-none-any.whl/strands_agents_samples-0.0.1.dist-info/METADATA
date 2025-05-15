@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: strands-agents-samples
+Version: 0.0.1
+Summary: Samples for strands agents
+Project-URL: Homepage, https://github.com/yourusername/strands-agents-samples
+Project-URL: Bug Tracker, https://github.com/yourusername/strands-agents-samples/issues
+Author-email: Your Name <your.email@example.com>
+License: Apache-2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Requires-Dist: strands-agents>=0.0.1
+Description-Content-Type: text/markdown
+
+# strands-agents-samples
+
+Samples for strands agents.
+
+This package will contain sample implementations using the strands-agents ecosystem.
+
+## Installation
+
+```bash
+pip install strands-agents-samples
+```
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
