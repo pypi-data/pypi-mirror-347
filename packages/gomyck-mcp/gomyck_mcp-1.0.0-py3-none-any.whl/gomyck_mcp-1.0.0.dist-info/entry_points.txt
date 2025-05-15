@@ -1,0 +1,2 @@
+[console_scripts]
+excel_read = server.excel_read:main

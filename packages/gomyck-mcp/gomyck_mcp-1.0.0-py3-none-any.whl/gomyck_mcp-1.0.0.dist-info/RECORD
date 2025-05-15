@@ -1,0 +1,12 @@
+gomyck_mcp-1.0.0.dist-info/licenses/LICENSE,sha256=X25ypfH9E6VTht2hcO8k7LCSdHUcoG_ALQt80jdYZfY,547
+server/__init__.py,sha256=jcqqohbzIveV8Ula1lgRVTNz-NG3_skgUxiwoCAV59c,98
+server/cdebug.py,sha256=2kFe7oTZArqk3vVwigABUBKjj7uhZ8S-mwQyzSWkA70,4468
+server/demo.py,sha256=TkSdTD9J8nkzbNs-bDEVPfEvsVzMydj_MmP2eiwohaY,276
+server/excel_read.py,sha256=XejUsMlXwYrD7uF-C3XvV0zdEb46gpjfQWmGQ3Agh3U,2000
+server/mcp_sse.py,sha256=3R2Jm5LoS_xXAFD__YyWFSzSMcUYpikjAbuLl4IV0Fw,510
+server/weather_query.py,sha256=TcWH_ZuYdoAvnXyrSicO0YtSkV9HeoiXfvlcENCtdjI,2260
+gomyck_mcp-1.0.0.dist-info/METADATA,sha256=Sh7xB_X9gmH5dR1J9yRgVr3cC76KZ276-lLqUL_Q_Gs,456
+gomyck_mcp-1.0.0.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+gomyck_mcp-1.0.0.dist-info/entry_points.txt,sha256=eFMUqyh_STcSTrRWmuBoVe9Xvi3ZZmiGsk5XPqpV81k,54
+gomyck_mcp-1.0.0.dist-info/top_level.txt,sha256=StKOSmRhvWS5IPcvhsDRbtxUTEofJgYFGOu5AAJdSWo,7
+gomyck_mcp-1.0.0.dist-info/RECORD,,
