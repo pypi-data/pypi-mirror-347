@@ -1,0 +1,19 @@
+[project]
+name = "spider-xhs-mcp-server"
+version = "0.1.0"
+description = "小红书爬虫"
+readme = "README.md"
+authors = [
+    { name = "Melle_lichao", email = "lichao10060909@163.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.8.1",
+]
+
+[project.scripts]
+gaodeweather-mcp-server = "spider_xhs_mcp_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
