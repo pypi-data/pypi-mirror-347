@@ -1,0 +1,7 @@
+pyproject.toml
+src/SciShow.egg-info/PKG-INFO
+src/SciShow.egg-info/SOURCES.txt
+src/SciShow.egg-info/dependency_links.txt
+src/SciShow.egg-info/not-zip-safe
+src/SciShow.egg-info/top_level.txt
+src/scishow/__init__.py
