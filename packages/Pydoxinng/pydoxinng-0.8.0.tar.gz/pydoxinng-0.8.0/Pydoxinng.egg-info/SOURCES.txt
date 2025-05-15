@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+Pydoxinng/__init__.py
+Pydoxinng/app.py
+Pydoxinng.egg-info/PKG-INFO
+Pydoxinng.egg-info/SOURCES.txt
+Pydoxinng.egg-info/dependency_links.txt
+Pydoxinng.egg-info/entry_points.txt
+Pydoxinng.egg-info/top_level.txt
