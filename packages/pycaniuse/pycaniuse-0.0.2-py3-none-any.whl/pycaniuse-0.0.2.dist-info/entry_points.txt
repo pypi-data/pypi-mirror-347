@@ -1,0 +1,2 @@
+[console_scripts]
+caniuse = caniuse.cli:main
