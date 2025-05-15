@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+Wisdom_Data_Library.egg-info/PKG-INFO
+Wisdom_Data_Library.egg-info/SOURCES.txt
+Wisdom_Data_Library.egg-info/dependency_links.txt
+Wisdom_Data_Library.egg-info/top_level.txt
+Wisdom_Data_Library/Wisdom_Data_Library/__init__.py
+Wisdom_Data_Library/Wisdom_Data_Library/functions.py
