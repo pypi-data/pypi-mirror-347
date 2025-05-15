@@ -1,0 +1,7 @@
+erodius/__init__.py,sha256=R_EBANyc_gFt6gexD9Lwz7aJZFNHfGLnLWQ8gDTlr-A,241
+erodius/__init__.pyi,sha256=7OrRz6ZJ7w3WRA3Nzpm7sKbiamMjfxQetz2chEQldx4,553
+erodius/_core.cpython-310-i386-linux-gnu.so,sha256=CidqrhpdFN61vtCEFCYoYiNN6Nep31oh-2hTrv6ccbA,1223685
+erodius.libs/libgomp-65f46eca.so.1.0.0,sha256=Zagab9rFQS08rPfVDR82oGJr9kuKwgrJok-GGlFBdCo,172293
+erodius-0.0.1.dist-info/METADATA,sha256=8kmPApOQhR_uZ18_DyPTPjcpKUE2NVoqT_M0sWO66vQ,896
+erodius-0.0.1.dist-info/WHEEL,sha256=GmnKieOUdYS3z1v7zduwUqFXcqpuKiOxo6VBVWPcQwk,152
+erodius-0.0.1.dist-info/RECORD,,
