@@ -1,0 +1,14 @@
+ckanext/__init__.py,sha256=7jFPzUbP-JA2Kg63ZeSxsP-EPoS_oaBdGSv5WrIWmvU,219
+ckanext/multiuploadform/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/multiuploadform/controllers.py,sha256=FzLo81KardIdRoQ-P_XHXyLUY5bGAxM0sCMHtD4i8QQ,3928
+ckanext/multiuploadform/lib.py,sha256=Ito0KiuOVYKZDEcOAgF_7xtQZnz6hrA3FWWdFPlC36g,1913
+ckanext/multiuploadform/plugin.py,sha256=hdvfQVONWSqtAZQrOTnK4HHEdc05kdn7bzoJXaE5824,1024
+ckanext/multiuploadform/views.py,sha256=bBl64wTPq4NuELa4X34sObEeDPG61QG2qJqpUvd66sc,2710
+ckanext/multiuploadform/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/multiuploadform/tests/test_multiuploader.py,sha256=iK-kVwhJrSf4qO6h6W4lXQhQc6yhD7RykVl3-VnxYHc,4963
+ckanext_multiuploadform-1.2.7.dist-info/licenses/LICENSE,sha256=2lWcRAHjsQhqavGNnR30Ymxq3GJ9BaYL_dnfGO_-WFA,34500
+ckanext_multiuploadform-1.2.7.dist-info/METADATA,sha256=ddH89Kr3dfyYFcUnmXCzdDUoTX_7xVwo6yy00wSctFg,2698
+ckanext_multiuploadform-1.2.7.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+ckanext_multiuploadform-1.2.7.dist-info/entry_points.txt,sha256=HNlQJ3U5E7LTmlLndtN_q3DxgIGRIO-OvLEKEbAtQx8,143
+ckanext_multiuploadform-1.2.7.dist-info/top_level.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_multiuploadform-1.2.7.dist-info/RECORD,,
