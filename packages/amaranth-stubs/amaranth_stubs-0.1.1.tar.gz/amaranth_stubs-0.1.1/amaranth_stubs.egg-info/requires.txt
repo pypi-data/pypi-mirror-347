@@ -1,0 +1,4 @@
+amaranth==0.5.4
+
+[dev]
+pyright==1.1.332
