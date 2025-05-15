@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pysimsimi
+Version: 1.0.1
+Summary: Python wrapper for simi.anbuinfosec.live chat and teach API
+Home-page: https://github.com/anbuinfosec/pysimsimi
+Author: Mohammad Alamin
+Author-email: anbuinfosec@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests
+
+UNKNOWN
+
