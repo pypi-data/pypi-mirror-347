@@ -1,0 +1,18 @@
+nse_bm_api_endpoint: https://www.nseindia.com/api/corporate-board-meetings?index=equities
+nse_ca_api_endpoint: "https://www.nseindia.com/api/corporates-corporateActions?index=equities"
+
+
+#locations
+splits_file: splits.rds
+bm_file: boardmeetings.rds
+div_file: dividend.rds
+bhavcopy_folder: /bhavcopy
+symbolchange_file: symbolchange.rds
+static_downloads: static
+daily_prices: daily
+
+#emails:
+to_email_id:
+  - user@example.com
+from_email_id: sender@example.com
+from_email_password:
