@@ -1,0 +1,4 @@
+[console_scripts]
+mysql-mcp-server = mysql_mcp_server_pro.server:main
+mysql-mcp-server-sse = mysql_mcp_server_pro.cli:sse_entry
+mysql-mcp-server-stdio = mysql_mcp_server_pro.cli:stdio_entry
