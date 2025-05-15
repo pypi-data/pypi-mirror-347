@@ -1,0 +1,6 @@
+SPTpython
+analysis
+dist
+html_out
+logs
+resources

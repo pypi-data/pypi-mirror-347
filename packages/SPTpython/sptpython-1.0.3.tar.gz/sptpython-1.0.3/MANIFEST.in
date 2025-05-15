@@ -1,0 +1,10 @@
+# Include Cython source and headers
+include SPTpython/C_code/*.pyx
+include SPTpython/C_code/*.pxd
+include SPTpython/C_code/*.c
+include SPTpython/C_code/*.h
+include SPTpython/version.py
+
+# Include documentation and licensing
+include README.md
+include LICENSE
