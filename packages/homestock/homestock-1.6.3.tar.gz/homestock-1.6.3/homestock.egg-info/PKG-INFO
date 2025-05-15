@@ -1,0 +1,133 @@
+Metadata-Version: 2.4
+Name: homestock
+Version: 1.6.3
+Summary: homestock scrapes US Census Bureau data to calculate attainable housing stock for each census tract within a selected county.
+Author-email: Joshua Pepper <jepepper19@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/jpepper19/homestock
+Keywords: homestock
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: black
+Requires-Dist: black[jupyter]
+Requires-Dist: build
+Requires-Dist: bump-my-version
+Requires-Dist: census
+Requires-Dist: click
+Requires-Dist: codespell
+Requires-Dist: flake8
+Requires-Dist: folium
+Requires-Dist: geopandas
+Requires-Dist: ipykernel
+Requires-Dist: ipyleaflet
+Requires-Dist: ipywidgets
+Requires-Dist: livereload
+Requires-Dist: localtileserver
+Requires-Dist: matplotlib
+Requires-Dist: mkdocs
+Requires-Dist: mkdocs-git-revision-date-localized-plugin
+Requires-Dist: mkdocs-git-revision-date-plugin
+Requires-Dist: mkdocs-jupyter>=0.24.0
+Requires-Dist: mkdocs-material>=9.1.3
+Requires-Dist: mkdocs-pdf-export-plugin
+Requires-Dist: mkdocstrings==0.28.2
+Requires-Dist: mkdocstrings-crystal
+Requires-Dist: mkdocstrings-python-legacy
+Requires-Dist: nbconvert
+Requires-Dist: nbformat
+Requires-Dist: numpy
+Requires-Dist: pygments
+Requires-Dist: pymdown-extensions
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: pytest-runner
+Requires-Dist: rasterio
+Requires-Dist: requests
+Requires-Dist: setuptools
+Requires-Dist: sphinx
+Requires-Dist: tabulate
+Requires-Dist: twine
+Requires-Dist: us
+Requires-Dist: watchdog
+Requires-Dist: wheel
+Provides-Extra: all
+Requires-Dist: homestock[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+Dynamic: license-file
+
+# 🏡 homestock
+
+[![image](https://img.shields.io/pypi/v/homestock.svg)](https://pypi.org/project/homestock/)
+
+[![image](https://pyup.io/repos/github/jpepper19/homestock/shield.svg)](https://pyup.io/repos/github/jpepper19/homestock)
+
+**homestock** is a Python package designed to simplify access to **American Community Survey (ACS)** data from the U.S. Census Bureau. It enables users to fetch detailed demographic, housing, and economic data, and seamlessly convert the results into `pandas` DataFrames or CSV files for further analysis.
+
+Whether you're exploring patterns at the state level or diving deep into neighborhoods using census tracts and block groups, **homestock** provides a flexible, scriptable workflow for researchers, students, journalists, and developers.
+
+---
+
+## 📊 What is the ACS?
+
+The **American Community Survey (ACS)** is an ongoing survey conducted by the U.S. Census Bureau that collects vital information on income, education, housing, employment, and more.
+
+There are two primary types of ACS data products:
+
+### 🔹 1-Year Estimates
+- Based on data collected over **12 months**
+- Available for **areas with populations of 65,000+**
+- Best for analyzing **current trends** in large cities or regions
+- Less stable for small populations due to smaller sample size
+
+### 🔸 5-Year Estimates
+- Based on data collected over **60 months (5 years)**
+- Available for **all geographic areas**, down to **block groups**
+- Best for **granular spatial analysis** or long-term planning
+- More reliable for small population areas
+
+---
+
+## 🗺️ Supported Geographic Levels
+
+| Geographic Level                    | Description                                                                 | Available In |
+|-------------------------------------|-----------------------------------------------------------------------------|--------------|
+| **Nation**                          | Entire United States                                                        | 1-Year, 5-Year |
+| **State**                           | Individual U.S. states                                                      | 1-Year, 5-Year |
+| **County**                          | Counties within states                                                      | 1-Year, 5-Year |
+| **County Subdivision**             | Minor civil divisions (e.g., townships)                                     | 5-Year only |
+| **Place**                           | Incorporated places (cities, towns)                                         | 1-Year, 5-Year |
+| **ZIP Code Tabulation Area (ZCTA)** | Approximated ZIP Code boundaries                                            | 5-Year only |
+| **Metropolitan/Micropolitan Area**  | Census-defined metro or micro areas                                         | 1-Year, 5-Year |
+| **Census Tract**                    | Small subdivisions of counties (~4,000 residents)                           | 5-Year only |
+| **Block Group**                     | Subdivisions of tracts (~600–3,000 residents)                               | 5-Year only |
+| **Block**                           | The smallest geography (~40–100 people)                                     | 5-Year only |
+
+---
+
+## ⚙️ What Can You Do with homestock?
+
+- 🧩 **Pull specific ACS tables** by table ID (e.g., `B19013` for median household income)
+- 📁 **Convert results** to `pandas` DataFrames or export them as `.csv`
+- 🌐 **Query different geographic levels**, from national down to individual blocks
+- 🔍 **Explore metadata** dynamically using Census variable labels
+- 🗺️ **Use results in mapping tools** like `folium`, `geopandas`, or `leafmap`
+
+---
+
+## 📦 Install
+
+```bash
+pip install homestock
+
+
+
