@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: pdf_json_extractor
+Version: 1.4.0
+Summary: PDF to JSON extractor with obfuscated internals
+Author: RameshLanke
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: google-generativeai
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
