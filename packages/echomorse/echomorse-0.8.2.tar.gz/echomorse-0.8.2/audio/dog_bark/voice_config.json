@@ -1,0 +1,13 @@
+{
+  "name": "dog_bark",
+  "description": "Dog bark sounds for Morse code",
+  
+  "elements": {
+    "dot": "dog_short.wav",
+    "dash": "dog_long.wav"
+  },
+  
+  "sequence_patterns": {
+    "triple_dot": "..."
+  }
+}
