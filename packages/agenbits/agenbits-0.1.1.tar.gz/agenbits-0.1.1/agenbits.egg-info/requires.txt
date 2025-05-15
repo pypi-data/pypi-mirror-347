@@ -1,0 +1,6 @@
+requests
+pandas
+openpyxl
+Pillow
+numpy
+soundfile
