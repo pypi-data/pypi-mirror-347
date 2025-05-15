@@ -1,0 +1,5 @@
+enum-tools[sphinx]
+jinja2
+sphinx
+sphinx-autobuild
+sphinx-rtd-theme
