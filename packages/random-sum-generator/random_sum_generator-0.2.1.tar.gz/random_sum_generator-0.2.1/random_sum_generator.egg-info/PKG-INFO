@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: random_sum_generator
+Version: 0.2.1
+Summary: Generate random numbers that sum to a total with min/max bounds per part.
+Home-page: https://github.com/fahim9778/theBoringCodes/tree/main/RandomSumGenerator
+Author: Md. Fakhruddin Gazzali Fahim
+Author-email: fahim9778@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/fahim9778/theBoringCodes/issues
+Project-URL: Source, https://github.com/fahim9778/theBoringCodes/tree/main/RandomSumGenerator
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-python
+Dynamic: summary
+
+# Random Sum Generator (RSG)
+
+[![Launch Streamlit](https://img.shields.io/badge/Launch%20App-Streamlit-blue?logo=streamlit)](https://randomsumgenerator.streamlit.app/)
+
+A hybrid Python module + Streamlit app that generates random integers or floats summing to a target value — with per-part constraints and visual output.
+
+---
+
+## 📦 Install from PyPI (coming soon)
+```bash
+pip install random_sum_generator
+```
+
+## 🧪 Example Usage
+```python
+from random_sum_generator import RandomSumGenerator
+
+gen = RandomSumGenerator()
+print(gen.generate(total=100, parts=4, min_val=5, max_val=30, mode='int'))
+print(gen.generate(100, 4, min_val=[10, 0, 5, 15], max_val=[30, 50, 25, 40], mode='float'))
+```
+
+## 🌐 Run the Streamlit App Locally
+```bash
+streamlit run streamlit_app.py
+```
+
+## 💡 Features
+- Integer or float output
+- Exact sum guarantee
+- Per-part min/max control
+- Safe resampling
+- Debug logging
+
+## ⚠️ Bound Constraints — Important Notes
+
+To ensure generation is possible, these conditions must be met:
+
+- `parts * min_val ≤ total ≤ parts * max_val`
+- It's recommended that `max_val > total / parts`
+- Very tight max values (like `max_val = total / parts`) will likely fail due to rounding and scaling
+
+Example of what might fail:
+```python
+gen.generate(total=100, parts=4, min_val=5, max_val=25)  # may fail due to tight upper bound
+```
+To fix:
+```python
+gen.generate(total=100, parts=4, min_val=5, max_val=27)  # allows more flexibility
+```
