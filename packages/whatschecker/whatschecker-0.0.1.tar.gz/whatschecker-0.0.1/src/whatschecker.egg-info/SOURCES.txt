@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+src/whatschecker/__init__.py
+src/whatschecker.egg-info/PKG-INFO
+src/whatschecker.egg-info/SOURCES.txt
+src/whatschecker.egg-info/dependency_links.txt
+src/whatschecker.egg-info/requires.txt
+src/whatschecker.egg-info/top_level.txt
