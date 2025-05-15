@@ -1,0 +1,14 @@
+ruamel.yaml>=0.16.7
+
+[style]
+pylint
+flake8
+
+[test]
+pytest
+pytest-mock
+coverage
+pytest-cov
+
+[test:python_version < "3.12"]
+tomli

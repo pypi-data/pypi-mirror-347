@@ -1,0 +1,10 @@
+include           AUTHOR
+include           CHANGES.md
+include           COPYRIGHT
+include           LICENSE
+include           README.md
+include           CONFIGURATION.md
+include           INSTALL.md
+include           fsl_sub/plugins/template_plugin
+include           fsl_sub/plugins/fsl_sub_shell.yml
+include           fsl_sub/*.yml
