@@ -1,0 +1,11 @@
+gemiTask/__init__.py,sha256=Cp3C2o7tUf89M_WUiFUGc8yIgbgPk73ETrU_YY9TvoY,405
+gemiTask/gemini.py,sha256=U1xaB0zLv-A0-ztbUFu_85O3ej6L6rgNNsS_4pFVuwg,4940
+gemiTask/main.py,sha256=MVJ3sZW-CWHGoaghnyv-7iHL-matcJgwqttEqC3WkAE,4740
+gemiTask/storage.py,sha256=AUTNEK4YW6cNJy0WrvGO6At7GpieEWUf8aKen8219lw,1005
+gemiTask/task.py,sha256=Y5I0OTsOGpmwRtgYHMSTVG4tBytpMgD096RC_zkZf3M,2052
+gemitask-0.1.4.dist-info/licenses/LICENSE,sha256=sCYK_fx9OepmYBi17rn7IDNZ6XPYpUNkhaaNJ2UcT1w,1085
+gemitask-0.1.4.dist-info/METADATA,sha256=4FsPYlw8dKkz6ahQD_4t10SWehmrHqHjdrE3bc9O7RA,6487
+gemitask-0.1.4.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+gemitask-0.1.4.dist-info/entry_points.txt,sha256=qtZ0IG1gZ_wkF3uSCl6fnEqveC0XZY6l4qxrdZ-645E,48
+gemitask-0.1.4.dist-info/top_level.txt,sha256=WgtuFQI5PkGOhNhQBG2gZi5zIE-ZzwJR5nasGlJ14r0,9
+gemitask-0.1.4.dist-info/RECORD,,
