@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+indiafactorlibrary/__init__.py
+indiafactorlibrary/indiafactorlibrary.py
+indiafactorlibrary.egg-info/PKG-INFO
+indiafactorlibrary.egg-info/SOURCES.txt
+indiafactorlibrary.egg-info/dependency_links.txt
+indiafactorlibrary.egg-info/requires.txt
+indiafactorlibrary.egg-info/top_level.txt
