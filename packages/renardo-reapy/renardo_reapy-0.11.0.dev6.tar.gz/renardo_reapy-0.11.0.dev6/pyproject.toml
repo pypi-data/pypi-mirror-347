@@ -1,0 +1,43 @@
+[build-system]
+requires = ["uv", "hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "renardo_reapy"
+version = "0.11.0.dev6"
+description = "A fork of Reapy, the pythonic wrapper for REAPER's ReaScript Python API. Intended to be refactored and simplifyed for maintenance and usage as base for renardo Reaper integration"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    {name = "Roméo Després", email = "mail.reapy@gmail.com"},
+    {name = "Elie Gavoty", email = "eliegavoty@free.fr"},
+]
+maintainers = [
+    {name = "Elie Gavoty", email = "eliegavoty@free.fr"},
+]
+license = {text = "MIT"}
+dependencies = [
+    "psutil",
+    "typing_extensions",
+]
+keywords = ["REAPER", "DAW", "ReaScript", "API", "wrapper", "music", "audio"]
+
+[tool.hatch.build.targets.app]
+# scripts = ["renardo/__main__.py"]
+pyapp-version = "0.27.0"
+
+[project.urls]
+Homepage = "https://github.com/eliegavoty/renardo_reapy"
+"Bug Tracker" = "https://github.com/eliegavoty/renardo_reapy/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "hatch>=1.14.1",
+    "pip>=25.1.1",
+]
+
+[project.scripts]
+launch = "renardo_reapy:launch"
+
