@@ -1,0 +1,10 @@
+# flake8: noqa
+
+# import apis into api package
+from cloudbeds_pms.api.doorlock_keys_api import DoorlockKeysApi
+from cloudbeds_pms.api.doorlock_settings_api import DoorlockSettingsApi
+from cloudbeds_pms.api.housekeeping_api import HousekeepingApi
+from cloudbeds_pms.api.integration_events_api import IntegrationEventsApi
+from cloudbeds_pms.api.market_segmentation_groups_api import MarketSegmentationGroupsApi
+from cloudbeds_pms.api.market_segmentation_segments_api import MarketSegmentationSegmentsApi
+
