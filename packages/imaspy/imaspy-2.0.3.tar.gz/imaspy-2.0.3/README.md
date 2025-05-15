@@ -1,0 +1,18 @@
+# README
+
+IMASPy and the Python interface of the Access-Layer have had a breaking change
+to future-proof development. As such, the Python interface of the Access-Layer
+is deprecated, and the IMASPy package is now called `imas` on ITER
+infrastructure. The main repository can be found on
+[GitHub](https://github.com/iterorganization/imas-python)
+This means users will have to change their codes. Most notably:
+
+## Migration guide
+1. Add `imas-python` as a dependency of your project
+    (see <https://pypi.org/project/imas-python/>)
+2. Rename all your Python imports from `import imaspy.xyz` to `import imas.xyz`
+
+## Rationale
+1. The legacy IMAS Python interface of the Access-Layer is no longer supported
+    by ITER
+2. IMAS-Python is the successor, the new Python module is called `imas`
