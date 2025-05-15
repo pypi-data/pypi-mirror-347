@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: tomi-kristof-package-test
+Version: 0.1.2
+Summary: 
+Author: Kristof Menyhert
+Author-email: menyhert.kristof@gmail.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: pytest (>=8.3.5,<9.0.0)
+Description-Content-Type: text/markdown
+
+# This is a package just for testing purposes.
+It contains a simple function that demonstrates how to create a package in Python and upload it to PyPI.
