@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "push-all-in-one"
+version = "0.1.1"
+description = "多合一推送服务，支持钉钉、企业微信、Telegram、邮件等多种推送方式"
+readme = "README.md"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.31.0",
+    "pydantic>=2.5.0",
+    "typing-extensions>=4.8.0",
+    "PyJWT>=2.8.0",
+    "urllib3>=2.0.7",
+    "cryptography>=41.0.5",
+    "python-dotenv>=1.0.0",
+    "pycryptodome>=3.19.0",
+    "aiohttp>=3.8.6",
+    "httpx>=0.25.0",
+]
+keywords = ["push", "notification", "dingtalk", "wechat", "telegram", "discord"]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/push-all-in-one"
+Issues = "https://github.com/yourusername/push-all-in-one/issues"
+
+[tool.setuptools]
+packages = ["push", "utils", "interfaces"]

@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include requirements.txt
+include QUICK_START.md
+include PUBLISHING.md
+include 使用指南.md
+recursive-include examples *
+global-exclude *.py[cod] __pycache__ *.so *.dylib 
