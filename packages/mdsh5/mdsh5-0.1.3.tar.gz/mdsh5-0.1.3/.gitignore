@@ -1,0 +1,5 @@
+mdsh5.egg-info/*
+dist/*
+*.h5
+__pycache__
+.coverage
