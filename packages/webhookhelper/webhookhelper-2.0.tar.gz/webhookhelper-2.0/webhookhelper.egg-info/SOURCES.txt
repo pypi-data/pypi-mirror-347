@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+webhookhelper/__init__.py
+webhookhelper/core.py
+webhookhelper/discord_embed.py
+webhookhelper.egg-info/PKG-INFO
+webhookhelper.egg-info/SOURCES.txt
+webhookhelper.egg-info/dependency_links.txt
+webhookhelper.egg-info/top_level.txt

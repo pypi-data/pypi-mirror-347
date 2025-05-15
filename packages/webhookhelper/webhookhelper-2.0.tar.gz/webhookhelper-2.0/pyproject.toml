@@ -1,0 +1,17 @@
+[project]
+name = "webhookhelper"
+version = "2.0"
+description = "A simple helper to send webhooks to Discord and Telegram"
+authors = [
+    { name="NotOfficial", email="root@notoff.pro" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.urls]
+Homepage = "https://github.com/NotOfficals/WebHookHelper"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
