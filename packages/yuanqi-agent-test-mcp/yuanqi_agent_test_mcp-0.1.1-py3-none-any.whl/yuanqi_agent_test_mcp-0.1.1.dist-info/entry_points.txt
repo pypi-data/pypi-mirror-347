@@ -1,0 +1,2 @@
+[console_scripts]
+yuanqi-agent-test-mcp = yaunqi_agent_mcp:main
