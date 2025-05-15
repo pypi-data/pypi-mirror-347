@@ -1,0 +1,8 @@
+pdf_json_extractor/__init__.py,sha256=nx1x7-foPEg1HnS-oXrtIP51KwC-BmN3V7V3X8l2TrE,44
+pdf_json_extractor/_prompt.py,sha256=i3uTJb7wdvS_S3-21kKykfv2R9I8mWNX-tQAFJCsCPE,921
+pdf_json_extractor/extractor.py,sha256=7uzR--C33YuIdaoFRVHydw-pBzQ1AWAGz6rVIVcsqbE,1207
+pdf_json_extractor/token_fetcher.py,sha256=ay8comjlEhycx9E2pli17xmYSH6m_2jslKPVwEuN-1o,490
+pdf_json_extractor-0.1.dist-info/METADATA,sha256=GtVwNyB_ztf3jTNGrK7KsA-GeST446EoRr-6rTEZLi4,250
+pdf_json_extractor-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pdf_json_extractor-0.1.dist-info/top_level.txt,sha256=MpfFFKFpL98gxlBIr7ED112Fez1zFHNOSBIaRBCCYjI,19
+pdf_json_extractor-0.1.dist-info/RECORD,,
