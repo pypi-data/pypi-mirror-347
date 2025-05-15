@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: mountaineer-exceptions
+Version: 0.0.3
+Summary: A small plugin for mountaineer that shows beautiful tracebacks in the browser.
+Requires-Python: >=3.10
+Requires-Dist: pygments>=2.19.1
+Description-Content-Type: text/markdown
+
+# mountaineer-exceptions
+
+A small plugin for mountaineer that shows beautiful tracebacks in the browser.
+
+This repository also acts as our proof-of-concept for Mountaineer [Plugins](https://github.com/piercefreeman/mountaineer/issues/201).
