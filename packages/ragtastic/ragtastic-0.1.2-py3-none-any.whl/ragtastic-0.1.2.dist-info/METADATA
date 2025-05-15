@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: ragtastic
+Version: 0.1.2
+Summary: Python bindings for the Ragtastic API
+Author-email: Alexander Georgie <alex@useragtastic.com>
+Requires-Python: >=3.8
+Requires-Dist: pydantic>=2.11.4
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+# Project description
+
+A Python library for Stripe’s API.
+
+## Setup
+
+You can install this package by using the pip tool and installing:
+
+    $ pip install ragtastic
+
+Or:
+
+    $ uv add ragtastic
+
+## Setting up a Ragtastic Account
+
+Sign up for Ragtastic at https://useragtastic.com/register
+
+## Using the Ragtastic API
+
+Documentation for the python bindings can be found alongside Ragtastic’s other bindings here:
+
+    https://useragtastic.com/docs

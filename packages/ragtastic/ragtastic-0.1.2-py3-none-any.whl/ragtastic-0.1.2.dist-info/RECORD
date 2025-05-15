@@ -1,0 +1,15 @@
+ragtastic/__init__.py,sha256=pcm1410vN8BlW5x8CmWyTrd_2PeHH7EKymcb5FkaV8g,1769
+ragtastic/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ragtastic/resources/batch_resource.py,sha256=xW-HiscvsBWV2F9y3-4Pndwg6Gwzhy09iJVYfCMsMEk,1403
+ragtastic/resources/collection_resource.py,sha256=h65KFWcx7yeELYOXGfOocXcTz5aiDgJMsEzMeDn5um4,1139
+ragtastic/resources/document_resource.py,sha256=EnnFjMf2u0jWYESGIdtsCd8Za0gNKwCtDqDx1LfP8d0,1996
+ragtastic/resources/query_resource.py,sha256=kvZrfobQOO-0WfkOIlgROVY6bIw2rEKbxIOXQGErFY8,843
+ragtastic/resources/resource.py,sha256=uROA3Ubmi-IFdwORiS--Ry2XhiBmGvsk5PXw6mRopT8,917
+ragtastic/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ragtastic/utils/exceptions.py,sha256=VeROSwi6IGfQ3WA45zBCxx4WWkD1shj95tzAzuurBXk,710
+ragtastic/utils/retry.py,sha256=23phi1KoO15PRboZ0y9wdKNQ48QYYc_rkf9h4rNrikE,1753
+ragtastic/utils/types.py,sha256=Ve4PByybQyuyrxDEYf4PylVtAXSGnPenh3SMQFlmBCY,703
+ragtastic-0.1.2.dist-info/METADATA,sha256=W9jCrthW3pgHaONeAW_ErdDu04bGC3OczczC1SjFKI8,734
+ragtastic-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ragtastic-0.1.2.dist-info/entry_points.txt,sha256=vwljxlqaJBjeZGdylQPxxyVe6nUcN58XpVXOrccaQDY,39
+ragtastic-0.1.2.dist-info/RECORD,,
