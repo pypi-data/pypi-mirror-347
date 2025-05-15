@@ -1,0 +1,6 @@
+gmm_gpu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gmm_gpu/gmm.py,sha256=9SHnhX3bGydxjDoxL6dUJplJ6XPF2uIXhDu_Q3mUlIc,25015
+gmm_gpu-0.2.5.dist-info/LICENSE.txt,sha256=tF3yIwaWY9icJKyzBE4Wl_Xt2FgnjWutE9erGcAB1jY,1072
+gmm_gpu-0.2.5.dist-info/METADATA,sha256=zx5STcXc_W1zSl9DagnlwOp6-n-YjUPBSVhvc101yHA,3811
+gmm_gpu-0.2.5.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+gmm_gpu-0.2.5.dist-info/RECORD,,
