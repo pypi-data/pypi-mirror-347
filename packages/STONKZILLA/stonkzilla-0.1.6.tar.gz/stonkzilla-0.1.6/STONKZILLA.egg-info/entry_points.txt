@@ -1,0 +1,2 @@
+[console_scripts]
+stonkzilla = stonkzilla.main:main
