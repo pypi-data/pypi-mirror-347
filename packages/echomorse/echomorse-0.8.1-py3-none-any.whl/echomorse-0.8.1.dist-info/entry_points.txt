@@ -1,0 +1,5 @@
+[console_scripts]
+echomorse = echomorse.cli:main
+
+[gui_scripts]
+
