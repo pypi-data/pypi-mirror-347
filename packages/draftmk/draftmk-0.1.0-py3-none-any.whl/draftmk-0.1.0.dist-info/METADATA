@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: draftmk
+Version: 0.1.0
+Summary: CLI for managing DraftMk previews and docs
+License: MIT
+Author: Jonatan Mata
+Author-email: jonmatum@gmail.com
+Requires-Python: >=3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# draftmk-cli
+CLI tool for DraftMk to preview, manage, and test documentation locally with Docker and MkDocs.
+
