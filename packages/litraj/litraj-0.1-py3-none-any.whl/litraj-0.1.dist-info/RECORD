@@ -1,0 +1,11 @@
+litraj/README.md,sha256=4RoYjJS4kUuBwd27ePxMZsNA95vjDIowKjLxy6zROow,2748
+litraj/__init__.py,sha256=9NITP3JwkpqzuAAZtxIKNN6ZCx_53f5wR6DI6mUznLE,79
+litraj/data.py,sha256=d2Y58DrYzM3wHRonAA3XirtF2NJd5YwY56_IqvLdvms,11727
+litraj/metrics.py,sha256=aomMS3YQtR6Jojj_sSF58bcKL16NADlN6JBGunYq66E,1413
+litraj/utils.py,sha256=_eWRkShop4-0SQgT0x0_lQTNwG6xttLKoD-i0Q7yt5o,900
+litraj-0.1.dist-info/LICENSE,sha256=ZqLUuXH9ynk39vC0fF1AgfTTAzwpPeHtIQsTUazDDko,1081
+litraj-0.1.dist-info/METADATA,sha256=1tt7EmIyjW5yiKw0V1VNqFmTiPP1LYoUnFkQsDLJnwA,12865
+litraj-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+litraj-0.1.dist-info/top_level.txt,sha256=D7NS2mhu5sDHefuQ3KO7zfOZfPyujPwE5vRpmYUcqwo,7
+litraj-0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+litraj-0.1.dist-info/RECORD,,
