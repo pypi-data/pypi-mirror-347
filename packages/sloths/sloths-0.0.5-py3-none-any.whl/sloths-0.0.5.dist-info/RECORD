@@ -1,0 +1,11 @@
+sloths/__init__.py,sha256=uqvEOh6TsGVLH7BKmmTe73foW3nrsvBZTZYHVjHcnzU,150
+sloths/_stream.py,sha256=B_eDkzl34vf_gyWwjTm1OCyoWPKSf-cyLsG5h-_Lpa4,25087
+sloths/_utils.py,sha256=p0UM9D-FHC8G64VYuD1ueakXumvIgL_IeChv5Q3IP7s,1665
+sloths/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sloths/ext/__init__.py,sha256=BHXnngUfRphu2EcRnf8N8ZLIKtJL5-Z5HJa1iA9cuUg,79
+sloths/ext/asyncio.py,sha256=6MNRSRiQvxlKy-WAv5pk1NysM44IB5ceFQKEPK8KXxc,20165
+sloths/ext/concurrent.py,sha256=C5luPg6KYZvQm-yVi1N890lD2WyD1GSMaORbo_-RtI0,9001
+sloths-0.0.5.dist-info/METADATA,sha256=Z5CpmQU1b86OIIyzGka0FQI6vDnhESHAk1O6jCbLPZw,2836
+sloths-0.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sloths-0.0.5.dist-info/licenses/LICENSE,sha256=kz1oYaTS4KqF9y3O1wdM_TfA-vGmFlem1W30lI5L-nQ,1071
+sloths-0.0.5.dist-info/RECORD,,
