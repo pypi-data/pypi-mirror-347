@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: notihub
+Version: 0.1.5rc0
+Summary: Notihub is a Python library to manage and use different notification services.
+Project-URL: Homepage, https://github.com/Alternova-Inc/notihub
+Project-URL: Repository, https://github.com/Alternova-Inc/notihub
+Author-email: Juan Trujillo <juan.trujillo@alternova.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: aws,notifications
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.8
+Requires-Dist: boto3<2,>=1.20.0
+Requires-Dist: dotenv<0.10,>=0.9.9
+Provides-Extra: dev
+Description-Content-Type: text/markdown
+
+# notihub
+Alternova notihub library
