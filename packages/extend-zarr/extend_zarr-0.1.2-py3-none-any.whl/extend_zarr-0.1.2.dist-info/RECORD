@@ -1,0 +1,7 @@
+extend_zarr/__init__.py,sha256=bp0VJHrapbrgxvmBPXUKBznd85Id-vJxUrLnwNz2UiE,65
+extend_zarr/_version.py,sha256=bSmADqydH8nBu-J4lG8UVuR7hnU_zcwhnSav2oQ0W0A,511
+extend_zarr/utils.py,sha256=1jWC5ruMmnt0X0-kmaZXayL7dxLs70Otl-COr_eht6U,9429
+extend_zarr-0.1.2.dist-info/METADATA,sha256=MP_a5OnB4gmMR_fKcgf5NzbqtJnCXyVv6HHkNDszEJ0,1353
+extend_zarr-0.1.2.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+extend_zarr-0.1.2.dist-info/top_level.txt,sha256=M_jWoyrjoxc-s6MEpiztMObjGg0PNtXW7VU5E_rB8Yk,12
+extend_zarr-0.1.2.dist-info/RECORD,,
