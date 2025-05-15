@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+.pypirc
+.env
+settings.yml
+settings.yaml
+
+# Virtual environments
+.venv
+
+# tests
+test.py
+test.json
+
+# Pytest
+cassettes
+
+# Docker
+docker-compose.yml
+Dockerfile
+.coverage
