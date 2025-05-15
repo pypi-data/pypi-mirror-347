@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/passcode_link_mailer.egg-info/PKG-INFO
+src/passcode_link_mailer.egg-info/SOURCES.txt
+src/passcode_link_mailer.egg-info/dependency_links.txt
+src/passcode_link_mailer.egg-info/top_level.txt
+src/simple_mailer/__init__.py
+src/simple_mailer/passcode_link_mailer.py
+src/simple_mailer/templates/minimal_template.html
+src/simple_mailer/templates/modern_template.html
+src/simple_mailer/templates/standard_template.html
