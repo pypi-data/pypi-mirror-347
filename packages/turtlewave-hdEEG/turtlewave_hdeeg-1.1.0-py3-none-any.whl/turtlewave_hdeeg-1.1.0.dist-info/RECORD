@@ -1,0 +1,17 @@
+frontend/__init__.py,sha256=UsilyEecWudFa8-sT0DM9N0OwL72dvx_EJwQRCEVNxA,150
+frontend/turtlewave_gui.py,sha256=IrMtHtGTTXhGEq_qdip7hhprjyRfknsD3MwoCH9-6QQ,85647
+turtlewave_hdEEG/__init__.py,sha256=G0iydmd1GjuhWtbrPMSf7swc4RXSBUPPeTvXJJ3haZc,423
+turtlewave_hdEEG/addjson2xml.py,sha256=r1ggbvV6MUy4rU0mVWmZ-qQnbE6cJ8cJD8Fbyly3pgU,7168
+turtlewave_hdEEG/annotation.py,sha256=WkOkFit9EyUe-QJgT70xhu3TZsO_eVN3qisAS-Qy7vQ,16613
+turtlewave_hdEEG/dataset.py,sha256=Rnl2mMHu7EDNDCu1E5vTkU1c4mIyGH2EjptYKqZJzNA,26402
+turtlewave_hdEEG/eventprocessor.py,sha256=4nV68N11CcCmlHnogpOZpNhablNgWoUXms5keHs1Hh0,44478
+turtlewave_hdEEG/extensions.py,sha256=FjJHjIjBLJHgHftlsn4lsIAZgyKEyKbPoY1h7Gy1jVQ,8100
+turtlewave_hdEEG/json_to_annotations.py,sha256=24-tAAu-Za9KCeTtds7TkTxkQzrLyukotFLkCrk_tRY,3848
+turtlewave_hdEEG/swprocessor.py,sha256=ThcDo0N7Pzf5Ige9lirZm7jeWZCN5sQlsbmXuUiGJ0w,43618
+turtlewave_hdEEG/utils.py,sha256=3fWMaxi9benrBl15sTFVLGte_lpJZ1yYIalM08okk5A,4001
+turtlewave_hdEEG/visualization.py,sha256=tYITjyxoiw7Pq7USkbsWio115cAA12goa6UXIxnMYjk,5426
+turtlewave_hdeeg-1.1.0.dist-info/METADATA,sha256=bE3HQuVIv9dfHzEIRCl2XDR3CHCLNZeajThH5wNF9AI,1098
+turtlewave_hdeeg-1.1.0.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+turtlewave_hdeeg-1.1.0.dist-info/entry_points.txt,sha256=RAo3wR13mfd1gLmrbSCGS8NvwT650ABiYKerZi3NaOE,64
+turtlewave_hdeeg-1.1.0.dist-info/top_level.txt,sha256=KyJBWPY23zdUEz34Mi3r2dUpBwjZA4EWUvvOAe-omvM,26
+turtlewave_hdeeg-1.1.0.dist-info/RECORD,,
