@@ -1,0 +1,10 @@
+djactasauth/__init__.py,sha256=CBY3jsC-9HCm7eZ6CKD-sYLCejqOJ1pYWPQM4LGIXcI,22
+djactasauth/backends.py,sha256=x4fKRTLCaYDUR38KOou80cRCegW0X2u70C45flKYI1k,3376
+djactasauth/models.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+djactasauth/util.py,sha256=jt734wlFOOtXz3lxPozbgmyvF8azm7O9an-7YpynjAw,351
+djactasauth/views.py,sha256=hQnaZgTqQOke46dQM_Ud4bKOvAsrPZygeQAMbJG1BGQ,480
+djactasauth-0.6.0.dist-info/licenses/LICENSE,sha256=CwIy5iaeqoKILoD_LB9F3HrW4BIJmSCHjRm1UTmEtUs,1469
+djactasauth-0.6.0.dist-info/METADATA,sha256=n3zro2WhrmUOwsmjgPzFpTw34KYB7mk2GPeU0pxHXYI,4325
+djactasauth-0.6.0.dist-info/WHEEL,sha256=_z0Kb-VmhLeNt2nZ-PsoQBjD25rP0tBwgAyRYD7oTKI,109
+djactasauth-0.6.0.dist-info/top_level.txt,sha256=HKwQfCMFlNUJHBX7WOJSBqTbStmH5kL9KnNqxKoVDfc,12
+djactasauth-0.6.0.dist-info/RECORD,,
