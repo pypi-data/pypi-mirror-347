@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: rtctree-build-idl
+Version: 1.0.3
+Summary: Custom build/installation commands for rtctree.
+Author: Noriaki Ando
+Author-email: n-ando@aist.go.jp
+License: LGPL3
+Project-URL: Source, https://github.com/OpenRTM/rtctree-build-idl
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Requires-Python: >=3.9
+
+Custom build/installation commands for rtctree.
