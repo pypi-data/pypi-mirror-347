@@ -1,0 +1,139 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snl_toadstool"
+version = "1.0.0"
+description = "Boilerplate/Training library for PyTorch"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers=[
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX",
+]
+dependencies = [
+    "numpy>=1.0",
+    "torch>=2.3",
+    "pandas>=1.0",
+    "scikit-learn>=0.24",
+    "matplotlib>=3.0",
+    "sentencepiece>=0.1",
+    "tqdm>=4.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+addopts = "-v --import-mode=importlib"
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+log_cli = true
+log_cli_level = "error"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "A",
+    "ARG",
+    "ASYNC",
+    "B",
+    "BLE",
+    "C4",
+    "COM",
+    #"D",
+    "DTZ",
+    "E",
+    "ERA",
+    "EXE",
+    "F",
+    "FIX",
+    "G",
+    "I",
+    "ICN",
+    "ISC",
+    "LOG",
+    "N",
+    "NPY",
+    "PIE",
+    "PT",
+    "PTH",
+    "RET",
+    "RUF",
+    "S",
+    "SIM",
+    "T10",
+    "T20",
+    "TRIO",
+    "PD",
+    "PL",
+    "U",
+    "W291",
+    "W292",
+    "W293",
+]
+
+ignore = [
+    "A005",
+    "ARG001",
+    "ARG002",
+    "B028",
+    "B905",
+    "COM812",
+    "ERA001",
+    "E501",
+    "E701",
+    "E702",
+    "G004",
+    "ISC001",
+    "N801",
+    "N802",
+    "N803",
+    "N806",
+    "N812",
+    "N817",
+    "N818",
+    "N999",
+    "PD901",
+    "PLR0904",
+    "PLR0911",
+    "PLR0912",
+    "PLR0913",
+    "PLR0914",
+    "PLR0915",
+    "PLR0916",
+    "PLR0917",
+    "PLR1702",
+    "PLR1722",
+    "PLR2004",
+    "PLW0602",
+    "PLW2901",
+    "PTH123",
+    "S101", # We want these optimized away in prod
+    "S202",
+    "S301",
+    "S603",
+    "T100",
+    "T201",
+    "SIM108",
+]
+
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+line-ending = "auto"
+docstring-code-format = true
+
+[tool.coverage.run]
+parallel = true
+concurrency = ["thread", "multiprocessing"]
