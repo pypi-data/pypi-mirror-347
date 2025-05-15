@@ -1,0 +1,8 @@
+License
+setup.py
+molweightcal/__init__.py
+molweightcal/molecule.py
+molweightcal.egg-info/PKG-INFO
+molweightcal.egg-info/SOURCES.txt
+molweightcal.egg-info/dependency_links.txt
+molweightcal.egg-info/top_level.txt
