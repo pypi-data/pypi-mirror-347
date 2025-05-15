@@ -1,0 +1,9 @@
+git_fleet_manager/__init__.py,sha256=N1QxlGBAVIenA3jFmMDC8ZpIFydI3kV3rnFd-iZtFuc,281
+git_fleet_manager/cli.py,sha256=q8gOounQ4G2Stq9CXYz-u5f00r5X72STh2ckbv_NQL4,1737
+git_fleet_manager/git_utils.py,sha256=XNHq5UbHLAuHhqrcga7GX720dI06vCQoGh3sgBa6PZo,9338
+git_fleet_manager-0.1.0.dist-info/licenses/LICENSE,sha256=vcezwa-saEWYO15pMYLrMS8gjua8udhJr54q4mxpB_4,1071
+git_fleet_manager-0.1.0.dist-info/METADATA,sha256=YYCmzYTF56z_Z6LWiwArSllRmH2Ar_fFyBkm_AnIr5g,4710
+git_fleet_manager-0.1.0.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+git_fleet_manager-0.1.0.dist-info/entry_points.txt,sha256=8-w7i-6U6A9auaEKcyMaLPpjKd5nv7-VLlyDkr4OwWI,51
+git_fleet_manager-0.1.0.dist-info/top_level.txt,sha256=xHoDexr7z5SbxDP8kTkZuhcEEANcv3EmnJxCx0rlDhg,18
+git_fleet_manager-0.1.0.dist-info/RECORD,,
