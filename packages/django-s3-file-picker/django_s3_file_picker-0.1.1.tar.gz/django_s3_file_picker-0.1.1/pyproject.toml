@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "django-s3-file-picker"
+version = "0.1.1"
+description = "Django S3 File Picker"
+authors = ["Николай Витальевич Никоноров <nnv@bitt.moe>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "s3_file_picker"}]
+repository = "https://gitlab.com/Bitnik212/s3-file-picker"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "5.2.1"
+mypy-boto3-s3 = "1.38.0"
+boto3 = "1.38.15"
+
+[[tool.poetry.source]]
+name = "django-s3-file-picker"
+url = "https://gitlab.com/api/v4/projects/69856642/packages/pypi/simple"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/s3_file_picker/static/css/filebrowser.css">
+<script>
+    // const id =
+    (function($) {
+        $(function() {
+            // Create the button
+            const $button = $("<a class=\"button\" onclick='getByAttribute(\"{{ widget.attrs.id }}\").style.display = \"flex\"' >Search in S3</a>");
+
+            // Insert the button after the input field
+            $('#{{ widget.attrs.id }}').after($button);
+        });
+    })(django.jQuery);
+
+    function getByAttribute(id) {
+        for (const item of document.querySelectorAll("[data-input-id]")) {
+            if (item.getAttribute("data-input-id") === id) {
+                return item
+            }
+        }
+    }
+
+</script>
+<input id="{{ widget.attrs.id }}" type="text" name="{{ widget.name }}" value="{{ widget.value }}" style="width:70%;"/>
+<div class="s3-file-widget" data-input-id="{{ widget.attrs.id }}" style="display: none; justify-content: center; position: absolute; top: 0; left: 0; width: 100%; z-index: 1000;"></div>
+
