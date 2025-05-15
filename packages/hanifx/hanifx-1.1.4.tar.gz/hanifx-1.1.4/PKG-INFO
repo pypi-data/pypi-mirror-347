@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: hanifx
+Version: 1.1.4
+Summary: A Python package for detecting and preventing harmful code execution.
+Author: Hanif
+Author-email: sajim4653@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+        hanifx is a Python package designed for cybersecurity tasks. It provides functionalities for detecting 
+        harmful code execution and includes a custom hashing algorithm. The module helps in identifying malicious 
+        scripts and preventing potential security threats in Python code. It also includes features specifically 
+        for white-hat hacking and provides detailed reports on detected threats, making it a useful tool for developers 
+        and security researchers.
+    
