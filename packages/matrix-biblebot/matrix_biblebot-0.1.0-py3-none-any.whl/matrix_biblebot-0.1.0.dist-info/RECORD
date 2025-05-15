@@ -1,0 +1,13 @@
+biblebot/__init__.py,sha256=o1dRTlWMXxHd73zmyeC31VciPxheDJeEC9wowEsVlZw,91
+biblebot/__main__.py,sha256=6crwFwIq9hP8aWbWbR57A2JG5CyYRhtj-BVTTDX1jgA,116
+biblebot/bot.py,sha256=WEg2yb3Bn---Xi-ZBWqN1OkR-mdMdhZJUmBBxQilafw,8191
+biblebot/cli.py,sha256=Iv4zk-ExQ6ea3Q7tjjzqafC4tGs27UcW00_slpBSf70,3239
+biblebot/tools/__init__.py,sha256=v-OibEK29h1UvMqDhazha1Tphh0k5Gc_ATOwKu9_ICU,760
+biblebot/tools/sample.env,sha256=1MCDUrir1zlLkJshkrB_Uz3Z-Bzgo-OMC3WJnuJFsyc,105
+biblebot/tools/sample_config.yaml,sha256=5wSWvsyPPnCen0AC06s5nQ5mR8WtbZXnxWjVj7jGwFY,218
+matrix_biblebot-0.1.0.dist-info/licenses/LICENSE,sha256=vBFPlYgKDLl4a-7k3oByn7d6-jjlKLNfhApZc4M-2dc,1067
+matrix_biblebot-0.1.0.dist-info/METADATA,sha256=k1tZYMOturEZ-slT4lD8wxnXXCRjlay3rvvA5LzWFCU,4226
+matrix_biblebot-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+matrix_biblebot-0.1.0.dist-info/entry_points.txt,sha256=1BGPdFbMqH-W6OXOlqYIncXiZxwv7wxBRnHNry3MrBM,47
+matrix_biblebot-0.1.0.dist-info/top_level.txt,sha256=yIHclr8VGzxg4W8vM3tObOlOj8EIJrapB1VedGEKGAI,9
+matrix_biblebot-0.1.0.dist-info/RECORD,,
