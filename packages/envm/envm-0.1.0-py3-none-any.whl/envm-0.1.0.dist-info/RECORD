@@ -1,0 +1,13 @@
+./.gitignore,sha256=yk22aK2xxGZzW1R6pzC-EGUZC2SoJ0geKvEzcL7TTlE,3239
+./.python-version,sha256=SaUG3TIJawENdSBazzQwya5sQDUYiBKUmeWl5IcSbJM,5
+./LICENSE,sha256=tfmMX1O5jNt4cTES88OUSyzpLoc2DdiI--5mABtxf_E,1074
+./PKG-INFO,sha256=en6HDIa49P9tPDlEFSC6F2rnCSsEiS36z1KB0NcG_7I,1416
+./README.md,sha256=KQ0jqvs515vOy93Mjq5r2DY5MmPtHiLuMbKKy013vXg,595
+./main.py,sha256=9VtuGCRYrghXGtZdn2sXEsbiHdRis0xP3ocMQkewRT4,3101
+./pyproject.toml,sha256=G45KLW_BW_SB8fhHyLwIXv3e0kpJk9FQE5C1XK7YEpg,982
+./setup.py,sha256=JQ-XgMJIyWrQG2N7ESY-bxduyTC4DeaQKAgGMZIZBLE,248
+envm-0.1.0.dist-info/METADATA,sha256=en6HDIa49P9tPDlEFSC6F2rnCSsEiS36z1KB0NcG_7I,1416
+envm-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+envm-0.1.0.dist-info/entry_points.txt,sha256=3LVHumeX1s_ewwKmRE0bPQJEjbPolHhWXYVO0k4KQnc,35
+envm-0.1.0.dist-info/licenses/LICENSE,sha256=tfmMX1O5jNt4cTES88OUSyzpLoc2DdiI--5mABtxf_E,1074
+envm-0.1.0.dist-info/RECORD,,
