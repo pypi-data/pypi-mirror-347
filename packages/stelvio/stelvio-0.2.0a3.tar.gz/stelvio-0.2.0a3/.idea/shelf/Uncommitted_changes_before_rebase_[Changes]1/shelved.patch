@@ -1,0 +1,235 @@
+Index: tests/aws/_packaging/test_dependencies.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\nTests for the dependency packaging logic in stelvio.aws._packaging.dependencies.\n\nTesting Strategy: Sociable Unit Tests\n\n*   Target: Primarily testing the `ensure_dependencies_installed` function as the main\n    \"unit of work\" for resolving, caching, and installing dependencies. Also testing\n    cache cleaning utilities.\n*   Approach: Use pytest's `tmp_path` for realistic filesystem interactions within\n    a controlled environment.\n*   Mocking: Minimal mocking. Only mock true external boundaries:\n    *   `subprocess.run`: To simulate the execution of `uv` or `pip` without\n      actually running them.\n    *   `shutil.which`: To control whether the tests think `uv` and `pip` are\n      installed, allowing deterministic testing of installer selection.\n    *   Project/Cache Paths: Mock `get_project_root` and `get_dot_stelvio_dir`\n      to point within `tmp_path`.\n*   Assertions: Verify function return values, calls to mocked external boundaries\n    (subprocess, which), and the state of the filesystem within `tmp_path` (cache\n    directories created/deleted, content of `active_caches.txt`).\n\nTest Scenarios:\n\n1.  Setup & Fixtures:\n    *   Fixture to mock project/cache paths within tmp_path.\n    *   Fixture to mock subprocess.run.\n    *   Fixture to mock shutil.which.\n    *   Helper to create dummy project file structures within tmp_path.\n\n2.  `ensure_dependencies_installed` - Cache Handling:\n    *   Scenario: Cache Miss (no existing cache dir for key).\n        *   Verify `_calculate_cache_key` is involved (implicitly).\n        *   Verify cache directory is created (`mkdir`).\n        *   Verify installer command is generated (`_get_installer_command`).\n        *   Verify installer is executed (`subprocess.run` called).\n        *   Verify cache dir is marked active (`_mark_cache_dir_as_active`).\n        *   Verify correct cache path is returned.\n    *   Scenario: Cache Hit (cache dir for key exists).\n        *   Verify `_calculate_cache_key` is involved (implicitly).\n        *   Verify installer is *not* executed (`subprocess.run` not called).\n        *   Verify cache dir is marked active (`_mark_cache_dir_as_active`).\n        *   Verify correct cache path is returned.\n\n3.  `ensure_dependencies_installed` - Requirements Source Input:\n    *   Scenario: Inline content (`RequirementsSource(content=...)`).\n        *   Verify a temporary requirements file is created, used by the installer,\n          and deleted afterwards (`_prepare_requirements_source_for_installer`).\n    *   Scenario: File path (`RequirementsSource(path_from_root=...)`).\n        *   Verify the original requirements file path (resolved within `tmp_path`)\n          is passed to the installer (`_prepare_requirements_source_for_installer`).\n\n4.  `ensure_dependencies_installed` - Installer Selection & Execution:\n    *   Scenario: `uv` is present (mock `shutil.which` accordingly).\n        *   Verify `uv pip install ...` command is passed to `subprocess.run`.\n        *   Verify correct flags (platform, python version, target dir) are used.\n    *   Scenario: `uv` absent, `pip` present (mock `shutil.which` accordingly).\n        *   Verify `pip install ...` command is passed to `subprocess.run`.\n        *   Verify correct flags (platform, python version, target dir) are used.\n    *   Scenario: Installation Success (`subprocess.run` returns success).\n        *   Verify cache directory is *not* deleted.\n        *   Verify function returns cache path.\n    *   Scenario: Installation Failure (`subprocess.run` raises error/returns non-zero).\n        *   Verify cache directory *is* deleted (`shutil.rmtree`).\n        *   Verify `RuntimeError` is raised by `ensure_dependencies_installed`.\n\n5.  `ensure_dependencies_installed` - Cache Key Calculation Aspects (implicitly tested):\n    *   Verify different requirements content -> different cache path returned (implies different key).\n    *   Verify different architecture/py_version -> different cache path returned.\n    *   Setup nested requirements files (`-r file.txt`) within `tmp_path`.\n        *   Verify changing a nested file -> different cache path returned.\n        *   Verify identical logical requirements (after normalization/nesting) -> same cache path.\n    *   Setup requirements files with comments/whitespace/different order.\n        *   Verify normalization leads to the same cache path for logically identical requirements.\n\n6.  Cache Cleaning Utilities:\n    *   `_mark_cache_dir_as_active`:\n        *   Call multiple times with same/different keys.\n        *   Verify `active_caches.txt` is created in the correct subdir within `tmp_path`.\n        *   Verify `active_caches.txt` contains the expected keys.\n    *   `clean_active_dependencies_caches_file`:\n        *   Create dummy `active_caches.txt`.\n        *   Call function for the correct subdir.\n        *   Verify file is deleted.\n        *   Call again when file doesn't exist (no error).\n    *   `clean_stale_dependency_caches`:\n        *   Setup: Create active file, active cache dirs, stale cache dirs, non-dir file\n          within the correct subdir in `tmp_path`.\n        *   Call function for the correct subdir.\n        *   Verify stale dirs are deleted.\n        *   Verify active dirs and non-dir file remain.\n        *   Verify active file remains.\n        *   Test edge cases (no active file, empty subdir).\n\n7.  Error Handling (Potentially separate, more focused tests if needed):\n    *   Test `_get_recursive_req_files_hashes` raises `FileNotFoundError` for missing files.\n    *   Test `_get_recursive_req_files_hashes` raises `ValueError` for refs outside project root.\n    *   Test `_calculate_cache_key` raises `ValueError` for `-r`/`-c` in inline requirements.\n    *   Test `_get_installer_command` raises `RuntimeError` if neither uv nor pip found.\n\"\"\"\n\nimport subprocess\nfrom pathlib import Path\n\nimport pytest\n\n# Functions/classes under test\n\n# Constants for tests\nDEFAULT_RUNTIME = \"python3.12\"\nDEFAULT_PY_VERSION = \"3.12\"\nDEFAULT_ARCH = \"x86_64\"\nDEFAULT_CACHE_SUBDIR = \"functions\"\nDEFAULT_LOG_CONTEXT = \"test_context\"\n\n\n# --- Fixtures ---\n\n\n@pytest.fixture\ndef mock_paths(tmp_path: Path, monkeypatch):\n    \"\"\"Mocks project root and .stelvio directory to use tmp_path.\"\"\"\n    project_root = tmp_path / \"project\"\n    dot_stelvio = tmp_path / \".stelvio\"\n    project_root.mkdir()\n    dot_stelvio.mkdir()\n\n    monkeypatch.setattr(\"stelvio.project.get_project_root\", lambda: project_root)\n    monkeypatch.setattr(\"stelvio.project.get_dot_stelvio_dir\", lambda: dot_stelvio)\n\n    # Return project_root for convenience in tests\n    return project_root\n\n\n@pytest.fixture\ndef mock_subprocess_run(mocker):\n    \"\"\"Mocks subprocess.run.\"\"\"\n    mock = mocker.patch(\"subprocess.run\", autospec=True)\n    # Default to success\n    mock.return_value = subprocess.CompletedProcess(args=[], returncode=0, stdout=\"\", stderr=\"\")\n    return mock\n\n\n@pytest.fixture\ndef mock_shutil_which(mocker):\n    \"\"\"Mocks shutil.which.\"\"\"\n    mock = mocker.patch(\"shutil.which\", autospec=True)\n    # Default: uv found, pip found if uv isn't checked first\n    mock.side_effect = lambda cmd: f\"/path/to/{cmd}\" if cmd == \"uv\" else \"/path/to/pip\"\n    return mock\n\n\nimport hashlib\nimport shutil\nfrom unittest.mock import MagicMock, call\n\nfrom stelvio.aws._packaging.dependencies import (\n    _ACTIVE_CACHE_FILENAME,\n    _calculate_cache_key,\n    _get_lambda_dependencies_dir,\n    _mark_cache_dir_as_active,\n    RequirementsSource,\n    clean_active_dependencies_caches_file,\n    clean_stale_dependency_caches,\n    ensure_dependencies_installed,\n)\n\n\n# --- Test Cases ---\n\n\ndef test_ensure_dependencies_installed_cache_miss(\n    mock_paths, mock_subprocess_run, mock_shutil_which\n):\n    \"\"\"\n    Test ensure_dependencies_installed when the cache directory does not exist (cache miss).\n    Verifies directory creation, installer execution, active cache marking, and return path.\n    \"\"\"\n    project_root = mock_paths\n    requirements_content = \"requests==2.28.1\\n\"\n    source = RequirementsSource(content=requirements_content)\n\n    # Calculate expected cache key and paths manually for assertion\n    expected_cache_key = _calculate_cache_key(\n        source, DEFAULT_ARCH, DEFAULT_PY_VERSION, project_root\n    )\n    dependencies_base_dir = _get_lambda_dependencies_dir(DEFAULT_CACHE_SUBDIR)\n    expected_cache_dir = dependencies_base_dir / expected_cache_key\n    active_cache_file = dependencies_base_dir / _ACTIVE_CACHE_FILENAME\n\n    # Ensure cache dir doesn't exist initially\n    assert not expected_cache_dir.exists()\n    # Ensure active file doesn't exist initially or is empty\n    active_cache_file.unlink(missing_ok=True)\n\n    # --- Act ---\n    returned_cache_path = ensure_dependencies_installed(\n        requirements_source=source,\n        runtime=DEFAULT_RUNTIME,\n        architecture=DEFAULT_ARCH,\n        project_root=project_root,\n        cache_subdirectory=DEFAULT_CACHE_SUBDIR,\n        log_context=DEFAULT_LOG_CONTEXT,\n    )\n\n    # --- Assert ---\n    # 1. Correct path returned\n    assert returned_cache_path == expected_cache_dir\n\n    # 2. Cache directory was created\n    assert expected_cache_dir.is_dir()\n\n    # 3. Installer was called (subprocess.run)\n    mock_subprocess_run.assert_called_once()\n    call_args, _ = mock_subprocess_run.call_args\n    cmd_list = call_args[0]\n    # Check essential parts of the command\n    assert \"/path/to/uv\" in cmd_list[0]  # Based on default mock_shutil_which\n    assert \"pip\" in cmd_list[1]\n    assert \"install\" in cmd_list\n    assert \"--target\" in cmd_list\n    assert str(expected_cache_dir) in cmd_list  # Target directory is correct\n    assert \"-r\" in cmd_list  # Requirements file option is present\n\n    # 4. Cache directory marked as active\n    assert active_cache_file.is_file()\n    assert expected_cache_key in active_cache_file.read_text()\n
+===================================================================
+diff --git a/tests/aws/_packaging/test_dependencies.py b/tests/aws/_packaging/test_dependencies.py
+--- a/tests/aws/_packaging/test_dependencies.py	(revision 1dc338d7c5b37397ac5532757bbd2b12ab1d837b)
++++ b/tests/aws/_packaging/test_dependencies.py	(date 1744993022979)
+@@ -1,226 +1,0 @@
+-"""
+-Tests for the dependency packaging logic in stelvio.aws._packaging.dependencies.
+-
+-Testing Strategy: Sociable Unit Tests
+-
+-*   Target: Primarily testing the `ensure_dependencies_installed` function as the main
+-    "unit of work" for resolving, caching, and installing dependencies. Also testing
+-    cache cleaning utilities.
+-*   Approach: Use pytest's `tmp_path` for realistic filesystem interactions within
+-    a controlled environment.
+-*   Mocking: Minimal mocking. Only mock true external boundaries:
+-    *   `subprocess.run`: To simulate the execution of `uv` or `pip` without
+-      actually running them.
+-    *   `shutil.which`: To control whether the tests think `uv` and `pip` are
+-      installed, allowing deterministic testing of installer selection.
+-    *   Project/Cache Paths: Mock `get_project_root` and `get_dot_stelvio_dir`
+-      to point within `tmp_path`.
+-*   Assertions: Verify function return values, calls to mocked external boundaries
+-    (subprocess, which), and the state of the filesystem within `tmp_path` (cache
+-    directories created/deleted, content of `active_caches.txt`).
+-
+-Test Scenarios:
+-
+-1.  Setup & Fixtures:
+-    *   Fixture to mock project/cache paths within tmp_path.
+-    *   Fixture to mock subprocess.run.
+-    *   Fixture to mock shutil.which.
+-    *   Helper to create dummy project file structures within tmp_path.
+-
+-2.  `ensure_dependencies_installed` - Cache Handling:
+-    *   Scenario: Cache Miss (no existing cache dir for key).
+-        *   Verify `_calculate_cache_key` is involved (implicitly).
+-        *   Verify cache directory is created (`mkdir`).
+-        *   Verify installer command is generated (`_get_installer_command`).
+-        *   Verify installer is executed (`subprocess.run` called).
+-        *   Verify cache dir is marked active (`_mark_cache_dir_as_active`).
+-        *   Verify correct cache path is returned.
+-    *   Scenario: Cache Hit (cache dir for key exists).
+-        *   Verify `_calculate_cache_key` is involved (implicitly).
+-        *   Verify installer is *not* executed (`subprocess.run` not called).
+-        *   Verify cache dir is marked active (`_mark_cache_dir_as_active`).
+-        *   Verify correct cache path is returned.
+-
+-3.  `ensure_dependencies_installed` - Requirements Source Input:
+-    *   Scenario: Inline content (`RequirementsSource(content=...)`).
+-        *   Verify a temporary requirements file is created, used by the installer,
+-          and deleted afterwards (`_prepare_requirements_source_for_installer`).
+-    *   Scenario: File path (`RequirementsSource(path_from_root=...)`).
+-        *   Verify the original requirements file path (resolved within `tmp_path`)
+-          is passed to the installer (`_prepare_requirements_source_for_installer`).
+-
+-4.  `ensure_dependencies_installed` - Installer Selection & Execution:
+-    *   Scenario: `uv` is present (mock `shutil.which` accordingly).
+-        *   Verify `uv pip install ...` command is passed to `subprocess.run`.
+-        *   Verify correct flags (platform, python version, target dir) are used.
+-    *   Scenario: `uv` absent, `pip` present (mock `shutil.which` accordingly).
+-        *   Verify `pip install ...` command is passed to `subprocess.run`.
+-        *   Verify correct flags (platform, python version, target dir) are used.
+-    *   Scenario: Installation Success (`subprocess.run` returns success).
+-        *   Verify cache directory is *not* deleted.
+-        *   Verify function returns cache path.
+-    *   Scenario: Installation Failure (`subprocess.run` raises error/returns non-zero).
+-        *   Verify cache directory *is* deleted (`shutil.rmtree`).
+-        *   Verify `RuntimeError` is raised by `ensure_dependencies_installed`.
+-
+-5.  `ensure_dependencies_installed` - Cache Key Calculation Aspects (implicitly tested):
+-    *   Verify different requirements content -> different cache path returned (implies different key).
+-    *   Verify different architecture/py_version -> different cache path returned.
+-    *   Setup nested requirements files (`-r file.txt`) within `tmp_path`.
+-        *   Verify changing a nested file -> different cache path returned.
+-        *   Verify identical logical requirements (after normalization/nesting) -> same cache path.
+-    *   Setup requirements files with comments/whitespace/different order.
+-        *   Verify normalization leads to the same cache path for logically identical requirements.
+-
+-6.  Cache Cleaning Utilities:
+-    *   `_mark_cache_dir_as_active`:
+-        *   Call multiple times with same/different keys.
+-        *   Verify `active_caches.txt` is created in the correct subdir within `tmp_path`.
+-        *   Verify `active_caches.txt` contains the expected keys.
+-    *   `clean_active_dependencies_caches_file`:
+-        *   Create dummy `active_caches.txt`.
+-        *   Call function for the correct subdir.
+-        *   Verify file is deleted.
+-        *   Call again when file doesn't exist (no error).
+-    *   `clean_stale_dependency_caches`:
+-        *   Setup: Create active file, active cache dirs, stale cache dirs, non-dir file
+-          within the correct subdir in `tmp_path`.
+-        *   Call function for the correct subdir.
+-        *   Verify stale dirs are deleted.
+-        *   Verify active dirs and non-dir file remain.
+-        *   Verify active file remains.
+-        *   Test edge cases (no active file, empty subdir).
+-
+-7.  Error Handling (Potentially separate, more focused tests if needed):
+-    *   Test `_get_recursive_req_files_hashes` raises `FileNotFoundError` for missing files.
+-    *   Test `_get_recursive_req_files_hashes` raises `ValueError` for refs outside project root.
+-    *   Test `_calculate_cache_key` raises `ValueError` for `-r`/`-c` in inline requirements.
+-    *   Test `_get_installer_command` raises `RuntimeError` if neither uv nor pip found.
+-"""
+-
+-import subprocess
+-from pathlib import Path
+-
+-import pytest
+-
+-# Functions/classes under test
+-
+-# Constants for tests
+-DEFAULT_RUNTIME = "python3.12"
+-DEFAULT_PY_VERSION = "3.12"
+-DEFAULT_ARCH = "x86_64"
+-DEFAULT_CACHE_SUBDIR = "functions"
+-DEFAULT_LOG_CONTEXT = "test_context"
+-
+-
+-# --- Fixtures ---
+-
+-
+-@pytest.fixture
+-def mock_paths(tmp_path: Path, monkeypatch):
+-    """Mocks project root and .stelvio directory to use tmp_path."""
+-    project_root = tmp_path / "project"
+-    dot_stelvio = tmp_path / ".stelvio"
+-    project_root.mkdir()
+-    dot_stelvio.mkdir()
+-
+-    monkeypatch.setattr("stelvio.project.get_project_root", lambda: project_root)
+-    monkeypatch.setattr("stelvio.project.get_dot_stelvio_dir", lambda: dot_stelvio)
+-
+-    # Return project_root for convenience in tests
+-    return project_root
+-
+-
+-@pytest.fixture
+-def mock_subprocess_run(mocker):
+-    """Mocks subprocess.run."""
+-    mock = mocker.patch("subprocess.run", autospec=True)
+-    # Default to success
+-    mock.return_value = subprocess.CompletedProcess(args=[], returncode=0, stdout="", stderr="")
+-    return mock
+-
+-
+-@pytest.fixture
+-def mock_shutil_which(mocker):
+-    """Mocks shutil.which."""
+-    mock = mocker.patch("shutil.which", autospec=True)
+-    # Default: uv found, pip found if uv isn't checked first
+-    mock.side_effect = lambda cmd: f"/path/to/{cmd}" if cmd == "uv" else "/path/to/pip"
+-    return mock
+-
+-
+-import hashlib
+-import shutil
+-from unittest.mock import MagicMock, call
+-
+-from stelvio.aws._packaging.dependencies import (
+-    _ACTIVE_CACHE_FILENAME,
+-    _calculate_cache_key,
+-    _get_lambda_dependencies_dir,
+-    _mark_cache_dir_as_active,
+-    RequirementsSource,
+-    clean_active_dependencies_caches_file,
+-    clean_stale_dependency_caches,
+-    ensure_dependencies_installed,
+-)
+-
+-
+-# --- Test Cases ---
+-
+-
+-def test_ensure_dependencies_installed_cache_miss(
+-    mock_paths, mock_subprocess_run, mock_shutil_which
+-):
+-    """
+-    Test ensure_dependencies_installed when the cache directory does not exist (cache miss).
+-    Verifies directory creation, installer execution, active cache marking, and return path.
+-    """
+-    project_root = mock_paths
+-    requirements_content = "requests==2.28.1\n"
+-    source = RequirementsSource(content=requirements_content)
+-
+-    # Calculate expected cache key and paths manually for assertion
+-    expected_cache_key = _calculate_cache_key(
+-        source, DEFAULT_ARCH, DEFAULT_PY_VERSION, project_root
+-    )
+-    dependencies_base_dir = _get_lambda_dependencies_dir(DEFAULT_CACHE_SUBDIR)
+-    expected_cache_dir = dependencies_base_dir / expected_cache_key
+-    active_cache_file = dependencies_base_dir / _ACTIVE_CACHE_FILENAME
+-
+-    # Ensure cache dir doesn't exist initially
+-    assert not expected_cache_dir.exists()
+-    # Ensure active file doesn't exist initially or is empty
+-    active_cache_file.unlink(missing_ok=True)
+-
+-    # --- Act ---
+-    returned_cache_path = ensure_dependencies_installed(
+-        requirements_source=source,
+-        runtime=DEFAULT_RUNTIME,
+-        architecture=DEFAULT_ARCH,
+-        project_root=project_root,
+-        cache_subdirectory=DEFAULT_CACHE_SUBDIR,
+-        log_context=DEFAULT_LOG_CONTEXT,
+-    )
+-
+-    # --- Assert ---
+-    # 1. Correct path returned
+-    assert returned_cache_path == expected_cache_dir
+-
+-    # 2. Cache directory was created
+-    assert expected_cache_dir.is_dir()
+-
+-    # 3. Installer was called (subprocess.run)
+-    mock_subprocess_run.assert_called_once()
+-    call_args, _ = mock_subprocess_run.call_args
+-    cmd_list = call_args[0]
+-    # Check essential parts of the command
+-    assert "/path/to/uv" in cmd_list[0]  # Based on default mock_shutil_which
+-    assert "pip" in cmd_list[1]
+-    assert "install" in cmd_list
+-    assert "--target" in cmd_list
+-    assert str(expected_cache_dir) in cmd_list  # Target directory is correct
+-    assert "-r" in cmd_list  # Requirements file option is present
+-
+-    # 4. Cache directory marked as active
+-    assert active_cache_file.is_file()
+-    assert expected_cache_key in active_cache_file.read_text()
