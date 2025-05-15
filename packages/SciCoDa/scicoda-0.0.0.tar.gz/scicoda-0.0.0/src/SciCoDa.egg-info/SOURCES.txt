@@ -1,0 +1,7 @@
+pyproject.toml
+src/SciCoDa.egg-info/PKG-INFO
+src/SciCoDa.egg-info/SOURCES.txt
+src/SciCoDa.egg-info/dependency_links.txt
+src/SciCoDa.egg-info/not-zip-safe
+src/SciCoDa.egg-info/top_level.txt
+src/scicoda/__init__.py
