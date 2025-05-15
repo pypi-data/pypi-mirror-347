@@ -1,0 +1,8 @@
+virtual_slave/fsoe_slave.cpython-312-x86_64-linux-gnu.so,sha256=IFbxJFKnOyumsUrnW2_fD96YJ-ue_W5UVjDgt2OgXRk,1184024
+fsoe_master/fsoe_master.cpython-312-x86_64-linux-gnu.so,sha256=EMu-zXxccAUPdky26ZfQk2_CzQqDQUSnnlH2eMT7ZWM,8402560
+fsoe_master/__init__.py,sha256=Wzf5T3NBDfhQoTnhnRNHSlAsE0XMqbclXG-M81Vas70,22
+fsoe_master-0.1.4.dist-info/METADATA,sha256=r7C9JytC6fILaJKQI5LeasMgPiRcwacUHE5dNJT3dhU,237
+fsoe_master-0.1.4.dist-info/LICENSE.md,sha256=OXcvhz7_EqCKzKEB2NSiIu34VC8ZqIH0ABqDAJ56XrM,17474
+fsoe_master-0.1.4.dist-info/RECORD,,
+fsoe_master-0.1.4.dist-info/WHEEL,sha256=nj35MtcdokXahTWDBrtiimlifyKfO_UR4dkz7EFOwDI,151
+fsoe_master-0.1.4.dist-info/top_level.txt,sha256=KRxVYfjHR9W4dAp6_jIkYxjRC9o7KjRFfR5SPv-BueE,12
