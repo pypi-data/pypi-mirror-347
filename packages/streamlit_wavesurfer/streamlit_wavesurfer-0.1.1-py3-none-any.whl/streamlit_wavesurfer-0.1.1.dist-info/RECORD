@@ -1,0 +1,12 @@
+streamlit_wavesurfer/__init__.py,sha256=yxSqdnbsfas8G_6pokjE-GM7PVbjlJD4vBDmUiD-9WY,7489
+streamlit_wavesurfer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streamlit_wavesurfer/utils.py,sha256=SOo-Ad2nK4QBwcY-b3XQ0rDF8eMW7wazBS5MtIa8CPY,20240
+streamlit_wavesurfer/frontend/dist/index.html,sha256=fOcuT6L4JQML697tCj3C2W3AyWsF9SJW5yxJGWj-lmg,695
+streamlit_wavesurfer/frontend/dist/.vite/manifest.json,sha256=cpicH-xkaOvzgBzu5wxDILZXkGHgi68TWrKFmcW_k_k,185
+streamlit_wavesurfer/frontend/dist/assets/index-DZOvgDGO.css,sha256=rA16ARzkIm1-wTZApPMLh3sn6oQGT7m6R354ugTtmks,10341
+streamlit_wavesurfer/frontend/dist/assets/index-n_GQeGK6.js,sha256=M5J3t2QxMxMmbtL4avv4KhXSFGGYqFsZmqJNljxTg9w,552680
+streamlit_wavesurfer/frontend/node_modules/flatted/python/flatted.py,sha256=UYburBDqkySaTfSpntPCUJRxiBGcplusJM7ECX8FEgA,3860
+streamlit_wavesurfer-0.1.1.dist-info/METADATA,sha256=wuAbJJr6IYLfZfdiOx4v266O-LHRlBCB27SJHuOdOjU,5262
+streamlit_wavesurfer-0.1.1.dist-info/WHEEL,sha256=QZxptf4Y1BKFRCEDxD4h2V0mBFQOVFLFEpvxHmIs52A,91
+streamlit_wavesurfer-0.1.1.dist-info/top_level.txt,sha256=IFUhZVV1bJg5YgXOM5jUWomqPs9n7Fc4W-YtC1XkY6g,21
+streamlit_wavesurfer-0.1.1.dist-info/RECORD,,
