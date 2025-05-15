@@ -1,0 +1,10 @@
+bivapp/__init__.py,sha256=HcivlNlj9flyMcsFI4i0hkGaU74i8AJByqKw9J4XSRs,258
+bivapp/plots.py,sha256=YdFJCb3ZwQSt7-N8Z32Oxjns5PC_Z3G29lzVCkZOPiU,10424
+bivapp/sampledata.py,sha256=a3z6jh4MvPIOOLfHynmn_MIlELd_iwqvUxrtwx8mi0o,3891
+bivapp/sampledata/NO2_2023.csv,sha256=I85UPlaAzKmZIvK_Glo2STZa6N48PKxZiVENYtsWK5w,8015818
+bivapp/sampledata/climate-hourly.csv,sha256=rbeS4IPsl2zodo1TKaLWsTfGcr68DF-bYjvFkzZBk8M,1783293
+bivapp/sampledata/openair_test_data.csv,sha256=GnG_gDnTflee5-XdwitnDkvxoBegkwI3kikSRI9hsYw,4134488
+bivapp-0.0.4.dist-info/METADATA,sha256=kSHmlAcr30b0xxlTc2k2Duiehj-hhULixtymq7xzSZc,4272
+bivapp-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bivapp-0.0.4.dist-info/licenses/LICENSE,sha256=bXJqYimmfmtzG89UXcTkMt1yKu3A6aITZ1gnhKaEHj4,1074
+bivapp-0.0.4.dist-info/RECORD,,
