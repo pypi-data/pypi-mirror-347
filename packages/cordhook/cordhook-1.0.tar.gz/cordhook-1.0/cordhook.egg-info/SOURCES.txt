@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+cordhook/__init__.py
+cordhook/embed.py
+cordhook/exceptions.py
+cordhook/utils.py
+cordhook/webhook.py
+cordhook.egg-info/PKG-INFO
+cordhook.egg-info/SOURCES.txt
+cordhook.egg-info/dependency_links.txt
+cordhook.egg-info/requires.txt
+cordhook.egg-info/top_level.txt
