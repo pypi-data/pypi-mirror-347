@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inafish"
+version = "1.0.0"
+description = "A simple library for inafishent (but smol) compression. >[_]"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Public Domain",
+    "Operating System :: OS Independent",
+]
+authors = [
+    { name = "The Odd Cell", email = "me@oddcell.ca" }
+]
+urls = { "Homepage" = "https://github.com/theoddcell/inafish" }
+
+[tool.setuptools]
