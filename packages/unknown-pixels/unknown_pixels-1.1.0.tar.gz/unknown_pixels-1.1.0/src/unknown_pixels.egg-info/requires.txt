@@ -1,0 +1,12 @@
+numpy
+matplotlib
+Pillow
+scipy
+moviepy
+
+[dev]
+ruff==0.11.7
+pre-commit
+
+[test]
+pytest
