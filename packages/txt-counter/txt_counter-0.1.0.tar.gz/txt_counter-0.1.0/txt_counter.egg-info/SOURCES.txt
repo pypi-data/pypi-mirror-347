@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+txt_counter.py
+txt_counter.egg-info/PKG-INFO
+txt_counter.egg-info/SOURCES.txt
+txt_counter.egg-info/dependency_links.txt
+txt_counter.egg-info/requires.txt
+txt_counter.egg-info/top_level.txt
