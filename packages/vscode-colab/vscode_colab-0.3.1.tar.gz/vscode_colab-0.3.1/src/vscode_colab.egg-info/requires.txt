@@ -1,0 +1,8 @@
+requests
+ipython
+jinja2
+loguru
+
+[testing]
+pytest
+pytest-cov
