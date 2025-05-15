@@ -1,0 +1,2 @@
+[console_scripts]
+fastsolv = fastsolv._cli:_fastsolv_predict
