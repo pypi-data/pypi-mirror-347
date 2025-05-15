@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: hoomanmltk
+Version: 0.1.0
+Summary: A collection of modular and reusable machine learning utilities, tools, and helpers
+Home-page: https://github.com/hoom4n/HoomanMLTK
+Author: HOOM4N
+Author-email: homan.amini@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-learn>=1.5.1
+Requires-Dist: nltk>=3.9.1
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: textblob>=0.19.0
+Requires-Dist: contractions>=0.1.73
+Requires-Dist: joblib>=1.4.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# HoomanMLTK
+**HoomanMLTK** is a personal machine learning toolkit that provides modular, reusable components for a variety of ML workflows.
+This project is designed to centralize helpful utilities and abstractions developed during experimentation, prototyping, or production-level ML work.
