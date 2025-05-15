@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: ai-zap
+Version: 0.1.0
+Summary: Простая библиотека для отправки запросов к ИИ через функцию zap()
+Home-page: https://github.com/DanilaLucifer/ai_zap
+Author: Danila
+Author-email: your.email@example.com
+Keywords: ai,chat,api,qwen
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai>=1.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# AI-Zap
+
+Простая библиотека для отправки запросов к ИИ через функцию `zap()`.
+
+## Установка
+
+```bash
+pip install ai-zap
+```
+
+## Использование
+
+```python
+from ai_zap import zap
+
+# Отправка запроса к ИИ
+response = zap("Как работает Python?")
+print(response)
+
+# Использование своего API ключа
+response = zap("Как работает Python?", api_key="ваш_ключ")
+print(response)
+```
+
+## Параметры
+
+Функция `zap()` принимает следующие параметры:
+
+- `text` (str): Текст запроса к ИИ
+- `api_key` (str, опционально): API ключ для доступа к сервису. По умолчанию используется встроенный ключ.
+
+## Требования
+
+- Python 3.6 или выше
+- OpenAI Python client
+
+## Лицензия
+
+MIT
+
+## Поддержка
+
+Если у вас возникли проблемы или есть предложения по улучшению библиотеки, создайте issue в репозитории проекта. 
