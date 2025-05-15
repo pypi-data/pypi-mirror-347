@@ -1,0 +1,14 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "quantrs2"
+version = "0.1.0a2"
+description = "Python bindings for the QuantRS2 quantum computing framework"
+requires-python = ">=3.8"
+
+[tool.maturin]
+manifest-path = "py/Cargo.toml"
+python-source = "py/python"
+module-name = "_quantrs2"
