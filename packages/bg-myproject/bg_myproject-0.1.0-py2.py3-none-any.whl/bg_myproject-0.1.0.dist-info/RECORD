@@ -1,0 +1,17 @@
+members/bgoptimzer/pyproject.toml,sha256=fdaKUH8fc1_Oe6fmS7PuJ-p4aCVggXNeHriiJ99_lCQ,288
+members/bgoptimzer/bgoptimiser/LICENSE,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+members/bgoptimzer/bgoptimiser/README,sha256=K3gU0_yi6Z5WxRtv8qoxPqbp2mQkgEJAqorYkf3-CQA,6
+members/bgoptimzer/bgoptimiser/main.py,sha256=6xJY5hjCJ1kRQ8w2TlVs62UuFEv6SFNbZH-UfoF1Mqs,243
+members/bgoptimzer/dist/.gitignore,sha256=aEiIwOuxfzdCmLZe4oB1JsBmCUxwG8x-u-HBCV9JT8E,1
+members/bgoptimzer/dist/bgoptimiser-0.1.0-py2.py3-none-any.whl,sha256=SeBFe3EEX0oj0bKUOsuwl0v6dujsp_ytwkPEQwuhrUs,772
+members/bgoptimzer/dist/bgoptimiser-0.1.0.tar.gz,sha256=9yla-cuyV8Iqaf9T_h8bljd5jAY2K4h-HTviz8bTM0U,4547
+members/bgtrainer/pyproject.toml,sha256=1qoKx0qm0QYzWD81pTQG9jqfYj9yE3OjMMrAr_7hJOQ,288
+members/bgtrainer/bgtrainer/LICENSE,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+members/bgtrainer/bgtrainer/README,sha256=K3gU0_yi6Z5WxRtv8qoxPqbp2mQkgEJAqorYkf3-CQA,6
+members/bgtrainer/bgtrainer/main.py,sha256=eqJOUhZY_ptrXwLikjCwZNMMxRtgRlv9Su2ZF6nUmXg,349
+members/bgtrainer/dist/bgtrainer-0.1.0-py2.py3-none-any.whl,sha256=UKQg9jgrDuPaiyqIV4wGNeF47iIyewr9gKQBUZ58O54,5393
+members/bgtrainer/dist/bgtrainer-0.1.0.tar.gz,sha256=t8mA5Fdo0QuuZ546jIshzr-lzy42n-xfIJNFQYtYvF0,4600
+bg_myproject-0.1.0.dist-info/METADATA,sha256=Gif3KapGtRtRgfc8i4HLEd2DgymaHVcHVPxd3SAcGiM,244
+bg_myproject-0.1.0.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+bg_myproject-0.1.0.dist-info/licenses/LICENSE,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+bg_myproject-0.1.0.dist-info/RECORD,,
