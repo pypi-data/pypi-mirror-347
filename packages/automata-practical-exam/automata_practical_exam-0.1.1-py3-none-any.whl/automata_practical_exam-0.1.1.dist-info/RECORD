@@ -1,0 +1,12 @@
+automata_practical_exam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automata_practical_exam/DFA_task/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automata_practical_exam/DFA_task/dfa.py,sha256=LzbRWg-74b9pEkSdjoovjW51EPHCAYtm0n9Kg8-4WlI,1048
+automata_practical_exam/Turing_Machine/Turing_Machine.py,sha256=ttY_Eq2PVS9BdHbVlQ4loufdioy9x12raAAXZwI2QMk,1057
+automata_practical_exam/Turing_Machine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit_test_dfa.py,sha256=PLfaEfmmCFnPUkxwtv9YeKNIS3PRedX2D7gCzwLf1-g,1778
+tests/unit_test_turing.py,sha256=EnRh1Kzlx514botcooJ1MFq9KKFAvnToiNmKJV0BSvU,1788
+automata_practical_exam-0.1.1.dist-info/METADATA,sha256=68FnniB6A7K1VS7K1eC_ue59HX2xPfEx4kyRmAjpLCk,1731
+automata_practical_exam-0.1.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+automata_practical_exam-0.1.1.dist-info/top_level.txt,sha256=78ewJgo6teO3ysMT9OHBWcWt6P0viDeWeyF3ACjlmGE,30
+automata_practical_exam-0.1.1.dist-info/RECORD,,
