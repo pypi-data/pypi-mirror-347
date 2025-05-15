@@ -1,0 +1,6 @@
+videosdk/plugins/openai/__init__.py,sha256=lytPalXAu1WWdr08gzLWiz6yGkBvupeQJlcvR0sGAj8,126
+videosdk/plugins/openai/realtime_api.py,sha256=0SLhqZQPJqgTaHy5vl6AnVy3RK-jZW4F_MVy5nxIu4A,21029
+videosdk/plugins/openai/version.py,sha256=k5tJXhBQJ4l9fKHJ76K5w98zBHoYvNk9r-UNH6eQ2-k,21
+videosdk_plugins_openai-0.0.3.dist-info/METADATA,sha256=w_B2-_MjBqJY_5z9Jjt-4CtrNwzX7amowx2RCM6NhnE,774
+videosdk_plugins_openai-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+videosdk_plugins_openai-0.0.3.dist-info/RECORD,,
