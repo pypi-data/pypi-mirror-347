@@ -1,0 +1,2 @@
+[console_scripts]
+file-counter-server = file_counter_server:main
