@@ -1,0 +1,15 @@
+crawlit/__init__.py,sha256=efOIKAlaeosMnHDVkxe7fWUxRxYwdBNp0Gyp5iMvh4o,705
+crawlit/crawlit.py,sha256=qy-gK0iH9J_NyTWLUAL3O4dLhIL-TkptguE1TLllYHo,4304
+crawlit/crawler/__init__.py,sha256=1yGa6URFUwrif-C0qFERUKkS6HVUYaj-jukssN-teFc,299
+crawlit/crawler/engine.py,sha256=6r09TgsxMtLArc3KK7mv-hvUz9JRYRTGcj_qxFQox_I,8578
+crawlit/crawler/fetcher.py,sha256=D_P_TN6YWffs2tQ7HK7iVMuomMaWN3cdHOcXCFQll78,3478
+crawlit/crawler/parser.py,sha256=WaAQsMqdmWmN-fr5SvsSHHc7hRSjWmzBCzeEe83ipFo,2493
+crawlit/crawler/robots.py,sha256=o5lbGugfcm7a7KlRWiU24NTmZJGSfdH_bbSWDOAiNQQ,3844
+crawlit/output/__init__.py,sha256=38dSoHz6TdXvlESmuK6LgANaBuwr52-qZTTZ0ij_z18,336
+crawlit/output/formatters.py,sha256=SH8VZJ_sLff9Y2Wg4fooGyxuq6iVlFxb2EzF2PS2Nbw,11977
+crawlit-0.1.0.dist-info/licenses/LICENSE,sha256=T_DNsXexSTGMsTmLk-XU6XfdPWbyywX7KGG4vFagunM,1075
+crawlit-0.1.0.dist-info/METADATA,sha256=S2gO7ULoBUyzx1d72Oq_aHGkFNagfJQjJU-XmDLFeyw,6586
+crawlit-0.1.0.dist-info/WHEEL,sha256=QZxptf4Y1BKFRCEDxD4h2V0mBFQOVFLFEpvxHmIs52A,91
+crawlit-0.1.0.dist-info/entry_points.txt,sha256=cevDIMmGJP4qJiFpgp68Umj3-UHbLq210IuZrQS8Htw,49
+crawlit-0.1.0.dist-info/top_level.txt,sha256=Qd3TNG7RPZR4NsCtksxMab1A17kF3fUc4L9SAlROSuc,8
+crawlit-0.1.0.dist-info/RECORD,,
