@@ -1,0 +1,11 @@
+django_sorl_async_thumbnails-0.1.0.dist-info/licenses/LICENSE,sha256=FEKrBTLV5bu7E-5jhZlxhep20IS6KH2t1tMGCxG9Lgg,1036
+sorl_async_thumbnails/__init__.py,sha256=gWuqY6WsEpTUGoEaFw5_66mY5D7RwYZ_yN4mib03foA,156
+sorl_async_thumbnails/apps.py,sha256=be0l7Yhs3BXr0tWg_-Hv7hjt-x4p7qqSaeGvhVqlIXM,172
+sorl_async_thumbnails/backend.py,sha256=QsONYCJ2htLq369sPvm6glQ_RUMPrMsQcwlgSqvQ3kk,3336
+sorl_async_thumbnails/conf.py,sha256=1e1ibZgVChtFNAYz6V0aCTAHMAyMf4h54MghJAN_e6o,512
+sorl_async_thumbnails/defaults.py,sha256=B_dvNZig558l0P-xFDzCKY1F8_KjW46pk55bZUpjSLI,412
+sorl_async_thumbnails/tasks.py,sha256=EQSrnrrV4zK7mhVhF_4WxLM9bDq7ShhNlj6pNf41m7Q,1032
+django_sorl_async_thumbnails-0.1.0.dist-info/METADATA,sha256=1TV-0YsyuhkpEbPl8ho1Drp6QfJTWW-W9McyO5d6R1c,3225
+django_sorl_async_thumbnails-0.1.0.dist-info/WHEEL,sha256=A8Eltl-h0W-qZDVezsLjjslosEH_pdYC2lQ0JcbgCzs,91
+django_sorl_async_thumbnails-0.1.0.dist-info/top_level.txt,sha256=OJWqT9_M_QvHXA5n_6nHXZ0BTHgIOje9ori4aF7CGl0,22
+django_sorl_async_thumbnails-0.1.0.dist-info/RECORD,,
