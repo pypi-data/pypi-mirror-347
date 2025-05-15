@@ -1,0 +1,12 @@
+[console_scripts]
+asn_from_list = romancal.associations.asn_from_list:_cli
+mk_skycell_asn_from_skycell_list = romancal.associations.mk_skycell_asn_from_skycell_list:_cli
+mk_skycell_list = romancal.associations.mk_skycell_list:_cli
+roman_static_preview = romancal.scripts.static_preview:command
+skycell_asn = romancal.associations.skycell_asn:_cli
+
+[pytest11]
+stpsf = pytest_romancal.stpsf_plugin
+
+[stpipe.steps]
+romancal = romancal.stpipe.integration:get_steps
