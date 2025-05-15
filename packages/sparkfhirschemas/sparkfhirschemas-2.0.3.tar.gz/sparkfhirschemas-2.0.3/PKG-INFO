@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: sparkfhirschemas
+Version: 2.0.3
+Summary: FHIR Schemas for Spark
+Home-page: https://github.com/icanbwell/SparkFhirSchemas
+Author: Imran Qureshi
+Author-email: imranq2@hotmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: py4j==0.10.9.7
+Requires-Dist: pyspark==3.5.5
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SparkFhirSchemas
+
+
+This project is a collection of [FHIR](https://www.hl7.org/fhir/) schemas for [Apache Spark](https://spark.apache.org/).
+
+## Usage
+1. First update the `fhir.schema.json` file with the FHIR schema you want to use.
+   2. You can find the FHIR schema in the [FHIR specification](https://hl7.org/fhir/R4B/fhir.schema.json).
+3. Run `make schema-RXX` to generate the Spark schema for RXX. Replace "XX" with the verison you desire. For instance if you want to update R4B you would run `make schema-R4B`.
+4. Run `make schema-stu3` to generate the Spark schema for STU3.
+5. Run `make schema-dstu2` to generate the Spark schema for DSTU2.
+
+This will generate the Spark schema in the spark_fhir_schemas directory.
