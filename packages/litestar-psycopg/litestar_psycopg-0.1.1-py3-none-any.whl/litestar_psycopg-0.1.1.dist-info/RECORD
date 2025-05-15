@@ -1,0 +1,10 @@
+litestar_psycopg/__init__.py,sha256=OczjEV6moG2I_bsxa7Pz6A5ecZ9OxYYXHoxdh7XDc-c,238
+litestar_psycopg/__metadata__.py,sha256=V1i1-3LIeIlnGg_ApdJ7ju0n3KU8mmXxKNxiXEeZgmo,326
+litestar_psycopg/_utils.py,sha256=geW7RDZ4mZkc-slO194KXjHWICeKZY7COxuJxr7RX08,1903
+litestar_psycopg/config.py,sha256=NZjOM-xI2NH1_RPpeYl4fPoCp11QEMt6CKrQNOCRb0w,10264
+litestar_psycopg/plugin.py,sha256=kDb-9TgCjdBcxnz4EI6qC1SfTmstTW9fBax_kWpr5XI,1768
+litestar_psycopg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+litestar_psycopg-0.1.1.dist-info/METADATA,sha256=shNeL5r6NBu7alqrL5v_vJYjkwGU30DLv8REtlA6wJ4,3567
+litestar_psycopg-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+litestar_psycopg-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+litestar_psycopg-0.1.1.dist-info/RECORD,,
