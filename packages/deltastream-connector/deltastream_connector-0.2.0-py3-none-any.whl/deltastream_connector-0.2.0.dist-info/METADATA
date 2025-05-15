@@ -1,0 +1,72 @@
+Metadata-Version: 2.4
+Name: deltastream-connector
+Version: 0.2.0
+Summary: An OpenAPI client for the DeltaStream API
+Project-URL: Homepage, https://github.com/deltastreaminc/deltastream-connector-python
+Project-URL: Issues, https://github.com/deltastreaminc/deltastream-connector-python/issues
+Author-email: "DeltaStream Inc." <support@deltastream.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: pydantic>=2
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: typing-extensions>=4.7.1
+Requires-Dist: urllib3<3.0.0,>=1.25.3
+Requires-Dist: websockets>=14.2
+Description-Content-Type: text/markdown
+
+# deltastream-connector
+
+A Python client library for [DeltaStream](https://deltastream.io) - a SQL streaming processing engine based on Apache Flink.
+
+## Features
+
+- Asynchronous API client for DeltaStream
+- Support for SQL statements execution
+- Streaming result sets
+- API Token authentication
+- Python 3.11+ support
+
+## Installation
+
+```bash
+pip install deltastream-connector
+```
+
+## Quick Start
+
+```python
+import asyncio
+from deltastream.api.conn import APIConnection
+
+# Initialize connection with API token
+auth_token = os.getenv("DELTASTREAM_AUTH_TOKEN")
+
+if not auth_token:
+    raise ValueError("Environment variable 'DELTASTREAM_AUTH_TOKEN' is not set")
+
+# Use the token to construct the DSN and create the connection
+dsn = f"https://:{auth_token}@api.deltastream.io/v2"
+conn = APIConnection.from_dsn(dsn)
+
+async def main():
+    # Execute SQL queries
+    rows = await conn.query("SELECT 1;")
+    
+    # Process results asynchronously
+    async for row in rows:
+        print(row)
+
+if __name__ == '__main__':
+    asyncio.run(main())
+```
+
+## Authentication
+
+The connector uses API token authentication. You can obtain an API token from the DeltaStream platform by running `CREATE API_TOKEN api_token_name;` using the console.
+
+## Support
+
+For support, please contact support@deltastream.com or open an issue on our [GitHub repository](https://github.com/deltastreaminc/deltastream-connector/issues).
