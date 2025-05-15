@@ -1,0 +1,2 @@
+[console_scripts]
+chatx = chatx.app:main
