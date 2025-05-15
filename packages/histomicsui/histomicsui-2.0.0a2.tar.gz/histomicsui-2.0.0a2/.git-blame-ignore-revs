@@ -1,0 +1,19 @@
+# This file contains a list of commits that are not likely what
+# you are looking for in `git blame`. You can set this file as
+# a default ignore file for blame by running the following
+# command.
+#
+# $ git config blame.ignoreRevsFile .git-blame-ignore-revs
+
+# PR 287: Add a tox command to fix client formatting
+b566911831095bb4c161e2161e2d1a33cf3f4f18
+# PR 289: Lint vue files
+f1c2190ab04ab867c655b4217f807e9f567772c8
+# PR 296: Use stylus-supremacy for linting and reformating stylus files
+9475b89640a6de84788b79ba68d5ed9aeb1a9ff4
+# PR 359: Apply ruff formatting and linting
+97b21f031e4769043b2c3a464ea4cf8e9a60c219
+# PR 443: Format Girder 5
+d184bf1c2d5c12e643f8e5536c7707744c72e7ba
+0e0e6009391bcbf9bde7be6ebbb121cf84ae1f32
+cbc3c3952acef976b7b0be732e9ebb7686e98c8e
