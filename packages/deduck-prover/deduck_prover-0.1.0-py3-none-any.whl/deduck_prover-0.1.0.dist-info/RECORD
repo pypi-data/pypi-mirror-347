@@ -1,0 +1,15 @@
+deduckprover/__init__.py,sha256=vCMmQTlNuLUr12sP0c4re1V0HHzjdux3TAPD01O2JME,295
+deduckprover/main.py,sha256=0A5haGXTtiEPMUvqM2jlyD0eSsqeL1Selfnqqj8_Kkg,1403
+deduckprover/parser.py,sha256=qrLxNQxRDBbCxvu1sXi48732cZuNmln65X5YQTm88o4,7340
+deduckprover/rules.py,sha256=JBY7pbkD3IX93KRHa2p2Ae-g1U0OQJxw2eUCkHbgz7o,30307
+deduckprover/script.py,sha256=j1ZVmG_BVPsC_DAF06ONYHU5FcB3DACi9VBYMdJE0Cs,3187
+deduckprover/syntax.py,sha256=02Bx3EFoQTWUjCrz65CVvjmcq5eZKu9OC5wY8dUP2p4,19283
+deduckprover/utils.py,sha256=YYlAgvI__VqRHH1vX7ml3Fkb6BnOrSBRfh1S3NSuNks,186
+deduckprover/verifier.py,sha256=0HtGuIIYC95QqXxE9vzhgdFqL2zVpQP4jEOrdSOyYM4,3110
+deduckprover/vscode.py,sha256=FUQRTDtxpQzNg_YzOd10VeRd9AoiSQnwj1OKaIYZvnw,618
+deduck_prover-0.1.0.data/data/LICENSE,sha256=nRkBAzvmrgnGfpZbq3BGdH0FU852svBI8E1poWKZShc,1069
+deduck_prover-0.1.0.data/data/README.md,sha256=6TKMt-2oEwaPtM0vh9TtQclyKde3zOcY4LvOBfkDSuc,389
+deduck_prover-0.1.0.dist-info/METADATA,sha256=6Nx3RighqNsBaW-jGBx8WcI7cZGW_vtDhwNA2tewyWg,1093
+deduck_prover-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+deduck_prover-0.1.0.dist-info/licenses/LICENSE,sha256=nRkBAzvmrgnGfpZbq3BGdH0FU852svBI8E1poWKZShc,1069
+deduck_prover-0.1.0.dist-info/RECORD,,

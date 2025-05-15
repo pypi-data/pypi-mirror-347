@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: deduck-prover
+Version: 0.1.0
+Summary: A little prover for CS 245 at the University of Waterloo
+Author: Yizhou Zhang
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.7
+Requires-Dist: lark>=0.12.0
+Description-Content-Type: text/markdown
+
+# DeDuck Prover
+
+A little prover used in CS 245 at the University of Waterloo. DeDuck, together with a VS Code extension, enables students in CS 245 to program formal-deduction proofs interactively and have them checked by the computer.
+
+## Installation
+
+```bash
+pip install deduck-prover
+```
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details. 
