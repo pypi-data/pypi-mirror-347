@@ -1,0 +1,2 @@
+[console_scripts]
+lazycloud = machines_cli.main:cli
