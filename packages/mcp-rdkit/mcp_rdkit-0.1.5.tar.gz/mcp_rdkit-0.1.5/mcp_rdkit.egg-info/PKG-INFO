@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mcp_rdkit
+Version: 0.1.5
+Summary: A package for RDKit integration with MCP
+Author: Shashank Shekhar Shukla
+Author-email: shukla20shashankshekhar@gmail.com
+Project-URL: Documentation, https://github.com/s20ss/mcp_rdkit#readme
+Project-URL: Source, https://github.com/s20ss/mcp_rdkit
+Project-URL: Issues, https://github.com/s20ss/mcp_rdkit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: rdkit
+Requires-Dist: mcp
+
+
+MCP RDKit is a Python package that integrates the RDKit cheminformatics toolkit with the Model Context Protocol (MCP) framework. It provides tools for molecular visualization, descriptor calculation, and seamless communication with MCP servers for advanced chemical informatics workflows.
