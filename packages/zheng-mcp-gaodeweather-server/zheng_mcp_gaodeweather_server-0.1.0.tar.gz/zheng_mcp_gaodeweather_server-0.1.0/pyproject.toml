@@ -1,0 +1,16 @@
+[project]
+name = "zheng-mcp-gaodeweather-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.8.1",
+]
+
+[project.scripts]
+zheng-mcp-gaodeweather-server = "zheng_mcp_gaodeweather_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
