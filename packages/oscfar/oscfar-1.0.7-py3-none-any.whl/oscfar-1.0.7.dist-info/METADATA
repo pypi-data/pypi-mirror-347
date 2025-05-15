@@ -1,0 +1,998 @@
+Metadata-Version: 2.4
+Name: oscfar
+Version: 1.0.7
+Summary: Order Statistic Constant False Alarm Rate detector package
+Author: Chloé Legué
+Author-email: chloe.legue@mail.mcgill.ca
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# `oscfar`
+
+OSCFAR (Order Statistic Constant False Alarm Rate) is a radar signal processing technique used for target detection. It adaptively estimates the noise or clutter power in the vicinity of a potential target and sets a detection threshold accordingly, maintaining a constant false alarm rate regardless of the background noise characteristics.
+
+## Getting Started
+
+To get started with the OSCFAR implementation, you'll need to set up your environment. We recommend using Conda for managing dependencies.
+
+### **1. Create a Conda Environment:**
+
+```bash
+conda create -n myenv python=3.9  # Or your preferred Python version above 3.9
+conda activate myenv
+```
+
+### **2. Install OSCFAR Package:**
+
+```bash
+pip install oscfar
+```
+
+You may need to manually install some packages like `fitburst`. For `fitburst` follow installation instructions on [GitHub](https://github.com/CHIMEFRB/fitburst).
+
+# **Documentation:**
+
+## Table of Contents
+
+- 🅼 [oscfar](#oscfar)
+- 🅼 [oscfar\.cfar](#oscfar-cfar)
+- 🅼 [oscfar\.cluster](#oscfar-cluster)
+- 🅼 [oscfar\.filters](#oscfar-filters)
+- 🅼 [oscfar\.gaussian_fit](#oscfar-gaussian_fit)
+- 🅼 [oscfar\.reload](#oscfar-reload)
+- 🅼 [oscfar\.setup](#oscfar-setup)
+- 🅼 [oscfar\.utils](#oscfar-utils)
+
+<a name="oscfar"></a>
+
+## 🅼 oscfar
+
+- **Functions:**
+  - 🅵 [do_os_cfar](#oscfar-do_os_cfar)
+
+### Functions
+
+<a name="oscfar-do_os_cfar"></a>
+
+### 🅵 oscfar\.do_os_cfar
+
+```python
+def do_os_cfar(data: np.array, guard_cells, train_cells, rank_k, threshold_factor, averaging, min_dist, min_snr, baseline):
+```
+
+Performs OS-CFAR detection on a 2D data array \(e\.g\., spectrogram\) by summing
+
+along the frequency axis to create a 1D time series\. Applies filtering,
+peak refinement, and baseline removal\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): 2D array of input data \(frequency vs\. time\)\.
+- **guard_cells** (`int`): Number of guard cells on each side of the CUT\.
+- **train_cells** (`int`): Number of training cells on each side of the CUT\.
+- **rank_k** (`float`): Rank \(as a fraction of total training cells\) for OS\.
+- **threshold_factor** (`float`): Scaling factor for the threshold\.
+- **averaging** (`int`): Window size for moving average smoothing\.
+- **min_dist** (`int`): Minimum distance between peaks \(in samples\)\.
+- **min_snr** (`float`): Minimum SNR for peak verification\.
+- **baseline** (`float`): Factor for removing baseline peaks\.
+
+**Returns:**
+
+- `utils.Peaks`: An object containing the refined peak indices and the
+  threshold array from OS-CFAR\.
+  <a name="oscfar-cfar"></a>
+
+## 🅼 oscfar\.cfar
+
+- **Functions:**
+  - 🅵 [os_cfar_1d](#oscfar-cfar-os_cfar_1d)
+  - 🅵 [variable_window_cfar](#oscfar-cfar-variable_window_cfar)
+  - 🅵 [variable_window_os_cfar_indices](#oscfar-cfar-variable_window_os_cfar_indices)
+
+### Functions
+
+<a name="oscfar-cfar-os_cfar_1d"></a>
+
+### 🅵 oscfar\.cfar\.os_cfar_1d
+
+```python
+def os_cfar_1d(data, guard_cells, train_cells, rank_k, threshold_factor):
+```
+
+Performs 1D Ordered Statistic Constant False Alarm Rate \(OS-CFAR\) detection\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): 1D array of input data \(must be in linear power,
+  not dB\)\.
+- **guard_cells** (`int`): Number of guard cells on EACH side of the CUT\.
+- **train_cells** (`int`): Number of training cells on EACH side of the CUT\.
+- **rank_k** (`int`): The rank \(1-based index\) of the sorted training cell
+  values to use for noise estimation \(1 \<= rank_k \<= N\)\.
+  N = 2 \* train_cells is the total number of training cells\.
+  A common choice is around 0\.75 \* N\.
+- **threshold_factor** (`float`): The scaling factor \(alpha\) to multiply the
+  noise estimate by to get the threshold\.
+
+**Returns:**
+
+- `tuple`: A tuple containing:
+- detected_peaks_indices \(np\.ndarray\): Indices where peaks were detected\.
+- threshold \(np\.ndarray\): The calculated threshold for each cell\.
+  \(Same size as input data, padded with NaNs
+  at edges where CFAR wasn't computed\)\.
+  <a name="oscfar-cfar-variable_window_cfar"></a>
+
+### 🅵 oscfar\.cfar\.variable_window_cfar
+
+```python
+def variable_window_cfar(data, guard_cells, min_window, max_window, homogeneity_threshold):
+```
+
+A basic implementation of a Variable Window CFAR detector using a split-window approach\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): The input signal data \(1D\)\.
+- **guard_cells** (`int`): The number of guard cells on each side of the CUT\.
+- **min_window** (`int`): The minimum number of reference cells on each side\.
+- **max_window** (`int`): The maximum number of reference cells on each side\.
+- **homogeneity_threshold** (`float`): A threshold to determine if the reference
+  windows are considered homogeneous\.
+
+**Returns:**
+
+- `np.ndarray`: A boolean array indicating detections \(True\) and non-detections \(False\)\.
+  <a name="oscfar-cfar-variable_window_os_cfar_indices"></a>
+
+### 🅵 oscfar\.cfar\.variable_window_os_cfar_indices
+
+```python
+def variable_window_os_cfar_indices(data, guard_cells, min_window, max_window, k_rank, homogeneity_threshold, threshold_factor):
+```
+
+A basic implementation of a Variable Window OS-CFAR detector returning detection indices\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): The input signal data \(1D\)\.
+- **guard_cells** (`int`): The number of guard cells on each side of the CUT\.
+- **min_window** (`int`): The minimum number of reference cells on each side\.
+- **max_window** (`int`): The maximum number of reference cells on each side\.
+- **k_rank** (`int`): The rank of the order statistic to use for noise estimation\.
+- **homogeneity_threshold** (`float`): A threshold to determine if the reference
+  windows are considered homogeneous\.
+- **threshold_factor** (`float`): Factor multiplied by the noise estimate for the threshold\.
+
+**Returns:**
+
+- `np.ndarray`: An array of indices where detections occurred\.
+  <a name="oscfar-cluster"></a>
+
+## 🅼 oscfar\.cluster
+
+- **Functions:**
+  - 🅵 [cluster_peaks](#oscfar-cluster-cluster_peaks)
+
+### Functions
+
+<a name="oscfar-cluster-cluster_peaks"></a>
+
+### 🅵 oscfar\.cluster\.cluster_peaks
+
+```python
+def cluster_peaks(peak_positions, peak_heights, n, max_e = 0.7):
+```
+
+Clusters peaks based on their positions and heights using DBSCAN\.
+
+**Parameters:**
+
+- **peak_positions** (`list or np.ndarray`): Positions of the peaks\.
+- **peak_heights** (`list or np.ndarray`): Heights of the peaks\.
+- **n** (`int`): Minimum number of samples in a cluster\.
+- **max_e** (`float`): The maximum distance between two samples for
+  one to be considered as in the neighborhood
+  of the other\. Defaults to 0\.7\.
+
+**Returns:**
+
+- `list`: A list of representative peak positions, one from each cluster\.
+  <a name="oscfar-filters"></a>
+
+## 🅼 oscfar\.filters
+
+- **Functions:**
+  - 🅵 [remove_baseline_peaks](#oscfar-filters-remove_baseline_peaks)
+  - 🅵 [median_filter](#oscfar-filters-median_filter)
+  - 🅵 [lowpass_filter](#oscfar-filters-lowpass_filter)
+  - 🅵 [highpass_filter](#oscfar-filters-highpass_filter)
+  - 🅵 [group_close_peaks](#oscfar-filters-group_close_peaks)
+  - 🅵 [find_representative_peaks](#oscfar-filters-find_representative_peaks)
+  - 🅵 [verify_peaks_snr](#oscfar-filters-verify_peaks_snr)
+  - 🅵 [enforce_min_distance](#oscfar-filters-enforce_min_distance)
+  - 🅵 [filter_peaks_by_extent_1d](#oscfar-filters-filter_peaks_by_extent_1d)
+  - 🅵 [moving_average_filter](#oscfar-filters-moving_average_filter)
+
+### Functions
+
+<a name="oscfar-filters-remove_baseline_peaks"></a>
+
+### 🅵 oscfar\.filters\.remove_baseline_peaks
+
+```python
+def remove_baseline_peaks(data, detection_indices, noise_estimates, secondary_threshold_factor = 2.0):
+```
+
+Removes detected peaks that are too close to the baseline using a secondary amplitude threshold\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): The original signal data\.
+- **detection_indices** (`np.ndarray`): Indices of peaks detected by OS-CFAR\.
+- **noise_estimates** (`np.ndarray`): Array of noise estimates corresponding to each detection\.
+- **secondary_threshold_factor** (`float`): Factor multiplied by the noise estimate
+  to set the secondary threshold\.
+
+**Returns:**
+
+- `np.ndarray`: Indices of the filtered detections\.
+  <a name="oscfar-filters-median_filter"></a>
+
+### 🅵 oscfar\.filters\.median_filter
+
+```python
+def median_filter(data, kernel_size):
+```
+
+Applies a median filter to the 1D data\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): 1D array of input data\.
+- **kernel_size** (`int`): The size of the median filter kernel\. Must be a
+  positive integer\. If even, it will be incremented
+  by 1 to ensure an odd size\.
+
+**Returns:**
+
+- `np.ndarray`: The median-filtered data array, same shape as input\.
+
+**Raises:**
+
+- **ValueError**: If input data is not a 1D numpy array, or if kernel_size
+  is not a positive integer\.
+  <a name="oscfar-filters-lowpass_filter"></a>
+
+### 🅵 oscfar\.filters\.lowpass_filter
+
+```python
+def lowpass_filter(data, cutoff_freq, sampling_rate, order = 5):
+```
+
+Applies a low-pass Butterworth filter to the 1D data\.
+
+This uses a zero-phase filter \('filtfilt'\) to avoid introducing phase shifts in the filtered signal\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): 1D array of input data \(e\.g\., time series\)\.
+- **cutoff_freq** (`float`): The desired cutoff frequency in Hz\. Frequencies
+  above this value will be attenuated\.
+- **sampling_rate** (`float`): The sampling rate of the input data in Hz\.
+  This is crucial for digital filter design\.
+- **order** (`int`): The order of the Butterworth filter\. Higher
+  orders provide a steeper rolloff but can be
+  less stable\. Defaults to 5\.
+
+**Returns:**
+
+- `np.ndarray`: The low-pass filtered data array, same shape as input\.
+
+**Raises:**
+
+- **ValueError**: If input data is not a 1D numpy array, or if
+  cutoff_freq or sampling_rate are invalid\.
+  <a name="oscfar-filters-highpass_filter"></a>
+
+### 🅵 oscfar\.filters\.highpass_filter
+
+```python
+def highpass_filter(data, cutoff_freq, sampling_rate, order = 5):
+```
+
+Applies a high-pass Butterworth filter to the 1D data\.
+
+This uses a zero-phase filter \('filtfilt'\) to avoid introducing
+phase shifts in the filtered signal\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): 1D array of input data \(e\.g\., time series\)\.
+- **cutoff_freq** (`float`): The desired cutoff frequency in Hz\. Frequencies
+  below this value will be attenuated\.
+- **sampling_rate** (`float`): The sampling rate of the input data in Hz\.
+  This is crucial for digital filter design\.
+- **order** (`int`): The order of the Butterworth filter\. Higher
+  orders provide a steeper rolloff but can be
+  less stable\. Defaults to 5\.
+
+**Returns:**
+
+- `np.ndarray`: The high-pass filtered data array, same shape as input\.
+
+**Raises:**
+
+- **ValueError**: If input data is not a 1D numpy array, or if
+  cutoff_freq or sampling_rate are invalid\.
+  <a name="oscfar-filters-group_close_peaks"></a>
+
+### 🅵 oscfar\.filters\.group_close_peaks
+
+```python
+def group_close_peaks(peak_indices, min_distance):
+```
+
+Groups peak indices that are close to each other\.
+
+Iterates through sorted peak indices and groups any peaks that are
+separated by less than or equal to 'min_distance' samples\.
+
+**Parameters:**
+
+- **peak_indices** (`list or np.ndarray`): A list or array of peak indices,
+  assumed to be sorted or will be sorted\.
+- **min_distance** (`int`): The maximum distance \(in samples\) between two
+  consecutive peaks for them to be considered
+  part of the same group\.
+
+**Returns:**
+
+- `list[list[int]]`: A list where each element is a list representing a
+  group of close peak indices\. Returns an empty list
+  if no peaks are provided\.
+  <a name="oscfar-filters-find_representative_peaks"></a>
+
+### 🅵 oscfar\.filters\.find_representative_peaks
+
+```python
+def find_representative_peaks(data, peak_indices, min_distance):
+```
+
+Groups close peaks and returns the index of the maximum peak from each group\.
+
+First, groups peaks that are within 'min_distance' of each other using
+group_close_peaks\. Then, for each group, identifies the index
+corresponding to the highest value in the 'data' array\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): The 1D data array \(e\.g\., time series\) where
+  peak values are found\. Used to determine the max peak\.
+- **peak_indices** (`list or np.ndarray`): A list or array of peak indices
+  to be grouped and processed\.
+- **min_distance** (`int`): The maximum distance \(in samples\) between two
+  consecutive peaks for them to be considered
+  part of the same group\.
+
+**Returns:**
+
+- `list[int]`: A list containing the index of the maximum peak from
+  each identified group\. Returns an empty list if no
+  peaks are provided\.
+  <a name="oscfar-filters-verify_peaks_snr"></a>
+
+### 🅵 oscfar\.filters\.verify_peaks_snr
+
+```python
+def verify_peaks_snr(data, peak_indices, noise_window_factor = 3, min_snr = 3.0):
+```
+
+Verifies peaks based on their local Signal-to-Noise Ratio \(SNR\)\.
+
+Calculates SNR for each peak relative to the noise estimated in
+adjacent windows\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): The 1D data array \(e\.g\., time series\) where
+  peaks were detected\.
+- **peak_indices** (`list or np.ndarray`): Indices of the detected peaks\.
+- **noise_window_factor** (`int`): Determines the size and offset
+  of the noise estimation windows
+  relative to a conceptual 'peak width'\.
+  A simple proxy for peak width \(e\.g\., 5 samples\)
+  is used internally\. The noise windows will
+  be roughly this size and offset by
+  this amount from the peak center\.
+  Defaults to 3\.
+- **min_snr** (`float`): The minimum acceptable local SNR for a
+  peak to be considered verified\. Defaults to 3\.0\.
+
+**Returns:**
+
+- `list`: A list of indices corresponding to the verified peaks\.
+
+**Raises:**
+
+- **ValueError**: If input data is not a 1D numpy array\.
+  <a name="oscfar-filters-enforce_min_distance"></a>
+
+### 🅵 oscfar\.filters\.enforce_min_distance
+
+```python
+def enforce_min_distance(raw_peak_indices, data_values, min_distance):
+```
+
+Refines CFAR detections to enforce a minimum distance between peaks\.
+
+**Parameters:**
+
+- **raw_peak_indices**: List of indices where CFAR detected a peak\.
+- **data_values**: The original data array \(or SNR array\) used for sorting\.
+- **min_distance**: The minimum allowed separation between final peaks \(in indices\)\.
+
+**Returns:**
+
+- List of indices of the final, refined peaks\.
+  <a name="oscfar-filters-filter_peaks_by_extent_1d"></a>
+
+### 🅵 oscfar\.filters\.filter_peaks_by_extent_1d
+
+```python
+def filter_peaks_by_extent_1d(peak_indices, min_extent, max_extent):
+```
+
+Filters a list of 1D peak indices, removing peaks that belong to consecutive groups larger than max_extent\.
+
+**Parameters:**
+
+- **peak_indices** (`list or np.ndarray`): A list or array of integer indices
+  where peaks were detected by CFAR\.
+  Assumed to be along a single dimension\.
+- **max_extent** (`int`): The maximum allowed number of consecutive indices
+  for a valid peak group\. Groups larger than this
+  are considered extended clutter/scattering and removed\.
+
+**Returns:**
+
+- `list`: A list of filtered peak indices, keeping only those belonging
+  to groups with extent \<= max_extent\.
+  <a name="oscfar-filters-moving_average_filter"></a>
+
+### 🅵 oscfar\.filters\.moving_average_filter
+
+```python
+def moving_average_filter(data, window_size):
+```
+
+Applies a simple moving average filter to the 1D data\.
+
+Each point in the output is the average of the 'window_size' neighboring
+points in the input data \(including the point itself\)\. Uses 'same' mode
+for convolution, meaning the output array has the same size as the input,
+but edge effects might be present where the window doesn't fully overlap\.
+
+**Parameters:**
+
+- **data** (`np.ndarray`): 1D array of input data\.
+- **window_size** (`int`): The number of points to include in the averaging
+  window\. Should be an odd number for a centered average,
+  but works with even numbers too\. Must be positive\.
+
+**Returns:**
+
+- `np.ndarray`: The smoothed data array, same shape as input\.
+
+**Raises:**
+
+- **ValueError**: If input data is not a 1D numpy array or if window_size
+  is not a positive integer\.
+  <a name="oscfar-gaussian_fit"></a>
+
+## 🅼 oscfar\.gaussian_fit
+
+- **Functions:**
+  - 🅵 [sum_of_gaussians](#oscfar-gaussian_fit-sum_of_gaussians)
+  - 🅵 [sum_of_scattered_gaussians](#oscfar-gaussian_fit-sum_of_scattered_gaussians)
+  - 🅵 [find_best_multi_gaussian_fit](#oscfar-gaussian_fit-find_best_multi_gaussian_fit)
+  - 🅵 [find_best_multi_gaussian_fit_combinatorial](#oscfar-gaussian_fit-find_best_multi_gaussian_fit_combinatorial)
+
+### Functions
+
+<a name="oscfar-gaussian_fit-sum_of_gaussians"></a>
+
+### 🅵 oscfar\.gaussian_fit\.sum_of_gaussians
+
+```python
+def sum_of_gaussians(x, *params):
+```
+
+Calculates the sum of multiple Gaussian functions\.
+
+Each Gaussian is defined by its amplitude, mean, and standard deviation\.
+The parameters for the Gaussians are provided in a flat list:
+\[amp1, mean1, stddev1, amp2, mean2, stddev2, \.\.\., ampN, meanN, stddevN\]
+
+**Parameters:**
+
+- **x** (`np.array`): The independent variable where the functions are calculated\.
+- **\*params** (`list or np.array`): A variable number of arguments representing the parameters\.
+  The total number of parameters must be a multiple of 3\.
+- amp: Amplitude of the Gaussian\.
+- mean: Mean \(center\) of the Gaussian\.
+- stddev: Standard deviation \(width\) of the Gaussian\.
+
+**Returns:**
+
+- `y (np.array)`: The sum of the Gaussian functions evaluated at x\.
+
+**Raises:**
+
+- **ValueError**: If the number of parameters in \`params\` is not a multiple of 3\.
+  <a name="oscfar-gaussian_fit-sum_of_scattered_gaussians"></a>
+
+### 🅵 oscfar\.gaussian_fit\.sum_of_scattered_gaussians
+
+```python
+def sum_of_scattered_gaussians(x, *params):
+```
+
+Calculates the sum of multiple scattered Gaussian functions\.
+
+Each scattered Gaussian is defined by its amplitude, mean, standard deviation,
+and scattering timescale\. The parameters for the scattered Gaussians are
+provided in a flat list:
+\[amp1, mean1, sigma1, tau1, amp2, mean2, sigma2, tau2, \.\.\., ampN, meanN, sigmaN, tauN\]
+
+**Parameters:**
+
+- **x** (`np.array`): The independent variable where the functions are calculated\.
+- **\*params** (`list or np.array`): A variable number of arguments representing the parameters\.
+  The total number of parameters must be a multiple of 4\.
+- amp: Amplitude of the scattered Gaussian\.
+- mean: Mean \(center\) of the scattered Gaussian\.
+- sigma: Standard deviation \(width\) of the Gaussian before scattering\.
+- tau: Scattering timescale\.
+
+**Returns:**
+
+- `y (np.array)`: The sum of the scattered Gaussian functions evaluated at x\.
+
+**Raises:**
+
+- **ValueError**: If the number of parameters in \`params\` is not a multiple of 4\.
+  <a name="oscfar-gaussian_fit-find_best_multi_gaussian_fit"></a>
+
+### 🅵 oscfar\.gaussian_fit\.find_best_multi_gaussian_fit
+
+```python
+def find_best_multi_gaussian_fit(x_data, y_data, initial_flat_params, max_n_gaussians = None, y_err = None):
+```
+
+Finds the best fit to the data using a sum of Gaussian functions\.
+
+This function attempts to fit the data with a varying number of Gaussian
+components, up to a specified maximum\. The best fit is determined by
+comparing the Bayesian Information Criterion \(BIC\) for each fit\.
+
+**Parameters:**
+
+- **x_data** (`np.array`): The independent variable where the data is measured\.
+- **y_data** (`np.array`): The dependent data to be fitted\.
+- **initial_flat_params** (`list or np.array`): A flat list of initial
+  parameters for Gaussian
+  components, ordered as
+  \[amp1, mean1, sigma1, amp2, mean2, sigma2, \.\.\.\]\.
+  Amplitudes can be positive or negative\.
+- **max_n_gaussians** (`int`): The maximum number of Gaussian
+  components to try\. If None, it defaults
+  to the number of components implied by
+  \`initial_flat_params\`\.
+- **y_err** (`list or np.array`): Error on y_data\. If provided, it's used in
+  \`curve_fit\` for weighted least squares\.
+
+**Returns:**
+
+- `dict`: A dictionary containing the results of the fitting process\.
+  The dictionary has two keys:
+- 'best_fit': A dictionary containing the results of the best fit
+  found \(lowest BIC\)\. It includes: - 'n_components': The number of Gaussian components
+  in the best fit\. - 'popt': The optimized parameters for the best fit\. - 'pcov': The estimated covariance of popt\. - 'bic': The Bayesian Information Criterion \(BIC\) for
+  the best fit\. - 'rss': The Residual Sum of Squares for the best fit\.
+- 'all_fits': A list of dictionaries, each containing the results
+  for a fit with a specific number of components\.
+  Each dictionary in the list has the same structure
+  as 'best_fit', but for a different number of components\.
+
+**Raises:**
+
+- **ValueError**: If \`initial_flat_params\` is invalid \(empty or not a multiple of 3\), if \`x_data\` and \`y_data\` are empty or have different lengths\.
+  <a name="oscfar-gaussian_fit-find_best_multi_gaussian_fit_combinatorial"></a>
+
+### 🅵 oscfar\.gaussian_fit\.find_best_multi_gaussian_fit_combinatorial
+
+```python
+def find_best_multi_gaussian_fit_combinatorial(x_data, y_data, initial_flat_params, max_n_gaussians = None, y_err = None, max_initial_components_for_pool = None, model_to_test = 'gaussian', default_initial_tau = 0.0001, max_tau_bound_factor = 1.0, use_multiprocessing = True, num_processes = None):
+```
+
+Performs a grid search to find the best multi-component fit by trying
+
+different numbers of components, different combinations of initial peak
+guesses, and optionally different model types \(Gaussian or Scattered Gaussian\)\.
+
+This version supports multiprocessing to speed up the fitting process\.
+
+Args:
+\(Same as the single-process version, plus the following:\)
+use_multiprocessing \(bool, optional\):
+Whether to use multiprocessing\. Defaults to True\.
+num_processes \(int, optional\):
+The number of processes to use\. If None, uses the number of CPU cores\.
+
+Returns:
+\(Same as the single-process version\)
+
+Raises:
+\(Same as the single-process version\)
+<a name="oscfar-reload"></a>
+
+## 🅼 oscfar\.reload
+
+- **Functions:**
+  - 🅵 [update_version](#oscfar-reload-update_version)
+  - 🅵 [update_init_version](#oscfar-reload-update_init_version)
+  - 🅵 [update_setup_version](#oscfar-reload-update_setup_version)
+
+### Functions
+
+<a name="oscfar-reload-update_version"></a>
+
+### 🅵 oscfar\.reload\.update_version
+
+```python
+def update_version(version):
+```
+
+Updates the version number in \_\_init\_\_\.py and setup\.py\.
+<a name="oscfar-reload-update_init_version"></a>
+
+### 🅵 oscfar\.reload\.update_init_version
+
+```python
+def update_init_version(version):
+```
+
+Updates the version number in \_\_init\_\_\.py\.
+<a name="oscfar-reload-update_setup_version"></a>
+
+### 🅵 oscfar\.reload\.update_setup_version
+
+```python
+def update_setup_version(version):
+```
+
+Updates the version number in setup\.py\.
+<a name="oscfar-setup"></a>
+
+## 🅼 oscfar\.setup
+
+<a name="oscfar-utils"></a>
+
+## 🅼 oscfar\.utils
+
+- **Classes:**
+  - 🅲 [NpzReader](#oscfar-utils-NpzReader)
+  - 🅲 [NpzWriter](#oscfar-utils-NpzWriter)
+  - 🅲 [Peaks](#oscfar-utils-Peaks)
+  - 🅲 [WaterFallAxes](#oscfar-utils-WaterFallAxes)
+  - 🅲 [WaterFallGrid](#oscfar-utils-WaterFallGrid)
+
+### Classes
+
+<a name="oscfar-utils-NpzReader"></a>
+
+### 🅲 oscfar\.utils\.NpzReader
+
+```python
+class NpzReader(DataReader):
+```
+
+Class for reading \.npz files containing spectrogram data\.
+
+Inherits from fitburst\.backend\.generic\.DataReader\.
+
+**Attributes:**
+
+- **metadata** (`dict`): Metadata associated with the data\.
+- **downsampling_factor** (`int`): Factor by which the data has been downsampled\.
+
+**Functions:**
+
+<a name="oscfar-utils-NpzReader-__init__"></a>
+
+#### 🅵 oscfar\.utils\.NpzReader\.\_\_init\_\_
+
+```python
+def __init__(self, fname, factor):
+```
+
+Initializes the NpzReader with the given file and downsampling factor\.
+
+**Parameters:**
+
+- **fname** (`str`): Path to the \.npz file\.
+- **factor** (`int`): Downsampling factor applied to the data\.
+  <a name="oscfar-utils-NpzReader-__repr__"></a>
+
+#### 🅵 oscfar\.utils\.NpzReader\.\_\_repr\_\_
+
+```python
+def __repr__(self):
+```
+
+Returns a string representation of the NpzReader object\.
+<a name="oscfar-utils-NpzReader-__str__"></a>
+
+#### 🅵 oscfar\.utils\.NpzReader\.\_\_str\_\_
+
+```python
+def __str__(self):
+```
+
+Returns a string representation of the NpzReader object\.
+<a name="oscfar-utils-NpzWriter"></a>
+
+### 🅲 oscfar\.utils\.NpzWriter
+
+```python
+class NpzWriter:
+```
+
+Class for writing data to \.npz files, typically after processing\.
+
+**Attributes:**
+
+- **reader** (`NpzReader`): An instance of NpzReader containing the original data\.
+- **burst_parameters** (`dict`): Dictionary of burst parameters to be saved\.
+
+**Functions:**
+
+<a name="oscfar-utils-NpzWriter-__init__"></a>
+
+#### 🅵 oscfar\.utils\.NpzWriter\.\_\_init\_\_
+
+```python
+def __init__(self, original_data: NpzReader):
+```
+
+Initializes the NpzWriter with the given NpzReader instance\.
+
+**Parameters:**
+
+- **original_data** (`NpzReader`): An instance of NpzReader containing the
+  original data to be processed and saved\.
+  <a name="oscfar-utils-NpzWriter-update_burst_parameters"></a>
+
+#### 🅵 oscfar\.utils\.NpzWriter\.update_burst_parameters
+
+```python
+def update_burst_parameters(self, **kwargs):
+```
+
+Updates the burst parameters with the provided keyword arguments\.
+
+**Parameters:**
+
+- \***\*kwargs**: Keyword arguments representing burst parameters to update\.
+  Possible keys include:
+- 'amplitude': Amplitude of the burst\.
+- 'dm': Dispersion measure of the burst\.
+- 'scattering_timescale': Scattering timescale of the burst\.
+- 'arrival_time': Arrival time of the burst\.
+- 'burst_width': Intrinsic width of the burst\.
+- 'spectral_running': Spectral index of the burst\.
+  <a name="oscfar-utils-NpzWriter-save"></a>
+
+#### 🅵 oscfar\.utils\.NpzWriter\.save
+
+```python
+def save(self, new_filepath: str):
+```
+
+Saves the processed data and burst parameters to a new \.npz file\.
+
+**Parameters:**
+
+- **new_filepath** (`str`): Path to the new \.npz file where the data
+  will be saved\.
+  <a name="oscfar-utils-Peaks"></a>
+
+### 🅲 oscfar\.utils\.Peaks
+
+```python
+class Peaks:
+```
+
+Class to hold results from OS-CFAR\.
+
+**Attributes:**
+
+- **peaks** (`np.array`): First half of the OS-CFAR results containing the peaks resulting from the algorithm\.
+- **threshold** (`np.array`): Second half of the OS-CFAR results containing the threshold used by the algorithm\.
+
+**Functions:**
+
+<a name="oscfar-utils-Peaks-__init__"></a>
+
+#### 🅵 oscfar\.utils\.Peaks\.\_\_init\_\_
+
+```python
+def __init__(self, oscfar_result):
+```
+
+Initializes the Peaks object with the result from OS-CFAR\.
+
+**Parameters:**
+
+- **oscfar_result** (`tuple`): A tuple containing the detected peak indices
+  and the threshold array\.
+  <a name="oscfar-utils-WaterFallAxes"></a>
+
+### 🅲 oscfar\.utils\.WaterFallAxes
+
+```python
+class WaterFallAxes:
+```
+
+Class to create axes for waterfall plots \(spectrograms\)\.
+
+**Attributes:**
+
+- **\_data** (`DataReader`): DataReader object containing the spectrogram data\.
+- **show_ts** (`bool`): Whether to show the time series plot\.
+- **show_spec** (`bool`): Whether to show the spectrum plot\.
+- **im** (`matplotlib.axes._subplots.AxesSubplot`): Axes for the spectrogram\.
+- **ts** (`matplotlib.axes._subplots.AxesSubplot`): Axes for the time series plot\.
+- **spec** (`matplotlib.axes._subplots.AxesSubplot`): Axes for the spectrum plot\.
+- **time_series** (`np.ndarray`): Time series data \(sum over frequencies\)\.
+- **freq_series** (`np.ndarray`): Frequency series data \(sum over time\)\.
+
+**Functions:**
+
+<a name="oscfar-utils-WaterFallAxes-__init__"></a>
+
+#### 🅵 oscfar\.utils\.WaterFallAxes\.\_\_init\_\_
+
+```python
+def __init__(self, data: DataReader, width: float, height: float, bottom: float, left: float = None, hratio: float = 1, vratio: float = 1, show_ts = True, show_spec = True, labels_on = [True, True], title = '', readjust_title = 0):
+```
+
+Initializes the WaterFallAxes object\.
+
+**Parameters:**
+
+- **data** (`DataReader`): DataReader object containing the spectrogram data\.
+- **width** (`float`): Width of the main spectrogram plot\.
+- **height** (`float`): Height of the main spectrogram plot\.
+- **bottom** (`float`): Bottom position of the main spectrogram plot\.
+- **left** (`float`): Left position of the main spectrogram plot\.
+  Defaults to the value of 'bottom'\.
+- **hratio** (`float`) (default: `1`): Horizontal ratio for plot dimensions\. Defaults to 1\.
+- **vratio** (`float`) (default: `1`): Vertical ratio for plot dimensions\. Defaults to 1\.
+- **show_ts** (`bool`) (default: `True`): Whether to show the time series plot\. Defaults to True\.
+- **show_spec** (`bool`) (default: `True`): Whether to show the spectrum plot\. Defaults to True\.
+- **labels_on** (`list`): List of two booleans indicating whether to
+  show labels on the x and y axes, respectively\.
+  Defaults to \[True, True\]\.
+- **title** (`str`) (default: `""`): Title of the plot\. Defaults to ""\.
+- **readjust_title** (`int`) (default: `0`): Vertical adjustment for the title position\. Defaults to 0\.
+  <a name="oscfar-utils-WaterFallAxes-plot"></a>
+
+#### 🅵 oscfar\.utils\.WaterFallAxes\.plot
+
+```python
+def plot(self):
+```
+
+Plots the spectrogram\.
+<a name="oscfar-utils-WaterFallAxes-plot_time_peaks"></a>
+
+#### 🅵 oscfar\.utils\.WaterFallAxes\.plot_time_peaks
+
+```python
+def plot_time_peaks(self, peaks: Peaks, color, show_thres = False):
+```
+
+Plots vertical lines on the spectrogram at the time indices of the detected peaks\.
+
+Also plots the peaks on the time series plot if it is shown\.
+
+**Parameters:**
+
+- **peaks** (`Peaks`): An object containing the peak indices and threshold\.
+- **color** (`str`): Color for the vertical lines and scatter points\.
+- **show_thres** (`bool`): Whether to show the threshold on the time series plot\.
+  <a name="oscfar-utils-WaterFallGrid"></a>
+
+### 🅲 oscfar\.utils\.WaterFallGrid
+
+```python
+class WaterFallGrid:
+```
+
+Class to create a grid of waterfall plots \(spectrograms\)\.
+
+**Attributes:**
+
+- **nrows** (`int`): Number of rows in the grid\.
+- **ncols** (`int`): Number of columns in the grid\.
+- **axes** (`np.ndarray`): 2D array of WaterFallAxes objects representing the grid\.
+- **vs** (`float`): Vertical spacing between plots\.
+- **hs** (`float`): Horizontal spacing between plots\.
+
+**Functions:**
+
+<a name="oscfar-utils-WaterFallGrid-__init__"></a>
+
+#### 🅵 oscfar\.utils\.WaterFallGrid\.\_\_init\_\_
+
+```python
+def __init__(self, nrows: int, ncols: int, vspacing = 0.1, hspacing = 0.1):
+```
+
+Initializes the WaterFallGrid object\.
+
+**Parameters:**
+
+- **nrows** (`int`): Number of rows in the grid\.
+- **ncols** (`int`): Number of columns in the grid\.
+- **vspacing** (`float`) (default: `0.1`): Vertical spacing between plots\. Defaults to 0\.1\.
+- **hspacing** (`float`) (default: `0.1`): Horizontal spacing between plots\. Defaults to 0\.1\.
+  <a name="oscfar-utils-WaterFallGrid-plot"></a>
+
+#### 🅵 oscfar\.utils\.WaterFallGrid\.plot
+
+```python
+def plot(self, data: list, peaks: list, titles: list, color, labels = [True, False], adjust_t = 0, show_thres = False):
+```
+
+Plots the waterfall grid with the provided data, peaks, and titles\.
+
+**Parameters:**
+
+- **data** (`list`): List of DataReader objects, one for each subplot\.
+- **peaks** (`list`): List of Peaks objects, one for each subplot\.
+- **titles** (`list`): List of titles for each subplot\.
+- **color** (`str`): Color for the peak markers\.
+- **labels** (`list`): List of two booleans indicating whether to
+  show labels on the x and y axes, respectively\.
+  Defaults to \[True, False\]\.
+- **adjust_t** (`int`) (default: `0`): Vertical adjustment for the title position\. Defaults to 0\.
+- **show_thres** (`bool`): Whether to show the threshold on the time series plot\.
+  <a name="oscfar-utils-WaterFallGrid-add_info"></a>
+
+#### 🅵 oscfar\.utils\.WaterFallGrid\.add_info
+
+```python
+def add_info(self, info: pd.DataFrame):
+```
+
+Adds a table with additional information below the grid\.
+
+**Parameters:**
+
+- **info** (`pd.DataFrame`): DataFrame containing the information to be displayed\.
