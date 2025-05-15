@@ -1,0 +1,8 @@
+typsync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typsync/cli.py,sha256=5u76_4BpCSxOiNwtIrzNKlzASWSlWTC5vC9d7CpL6_E,3513
+typsync/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typsync-0.0.1.dist-info/METADATA,sha256=ueiBG5g7lvM0_6yeQWjuSht56GqITwz9f5Omp73GeRQ,3395
+typsync-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+typsync-0.0.1.dist-info/entry_points.txt,sha256=GgqCdWpZ5kSZEr6RJdtW_F8xBpFmaRorD5hU4CRr_bQ,44
+typsync-0.0.1.dist-info/licenses/LICENSE,sha256=IGdDrBPqz1O0v_UwCW-NJlbX9Hy9b3uJ11t28y2srmY,1062
+typsync-0.0.1.dist-info/RECORD,,

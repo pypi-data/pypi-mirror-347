@@ -1,0 +1,2 @@
+[console_scripts]
+typsync = typsync.cli:app
