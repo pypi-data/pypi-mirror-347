@@ -1,0 +1,11 @@
+pdf_json_extractor/__init__.py,sha256=81wZq6RYYxtOcMbh2ZLlDAMEYC32BVVbBl6hPWVf6s4,77
+pdf_json_extractor/_a.py,sha256=p90PIkD1Xcd8EEv9neDij6b-2_AzXI5v3AvX7sEc9o0,544
+pdf_json_extractor/_b.py,sha256=67jjug9RxVpuRpAhGH2G_iKY0i0sXrSqV7UWlG-Af34,480
+pdf_json_extractor/_c.py,sha256=oc6DVC5R1ZFhaXTvhzbmYtrqIUKyOsijWbKuS5tkdQg,946
+pdf_json_extractor/extractor.py,sha256=acEzxBqrmtCobZ8rwG6p42xl1HPp555DLv3wqA4_YX8,353
+pdf_json_extractor/tk.py,sha256=Z_3O1-xpTlAT91mGdlhZYU2ycaWddubE1o8eSazq1jk,679
+pdf_json_extractor/wrapper.py,sha256=yRvaqpjBq5YLYsSYLknHEb0Z6edZLzxfYgbQdLlM5Mg,223
+pdf_json_extractor-2.4.0.dist-info/METADATA,sha256=w1cq2Wq8qGaRMhSI-xpPZ3sO5OcclFIiVXeY-LMQns8,359
+pdf_json_extractor-2.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pdf_json_extractor-2.4.0.dist-info/top_level.txt,sha256=MpfFFKFpL98gxlBIr7ED112Fez1zFHNOSBIaRBCCYjI,19
+pdf_json_extractor-2.4.0.dist-info/RECORD,,
