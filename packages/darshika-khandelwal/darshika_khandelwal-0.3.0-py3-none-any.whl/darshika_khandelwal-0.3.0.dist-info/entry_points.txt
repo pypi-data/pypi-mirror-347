@@ -1,0 +1,2 @@
+[console_scripts]
+darshika_khandelwal = darshika_khandelwal.__main__:main
