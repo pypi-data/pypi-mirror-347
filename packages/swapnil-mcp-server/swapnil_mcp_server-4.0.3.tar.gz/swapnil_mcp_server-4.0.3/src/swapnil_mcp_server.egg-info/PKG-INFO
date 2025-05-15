@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: swapnil-mcp-server
+Version: 4.0.3
+Summary: MCP server to expose some tools for LLMs
+Author-email: swapnil dagade <swapnildagade@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mcp>=1.2.0
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+Requires-Dist: httpx>0.28.0
+Requires-Dist: twilio
+Dynamic: license-file
+
+# SWAPNIL MCP Server 🚀
+
+A Model Context Protocol (MCP) server implementation for Get Weather
+
+[![License](https://img.shields.io/github/license/erikhoward/azure-fhir-mcp-server)](https://opensource.org/licenses/MIT) [![Python Version](https://img.shields.io/badge/python-3.13%2B-blue.svg)](https://www.python.org/) [![MCP](https://img.shields.io/badge/MCP-compatible-green.svg)](https://github.com/modelcontextprotocol/spec)
+
+## Setup 🛠️
+
+### Installation 📦
+
+Requires Python 3.13 or higher.
+
+Install the package using `pip`:
+
+```bash
+pip install swapnil-mcp-server
+```
+
+## License ⚖️
+
+Licensed under MIT - see [LICENSE.md](LICENSE) file.

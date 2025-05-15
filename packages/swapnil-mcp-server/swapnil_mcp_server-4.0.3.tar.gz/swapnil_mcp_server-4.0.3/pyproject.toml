@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swapnil-mcp-server"
+version = "4.0.3"
+description = "MCP server to expose some tools for LLMs"
+readme = "README.md"
+authors = [
+    {name = "swapnil dagade", email = "swapnildagade@gmail.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcp>=1.2.0",
+    "requests",
+    "python-dotenv",
+    "httpx>0.28.0",
+    "twilio"
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+swapnil-mcp-server = "mcp_tools.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
