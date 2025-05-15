@@ -1,0 +1,17 @@
+velo_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+velo_sdk/api/__init__.py,sha256=ab35PduO7qe_ugvu2JKMxDNy6UtSTrWAYmkkzOlBTeQ,111
+velo_sdk/api/api_client.py,sha256=kIhCL8paiGFIfJ9OMTxJXLwDbLE6N1FeWj-zbz4jdMo,636
+velo_sdk/api/assets.py,sha256=7v0nJ9vC32vWjHcVSByinCjV4vnpKx9u3CrBLRh7Eu0,4585
+velo_sdk/api/base.py,sha256=i3VwsoPRj7vIWrtrrrSa5f2Lf5i1Fhqq8i912kgSmCU,8693
+velo_sdk/api/climate.py,sha256=Lkt937mdfbxdrcrl3W44bvSw0sKyWU0x2-uNhzHBZs8,486
+velo_sdk/api/companies.py,sha256=zvWa-jjdldiJGjT9W-9LqrMfXcWNgHm3TBKJsVgFgjo,17241
+velo_sdk/api/errors.py,sha256=Hgvzf_fdw_Nk2-O9N3t_It2OdyjP5_rKRf3ZrC17fro,935
+velo_sdk/api/markets.py,sha256=LLtXAtE1W8z7Z5M2r-GHBuS6usohQ9shMEzi4WRbYdM,11049
+velo_sdk/api/pagination.py,sha256=wL7E6P8d8DnVwdJjW-dumig5q2uvCSRr6sjcHrX_mTI,4364
+velo_sdk/api/static_list.py,sha256=L3T-l0QWLK-_P9gSlAVSARw6b7qohAKjx0ISTgZ2N1Y,5871
+velo_sdk/api/types.py,sha256=Dn1iEi81UPf7xgwxKNCGZmximhnVYDmaAhTXqkt9cP4,3619
+velo_sdk-0.0.12.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+velo_sdk-0.0.12.dist-info/METADATA,sha256=CU4vtZwkBv6utBgw3iTMdtnC9QlbqLKK1RNk5yJbJUw,5980
+velo_sdk-0.0.12.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+velo_sdk-0.0.12.dist-info/top_level.txt,sha256=GsOVPmwE-Sn3Y_byeo4Gmk_WG-w2Xiy-tdbzu3hpf1w,9
+velo_sdk-0.0.12.dist-info/RECORD,,
