@@ -1,0 +1,85 @@
+Metadata-Version: 2.3
+Name: partial-tables
+Version: 0.0.1a1
+Summary: Partial Table Models for SQLAlchemy
+Author: Julien Kmec
+Author-email: me@julien.dev
+Requires-Python: >=3.9,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: psycopg2-binary (>=2.9.10,<3.0.0)
+Requires-Dist: pytest (>=8.3.5,<9.0.0)
+Requires-Dist: pytest-asyncio (>=0.26.0,<0.27.0)
+Requires-Dist: pytest-cov (>=6.1.1,<7.0.0)
+Requires-Dist: pytest-docker (>=3.2.1,<4.0.0)
+Requires-Dist: pytest-sqlalchemy (>=0.3.0,<0.4.0)
+Requires-Dist: sqlalchemy (>=2.0.40,<3.0.0)
+Requires-Dist: sqlalchemy-utils (>=0.41.2,<0.42.0)
+Requires-Dist: sqlmodel (>=0.0.24,<0.0.25)
+Project-URL: Repository, https://github.com/julien777z/partial-tables
+Description-Content-Type: text/markdown
+
+# SQLAlchemy Partial Tables
+
+Partial Tables for SQLAlchemy
+
+## Installation
+
+```bash
+pip install partial-table
+```
+
+## Scenario
+
+Let's say you have 2 tables, `business_draft` and `business`.
+
+`business_draft` and `business` have the same fields, but `business_draft` should allow most fields to be nullable.
+
+Any business can freely update its draft, but only approved modifications get copied over to `business`.
+
+How can we implement this and reduce redundancy?
+
+## Usage
+
+Any field marked with `PartialAllowed` will be nullable in the partial table, and required in the complete table.
+
+## Example
+
+```python
+from typing import Annotated
+from abc import ABC
+from sqlmodel import Field, SQLModel
+from partial_table import PartialBase, PartialAllowed, PartialTable
+
+class Base(ABC, SQLModel):
+    """Base class for all models."""
+
+    id: int = Field(primary_key=True, sa_column_kwargs={"autoincrement": True})
+
+
+class BusinessBase(PartialBase, Base):
+    """Base class for all business models."""
+
+    business_name: str
+    city: Annotated[str, PartialAllowed()] = Field()
+    address: Annotated[str, PartialAllowed()] = Field()
+
+
+class BusinessDraft(BusinessBase, PartialTable, table=True):
+    __tablename__ = "business_draft"
+
+
+class Business(BusinessBase, table=True):
+    __tablename__ = "business"
+
+```
+
+`Business` has all required fields, and `BusinessDraft` has every field marked with `PartialAllowed` as nullable.
+
+## License
+MIT
+
