@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/simple_io_kit.egg-info/PKG-INFO
+src/simple_io_kit.egg-info/SOURCES.txt
+src/simple_io_kit.egg-info/dependency_links.txt
+src/simple_io_kit.egg-info/top_level.txt
+src/simpleio/__init__.py
+src/simpleio/simpleio.py

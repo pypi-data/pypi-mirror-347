@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-io-kit"  # Change this to your final chosen name
+version = "1.0.0"
+description = "Simple and easy-to-use file and JSON I/O utilities."
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Raed Mughaus", email = "you@example.com"}
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/yourusername/simplerio"
