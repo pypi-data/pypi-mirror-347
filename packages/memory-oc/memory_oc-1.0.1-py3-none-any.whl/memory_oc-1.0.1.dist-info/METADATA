@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: memory_oc
+Version: 1.0.1
+Summary: A session library using redis
+Project-URL: Source, https://github.com/ouroboroscoding/memory-python
+Project-URL: Tracker, https://github.com/ouroboroscoding/memory-python/issues
+Author-email: "Chris Nasr - Ouroboros Coding Inc." <chris@ouroboroscoding.com>
+Maintainer-email: "Chris Nasr - Ouroboros Coding Inc." <chris@ouroboroscoding.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: jobject<1.1,>=1.0.4
+Requires-Dist: json-fix<1.1,>=1.0.0
+Requires-Dist: jsonb<1.1,>=1.0.0
+Requires-Dist: namedredis<1.1,>=1.0.2
+Requires-Dist: strings-oc<1.1,>=1.0.7
+Description-Content-Type: text/markdown
+
+# memory-python
+A python session library using redis
