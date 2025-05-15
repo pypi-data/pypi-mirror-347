@@ -1,0 +1,9 @@
+bcodata/__init__.py,sha256=iRPHOEcj9eaUY4yNTBDpjLr8DY0txylPnxpxkF6zs1U,111
+bcodata/client.py,sha256=5AA7GJ2olPvcOLicWnDAYrVBzh-uSQlviWiY_m8MbKU,10866
+bcodata/exceptions.py,sha256=HtiJ9DK4tIPcMwHLfIhTayne6eFJL3JluAOSbOQNhPM,4614
+bcodata/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bcodata/query.py,sha256=ZrVr-P5f1wHC83Z0BN6uKv9FXoIrq3gIN7MKxfoc7bQ,3152
+bcodata-0.1.2.dist-info/METADATA,sha256=ztU-TJn3jZ7hFDYSV-o4ecY9qHfUUsXFiRB5iZB4qh8,6337
+bcodata-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bcodata-0.1.2.dist-info/licenses/LICENSE,sha256=O3YJ3qGZAs1z-O36ECSPSz6kR6JMUkIWyvzDCpHmD4w,1064
+bcodata-0.1.2.dist-info/RECORD,,
