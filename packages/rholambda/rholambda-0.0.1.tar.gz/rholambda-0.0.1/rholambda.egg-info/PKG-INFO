@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: rholambda
+Version: 0.0.1
+Summary: Python client for the Rholambda API
+Home-page: 
+Author: Ajith
+Author-email: ajithovijaya@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyrholambda
+
+Python client library for the Rholambda API
+
+## Installation
+
+```bash
+pip install rholambda
+
+
+
+from rholambda import Rholambda
+
+# Set your API key
+Rholambda.set_apk('your_api_key_here')
+
+# Ask a question
+response = Rholambda.ask('What is the meaning of life?')
+print(response)

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+rholambda/__init__.py
+rholambda/client.py
+rholambda.egg-info/PKG-INFO
+rholambda.egg-info/SOURCES.txt
+rholambda.egg-info/dependency_links.txt
+rholambda.egg-info/requires.txt
+rholambda.egg-info/top_level.txt
