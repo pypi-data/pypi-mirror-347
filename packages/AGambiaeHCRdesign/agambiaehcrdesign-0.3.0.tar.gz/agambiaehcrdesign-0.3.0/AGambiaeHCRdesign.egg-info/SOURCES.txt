@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+AGambiaeHCRdesign/AGambiaeHCRdesign.py
+AGambiaeHCRdesign/__init__.py
+AGambiaeHCRdesign.egg-info/PKG-INFO
+AGambiaeHCRdesign.egg-info/SOURCES.txt
+AGambiaeHCRdesign.egg-info/dependency_links.txt
+AGambiaeHCRdesign.egg-info/requires.txt
+AGambiaeHCRdesign.egg-info/top_level.txt
