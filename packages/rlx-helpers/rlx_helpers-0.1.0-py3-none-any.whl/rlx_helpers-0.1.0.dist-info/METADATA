@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: rlx-helpers
+Version: 0.1.0
+Summary: A series of helper modules and classes for working with: Service Principals, Graph API, AzureSQL databases, Azure Data Lake Storage, Azure Keyvault
+Requires-Dist: azure-identity>=1.23.0
+Requires-Dist: azure-keyvault>=4.2.0
+Requires-Dist: azure-storage-file-datalake>=12.20.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: sqlalchemy>=2.0.41
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# rlx-helpers
+
+Package containing utilities for working with the RLX data warehouse and other infrastructure, including helpers for service principal auth, Graph API client functions, interacting with Azure SQL databases using token auth and context managers, and ADLS data lake storage.
