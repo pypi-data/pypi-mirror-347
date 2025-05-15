@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: pikernel
+Version: 0.0.4
+Summary: A package implementing physics-informed kernels in dimensions 1 and 2
+Project-URL: Homepage, https://github.com/NathanDoumeche/pikernel
+Project-URL: Issues, https://github.com/NathanDoumeche/pikernel/issues
+Author-email: Nathan Doumèche <nathan.doumeche@gmail.com>, Claire Boyer <claire.boyer@universite-paris-saclay.fr>, Francis Bach <francis.bach@inria.fr>, Gérard Biau <gerard.biau@sorbonne-universite.fr>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: matplotlib>=3.9.0
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: torch>=2.6.0
+Description-Content-Type: text/markdown
+
+# Pikernel
+
+This package implements the physics-informed kernels of the paper [Physics-informed kernel learning](https://arxiv.org/pdf/2409.13786) (2025) by Nathan Doumèche, Claire Boyer, Francis Bach, and Gérard Biau.
