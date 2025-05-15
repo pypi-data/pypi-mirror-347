@@ -1,0 +1,9 @@
+atla_insights/__init__.py,sha256=l31wxHHmMALfBdZpYEppX7Df8JOdVbMNxQv2f32DOpc,337
+atla_insights/_constants.py,sha256=csMHyrxQ0smO-3iNG_P51Cnybv-vkyQWEynq0hZkGEE,191
+atla_insights/_litellm.py,sha256=2kDWy5qbjInKSHN1S_9vaKLMcE6W3XpL3fba_H_oLhQ,888
+atla_insights/_main.py,sha256=3m_4cA8MmMpKwz1KCPh4uCO9_XzNdSxLlqrRBJcdstk,4716
+atla_insights/_span_processors.py,sha256=8IN6yMoND5tVlK-umlzdCUGzWs2hAn97eBZ3-8lwplo,2836
+atla_insights-0.0.1a5.dist-info/METADATA,sha256=oLSdWdoDj87_OCqHHgvefrE16AWZctmZdMYS3_FRAPI,9055
+atla_insights-0.0.1a5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+atla_insights-0.0.1a5.dist-info/licenses/LICENSE,sha256=_BcwFF6q9pYoUFNJJ5jhme53M0wMoNEFi6m1syT9HK4,11334
+atla_insights-0.0.1a5.dist-info/RECORD,,
