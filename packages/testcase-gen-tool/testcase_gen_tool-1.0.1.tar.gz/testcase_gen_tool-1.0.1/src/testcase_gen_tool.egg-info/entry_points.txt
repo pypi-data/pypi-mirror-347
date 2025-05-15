@@ -1,0 +1,2 @@
+[console_scripts]
+testcase-gen-tool = app.interface:main

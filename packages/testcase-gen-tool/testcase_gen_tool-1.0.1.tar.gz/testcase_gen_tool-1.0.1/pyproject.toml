@@ -1,0 +1,16 @@
+[project]
+name = "testcase-gen-tool"
+version = "1.0.1"
+description = "An automated test case generation tool that simplifies the process of creating test cases for software projects."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=5.29.0",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "pypdf2>=3.0.1",
+    "python-docx>=1.1.2",
+    "requests>=2.32.3",
+]
+[project.scripts]
+testcase-gen-tool = "app.interface:main"
