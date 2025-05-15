@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/chorderizer/__init__.py
+src/chorderizer/chorderizer.py
+src/chorderizer.egg-info/PKG-INFO
+src/chorderizer.egg-info/SOURCES.txt
+src/chorderizer.egg-info/dependency_links.txt
+src/chorderizer.egg-info/entry_points.txt
+src/chorderizer.egg-info/requires.txt
+src/chorderizer.egg-info/top_level.txt

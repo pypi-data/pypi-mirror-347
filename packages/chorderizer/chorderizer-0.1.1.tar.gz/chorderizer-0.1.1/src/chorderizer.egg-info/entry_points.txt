@@ -1,0 +1,2 @@
+[console_scripts]
+chorderizer = chorderizer.chorderizer:main
