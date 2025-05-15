@@ -1,0 +1,920 @@
+import heapq
+from io import BytesIO
+import logging
+import os
+import struct
+import time
+import threading
+from typing import Union
+import zlib
+
+from . import io
+from .auth import select_matching_auth
+
+import confluent_kafka
+from adc import kafka
+from adc.errors import KafkaException
+
+
+logger = logging.getLogger("hop")
+
+
+class _RAPriorityQueue:
+    """A priority queue which also allows random access to queued items.
+
+    Items' keys are also their priorities, and keys which compare lower have higher priority.
+
+    All keys in a queue must be mutually comparable; this is most easily accomplished by using a
+    single key type for a given queue.
+
+    """
+
+    def __init__(self):
+        """Create an empty queue"""
+        self.priorities = []
+        self.data = {}
+
+    def __len__(self):
+        """Return: the number of items in the queue."""
+        assert len(self.data) == len(self.priorities)
+        return len(self.data)
+
+    def __contains__(self, key):
+        """Test whether an item with the given key/priority is present in the queue."""
+        return key in self.data
+
+    def insert(self, key, value):
+        """Add an item to the queue, or replace the existing item stored under the given key."""
+        self.data[key] = value
+        heapq.heappush(self.priorities, key)
+
+    def __setitem__(self, key, value):
+        """Add an item to the queue, or replace the existing item stored under the given key."""
+        self.insert(key, value)
+
+    def __getitem__(self, key):
+        """Fetch the item stored under the given key.
+
+        Raises: KeyError if the key does not exist.
+        """
+        return self.data[key]
+
+    def pop_highest_priority(self):
+        """Fetch the item with the highest priority (lowest key) currently in the queue,
+            and removes it from the queue.
+
+        Returns: The (key, value) tuple for the highest priority item in the queue, or None if the
+                 queue is empty.
+        """
+        if len(self.data) == 0:
+            return None
+        key = heapq.heappop(self.priorities)
+        value = self.data[key]
+        del self.data[key]
+        return (key, value)
+
+    def remove(self, key):
+        """Remove an item from the queue, regardless of its location.
+
+        Raises: KeyError if the key does not exist.
+        """
+        del self.data[key]
+        idx = self.priorities.index(key)
+        del self.priorities[idx]
+        heapq.heapify(self.priorities)
+
+    def __delitem__(self, key):
+        self.remove(key)
+
+
+def _ensure_bytes_like(thing):
+    """Force an object which may be string-like to be bytes-like
+
+    Args:
+        thing: something which might be a string or might already be encoded as bytes.
+
+    Return:
+        Either the original input object or the encoding of that object as bytes.
+    """
+    try:  # check whether thing is bytes-like
+        memoryview(thing)
+        return thing  # keep as-is
+    except TypeError:
+        return thing.encode("utf-8")
+
+
+class PublicationJournal:
+    """
+    An object which tracks the state of messages which are being sent, persists that state to disk,
+    and enables it to be restored if the program stops unexpectedly.
+    """
+
+    int_format = "!Q"
+    int_size = struct.calcsize(int_format)
+    crc_format = "!I"
+    crc_size = struct.calcsize(crc_format)
+    # The original record type supported only the message body and headers
+    msg_record_type_v1 = 0
+    # The second version of the record type adds support for the destination topic
+    # and a message key
+    msg_record_type_v2 = 2
+    sent_record_type = 1
+
+    @staticmethod
+    def encode_int(value: int):
+        return struct.pack(PublicationJournal.int_format, value)
+
+    @staticmethod
+    def decode_int(buffer: bytes):
+        return struct.unpack(PublicationJournal.int_format, buffer)[0]
+
+    @staticmethod
+    def encode_crc(crc: int):
+        return struct.pack(PublicationJournal.crc_format, crc)
+
+    @staticmethod
+    def decode_crc(buffer: bytes):
+        return struct.unpack(PublicationJournal.crc_format, buffer)[0]
+
+    def __init__(self, journal_path="publisher.journal"):
+        """Prepare a journal, including loading any data previously persisted to disk.
+
+        Args:
+            journal_path: The filesystem path from/to which the journal data should be read/written.
+
+        Raises:
+            PermissionError: If existing journal file does not have suitable permissions.
+            RuntimeError: If existing journal data cannot be read.
+        """
+        self.journal_path = journal_path
+        # each queue will store (message, headers) tuples, keyed by sequence numbers
+        self.messages_to_send = _RAPriorityQueue()
+        self.maybe_sent_messages = _RAPriorityQueue()
+        self.inflight_topics = {}
+        self.message_counter = 0
+        self._read_previous_journal()
+        self.journal = open(self.journal_path, "ab")
+
+    def _write_record(self, record_type: int, record_body: bytes):
+        try:
+            body_crc = zlib.crc32(record_body, 0) & 0xFFFFFFFF
+            header_crc = 0
+
+            def write_to_header(data: bytes):
+                # update running checksum and write data
+                nonlocal header_crc
+                header_crc = zlib.crc32(data, header_crc) & 0xFFFFFFFF
+                self.journal.write(data)
+            # The header is a fixed length, so it can be read independent of its contents.
+            # The body length is contained in the header, and protected by the header CRC
+            # so that item lengths within the body can be sanity checked before reading the
+            # body is complete. The body CRC also protects the data in the body, but cannot
+            # be re-checked until the entire body has been read. That can pose a problem if
+            # the length for one of the variable length components in the body is corrupted,
+            # and would lead to read of a nonsensical length (exhausting memory or similar).
+            write_to_header(PublicationJournal.encode_int(record_type))  # record type
+            write_to_header(PublicationJournal.encode_int(len(record_body)))  # body length
+            write_to_header(PublicationJournal.encode_crc(body_crc))  # body CRC
+            self.journal.write(PublicationJournal.encode_crc(header_crc))  # header CRC
+            self.journal.write(record_body)  # body
+            self.journal.flush()
+        except BaseException as e:
+            raise RuntimeError(f"Failed to append record to journal: {e}")
+
+    # returns the sequence number assigned to the message
+    def queue_message(self, message: bytes, topic: str, headers=None,
+                      key: Union[bytes, str] = None):
+        """Record to the journal a message which is to be sent.
+
+        Args:
+            message: A message to send, encoded as a bytes-like object.
+            topic: The destination topic for the message.
+            headers: Headers to be sent with the message, as a list of 2-tuples of bytes-like
+                     objects.
+            key: The key, if any to be used for the message.
+
+        Returns:
+            The sequence number assigned to the message.
+            Sequence numbers are unique among all messages which are 'live' at the same time,
+            but will otherwise be recycled.
+
+        Raises:
+            RuntimeError: If appending the new message to the on-disk journal fails.
+            TypeError: If the message is not a suitable type (bytes)
+        """
+        message = _ensure_bytes_like(message)
+        assert self.message_counter not in self.messages_to_send
+        sequence_number = self.message_counter
+        encoded_topic = topic.encode("utf-8")
+
+        rbody = BytesIO()
+        rbody.write(PublicationJournal.encode_int(sequence_number))
+        rbody.write(PublicationJournal.encode_int(len(encoded_topic)))  # topic name length
+        rbody.write(encoded_topic)  # topic name
+        rbody.write(PublicationJournal.encode_int(len(message)))  # message size
+        rbody.write(message)  # message data
+        if key is not None:
+            key = _ensure_bytes_like(key)
+            rbody.write(PublicationJournal.encode_int(len(key)))  # key length
+            rbody.write(key)  # key
+        else:
+            rbody.write(PublicationJournal.encode_int(0))  # no key
+        if headers is not None:
+            rbody.write(PublicationJournal.encode_int(len(headers)))  # number of headers
+            for header in headers:
+                # data must be encoded to be written
+                hkey = _ensure_bytes_like(header[0])
+                value = _ensure_bytes_like(header[1])
+                rbody.write(PublicationJournal.encode_int(len(hkey)))  # header key length
+                rbody.write(hkey)  # header key
+                rbody.write(PublicationJournal.encode_int(len(value)))  # header value length
+                rbody.write(value)  # header value
+        else:
+            rbody.write(PublicationJournal.encode_int(0))  # no headers
+
+        self._write_record(PublicationJournal.msg_record_type_v2, rbody.getvalue())
+
+        self.messages_to_send[sequence_number] = (message, topic, headers, key)
+        self.message_counter += 1
+        return sequence_number
+
+    def has_messages_to_send(self):
+        """Check whether there are messages queued for sending (which have either not been sent at
+            all, or for which all sending attempts so far have failed, causing them to be requeued).
+        """
+        return len(self.messages_to_send) > 0
+
+    def get_next_message_to_send(self):
+        """Fetch the next message which should be sent
+
+        Returns:
+            The next message in the form of a tuple of
+            (seqeunce number, message, target topic, message headers, message key),
+            or None if there are no messages currently needing to be sent.
+        """
+        if len(self.messages_to_send) == 0:
+            return None
+        result = self.messages_to_send.pop_highest_priority()
+        self.maybe_sent_messages[result[0]] = result[1]
+        topic = result[1][1]
+        if topic in self.inflight_topics:
+            self.inflight_topics[topic] += 1
+        else:
+            self.inflight_topics[topic] = 1
+        # rearrange into a single, new tuple, with the sequence number prepended
+        return (result[0], *result[1])
+
+    def has_messages_in_flight(self):
+        """Check whether there are messages for which a sending attempt has been started,
+            but has not yet conclusively succeeded or failed
+        """
+        return len(self.maybe_sent_messages) > 0
+
+    def topics_with_messages_in_flight(self):
+        """Get the set of topic names for which at least one message is currently in flight
+        """
+        return set(self.inflight_topics.keys())
+
+    def mark_message_sent(self, sequence_number):
+        """Mark a message as successfully sent, and removes it from further consideration.
+
+        Truncates and restarts the backing journal file if the number of messages in-flight and
+        waiting to be sent falls to zero, and restarts the sequence number assignment sequence.
+
+        Raises:
+            RuntimeError: If no message with the specifed sequence number is currently recorded as
+                being in-flight.
+        """
+        if sequence_number not in self.maybe_sent_messages:
+            raise RuntimeError(f"No record of message with sequence number {sequence_number} "
+                               "being queued for sending")
+        self._write_record(PublicationJournal.sent_record_type,
+                           PublicationJournal.encode_int(sequence_number))
+        topic = self.maybe_sent_messages[sequence_number][1]
+        del self.maybe_sent_messages[sequence_number]
+        if topic not in self.inflight_topics:
+            raise Exception(f"Message to topic {topic} completed sending, but no messages were "
+                            "known to be in flight to that topic")
+        else:
+            self.inflight_topics[topic] -= 1
+            if self.inflight_topics[topic] == 0:
+                del self.inflight_topics[topic]
+        if len(self.messages_to_send) == 0 and len(self.maybe_sent_messages) == 0:
+            # take this opportunity to garbage collect the journal file
+            logger.debug("Journal is empty; garbage collecting")
+            self.journal.close()
+            os.unlink(self.journal_path)
+            self.journal = open(self.journal_path, "wb")
+            self.message_counter = 0
+
+    def requeue_message(self, sequence_number):
+        """Record a message send attempt as having failed by moving the message back from the
+            in-flight pool to the queue of messages needing to be sent.
+
+        Raises:
+            RuntimeError: If no message with the specifed sequence number is currently recorded as
+                being in-flight.
+        """
+        if sequence_number not in self.maybe_sent_messages:
+            raise RuntimeError("No record of message with sequence number "
+                               f"{sequence_number} being queued for sending")
+        # nothing to record in journal, message was already written when first queued
+        message = self.maybe_sent_messages[sequence_number]
+        del self.maybe_sent_messages[sequence_number]
+        self.inflight_topics[message[1]] -= 1
+        if self.inflight_topics[message[1]] == 0:
+            del self.inflight_topics[message[1]]
+        self.messages_to_send[sequence_number] = message
+
+    class _ReadPosition:
+        """A type for tracking logical read positions in a journal file."""
+
+        def __init__(self):
+            self.record_index = 0
+            self.record_start = 0
+
+        def __str__(self):
+            return f"record {self.record_index} which began at file offset {self.record_start}"
+
+    @staticmethod
+    def _read_raw_from_journal(journal, pos_info, size, name, allow_eof=False):
+        """Read a specified size of raw data from a stream, producing an error if it cannot be
+            fully read and end of file is not indicated to be tolerable.
+
+        Args:
+            journal: the stream from which to read
+            pos_info: logical position information used for error messages
+            size: the amount of data to read
+            name: description of the data to be read, for error messages
+            allow_eof: whether end of file is tolerable
+
+        Returns:
+            The block of data which was read
+
+        Raises:
+            RuntimeError: If the specified amount of data was not successfully read.
+        """
+        try:
+            buffer = journal.read(size)
+        except Exception:
+            raise RuntimeError(f"Journal corrupted: Unable to read {name}")
+        if len(buffer) == 0 and allow_eof:  # end of file
+            return buffer, True
+        elif len(buffer) < size:
+            raise RuntimeError("Journal corrupted: Unexpected end of file (unable to read "
+                               f"{name}) during {pos_info}")
+        if allow_eof:
+            return buffer, False
+        return buffer
+
+    @staticmethod
+    def _decode_raw_data(data, decoder, crc, name):
+        """Decode a block of raw data and update a running CRC.
+
+        Args:
+            data: the raw data to decode
+            decoder: the specific decoding function to apply
+            crc: the old value of the running CRC
+            name: a description of the data for error messages
+
+        Returns:
+            A tuple of the result of applying the decoder and the updated CRC
+
+        Raises:
+            RuntimeError: If the decoder produces an error
+        """
+        crc = zlib.crc32(data, crc) & 0xFFFFFFFF
+        try:
+            decoded = decoder(data)
+            return decoded, crc
+        except BaseException as e:
+            raise RuntimeError(f"Failed to decode {name}: {e}")
+
+    @staticmethod
+    def _read_recorded_header(journal, pos_info, bcrc, required_body_len, rec_len):
+        """Extract a recorrded message header from a stream.
+
+        Args:
+            journal: the stream from which to read
+            pos_info: logical position information used for error messages
+            bcrc: the CRC of the message body as read so far
+            required_body_len: the length the message record body must be to accomodate all
+                               claimed data
+            rec_len: the length of the message record body claimed in the record header
+
+        Returns:
+            A tuple consisting of the header key, header value, updated record body CRC, and
+            updated required record body length.
+
+        Raises:
+            RuntimeError: If any read operation fails, data item cannot be decoded, or the supposed
+                          header data does not fit inside the claimed record body length.
+        """
+        decode_int = PublicationJournal.decode_int
+        int_size = PublicationJournal.int_size
+        read = PublicationJournal._read_raw_from_journal
+        decode = PublicationJournal._decode_raw_data
+
+        raw_key_len = read(journal, pos_info, int_size, "message header key length")
+        key_len, bcrc = decode(raw_key_len, decode_int, bcrc,
+                               "message header key length")
+        if key_len > (rec_len - required_body_len):
+            raise RuntimeError(f"Journal corrupted: Claimed message header key length "
+                               f"({key_len}) exceeds remaining space in record body for"
+                               f" {pos_info}")
+        required_body_len += key_len
+
+        key = read(journal, pos_info, key_len, "message header key data")
+        bcrc = zlib.crc32(key, bcrc) & 0xFFFFFFFF
+
+        raw_val_len = read(journal, pos_info, int_size, "message header value length")
+        val_len, bcrc = decode(raw_val_len, decode_int, bcrc,
+                               "message header value length")
+        if val_len > (rec_len - required_body_len):
+            raise RuntimeError(f"Journal corrupted: Claimed message header value length"
+                               f" ({val_len}) exceeds remaining space in record body "
+                               f"for {pos_info}")
+        required_body_len += val_len
+
+        val = read(journal, pos_info, val_len, "message header value data")
+        bcrc = zlib.crc32(val, bcrc) & 0xFFFFFFFF
+
+        # confluent kafka requires keys in the form of unicode strings
+        try:
+            key = key.decode("utf-8")
+        except UnicodeError:
+            raise RuntimeError(f"Journal corrupted: Message header key is not valid "
+                               f"UTF-8 in {pos_info}")
+        return (key, val, bcrc, required_body_len)
+
+    def _read_message_v1(self, journal, rpos, rec_len, bcrc):
+        read = PublicationJournal._read_raw_from_journal
+        decode = PublicationJournal._decode_raw_data
+        read_header = PublicationJournal._read_recorded_header
+        decode_int = PublicationJournal.decode_int
+
+        # record must contain sequence number, message data len, number of message headers
+        required_body_len = 3 * self.int_size
+        if rec_len < required_body_len:
+            raise RuntimeError(f"Journal corrupted: Claimed record body length ({rec_len}) "
+                               f"too small to conain required data for {rpos}")
+
+        raw_seq_num = read(journal, rpos, self.int_size, "message sequence number")
+        seq_num, bcrc = decode(raw_seq_num, decode_int, bcrc, "sequence number")
+
+        raw_msg_len = read(journal, rpos, self.int_size, "record message length")
+        msg_len, bcrc = decode(raw_msg_len, decode_int, bcrc, "message length")
+        if msg_len > (rec_len - required_body_len):
+            raise RuntimeError(f"Journal corrupted: Claimed message data length ({msg_len})"
+                               f" exceeds record body length for {rpos}")
+        required_body_len += msg_len
+
+        message_data = read(journal, rpos, msg_len, "record message data")
+        bcrc = zlib.crc32(message_data, bcrc) & 0xFFFFFFFF
+
+        raw_msg_hdr_cnt = read(journal, rpos, self.int_size, "record message header count")
+        msg_hdr_cnt, bcrc = decode(raw_msg_hdr_cnt, decode_int, bcrc,
+                                   "message header count")
+        # each header is described by a minimum of two encoded integers (key len and value
+        # len), so sanity check that the claimed number of headers would fit in the
+        # remaining space in the record
+        if 2 * self.int_size * msg_hdr_cnt > (rec_len - required_body_len):
+            raise RuntimeError(f"Journal corrupted: Claimed number of message headers "
+                               f"({msg_hdr_cnt}) exceeds remaining space in record body for {rpos}")
+        required_body_len += 2 * self.int_size * msg_hdr_cnt
+
+        message_headers = []
+        for i in range(0, msg_hdr_cnt):
+            key, val, bcrc, required_body_len = \
+                read_header(journal, rpos, bcrc, required_body_len, rec_len)
+            message_headers.append((key, val))
+
+        if seq_num in self.messages_to_send:
+            raise RuntimeError("Journal corrupted: Duplicate message sequence number in {rpos}")
+        # Note that topic name and key are None because these were not stored in v1
+        self.messages_to_send[seq_num] = (message_data, None, message_headers, None)
+        if self.message_counter <= seq_num:
+            self.message_counter = seq_num + 1
+
+        return bcrc
+
+    def _read_message_v2(self, journal, rpos, rec_len, bcrc):
+        read = PublicationJournal._read_raw_from_journal
+        decode = PublicationJournal._decode_raw_data
+        read_header = PublicationJournal._read_recorded_header
+        decode_int = PublicationJournal.decode_int
+
+        # record must contain sequence number, topic length, message data length, key length,
+        # and number of message headers
+        required_body_len = 5 * self.int_size
+        if rec_len < required_body_len:
+            raise RuntimeError(f"Journal corrupted: Claimed record body length ({rec_len}) "
+                               f"too small to conain required data for {rpos}")
+
+        raw_seq_num = read(journal, rpos, self.int_size, "message sequence number")
+        seq_num, bcrc = decode(raw_seq_num, decode_int, bcrc, "sequence number")
+
+        raw_tpc_len = read(journal, rpos, self.int_size, "topic name length")
+        tpc_len, bcrc = decode(raw_tpc_len, decode_int, bcrc, "topic name length")
+        if tpc_len > (rec_len - required_body_len):
+            raise RuntimeError(f"Journal corrupted: Claimed topic name length ({tpc_len})"
+                               f" exceeds record body length for {rpos}")
+        required_body_len += tpc_len
+
+        raw_topic_name = read(journal, rpos, tpc_len, "topic name data")
+        bcrc = zlib.crc32(raw_topic_name, bcrc) & 0xFFFFFFFF
+
+        try:
+            topic_name = raw_topic_name.decode("utf-8")
+        except UnicodeError:
+            raise RuntimeError(f"Journal corrupted: Topic name is not valid UTF-8 text in {rpos}")
+
+        raw_msg_len = read(journal, rpos, self.int_size, "record message length")
+        msg_len, bcrc = decode(raw_msg_len, decode_int, bcrc, "message length")
+        if msg_len > (rec_len - required_body_len):
+            raise RuntimeError(f"Journal corrupted: Claimed message data length ({msg_len})"
+                               f" exceeds record body length for {rpos}")
+        required_body_len += msg_len
+
+        message_data = read(journal, rpos, msg_len, "record message data")
+        bcrc = zlib.crc32(message_data, bcrc) & 0xFFFFFFFF
+
+        raw_key_len = read(journal, rpos, self.int_size, "key length")
+        key_len, bcrc = decode(raw_key_len, decode_int, bcrc, "key length")
+        if key_len > (rec_len - required_body_len):
+            raise RuntimeError(f"Journal corrupted: Claimed key length ({key_len})"
+                               f" exceeds record body length for {rpos}")
+        required_body_len += key_len
+
+        if key_len > 0:
+            key = read(journal, rpos, key_len, "key data")
+            bcrc = zlib.crc32(key, bcrc) & 0xFFFFFFFF
+        else:
+            key = None
+
+        raw_msg_hdr_cnt = read(journal, rpos, self.int_size, "record message header count")
+        msg_hdr_cnt, bcrc = decode(raw_msg_hdr_cnt, decode_int, bcrc,
+                                   "message header count")
+        # each header is described by a minimum of two encoded integers (key len and value
+        # len), so sanity check that the claimed number of headers would fit in the
+        # remaining space in the record
+        if 2 * self.int_size * msg_hdr_cnt > (rec_len - required_body_len):
+            raise RuntimeError(f"Journal corrupted: Claimed number of message headers "
+                               f"({msg_hdr_cnt}) exceeds remaining space in record body for {rpos}")
+        required_body_len += 2 * self.int_size * msg_hdr_cnt
+
+        message_headers = []
+        for i in range(0, msg_hdr_cnt):
+            hkey, val, bcrc, required_body_len = \
+                read_header(journal, rpos, bcrc, required_body_len, rec_len)
+            message_headers.append((hkey, val))
+
+        if seq_num in self.messages_to_send:
+            raise RuntimeError("Journal corrupted: Duplicate message sequence number in {rpos}")
+        self.messages_to_send[seq_num] = (message_data, topic_name, message_headers, key)
+        if self.message_counter <= seq_num:
+            self.message_counter = seq_num + 1
+
+        return bcrc
+
+    def _read_previous_journal(self):
+        """Reload journal data from a previous session from disk.
+
+        Raises:
+            PermissionError: If the journal file does not have suitable permissions.
+            RuntimeError: If a problem occurs reading or interpreting the stored journal data.
+        """
+        if not os.path.exists(self.journal_path):
+            return  # nothing to do!
+        journal = open(self.journal_path, "rb")
+        rpos = PublicationJournal._ReadPosition()
+        read = PublicationJournal._read_raw_from_journal
+        decode = PublicationJournal._decode_raw_data
+
+        while True:
+            decode_int = PublicationJournal.decode_int
+            decode_crc = PublicationJournal.decode_crc
+
+            rpos.record_start = journal.tell()
+
+            # Read the record header:
+            hcrc = 0  # header CRC
+            record_type_offset = journal.tell()
+            raw_rec_type, eof = read(journal, rpos, self.int_size, "record type", allow_eof=True)
+            if eof:
+                break
+            rec_type, hcrc = decode(raw_rec_type, decode_int, hcrc, "record type")
+
+            raw_rec_len = read(journal, rpos, self.int_size, "record body length")
+            rec_len, hcrc = decode(raw_rec_len, decode_int, hcrc, "record body length")
+
+            raw_orig_body_crc = read(journal, rpos, self.crc_size, "record body CRC")
+            orig_body_crc, hcrc = decode(raw_orig_body_crc, decode_crc, hcrc, "record body CRC")
+
+            raw_orig_hdr_crc = read(journal, rpos, self.crc_size, "record header CRC")
+            # don't update recalculated CRC with raw_orig_hdr_crc, since it did not include itself
+            orig_hdr_crc, _ = decode(raw_orig_hdr_crc, decode_crc, 0, "record header CRC")
+
+            if hcrc != orig_hdr_crc:
+                raise RuntimeError(f"Journal corrupted: Header CRC mismatch (original: "
+                                   f"{orig_hdr_crc:x}, recalculated: {hcrc:x}) for {rpos}")
+
+            # Read the record body:
+            bcrc = 0  # body CRC
+
+            if rec_type == PublicationJournal.msg_record_type_v1:
+                bcrc = self._read_message_v1(journal, rpos, rec_len, bcrc)
+
+            elif rec_type == PublicationJournal.msg_record_type_v2:
+                bcrc = self._read_message_v2(journal, rpos, rec_len, bcrc)
+
+            elif rec_type == PublicationJournal.sent_record_type:
+                raw_seq_num = read(journal, rpos, self.int_size, "message sequence number")
+                seq_num, bcrc = decode(raw_seq_num, decode_int, bcrc, "sequence number")
+
+                if seq_num in self.messages_to_send:
+                    del self.messages_to_send[seq_num]
+                else:
+                    raise RuntimeError("Journal corrupted: Record of sent message "
+                                       f"({seq_num}) which did not previously appear, in {rpos}")
+            else:
+                raise RuntimeError(f"Journal corrupted: Invalid record type ({rec_type}) "
+                                   f"at file offset {record_type_offset}")
+
+            if bcrc != orig_body_crc:
+                raise RuntimeError(f"Journal corrupted: CRC mismatch (original: {orig_body_crc:x}, "
+                                   f"recalculated: {bcrc:x}) for {rpos}")
+
+            rpos.record_index += 1
+
+    class NullLock:
+        """A trivial context manager-compatible class which can be used in place of a lock when no
+        locking is needed."""
+
+        def __init__(self):
+            pass
+
+        def __enter__(self):
+            pass
+
+        def __exit__(self, exc_type, exc_value, exc_traceback):
+            pass
+
+    def _delivery_callback(self,
+                           kafka_error: confluent_kafka.KafkaError,
+                           msg: confluent_kafka.Message,
+                           seq_num: int,
+                           lock):
+        """Handle a callback from librdkafka indicating the outcome of sending a message by either
+            marking it successfully sent or requeuing it to send again.
+        """
+        if kafka_error is None and msg.error() is None:
+            logger.debug(f"Message with sequence number {seq_num} was confirmed sent in "
+                         f"{msg.latency()} seconds")
+            with lock:
+                self.mark_message_sent(seq_num)
+        else:
+            err = kafka_error
+            if err is None:
+                err = msg.error()
+            if err.retriable():
+                logger.error("Error delivering message with sequence number: %i: "
+                             "%s; requeuing to send again", seq_num, err)
+                with lock:
+                    self.requeue_message(seq_num)
+            else:
+                logger.error("Error delivering message with sequence number: %i: "
+                             "%s; error is not retriable so message cannot be sent", seq_num, err)
+                with lock:
+                    self.mark_message_sent(seq_num)
+
+    def get_delivery_callback(self, seq_num, lock=NullLock()):
+        """Construct a callback handler specific to a particular message which will either mark it
+        successfully sent or requeue it to send again.
+
+        The callback which is produced will take two arguments: A confluent_kafka.KafkaError
+        describing any error in sending the message, and confluent_kafka.Message containing the
+        message itself.
+
+        Args:
+            seq_num: The sequence number of the message in question, previously returned by
+                     :meth:`get_next_message_to_send`.
+            lock: An optional reference to a lock object which the callback should hold when
+                  invoked, e.g. to protect concurrent access to the journal.
+
+        """
+        if seq_num not in self.maybe_sent_messages:
+            raise RuntimeError("Cannot produce a delivery callback for message with sequence "
+                               f"number {seq_num} which is not in flight")
+        return lambda err, msg: self._delivery_callback(err, msg, seq_num, lock)
+
+    # adc.errors.log_client_errors is dangerous as it throws exceptions
+    # which will trigger https://github.com/confluentinc/confluent-kafka-python/issues/729
+    @staticmethod
+    def error_callback(kafka_error: confluent_kafka.KafkaError):
+        """A safe callback handler for reporting Kafka errors."""
+        logger.error(f"Kafka error: {kafka_error}")
+
+
+class RobustProducer(threading.Thread):
+    def __init__(self, url, auth=True, journal_path="publisher.journal", poll_wait=1.e-4, **kwargs):
+        """Construct a publisher which will retry sending messages if it does not receive
+        confirmation that they have arrived, including if it is itself taken offline (i.e. crashes)
+        for some reason.
+
+        This is intended to provide *at least once* delivery of messages: If a message is confirmed
+        received by the broker, it will not be sent again, but if any disruption of the network or
+        the publisher itself prevents it from receiving that confirmation, even if the message was
+        actually received by the broker, the publisher will assume the worst and send the message
+        again. Users of this class (and more generally consumers of data published with it) should
+        be prepared to discard duplicate messages.
+
+        Args:
+            url: The URL for the Kafka topci to which messages will be published.
+            auth: A `bool` or :class:`Auth <hop.auth.Auth>` instance. Defaults to
+                  loading from :meth:`auth.load_auth <hop.auth.load_auth>` if set to
+                  True. To disable authentication, set to False.
+            journal_path: The path on the filesystem where the messages being sent should be
+                          recorded until they are known to have been successfully received. This
+                          path should be located somewhere that will survive system restarts, and if
+                          messages contain sensitive data it should be noted that they will be
+                          written unencrypted to this path. The journal size is generally limited to
+                          the sum of sizes of messages queued for sending or in flight at the same
+                          time, plus some small (few tens of bytes per message) bookkeeping
+                          overhead. Note that this size can become large is a lengthy network
+                          disruption prev ents messages from being sent; enough disk spacec should
+                          be available to cover this possibility for the expected message rate and
+                          duration of disruptions which may need to be handled.
+            poll_wait: The time the publisher should spend checking for receipt of each message
+                       directly after sending it. Tuning this parameter controls a tradeoff between
+                       low latency discovery of successful message delivery and throughput. If the
+                       time between sending messages is large compared to the latency for a message
+                       to be sent and for a confirmation of receipt to return, it is useful to
+                       increase this value so that the publisher will wait to discover that each
+                       message has been sent (in the success case) instead of sleeping and waiting
+                       for another message to send. If this value is 'too low' (much smaller than
+                       both the time for a message to be sent and acknowledged and the time for the
+                       next message to be ready for sending), the publisher will waste CPU time
+                       entering and exiting the internal function used to receive event
+                       notifications. If this value is too large (larger than or similar in size to
+                       the time between messages needing to be sent) throughput will be lost as time
+                       will be spent waiting to see if the previous message has been acknowledged
+                       which could be better spent getting the next message sent out. When in doubt,
+                       it is probably best to err on the side of choosing a small value.
+            kwargs: Any additional arguments to be passed to :meth:`hop.io.open <hop.io.open>`.
+
+        Raises:
+            OSError: If a journal file exists but cannot be read.
+            Runtime Error: If the contents of the journal file are corrupted.
+
+        """
+        super(RobustProducer, self).__init__()
+
+        self._poll_wait = poll_wait
+
+        # read any messages left over from a previous run
+        self._journal = PublicationJournal(journal_path)
+        if self._journal.has_messages_to_send():
+            logger.info(f"Journal has {len(self._journal.messages_to_send)} "
+                        "left-over messages to send")
+
+        self._lock = threading.Lock()
+        self._cond = threading.Condition(self._lock)
+
+        dummy = io.Stream(auth=auth)
+        if dummy.auth is not None:
+            username, broker_addresses, _ = kafka.parse_kafka_url(url)
+            self._credential = select_matching_auth(dummy.auth, broker_addresses[0], username)
+        else:
+            self._credential = None
+        self._stream = dummy.open(url, "w", error_callback=PublicationJournal.error_callback,
+                                  **kwargs)
+
+    def run(self):
+        """This method is not part of the public interface of this class, and should not be called
+        directly by users.
+
+        """
+        while True:
+            with self._cond:
+                if self._should_stop and not self._journal.has_messages_to_send():
+                    break
+                if not self._immediate_start:
+                    self._cond.wait()  # wait for something to do
+                else:
+                    self._immediate_start = False
+            self._do_send()
+        self._stream.flush()
+
+    def _do_send(self):
+        journal = self._journal
+        # use this slightly awkward loop structure to reacquire the lock on each iteration so that
+        # other threads have a chance to take it
+        while True:
+            with self._lock:
+                busy = journal.has_messages_to_send() or journal.has_messages_in_flight()
+                if not busy:
+                    break  # no work to do for now
+                do_send = False
+                if journal.has_messages_to_send():
+                    seq_num, message, topic, headers, key = journal.get_next_message_to_send()
+                    do_send = True
+            if do_send:
+                try:
+                    dc = journal.get_delivery_callback(seq_num, self._lock)
+                    logger.debug(f"Sending message with sequence number {seq_num}")
+                    self._stream.write_raw(message, headers=headers, delivery_callback=dc,
+                                           topic=topic, key=key)
+                except KafkaException as e:
+                    logger.error(f"Error sending message with sequence number: {seq_num}: {e}"
+                                 "; requeuing to send again")
+                    with self._lock:
+                        journal.requeue_message(seq_num)
+            try:
+                # if we just sent a message, do a full-length wait on that topic
+                if do_send:
+                    rec = self._stream._record_for_topic(topic)
+                    rec.producer._producer.poll(self._poll_wait)
+                else:
+                    # if we did not send, then there was at least one message already in flight, and
+                    # no messages queued to send, so wait to see if any of the in-flight messages
+                    # get delivered
+                    time.sleep(self._poll_wait)
+                # Check all topics with in-flight messages for deliveries.
+                # Wait for 0 time on each individually because we already did a wait above
+                with self._lock:
+                    inflight_topics = journal.topics_with_messages_in_flight()
+                for topic in inflight_topics:
+                    # This is sub-optimal because more than one topic may map to the same producer,
+                    # which can cause a producer to be visited multiple times by this loop
+                    rec = self._stream._record_for_topic(topic)
+                    rec.producer._producer.poll(0)
+            except KafkaException:
+                pass
+
+    def write(self, message, headers=None, test=False, topic=None, key=None):
+        """Queue a message to be sent. Message sending occurs asynchronously on a background thread,
+        so this method returns immediately unless an error occurs queuing the message.
+        :meth:`RobustProducer.start <RobustProducer.start>` must be called prior to calling this
+        method.
+
+        Args:
+            message: A message to send.
+            headers: Headers to be sent with the message, as a list of 2-tuples of strings.
+            test: The message should be marked as a test message by adding a header with
+                  key '_test'.
+            topic: The topic to which the message should be sent. This need not be specified if the
+                   producer was constructed with a URL containing exactly one topic name.
+            key: If specified, the Kafka message key
+
+        Raises:
+            RuntimeError: If appending the new message to the on-disk journal fails.
+            TypeError: If the message is not a suitable type.
+            Exception: If a single topic was not specified in the original URL and the topic
+                       argument was not set.
+
+        """
+        if topic is None and self._stream.default_topic is not None:
+            topic = self._stream.default_topic
+        if topic is None:
+            raise Exception("No topic specified for write: "
+                            "Either configure a topic when opening the Stream, "
+                            "or specify the topic argument to write()")
+        message, headers = io.Producer.pack(message, headers, auth=self._credential, test=test)
+        with self._cond:  # must hold the lock to manipulate journal
+            seq_num = self._journal.queue_message(message, topic, headers, key=key)
+            self._cond.notify()  # wake up the sender loop if sleeping
+        logger.debug(f"Queued message with sequence number {seq_num} to be sent")
+
+    def start(self):
+        """Start the background communication thread used by the publisher to send messages. This
+        should be called prior to any calls to :meth:`RobustProducer.write <RobustProducer.write>`.
+        This method should not be called more than once.
+
+        """
+        self._should_stop = False
+        self._immediate_start = self._journal.has_messages_to_send()
+        super(RobustProducer, self).start()
+
+    def stop(self):
+        """Stop the background communication thread used by the publisher to send messages. This
+        method will block until the thread completes, which includes sending all queued messages.
+        :meth:`RobustProducer.write <RobustProducer.write>` should not be called after this method
+        has been called.
+        This method should not be called more than once.
+
+        """
+        logger.debug("Stopping publisher thread")
+        with self._cond:
+            self._should_stop = True
+            self._cond.notify()  # wake up the sender loop
+        self.join()
+        self._stream.close()
+
+    def __enter__(self):
+        self.start()
+        return self
+
+    def __exit__(self, ex_type, ex_val, traceback):
+        self.stop()
+        return False  # propagate any exceptions
