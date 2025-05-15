@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: pdf_json_extractor
+Version: 1.1
+Summary: PDF to JSON extractor
+Author: Ramesh Lanke
+Author-email: rameshlanke31@gmail.com
+Requires-Dist: google-generativeai
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
