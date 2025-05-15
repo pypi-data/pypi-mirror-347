@@ -1,0 +1,10 @@
+_test_description="FAIL - FODS check"
+
+_test_website_root="odf/"
+_test_extra_flags="--entry=test_dead.fods"
+
+_test_expected_dead_internal=0
+_test_expected_dead_external=0
+_test_expected_dead_total=1
+_test_expected_exit_code=1
+_test_expected_http_links=0

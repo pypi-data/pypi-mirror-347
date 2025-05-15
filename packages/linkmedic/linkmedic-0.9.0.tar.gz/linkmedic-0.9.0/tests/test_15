@@ -1,0 +1,12 @@
+_test_description="FAIL - nonexisting entry point"
+# @$ > DEAD LINK (404-Not Found) -> /nonexisting.html
+# The entry page could not be loaded: /nonexisting.html
+
+_test_website_root="html/public2/"
+_test_extra_flags="--entry=nonexisting.html"
+
+_test_expected_dead_internal=0
+_test_expected_dead_external=0
+_test_expected_dead_total=0
+_test_expected_exit_code=2
+_test_expected_http_links=0

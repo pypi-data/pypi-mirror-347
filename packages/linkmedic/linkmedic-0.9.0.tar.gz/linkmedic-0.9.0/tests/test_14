@@ -1,0 +1,10 @@
+_test_description="PASS - External links check, ignore 404"
+
+_test_website_root="html/public2/"
+_test_extra_flags="--ignore-local --ignore-status 404"
+
+_test_expected_dead_internal=0
+_test_expected_dead_external=0
+_test_expected_dead_total=0
+_test_expected_exit_code=0
+_test_expected_http_links=0

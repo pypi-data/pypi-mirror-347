@@ -1,0 +1,15 @@
+_test_description="FAIL - Internal + external links check"
+# @/index.html > CONNECTION FAILED -> https://my_invalid_domain169.com/b_link/page2.html
+# @/index.html > CONNECTION FAILED -> https://not_my_invalid_domain169.com/c_link/page3.html
+
+_test_website_root="html/public1/"
+_test_extra_flags="--check-external"
+
+_test_expected_dead_internal=0
+_test_expected_dead_external=0
+_test_expected_dead_total=2
+_test_expected_exit_code=1
+_test_expected_http_links=0
+
+
+

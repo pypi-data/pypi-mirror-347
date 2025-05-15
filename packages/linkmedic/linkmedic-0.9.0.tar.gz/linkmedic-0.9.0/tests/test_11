@@ -1,0 +1,15 @@
+_test_description="FAIL - External links check, 1 dead link (4 ignored internal links), quiet"
+# @/index.html > IGNORED DEAD INTERNAL LINK -> /img/img.jpg
+# @/index.html > IGNORED DEAD INTERNAL LINK -> /css/style.css
+# @/index.html > IGNORED DEAD INTERNAL LINK -> /js/scripts.js
+# @/a_link/page > IGNORED DEAD INTERNAL LINK -> /a_link/invalid.html
+# @/a_link/page > DEAD LINK (404-Not Found) -> https://mpcdf.mpg.de/invalid_directory/invalid_page_name.html
+
+_test_website_root="html/public2/"
+_test_extra_flags="--ignore-local --quiet"
+
+_test_expected_dead_internal=0
+_test_expected_dead_external=1
+_test_expected_dead_total=0
+_test_expected_exit_code=1
+_test_expected_http_links=0

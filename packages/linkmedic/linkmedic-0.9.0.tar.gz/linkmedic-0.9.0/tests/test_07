@@ -1,0 +1,18 @@
+_test_description="FAIL - Internal links check, 5 dead links, (+1 skipped in .linkignore)"
+# @/index.html > DEAD LINK (404-Not Found) -> /b_link/page.html
+# @/index.html > DEAD LINK (404-Not Found) -> /img/img.jpg
+# @/index.html > DEAD LINK (404-Not Found) -> /css/style.css
+# @/index.html > DEAD LINK (404-Not Found) -> /js/scripts.js
+# @/a_link/page > DEAD LINK (404-Not Found) -> /a_link/invalid.html
+
+_test_website_root="html/public2/"
+_test_extra_flags=""
+
+_test_expected_dead_internal=5
+_test_expected_dead_external=0
+_test_expected_dead_total=0
+_test_expected_exit_code=1
+_test_expected_http_links=0
+
+
+

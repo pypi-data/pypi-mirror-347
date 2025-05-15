@@ -1,0 +1,14 @@
+_test_description="FAIL - Internal links check, 1 dead link, resolve not_my_invalid_domain169.com locally"
+# @/index.html > DEAD LINK (404-Not Found) -> /c_link/page3.html
+
+_test_website_root="html/public1/"
+_test_extra_flags="--domain=not_my_invalid_domain169.com"
+
+_test_expected_dead_internal=1
+_test_expected_dead_external=0
+_test_expected_dead_total=0
+_test_expected_exit_code=1
+_test_expected_http_links=0
+
+
+
