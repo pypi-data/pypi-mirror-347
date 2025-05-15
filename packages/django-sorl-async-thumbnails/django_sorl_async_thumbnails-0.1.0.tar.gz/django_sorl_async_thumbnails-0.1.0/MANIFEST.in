@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include sorl_async_thumbnails/static *
+recursive-include sorl_async_thumbnails/templates * 
