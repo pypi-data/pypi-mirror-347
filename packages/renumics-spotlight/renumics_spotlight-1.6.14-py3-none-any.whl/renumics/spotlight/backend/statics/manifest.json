@@ -1,0 +1,28 @@
+{
+  "_lib-7a352ec1.js": {
+    "file": "lib-7a352ec1.js"
+  },
+  "_lib-cbc461bd.cjs": {
+    "file": "lib-cbc461bd.cjs"
+  },
+  "src/lib.ts": {
+    "file": "lib.cjs",
+    "imports": [
+      "_lib-cbc461bd.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/lib.ts"
+  },
+  "src/main.tsx": {
+    "file": "main.cjs",
+    "imports": [
+      "_lib-cbc461bd.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/main.tsx"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}
