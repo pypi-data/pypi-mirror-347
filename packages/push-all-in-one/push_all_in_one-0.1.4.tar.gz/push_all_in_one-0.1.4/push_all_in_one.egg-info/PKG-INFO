@@ -1,0 +1,350 @@
+Metadata-Version: 2.4
+Name: push-all-in-one
+Version: 0.1.4
+Summary: 多合一推送服务，支持钉钉、企业微信、Telegram、邮件等多种推送方式
+Home-page: https://github.com/yourusername/push-all-in-one
+Author: Your Name
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/push-all-in-one
+Project-URL: Issues, https://github.com/yourusername/push-all-in-one/issues
+Keywords: push,notification,dingtalk,wechat,telegram,discord
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: typing-extensions>=4.8.0
+Requires-Dist: PyJWT>=2.8.0
+Requires-Dist: urllib3>=2.0.7
+Requires-Dist: cryptography>=41.0.5
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: pycryptodome>=3.19.0
+Requires-Dist: aiohttp>=3.8.6
+Requires-Dist: httpx>=0.25.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# Push All In One (Python)
+
+这是一个将多种推送服务聚合到一个统一接口的 Python 库。它的灵感来自于 [easychen/push-all-in-one](https://github.com/easychen/push-all-in-one) 项目，并致力于在 Python 环境中提供类似的功能。
+
+## 特性
+
+- 支持多种推送服务，包括但不限于：
+    - DingTalk (钉钉)
+    - Telegram
+    - WeChat Robot (企业微信机器人)
+    - PushDeer
+    - Discord
+    - Feishu (飞书)
+    - WeChat App (企业微信应用)
+    - ServerChan Turbo (Server酱 Turbo版)
+    - ServerChan V3 (Server酱 V3版)
+    - PushPlus
+    - Custom Email (自定义邮件)
+    - iGot
+    - Ntfy
+    - OneBot (QQ机器人)
+    - Qmsg (Qmsg酱)
+    - WxPusher
+    - XiZhi (息知)
+- 统一的API接口，简化多服务推送的开发。
+- 易于配置和扩展。
+
+## 安装
+
+```bash
+pip install push-all-in-one
+```
+
+## 使用方法
+
+### 1. 导入推送服务
+
+```python
+from push_all_in_one import Push
+```
+
+### 2. 初始化推送实例
+
+根据你想要使用的推送服务，初始化对应的配置。下面列出了各个服务的配置示例和 `Push` 初始化方法。
+请将示例中的 `YOUR_...` 或占位值替换为您的实际凭证和信息。
+
+**通用注意:** `push_type` 参数用于指定要使用的推送服务。其值应为相应推送服务模块的 `namespace` (通常是服务名称) 的小写形式，并用破折号替换空格。完整的 `push_type` 列表请参阅文末的"支持的推送服务及 `push_type`"表格。
+
+#### DingTalk (钉钉)
+```python
+dingtalk_config = {
+    "DINGTALK_WEBHOOK": "YOUR_DINGTALK_WEBHOOK_URL",  # 钉钉机器ンのWebhook URL
+    "DINGTALK_SECRET": "YOUR_DINGTALK_SECRET",      # 可选, 钉钉机器人的加签密钥
+}
+# from push_all_in_one import Push # 假设已在文件顶部导入 Push 类
+pusher = Push(config=dingtalk_config, push_type="dingtalk")
+```
+
+#### Telegram
+```python
+telegram_config = {
+    "TELEGRAM_BOT_TOKEN": "YOUR_TELEGRAM_BOT_TOKEN",    # Telegram 机器人的Token
+    "TELEGRAM_CHAT_ID": 123456789,                      # 您的 Telegram Chat ID (整数)
+    "PROXY_URL": "socks5://user:pass@host:port"         # 可选, 代理URL, 例如 "http://localhost:7890" 或 "socks5://localhost:1080"
+}
+# from push_all_in_one import Push
+pusher = Push(config=telegram_config, push_type="telegram")
+```
+
+#### WeChat Robot (企业微信机器人)
+```python
+wechat_robot_config = {
+    "WECHAT_ROBOT_KEY": "YOUR_WECHAT_ROBOT_KEY"  # 企业微信机器人的Key
+}
+# from push_all_in_one import Push
+pusher = Push(config=wechat_robot_config, push_type="wechat-robot")
+```
+
+#### PushDeer
+```python
+pushdeer_config = {
+    "PUSHDEER_KEY": "YOUR_PUSHDEER_KEY1,YOUR_PUSHDEER_KEY2", # PushDeer的Key (单个key或多个key用逗号分隔)
+    "PUSHDEER_ENDPOINT": "https://api2.pushdeer.com"         # 可选, PushDeer的API端点, 默认为 "https://api2.pushdeer.com"
+}
+# from push_all_in_one import Push
+pusher = Push(config=pushdeer_config, push_type="push-deer")
+```
+
+#### Discord
+```python
+discord_config = {
+    "DISCORD_WEBHOOK_URL": "YOUR_DISCORD_WEBHOOK_URL" # Discord的Webhook URL
+}
+# from push_all_in_one import Push
+pusher = Push(config=discord_config, push_type="discord")
+```
+
+#### Feishu (飞书)
+```python
+feishu_config = {
+    "FEISHU_WEBHOOK_URL": "YOUR_FEISHU_WEBHOOK_URL", # 飞书机器人的Webhook URL
+    "FEISHU_SECRET": "YOUR_FEISHU_SECRET"           # 可选, 飞书机器人的签名密钥
+}
+# from push_all_in_one import Push
+pusher = Push(config=feishu_config, push_type="feishu")
+```
+
+#### WeChat App (企业微信应用)
+```python
+wechat_app_config = {
+    "WECHAT_APP_CORP_ID": "YOUR_CORP_ID",             # 企业微信的Corp ID
+    "WECHAT_APP_CORP_SECRET": "YOUR_CORP_SECRET",     # 企业微信应用的Secret
+    "WECHAT_APP_AGENT_ID": 1000002,                   # 企业微信应用的Agent ID (整数)
+    "WECHAT_APP_USER_ID": "@all",                     # 可选, 推送给的用户ID, 默认为 "@all"
+    "WECHAT_APP_API_URL": "https://qyapi.weixin.qq.com" # 可选, API端点
+}
+# from push_all_in_one import Push
+pusher = Push(config=wechat_app_config, push_type="wechat-app")
+```
+
+#### ServerChan Turbo (Server酱 Turbo版)
+```python
+server_chan_turbo_config = {
+    "SERVER_CHAN_TURBO_SEND_KEY": "YOUR_SERVER_CHAN_TURBO_SEND_KEY" # Server酱Turbo版的SendKey
+}
+# from push_all_in_one import Push
+pusher = Push(config=server_chan_turbo_config, push_type="server-chan-turbo")
+```
+
+#### ServerChan V3 (Server酱 V3版)
+```python
+server_chan_v3_config = {
+    "SERVER_CHAN_V3_SEND_KEY": "YOUR_SERVER_CHAN_V3_SEND_KEY" # Server酱V3版的SendKey (注意: Server酱V3接口已下线，请考虑使用Turbo版)
+}
+# from push_all_in_one import Push
+pusher = Push(config=server_chan_v3_config, push_type="server-chan-v3")
+```
+
+#### PushPlus (推送加)
+```python
+pushplus_config = {
+    "PUSH_PLUS_TOKEN": "YOUR_PUSH_PLUS_TOKEN",      # PushPlus的Token
+    "PUSH_PLUS_TOPIC": "YOUR_TOPIC_CODE",         # 可选, 群组编码
+    "PUSH_PLUS_TEMPLATE": "html"                  # 可选, 消息模板 (如 html, json, cloudMonitor, jenkins, route, pay)
+}
+# from push_all_in_one import Push
+pusher = Push(config=pushplus_config, push_type="push-plus")
+```
+
+#### Custom Email (自定义邮件)
+```python
+custom_email_config = {
+    "CUSTOM_EMAIL_HOST": "smtp.example.com",        # SMTP服务器地址
+    "CUSTOM_EMAIL_PORT": 587,                       # SMTP服务器端口 (整数, 通常为 465 SSL或 587 TLS)
+    "CUSTOM_EMAIL_USER": "your_email@example.com",  # SMTP登录用户名
+    "CUSTOM_EMAIL_PASS": "YOUR_EMAIL_PASSWORD",     # SMTP登录密码或授权码
+    "CUSTOM_EMAIL_TO_USER": "recipient1@example.com,recipient2@example.com" # 收件人邮箱地址 (单个或多个,逗号分隔)
+}
+# from push_all_in_one import Push
+pusher = Push(config=custom_email_config, push_type="custom-email")
+```
+
+#### iGot
+```python
+i_got_config = {
+    "I_GOT_KEY": "YOUR_I_GOT_KEY1,YOUR_I_GOT_KEY2" # iGot的推送Key (单个key或多个key用逗号分隔)
+}
+# from push_all_in_one import Push
+pusher = Push(config=i_got_config, push_type="i-got")
+```
+
+#### Ntfy
+```python
+ntfy_config = {
+    "NTFY_TOPIC": "YOUR_NTFY_TOPIC",             # Ntfy的主题 (Topic)
+    "NTFY_SERVER": "https://ntfy.sh",            # 可选, Ntfy服务器地址, 默认为 "https://ntfy.sh"
+    "NTFY_USER": "YOUR_NTFY_USER",               # 可选, Ntfy认证用户名 (如果服务器需要)
+    "NTFY_PASS": "YOUR_NTFY_PASSWORD",           # 可选, Ntfy认证密码 (如果服务器需要)
+    "NTFY_TOKEN": "YOUR_NTFY_ACCESS_TOKEN"       # 可选, Ntfy访问令牌 (另一种认证方式)
+}
+# from push_all_in_one import Push
+pusher = Push(config=ntfy_config, push_type="ntfy")
+```
+
+#### OneBot (QQ机器人)
+```python
+onebot_config = {
+    "ONEBOT_HOST": "127.0.0.1",                  # OneBot服务的主机地址
+    "ONEBOT_PORT": 5700,                         # OneBot服务的端口号 (整数)
+    "ONEBOT_CQ_TOKEN": "YOUR_CQ_TOKEN",          # 可选, OneBot的Access Token
+    "ONEBOT_USER_ID": "123456789",               # 可选, 推送给的QQ号 (字符串). 如果同时配置了 group_id, 优先发送给 user_id.
+    "ONEBOT_GROUP_ID": "987654321"               # 可选, 推送给的QQ群号 (字符串).
+    # 注意: user_id 和 group_id 至少需要一个.
+}
+# from push_all_in_one import Push
+pusher = Push(config=onebot_config, push_type="one-bot")
+```
+
+#### Qmsg (Qmsg酱)
+```python
+qmsg_config = {
+    "QMSG_KEY": "YOUR_QMSG_KEY",                 # Qmsg酱的Key
+    "QMSG_QQ": "YOUR_QQ_NUMBER1,YOUR_QQ_NUMBER2",# 可选, 推送给的QQ号 (字符串, 多个用逗号分隔)
+    "QMSG_GROUP": "YOUR_GROUP_NUMBER1,YOUR_GROUP_NUMBER2" # 可选, 推送给的QQ群号 (字符串, 多个用逗号分隔)
+    # 注意: QMSG_QQ 和 QMSG_GROUP 至少需要一个.
+}
+# from push_all_in_one import Push
+pusher = Push(config=qmsg_config, push_type="qmsg")
+```
+
+#### WxPusher
+```python
+wxpusher_config = {
+    "WX_PUSHER_APP_TOKEN": "YOUR_WXPUSHER_APP_TOKEN", # WxPusher应用的AppToken
+    "WX_PUSHER_UIDS": ["UID_1", "UID_2"],             # 接收消息的用户UID列表 (list of strings) 或单个UID (string)
+    "WX_PUSHER_TOPIC_IDS": [1001, 1002],              # 可选, 接收消息的主题ID列表 (list of integers) 或单个主题ID (integer)
+    "WX_PUSHER_CONTENT_TYPE": 1,                      # 可选, 消息内容类型 (1:文本, 2:html, 3:markdown), 默认为1
+    "WX_PUSHER_URL": "http://wxpusher.zjiecode.com"   # 可选, WxPusher的API地址
+}
+# from push_all_in_one import Push
+pusher = Push(config=wxpusher_config, push_type="wx-pusher")
+```
+
+#### XiZhi (息知)
+```python
+xizhi_config = {
+    "XI_ZHI_KEY": "YOUR_XI_ZHI_KEY" # 息知的Key (注意: 该服务可能已调整或废弃, 请查阅官方文档)
+}
+# from push_all_in_one import Push
+pusher = Push(config=xizhi_config, push_type="xi-zhi")
+```
+
+### 3. 发送消息
+
+```python
+async def main():
+    try:
+        response = await pusher.send(title="消息标题", desp="消息内容")
+        print(f"发送成功: {response}")
+    except Exception as e:
+        print(f"发送失败: {e}")
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(main())
+```
+
+### 4. 推送选项 (可选)
+
+大多数推送服务都支持一些额外的推送选项，可以在 `send` 方法中通过 `option` 参数传递。
+
+例如，使用企业微信机器人并指定消息类型为 `markdown`:
+
+```python
+wechat_robot_config = {
+    "WECHAT_ROBOT_KEY": "YOUR_WECHAT_ROBOT_KEY"
+}
+pusher = Push(config=wechat_robot_config, push_type="wechat-robot")
+
+async def main():
+    try:
+        # 企业微信机器人选项
+        wechat_robot_option = {
+            "msgtype": "markdown"
+        }
+        response = await pusher.send(title="## Markdown 标题", desp="这是 **Markdown** 内容。", option=wechat_robot_option)
+        print(f"发送成功: {response}")
+    except Exception as e:
+        print(f"发送失败: {e}")
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(main())
+```
+
+具体的配置项和选项请参考各个推送服务模块的文档字符串或源代码。
+
+## 支持的推送服务及 `push_type`
+
+| 推送服务名称             | `push_type` 值         | Python 模块 (`push_all_in_one.push`) |
+|------------------------|-----------------------|---------------------------------------|
+| DingTalk (钉钉)        | `dingtalk`            | `dingtalk.py`                         |
+| Telegram               | `telegram`            | `telegram.py`                         |
+| WeChat Robot           | `wechat-robot`        | `wechat_robot.py`                     |
+| PushDeer               | `push-deer`           | `push_deer.py`                        |
+| Discord                | `discord`             | `discord.py`                          |
+| Feishu (飞书)          | `feishu`              | `feishu.py`                           |
+| WeChat App             | `wechat-app`          | `wechat_app.py`                       |
+| ServerChan Turbo       | `server-chan-turbo`   | `server_chan_turbo.py`                |
+| ServerChan V3          | `server-chan-v3`      | `server_chan_v3.py`                   |
+| PushPlus               | `push-plus`           | `push_plus.py`                        |
+| Custom Email (自定义邮件)| `custom-email`        | `custom_email.py`                     |
+| iGot                   | `i-got`               | `i_got.py`                            |
+| Ntfy                   | `ntfy`                | `ntfy.py`                             |
+| OneBot (QQ机器人)      | `one-bot`             | `one_bot.py`                          |
+| Qmsg (Qmsg酱)          | `qmsg`                | `qmsg.py`                             |
+| WxPusher               | `wx-pusher`           | `wx_pusher.py`                        |
+| XiZhi (息知)           | `xi-zhi`              | `xi_zhi.py`                           |
+
+
+## 贡献
+
+欢迎各种形式的贡献，包括但不限于：
+
+- 报告 Bug
+- 提交新功能建议
+- 完善文档
+- 提交 Pull Request
+
+请在提交 Pull Request 前先提出 Issue 进行讨论。
+
+## 许可证
+
+本项目使用 [MIT许可证](LICENSE)。

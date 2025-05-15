@@ -1,0 +1,16 @@
+include README.md
+include LICENSE
+include requirements.txt
+include QUICK_START.md
+include PUBLISHING.md
+include 使用指南.md
+recursive-include examples *
+
+# Ensure main package Python files are included for sdist
+include __init__.py
+include one.py
+recursive-include push *.py
+recursive-include utils *.py
+recursive-include interfaces *.py
+
+global-exclude *.py[cod] __pycache__ *.so *.dylib 
