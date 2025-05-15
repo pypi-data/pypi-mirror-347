@@ -1,0 +1,8 @@
+pyproject.toml
+jwostik_pipeliner.egg-info/PKG-INFO
+jwostik_pipeliner.egg-info/SOURCES.txt
+jwostik_pipeliner.egg-info/dependency_links.txt
+jwostik_pipeliner.egg-info/top_level.txt
+tests/test_job.py
+tests/test_pipeline.py
+tests/test_queue.py
