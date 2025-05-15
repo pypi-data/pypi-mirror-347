@@ -1,0 +1,9 @@
+areq/__init__.py,sha256=V2OkCN8z7X4pX5DNtcENe4i3J_5ZYy5H9-GfqiJ4xhc,133
+areq/api.py,sha256=iIV2B_I2t6T7s3aX7ZILyIrsBxvAEHZ00FAWgljtzRU,1239
+areq/models.py,sha256=SOK0mAAfCu96Hc-DZcLnh9PnOfRw3QU0eKhwUAkVR4A,737
+areq/core/httpx2requests.py,sha256=-pwdX_MqnOh1rWqVITqTwpNC8-FhJ7GsPUHZA2nRH_Y,671
+areq-0.0.1.dist-info/licenses/LICENSE,sha256=vc9Vf0ozzJ70wojhAnEtvFTaDwWWKk8tCFdz3fUtcIk,1075
+areq-0.0.1.dist-info/METADATA,sha256=G3fp8eYunKOqkrFwjRlJeW7DKAuWCPmW6Af1YCvjiUo,562
+areq-0.0.1.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+areq-0.0.1.dist-info/top_level.txt,sha256=hcSgttpe38I2kBip2Rd9KJqEWQ6R0ZCp0tj1UWuuEok,5
+areq-0.0.1.dist-info/RECORD,,
