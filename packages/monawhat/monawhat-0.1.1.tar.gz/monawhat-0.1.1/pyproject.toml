@@ -1,0 +1,80 @@
+[project]
+name = "monawhat"
+version = "0.1.1"
+description = "A modern, fully type-hinted, and comprehensively tested monad library for Python 3.11+."
+readme = "README.md"
+authors = [{ name = "DirtyVader", email = "contact@crad-vador.net" }]
+license = "MIT"
+license-files = ["LICENSE"]
+
+keywords = [
+    "monad",
+    "monads",
+    "functional",
+    "functional programming",
+    "educational",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+requires-python = ">=3.11"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/dirtyvader/monawhat"
+Documentation = "https://monawhat.readthedocs.io/"
+Repository = "https://github.com/dirtyvader/monawhat"
+Issues = "https://github.com/dirtyvader/monawhat/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "nox>=2025.5.1",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.1.1",
+    "pytest-rich>=0.2.0",
+    "ruff>=0.11.9",
+    "sphinx>=8.2.3",
+    "sphinx-rtd-theme>=3.0.2",
+]
+
+[tool.mypy]
+python_version = "3.11"
+show_error_codes = true
+no_implicit_optional = true
+warn_return_any = true
+warn_unused_ignores = true
+namespace_packages = false
+explicit_package_bases = false
+mypy_path = ["src/", "packages/"]
+exclude = ["scripts", "docs", "tests", ".venv"]
+follow_imports = "silent"
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.uv]
+cache-dir = "./.uv-cache"
+
+[tool.ruff.lint]
+extend-select = ["UP", "D", "PL"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.uv.workspace]
+members = ["packages/*"]
