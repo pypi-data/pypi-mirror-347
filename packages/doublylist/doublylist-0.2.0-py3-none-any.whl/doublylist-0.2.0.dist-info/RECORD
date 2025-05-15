@@ -1,0 +1,9 @@
+doublylist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doublylist/lib.py,sha256=rT0ARYp623yQaVco-cchQpusC2Dbf9oOnamjonk6I4E,728
+doublylist/node.py,sha256=vULQr5vBEQy2ZWLmC1ycf_x8PEemJy2kd8R12MTqXmY,377
+doublylist/node_list.py,sha256=7sV1Mme3ev1twNXZ4VDX4bsglthi53XKf0xHT9k4dHc,932
+doublylist/structure.py,sha256=n0wUHwx1fYUJVrF-xpiXjYvcon5ULFhL0Kj8gyT1rkk,294
+doublylist-0.2.0.dist-info/METADATA,sha256=YL1hjyzRVpZMehenMfXhKxbj0IbSqtUvK1VRiGYMcFI,1005
+doublylist-0.2.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+doublylist-0.2.0.dist-info/top_level.txt,sha256=Q9Fq1XTZRm0LWBhTYqZ9GCrQk3Y1RwTNJuRRgGBAb7w,11
+doublylist-0.2.0.dist-info/RECORD,,
