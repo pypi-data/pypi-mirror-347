@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: Pydoxinng
+Version: 0.8.0
+Summary: none
+Author: none
+Author-email: none@gmail.com
+Requires-Python: >=3.7
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-python
+Dynamic: summary
