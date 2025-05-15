@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: poetry-install-prod-plugin
+Version: 0.1.2
+Summary: Adds a command which forces local (path) dependencies to be installed in non-editable mode, even when marked as editable.
+License: MIT
+Author: Doeke
+Author-email: doekebuursma@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: poetry (>=1.5.0)
+Project-URL: Repository, https://github.com/Doekeb/poetry-install-prod-plugin
+Description-Content-Type: text/markdown
+
+# Install Prod
+
+Adds a command `poetry install-prod` which forces local (path) dependencies to be installed in non-editable mode, even when marked as editable. This is particularly useful for monorepo architectures with many cross-dependencies. In a development environment it is desireable to install local (path) dependencies as symbolic links so they are editable, but in a production or CI/CD environment it is necessary to install all dependencies as non-editable.
+
