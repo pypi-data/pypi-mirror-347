@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-gaodeweather-server-zheng = mcp_gaodeweather_server_zheng:main
