@@ -1,0 +1,2 @@
+[console_scripts]
+mermaid-mcp = mermaid_mcp.entry:main
