@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-cmpay = mcp_cmpay.server:main
