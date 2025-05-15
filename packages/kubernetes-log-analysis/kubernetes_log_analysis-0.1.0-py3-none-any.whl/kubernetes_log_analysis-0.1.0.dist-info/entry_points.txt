@@ -1,0 +1,2 @@
+[console_scripts]
+k-log = kubernetes_log_analysis.cli:main_cli
