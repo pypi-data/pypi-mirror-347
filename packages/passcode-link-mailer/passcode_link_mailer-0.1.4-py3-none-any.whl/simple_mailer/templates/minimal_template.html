@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light">
+        <meta name="supported-color-schemes" content="light">
+        <title>Email Confirmation</title>
+        <style>
+            body, html {{
+                margin: 0 auto !important;
+                padding: 0 !important;
+                height: 100% !important;
+                width: 100% !important;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                font-size: 15px;
+                line-height: 1.5;
+                color: #333333;
+                background-color: #ffffff;
+            }}
+            * {{ -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }}
+            table {{ border-spacing: 0 !important; border-collapse: collapse !important; }}
+            a {{ color: #2b7bb9; text-decoration: none; }}
+            .button {{ display: inline-block; padding: 12px 24px; background-color: #2b7bb9; color: #ffffff !important;
+                       text-decoration: none; border-radius: 3px; font-weight: 500; }}
+            .passcode {{ font-family: monospace; font-size: 18px; letter-spacing: 1px; color: #333333; }}
+            .footer {{ font-size: 12px; color: #666666; }}
+            @media screen and (max-width: 600px) {{
+                .email-container {{ width: 100% !important; max-width: 100% !important;}}
+            }}
+        </style>
+    </head>
+    <body>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 580px; margin: 0 auto;" class="email-container">
+            <tr>
+                <td style="padding: 40px 30px 30px 30px; text-align: left;">
+                    {personalized_message_body}
+
+                    <p style="margin: 30px 0; text-align: center;">
+                        <a href="{full_confirmation_link}" class="button">Confirm Email</a>
+                    </p>
+
+                    <p style="margin: 25px 0 5px 0; font-size: 14px; color: #666666; text-align: center;">
+                        If the button doesn't work, use this link:<br>
+                        <a href="{full_confirmation_link}" style="color: #2b7bb9; word-break: break-all;">{full_confirmation_link}</a>
+                    </p>
+
+                    <div style="margin: 30px 0; padding: 15px; background-color: #f7f7f7; border-left: 2px solid #2b7bb9;">
+                        <p style="margin: 0 0 10px 0; font-size: 14px;">Your confirmation code:</p>
+                        <p style="margin: 0;" class="passcode">{passcode}</p>
+                    </div>
+
+                    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #eeeeee; text-align: center;" class="footer">
+                        <p style="margin: 0 0 5px 0;">This link and code are valid for {validity_str}.</p>
+                        <p style="margin: 0 0 5px 0;">If you didn't request this email, please disregard it.</p>
+                        <p style="margin: 0;"> </p> </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
