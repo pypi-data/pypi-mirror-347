@@ -1,0 +1,13 @@
+fileprompt/__init__.py,sha256=_PmLetDIBkAot4-HPc4tWebORVGQdYISsrxOXLrCmaI,343
+fileprompt/cli.py,sha256=otAn6WYASuQXYw0qKQ_tcG0VJ36Nz-9mgmKudMY3Lsg,1463
+fileprompt/fs.py,sha256=Hz26q2ONCeIG9BftONZT9o3VYrTbZYs_Mg9NexC12X4,5712
+fileprompt/main.py,sha256=bFMnv_73flTygQlblCv0XDN-YSq2yZbIg0bCX0U_FBA,1413
+fileprompt/models.py,sha256=f5BVSKIThBw9JvjPBadEGrJXKAxsyKeRvd72Kb2Xf1w,414
+fileprompt/payload.py,sha256=peV_-njgd8HwvjL1bp6pdMcBQLWtzCBCwXKiYn9QZdU,677
+fileprompt/watcher.py,sha256=4esIfy8Mt_ip6_nzfIUA-ma_JOM0zCJHx99aAn6DFeA,776
+fileprompt/templates/index.html,sha256=Dn4qfPeBXfrbLSPbnUW8XZw3zqyUWxoB0UKtYtmZvw8,7669
+fileprompt-0.1.0.dist-info/METADATA,sha256=XtxQ7CDfk_ny2lQWXV083yIvwjdDD7eJDhosabDM5vY,881
+fileprompt-0.1.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+fileprompt-0.1.0.dist-info/entry_points.txt,sha256=3byMohmxBkI1p6WYDKQTSTZD-tx49Wwj43ZGXv6NtKs,50
+fileprompt-0.1.0.dist-info/top_level.txt,sha256=ct5KXvjXk8cDYKYXyTG6LvpaV7_cfq-zeOvfeZUSaQg,11
+fileprompt-0.1.0.dist-info/RECORD,,
