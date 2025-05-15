@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: transactron
+Version: 0.1.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: amaranth==0.5.4
+Requires-Dist: amaranth-stubs==0.1.1
+Requires-Dist: dataclasses-json==0.6.3
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: networkx==3.4.2
+Provides-Extra: dev
+Requires-Dist: pyright==1.1.393; extra == "dev"
+Requires-Dist: flake8==7.0.0; extra == "dev"
+Requires-Dist: black==24.4.2; extra == "dev"
+Requires-Dist: pytest==8.0.0; extra == "dev"
+Requires-Dist: pytest-xdist==3.5.0; extra == "dev"
+Requires-Dist: hypothesis==6.99.6; extra == "dev"
+Requires-Dist: pep8-naming==0.13.3; extra == "dev"
+Requires-Dist: Sphinx==5.1.1; extra == "dev"
+Requires-Dist: sphinx-rtd-theme==1.0.0; extra == "dev"
+Requires-Dist: myst-parser==0.18.0; extra == "dev"
+Requires-Dist: numpydoc==1.5.0; extra == "dev"
+Requires-Dist: sphinxcontrib-mermaid==0.8.1; extra == "dev"
+Requires-Dist: pre-commit==2.16.0; extra == "dev"
+Dynamic: license-file
