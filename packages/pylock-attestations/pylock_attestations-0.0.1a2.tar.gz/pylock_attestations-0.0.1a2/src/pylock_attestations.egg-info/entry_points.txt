@@ -1,0 +1,2 @@
+[console_scripts]
+pylock-attestations = pylock_attestations._cli:main
