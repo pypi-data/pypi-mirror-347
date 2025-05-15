@@ -1,0 +1,40 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "passcode-link-mailer"
+version = "0.1.5"
+authors = [
+    { name="Jonatan Shaya", email="jonatan.shaya99@gmail.com" },
+]
+description = "A simple Python library to send email confirmations via Gmail using App Passwords, featuring a unique passcode and a provided link."
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Email",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+keywords = ["email", "gmail", "confirmation", "passcode", "mailer", "app password", "verification"]
+
+[project.urls]
+"Homepage" = "https://github.com/The-JAR-Team/passcode-link-mailer"
+"Repository" = "https://github.com/The-JAR-Team/passcode-link-mailer"
+"Bug Tracker" = "https://github.com/The-JAR-Team/passcode-link-mailer/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
