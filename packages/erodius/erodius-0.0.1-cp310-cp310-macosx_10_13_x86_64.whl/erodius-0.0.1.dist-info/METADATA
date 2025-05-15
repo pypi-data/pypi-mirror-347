@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: erodius
+Version: 0.0.1
+Summary: A library for spatial network analysis
+Author-Email: Petros Koutsolampros <py-devel@pklampros.net>
+License-Expression: GPL-3.0-only
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Description-Content-Type: text/markdown
+
+# erodius
+
+This is a python wrapper around the [sala spatial network analysis library](https://github.com/spatialnous/salalib)
