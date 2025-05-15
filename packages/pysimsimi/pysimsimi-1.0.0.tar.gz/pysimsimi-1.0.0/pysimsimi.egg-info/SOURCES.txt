@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pysimsimi/__init__.py
+pysimsimi/simitalk.py
+pysimsimi/simiteach.py
+pysimsimi.egg-info/PKG-INFO
+pysimsimi.egg-info/SOURCES.txt
+pysimsimi.egg-info/dependency_links.txt
+pysimsimi.egg-info/requires.txt
+pysimsimi.egg-info/top_level.txt
