@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dyams"
+version = "0.1"
+authors = [
+    { name = "jiangduo.song", email = "jiangduo.song@datayes.com" }
+]
+description = "test"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+license = "MIT"
+license-files = ["LICENSE"]
+

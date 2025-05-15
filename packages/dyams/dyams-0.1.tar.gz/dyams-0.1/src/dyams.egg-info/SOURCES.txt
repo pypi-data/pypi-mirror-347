@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/DYAMS/__init__.py
+src/DYAMS/example.py
+src/dyams.egg-info/PKG-INFO
+src/dyams.egg-info/SOURCES.txt
+src/dyams.egg-info/dependency_links.txt
+src/dyams.egg-info/top_level.txt
