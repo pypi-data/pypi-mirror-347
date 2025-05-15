@@ -1,0 +1,9 @@
+geezer/__init__.py,sha256=dA4beEdvyVY_6QD8w7cVS7_QzVLjK4-6NPRmCnBatvM,23
+geezer/config.py,sha256=I2Ypf5xDqbIms7n9RHW1IVVWXxUG2n49NhMAyTrHJZw,91
+geezer/demo.py,sha256=79O7CvaoG71EL-Wggs62mTjV85GO0UDb7VBZeeG7PPc,921
+geezer/log.py,sha256=YTamagmOY0EoD7gtLOiNYg_yMS1Zv0DirO9h0eZ3txA,2610
+geezer/version.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+geezer-0.1.0.dist-info/METADATA,sha256=e7Ajs2y9LAxzjQnGtns1YYolBD8HSZWvaDrGr3ok9kg,3267
+geezer-0.1.0.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+geezer-0.1.0.dist-info/top_level.txt,sha256=grMUqZ5SPs6FRrwR4E9swZiRddMczvEUL1v3XVv6FZ0,7
+geezer-0.1.0.dist-info/RECORD,,
