@@ -1,0 +1,13 @@
+boto3
+ipywidgets
+gql
+cloud-dataplug
+ipython
+requests_toolbelt
+
+[geospatial]
+cloud-dataplug[geospatial]
+pdal
+
+[metabolomics]
+cloud-dataplug[metabolomics]
