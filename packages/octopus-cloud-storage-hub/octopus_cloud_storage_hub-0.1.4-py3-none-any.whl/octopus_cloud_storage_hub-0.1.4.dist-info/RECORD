@@ -1,0 +1,12 @@
+app/__init__.py,sha256=7ezdWvbVc8LRAsYvKsP_wDS3LPj-g5H0ZpTAL-xWmRE,18
+app/config.py,sha256=fgqh4A2bukJW5ac-p6ywHMeblYEWhcDm9NGf5vuLAAk,621
+app/main.py,sha256=qpntyd-ULBQD--p2CCVKK3AClWsCnL4jNr4G_4RzGQE,1116
+app/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/cli/main.py,sha256=7ZJ2gZEZUboyE3ZmdnPBf-NBUfNHl3b1L0Vf5sZ0tp0,1325
+app/handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/handlers/base_handler.py,sha256=GZKEWYg2WtL1egEmjyfDBkwGGG5sTvujG331BRy27zs,737
+app/handlers/oss.py,sha256=I6KJqc-QVldDa_hTX8eE4z-nbRhN1-e3cEpaVOruEu4,1304
+octopus_cloud_storage_hub-0.1.4.dist-info/METADATA,sha256=Uk5YObfc0T9iNG5yjL7tmoqqTbC1y4p8H9LtOK4AXeI,338
+octopus_cloud_storage_hub-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+octopus_cloud_storage_hub-0.1.4.dist-info/entry_points.txt,sha256=AkgQFNpFQKafCb_2Mlqa6WSdzfBThYqYaQnkqj5nbls,42
+octopus_cloud_storage_hub-0.1.4.dist-info/RECORD,,
