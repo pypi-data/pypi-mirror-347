@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+CRPTBacktest.egg-info/PKG-INFO
+CRPTBacktest.egg-info/SOURCES.txt
+CRPTBacktest.egg-info/dependency_links.txt
+CRPTBacktest.egg-info/top_level.txt
+pystrategy/PyStrategy.py
+pystrategy/__init__.py

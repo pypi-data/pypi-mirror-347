@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]                         # PEP 621 metadata table
+name = "CRPTBacktest"
+version = "0.1.1a"
+description = "Tick data backtester"
+readme = "README.md"
+#license = { file = "LICENSE" }
+#license-files = ["LICENSE"]
+license-files = ["LICENSE"]
+authors = [
+  { name="Anar Faradzhov", email="antaresstarra@gmail.com" },
+]
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License"
+]
+
+#[project.urls]
+#"Source" = "https://github.com/yourusername/foo"
+
+[tool.setuptools.package-data]
+"PyStrategy" = ["*.so"]
