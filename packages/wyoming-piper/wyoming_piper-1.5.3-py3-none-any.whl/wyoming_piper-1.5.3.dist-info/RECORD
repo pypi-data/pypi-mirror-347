@@ -1,0 +1,14 @@
+wyoming_piper/__init__.py,sha256=jq4RWRoEFQNm73oe9FNeVxdHTbu-MdElAnW1fbodESo,138
+wyoming_piper/__main__.py,sha256=knqXEoX_oxJr69oKitAILZKioKsn14HSrTpa3lCT-nA,7186
+wyoming_piper/const.py,sha256=04sCdtJ2QGuF1BQGkOuQW10og61PgH3fCnPhaYu-YoU,1015
+wyoming_piper/download.py,sha256=n3oKXN0fLk7Dn7x4wnR17b3QzXilFgF-QSxtN0QE10s,6185
+wyoming_piper/file_hash.py,sha256=HMuwrgEIg-bCOXHG0wE3vtjrqGD7QaA_UNfvBMXeUcY,1107
+wyoming_piper/handler.py,sha256=0bcllkoR6iNsseWQ1Y-Uj4sMV_az6mn4ivS8AAo4RHw,4936
+wyoming_piper/process.py,sha256=L_qqxQcQawrC940fwlv4u6KM9KjCq6N6ym-OADSZcrM,5794
+wyoming_piper/voices.json,sha256=3uEoyiBYbQlJnFYUEKnFHYK0Wq40sbaHiD9AsgRWKzc,202976
+wyoming_piper-1.5.3.dist-info/licenses/LICENSE.md,sha256=E3RtUJ105V6iJl--8gS7fNv4SoMVsCB-mIMmy1Q4cCg,1071
+wyoming_piper-1.5.3.dist-info/METADATA,sha256=9fYLRK0GOJCnaf9FBwlV1zoYUoDtyb0h66tOilKf2YU,2463
+wyoming_piper-1.5.3.dist-info/WHEEL,sha256=A8Eltl-h0W-qZDVezsLjjslosEH_pdYC2lQ0JcbgCzs,91
+wyoming_piper-1.5.3.dist-info/entry_points.txt,sha256=n2UgsOCQitQ5Itr20aITTWZLL2dAtaVKn5pdecXdDHE,61
+wyoming_piper-1.5.3.dist-info/top_level.txt,sha256=t7U7-u1sK_4xy_qbTJhxQRbxle3cLQfPq2oVLezHVNU,14
+wyoming_piper-1.5.3.dist-info/RECORD,,
