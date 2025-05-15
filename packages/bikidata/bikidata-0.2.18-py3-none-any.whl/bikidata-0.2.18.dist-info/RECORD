@@ -1,0 +1,10 @@
+bikidata/__init__.py,sha256=f6FkbCHuQmxwFhLodGT_foG4BtJtXTL1JavmTZAPExQ,191
+bikidata/__main__.py,sha256=BFJ1qHqwFskHvlVScw4nfMKpllD_v7_XgnJaRW-k7wk,418
+bikidata/main.py,sha256=2aVLaypdZCwQgk_NvnHcIuGQ-baQs2yEHMdKuXTqU-Y,8767
+bikidata/query.py,sha256=ncumLiY3JI0wBgGt17t1EyMEwr9hbVtOUrimCmdp4hY,12304
+bikidata/rdf2vec.py,sha256=mg0tVvUkipBSu5mbqy0Qv9dBRxzzsPq64qXmJscKz1s,2552
+bikidata/semantic.py,sha256=oYYpnp6eZdV9CTC7atu-3wbn301tkhRmNwA4o9Uz0bw,2608
+bikidata-0.2.18.dist-info/LICENSE,sha256=xYurRf3Aebx_-8p0dNw4T8PDGTItmIgrzSLblDEy5DE,1088
+bikidata-0.2.18.dist-info/METADATA,sha256=m8HQ0CV1Z20Oipaw973in_rX6-klSYjHgJDU9HRJao0,1886
+bikidata-0.2.18.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bikidata-0.2.18.dist-info/RECORD,,
