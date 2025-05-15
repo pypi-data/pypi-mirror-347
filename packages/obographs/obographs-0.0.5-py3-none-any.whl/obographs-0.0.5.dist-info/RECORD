@@ -1,0 +1,10 @@
+obographs/__init__.py,sha256=55f4bf18441bd7f6c41afa68d094532933b02b21dbdd20679cf8807c1791d494,1601
+obographs/model.py,sha256=1f1bda132b83d8e08d7301eddb9be8d58b7e61c5b30e9baab9c24fd22348db53,8457
+obographs/py.typed,sha256=01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b,1
+obographs/standardized.py,sha256=43ee42d342f33df38f24151339cdeb6525252af541366149c7719d188901a52f,25863
+obographs/version.py,sha256=03a64be7e09716976ae72d4c1ce70afe06d2bf1772e45dd140a3903675f07332,961
+obographs-0.0.5.dist-info/licenses/LICENSE,sha256=4be0ec343e3bf11fd54321a6b576d5616ebb7d18898f741f63c517209e33bcb2,1076
+obographs-0.0.5.dist-info/WHEEL,sha256=65f6765ba93534713730ff2172cd912ef280aa42867625a73f77c2fef0639dae,78
+obographs-0.0.5.dist-info/entry_points.txt,sha256=9a9819cedd2186e28d5d42ddce5e3de1417b0db2b07392ff35f9adc7c86a8619,50
+obographs-0.0.5.dist-info/METADATA,sha256=5dd83cf5b36da7b18dbb68e37072463e342e189975429e9f3aa3535675e7874d,12768
+obographs-0.0.5.dist-info/RECORD,,
