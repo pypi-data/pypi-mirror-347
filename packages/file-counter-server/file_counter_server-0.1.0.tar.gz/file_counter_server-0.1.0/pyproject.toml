@@ -1,0 +1,19 @@
+[project]
+name = "file-counter-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "郭国勇", email = "guoyong.ggy@autonavi.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.8.1",
+]
+
+[project.scripts]
+file-counter-server = "file_counter_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
