@@ -1,0 +1,2 @@
+[console_scripts]
+aipseo = aipseo.cli:app
