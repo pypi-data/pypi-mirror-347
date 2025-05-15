@@ -1,0 +1,6 @@
+module.py
+setup.py
+wk_otel_semconv.egg-info/PKG-INFO
+wk_otel_semconv.egg-info/SOURCES.txt
+wk_otel_semconv.egg-info/dependency_links.txt
+wk_otel_semconv.egg-info/top_level.txt
