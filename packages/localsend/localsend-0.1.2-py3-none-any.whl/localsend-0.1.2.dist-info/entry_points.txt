@@ -1,0 +1,2 @@
+[console_scripts]
+localsend = localsend.__main__:APP
