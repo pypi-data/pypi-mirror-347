@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_sorl_async_thumbnails.egg-info/PKG-INFO
+django_sorl_async_thumbnails.egg-info/SOURCES.txt
+django_sorl_async_thumbnails.egg-info/dependency_links.txt
+django_sorl_async_thumbnails.egg-info/requires.txt
+django_sorl_async_thumbnails.egg-info/top_level.txt
+sorl_async_thumbnails/__init__.py
+sorl_async_thumbnails/apps.py
+sorl_async_thumbnails/backend.py
+sorl_async_thumbnails/conf.py
+sorl_async_thumbnails/defaults.py
+sorl_async_thumbnails/tasks.py
