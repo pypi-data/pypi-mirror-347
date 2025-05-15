@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: refinedoc
+Version: 0.0.2
+Summary: Python library for post-extraction refinement of text that may be derived from PDF extraction.
+Project-URL: Homepage, https://github.com/CyberCRI/refinedoc
+Project-URL: Issues, https://github.com/CyberCRI/refinedoc/issues
+Author-email: Théo NARDIN <theo.nardin@learningplanetinstitute.org>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# refinedoc
+python library for post-extraction refinement of text that may be derived from PDF extraction.
