@@ -1,0 +1,8 @@
+closive/__init__.py,sha256=0DVfvHGly3D0tnC3hkSkmYKQSTYOFAs_9wd-0jCeIxU,1689
+closive/_importer.py,sha256=DmrQ1nFx3SroF9PssVP8TtkldfRT55MJ2hBW0nyG_Ac,7286
+closive/closures.py,sha256=BJkXB-hd7iMEdLi0gfHHUALeECj0Loy62ZYLjPggSTY,35977
+closive/jit.py,sha256=RreBhbFL67PfnEz44DvQguSU_rwG0f_tiVxfSFGnX-k,9914
+closive/setup.py,sha256=r-yYccgKZo8f0YzlZKMJ6jWnaf7jr0NsN94QvZWaI08,1180
+closive-0.0.0.dev21.dist-info/METADATA,sha256=CaGcjGfk5FvGIe_ShLqsHTRawzQ6ICt6voYPF56avnc,874
+closive-0.0.0.dev21.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+closive-0.0.0.dev21.dist-info/RECORD,,
