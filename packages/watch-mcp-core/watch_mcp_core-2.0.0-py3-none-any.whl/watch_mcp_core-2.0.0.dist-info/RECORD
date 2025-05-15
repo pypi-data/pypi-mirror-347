@@ -1,0 +1,11 @@
+tools/__init__.py,sha256=lp5kRFDq7X5MWPbK63cBHibDxuMik0dsMM4Ft9-6gJg,31
+tools/my_tool/__init__.py,sha256=L6dZUYW4629HnjyQ93gNzuBM1HQiLrarz2uStLDukUg,46
+tools/my_tool/handler.py,sha256=BPeBr3Pcj8fHlNrxfYfK6Oa7ICxHWJmyGHQji_aWeko,1099
+tools/watch_query/__init__.py,sha256=lp5kRFDq7X5MWPbK63cBHibDxuMik0dsMM4Ft9-6gJg,31
+tools/watch_query/handler.py,sha256=0-W36Pnk0EXt5cQL39eo4Yp9UCh1pBbhmAYSnYdnESk,1134
+tools/watch_query/manifest.json,sha256=lAnW9Go3lFXEvlRKtt845OngR_s80ZXhQ-a15YkaR30,984
+watch_mcp_core-2.0.0.dist-info/METADATA,sha256=q2pAG47qd1M-bAdmjGzIp1qqL_gazrdkkDsrrfBKwqo,427
+watch_mcp_core-2.0.0.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+watch_mcp_core-2.0.0.dist-info/entry_points.txt,sha256=_l9dQdPSxu83yDCz4W1NYO6zMXptcHnwHGqbLFXX7m0,96
+watch_mcp_core-2.0.0.dist-info/top_level.txt,sha256=Ib4ZA2MPBpiT0tC-0qt5RcP9g42gLddRbx9PiYGa-Fc,6
+watch_mcp_core-2.0.0.dist-info/RECORD,,
