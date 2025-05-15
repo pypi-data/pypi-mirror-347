@@ -1,0 +1,16 @@
+turbodl/__init__.py,sha256=3EYDe7796OCsr6xKHRXzpQlh8vGZnnz_a5LWirJx6Bg,754
+turbodl/buffers.py,sha256=ghhHfEjlW4dqejscUKujmbLpHVUGeuuUJKudt2cQmLk,3354
+turbodl/constants.py,sha256=CA7usPCD2me5aKmmFhcz5aQod1QhrHHuJSYgI4pMn7I,1677
+turbodl/core.py,sha256=BNhCnlPPefSHhmPtTtTYO88adYDfIfuGfCpjOQzN_bM,15369
+turbodl/downloaders.py,sha256=bA-6H-b7CAHfIIlqip9-5bUSRtlFZs5dqE2zTZeHQes,8354
+turbodl/exceptions.py,sha256=1jdmArZRLeY8himqvz1ps2jcUVJ98lRx525aQ3RxJeU,1388
+turbodl/merger.py,sha256=KKv9MYyf1FlCCZ2_tsHuf999mCzyNTIwe6Y4dmvRZro,3023
+turbodl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbodl/utils.py,sha256=Blox0l6Gy0qdT1sSbA4fekro-4e__K0IS5dpXYyzM4g,25700
+turbodl/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbodl/cli/__main__.py,sha256=tIun_YYhfM9GK71sHtdO4veGEtm122iy-mzMAxbalUo,6009
+turbodl-0.6.1.dist-info/METADATA,sha256=ZIBS0aiEe6eIAO3bvurURQe0EzLS6mUnd9cJTG7ZC6E,13445
+turbodl-0.6.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+turbodl-0.6.1.dist-info/entry_points.txt,sha256=VJrF5jyGgeYGrq25gqRPrJxtVa8VPjiv8oBUsNMztIU,53
+turbodl-0.6.1.dist-info/licenses/LICENSE,sha256=fcaXPaWRr45_ur4IqWdXDv-52NRnM5EGPv4KpjdJUOI,1065
+turbodl-0.6.1.dist-info/RECORD,,

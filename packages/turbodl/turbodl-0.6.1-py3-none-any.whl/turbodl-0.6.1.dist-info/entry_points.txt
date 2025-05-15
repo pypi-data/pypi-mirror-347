@@ -1,0 +1,2 @@
+[console_scripts]
+turbodl = turbodl.cli.__main__:app
