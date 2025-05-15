@@ -1,0 +1,3 @@
+project_name_override: client
+
+http_timeout: 2
