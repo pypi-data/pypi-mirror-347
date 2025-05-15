@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-http-streamable-ysx-test = mcp_http_streamable:main
