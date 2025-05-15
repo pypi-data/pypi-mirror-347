@@ -1,0 +1,3 @@
+[console_scripts]
+rex = spcs_instruments.cli:runner
+rex-viewer = spcs_instruments.cli:runner_standalone
