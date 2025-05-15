@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+sp2p/__init__.py
+sp2p/client.py
+sp2p/client2.py
+sp2p/library.py
+sp2p/server.py
+sp2ppy.egg-info/PKG-INFO
+sp2ppy.egg-info/SOURCES.txt
+sp2ppy.egg-info/dependency_links.txt
+sp2ppy.egg-info/top_level.txt
