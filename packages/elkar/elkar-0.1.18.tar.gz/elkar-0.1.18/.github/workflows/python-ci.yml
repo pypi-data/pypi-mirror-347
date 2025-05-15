@@ -1,0 +1,43 @@
+name: Python CI
+
+on:
+  push:
+    paths:
+      - "src/elkar/**/*.py"
+      - "tests/**/*.py"
+      - "pyproject.toml"
+      - ".github/workflows/python-ci.yml"
+  pull_request:
+    paths:
+      - "src/elkar/**/*.py"
+      - "tests/**/*.py"
+      - "pyproject.toml"
+      - ".github/workflows/python-ci.yml"
+
+jobs:
+  python-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+
+      - name: Install the project
+        run: uv sync --locked --all-extras --dev
+
+      - name: Lint with ruff
+        run: uv run ruff check src/elkar
+
+      - name: Type check with mypy
+        run: uv run mypy src/elkar
+
+      - name: Run tests with pytest
+        if: ${{ hashFiles('tests/**/*.py') != '' }}
+        run: uv run pytest
