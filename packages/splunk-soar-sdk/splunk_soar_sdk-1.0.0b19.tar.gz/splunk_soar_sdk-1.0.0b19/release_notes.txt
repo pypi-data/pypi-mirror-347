@@ -1,0 +1,31 @@
+# [1.0.0-beta.19](https://github.com/phantomcyber/splunk-soar-sdk/compare/1.0.0-beta.18...1.0.0-beta.19) (2025-05-14)
+
+
+### Bug Fixes
+
+* make state keys private, and remove debug line from test ([31a1e87](https://github.com/phantomcyber/splunk-soar-sdk/commit/31a1e87ab98550596a24a13d341f7d40ea986d3f))
+
+
+### Features
+
+* add three delicious flavors of asset state ([293df57](https://github.com/phantomcyber/splunk-soar-sdk/commit/293df57bee64f601da6b2b43f1c93a8be9594bf1))
+
+
+
+
+
+# [1.0.0-beta.19](https://github.com/phantomcyber/splunk-soar-sdk/compare/1.0.0-beta.18...1.0.0-beta.19) (2025-05-14)
+
+
+### Bug Fixes
+
+* make state keys private, and remove debug line from test ([31a1e87](https://github.com/phantomcyber/splunk-soar-sdk/commit/31a1e87ab98550596a24a13d341f7d40ea986d3f))
+
+
+### Features
+
+* add three delicious flavors of asset state ([293df57](https://github.com/phantomcyber/splunk-soar-sdk/commit/293df57bee64f601da6b2b43f1c93a8be9594bf1))
+
+
+
+
