@@ -1,0 +1,16 @@
+[project]
+name = "rlx-helpers"
+version = "0.1.0"
+description = """A series of helper modules and classes for working with: Service Principals, Graph API, AzureSQL databases, Azure Data Lake Storage, Azure Keyvault"""
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "azure-identity>=1.23.0",
+    "azure-keyvault>=4.2.0",
+    "azure-storage-file-datalake>=12.20.0",
+    "requests>=2.32.3",
+    "sqlalchemy>=2.0.41",
+]
+[build-system]
+requires = ["uv_build>=0.7.3,<0.8.0"]
+build-backend = "uv_build"
