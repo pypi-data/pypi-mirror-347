@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+facetracker/__init__.py
+facetracker/_version.py
+facetracker/tracker.py
+facetracker.egg-info/PKG-INFO
+facetracker.egg-info/SOURCES.txt
+facetracker.egg-info/dependency_links.txt
+facetracker.egg-info/entry_points.txt
+facetracker.egg-info/requires.txt
+facetracker.egg-info/top_level.txt
