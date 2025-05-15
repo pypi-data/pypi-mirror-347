@@ -1,0 +1,10 @@
+containerdispatch/__init__.py,sha256=8D5a8oKgqd6WA1RUkiKCn4l_PVemtyuckxQut0vDHXM,20
+containerdispatch/find_impl.py,sha256=2LqeE_ycUJKS7JMd3YXHCeusZyA38kGJFXydQZ-Ze9w,2123
+containerdispatch/main.py,sha256=028pCnHbQJKLerGoQdBMf0LPN1t2ZwzVVgIKCkylpyo,9676
+containerdispatch/mro.py,sha256=L80uQ7h6_g_q_fkxxQBihggSEC2UmBlx8qTbrynUrGI,4701
+containerdispatch/utils.py,sha256=mnAEcapHETdliKM-ULXU6B3CHQdoVWHHL4TeboRu4CU,144
+containerdispatch-0.1.2.dist-info/licenses/LICENSE,sha256=B20HBo4fr1ZzplTLCvkSNtV7jRaTlQBUi8uULB3YWAY,14041
+containerdispatch-0.1.2.dist-info/METADATA,sha256=hxqbGUU32UX8w7wShfjRtFR3oSIdjtuIYj4ol7hzL8E,1160
+containerdispatch-0.1.2.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+containerdispatch-0.1.2.dist-info/top_level.txt,sha256=AAxfc3jo8p8PGAPU8V6fBitip6eiV-LPMJWIGSFtBuk,18
+containerdispatch-0.1.2.dist-info/RECORD,,
