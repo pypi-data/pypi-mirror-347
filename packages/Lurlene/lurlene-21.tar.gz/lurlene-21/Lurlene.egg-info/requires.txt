@@ -1,0 +1,5 @@
+diapyr>=18
+foyndation>=12
+numpy>=2.0.2
+splut>=4
+timelyOSC>=4
