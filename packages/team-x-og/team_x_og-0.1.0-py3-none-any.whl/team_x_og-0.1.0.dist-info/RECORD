@@ -1,0 +1,15 @@
+team_x_og/__init__.py,sha256=VHvevlodJ_O3wCdttJpJ1MXUWmYQpeNE1hIdfqEmgoY,333
+team_x_og/bot.py,sha256=TwAIdNdtuUacC4wz_SeRwAm-dsEfdRQfdsgD00WqoD8,4106
+team_x_og/cli.py,sha256=NlEvT6Hxtyeinj6ddH9Jyxi8x0QpuF0Pc7pPu2Wyrq0,1190
+team_x_og/errors.py,sha256=spaRvzD70Lv1NyrCUiA4_snqiX-lo1KhEN6DYaGIwtQ,563
+team_x_og/handlers.py,sha256=fHj88wEn-n9V-Njd-7oQk8DPRm5uSYWT7sdRMwRdMIY,1602
+team_x_og/inline.py,sha256=vBmvF7vZfG2QNlImHKT8UiH2qXqBy5tZkPm1lSW5x10,1228
+team_x_og/keyboard.py,sha256=GtPsEqObPFMVxcQdrU6v6bMVX6iQpILee3-0dX1sHjs,1053
+team_x_og/media.py,sha256=_X91Q20CPH4IixqTSMxHnPbwvkeGVrveIGk1oxGKVEc,3787
+team_x_og/plugins.py,sha256=w4-oUkJHB84c0u_lLtlNxblb_66_DGbM8p4B6EBJ3rM,1313
+team_x_og-0.1.0.dist-info/LICENSE,sha256=UIRYg1drvAtwtHC0S9Fp57cJpRzNB4v6ouYSR0rB5b4,139
+team_x_og-0.1.0.dist-info/METADATA,sha256=F-rpRERUBQ38ctRz9Huiylf-rRwzMZ1QIyZdUuq929A,520
+team_x_og-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+team_x_og-0.1.0.dist-info/entry_points.txt,sha256=NVUIuANjF0zBhtJp0JNY2S6kuaSpTRMKMdCpUdeGGe8,47
+team_x_og-0.1.0.dist-info/top_level.txt,sha256=DXIIrfOw9EMO9Fkuyv0hoG7JHUO-_PCYoNVdKhfrYt4,10
+team_x_og-0.1.0.dist-info/RECORD,,
