@@ -1,0 +1,14 @@
+[project]
+name = "notebookllm_mcp"
+version = "0.3.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.8.1",
+    "notebookllm>=1.1.0",
+]
+
+[project.scripts]
+notebookllm_mcp = "mcp_server:main"
+
