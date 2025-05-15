@@ -1,0 +1,9 @@
+cmem_plugin_loopwf/__init__.py,sha256=Eqns0SMZ6bRE6KQKo9fZmCQv6ONDKugF1GeNcS880AE,25
+cmem_plugin_loopwf/exceptions.py,sha256=WD4Ki0zyC5IW5rIv69EwpxLMS0Arie-NRuZ4wAidnF8,401
+cmem_plugin_loopwf/loopwf.svg,sha256=-DqwCzfks6uBGyDTsvekGOuTFDKd5shqd06uQCHd4ZM,284
+cmem_plugin_loopwf/task.py,sha256=2djDU6xC0v_VTk1KtVqUh22fDqc9m0eFieeUBp9EFFM,11774
+cmem_plugin_loopwf/workflow_type.py,sha256=UzB5NzAvDkYqUGbqSnvbw-PnTGsm3HybyleVTZJL3KI,2468
+cmem_plugin_loopwf-0.5.2.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+cmem_plugin_loopwf-0.5.2.dist-info/METADATA,sha256=HNhd1w5HOzlv4xaUUAqLrQq0BKicnXXF1agsMVzitIU,2518
+cmem_plugin_loopwf-0.5.2.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+cmem_plugin_loopwf-0.5.2.dist-info/RECORD,,
