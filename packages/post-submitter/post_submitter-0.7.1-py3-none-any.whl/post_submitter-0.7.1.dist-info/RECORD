@@ -1,0 +1,10 @@
+submitter/__init__.py,sha256=tM-nKNgorhrC6RpXEye5RfH8i62PFI7hajliFhYhvvg,546
+submitter/client.py,sha256=5m7WprokqavEs5koyH30a9ZVpj8VEhFZ3y8N91u9Fmc,20187
+submitter/model.py,sha256=iBZG2KHc3lv4KSuBZZtl_Q7ZEcjibhCQy_5lqmtxyPM,4422
+submitter/adapters/__init__.py,sha256=ooGe0iw97u0uMXD_yYC0GVqewcA2TkqKNHLA2P86_Bs,197
+submitter/adapters/weibo.py,sha256=wpmzIUkoPcZnl56hCNFpEX9bSYjKp5dH3jLB-glzxJw,9021
+post_submitter-0.7.1.dist-info/LICENSE,sha256=PK7es5k8qjkUjp16en4gZ4gMqFMgvZZ8MXcJazPp0bs,1066
+post_submitter-0.7.1.dist-info/METADATA,sha256=BhUx3JL5e0_JwP6tI_huRsqbSk0jyX6UuQkDm0RTZuw,5135
+post_submitter-0.7.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+post_submitter-0.7.1.dist-info/top_level.txt,sha256=-aHpkwHEjVi1VqiRwgT23mvEZT32oMj883ip_2RE-l0,10
+post_submitter-0.7.1.dist-info/RECORD,,
