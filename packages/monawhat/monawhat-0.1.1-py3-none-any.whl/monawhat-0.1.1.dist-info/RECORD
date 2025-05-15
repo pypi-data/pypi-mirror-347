@@ -1,0 +1,14 @@
+monawhat/__init__.py,sha256=0eVFfVd2aZXTZHFXcLZnFk8MftII4cMhRBBYt3Hm3LI,13
+monawhat/base.py,sha256=TA_Aft8eFESIFQpqBIxemL1ajYgf75-nSetN3FG-yhA,3611
+monawhat/either.py,sha256=r4wu0qYu0kqRrsTIXZUAoWSosixERM3N-TZlT2gKLP8,6744
+monawhat/identity.py,sha256=6Vx9CKv0yFWBB5lzTsSOTStyG_fKnAHwj-JoJeBq1Fc,2776
+monawhat/io.py,sha256=CZM-Q6BXpOgvfbeIMU9ByqMB9O5tj5mLefubKNyWvOA,14231
+monawhat/maybe.py,sha256=nFxsraaS_0XgeX3Ql2msRJyGNgX4WzHFytsfkD1Vz08,5432
+monawhat/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monawhat/reader.py,sha256=amM4Gjgzr8wjdTOdBal2ciUZaiyLS4x313134dnyT6E,4504
+monawhat/state.py,sha256=MH3NSltnUBHonA5i1efIYoOAELSapi2jdUJEjtnjUkQ,5973
+monawhat/writer.py,sha256=PDRtZgs6IWQ7hfnXuk6A38MfDMBvIli0nW1V_tUFfqc,7903
+monawhat-0.1.1.dist-info/METADATA,sha256=rJ21u_tuIQd5-ZF3wiFdejonD60cvBxJ-GcS_y1A5sY,13379
+monawhat-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+monawhat-0.1.1.dist-info/licenses/LICENSE,sha256=qg9vN6qT0b1OOwNU-gOCYsWUwjFfcsuf12ZVrJai964,1059
+monawhat-0.1.1.dist-info/RECORD,,
