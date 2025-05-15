@@ -1,0 +1,3 @@
+[console_scripts]
+lava-serpent=lava_serpent.cli:main
+
