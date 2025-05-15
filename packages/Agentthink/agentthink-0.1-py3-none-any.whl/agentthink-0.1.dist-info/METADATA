@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: Agentthink
+Version: 0.1
+Summary: A library to process data as binary files and serve it to models
+Home-page: https://yourprojecturl.com
+Author: Your Name
+Author-email: your.email@example.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pathlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# Agentthink Library
+
+Agentthink is a library to convert data (like images, PDFs, etc.) from URLs or Azure Blob Storage into binary format and serve it to machine learning models.
+
+## Installation
+
+```bash
+pip install Agentthink
