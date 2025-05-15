@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/div3dfa/__init__.py
+src/div3dfa/core.py
+src/div3dfa.egg-info/PKG-INFO
+src/div3dfa.egg-info/SOURCES.txt
+src/div3dfa.egg-info/dependency_links.txt
+src/div3dfa.egg-info/top_level.txt
+tests/test_core.py
