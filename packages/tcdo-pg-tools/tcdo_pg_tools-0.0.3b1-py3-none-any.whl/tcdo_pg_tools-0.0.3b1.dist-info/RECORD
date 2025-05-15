@@ -1,0 +1,11 @@
+tcdo_pg_tools/__init__.py,sha256=ThmVLur4XLyI6M0w1wcX5wsEcKnoUB_Ssp0By3Njbhs,140
+tcdo_pg_tools/cli.py,sha256=Uqja8t5qLIUV_oc13d5a_iklmakB80Vp_j3gxvmMVWo,274
+tcdo_pg_tools/coverage_calculator.py,sha256=Sh1S8wbYcO3vXYTBkY9m5Qdpk0BULnCH5KpChGow0Ik,5424
+tcdo_pg_tools/fusion_merge.py,sha256=CW3FllnIVODbxM1DATZIHlUDj02asBgDF51gjLvQOp4,4954
+tcdo_pg_tools-0.0.3b1.dist-info/licenses/AUTHORS.rst,sha256=IuytJO9E47b03QLsxm473a7OlkFEl9AGIpagFKHK1Hw,165
+tcdo_pg_tools-0.0.3b1.dist-info/licenses/LICENSE,sha256=9K-c4VNQe4CLKo6xxTfdmA8rHCrEBqPijWCJT9xBJQY,594
+tcdo_pg_tools-0.0.3b1.dist-info/METADATA,sha256=sPH1Y3fk7SqdQeraFROXFd4eO7K7Z7GdC6jM5gb_zH0,2056
+tcdo_pg_tools-0.0.3b1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+tcdo_pg_tools-0.0.3b1.dist-info/entry_points.txt,sha256=dnO6d-KPhv3FIFO88nabXFO313jBtRkkaGfbQ1JSdTg,56
+tcdo_pg_tools-0.0.3b1.dist-info/top_level.txt,sha256=i0JSy72-M7N5gjd8WTc1wxJqQoIIEKU9ZVu_7A4Wb4A,14
+tcdo_pg_tools-0.0.3b1.dist-info/RECORD,,
