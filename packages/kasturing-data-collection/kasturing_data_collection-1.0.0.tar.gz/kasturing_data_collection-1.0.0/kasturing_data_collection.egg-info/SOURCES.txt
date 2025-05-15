@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data-collection/__init__.py
+data-collection/datacollection.py
+kasturing_data_collection.egg-info/PKG-INFO
+kasturing_data_collection.egg-info/SOURCES.txt
+kasturing_data_collection.egg-info/dependency_links.txt
+kasturing_data_collection.egg-info/top_level.txt
