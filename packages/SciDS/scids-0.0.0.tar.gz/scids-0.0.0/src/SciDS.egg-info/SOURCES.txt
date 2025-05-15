@@ -1,0 +1,7 @@
+pyproject.toml
+src/SciDS.egg-info/PKG-INFO
+src/SciDS.egg-info/SOURCES.txt
+src/SciDS.egg-info/dependency_links.txt
+src/SciDS.egg-info/not-zip-safe
+src/SciDS.egg-info/top_level.txt
+src/scids/__init__.py
