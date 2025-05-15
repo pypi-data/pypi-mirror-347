@@ -1,0 +1,129 @@
+# GawX Python SDK
+
+The GawX Python SDK provides a simple interface to interact with the GawX AI platform, allowing you to manage sessions, pipelines, and execute AI operations programmatically.
+
+## Installation
+
+You can install the SDK using pip:
+
+```bash
+pip install gawx-python-sdk
+```
+
+Or install from source:
+
+```bash
+git clone https://github.com/gawx-ai/gawx-python-sdk.git
+cd gawx-python-sdk
+pip install -e .
+```
+
+## Dependencies
+
+The SDK requires the following dependencies:
+- requests
+- pandas
+- python-dotenv
+
+## Configuration
+
+Before using the SDK, you need to set up your environment variables. Create a `.env` file in your project root with the following variables:
+
+```
+GAWX_ACCESS_TOKEN=your_access_token
+GAWX_SERVER_URL=https://demo-server.gawx.ai
+```
+
+## Usage
+
+### Authentication
+
+```python
+from gawx.apis import get_access_token
+
+# Get access token
+access_token = get_access_token(email="your_email", password="your_password")
+```
+
+### Working with Sessions
+
+```python
+from gawx.apis import get_sessions, get_session, get_session_executions
+
+# Get all sessions
+sessions = get_sessions()
+
+# Get a specific session
+session = get_session(session_id="your_session_id")
+
+# Get session executions
+executions = get_session_executions(session_id="your_session_id")
+```
+
+### Using the Pipeline
+
+```python
+from gawx.apis import Pipeline
+
+# Initialize pipeline
+pipeline = Pipeline(access_token="your_access_token")
+
+# Get user information
+user_info = pipeline.get_user_info()
+```
+
+## API Reference
+
+### Authentication
+
+#### `get_access_token(email, password)`
+- **Parameters:**
+  - `email` (str): Your GawX account email
+  - `password` (str): Your GawX account password
+- **Returns:** Access token string
+- **Raises:** Exception if authentication fails
+
+### Sessions
+
+#### `get_sessions()`
+- **Returns:** List of all sessions
+- **Raises:** Exception if request fails
+
+#### `get_session(session_id)`
+- **Parameters:**
+  - `session_id` (str): ID of the session to retrieve
+- **Returns:** Session details
+- **Raises:** Exception if session not found
+
+#### `get_session_executions(session_id)`
+- **Parameters:**
+  - `session_id` (str): ID of the session
+- **Returns:** List of session executions
+- **Raises:** Exception if request fails
+
+### Pipeline
+
+#### `Pipeline(access_token)`
+- **Parameters:**
+  - `access_token` (str): Your GawX access token
+- **Methods:**
+  - `get_user_info()`: Returns user information
+
+## Error Handling
+
+The SDK raises exceptions with descriptive messages when API requests fail. Always wrap your API calls in try-except blocks:
+
+```python
+try:
+    sessions = get_sessions()
+except Exception as e:
+    print(f"Error: {str(e)}")
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

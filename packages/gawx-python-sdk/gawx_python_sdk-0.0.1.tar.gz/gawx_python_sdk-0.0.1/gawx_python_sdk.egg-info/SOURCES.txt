@@ -1,0 +1,11 @@
+README.md
+setup.py
+gawx/__init__.py
+gawx/apis.py
+gawx/config.py
+gawx/pipeline.py
+gawx_python_sdk.egg-info/PKG-INFO
+gawx_python_sdk.egg-info/SOURCES.txt
+gawx_python_sdk.egg-info/dependency_links.txt
+gawx_python_sdk.egg-info/requires.txt
+gawx_python_sdk.egg-info/top_level.txt
