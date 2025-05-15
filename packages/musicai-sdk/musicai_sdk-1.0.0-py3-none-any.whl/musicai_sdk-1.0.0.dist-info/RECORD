@@ -1,0 +1,6 @@
+musicai_sdk/__init__.py,sha256=zKbpbqtg2m5Yi69iibXrXR6mwlMD1CIPE79d4IEa3o0,34
+musicai_sdk/client.py,sha256=xiooq11onDbJMhCf375HH7YIGEyFV5IARVhueMoLjmE,6822
+musicai_sdk/utils.py,sha256=Ga0hY5vbP8_BibPwIywoVRQnKSVBis3jBwEPK6YvnPs,310
+musicai_sdk-1.0.0.dist-info/METADATA,sha256=b3gtMroy7cqNGKjiuShTzYTsTH3WBBdSYmptrKPH-u0,5626
+musicai_sdk-1.0.0.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+musicai_sdk-1.0.0.dist-info/RECORD,,
