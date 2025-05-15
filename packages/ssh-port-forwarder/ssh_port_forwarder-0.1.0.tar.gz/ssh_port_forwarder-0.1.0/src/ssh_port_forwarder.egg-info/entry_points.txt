@@ -1,0 +1,2 @@
+[console_scripts]
+ssh-port-forwarder = ssh_port_forwarder.app:main
