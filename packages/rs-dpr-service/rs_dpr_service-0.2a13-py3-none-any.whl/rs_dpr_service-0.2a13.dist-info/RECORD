@@ -1,0 +1,10 @@
+config/geoapi.yaml,sha256=sEBIVz5uzaKn3g13wV15d_9XwA6LiquVN86Hv60acAQ,1265
+config/tasktable.json,sha256=If8Csuhqd5mZNTHZdtmOZmx8EanwZRTZ9dgJyoUf8Aw,700
+rs_dpr_service/__init__.py,sha256=-8kQbDoMldfH0dAKmRxuwUwoNdnY-5xPSZ-Q5qxJ1_s,572
+rs_dpr_service/jobs_table.py,sha256=zC7fJ0GrFweN1T5sX-cEoA1PxMW1GEqiAMKd0bB1IFc,3220
+rs_dpr_service/main.py,sha256=aoXSFTmer27xtYz3CtPSbCyi_wNISRB7rNrcgg_N3VA,10769
+rs_dpr_service/opentelemetry.py,sha256=bv_4ULlQDIWLA5VO65Dje3cIFxLg87iAthaElnyE-ys,5840
+rs_dpr_service/processors.py,sha256=6WSSxDB69DU-3NG4UIMTRl2LslneC9G5tks3m-kBdlI,30454
+rs_dpr_service-0.2a13.dist-info/METADATA,sha256=AIVD5ESKR0M1zPQF_KZOKop-nyWb9gIJUru8SeykFwk,2158
+rs_dpr_service-0.2a13.dist-info/WHEEL,sha256=b4K_helf-jlQoXBBETfwnf4B04YC67LOev0jo4fX5m8,88
+rs_dpr_service-0.2a13.dist-info/RECORD,,
