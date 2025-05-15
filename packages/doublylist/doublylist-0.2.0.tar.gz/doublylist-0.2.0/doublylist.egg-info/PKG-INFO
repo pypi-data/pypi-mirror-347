@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: doublylist
+Version: 0.2.0
+Summary: Python wrapper for a C doubly linked list implementation
+Home-page: https://github.com/YourUsername/doublylist
+Author: Erdal Nayir
+Author-email: erdal.nayir2001@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Implementation Example
+
+Python wrapper for a C doubly linked list implementation
+
+``` python from src.node_list import NodeList
+
+if __name__ == '__main__':
+    sl = NodeList()
+    sl.add("49643", "Brs", "Arg1", "Arge", "Expert")
+    sl.add("51722", "Sl", "Dev", "Arge", "Mid")
+    sl.show_reverse()
+    sl.search(no="49643")
+    sl.count()
+    sl.remove(1)
+    sl.count()
+    sl.destroy() ```

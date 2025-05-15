@@ -1,0 +1,12 @@
+README.md
+setup.py
+doublylist/__init__.py
+doublylist/lib.py
+doublylist/node.py
+doublylist/node_list.py
+doublylist/structure.py
+doublylist.egg-info/PKG-INFO
+doublylist.egg-info/SOURCES.txt
+doublylist.egg-info/dependency_links.txt
+doublylist.egg-info/not-zip-safe
+doublylist.egg-info/top_level.txt
