@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+cself_tools/__init__.py
+cself_tools/cli.py
+cself_tools/mt_resistivity.py
+cself_tools.egg-info/PKG-INFO
+cself_tools.egg-info/SOURCES.txt
+cself_tools.egg-info/dependency_links.txt
+cself_tools.egg-info/top_level.txt
