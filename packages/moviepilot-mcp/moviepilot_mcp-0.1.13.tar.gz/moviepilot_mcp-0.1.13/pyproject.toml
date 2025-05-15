@@ -1,0 +1,44 @@
+[project]
+name = "moviepilot-mcp"
+description = "MoviePilot MCP 服务器，连接大型语言模型与MoviePilot媒体库管理系统"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "fastmcp>=2.3.3",
+    "httpx[http2]>=0.28.1",
+    "pydantic>=2.11.4",
+    "pyyaml>=6.0.2",
+    "uvicorn>=0.34.1",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/Pollo3470/MoviePilot-MCP"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs>=0.3.0"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+moviepilot-mcp = "moviepilot_mcp:main"
+
+[tool.hatch.version]
+source = "vcs"
+fallback-version = "v0.0.0"
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src/"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/moviepilot_mcp"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
