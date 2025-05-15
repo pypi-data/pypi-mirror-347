@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: kofnet
+Version: 0.0.3
+Summary: Extract SNI bug host for different ISPs based on country
+Home-page: https://github.com/Simatwa/kofnet
+Author: Smartwa
+Author-email: simatwacaleb@proton.me
+Maintainer: Smartwa
+License: MIT
+Project-URL: Bug Report, https://github.com/Simatwa/kofnet/issues/new
+Project-URL: Homepage, https://github.com/Simatwa/kofnet
+Project-URL: Source Code, https://github.com/Simatwa/kofnet
+Project-URL: Issue Tracker, https://github.com/Simatwa/kofnet/issues
+Project-URL: Download, https://github.com/Simatwa/kofnet/releases
+Project-URL: Documentation, https://github.com/Simatwa/kofnet/blob/main/docs
+Keywords: kofnet
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: Free For Home Use
+Classifier: Intended Audience :: Customer Service
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Provides-Extra: cli
+Requires-Dist: click==8.1.3; extra == "cli"
+Requires-Dist: tabulate==0.9.0; extra == "cli"
+Provides-Extra: all
+Requires-Dist: requests>=2.31.0; extra == "all"
+Requires-Dist: click==8.1.3; extra == "all"
+Requires-Dist: tabulate==0.9.0; extra == "all"
+
+<h1 align="center">
+<a href="https://kofnet.co.za/sni-bug-host-generator/">Kofnet</a>
+
+</h1>
+
+> Extract SNI bug host for different ISPs based on country.
+
+The bug hosts are extracted from https://kofnet.co.za/sni-bug-host-generator/
+
+---
+
+## Installation
+
+   ```sh
+   git clone https://github.com/Simatwa/kofnet.git
+   cd kofnet
+   pip install -r requirements.txt
+   pip install .
+   ```
+
+---
+
+## Usage
+
+```python
+from kofnet import Hunter
+# Extract codes and their corresponding countries.
+hunter = Hunter()
+
+hunter.get_countries_code_map()
+
+# Extract sni bug host mapped with their country codes.
+hunter.get_code_sni_map()
+```
+
+---
+
+The package also features out of the box CLI:
+
+<details>
+
+<summary>
+
+`$ kofnet --help`
+
+</summary>
+
+```
+Usage: kofnet [OPTIONS] COMMAND [ARGS]...
+
+  Extract SNI bug host for different ISPs based on country
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Commands:
+  cache    Download and save the html contents
+  country  Get List of a country and their corresponding codes
+  sni      Get SNI bug host for a particular country|code
+
+```
+
+</details>
+
+---
+
+<h2 align="center">Disclaimer</h2>
+
+This software is designed to extract information regarding potential Server Name Indication (SNI) bugs from the website kofnet.co.za. It is intended for use by security researchers, IT professionals, and individuals interested in improving web security.
+
+### Limitations and Assumptions
+
+- The accuracy of the extracted data depends on the current state and configuration of the target website. Changes to the website may affect the results.
+- This tool assumes that the user has legal permission to perform scans or tests on the target website. Unauthorized scanning or testing activities may violate local laws and regulations.
+- The tool does not guarantee the discovery of all possible vulnerabilities related to SNI bugs. Its effectiveness is subject to the specific characteristics of the target website.
+
+### Usage Restrictions
+
+- Users must comply with all applicable laws and regulations when using this tool, including but not limited to privacy laws, data protection laws, and cybersecurity laws.
+- The tool should only be used for legitimate purposes such as security research, penetration testing, or authorized vulnerability assessments.
+- Misuse of this tool, including but not limited to unauthorized scanning, spamming, or attempting to exploit discovered vulnerabilities without proper authorization, is strictly prohibited.
+
+### Liability
+
+- The authors and maintainers of this software disclaim any liability for damages resulting directly or indirectly from the use of this tool.
+- Users acknowledge that they use this tool at their own risk and agree to hold harmless the authors and maintainers of this software against any claims or damages arising from its use.
+
+> [!WARNING]
+> This tool is intentionally **NOT** published on pypi and **NO** one should.
