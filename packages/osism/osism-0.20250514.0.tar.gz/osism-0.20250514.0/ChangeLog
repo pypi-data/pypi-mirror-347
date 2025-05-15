@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20250514.0
+-------------
+
+* Add new netbox command (nbcli wrapper) (#1339)
