@@ -1,0 +1,9 @@
+camel_toolkits_mcp/__init__.py,sha256=OSruYagnYj7vctZJTS7-mwk97xVFvQNreS2pJ0XjWDo,114
+camel_toolkits_mcp/__main__.py,sha256=mWZWXMRDXScq_91G9KcZWc4PjWugMuECMHnNTLpCR5Q,165
+camel_toolkits_mcp/router.py,sha256=_wcK0hdDeZ8vX6MRgXrIEU5qsmJHdXOTieOKrz7WUnw,23260
+camel_toolkits_mcp/server.py,sha256=yNmeXkA9-2lJCC1RO0Izfp-3D9SofndvIzuTvvwM8Ds,467
+camel_toolkits_mcp-0.1.1.dist-info/METADATA,sha256=cbX3d0QERd7Tt-dfWWF85SjsN2cYFJ1XE3ZeZ0q7GL4,4739
+camel_toolkits_mcp-0.1.1.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+camel_toolkits_mcp-0.1.1.dist-info/entry_points.txt,sha256=BEeSlwTPaumToxrAIWEgcxoY-2b7VC2mC7_dN5qH0Mc,70
+camel_toolkits_mcp-0.1.1.dist-info/top_level.txt,sha256=1bYF0YxjYpNmcB7ydDUDg8ntf6G6CO66u6fYI76yIQI,19
+camel_toolkits_mcp-0.1.1.dist-info/RECORD,,
