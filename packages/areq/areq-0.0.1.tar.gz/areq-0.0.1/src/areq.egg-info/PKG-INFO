@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: areq
+Version: 0.0.1
+Summary: Asynchronous requests package
+Author-email: Ganesh Palanikumar <ganeshpkumar93@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# areq
+Asynchronous drop in replacement for requests package
