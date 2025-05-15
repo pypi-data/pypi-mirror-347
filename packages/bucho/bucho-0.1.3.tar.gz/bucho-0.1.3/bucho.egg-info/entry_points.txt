@@ -1,0 +1,8 @@
+[bucho.commands]
+sample = bucho.plugins:sample
+
+[console_scripts]
+bucho = bucho.command:console
+
+[paste.app_factory]
+main = bucho.wsgi:app_factory

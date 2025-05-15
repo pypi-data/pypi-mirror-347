@@ -1,0 +1,51 @@
+Metadata-Version: 2.4
+Name: bucho
+Version: 0.1.3
+Summary: `bucho` is a package for exercises.
+Author-email: AE35 <alpha.echo.35@gmail.com>
+License: PSFL
+Project-URL: Homepage, https://github.com/shimizukawa/bucho/
+Project-URL: Changelog, https://github.com/shimizukawa/bucho/blob/main/HISTORY.md
+Keywords: practice
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# bucho
+
+`bucho` is a package for exercises. Yes, we love bucho!
+
+## Setup
+
+```
+$ pip install bucho
+```
+
+## Plugin
+
+Plugin entry point is `bucho.commands`.
+
+## Development
+
+Install uv:
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Build package:
+```
+uvx --from build pyproject-build
+```
+
+Formatting:
+```
+uvx ruff format .
+```
+
+Testing:
+```
+uvx pytest
+```
