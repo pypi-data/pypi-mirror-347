@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "smartpy-tezos"
+version = "0.0.1"
+description = "A comprehensive solution for developing, testing, and deploying smart contracts on the Tezos blockchain."
+authors = ["The SmartPy Team"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "smartpy"}]
+
+include = ["smartpy/static/*.js"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.25.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
