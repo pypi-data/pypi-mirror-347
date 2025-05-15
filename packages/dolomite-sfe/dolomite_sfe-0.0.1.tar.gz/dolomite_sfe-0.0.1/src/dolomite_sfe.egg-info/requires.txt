@@ -1,0 +1,18 @@
+spatialfeatureexperiment>=0.0.3
+libpysal
+numpy
+scipy
+dolomite_base
+dolomite_spatial>=0.1.1
+pyarrow
+geopandas
+rasterio
+aicsimageio
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
