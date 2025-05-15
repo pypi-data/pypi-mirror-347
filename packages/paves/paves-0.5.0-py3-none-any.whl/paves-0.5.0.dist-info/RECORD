@@ -1,0 +1,11 @@
+paves/__about__.py,sha256=N2U3TRgLfYxjXfoF4Dy9PxAbZq24zjCym3P3cwuxKP8,511
+paves/__init__.py,sha256=xf1rWQflnS7BOfQ-TX5vaIi4IltM2aZYauy6Din1WA4,167
+paves/bears.py,sha256=yZPxP05ovJD5s_u0dmjDjQ-vO59c1iVaLvH9kV5IqtM,14431
+paves/compat.py,sha256=rFWWbrnBukkZd_5ydenGsc_9tIiVXIzTj0EzVQbeV0g,1369
+paves/image.py,sha256=N1M0jG8SqDmFum_yx3YHQ--uI0hz0eQy2xwJIGyzRLw,17429
+paves/miner.py,sha256=3GzXSFS7BmC_2D7mBLtZjMM4RDNW_Gf1-wlGneFtLhQ,44168
+paves/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paves-0.5.0.dist-info/METADATA,sha256=6hC9cu5EhJcvhklqFp5090xIuYxI4aQ3AiB0QY60sq4,7997
+paves-0.5.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+paves-0.5.0.dist-info/licenses/LICENSE.txt,sha256=O3uO4JryazW4P43zfIncztBthhIrFCm6cSI0dWHLfzc,1104
+paves-0.5.0.dist-info/RECORD,,
