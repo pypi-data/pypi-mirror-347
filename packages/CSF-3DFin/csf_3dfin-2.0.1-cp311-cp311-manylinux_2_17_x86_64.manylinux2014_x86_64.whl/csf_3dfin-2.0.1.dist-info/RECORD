@@ -1,0 +1,8 @@
+csf_3dfin-2.0.1.dist-info/RECORD,,
+csf_3dfin-2.0.1.dist-info/METADATA,sha256=YL5sVLjwkhwMEJk9rW7xozwbR7D8RrziAQqvFv7QPT4,13574
+csf_3dfin-2.0.1.dist-info/WHEEL,sha256=n_ZnPuD1Ss9Tc9LtYEEK3bWJN5I0N0urj1SApMcLgqY,156
+csf_3dfin-2.0.1.dist-info/licenses/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+CSF_3DFin/CSF_3DFin_ext.cpython-311-x86_64-linux-gnu.so,sha256=txsfbl_IzbatVSgY_U2GwluILDONbNf73X32hPD9bIw,306009
+CSF_3DFin/CSF_3DFin_ext.pyi,sha256=tPMByr8oUMVxdFNagZ7d8F2YFt0Fs4MHiUryigaQ6J4,1722
+CSF_3DFin/__init__.py,sha256=7ATiVkBFBx83dVsfwFZENtbncLdqwklaIMi1DAl_fP8,50
+csf_3dfin.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
