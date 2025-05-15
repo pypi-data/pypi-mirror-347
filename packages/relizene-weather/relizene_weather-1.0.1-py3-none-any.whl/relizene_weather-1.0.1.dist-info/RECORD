@@ -1,0 +1,11 @@
+relizene_weather/__init__.py,sha256=hyDYyiVxKNa2SZSBq99QRkJ99xs20p7CDILo5Bgj56E,72
+relizene_weather/api_call.py,sha256=3zVxnia1_RJZRA2SoVZg-2BSzg_ujV4varCctNND4UE,2867
+relizene_weather/main.py,sha256=WpeKGxfcvfln_3sqS8FsLnhY8NnL7PwoWqCih4bocFc,1764
+relizene_weather/settings/__init__.py,sha256=5dnL2lYj5uEMvraDHB_wWS7ntd2CGErNvfrRi85bqEo,279
+relizene_weather/settings/settings.py,sha256=7Q4ix9u5f7MbJL17DGAXhc9tmAStbhk-1khtoMEqGkE,2021
+relizene_weather/settings/validator.py,sha256=jsB47aObs2a51efkWu38R-lFUJBeW-K2RJQOSf0k8H0,3422
+relizene_weather-1.0.1.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relizene_weather-1.0.1.dist-info/METADATA,sha256=_e39icaMpL9F7C8fYAwt73AuUuHIKTJQT39MNnkPPDw,3012
+relizene_weather-1.0.1.dist-info/WHEEL,sha256=DnLRTWE75wApRYVsjgc6wsVswC54sMSJhAEd4xhDpBk,91
+relizene_weather-1.0.1.dist-info/top_level.txt,sha256=10QU6cI_V-W4TDZOGoTDUkj8sooAQ4ZuPgbvsu-d0WA,17
+relizene_weather-1.0.1.dist-info/RECORD,,
