@@ -1,0 +1,10 @@
+pants_backend_bitwarden/__init__.py,sha256=b9uZmGmXhnaV3bdUt9u9KM2mQoIY2FlwUZza87kZrqA,8
+pants_backend_bitwarden/goals/decrypt.py,sha256=XeMR4OUWe7_BiId-KfYiq4YibjMdR9pcIGE4EwUubto,1574
+pants_backend_bitwarden/register.py,sha256=my8kMHJjTRTU1SQCf59jMI7jwIP2_aP2fBNWjunQmS8,322
+pants_backend_bitwarden/subsystem.py,sha256=ejYI3ByNjzEYH4Kg9iM-WzZ_n36eWlFAmzR1srpugRQ,1254
+pants_backend_bitwarden/targets.py,sha256=qpTftH5pA2P_c42EDRLBHENRQoA4_BRwm8dfnGJ01Dw,1490
+pants_backend_bitwarden/util_rules/secret.py,sha256=xOhgC7ed0p0lC2B-0t6CL6sncxcDCtBkN41CIO3DFIs,6618
+pants_backend_bitwarden-0.5.0.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+pants_backend_bitwarden-0.5.0.dist-info/METADATA,sha256=HicDpTekaPAWtbvB9jgbIBGzQIsyZzr0GSnV-zYUa3E,4334
+pants_backend_bitwarden-0.5.0.dist-info/licenses/LICENSE-MIT.txt,sha256=ZTkm4_hxhGJ4vuyI3HVKvDrnOWhkhdCsJDWm5a8R71g,1068
+pants_backend_bitwarden-0.5.0.dist-info/RECORD,,
