@@ -1,0 +1,261 @@
+Metadata-Version: 2.4
+Name: cms_sas_utils
+Version: 0.3
+Summary: Some tools for SaS derivation from HDNA files reader to plotting functions
+Author-email: Fabrice Couderc <fabrice.couderc@cea.fr>, Paul Gaigne <paul.gaigne@cern.ch>, Ozgur Sahin <ozgur.sahin@cern.ch>
+Project-URL: Repository, https://gitlab.cern.ch/pgaigne/sas_utils
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow==2.7.0
+Requires-Dist: tensorflow-probability~=0.12.2
+Requires-Dist: protobuf==3.20.1
+Requires-Dist: numpy==1.26.4
+Requires-Dist: uproot
+Requires-Dist: pyyaml
+Requires-Dist: pyarrow
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: correctionlib
+Requires-Dist: fast_histogram
+Requires-Dist: cms-fstyle-PG[fitter]
+Requires-Dist: ijazz
+
+# SaS utils
+
+Package to convert file to [`IJazZ`](https://gitlab.cern.ch/fcouderc/ijazz_2p0) format, combine correctionlib files and apply correctionlib to parquet. To use the full workflow, use [`law_ijazz`](https://gitlab.cern.ch/pgaigne/law_ijazz2p0).
+
+## Install the package
+
+### Create conda env
+```
+conda create -n ijazz python=3.9
+conda activate ijazz
+```
+
+### Install package in editable mode
+Clone the repo
+```
+git clone https://gitlab.cern.ch/pgaigne/sas_utils
+cd sas_utils
+```
+Install package in editable mode
+```
+pip install -e .
+```
+
+### Install from pypi
+```
+pip install cms-sas-utils
+```
+
+## HiggsDNA Reader
+
+This script, `reader_higgsdna.py`, is designed to read and convert HiggsDNA parquet files into the `ijazz_2p0` format. Below is a brief description of its main functions:
+
+
+### Parameters:
+  - `data_dict` (dict): dictionary with the data information:
+    - dir (str): directory of the data parquet files
+    - luminosity (float): luminosity of the data taking (optionnal)
+  - `mc_dict` (dict): dictionary with the MC information:
+    - dir (str): directory of the MC parquet files
+    - name (str): name of the MC sample (optionnal)
+    - XS (float): cross section of the MC sample (optionnal)
+  - `dir_out` (str, optional): Output directory. Defaults to None.
+  - `stem_out` (str, optional): Stem of the output file (it will be completed with different option). Defaults to None.
+  - `is_ele` (bool, optional): Use the GSF electron energy. Defaults to False.
+  - `corrlib_scale` (dict, optional): correction lib to correct the energy scale in data. Defaults to None.
+  - `corrlib_smear` (dict, optional): correction lib to smear the MC. Defaults to None.
+  - `remove_HDNA_SaS` (bool, optional): Remove the HDNA SaS correction. Defaults to False.
+  - `add_vars` (List, optional): List of additional variables to add. Defaults to None.
+  - `charge` (int, optional): Charge selection: -1 for opposite charge, 1 for same charge and 0 for no selection. Defaults to -1.
+  - `selection` (str, optional): Additional selection to apply. Defaults to None.
+  - `do_normalisation` (bool, optional): Apply the normalisation. Defaults to False.
+  - `reweight_selection` (str, optional): Selection to apply to compute the reweighting. Defaults to None.
+  - `pileup_systematics_reweighting` (bool, optional): Use the pileup systematics from corrlib or from HDNA. Defaults to False.
+  - `reset_weight` (bool, optional): Reset the weight to `weight_central`=1 and `weight`=`genWeight`. Defaults to False.
+  - `corrlib_pileup_reweighting` (str, optional): Use a correction file for pileup reweighting, should be `path_to_json(str):correction_name(str)`. Defaults to None.
+  - `nPV_pileup_reweighting` (bool, optional): Use the nPV pileup reweighting. Defaults to False.
+  - `rho_pileup_reweighting` (bool, optional): Use the fixedGridRhoAll pileup reweighting. Defaults to False.
+  - `do_reweight` (bool, optional): Apply the Z-pt and ScEta reweighting. Defaults to True.
+  - `subyear` (str, optional): Subyear to add to the data. Used for luminosity (if not provided) and to add a tag `is_{subyear}` on the subyear samples. Defaults to None.
+  - `subyear_list` (list, optional): List of subyears tags to add. Defaults to None.
+  - `backgrounds` (list, optional): List of background dict. Defaults to []. Each dict should contain:
+    - name (str): name of the background
+    - dir (str): directory of the background parquet files
+    - XS (float): cross section of the background sample (optionnal)
+  - `year` (str, optional): Year of the data taking. Defaults to ''.
+  - `save_dt` (bool, optional): Save the data. Defaults to True.
+  - `save_mc` (bool, optional): Save the MC. Defaults to True.
+
+### Normalisation
+Normalisation can be applied on NLO weights using cross-section (XS),  luminosity (Lumi) and `sum_genw_presel` values if `do_normalisation` or using backgrounds.
+
+### MC weights
+- **HiggsDNA**: 3 weights are saved:
+  - `genWeight`: NLO weights from the generator
+  - `weight` = `genWeight * weight_central`: NLO weights + reweight from HDNA
+  - `weight_central`: reweight from HDNA ie `Pileup,..`
+  
+  And 2 extra if Pileup systematics:
+  - `weight_PileupUp`
+  - `weight_PileupDown`
+
+- Output of the reader: 
+  - `genWeight`: NLO weights from the generator.
+  - `weight` = `genWeight * weight_central * norm * RW`: NLO weights with HDNA and reader reweighting and normalization.
+  - `genWeight_normed` = `genWeight * norm`: NLO weights from the generator normalized to the XS and luminosity.
+  - `weight_central` = `weight_central * RW`: LO weights with HDNA and reader reweighting.
+
+  And extra weight if Pileup systematics:
+  - `weight_PileupUp`
+  - `weight_PileupDown`
+  - `weight_central_PileupUp`
+  - `weight_central_PileupDown`
+
+
+### Usage Example
+```bash
+sas_reader_higgsdna config/cms/reader_higgsdna_example.yaml
+```
+
+This script is essential for converting and normalizing HiggsDNA data for further analysis in the `ijazz_2p0` framework using this example [reader_higgsdna_example.yaml](https://gitlab.cern.ch/pgaigne/sas_utils/-/blob/master/config/cms/reader_higgsdna_example.yaml).
+
+## Time equalisation
+
+### RunTimeStep0
+Function saving the run splitting to a csv file (this is step0 of time equalisation)
+
+Parameters:
+- `file_dt` (str, optional): input file for data (can be inferred from reader if None). Defaults to None.
+- `n_split` (float, optional): number of event in each subsample. Defaults to 5e4.
+- `d_fsplit` (float, optional): tolerance w/r to n_plit (in percent). Defaults to 0.2.
+- `dir_results` (str, optional):  directory to save the results. Defaults to '.'.
+- `name_run` (str, optional): name of the run variable in file_dt. Defaults to 'run'.
+- `cfg_sas` (dict, optional): dictionnary with the sas config. Defaults to None.
+
+```
+sas_time_equalisation_step0 config/cms/reader_higgsdna_example.yaml
+```
+
+### RunTimeStep1
+Function fitting the scale in each run range (step 1 of time equalisation)
+
+Parameters:
+- `file_dt` (str, optional): input file for data (can be inferred from reader if None). Defaults to None.
+- `file_mc` (str, optional): input file for MC (can be inferred from reader if None). Defaults to None.
+- `dir_results` (str, optional): directory to save the results. Defaults to '.'.
+- `dset_id` (str, optional): dataset id. Defaults to 'Unknown'.
+- `name_run` (str, optional): _description_. Defaults to 'run'.
+- `cfg_sas` (dict, optional): dictionnary of the sas config. Defaults to None.
+- `irun` (int, optional): first run to fit. Defaults to 0.
+- `nrun` (int, optional): number of runs to fit. Defaults to -1.
+- `columns` (list, optional): list of columns to read from the data file. Defaults to None (automatic).
+- `name_mll` (str, optional): name of the dilepton mass. Defaults to 'mass'.
+
+```
+sas_time_equalisation_step1 config/cms/reader_higgsdna_example.yaml --irun 0 --nrun -1
+```
+Parallelization can be done be specifying the starting run number `irun` and the number of runs to be done `nrun` per task:
+```
+NRUN=5
+for (( i=0; i<total_run; i+=NRUN )); do
+    sas_time_equalisation_step1 config/cms/reader_higgsdna_example.yaml --irun $i --nrun $NRUN
+done
+```
+
+
+
+### RunTimeStep2
+Aggregate the result from the run dependent scale fit into a single correction lib file and do plots (this is step2 of time equalisation)
+
+Parameters:
+- `file_dt` (str, optional): input file for data (can be inferred from reader if None). Defaults to None.
+- `dir_results` (str, optional): directory to save the results. Defaults to '.'.
+- `dset_id` (str, optional): dataset id. Defaults to 'Unknown'.
+- `cset_version` (int, optional): version of the set of corrections. Defaults to 1.
+- `name_run` (str, optional): name of the run variable in file_dt. Defaults to 'run'.
+- `name_eta` (str, optional): name of the eta variable in file_dt. Defaults to 'ScEta'.
+- `correct_data` (bool, optional): apply the scale to data. Defaults to True.
+- `resp_range` (tuple, optional): y-range for resp plotting. Defaults to (0.92, 1.05).
+- `reso_range` (tuple, optional): y-range for reso plotting. Defaults to (0, 0.09).
+- `run_split` (list, optional): list with the starting run number of each eras. Defaults to None.
+- `eras` (list, optional): list of each eras name. Defaults to None.
+
+```
+sas_time_equalisation_step2 config/cms/reader_higgsdna_example.yaml
+```
+
+## Combine corrlib
+
+Combine different corrlib correction files, some files could use always the nominal scale for variations (if only one variations should be considered to avoid double counting).
+### Parameters:
+  - `cset_files` (List[Union[str, Path]]): list of corrlib files
+  - `icset_fix_scale` (Union[List,Tuple]): list of corrlib for which the nominal scale only should be use. [-1] to keep all the variations.
+  - `dir_results` (Union[str, Path]): directory
+  - `dset_name` (str, optional): identfier of the datase. Defaults to 'DSET'.
+  - `cset_version` (int, optional): version of the set of corrections. Defaults to 1.
+  - `include_random` (bool, optional): include the random generator. Defaults to True.
+
+
+### Usage Example
+Combining the 6 steps:
+```bash
+file_corr0=results/2022/TimeDep/EGMScalesSmearing_2022preEE.v1.json.gz
+file_corr1=results/2022/EtaR9/EGMScalesSmearing_2022preEE.v1.json.gz
+file_corr2=results/2022/FineEtaR9/EGMScalesSmearing_2022.v1.json.gz
+file_corr3=results/2022/PT/EGMScalesSmearing_2022.v1.json.gz
+file_corr4=results/2022/Gain/EGMScalesSmearing_2022.v1.json.gz
+file_corr5=results/2022/PTsplit/EGMScalesSmearing_2022preEE.v1.json.gz
+```
+```bash
+sas_corrlib_combine $file_corr0 $file_corr1 $file_corr2 $file_corr3 $file_corr4 $file_corr5 -i 1 2 3 4  -v 1 -o results/2022 -d Pho_2022preEE
+```
+
+Create `EGMScalesSmearing_Pho_2022preEE.v1.json.gz` output file. Including a compound correction for scales `EGMScale_Compound_Pho_2022preEE` and for each step, the scale correction :`EGMScale_Pho{step_name}_2022preEE` and smearing correction:`EGMSmearAndSyst_Pho{step_name}_2022preEE`.
+
+We use `-i 1 2 3 4` because the systematics are computed in the last step (step5) and the time dependent correction does not include `escale` then we fix the `escale` for the file 1, 2, 3 and 4. Finally, we have `scale = scale0 * scale1 * scale2 * scale3 * scale4 * scale5` and `escale = escale5`.
+
+Second example, to use time equalisation and only one step, we don't want to fix any scale `-i -1`: 
+```bash
+sas_corrlib_combine $file_corr0 $file_corr1  -i -1  -v 1 -o results/2022 -d Pho_2022preEE
+```
+
+## Correct file
+
+Apply Scale and Smearing to parquet files using this example [apply_et_dependent_SaS.yaml](https://gitlab.cern.ch/pgaigne/sas_utils/-/blob/master/config/cms/apply_et_dependent_SaS.yaml). Where the compound scale is applied on data and the MC is smeared using the smearing compute at the last step.
+
+For IJazZ ET-dependent corrections (computed at the step before):
+```bash
+sas_file_corrector config/cms/apply_et_dependent_SaS.yaml --syst
+```
+For EGM standard corrections using [apply_standard_SaS.yaml](https://gitlab.cern.ch/pgaigne/sas_utils/-/blob/master/config/cms/apply_standard_SaS.yaml):
+```bash
+sas_file_corrector config/cms/apply_standard_SaS.yaml --syst 
+```
+
+## Validation plots
+
+### mll validation plots
+Plot the Z-mass peak in different categories defined in a config yaml file. See an example [validation_plots.yaml](https://gitlab.cern.ch/pgaigne/sas_utils/-/blob/master/config/cms/validation_plots.yaml). The inputs parquets can be defined in a separate yaml file (first example) or not (second example).
+
+```bash
+sas_dyll_valid_plot config/cms/apply_standard_SaS.yaml --cfg config/cms/validation_plots.yaml --syst
+```
+Equivalent of running this two commands:
+```bash
+sas_file_corrector config/cms/apply_standard_SaS.yaml --syst
+sas_dyll_valid_plot config/cms/validation_plots.yaml
+```
+
+### Kinematics plots
+Plot kinematics variables defined in a config yaml file. See an example [kin_plots.yaml](https://gitlab.cern.ch/pgaigne/sas_utils/-/blob/master/config/cms/kin_plots.yaml).
+
+```bash
+sas_dyll_kin_plot config/cms/apply_standard_SaS.yaml --cfg config/cms/kin_plots.yaml --syst
+```
+Equivalent of running this two commands:
+```bash
+sas_file_corrector config/cms/apply_standard_SaS.yaml --syst
+sas_dyll_kin_plot config/cms/kin_plots.yaml
+```
