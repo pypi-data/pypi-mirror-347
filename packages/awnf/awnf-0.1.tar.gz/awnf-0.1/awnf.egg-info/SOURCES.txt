@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+awnf/__init__.py
+awnf/adaptive_weighted_snf.py
+awnf.egg-info/PKG-INFO
+awnf.egg-info/SOURCES.txt
+awnf.egg-info/dependency_links.txt
+awnf.egg-info/requires.txt
+awnf.egg-info/top_level.txt
