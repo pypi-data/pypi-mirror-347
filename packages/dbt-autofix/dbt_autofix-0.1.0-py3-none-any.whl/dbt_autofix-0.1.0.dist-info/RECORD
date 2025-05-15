@@ -1,0 +1,10 @@
+dbt_autofix-0.1.0.dist-info/METADATA,sha256=b3x_c9tvcZ9uXYB76NaQufHJ_3b3XdBpt7-qTEMH38A,3710
+dbt_autofix-0.1.0.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+dbt_autofix-0.1.0.dist-info/entry_points.txt,sha256=abiYx1t6Y4FKiRL0mqIp9UdHIJwieGY07GC4mdAEe5o,69
+dbt_autofix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_autofix/duplicate_keys.py,sha256=hCmGijLWdUU3PA0FQM2QQMQrbx5T-Tb4FKPQVgOWOww,4646
+dbt_autofix/fields_properties_configs.py,sha256=z0xk269-XAiXV-j5NL_7T5ShibCF5fYJoOerldX3kPA,9666
+dbt_autofix/main.py,sha256=LcvvUFnDkUksM9Rb785tZYtNQnhxC91mXt7hglOrHwU,2017
+dbt_autofix/refactor.py,sha256=__QVyib951zU7YVaTrd9Bcr7x-pxQ6IK5O_co8HYXwU,25983
+dbt_autofix/retrieve_schemas.py,sha256=qFIzhKmFdLRXnCVvCSRpV3K4zHh6Lwf2uJsIlwenpcU,5041
+dbt_autofix-0.1.0.dist-info/RECORD,,
