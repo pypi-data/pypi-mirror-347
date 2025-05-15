@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "jupyter": {
+      "command": "the-notebook-mcp",
+      "args": [
+        "start",
+        "--allow-root",
+        "."
+      ]
+    }
+  }
+}
