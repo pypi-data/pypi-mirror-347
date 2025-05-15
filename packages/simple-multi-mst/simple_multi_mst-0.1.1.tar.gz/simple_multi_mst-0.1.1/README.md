@@ -1,0 +1,44 @@
+# Multi-MST
+`multi_mst` is a Python package for generating robust graph representations of high-dimensional data using iterative minimum spanning trees (MSTs). It supports exploratory analysis within the framework of topological data analysis (TDA).
+
+The package constructs MSTs from pairwise distances between datapoints in a multidimensional space. By perturbing the distance matrix slightly and recalculating the MST multiple times, it captures multiple plausible connections between points. The resulting graph (i.e. the aggregate of these MSTs) offers a more stable and interpretable topological structure for visualisation and further analysis.
+
+## Installation
+```
+pip install simple-multi-mst
+```
+
+If you want to visualise the network within [marimo](http://marimo.io):
+```
+pip install simple-multi-mst[visual]
+```
+
+## Usage
+```python
+import simple_multi_mst
+import pandas as pd
+
+df = pd.read_csv("http://aida-lab.be/assets/horse.csv").sample(n=200)
+m_mst = simple_multi_mst.MultiMST(df, metric="euclidean", iterations=100)
+m_mst.run()
+m_mst.export()
+```
+
+## API
+### class `MultiMST`
+Creates and aggregates multiple perturbed MSTs from input data.
+
+### Constructor
+```python
+MultiMST(df, cols=[], metric='euclidean', max_amount=0, iterations=10)
+```
+- `df`: pandas DataFrame with data points
+- `cols`: list of columns to use (excluding ‘id’)
+- `metric`: distance metric (passed to scipy.spatial.distance.pdist)
+- `max_amount`: maximum amount of perturbation applied to the distances
+- `iterations`: number of MSTs to compute and combine
+
+### Methods
+- `run()`: computes the MSTs and returns the resulting graph as a JSON-serialisable dictionary.
+- `export(format='json', base_filename='output')`: writes the output graph to a file.
+    - `format`: "json" for single JSON file; "csv" for separate nodes.csv and links.csv

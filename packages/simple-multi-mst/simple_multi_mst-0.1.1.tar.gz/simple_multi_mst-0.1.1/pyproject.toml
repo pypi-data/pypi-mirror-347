@@ -1,0 +1,19 @@
+[project]
+name = "simple-multi-mst"
+version = "0.1.1"
+description = "Package to build TDA networks based on multiple MSTs"
+readme = "README.md"
+authors = [
+    { name = "Jan Aerts", email = "jan.aerts@kuleuven.be" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.2.5",
+    "pandas>=2.2.3",
+    "returns>=0.25.0",
+    "scipy>=1.15.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
