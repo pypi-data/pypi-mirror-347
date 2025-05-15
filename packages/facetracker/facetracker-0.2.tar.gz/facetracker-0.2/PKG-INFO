@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: facetracker
+Version: 0.2
+Summary: Real-time face recognition with live state export.
+Author: Handicate Labs
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: face_recognition
+Requires-Dist: opencv-python
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
