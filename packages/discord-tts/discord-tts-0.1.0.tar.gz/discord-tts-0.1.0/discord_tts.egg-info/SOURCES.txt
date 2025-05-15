@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+discord_tts/__init__.py
+discord_tts/core.py
+discord_tts/exceptions.py
+discord_tts/utils.py
+discord_tts.egg-info/PKG-INFO
+discord_tts.egg-info/SOURCES.txt
+discord_tts.egg-info/dependency_links.txt
+discord_tts.egg-info/requires.txt
+discord_tts.egg-info/top_level.txt
