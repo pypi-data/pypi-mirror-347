@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+backend-path = ["."] # Ensures setuptools can find local configurations if needed
+
+[project]
+name = "notebookllm"
+version = "1.1.0"
+description = "A tool for converting Jupyter notebooks to interactive LLM-friendly and token efficient formats by providing CLI utilities for notebook management and processing."
+readme = "README.md"
+requires-python = ">=3.10" # You can adjust this if needed
+license = { file = "LICENSE" } # Consider creating a LICENSE file (e.g., MIT)
+authors = [
+    { name = "Yasir Raza", email = "yasirabdali6@gmail.com" } 
+]
+keywords = ["jupyter", "notebook", "llm", "conversion", "mcp", "cli"]
+
+dependencies = [
+    "nbformat",
+    "jupyter_client",
+
+]
+
+[project.scripts]
+notebookllm = "notebookllm.cli:main"
+
+# Optional: If you want to be more explicit about package discovery for setuptools
