@@ -1,0 +1,8 @@
+numpy
+mpmath
+scipy
+matplotlib
+PyQt5
+
+[docs]
+sphinx
