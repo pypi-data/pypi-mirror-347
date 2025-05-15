@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: excel-conversion
+Version: 1.0.0
+License-File: LICENSE
+Requires-Dist: xlrd >=1.1.0
+
