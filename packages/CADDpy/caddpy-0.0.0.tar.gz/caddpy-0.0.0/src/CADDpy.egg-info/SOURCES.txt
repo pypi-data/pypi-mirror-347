@@ -1,0 +1,7 @@
+pyproject.toml
+src/CADDpy.egg-info/PKG-INFO
+src/CADDpy.egg-info/SOURCES.txt
+src/CADDpy.egg-info/dependency_links.txt
+src/CADDpy.egg-info/not-zip-safe
+src/CADDpy.egg-info/top_level.txt
+src/caddpy/__init__.py
