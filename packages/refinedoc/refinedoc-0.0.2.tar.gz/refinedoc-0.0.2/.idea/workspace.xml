@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e19b4b96-664f-4419-890d-60d1b2e4f460" name="Changes" comment="write all tests">
+      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refinedoc/refined_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/refinedoc/refined_document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_refined_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_refined_document.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2x2CPi6WHfPItbEaPechq7HCCCH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_refined_document.TestRefinedDocument.executor": "Run",
+    "Python tests.Python tests for test_refined_document.TestRefinedDocument.test__compare.executor": "Run",
+    "Python tests.Python tests for test_refined_document.TestRefinedDocument.test__compare_candidates.executor": "Run",
+    "Python tests.Python tests for test_refined_document.TestRefinedDocument.test__detect_similar_lines.executor": "Run",
+    "Python tests.Python tests for test_refined_document.TestRefinedDocument.test_header.executor": "Run",
+    "Python tests.Python tests for test_refined_document.TestRefinedDocument.test_separate_footer.executor": "Run",
+    "Python tests.Python tests for test_refined_document.TestRefinedDocument.test_separate_header.executor": "Run",
+    "Python.refined_document.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "prepare-pip-package",
+    "last_opened_file_path": "/home/lpi/Documents/refinedoc/tests/resources",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_refined_document.TestRefinedDocument">
+    <configuration name="Python tests for test_refined_document.TestRefinedDocument" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="refinedoc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_refined_document.TestRefinedDocument&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_refined_document.TestRefinedDocument.test__compare" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="refinedoc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_refined_document.TestRefinedDocument.test__compare&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_refined_document.TestRefinedDocument.test__compare_candidates" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="refinedoc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_refined_document.TestRefinedDocument.test__compare_candidates&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_refined_document.TestRefinedDocument.test__detect_similar_lines" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="refinedoc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_refined_document.TestRefinedDocument.test__detect_similar_lines&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_refined_document.TestRefinedDocument.test_separate_footer" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="refinedoc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_refined_document.TestRefinedDocument.test_separate_footer&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_refined_document.TestRefinedDocument" />
+        <item itemvalue="Python tests.Python tests for test_refined_document.TestRefinedDocument.test__detect_similar_lines" />
+        <item itemvalue="Python tests.Python tests for test_refined_document.TestRefinedDocument.test__compare" />
+        <item itemvalue="Python tests.Python tests for test_refined_document.TestRefinedDocument.test__compare_candidates" />
+        <item itemvalue="Python tests.Python tests for test_refined_document.TestRefinedDocument.test_separate_footer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e19b4b96-664f-4419-890d-60d1b2e4f460" name="Changes" comment="" />
+      <created>1747126758829</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747126758829</updated>
+    </task>
+    <task id="LOCAL-00001" summary="1st push">
+      <option name="closed" value="true" />
+      <created>1747150134589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747150134589</updated>
+    </task>
+    <task id="LOCAL-00002" summary="typo">
+      <option name="closed" value="true" />
+      <created>1747151390002</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747151390002</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix tests">
+      <option name="closed" value="true" />
+      <created>1747151395387</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747151395387</updated>
+    </task>
+    <task id="LOCAL-00004" summary="write all tests">
+      <option name="closed" value="true" />
+      <created>1747152204242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747152204242</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1st push" />
+    <MESSAGE value="typo" />
+    <MESSAGE value="fix tests" />
+    <MESSAGE value="write all tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="write all tests" />
+  </component>
+</project>
