@@ -1,0 +1,8 @@
+include .markdownlint.json
+include .bumpversion.cfg
+include README.rst
+include CHANGELOG.md
+include LICENSE
+include requirements.txt
+include Makefile
+recursive-include src *.py
