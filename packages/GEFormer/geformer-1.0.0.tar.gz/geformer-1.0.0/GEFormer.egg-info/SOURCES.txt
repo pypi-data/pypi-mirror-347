@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+GEFomer/_init_.py
+GEFormer.egg-info/PKG-INFO
+GEFormer.egg-info/SOURCES.txt
+GEFormer.egg-info/dependency_links.txt
+GEFormer.egg-info/requires.txt
+GEFormer.egg-info/top_level.txt
