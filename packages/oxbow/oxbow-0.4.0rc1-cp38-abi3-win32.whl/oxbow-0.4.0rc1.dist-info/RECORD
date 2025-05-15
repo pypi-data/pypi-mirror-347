@@ -1,0 +1,16 @@
+oxbow-0.4.0rc1.dist-info/METADATA,sha256=I2x4fQEWxkuhjrryKVYrJKLyeeml9P6gUpDSsCa0hfs,2836
+oxbow-0.4.0rc1.dist-info/WHEEL,sha256=YBxTPgux3EpqRUs41VsGbxWNCQEdpwhnB_ShQiS8dvY,90
+oxbow/__init__.py,sha256=KMrU0wM2TfQVpk8Q132dbXQ5ygNqaLWCt4P53YwSNfc,1537
+oxbow/_core/alignment.py,sha256=UNP5l78p1qkYlA-ez5IKzRciqFsnpv48P_6dRTkpC0w,9175
+oxbow/_core/base.py,sha256=nR-cQk8a0xxNk-gkkvVAnd_RAZgZw60Rl4Rqc4NVKPM,5672
+oxbow/_core/feature.py,sha256=NmdOHpIJZVzdnyC5hPw3qdCNmlO9hn5rMzBjPlzog0g,17219
+oxbow/_core/sequence.py,sha256=oNVgRwVaAjGiF8ZRuDpNkWkAIZh9HhIKUHktLFs1JTM,8181
+oxbow/_core/variant.py,sha256=3K1XK8dMNBCBzGhoYV2RX65fb7Hky6VThf6uqUTtPr4,11612
+oxbow/_filetypes.py,sha256=6Cok1UJu4Awywz7oY68PahvyO_Z23ynoo1Lc4KJr4GQ,606
+oxbow/_pyarrow.py,sha256=Liw4haidRgJOu4JOBJTJc241JFsbutjn2dSPjkFFn-Y,25721
+oxbow/arrow.py,sha256=SQoazH_bjNh6YQkfNLdzzBukKpOKXvOaq8SiCKeDV_c,314
+oxbow/core.py,sha256=ZbDZzbQnqwMst76uQpbSzWN87l2uOetXfTfQP8KsJ8Y,1927
+oxbow/oxbow.pyd,sha256=T-7QYPO_hkIu89NqUoV5Egj9ohwvbNpH7PKerhPj5e4,9161216
+oxbow/oxbow.pyi,sha256=jHyQWIsoq36XInVg9HTiDE3jC2yre8_hwmZlXTQHzTg,13657
+oxbow/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxbow-0.4.0rc1.dist-info/RECORD,,
