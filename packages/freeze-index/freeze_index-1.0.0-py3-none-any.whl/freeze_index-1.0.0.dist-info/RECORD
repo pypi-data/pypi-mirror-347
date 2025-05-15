@@ -1,0 +1,9 @@
+freezing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freezing/__version__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+freezing/freezeindex.py,sha256=6WBp0XhNtd-Uoi6bLp4IGGx_-4yjtuHuW_WjSSYc5Sw,18400
+freezing/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freezing/test/testFreezeindex.py,sha256=sL0ZoEiOvGS3DMkwv3wFrMohned_0z5SnyZHgfpzr1c,13166
+freeze_index-1.0.0.dist-info/METADATA,sha256=M7NNt4vb0IRkuY6Odpd_L6ixsIwIg6PFqNRh297v9Uk,5056
+freeze_index-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+freeze_index-1.0.0.dist-info/licenses/LICENSE,sha256=06zHecgCW35Fmf5wPHND_u5p_7EbPgSOm2ZYN6dOzrM,1682
+freeze_index-1.0.0.dist-info/RECORD,,
