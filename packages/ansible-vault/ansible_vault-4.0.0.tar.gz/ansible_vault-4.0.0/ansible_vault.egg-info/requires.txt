@@ -1,0 +1,16 @@
+ansible-core
+
+[dev]
+setuptools
+pytest
+pytest-cov
+coveralls
+flake8
+black
+isort
+pylint
+pylint-pytest
+
+[release]
+build
+twine
