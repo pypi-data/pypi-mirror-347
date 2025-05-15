@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: bg-myproject
+Version: 0.1.2
+License-File: LICENSE
+Provides-Extra: all
+Requires-Dist: bgoptimizer; extra == 'all'
+Requires-Dist: bgtrainer; extra == 'all'
+Provides-Extra: bgoptimizer
+Requires-Dist: bgoptimizer; extra == 'bgoptimizer'
+Provides-Extra: bgtrainer
+Requires-Dist: bgtrainer; extra == 'bgtrainer'
