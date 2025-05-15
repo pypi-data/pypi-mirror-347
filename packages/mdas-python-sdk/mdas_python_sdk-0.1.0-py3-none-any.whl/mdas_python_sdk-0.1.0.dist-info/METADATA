@@ -1,0 +1,119 @@
+Metadata-Version: 2.4
+Name: mdas-python-sdk
+Version: 0.1.0
+Summary: Python SDK for MDAS API.
+Project-URL: Source, https://github.com/OrbisSystems/mdas-python-sdk
+Author-email: Roxanne Resuello <roxanne.resuello@orbisfn.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# MDAS Python SDK
+
+A Python SDK for interacting with the MDAS API. This SDK provides an easy-to-use interface for accessing market data and account information.
+
+## Installation
+
+### From PyPI
+
+```bash
+pip install mdas-python-sdk
+```
+
+## Setup and Configuration
+
+### Basic Setup
+
+```python
+from mdas_python_sdk import MdasClient
+
+# Create a client instance
+client = MdasClient(
+    base_url="https://mdas-api.viewtrade.tech/swagger/index.html",  # Replace with your API endpoint
+    username="your-username",                       # Replace with your username
+    password="your-password"                        # Replace with your password
+)
+```
+
+The client will automatically authenticate and obtain a token upon initialization. You can now access various services through the client.
+
+### Available Services
+
+- `client.quote`: Access market data quotes, charts, and other financial information
+- `client.account`: Access user account information and settings
+
+## Sample Usage
+
+### Get Level 1 Quotes
+
+```python
+# Get level 1 quote for a single symbol
+tesla_quote = client.quote.get_level1_quote("TSLA")
+print(tesla_quote)
+
+# Get level 1 quote for multiple symbols
+multi_quotes = client.quote.get_level1_quote(["AAPL", "MSFT", "GOOG"])
+print(multi_quotes)
+```
+
+### Using Response Models
+
+You can convert API responses to model objects for easier access:
+
+```python
+from mdas_python_sdk.models.quote import QuoteResponse
+
+# Get quotes and convert to model
+quotes_data = client.quote.get_level1_quote(["AAPL", "MSFT"])
+quote_response = QuoteResponse.from_dict(quotes_data)
+
+# Access data through model
+for quote in quote_response.data:
+    print(f"{quote.symbol}: ${quote.last_px} ({quote.change_percent}%)")
+```
+
+### Get Historical Data
+
+```python
+# Get historical minute chart data
+historical_data = client.quote.get_historical_minute_chart("TSLA", "2023-05-12")
+
+# Get historical day chart data
+day_chart = client.quote.get_historical_day_chart("AAPL", year="2023")
+```
+
+### Working with User Account Data
+
+```python
+# Get user information
+user_info = client.account.get_user_information_by_id("user123")
+
+# Check if session is active
+session_status = client.account.is_session_alive()
+```
+
+### Handling Authentication
+
+If your token expires during a long session, you can refresh it:
+
+```python
+client.refresh_token()
+```
+
+## Error Handling
+
+The SDK handles authentication errors automatically by refreshing tokens when they expire. For other errors, you should implement appropriate try/except blocks:
+
+```python
+try:
+    quote = client.quote.get_level1_quote("INVALID_SYMBOL")
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
+## Available APIs
+
+For a complete list of available API endpoints, see [API.md](API.md).

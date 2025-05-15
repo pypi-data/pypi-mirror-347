@@ -1,0 +1,17 @@
+mdas_python_sdk/README.md,sha256=uyFjdSDzUclBHnfGX551zEO26ZYCLlYWljfXOI3qUy0,1097
+mdas_python_sdk/__init__.py,sha256=pjgq2bFJRuN_6yMjdHcuMfqWFu1aPcbHcLKSGZOGixo,72
+mdas_python_sdk/auth.py,sha256=6CQdz51VIR253bBCepgvh6pANb5nxUyCSp6Q7hHbZLs,1098
+mdas_python_sdk/client.py,sha256=to8no0LDSXf5BHh1F2z78_stxOAaSRNMXFGCEVvisWk,784
+mdas_python_sdk/config.py,sha256=76N5gkBVr5qnQvIkt8gPHURVNnwd98gM-_tDtIJGWto,406
+mdas_python_sdk/setup.py,sha256=e5g9zRw5sdMrv5cgMyWwFGdtK_KrH44Oqc6Bvm8x46Q,645
+mdas_python_sdk/core/__init__.py,sha256=Kw4FoEUsq0zU0kgFT9cOguGtUTWa0w5Bz6SKKsdarTc,82
+mdas_python_sdk/core/http_client.py,sha256=XjNp2sIk_JeJyLrDa8ACoYbxx-mJ5ErbDfhFXyKovCc,3157
+mdas_python_sdk/helpers/logger.py,sha256=tY1F8ntllGturbS1k9a5j_WheALvRigUBKXkJgAlkcE,1374
+mdas_python_sdk/models/__init__.py,sha256=2GX7HZyW6ycWQ3z9m-qFxOGSrMDtN1tT34DEPKps2uo,100
+mdas_python_sdk/models/quote.py,sha256=ERSJlRYnFDtIV6HMSxZ51MJyQtOVJlgudueamHWkgKQ,4233
+mdas_python_sdk/services/__init__.py,sha256=QsRmcKMdJY8h0wZUfTMdtXdWsUZIHh95u1Bx-WA6bfI,92
+mdas_python_sdk/services/account_service.py,sha256=XkxiGPArJSMBkti3NO3JMJqQqSayRNH9SG9Oijgc6t8,1408
+mdas_python_sdk/services/quote_service.py,sha256=D-oMIEWQL3nxZdDLLbGYPlgbnVYPSMr68YDLIagWgtw,22035
+mdas_python_sdk-0.1.0.dist-info/METADATA,sha256=eJy6YL9X8YiF4FapACeiyJKWpLZDOE27XYhacVy6jqc,3183
+mdas_python_sdk-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mdas_python_sdk-0.1.0.dist-info/RECORD,,
