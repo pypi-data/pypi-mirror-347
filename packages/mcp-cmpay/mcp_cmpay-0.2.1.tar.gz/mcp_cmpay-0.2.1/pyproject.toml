@@ -1,0 +1,18 @@
+[project]
+name = "mcp-cmpay"
+version = "0.2.1"
+description = "中国移动支付(China Mobile Pay) MCP Server 服务"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cryptography==44.0.3",
+    "httpx>=0.28.1",
+    "mcp[cli]==1.8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+mcp-cmpay = "mcp_cmpay.server:main"
