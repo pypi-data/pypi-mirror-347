@@ -1,0 +1,10 @@
+pyproject.toml
+src/sbapi_connect/__init__.py
+src/sbapi_connect/connect.py
+src/sbapi_connect.egg-info/PKG-INFO
+src/sbapi_connect.egg-info/SOURCES.txt
+src/sbapi_connect.egg-info/dependency_links.txt
+src/sbapi_connect.egg-info/requires.txt
+src/sbapi_connect.egg-info/top_level.txt
+src/sbapi_connect/base/apibase.py
+src/sbapi_connect/errors/apierrors.py
