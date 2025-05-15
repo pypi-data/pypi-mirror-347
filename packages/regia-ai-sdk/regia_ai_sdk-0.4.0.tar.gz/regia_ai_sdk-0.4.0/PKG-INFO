@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: regia-ai-sdk
+Version: 0.4.0
+Summary: Add your description here
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2.11.4
+Requires-Dist: requests>=2.32.3
+
+# regia-ai-sdk
+
+This is the official Python SDK for Regia AI
