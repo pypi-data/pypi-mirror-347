@@ -1,0 +1,6 @@
+[awth.application.plugin]
+awth=awth:main
+
+[console_scripts]
+awth=awth:main
+
