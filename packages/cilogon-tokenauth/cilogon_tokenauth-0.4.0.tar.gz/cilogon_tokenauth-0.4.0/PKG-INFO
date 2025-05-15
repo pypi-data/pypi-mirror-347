@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: cilogon-tokenauth
+Version: 0.4.0
+Summary: An authentication backend that allows CILogon bearer to authenticate users to DRF apis.
+Home-page: https://github.com/access-ci-org/cilogon-tokenauth
+Author: Eric Blau
+Author-email: blau@globus.org
+Keywords: django
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: summary
