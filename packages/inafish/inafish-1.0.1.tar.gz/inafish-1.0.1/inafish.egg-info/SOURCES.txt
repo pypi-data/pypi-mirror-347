@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+inafish/__init__.py
+inafish.egg-info/PKG-INFO
+inafish.egg-info/SOURCES.txt
+inafish.egg-info/dependency_links.txt
+inafish.egg-info/top_level.txt
