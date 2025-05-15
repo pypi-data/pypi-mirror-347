@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylegifrance"
+version = "0.0.3a5"
+description = "Librairie qui fournit des fonctions simples pour rechercher dans legifrance"
+requires-python = ">=3.12"
+readme = "README.md"
+license = "MIT"
+
+authors = [
+    { name = "Raphaël d'Assignies", email = "rdassignies@protonmail.ch" },
+    { name = "Frederic F.", email = "17061560+freddo1503@users.noreply.github.com" }
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "dotenv>=0.9.9",
+    "tenacity>=9.0.0",
+    "pydantic>=2.10.6",
+    "requests>=2.32.3"
+]
+
+[project.optional-dependencies]
+docs = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.12",
+    "mkdocs-minify-plugin>=0.7.1",
+    "pymdown-extensions"
+]
+
+[project.urls]
+Homepage = "https://github.com/pylegifrance/pylegifrance"
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+pythonpath = "."
+
+[tool.setuptools.packages.find]
+include = ["pylegifrance", "pylegifrance.*"]
+exclude = ["pylegifrance.test", "pylegifrance.test.*"]
+
+[tool.setuptools.package-data]
+pylegifrance = ["py.typed"]
+
+[tool.setuptools]
+include-package-data = true
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "pre-commit>=3.4.0",
+    "twine>=4.0.2"
+]
