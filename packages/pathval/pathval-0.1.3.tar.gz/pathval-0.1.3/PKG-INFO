@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: pathval
+Version: 0.1.3
+Summary: Validate file and directory paths for platform compatibility
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pathvalidate==3.2.3
+
+Validate file and directory paths for platform compatibility.
+Run `pathval -h` for commands.

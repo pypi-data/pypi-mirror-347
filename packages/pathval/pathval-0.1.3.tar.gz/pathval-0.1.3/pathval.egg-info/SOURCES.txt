@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+pathval/__init__.py
+pathval/cli.py
+pathval.egg-info/PKG-INFO
+pathval.egg-info/SOURCES.txt
+pathval.egg-info/dependency_links.txt
+pathval.egg-info/entry_points.txt
+pathval.egg-info/requires.txt
+pathval.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+pathval = pathval.cli:main
