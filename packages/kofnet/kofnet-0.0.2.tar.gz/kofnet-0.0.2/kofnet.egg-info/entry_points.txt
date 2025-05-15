@@ -1,0 +1,2 @@
+[console_scripts]
+kofnet = kofnet.console:main
