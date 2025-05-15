@@ -1,0 +1,2 @@
+[console_scripts]
+gemiTask = gemiTask.main:main
