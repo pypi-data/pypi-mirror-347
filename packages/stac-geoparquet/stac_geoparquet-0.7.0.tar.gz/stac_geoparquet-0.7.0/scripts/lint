@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+uv run pre-commit run --all-files
+uv run mypy stac_geoparquet
