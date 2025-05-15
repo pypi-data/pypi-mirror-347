@@ -1,0 +1,8 @@
+pxr/.libs/libPxrTf.so,sha256=grPXH334cq-0BksKabAV6nLR-1jkB4MRKIcCQ0Cdp28,1388752
+pxr/Tf/__init__.py,sha256=bdMceHfCzYzjM0ptBCrAq1yq0j_ByxuWvp9H_nglS1U,8790
+pxr/Tf/_tf.so,sha256=eIFteKRqUdVrw74pFs9R7h1Hu3tscsIZ8RLgbDlpvQk,1782568
+pxr_tf-0.25.5.post1.dist-info/METADATA,sha256=f_9ehaUzvoAfDROn-3wVXFg7wI-RCPtNflJhaaXlaDQ,2036
+pxr_tf-0.25.5.post1.dist-info/WHEEL,sha256=R6CX2Ax2npv7LLQzIZUAx_G2Gv6d8L5mFABRM0LhUFM,158
+pxr_tf-0.25.5.post1.dist-info/RECORD,,
+pxr_tf-0.25.5.post1.dist-info/licenses/LICENSE.txt,sha256=McZhhE6uG2j0UxkP2Yqls3CgFAUubyw7-xXbhfNfOFs,16492
+pxr_tf-0.25.5.post1.dist-info/licenses/NOTICE.txt,sha256=k6ldE5TIDcCuglcT9C5Yod0oPtv0Ta_x8-h6HZ3y3n4,149
