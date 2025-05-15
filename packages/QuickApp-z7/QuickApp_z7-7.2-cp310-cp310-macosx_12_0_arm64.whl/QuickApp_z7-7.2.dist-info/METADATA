@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: QuickApp-z7
+Version: 7.2
+Summary: UNKNOWN
+Home-page: https://github.com/zupermind/PACKAGENAME
+Author: Andrea Censi
+Author-email: info@zupermind.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: ConfTools-z7
+Requires-Dist: compmake-z7
+Requires-Dist: numpy
+Requires-Dist: reprep-z7
+Requires-Dist: six
+Requires-Dist: zuper-commons-z7
+Requires-Dist: zuper-params-z7
+Requires-Dist: zuper-utils-asyncio-z7
+Requires-Dist: zuper-zapp-z7
+Provides-Extra: test
+Requires-Dist: nose ; extra == 'test'
+Requires-Dist: zuper-fs-local-z7 ; extra == 'test'
+Requires-Dist: zuper-loghandle-z7 ; extra == 'test'
+Requires-Dist: zuper-notes-z7 ; extra == 'test'
+Requires-Dist: zuper-proc-local-z7 ; extra == 'test'
+
+UNKNOWN
+
