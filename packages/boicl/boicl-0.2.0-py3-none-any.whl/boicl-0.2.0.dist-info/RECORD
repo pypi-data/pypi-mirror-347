@@ -1,0 +1,15 @@
+boicl/__init__.py,sha256=Z3XkVrINrt2_ucqH6LIObUh78un-gKTq2uuUeCBZVxk,654
+boicl/aqfxns.py,sha256=VfU0mgkhjDjp9NbQPYqLn06ujFyime2itdzEibtaQ3k,4478
+boicl/asktell.py,sha256=aK5xCqoKyKRiZt_-mts7A1-_50jSLSr-1T0fXMha4EA,21520
+boicl/asktellFinetuning.py,sha256=n0xzA0GLopqQDv7-lFSn5NqmveGiHu6r9vyF3R0Vaqc,6980
+boicl/asktellGPR.py,sha256=9Q0vWgqZ99rmq1oQ_qEp_ammb0FkdtzzcaE68XQosq8,15591
+boicl/asktellNearestNeighbor.py,sha256=DhpIH7rsp6D-t7JcaYvUzEHdf7v81EbRJGGl2grRanw,4518
+boicl/asktellRidgeRegression.py,sha256=IRPzWChVPphyYd4mrDg5L84AP_x5Sq7xem-8ANz6nOE,2233
+boicl/llm_model.py,sha256=WPruPokIzsIAOwDSe0BZMFxM9U2y1rNwz1bcDlNuCwY,16103
+boicl/pool.py,sha256=KkALQnlreedsVBaQOwBr0GwfLTjlj65qUnK43pd7_Pg,2682
+boicl/tool.py,sha256=f2G_ANMnu5YhejSTIT_ulAsf-ghqcnVZSQ9_Z9trNPQ,2480
+boicl/version.py,sha256=0D6srYi9ejPUnwpjVmDoJB-oMuBqPSiP50LPRoM8G0I,23
+boicl-0.2.0.dist-info/METADATA,sha256=OxRrEpoelG4wRxkBEBG3fEhUvwj0cW3xcchU-PQQDGA,6403
+boicl-0.2.0.dist-info/WHEEL,sha256=Nw36Djuh_5VDukK0H78QzOX-_FQEo6V37m3nkm96gtU,91
+boicl-0.2.0.dist-info/top_level.txt,sha256=OSXFLXUP_QG6VZrMYaa91D_QCFI4e9hFTBkgyO2W2HE,6
+boicl-0.2.0.dist-info/RECORD,,
