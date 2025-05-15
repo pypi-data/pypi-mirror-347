@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+shrinkagelda.egg-info/PKG-INFO
+shrinkagelda.egg-info/SOURCES.txt
+shrinkagelda.egg-info/dependency_links.txt
+shrinkagelda.egg-info/requires.txt
+shrinkagelda.egg-info/top_level.txt

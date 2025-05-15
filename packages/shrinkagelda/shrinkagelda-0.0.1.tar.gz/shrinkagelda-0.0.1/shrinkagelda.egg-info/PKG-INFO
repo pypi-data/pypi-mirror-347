@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: shrinkagelda
+Version: 0.0.1
+Summary: Python implementation of Shrinkage LDA
+Home-page: https://github.com/simonkojima/shrinkagelda
+Author: Simon Kojima
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# shrinkagelda
