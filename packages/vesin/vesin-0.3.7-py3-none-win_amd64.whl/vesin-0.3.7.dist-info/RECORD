@@ -1,0 +1,15 @@
+vesin/__init__.py,sha256=22_KADNMc_ix_hi0X6iX_PTDSWhOHjkXaA6WsKwaV2g,187
+vesin/_ase.py,sha256=i2oBNsYoi2PMKxj-Vz4LtKIIxDSdaidqZMofm2lnAlI,2138
+vesin/_c_api.py,sha256=RqBKsMH4oLZ7HH6_wQVJpjFQWxU49QlzTGV6kpHOBqk,1365
+vesin/_c_lib.py,sha256=sD9RTYE80YMpqzqcCB1FiHt6GjimY9s7-n0B4VUV9fU,2632
+vesin/_neighbors.py,sha256=3-0Vaagxsu_Zhg_I35CP_LCDe83bOBQynYRG7BG1gRg,6374
+vesin/bin/vesin.dll,sha256=nHzhyv6HDtp36Lda35-VsZJB2VAJVOC4MXi4NJjJNME,184320
+vesin/include/vesin.h,sha256=YPmaBEAKkTi16gacNpb-XVi33gq66W9RNs32ZAumMsM,5713
+vesin/lib/vesin.lib,sha256=GIyrKdfwuyXhTbCBc82DJt-dIZlEU412lEU8Nm4656I,2812
+vesin/metatomic/__init__.py,sha256=oYwEiYYW7rWbrbNrEERoW3nyjtc40XLrdEQ4cAN8Czk,115
+vesin/metatomic/_model.py,sha256=-sxo8rY_UtBmMYnYVDSw_aDb0hOf_1hkEjTNPI0bnoM,4038
+vesin/metatomic/_neighbors.py,sha256=Fz641KRUocosgMQKLi9pWSvoYSjfoa7J8OEDdw9MTPU,5845
+vesin-0.3.7.dist-info/METADATA,sha256=Ush5OsKRez5lqeCgAJLxwEF8O1GGIWAz0DNYgR766h0,4263
+vesin-0.3.7.dist-info/WHEEL,sha256=nDLMn7pkiQvtFGhz5mtxGAG0DIfcYMrzUVdPAvQkTJE,98
+vesin-0.3.7.dist-info/top_level.txt,sha256=LIkiEKoZwkdHsOgavutHMDKBLPQD-__MhrWVxLlAFGg,6
+vesin-0.3.7.dist-info/RECORD,,
